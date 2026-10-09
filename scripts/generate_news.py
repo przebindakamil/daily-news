@@ -2,6 +2,7 @@ import json
 import os
 import re
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import quote
@@ -11,6 +12,10 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "news.json"
+CURRENT_OUTPUT = ROOT / "data" / "current.json"
+ARCHIVE_DIR = ROOT / "data" / "archive"
+ARCHIVE_INDEX = ARCHIVE_DIR / "index.json"
+LOCAL_TZ = ZoneInfo("Europe/Warsaw")
 PREFERENCES = ROOT / "config" / "preferences.json"
 
 API_KEY = os.environ.get("GEMINI_API_KEY")
@@ -358,8 +363,12 @@ def main():
     top_stories = selected[:top_count]
     more_stories = selected[top_count:]
 
+    generated_at = datetime.now(timezone.utc)
+    local_day = generated_at.astimezone(LOCAL_TZ).date().isoformat()
+
     result = {
-        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "date": local_day,
+        "generated_at": generated_at.isoformat(),
         "top_stories": top_stories,
         "more_stories": more_stories,
         "stats": {
@@ -369,15 +378,41 @@ def main():
         },
     }
 
+    serialized = json.dumps(result, ensure_ascii=False, indent=2)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(
-        json.dumps(result, ensure_ascii=False, indent=2),
+    ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+
+    # news.json zostaje dla zgodności wstecznej, current.json jest jawnym
+    # wskaźnikiem na najnowszy briefing, a archiwum nigdy nie jest nadpisywane
+    # przez kolejny dzień.
+    OUTPUT.write_text(serialized, encoding="utf-8")
+    CURRENT_OUTPUT.write_text(serialized, encoding="utf-8")
+    (ARCHIVE_DIR / f"{local_day}.json").write_text(serialized, encoding="utf-8")
+
+    archive_dates = []
+    if ARCHIVE_INDEX.exists():
+        try:
+            archive_dates = json.loads(ARCHIVE_INDEX.read_text(encoding="utf-8")).get("dates", [])
+        except (json.JSONDecodeError, AttributeError):
+            archive_dates = []
+
+    archive_dates = sorted(set(archive_dates + [local_day]), reverse=True)
+    ARCHIVE_INDEX.write_text(
+        json.dumps(
+            {
+                "latest": local_day,
+                "dates": archive_dates,
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
         encoding="utf-8",
     )
 
     print(
         f"Zebrano {len(candidates)} kandydatów, "
-        f"oceniono {len(ranked)}, opublikowano {len(selected)}."
+        f"oceniono {len(ranked)}, opublikowano {len(selected)}. "
+        f"Archiwum: {local_day}."
     )
 
 
