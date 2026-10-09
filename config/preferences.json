@@ -1,15 +1,13 @@
 {
-  "reader_profile": "Polski czytelnik zainteresowany technologią, sportem, finansami, nauką i ciekawymi wydarzeniami. Ceni praktyczność, zaskoczenie, znaczenie i konkretną wiedzę bardziej niż sensację.",
+  "reader_profile": "Szeroki polski briefing dla różnych typów czytelników. Pula bazowa ma być różnorodna, wiarygodna i użyteczna, a personalizacja odbywa się później po stronie użytkownika.",
   "priority_topics": [
-    "AI, nowe modele, narzędzia, automatyzacja i praktyczne zastosowania technologii",
-    "piłka nożna: ważne mecze, transfery, reprezentacje, europejskie puchary i polska liga",
-    "trening, bieganie, kolarstwo, fizjologia wysiłku i wartościowe badania sportowe",
-    "finanse, inwestowanie, biznes, gospodarka i rynki",
-    "ważne wydarzenia w Polsce i na świecie",
-    "nauka, medycyna, kosmos i odkrycia, które zmieniają rozumienie świata",
-    "motoryzacja, nowe auta, technologie samochodowe i ciekawy przemysł",
-    "podróże, lotnictwo i miejsca warte poznania",
-    "filmy, seriale, muzyka, książki i kultura"
+    "najważniejsze wydarzenia w Polsce i na świecie",
+    "technologia, AI i cyfrowe narzędzia",
+    "finanse, gospodarka, biznes i rynek pracy",
+    "sport i piłka nożna",
+    "zdrowie, nauka i kosmos",
+    "motoryzacja, podróże i kultura",
+    "gaming, środowisko, nieruchomości i inne wartościowe tematy"
   ],
   "selection_rules": {
     "prefer": [
