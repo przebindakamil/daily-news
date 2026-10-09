@@ -1,119 +1,93 @@
 {
-  "generated_at": "2026-10-09T09:20:02.997070+00:00",
-  "categories": [
+  "generated_at": "2026-10-09T09:33:13.926522+00:00",
+  "top_stories": [
     {
-      "name": "AI i technologia",
-      "items": [
-        {
-          "title": "Polski medtech otrzymał dofinansowanie na sztuczną inteligencję wychwytującą wyniki badań",
-          "summary": "Polski medtech otrzymał prawie 28 mln zł dofinansowania. Sztuczna inteligencja wychwyci ważny wynik badania.",
-          "source": "PARP",
-          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNNWRxRWg5Y3FVdWlKX2lMOVp5cEE4Y2pYRlF2OVREd2tKbm5jYlRZYXBXVUxPNGpBWWl5d3NCUVJpUXhJZ2tBOTJEbGozcnBGVTBKZmZYR1dDOU5LNzhJVzRiWW9DSk5iX1dWX0NCTXVkSlBiQ0Z0LUJiWFFnU25mUUQ3NUpSNVg5WFM1WkF2dkRQU0pJS0FUNnRBRnJJOVVKUWJuSVNqODNpZzJZNHVDZHRUakYweC1qVWIyQkZRZGpUX3NCQjNmelFyMWRpYVFXR2lvTDcwemtjWW9HcVRGMmN4YW5lZU1SVnpEeHlqWTI2Rng3?oc=5",
-          "published_at": "2026-10-08T10:16:38+00:00"
-        },
-        {
-          "title": "Wsparcie AI dla zespołów cyberbezpieczeństwa",
-          "summary": "Wsparcie AI dla zespołów cyberbezpieczeństwa. Czym jest Cyfrowy Fortel?",
-          "source": "Defence24",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcmdvZzZ2SHRSZFY2YWVEQmZ0OWhGOWdkaEFxdExJemlQay1qMTQ0RkFRUFE0dDczVGV3Q3RabWM5RW1tYm1SVzRSanJySUlQM1RZTm83VEJzRnkzVVRLdkp1QW9TbGRIZTRDZ25EaElhdmNvZ2tWTkg3WVdkd3Rjc3FVZGRwb2w1YTFLSjNWbUJOcWQ0ZnQzbjNKRGxua043bHJxRQ?oc=5",
-          "published_at": "2026-10-07T10:49:06+00:00"
-        }
-      ]
+      "title": "Ogłoszono laureatkę Pokojowej Nagrody Nobla 2026",
+      "summary": "Poznaliśmy tegoroczną laureatkę Pokojowej Nagrody Nobla. To jedno z najważniejszych wyróżnień o charakterze międzynarodowym.",
+      "why_it_matters": "Warto wiedzieć, kto w tym roku otrzymał to prestiżowe wyróżnienie ze względu na jego globalne znaczenie.",
+      "category": "Wydarzenia w Polsce i na świecie",
+      "source": "TOK FM",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5majBaeURoMUNKX0VUYzNRN1VlZ2FJVTZrY0tES055TjFheHBfXzNnTlNGM3FKSWtPT0dsb1pTVnVHT2QwRFhkWHdpRkN1UXUzSjJmS1lqQm9PTXk5TVJvN1ppbHVCQ0lYT3VCaTRYZEFBenpTX1IzYTZCYkU?oc=5",
+      "published_at": "2026-10-09T09:04:59+00:00"
     },
     {
-      "name": "Polska i świat",
-      "items": [
-        {
-          "title": "Szczyt Cyfrowy IGF Polska 2026 w Bydgoszczy",
-          "summary": "W Bydgoszczy odbędzie się Szczyt Cyfrowy IGF Polska 2026. Wydarzenie zostało zapowiedziane przez Portal Kujawski.",
-          "source": "Portal Kujawski",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUUpRcFhSVGRtUFgtaVlsV1hHd2VVdmlQZHRmZzdIMWp6Szc5cTh1WHFYZ3Zya3VqbFZqSlJ5eGsxdGNiSGJPb2lzcUZZRnB5aER1OENKRDVtTmtGZ0JlMTlsbmN1blJndTVJRFhzbEdXYm9USXVLZTdlRm5ucjlfZg?oc=5",
-          "published_at": "2026-10-07T13:35:42+00:00"
-        },
-        {
-          "title": "List Karol Nawrocki do Wołodymyra Zełenskiego",
-          "summary": "Karol Nawrocki napisał list do Wołodymyra Zełenskiego. Treść korespondencji ujawnił człowiek prezydenta.",
-          "source": "Interia Wydarzenia",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPeXhFcUdnblhrRXBPTWdiWFR3blhXXy04VVd3ZWdkZUM1eEtwUi14MnMzOVo5WlByWHpEN2t3MVB5LVYyNXpIS2Q2Sk9DQS00UWQzeVlfLWdtWWZOVFB0ODhPTk5kMXlxZGpBLUFUWWo1SS02YnJpQVFwcnJiTmRoMEJhNWpmMnJXTVJhSEdDb0Fidy1BLTZCRjdfalFaRjZpdUdNWXFjSTZBQW5uVnB6VDdhNA?oc=5",
-          "published_at": "2026-08-26T07:00:00+00:00"
-        }
-      ]
+      "title": "OpenAI prognozuje skokowy wzrost przychodów",
+      "summary": "OpenAI spodziewa się gwałtownego wzrostu przychodów w ujęciu rocznym. Szacunki wskazują na przebicie poziomu 70 miliardów dolarów.",
+      "why_it_matters": "Pokazuje to ogromną skalę i dynamikę rozwoju rynku sztucznej inteligencji na świecie.",
+      "category": "Finanse i biznes",
+      "source": "XYZ",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMkJhUFFUWGFib08yeEZaT1paT0t4ckFtUEJlSDNFTHY2Yk5ySjdIZ05wVHJ6cVF1OXgzM0hWOUdKd1VHcU42dnppYVhXREh3Wi1FOWE2bnEzYW1TYU1FblRPSUhiaXB4dVNmV19RM0tZY1pIdmNtaFhDTjZFLWJQMGJoS0I2ZkdxUTh2eEplVllzMXF4d0dueDU4UjczTXBDSG1LdlR5Z3JZZw?oc=5",
+      "published_at": "2026-10-09T05:49:04+00:00"
     },
     {
-      "name": "Piłka nożna i sport",
-      "items": [
-        {
-          "title": "Wisła podjęła decyzję w sprawie meczu z Legią",
-          "summary": "Kolejnego bojkotu nie będzie, ponieważ Wisła podjęła decyzję w sprawie nadchodzącego meczu z Legią. Informację podał Eurosport Polska.",
-          "source": "Eurosport Polska",
-          "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQS1JCLUVyUDktS0N3SEJ3cFJXc0hKckRBaEVRdTlENHFUV2l4bWhtbU5wZl8zYTA3eGJvbWxYUzBwVWdScUpQWi1Bd2hKbGRzX1Vsb3BaMDVfRTJqSUN5bTRnWjMyc1BJazdLMVRIRFRCZGE3eEpQYXlmS1M1WWt3NnRxNUtOZzJSTU85Yi1QT0NMQXhhSHk1YUxPVGd5SEtnVWVIWnd0Nms0dnZiMnV1VXVEeWtGdFhqWEJDek5oMENlcHI1YW9hNlV2ckZiOUNuODYtVXp3amo0YzRPcmdIOWtEdHhuOXFOVHJSZXZvWFBxeThCR0NOOHUxVVpGSU93OGlVRDRVWlEtbUtvWlVLcQ?oc=5",
-          "published_at": "2026-10-09T07:57:00+00:00"
-        },
-        {
-          "title": "Paulina Dudek o eliminacjach MŚ 2027 piłkarek",
-          "summary": "Reprezentacja Polski ma problem z obsadą bramki w eliminacjach mistrzostw świata 2027 piłkarek. Paulina Dudek skomentowała sytuację, stwierdzając, że zespół potrafi wyciągać wnioski.",
-          "source": "sport.tvp.pl",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNeTBNTFJmaWZ0NV95RXZvbnl5YXVmMmtnLWtvRkVabF9ScVBBbGRzNXdlQ21CSkhDcGtnenl6OE1JaXlJanhxRm5xNzJ6dUxYeTEtUlJJYnMyS1NyOEhXSHVnWWNsV2Z0eFVya2NJNVM2TFRuenJHZlp3R0toZ2lVTDZhRWFmTUVjYWZldzh3MFlITVdROFHSAZsBQVVfeXFMUFQ3bVU5Z3g4SDE3N293ZWdlZjhpeHQ5WFJtaGcweHc5Rk9wRzI0M0Q2dTV6NWo2WFl4R0xlN3F5UFpQM2pnTmkyQzZtY3Z3VGVETFM3ZXByV1YzaVpkbFE4MmM2VV9KcU1UMnItNVNyNmRKLXk0N19BVkhGTXU5NHpGRFk1Ymd4LUxEa0x6UVVTbzdPdU1BZ0daT1U?oc=5",
-          "published_at": "2026-10-09T04:00:00+00:00"
-        }
-      ]
+      "title": "Google ogłasza Gemini agent i nawiązuje współpracę z Anthropic",
+      "summary": "Google oficjalnie zaprezentowało narzędzie Gemini agent. Co istotne, otwiera je również na współpracę z modelem Claude od Anthropic.",
+      "why_it_matters": "Ta kooperacja może istotnie wpłynąć na układ sił na rynku technologii AI.",
+      "category": "AI i technologia",
+      "source": "Pasquale Pillitteri",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUl9MYjI5RlhtV2U5NkM4OFdOS0haem5iWlRSVWlZVlR6VGRRSW9VSVpqeS03S0F1UzlVWmozQU5NY0NHYW9mdkNUbFpacW90YVJ2M2FWOVZIX0Z0SGtzeFgyMllYcUowSnBEaENlQUFPWkhpaVpkcWY0QTVseGlBZzJOdjk?oc=5",
+      "published_at": "2026-10-08T23:00:14+00:00"
     },
     {
-      "name": "Finanse i biznes",
-      "items": [
-        {
-          "title": "Jagiełło na EKF Ubezpieczenia: polska gospodarka potrzebuje bardziej agresywnych inwestycji w infrastrukturę",
-          "summary": "Podczas EKF Ubezpieczenia Jagiełło stwierdził, że polska gospodarka potrzebuje bardziej agresywnych inwestycji w infrastrukturę. Informację podała Polska Agencja Prasowa SA.",
-          "source": "Polska Agencja Prasowa SA",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPTWd6dkMtalc3Yjc5Z1A1bURhUThxUVlTSGRUeWgtMnZLRzVERktnZ0NhRVBvNFpqYklSUmoyb3p4TTBqUERKdjFvZzZLTWdVSGlBemoyWG9tWE1PQU9zV3Bsa0g5R0tUWGxaTjZhM3VrLUktbFNzVEk5c3ItSWRWVG1OVGhGeGNGS0YyLWU5dTVReFN3emlVU0VrdlBLMmliRWdOTVlPOEZfUjNi?oc=5",
-          "published_at": "2026-10-09T08:00:21+00:00"
-        },
-        {
-          "title": "USA wstrzymują ataki na Iran, inwestycje w startupy hamują, Samsung bije rekordy",
-          "summary": "Rzeczpospolita informuje, że USA wstrzymują ataki na Iran, inwestycje w startupy hamują, a Samsung bije rekordy. Wydarzenia te wpisują się w bieżący przegląd doniesień gospodarczych i międzynarodowych.",
-          "source": "Rzeczpospolita",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOREI2SmVYLThJbDJUcjFnZ0RSc0FoX2pXMHBDX1Bwb3hFNE5idFcwdXBWYkhnby1ieHpYOTFKUnFHUGliZmYxYXd2TXVLWDNxWDNDWlhiSzU2VmhDOHBOMV9waFliNlhkY29wLVItYWZ5UF9jWDR4VXlPbEQzNFlBcUFTTFZkaU5LWlk0Z2xCcGhOSE1xc1FwSFFPaWItUks3MDV1SUNEQzdTaURhM3N3aFNpeC1zUQ?oc=5",
-          "published_at": "2026-10-09T04:14:00+00:00"
-        }
-      ]
+      "title": "Orlen rozpoczyna negocjacje z partnerami z Arabii Saudyjskiej",
+      "summary": "Przedstawiciele Orlenu udają się na rozmowy z Saudami. Spotkanie dotyczy bezpośrednio kwestii bezpieczeństwa paliwowego Polski.",
+      "why_it_matters": "Decyzje podjęte podczas tych negocjacji mogą wpłynąć na stabilność dostaw surowców do kraju.",
+      "category": "Finanse i biznes",
+      "source": "Interia Biznes",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdGNFMjlJWUJMNzdyRHBBSWtHMGl3djBlS182TE01aDJta25CTVR4Y0lSelpYRVRSbkxldVc4OHpyX3o1Y2FSVElpY0huWjl0c0lnSkRGMzR4S0tscnFFbDVEanZUS1Bld3J0SjcwbUVoVnRoSDVsYVlaYV9rUzJNSldGVzBoeUozREJhMHZMVWE2dUwyLW1LdFNjSVdzUzIxMGFiQ3ZER1ZETnFGR3ROWURWcWg?oc=5",
+      "published_at": "2026-10-09T05:09:24+00:00"
     },
     {
-      "name": "Nauka",
-      "items": [
-        {
-          "title": "Załoga misji Crew-12 powróciła na Ziemię",
-          "summary": "Załoga misji Crew-12 bezpiecznie wróciła na Ziemię. Informację tę przekazał serwis Space24.pl.",
-          "source": "Space24.pl",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaXV4WTQtSkRZUExCemF1cmhzdWotSnlidUlYb09qdEswSWFVaVhETmlIS0JaQ2dVSzBublZzNVFaU3pPRFpPaEhaRDhJNjlmc19xeVp2RjBiWTdQOXVYdHFFY3FJa1FmWVZQeEY1dFltLVJaMDVtcWJza0owa3NvX3h2TVk5ZlJxN0JQX3h1UHJsTXhtbjRHYnhYYXVJTWx3YmRUTlh3QQ?oc=5",
-          "published_at": "2026-10-09T07:46:55+00:00"
-        },
-        {
-          "title": "Porównanie dietetycznych napojów i wody w nowych badaniach",
-          "summary": "Nowe badania rozwiewają wątpliwości dotyczące tego, co wybrać: dietetyczne napoje czy wodę. Szczegóły opublikowało RMF FM.",
-          "source": "RMF FM",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNckdGX0l5SE9fUzBZTlk0bzNZVzN3ZjBDTTdlaGRBRGdQZ09pcm5rZFMwM3VVWDhzbmZwNW0xVjZBVlNXdURFejBFb2dic1NLVXdhTFJyZjhvX1JmbDZwX0FyNzlfcWE5WGFETEZNNE1rSnUxcG9MTVVYOW1SM2M0MGxaMkQtV0Y4SXRDTW5NWXpZZFZUaDhoQkdtRXdtY3RadUZ1LTVubGhHUHloODBTTE93?oc=5",
-          "published_at": "2026-10-09T05:13:00+00:00"
-        }
-      ]
-    },
-    {
-      "name": "Kultura",
-      "items": [
-        {
-          "title": "Polska na Targach Książki we Frankfurcie",
-          "summary": "Polska bierze udział w Targach Książki we Frankfurcie. Hasłem prezentacji jest „Przede wszystkim proza”.",
-          "source": "DW.com",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdW1BelFvZUNXVzZzWmI1dktpWkFZLW1lQTBySE9xLWhWRXViQlVhZnRIMFZ4aVNrcHp3YmtKQnhGUjhYeE9seHYtTnkyc2g4aHJ1WVFWTDVqcXp2akVYTFNIcWktbVdpdjZZelZpNFNNVkZQdDZTeTdHTW5aYVlBMXltWXZMMHRiZERYQ0hHU2h0QVVMUTN6RTJRVy0xUDBhZGFGcnlCQzRVd9IBqgFBVV95cUxQVWZOSlNVQmZIZWxMZXhVc2pZTXlFM2JkMjBNOUYxWEh4LXNTdFg3UzkwM19TWndGUGJiUEdfX2h5TG5fTVdoMUFEdkx0cVhodklwNG95YldWZlRabzJmVlFob1JvUm44bVdXUENtNWJ4UGRENWgzcWFsbEtyLTVRQWRHMk1HZjV3U0Jqb3o0VnJPd0VGMkJMZ0FRVm5EYXp5ekJOYS10YXF3UQ?oc=5",
-          "published_at": "2026-10-09T05:41:53+00:00"
-        },
-        {
-          "title": "Biografia Aleksandra Bardiniego autorstwa Grzegorza Kozaka",
-          "summary": "Grzegorz Kozak napisał biografię Aleksandra Bardiniego. Premiera książki odbywa się na deskach Teatru Polskiego.",
-          "source": "PolsatNews.pl",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNkFyYjJmdzd1M1REaWhIRUJkU25xbUdnUWQ3SHlkNWxQTzE0ZUhJYkFvREtqNlZKbzc3STllaHNnUTFfTlJsQ25LUVNqcGFvOGhGUk10RHJPcVd3UjNUZVhkUWgyU0huWXROSzhQS2tFZjVlb2dmYTVpbTU2dWFvM05rY1JNb1RtcEEtWUFfZDNtZDA?oc=5",
-          "published_at": "2026-10-08T16:52:00+00:00"
-        }
-      ]
+      "title": "Prezes NBP komentuje możliwość wzrostu stóp procentowych",
+      "summary": "Prezes NBP odniósł się do kwestii ewentualnych podwyżek stóp procentowych. Wypowiedź ta budzi duże zainteresowanie rynków i ekspertów w kontekście nadchodzących miesięcy.",
+      "why_it_matters": "Zmiany stóp procentowych bezpośrednio rzutują na wysokość rat kredytów i sytuację gospodarczą obywateli.",
+      "category": "Finanse i biznes",
+      "source": "Biznes Wprost",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOLWFCb0UzdUprRlRHUTlFVmt3OUh4by0wdGhZd0hzYWRwSHZkcVA1cG5kc1lXUHpfamZkZ0JXTkJCalUwZ1F0dUNIZ2p5SjRHWmFPY1hqRzNnbms4YlN2VUZyNnBBeU5uRzFXcE9LZlB3X0o1WW1Cb25DT3JvQmhpOHB0ejNxeE1VUEM3dzRfQkpMZFdFdzRfMjcycWlYYy1JblkxOXpEcXoyMDBGVl840gGjAUFVX3lxTE1Dc0Y3YVhMYUpEWEZMbkt3MkVDMm1fYU5iREJqMExFWjltb3c1eVJ2R25oT1oxMTZLTXF4MmMxcGJQLWlzUGd1ZkpBc0NyYjJJUnY1RmJYalkwMFBwUl9vY1ZGWlZGMXRpZDduSUQ1dy1MWTJpNXRUYmFZdGdDRzQ2ZTM1TDRLd3NjenBsRXcxVDU2MktlMWxtczNxMC1IX1huakk?oc=5",
+      "published_at": "2026-10-09T05:01:00+00:00"
     }
-  ]
+  ],
+  "more_stories": [
+    {
+      "title": "Powstaje funduszu Vinci Space Tech z budżetem 500 mln zł",
+      "summary": "Na rodzime technologie kosmiczne przeznaczono 500 milionów złotych w ramach nowo powołanego funduszu Vinci Space Tech. Inwestycja ma wspomóc rozwój tego sektora w Polsce.",
+      "why_it_matters": "To zastrzyk kapitałowy, który może przyspieszyć innowacje w niszowej, ale perspektywicznej branży kosmicznej.",
+      "category": "Finanse i biznes",
+      "source": "Magiczny Kraków",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRU4yQnk2YlB4V1dFalA2a3NSVU84MlRhNVRkSy1IRFRfVDVDLUprbVpZQ3V0SzUwaGJydHJkejAwdVU0NzA0OUVqVXZyT1d0TE56MDBsSHM5Q3ZNWEhEdmF4UDg2N3d1OWZzM1VtblI4ajNrX2V4ZUxPZ2czZzdDdlowbHVQMWkzS0tEellxUkw0WkFWbU9fT2d5ZVZDeTBrT1ZpS2N1amdPNW5WSVdsOTFUTG5uUjRMd3A4b0VUaWFqaWJCMTQ5cjRFUQ?oc=5",
+      "published_at": "2026-10-09T04:49:40+00:00"
+    },
+    {
+      "title": "InPost wprowadza sztuczną inteligencję do otwierania Paczkomatów",
+      "summary": "InPost wdraża rozwiązanie oparte na sztucznej inteligencji, które ma usprawnić proces odbierania przesyłek. Nowa technologia ma wdrożyć automatyzację w codziennej obsłudze skrytek.",
+      "why_it_matters": "To praktyczny przykład wykorzystania AI w usługach, z których korzystają miliony Polaków.",
+      "category": "AI i technologia",
+      "source": "Super Biznes",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQLVVRVi1Fbm5DSDFLVDl4ZEMwR1ZDQmRjNEM5OVkyNHo3SkZFbTVtdWlMLUVSWTRPOHlYMmNJWkd0S2lYZnZhanBmMXFibUlWdzhDWU1Jb3ZWS2VzZTJLZFJnNXBMUHo0ZWlPRm5rUHRxREhLUVRfZG9JY2o1OWxjc25TTHFzX1VDdFYxTkVqbTV5VXBfTm8yZzdnV0NsaUtydEl2azktM2QtZWhZM3R1MFFhNllBM2dHR1prYjNURmJJZGE1cmF1TDVtcEhtTlNEbnc?oc=5",
+      "published_at": "2026-10-09T05:00:00+00:00"
+    },
+    {
+      "title": "Powstanie aktorski film Cyberpunk 2077",
+      "summary": "Zapowiedziano pełnometrażowy, aktorski film na podstawie gry Cyberpunk 2077 stworzonej przez CD Projekt RED. Wybrano już nawet producenta widowiska.",
+      "why_it_matters": "To ważna wiadomość dla fanów popkultury i polskiego rynku gier, przenosząca znane IP na duży ekran.",
+      "category": "Kultura",
+      "source": "PurePC",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSEtHMG94Z01uRVN1M0VycWt1bXF0N0JMZXp4eElLaWhlcWVrQUx4Qm5uZVRqQlA2WkViR0p2OWZtdFJJLXNiQWJsZG1iWHc5c0VLU3FWVjYtV3VaVl9zNEtJUFo2VVQ3Sl9lYzhzRERBNTFPR1dLMW9qTEFsYUVCZjE2a3BzcE9fdkJ6OXNB?oc=5",
+      "published_at": "2026-10-09T09:30:00+00:00"
+    },
+    {
+      "title": "Bezpieczny powrót załogi misji Crew-12 na Ziemię",
+      "summary": "Członkowie misji kosmicznej Crew-12 zakończyli swój pobyt w przestrzeni kosmicznej i pomyślnie powrócili na Ziemię.",
+      "why_it_matters": "To kluczowy moment dla bieżących operacji załogowych i bezpieczeństwa lotów kosmicznych.",
+      "category": "Nauka i kosmos",
+      "source": "Space24.pl",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaXV4WTQtSkRZUExCemF1cmhzdWotSnlidUlYb09qdEswSWFVaVhETmlIS0JaQ2dVSzBublZzNVFaU3pPRFpPaEhaRDhJNjlmc19xeVp2RjBiWTdQOXVYdHFFY3FJa1FmWVZQeEY1dFltLVJaMDVtcWJza0owa3NvX3h2TVk5ZlJxN0JQX3h1UHJsTXhtbjRHYnhYYXVJTWx3YmRUTlh3QQ?oc=5",
+      "published_at": "2026-10-09T07:46:55+00:00"
+    }
+  ],
+  "stats": {
+    "candidates": 171,
+    "ranked": 24,
+    "published": 9
+  }
 }
