@@ -455,7 +455,7 @@ def extract_article_text(url: str):
         text = re.sub(r"\s+", " ", text).strip()
         if len(text) < 450:
             return "", final_url
-        return text[:3200], final_url
+        return text[:9000], final_url
     except Exception:
         return "", url
 
@@ -504,18 +504,21 @@ Dozwolone kategorie:
 Dla każdego materiału przygotuj:
 - index: ten sam indeks z wejścia,
 - title: rzeczowy tytuł po polsku, bez clickbaitu,
-- summary: maksymalnie 2 krótkie zdania,
+- summary: maksymalnie 2 krótkie zdania na kafelek,
 - why_it_matters: jedno krótkie zdanie,
 - category: dokładnie jedna dozwolona kategoria,
 - topics: 2-5 krótkich tematów,
-- digest:
-  - what_happened: 2-3 krótkie zdania,
-  - key_points: dokładnie 3 konkretne punkty,
-  - context: maksymalnie 2 zdania, tylko jeśli wynika z danych,
-  - what_next: maksymalnie 1 zdanie, tylko jeśli wynika z danych.
+- digest_text: płynne streszczenie artykułu do czytania, bez list, śródtytułów i punktów.
 
-Jeśli article_text jest pusty, bazuj wyłącznie na tytule i snippecie.
-Jeśli article_text jest dostępny, możesz wykorzystać informacje z tej treści.
+Zasady dla digest_text:
+- ma brzmieć jak skrócona wersja normalnego artykułu, nie jak notatki;
+- jeśli masz article_text, napisz około 250-400 słów, zachowując najważniejsze fakty, kontekst i sens oryginału;
+- używaj 3-6 naturalnych akapitów;
+- nie dodawaj porad, ocen ani sekcji typu "co dalej", jeśli nie wynikają z tekstu;
+- nie powtarzaj mechanicznie summary ani why_it_matters;
+- jeśli article_text jest pusty, NIE rozwlekaj snippetu sztucznie: napisz tylko tyle, ile bezpiecznie wynika z dostępnych danych;
+- nie dopisuj żadnych faktów spoza wejścia.
+
 Zwróć WYŁĄCZNIE poprawny JSON bez markdownu.
 
 JSON:
@@ -528,12 +531,7 @@ JSON:
       "why_it_matters": "...",
       "category": "...",
       "topics": ["...", "..."],
-      "digest": {{
-        "what_happened": "...",
-        "key_points": ["...", "...", "..."],
-        "context": "...",
-        "what_next": "..."
-      }}
+      "digest_text": "Kilka naturalnych akapitów streszczenia..."
     }}
   ]
 }}
@@ -557,7 +555,6 @@ PARTIA:
         if category not in ALLOWED_CATEGORIES:
             category = original["category"]
 
-        digest = edited.get("digest") or {}
         selected.append(
             {
                 "_order": batch_offset + idx,
@@ -571,16 +568,7 @@ PARTIA:
                     if str(topic).strip()
                 ][:5],
                 "editorial_score": original.get("editorial_score", 0),
-                "digest": {
-                    "what_happened": str(digest.get("what_happened") or "").strip(),
-                    "key_points": [
-                        str(point).strip()
-                        for point in digest.get("key_points", [])
-                        if str(point).strip()
-                    ][:3],
-                    "context": str(digest.get("context") or "").strip(),
-                    "what_next": str(digest.get("what_next") or "").strip(),
-                },
+                "digest_text": str(edited.get("digest_text") or "").strip(),
                 "source": original["source"],
                 "url": original["url"],
                 "published_at": original["published_at"],
@@ -601,12 +589,7 @@ PARTIA:
                 "category": original["category"],
                 "topics": original.get("topics", [])[:5],
                 "editorial_score": original.get("editorial_score", 0),
-                "digest": {
-                    "what_happened": original.get("snippet", "")[:700],
-                    "key_points": [],
-                    "context": "",
-                    "what_next": "",
-                },
+                "digest_text": original.get("snippet", "")[:900],
                 "source": original["source"],
                 "url": original["url"],
                 "published_at": original["published_at"],
