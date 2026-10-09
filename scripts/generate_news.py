@@ -455,7 +455,7 @@ def extract_article_text(url: str):
         text = re.sub(r"\s+", " ", text).strip()
         if len(text) < 450:
             return "", final_url
-        return text[:9000], final_url
+        return text[:14000], final_url
     except Exception:
         return "", url
 
@@ -470,6 +470,37 @@ def enrich_for_digest(ranked, limit=20):
             copy["url"] = final_url
         enriched.append(copy)
     return enriched
+
+
+def regenerate_long_digest(original):
+    article_text = original.get("article_text", "")
+    if not article_text:
+        return ""
+
+    prompt = f"""
+Napisz po polsku płynne streszczenie artykułu do czytania przez około 3-4 minuty.
+
+Zasady:
+- 650-850 słów;
+- 4-8 naturalnych akapitów;
+- żadnych bullet pointów, śródtytułów ani checklist;
+- zachowaj najważniejsze fakty, kontekst, zależności i sens oryginału;
+- nie dodawaj opinii, porad ani faktów spoza tekstu;
+- nie rozwlekaj sztucznie i nie powtarzaj tych samych informacji;
+- tekst ma brzmieć jak skrócona wersja dobrego artykułu.
+
+Zwróć wyłącznie JSON:
+{{"digest_text":"..."}}
+
+TYTUŁ:
+{original.get("title", "")}
+
+TREŚĆ:
+{article_text}
+""".strip()
+
+    result = gemini_json(prompt)
+    return str(result.get("digest_text") or "").strip()
 
 
 def build_digest_batch(batch, batch_offset):
@@ -512,7 +543,7 @@ Dla każdego materiału przygotuj:
 
 Zasady dla digest_text:
 - ma brzmieć jak skrócona wersja normalnego artykułu, nie jak notatki;
-- jeśli masz article_text, napisz około 250-400 słów, zachowując najważniejsze fakty, kontekst i sens oryginału;
+- jeśli masz article_text, napisz około 650-850 słów, tak aby streszczenie zajmowało około 3-4 minut czytania; zachowaj najważniejsze fakty, kontekst i sens oryginału;
 - używaj 3-6 naturalnych akapitów;
 - nie dodawaj porad, ocen ani sekcji typu "co dalej", jeśli nie wynikają z tekstu;
 - nie powtarzaj mechanicznie summary ani why_it_matters;
@@ -555,6 +586,16 @@ PARTIA:
         if category not in ALLOWED_CATEGORIES:
             category = original["category"]
 
+        digest_text = str(edited.get("digest_text") or "").strip()
+        if original.get("article_text") and len(digest_text.split()) < 450:
+            print(
+                f"Digest za krótki ({len(digest_text.split())} słów) dla: "
+                f"{original['title'][:80]} — regeneruję osobno."
+            )
+            regenerated = regenerate_long_digest(original)
+            if regenerated:
+                digest_text = regenerated
+
         selected.append(
             {
                 "_order": batch_offset + idx,
@@ -568,7 +609,7 @@ PARTIA:
                     if str(topic).strip()
                 ][:5],
                 "editorial_score": original.get("editorial_score", 0),
-                "digest_text": str(edited.get("digest_text") or "").strip(),
+                "digest_text": digest_text,
                 "source": original["source"],
                 "url": original["url"],
                 "published_at": original["published_at"],
@@ -609,7 +650,7 @@ def edit_finalists(ranked, preferences):
 
     # Large single JSON responses were getting truncated/malformed.
     # Small batches are more reliable and still keep total cost predictable.
-    batch_size = 4
+    batch_size = 2
     selected = []
     for offset in range(0, len(prepared), batch_size):
         batch = prepared[offset:offset + batch_size]
