@@ -3,6 +3,7 @@
 Ten plik jest krótkim widokiem kierunku projektu. Źródłem prawdy dla niewykonanych zadań są GitHub Issues.
 
 ## In progress / next
+- [ ] Rozwijane streszczenie / „wiedza w pigułce” po kliknięciu w kafelek
 - [ ] Zapisane newsy i kolekcja „do przeczytania”
 - [ ] Wyszukiwarka archiwum
 - [ ] Tygodniowe podsumowanie „Ten tydzień w 10 minut”
@@ -27,3 +28,6 @@ Ten plik jest krótkim widokiem kierunku projektu. Źródłem prawdy dla niewyko
 - [x] „Więcej takich / mniej takich”
 - [x] Personalizowany ranking w przeglądarce
 - [x] Sekcja „Poza twoją bańką”
+- [x] Onboarding zainteresowań
+- [x] Włączanie / wyłączanie kategorii
+- [x] Sterowanie liczbą materiałów dziennie
