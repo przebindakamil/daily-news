@@ -1,0 +1,34 @@
+{
+  "reader_profile": "Polski czytelnik zainteresowany technologią, sportem, finansami, nauką i ciekawymi wydarzeniami. Ceni praktyczność, zaskoczenie, znaczenie i konkretną wiedzę bardziej niż sensację.",
+  "priority_topics": [
+    "AI, nowe modele, narzędzia, automatyzacja i praktyczne zastosowania technologii",
+    "piłka nożna: ważne mecze, transfery, reprezentacje, europejskie puchary i polska liga",
+    "trening, bieganie, kolarstwo, fizjologia wysiłku i wartościowe badania sportowe",
+    "finanse, inwestowanie, biznes, gospodarka i rynki",
+    "ważne wydarzenia w Polsce i na świecie",
+    "nauka, medycyna, kosmos i odkrycia, które zmieniają rozumienie świata",
+    "motoryzacja, nowe auta, technologie samochodowe i ciekawy przemysł",
+    "podróże, lotnictwo i miejsca warte poznania",
+    "filmy, seriale, muzyka, książki i kultura"
+  ],
+  "selection_rules": {
+    "prefer": [
+      "informacje, które realnie coś zmieniają",
+      "materiały dające nową wiedzę albo użyteczny kontekst",
+      "wydarzenia z praktycznym znaczeniem",
+      "historie zaskakujące, ale dobrze udokumentowane",
+      "tematy, o których czytelnik prawdopodobnie chciałby komuś opowiedzieć"
+    ],
+    "avoid": [
+      "clickbait",
+      "plotki i spekulacje bez mocnego potwierdzenia",
+      "drobne aktualizacje bez znaczenia",
+      "powtarzające się materiały o tym samym wydarzeniu",
+      "stare informacje wypchnięte ponownie przez agregator",
+      "treści opiniotwórcze bez nowej informacji"
+    ]
+  },
+  "top_stories": 5,
+  "more_stories": 4,
+  "max_age_hours": 72
+}
