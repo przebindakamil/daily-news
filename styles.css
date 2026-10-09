@@ -421,3 +421,104 @@ body.onboarding-open{overflow:hidden}
   border-color:rgba(176,58,58,.38);
   background:rgba(176,58,58,.16);
 }
+
+/* Editorial TOP of the day */
+.top-day-section{
+  padding:22px 0 8px;
+  border-top:1px solid var(--line);
+}
+.top-day-head{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:24px;
+  margin-bottom:16px;
+}
+.top-day-head>div{min-width:0}
+.top-day-eyebrow{
+  display:block;
+  margin-bottom:5px;
+  color:var(--accent);
+  font-size:.68rem;
+  font-weight:850;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.top-day-head h2{
+  margin:0;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(2rem,4vw,3rem);
+  font-weight:500;
+  letter-spacing:-.035em;
+}
+.top-day-head p{
+  max-width:360px;
+  margin:0;
+  color:var(--muted);
+  font-size:.78rem;
+  text-align:right;
+}
+.top-day-grid{
+  display:grid;
+  grid-template-columns:1.35fr 1fr 1fr;
+  gap:12px;
+}
+.top-day-card{
+  min-height:270px;
+  padding:20px;
+  overflow:hidden;
+}
+.top-day-card:first-child{
+  background:color-mix(in srgb,var(--accent-soft) 28%,var(--surface));
+  border-color:color-mix(in srgb,var(--accent) 22%,var(--line));
+}
+.top-day-card .top-day-rank{
+  display:block;
+  margin-bottom:14px;
+  color:var(--accent);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.1rem;
+  line-height:1;
+}
+.top-day-card .news-meta{margin-bottom:14px}
+.top-day-card h3{
+  font-size:clamp(1.25rem,2vw,1.75rem);
+}
+.top-day-card:first-child h3{
+  font-size:clamp(1.6rem,2.8vw,2.3rem);
+}
+.top-day-card .news-topics,
+.top-day-card .feedback-actions{
+  display:none;
+}
+.top-day-card .news-summary{
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:4;
+  overflow:hidden;
+}
+.top-day-card.expanded .news-summary{
+  display:block;
+  overflow:visible;
+}
+.top-day-card .news-digest{
+  margin-top:16px;
+}
+.top-day-card .digest-prose{
+  max-width:none;
+}
+.top-day-card .digest-prose p{
+  font-size:.98rem;
+}
+
+@media(max-width:860px){
+  .top-day-grid{grid-template-columns:1fr 1fr}
+  .top-day-card:first-child{grid-column:1/-1}
+}
+@media(max-width:620px){
+  .top-day-head{align-items:flex-start;flex-direction:column;gap:8px}
+  .top-day-head p{text-align:left}
+  .top-day-grid{grid-template-columns:1fr}
+  .top-day-card:first-child{grid-column:auto}
+  .top-day-card{min-height:0}
+}
