@@ -4,8 +4,6 @@ Ten plik jest krótkim widokiem kierunku projektu. Źródłem prawdy dla niewyko
 
 ## In progress / next
 - [ ] Wykorzystanie custom interests także do rozszerzania źródeł po dodaniu backendu
-- [ ] Zapisane newsy i kolekcja „do przeczytania”
-- [ ] Wyszukiwarka archiwum
 - [ ] Tygodniowe podsumowanie „Ten tydzień w 10 minut”
 - [ ] Powiązane historie / ciąg dalszy wydarzenia
 - [ ] Embeddings do semantycznej personalizacji
@@ -34,3 +32,5 @@ Ten plik jest krótkim widokiem kierunku projektu. Źródłem prawdy dla niewyko
 - [x] Rozwijane „wiedza w pigułce” po kliknięciu w kafelek
 - [x] Szerszy katalog kategorii
 - [x] Własne, niestandardowe zainteresowania użytkownika
+- [x] Zapisane newsy / lista „do przeczytania”
+- [x] Wyszukiwarka archiwum
