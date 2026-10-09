@@ -1,369 +1,374 @@
 {
   "date": "2026-10-09",
-  "generated_at": "2026-10-09T11:54:51.123821+00:00",
+  "generated_at": "2026-10-09T12:10:45.688103+00:00",
   "top_stories": [
     {
-      "title": "Kosmiczny Teleskop Jamesa Webba zmierzył odległość do najdalszego szybkiego sygnału radiowego",
-      "summary": "Astronomowie użyli Teleskopu Webba do zlokalizowania galaktyki macierzystej najdalszego znanego szybkiego sygnału radiowego. Odkrycie to rzuca nowe światło na potencjalne źródła tych tajemniczych zjawisk kosmicznych.",
-      "why_it_matters": "Badanie pomaga zrozumieć pochodzenie szybkich sygnałów radiowych oraz struktury niewidzialnej materii we wszechświecie.",
+      "title": "Kosmiczny Teleskop Jamesa Webba zmierzył odległość do najdalszego szybkiego błysku radiowego",
+      "summary": "Astronomowie użyli Teleskopu Webba, aby namierzyć galaktykę macierzystą najdalszego dotąd szybkiego błysku radiowego. Wyniki te rzucają nowe światło na pochodzenie tych zagadkowych kosmicznych zjawisk.",
+      "why_it_matters": "Odkrycie pomaga zweryfikować teorie dotyczące źródeł potężnych fal radiowych napływających z głębokiego kosmosu.",
       "category": "Kosmos",
       "topics": [
         "JWST",
+        "szybkie błyski radiowe",
         "astronomia",
-        "szybkie sygnały radiowe",
-        "FRB"
+        "galaktyki"
       ],
-      "editorial_score": 10.2,
-      "digest_text": "Szybkie sygnały radiowe to trwające ułamki sekund błyski radiowe z odległego wszechświata, których dokładne pochodzenie wciąż pozostaje zagadką. Zespół astronomów wykorzystał Teleskop Kosmiczny Jamesa Webba, aby zlokalizować galaktykę macierzystą sygnału oznaczonego jako FRB 20240304B. Obserwacje wykazały, że sygnał pochodzi z galaktyki znajdującej się w czasie, gdy wszechświat miał zaledwie 3 miliardy lat. Wbrew wcześniejszym przypuszczeniom, że źródła te znajdują się w dużych galaktykach bogatych w gwiazdy, macierzysty obiekt okazał się małą, karłowatą galaktyką intensywnie tworzącą nowe gwiazdy.\n\nUzyskane wyniki sugerują, że ten konkretny sygnał radiowy najprawdopodobniej nie pochodzi z połączenia dwóch gwiazd neutronowych, co wspiera hipotezę o ich powstawaniu z młodych, silnie magnetycznych gwiazd neutronowych zwanych magnetarami. Dodatkowo, przelatujący przez przestrzeń kosmiczną sygnał posłużył naukowcom jako kosmiczna latarka. Pozwolił on na wykrycie śladów dwóch struktur kosmicznych: wcześniej nieznanej gromady galaktyk oraz pobliskiej Gromady w Pannie. W przyszłości naukowcy planują odkrywać kolejne odległe sygnały za pomocą teleskopu MeerKAT oraz badać ich otoczenie przy użyciu Teleskopu Webba.",
+      "editorial_score": 10.7,
+      "digest_text": "Szybkie błyski radiowe, po raz pierwszy zaobserwowane w 2007 roku, pozostają jednym z najbardziej fascynujących i tajemniczych zjawisk we wszechświecie. Są to niezwykle krótkie, trwające zaledwie milisekundy impulsy fal radiowych docierające z odległych zakątków kosmosu. Ich pochodzenie wciąż budzi liczne kontrowersje, głównie dlatego, że większość z nich rejestrowana jest tylko raz i nigdy więcej się nie powtarza. Astronomowie nie dysponują jeszcze ostatecznymi dowodami na to, jakie konkretnie obiekty generują tak potężną emisję energii. Aby przybliżyć się do rozwikłania tej zagadki, międzynarodowy zespół naukowców wykorzystał zaawansowane instrumenty radiowe oraz Kosmiczny Teleskop Jamesa Webba do namierzenia i zbadania macierzystej galaktyki najdalej położonego szybkiego błysku radiowego, jaki kiedykolwiek udało się zaobserwować w historii badań astrofizycznych. \n\nSygnał, oznaczony jako FRB 20240304B, został pierwotnie wykryty 4 marca 2024 roku przez radioteleskop MeerKAT w ramach projektu MeerTRAP. Wstępne dane radiowe wskazywały, że źródło błysku znajduje się w gigantycznej odległości, co czyniło go potencjalnym rekordzistą pod względem dystansu. Chociaż naukowcy znali precyzyjną pozycję źródła na niebie, największe naziemne teleskopy świata nie były w stanie dostrzec w tym punkcie żadnej galaktyki. Z tego powodu badacze musieli skorzystać z możliwości Kosmicznego Teleskopu Jamesa Webba. Wyposażona w kamerę bliskiej podczerwieni aparatura Webba wykryła w wyznaczonym miejscu niewielką galaktykę, a spektrograf pozwolił na precyzyjne wyznaczenie jej przesunięcia ku czerwieni. Wynik ten wskazał, że galaktyka ta istniała zaledwie trzy miliardy lat po Wielkim Wybuchu, w okresie, gdy większość znanych szybkich błysku radiowych jeszcze się nie wydarzyła.\n\nOdkrycie zaskoczyło badaczy, ponieważ galaktyka macierzysta tego błysku znacząco różniła się od tych, w których do tej pory identyfikowano podobne zjawiska. Zamiast masywnego, dobrze uformowanego systemu gwiezdnego, naukowcy natrafili na miniaturową galaktykę karłowatą, która była tysiąc razy mniej masywna od oczekiwań, choć aktywnie tworzyła nowe gwiazdy. Obiekt ten istniał w okresie intensywnego formowania gwiazd znanym jako kosmiczne południe. Tempo powstawania gwiazd w tej galaktyce sugeruje, że większość z nich mogła narodzić się w zaledwie trzydzieści milionów lat. Ta niezwykła cecha ma kluczowe znaczenie dla zrozumienia mechanizmów powstawania samych szybkich błysków radiowych, pomagając naukowcom weryfikować obowiązujące w astrofizyce teorie.\n\nObecnie w świecie naukowym dominują dwie główne hipotezy dotyczące pochodzenia szybkich błysków radiowych. Pierwsza z nich zakłada, że zjawiska te są wynikiem kolizji i połączenia dwóch gwiazd neutronowych. Ponieważ proces zbliżania się do siebie takich obiektów trwa zazwyczaj miliardy lat, błyski powstałe w ten sposób powinny być powiązane ze starszymi galaktykami o bardziej rozwiniętych populacjach gwiezdnych. Druga teoria wskazuje natomiast na pojedyncze, młode i wysoce magnetyczne gwiazdy neutronowe, zwane magnetarami, które mogą generować błyski na drodze gwałtownych procesów wewnętrznych, takich jak tzw. gwiezdne trzęsienia. W tym scenariuszu źródło może pojawić się stosunkowo szybko po wybuchu supernowej, bez długiego opóźnienia czasowego, co tłumaczyłoby obecność błysków w młodszych galaktykach karłowatych.\n\nUzyskane dzięki teleskopowi Webba wyniki niemal całkowicie wykluczają scenariusz związany z kolizją gwiazd neutronowych, wskazując na magnetary jako bardziej prawdopodobne źródło badanego błysku. Dodatkowo, tak odległe zjawisko posłużyło naukowcom jako unikalna latarka kosmiczna. Sygnał przemierzający miliardy lat świetlnych zarejestrował ślady materii i struktur napotkanych po drodze, co pozwoliło badaczom zbadać niewidoczną na co dzień kosmiczną sieć. W sygnale odkryto między innymi ślady wcześniej nieznanej gromady galaktyk oraz pobliskiej gromady w Pannie. Astronomowie wiążą duże nadzieje z przyszłymi obserwacjami, planując odkrywania kolejnych odległych błysków przy użyciu nowych instrumentów radiowych oraz niezastąpionego Teleskopu Webba.",
       "source": "NASA",
       "url": "https://science.nasa.gov/missions/webb/webb-measures-distance-to-farthest-fast-radio-burst-suggesting-origin/",
       "published_at": "2026-10-08T18:00:00+00:00",
       "full_text_used": true
     },
     {
-      "title": "SpaceX przejmuje licencje na pasmo częstotliwości z myślą o usługach komórkowych",
-      "summary": "SpaceX zakupiło licencje na niskopasmowe częstotliwości, co ma utorować drodze usłudze Starlink Mobile zostanie dużym operatorem komórkowym w USA. Firma planuje połączyć konstelację satelitarną z naziemną siecią telekomunikacyjną.",
-      "why_it_matters": "Krok ten przybliża SpaceX do bezpośredniej konkurencji z gigantami tradycyjnego rynku telekomunikacyjnego.",
-      "category": "AI i technologia",
-      "topics": [
-        "SpaceX",
-        "Starlink",
-        "komunikacja mobilna"
-      ],
-      "editorial_score": 9.85,
-      "digest_text": "Firma SpaceX zdobyła portfel licencji na niskopasmowe częstotliwości, co ma umożliwić jej usłudze Starlink Mobile przekształcenie się w znaczącego amerykańskiego operatora komórkowego. Po uzyskaniu zgody od Federalnej Komisji Łączności, firma zamierza wdrożyć nową architekturę łączącą satelitarną konstelację z naziemną siecią mobilną. Posunięcie to stawia SpaceX w bezpośredniej rywalizacji z takimi graczami jak T-Mobile, AT&T czy Verizon.\n\nPrzejęte licencje obejmują pasmo 800 MHz, co ma zapewnić sygnał zdolny do przenikania przez ściany budynków. Wcześniej SpaceX pozyskało również pasmo 2 GHz od firmy EchoStar w ramach rozwoju komunikacji bezpośrednio do urządzeń. Federalna Komisja Łączności zatwierdziła także plany umieszczenia na orbicie 15 000 satelitów Starlink Mobile drugiej generacji, które mają zaoferować wielokrotnie większą przepustowość niż obecna generacja. Według zapowiedzi firma ma ambicję dostarczania niezawodnej łączności zarówno wewnątrz budynków, jak i w dotychczasowych strefach martwych.",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/science/1008467/spacex-announces-plan-to-become-a-major-mobile-carrier",
-      "published_at": "2026-10-08T17:23:31-04:00",
-      "full_text_used": true
-    },
-    {
       "title": "Pentagon planuje transmisję na żywo z egzekucji przez rozstrzelanie",
-      "summary": "Amerykańskie ministerstwo obrony zapowiedziało, że egzekucja byłego majora armii USA skazanego za strzelaninę w Fort Hood będzie transmitowana publicznie. Decyzja ta wzbudziła kontrowersje prawne i etyczne.",
-      "why_it_matters": "Jest to bezprecedensowy krok w nowoczesnej historii USA, który wywołał ostrą debatę na temat granic przejrzystości i praw człowieka.",
+      "summary": "Amerykański Departament Obrony zapowiedział, że egzekucja byłego majora armii USA skazanego za strzelaninę w Fort Hood będzie transmitowana na żywo. Decyzja ta wzbudziła kontrowersje prawne oraz ostrą krytykę ze strony obrońców praw człowieka.",
+      "why_it_matters": "To bezprecedensowy krok w nowoczesnej historii USA, który wywołał poważną debatę na temat jawności kar śmierci i standardów etycznych.",
       "category": "Świat i geopolityka",
       "topics": [
         "egzekucja",
         "Pentagon",
-        "strzelanina",
-        "transmitowanie na żywo"
+        "livestream",
+        "prawo karne"
       ],
-      "editorial_score": 9.8,
-      "digest_text": "Sekretarz obrony USA Pete Hegseth ogłosił, że egzekucja Nidala Hasana, który w 2009 roku zastrzelił 13 nieuzbrojonych żołnierzy w bazie Fort Hood, zostanie publicznie ztransmitowana. Urzędnicy resortu obrony wskazują, że będzie to pierwsza egzekucja wojskowa w kraju od ponad 60 lat oraz pierwsze wykonanie kary śmierci przez rozstrzelanie od czasów drugiej wojny światowej. Planowana transmisja spotkała się z krytyką ze strony ekspertów prawnych, biura praw człowieka ONZ oraz polityków, którzy określili ten pomysł jako naruszający standardy i kontrowersyjny pod względem prawnym.\n\nZwolennicze głosy, w tym niektórych ocalałych z zamachu, wskazują na potrzebę sprawiedliwości i okazania prawdy rodzinom ofiar oraz osobom poszkodowanym. Choć egzekucja ma się odbyć na początku grudnia w Teksasie, prawnicy reprezentujący skazanych zauważają, że procesy apelacyjne nie zostały w pełni zakończone, co może wstrzymać wykonanie kary. Władze muszą również zmierzyć się z regulacjami dotyczącymi ograniczeń wiekowych dla widzów oraz kwestiami technicznymi związanymi z ewentualnym dostępem opinii publicznej do tak drastycznego materiału.",
+      "editorial_score": 10.2,
+      "digest_text": "Amerykański sekretarz obrony Pete Hegseth ogłosił, że egzekucja byłego majora armii USA Nidala Hasana ma być transmitowana na żywo w internecie. Plan ten, ogłoszony przez Pentagon, wzbudził ogromne kontrowersje prawne i międzynarodowe. Hasan w 2009 roku dokonał masowego morderstwa, strzelając do nieuzbrojonych żołnierzy w tłocznym budynku medycznym w bazie Fort Hood w Teksasie, w wyniku czego zginęło trzynaście osób. Władze wojskowe zdecydowały, że sprawca zostanie stracony przez pluton egzekucyjny, co byłoby pierwszą taką wojskową egzekucją od czasów II wojny światowej, a zarazem pierwszym w nowożytnej historii Stanów Zjednoczonych publicznym wykonaniem kary śmierci transmitowanym w sieci. Decyzja ta spotkała się z ostrą krytyką ze strony Biura Wysokiego Komisarza Narodów Zjednoczonych do spraw Praw Człowieka, które uznało transmisję za równoznaczną z publiczną egzekucją oraz naruszenie bezwzględnego zakazu stosowania tortur. Ponadto niektórzy amerykańscy politycy, w tym senator Chris Murphy, określili ten pomysł jako obrzydliwy i przywodzący na myśl metody stosowane przez ugrupowanie Państwo Islamskie. Z kolei niektórzy ocaleni z tamtego krwawego zamachu, jak były sierżant Alonzo Lunsford, wyrażali poparcie dla samej formy egzekucji jako adekwatnej do czynu, choć niektórzy z nich mieli wątpliwości co do samej dostępności transmisji dla szerokiej publiczności i jej wpływu na młodszych odbiorców. Lunsford zapowiedział jednak swoją obecność na miejscu, aby przed śmiercią sprawcy spojrzeć mu prosto w oczy. Pentagon poinformował, że egzekucja została zaplanowana na trzeciego grudnia w bazie Fort Hood, a zgodę na nią wydał prezydent Donald Trump po rekomendacji sekretarza obrony. Cała procedura wymaga jednak przejścia odpowiednich procesów odwoławczych, a prawnicy zajmujący się sprawą wskazują, że obrońcy skazanego najprawdopodobniej będą szukać drogi w sądach federalnych, co mogłoby wstrzymać wykonanie wyroku, czyniąc całe przedsięwzięcie mało prawdopodobnym do zrealizowania w zapowiadanym terminie. Eksperci prawa konstytucyjnego i karności podkreślają, że chociaż wiele amerykańskich stanów dopuszcza obecność świadków i dziennikarzy na egzekucjach, nigdy wcześniej nie decydowano się na publiczny przekaz medialny na żywo. Kwestia ta rodzi szereg pytań natury prawnej, regulacyjnej oraz etycznej, w tym problem ochrony nieletnich przed dostępem do takdrastycznych treści, ponieważ obowiązujące przepisy wojskowe zabraniają osobom poniżej osiemnastego roku życia oglądania egzekucji. Choć poparcie dla kary śmierci w Stanach Zjednoczonych utrzymuje się na stosunkowo wysokim poziomie i odnotowało wzrost w ostatnich latach, plany administracji związane z transparentnością tego procesu wywołały debatę na temat granic ujawniania metod egzekucyjnych stosowanych przez państwo.",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cmy0r96xygx6o?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-09T09:29:52+00:00",
       "full_text_used": true
     },
     {
-      "title": "Google wprowadza agentową sztuczną inteligencję do platformy Gemini",
-      "summary": "Google integruje z platformą Gemini nowe funkcje agenta AI, który potrafi planować zadania i współpracować w aplikacjach biznesowych. Technologia ta ma początkowo wspierać firmy w automatyzacji pracy.",
-      "why_it_matters": "To ważny krok w ewolucji asystentów AI z narzędzi konwersacyjnych w systemy zdolne do samodzielnego wykonywania złożonych zadań.",
+      "title": "Teleskop SPHEREx bada atmosfery brązowych karłów",
+      "summary": "Kosmiczny teleskop NASA SPHEREx rzuca nowe światło na brązowe karły, ujawniając ich bogate chemicznie atmosfery. Analiza kilkudziesięciu takich obiektów pozwala naukowcom lepiej zrozumieć ich naturę i ewolucję.",
+      "why_it_matters": "Odkrycia pomagają poznać właściwości ciał niebieskich łączących cechy gwiazd i planet oraz testować modele astrofizyczne.",
+      "category": "Kosmos",
+      "topics": [
+        "SPHEREx",
+        "brązowe karły",
+        "astronomia",
+        "NASA"
+      ],
+      "editorial_score": 10.15,
+      "digest_text": "Kosmiczny teleskop SPHEREx należący do amerykańskiej agencji kosmicznej NASA rzuca nowe światło na brązowe karły, czyli niezwykłe obiekty niebieskie, które wymykają się jednoznacznemu podziałowi na gwiazdy oraz egzoplanety. Opublikowane na łamach czasopisma naukowego The Astrophysical Journal nowe wyniki badań wskazują, że te ciemne i pokryte chmurami ciała posiadają bogate chemicznie atmosfery, które wykazują duże podobieństwo do atmosfer gazowych olbrzymów znajdujących się w naszym własnym układzie słonecznym. Brązowe karły zostały po raz pierwszy odkryte w latach dziewięćdziesiątych dwudziestego wieku. Podobnie jak tradycyjne gwiazdy, formują się one w wyniku zapadania się gigantycznych obłoków gazu, jednak ich masa jest niewystarczająca do tego, aby w ich jądrach mogły zajść i utrzymać się stabilne reakcje syntezy jądrowej wodoru. Te słabo świecące kule rozgrzanego gazu dzielą również wiele cech charakterystycznych z Jowiszem oraz Saturnem. W przeciwieństwie do większości znanych planet, brązowe karły zazwyczaj samotnie drfują w kosmicznej ciemności, nie są kontrolowane przez żadną gwiazdę macierzystą i czerpią ciepło wyłącznie z procesów zachodzących w ich wnętrzu. Naukowcy zajmujący się tymi obiektami zwracają uwagę na ich niezależny i odosobniony charakter, ponieważ przemierzają one przestrzenie kosmiczne zupełnie same i z biegiem czasu powoli gasną w nieskończoności, co sprawia, że badacze wciąż poznają ich złożoną naturę.\n\nDo tej pory zaledwie kilkadziesiąt takich tak zwanych ciemnych wędrowców zostało dokładnie zbadanych za pomocą teleskopów kosmicznych. Astronomowie od dawna chcą obserwować większą liczbę takich obiektów w ich naturalnym środowisku, ponieważ dotychczasowa wiedza na temat ich budowy chemicznej, burzliwej natury oraz ewolucji opierała się w dużej mierze na modelach teoretycznych. Sytuacja ta zmienia się dzięki teleskopowi podczerwonemu SPHEREx, który został wystrzelony w marcu dwa tysiące dwudziestego piątego roku, a jego misją zarządza należące do NASA Laboratorium Napędu Odrzutowego w Kalifornii. Autorzy najnowszego badania przeanalizowali dane zebrane przez ten teleskop dla trzydziestu siedmiu pobliskich brązowych karłów, które obejmują pełny zakres temperatur typowy dla tych obiektów, czyli od około czterech tysięcy stopni Fahrenheita do minus dziesięciu stopni Fahrenheita. Teleskop ten mierzy jasność obserwowanych obiektów w stu dwóch różnych barwach, począwszy od najgłębszych odcieni czerwieni widocznych dla ludzkiego oka, aż po niewidzialne dla nas ciepło światła podczerwonego, tworząc w ten sposób pełne widmo światła.\n\nUzyskane w ten sposób widma wykazały obecność bogatych chemicznie atmosfer, w których znajdują się takie substancje jak woda, dwutlenek węgla, tlenek węgla oraz metan. Badacze rejestrują sygnatury tych cząsteczek oraz obserwują, w jaki sposób zmieniają się one pomiędzy poszczególnymi obiektami w całym zakresie temperatur. Mimo że omówione badanie skupiało się na zaledwie trzech tuzinach obiektów, naukowcy analizują już tysiące kolejnych brązowych karłów, aby sprawdzić, jakie ograniczenia wszechświat nakłada na ich różnorodność. Praca z orbity pozwala teleskopowi SPHEREx rejestrować długości fal światła, które są praktycznie niemożliwe do zarejestrowania przez teleskopy naziemne, ponieważ para wodna znajdująca się w ziemskiej atmosferze skutecznie je pochłania. Dzięki temu instrument potrafi wychwycić światło pochodzące z głębokich, czerwonych chmur brązowych karłów znajdujących się w różnych zakątkach nieba.\n\nPoszukiwanie brązowych karłów stanowi w dużej mierze poboczny projekt dla teleskopu SPHEREx, który każdego dnia wykonuje około trzech tysięcy sześciuset unikalnych zdjęć w celu stworzenia mapy całego nieba. Dokładne poznanie rozmieszczenia setek milionów galaktyk w kosmosie pomoże naukowcom w odtworzeniu procesów, które zaszły we wczesnej fazie po wielkim wybuchu. Podczas skanowania nieba teleskop poszukuje również chemicznych składników niezbędnych do powstania życia oraz bada lód międzygwiezdny, który w przyszłości może zasilić oceany na odległych światach. Przez wiele lat brązowe karły były wykrywane przez inne obserwatoria, w tym kosmiczny teleskop Jamesa Webba oraz wycofany już z eksploatacji teleskop Spitzera. Jednak dzięki unikalnemu pokryciu spektralnemu SPHEREx po raz pierwszy fotografuje tysiące takich obiektów w obszarze widma elektromagnetycznego obejmującym głęboką czerwień i podczerwień. W tym zakresie długości fal cząsteczki chemiczne pozostawiają wyraźne wzorce absorpcyjne w świetle uchodzącym w przestrzeń kosmiczną, a wzorce te ulegają zmianie w miarę starzenia się i stygnięcia brązowych karłów.\n\nCzęść obserwowanych obiektów znajduje się w dynamicznym etapie swojego życia, podczas którego ich egzotyczne chmury ulegają rozrzedzeniu, ustępując miejsca atmosferom bogatym w metan. Nowoczesne modele teoretyczne potrafią uchwycić ogólne trendy chemiczne, jednak w przypadku tych skomplikowanych przemian związanych z zachmurzeniem napotykają na trudności w dokładnym dopasowaniu do zebranych danych. Okazuje się, że żaden brązowy karół nie jest taki sam, a ich widma wyglądają zupełnie odmiennie nawet wtedy, gdy obiekty te posiadają zbliżoną temperaturę. Odkrycia te stanowią wezwanie do dalszych badań nad tymi ciemnymi światami oraz pokazują, jak wielkim wyzwaniem jest zrozumienie zachodzących w nich zjawisk meteorologicznych, które okazują się równie skomplikowane do przewidzenia jak pogoda na Ziemi. Misja SPHEREx jest zarządzana przez Laboratorium Napędu Odrzutowego, a dane z teleskopu są powszechnie dostępne dla naukowców oraz opinii publicznej.",
+      "source": "NASA",
+      "url": "https://www.nasa.gov/missions/spherex/nasas-spherex-telescope-sees-menagerie-of-brown-dwarfs/",
+      "published_at": "2026-10-08T18:22:48+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "SpaceX planuje zostać głównym operatorem komórkowym",
+      "summary": "Firma SpaceX przejęła licencje na pasma radiowe małej częstotliwości, co ma umożliwić usługom Starlink Mobile konkurowanie z tradycyjnymi operatorami telekomunikacyjnymi. Nowa architektura połączy sieć satelitarną z naziemną infrastrukturą komórkową.",
+      "why_it_matters": "Posunięcie to może zmienić rynek telekomunikacyjny w USA, wprowadzając bezpośrednią konkurencję dla gigantów takich jak AT&T, T-Mobile czy Verizon.",
+      "category": "AI i technologia",
+      "topics": [
+        "SpaceX",
+        "Starlink Mobile",
+        "telekomunikacja",
+        "widmo radiowe"
+      ],
+      "editorial_score": 10.1,
+      "digest_text": "Firma SpaceX ogłosiła plany przekształcenia się w znaczącego amerykańskiego operatora komórkowego za sprawą pozyskania portfela licencji na częstotliwości niskiego pasma. Krok ten ma utorować drogę usłudze Starlink Mobile do bezpośredniej rywalizacji z dotychczasowymi gigantami rynkowymi, takimi jak T-Mobile, AT&T oraz Verizon. Przedsięwzięcie wejdzie w życie w pełnym zakresie po tym, jak Federalna Komisja Łączności zatwierdzi sfinalizowaną transakcję. Wówczas SpaceX wdroży nowatorską architekturę łączącą konstelację satelitarną przeznaczoną do komunikacji bezpośrednio z urządzeniami mobilnymi z naziemną siecią komórkową. Pozyskane licencje obejmują maksymalnie 14 megahertzów pasma sparowanego w zakresie 800 MHz. Według zapowiedzi SpaceX częstotliwości te zagwarantują sygnał zdolny do bezproblemowego przenikania przez ściany budynków, co ma kluczowe znaczenie dla wygody użytkowania w warunkach indoorowych. Wcześniej firma zabezpieczyła również widmo w zakresie 2 GHz od spółki EchoStar, co stanowiło istotny element szerszych działań mających na celu wzmocnienie usług bezpośredniej łączności z urządzeniami końcowymi. Plany te uzupełnia zatwierdzenie przez amerykańskiego regulatora rozmieszczenia 15 tysięcy satelitów Starlink Mobile drugiej generacji. Zgodnie z oficjalnymi deklaracjami firmy nowa konstelacja zapewni ponad stukrotnie większą przepustowość pasma w porównaniu do urządzeń generacji obecnej. Kombinacja niedawno przejętego widma niskopasmowego oraz satelitów nowej generacji sprawi, że Starlink Mobile stanie się pierwszym operatorem sieciowym dysponującym zarówno częstotliwościami satelitarnymi, jak i naziemnymi. W ten sposób powstanie jedna zintegrowana sieć zdolna do dostarczania niezawodnych usług amerykańskim użytkownikom niezależnie od tego, czy przebywają na otwartej przestrzeni, wewnątrz budynków, w obszarach całkowicie pozbawionych tradycyjnego zasięgu komórkowego, czy w jakimkolwiek innym miejscu. Całe przedsięwzięcie ma fundamentalnie zmienić krajobraz amerykańskiego rynku telekomunikacyjnego poprzez zniesienie barier dotychczas podziału na łączność naziemną i satelitarną.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/science/1008467/spacex-announces-plan-to-become-a-major-mobile-carrier",
+      "published_at": "2026-10-08T17:23:31-04:00",
+      "full_text_used": true
+    },
+    {
+      "title": "NASA i Departament Energii rozwijają technologii jądrowe dla kosmosu",
+      "summary": "NASA oraz U.S. Department of Energy podpisaly porozumienie w sprawie rozwoju technologii jądrowych do eksploracji kosmosu. Współpraca ma na celu przyspieszenie misji głębokiego kosmosu oraz wsparcie stałej obecności ludzi na Księżycu i Marsie.",
+      "why_it_matters": "Inicjatywa ta wyznacza nowy rozdział w technologii kosmicznej, umożliwiając realizację długoterminowych misji załogowych na Księżyc i w głąb Układu Słonecznego.",
+      "category": "Kosmos",
+      "topics": [
+        "energia jądrowa",
+        "NASA",
+        "Departament Energii",
+        "eksploracja kosmosu"
+      ],
+      "editorial_score": 10.0,
+      "digest_text": "NASA oraz Departament Energii Stanów Zjednoczonych połączyły siły, aby przyspieszyć rozwój bezpiecznych i niezawodnych technologii jądrowych nowej generacji przeznaczonych do eksploracji przestrzeni kosmicznej. Wspólne działania obu agencji mają na celu zrewolucjonizowanie cywilnych misji kosmicznych, umożliwienie prowadzenia ambitnych badań naukowych oraz ugruntowanie amerykańskiej pozycji lidera w dziedzinie kosmicznej energetyki i napędów jądrowych. Przedstawiciele obu instytucji podkreślają, że wkroczyli w nową erę, w której energia jądrowa pozwoli na pokonywanie większych odległości, dłuższe działanie oraz wykorzystanie bardziej zaawansowanych statków kosmicznych i instrumentów badawczych niż dotychczas. Nowe porozumienie o współpracy, zatytułowane „Przyspieszenie amerykańskiego przywództwa w dziedzinie kosmicznej energetyki i napędów jądrowych”, ustanawia formalne ramy dla kompleksowego współdziałania. Umowa ta obejmuje całe spektrum rozwoju technologii jądrowych dla przestrzeni kosmicznej, poczynając od zaawansowanych badań naukowych i produkcji paliwa, aż po rygorystyczne testy, integrację z rakietami nośnymi oraz operacje na orbicie i ciałach niebieskich, przy czym absolutnym priorytetem pozostaje niezmiennie kwestia bezpieczeństwa.\n\nDokument ten został podpisany w Waszyngtonie przez administratora NASA Jareda Isaacmana oraz sekretarza energii USA Chrisa Wrighta podczas szczytu poświęconego nowej erze w nauce. Porozumienie to stanowi bezpośrednią odpowiedź na grudniowe zarządzenie wykonawcze prezydenta Trumpa dotyczące zapewnienia amerykańskiej dominacji w przestrzeni kosmicznej, które zobowiązuje NASA do opracowania gotowego do wystrzelenia reaktora przeznaczonego na powierzchnię Księżyca do 2030 roku. Nowa umowa wzmacnia dotychczasowe wysiłki podejmowane wspólnie przez obie agencje w obszarze systemów rozszczepialnych oraz zasilania radioizotopowego, co ma kluczowe znaczenie dla realizacji wizji stałej obecności ludzi na Srebrnym Globie oraz przygotowania przyszłych misji marsjańskich.\n\nKluczowym momentem w przejściu od badań laboratoryjnych do praktycznego zastosowania napędów jądrowych w głębokim kosmosie będzie planowany na 2028 rok start misji Space Reactor-1 Freedom. Zaraz po niej ma nastąpić wdrożenie projektu Lunar Reactor-1, czyli systemu zasilania opartego na rozszczepieniu jądrowym, który ma zapewnić stabilne źródło energii dla przyszłej bazy księżycowej, działającej również w warunkach braku światła słonecznego i w głębokich cieniach. Energia jądrowa ma zasilać tamtejsze siedliska, systemy łączności, instrumenty badawcze, łziki, instalacje służące do wykorzystania zasobów na miejscu oraz całą kluczową infrastrukturę, a także sprostać ogromnym wymaganiom energetycznym dalekich wypraw w kierunku Marsa. Oba te programy mają stworzyć fundament pod krajową bazę przemysłową sektora jądrowo-kosmicznego.\n\nPoza technologiami opartymi na rozszczepieniu, NASA kontynuuje rozwój i wykorzystanie systemów zasilania radioizotopowego. Przykładem jest misja Dragonfly, której celem jest eksploracja Tytana, czyli księżyca Saturna. Start tej misji zaplanowano na 2028 rok, a wieloogniwowy generator termoelektryczny oraz grzejniki radioizotopowe mają zapewnić zasilanie i odpowiednią temperaturę dla sporawej wielkości bezzałogowego statku latającego, który będzie badał potencjalną zdatność tego obiektu do zamieszkania. Ponadto, amerykańskie agencje planują wesprzeć misję Europejskiej Agencji Kosmicznej Rosalind Franklin, dostarczając miniaturowe grzejniki radioizotopowe, które pomogą utrzymać odpowiednią temperaturę instrumentów naukowych łazika badającego Czerwoną Planetę w ekstremalnie niskich temperaturach panujących w tamtejszym środowisku.",
+      "source": "NASA",
+      "url": "https://www.nasa.gov/news-release/nasa-energy-department-advance-new-era-of-nuclear-powered-exploration/",
+      "published_at": "2026-10-08T15:46:25+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Google wprowadza agentową sztuczną inteligencję do systemów Gemini",
+      "summary": "Google przekształca model Gemini w system sztucznej inteligencji zdolny do samodzielnego planowania i wykonywania zadań w aplikacjach biznesowych. W pierwszej kolejności rozwiązanie to trafi do firm, oferując własną tożsamość w miejscu pracy i integrację z zewnętrznymi platformami.",
+      "why_it_matters": "To ważny krok w kierunku autonomicznych systemów AI, które nie tylko odpowiadają na pytania, ale również przejmują realizację złożonych procesów w środowisku pracy.",
       "category": "Biznes i startupy",
       "topics": [
-        "Google",
-        "Gemini",
-        "agentic AI"
+        "Google Gemini",
+        "Agentic AI",
+        "automatyzacja",
+        "narzędzia biznesowe"
       ],
-      "editorial_score": 9.7,
-      "digest_text": "Podczas wydarzenia poświęconego chmurze Google zaprezentowało przekształcenie swojego systemu Gemini w zaawansowanego agenta sztucznej inteligencji. Nowe narzędzie potrafi nie tylko odpowiadać na pytania użytkowników, ale również planować i wykonywać złożone zadania w różnych aplikacjach biznesowych, delegować pracę do podagentów oraz korzystać z modeli pochodzących od zewnętrznych dostawców, takich jak Anthropic.\n\nFirma zdecydowała się wdrożyć rozwiązanie najpierw w segmencie biznesowym, co ma pozwolić na rozwiązanie kwestii związanych z bezpieczeństwem i skalowalnością. Sztuczna inteligencja zyska własną tożsamość w środowisku pracy, w tym adres e-mail i kontekst działań, co ułatwi jej integrację z popularnymi platformami biurowymi i narzędziami komunikacyjnymi. Z nowego systemu korzystają już w fazie testów znane przedsiębiorstwa, a Google zapowiada elastyczne opcje rozliczeniowe, które mają pomóc firmom w kontroli kosztów.",
+      "editorial_score": 9.95,
+      "digest_text": "Podczas czwartkowego wydarzenia Google Cloud firma ogłosiła wprowadzenie sztucznej inteligencji Gemini w nową erę agentową, prezentując zunifikowanego agenta potrafiącego nie tylko odpowiadać na pytania, ale także samodzielnie wykonywać powierzone zadania w imieniu użytkownika z poziomu jednego interfejsu. Krok ten wpisuje się w szerszy trend rynkowy, w ramach którego narzędzia AI przestają być wyłącznie doświadczeniami konwersacyjnymi, a zaczynają przejmować odpowiedzialność za realizację celów, generowanie kodu, planowanie spotkań czy rezerwowanie podróży. Nowość ta pojawia się niedługo po debiucie konsumenckich agentów takich jak Meta Muse oraz rozwiązań opartych na komunikatorach, a także po niedawnym wprowadzeniu przez ChatGPT funkcji nazwanej Dots. Google ma jednak duże szanse na osiągnięcie dużej skali swoich agentowych działań, ponieważ – jak zauważył na początku konferencji dyrektor generalny Sundar Pichai – z Gemini korzysta obecnie ponad miliard aktywnych użytkowników miesięcznie, a blisko dziewięćdziesiąt procent firm z zestawienia Fortune 100 wykorzystuje w swojej pracy pakiet Gemini Enterprise. Ze względu na tak szeroką adopcję w świecie korporacyjnym, Google postanowiło skupić się w pierwszej kolejności na udostępnieniu nowego agenta przedsiębiorstwom, a dopiero w dalszej kolejności zaoferować go klientom indywidualnym. Zdaniem Pichaia pozwoli to firmie uporać się z trudniejszymi problemami dotyczącymi bezpieczeństwa, skali oraz wydajności, które nieodłącznie wiążą się z wdrażaniem tak potężnych systemów. Prezes Google Cloud, Thomas Kurian, wyjaśnił, że nowemu agentowi można powierzać całe cele, a nie tylko pojedyncze instrukcje, co oznacza, że potrafi on samodzielnie zaplanować pracę, wykorzystać niestandardowe umiejętności i narzędzia oraz połączyć się z wewnętrznymi systemami firmowymi. Domyślnie sztuczna inteligencja sama dobiera najlepszy model do wykonania konkretnego zadania, jednak użytkownicy mogą przejąć kontrolę i ręcznie wybrać model, w tym rozwiązania firm trzecich, zaczynając od modeli Claude tworzonych przez firmę Anthropic. Google zapowiedziało, że w przyszłości selektor modeli zostanie rozszerzony również o modele otwartoźródłowe oraz inne rozwiązania prywatne. Zgłaszane do agenta żądania mogą zawierać załączniki w postaci plików, folderów czy projektów przygotowanych z myślą o konkretnych procesach roboczych. Nowe narzędzie potrafi integrować się z danymi i systemami korporacyjnymi, takimi jak Google Workspace, Microsoft 365, Slack, Jira, Confluence, Git, BigQuery, Databricks, Postgres czy Snowflake, a także bezpiecznie współpracować z dowolnym serwerem protokołu kontekstu modeli znajdującym się w sieci firmy lub poza nią. Użytkownicy mogą na bieżąco monitorować działania podejmowane przez Gemini za pośrednictwem specjalnego interfejsu skrzynki zadań, w którym widać proces myślowy sztucznej inteligencji, delegowanie zadań do subagentów, ładowanie unikalnych umiejętności, kod oraz postępy w realizacji prac. Co istotne, sztuczna inteligencja otrzymuje własne konto w usłudze Workspace, funkcjonując w organizacji dokładnie tak, jak każdy inny współpracownik, co oznacza, że dysponuje własnym adresem e-mail oraz unikalnym kontekstem sytuacyjnym. Agent wie, kto w firmie należy do jakiego zespołu, w jakich strefach czasowych pracują poszczególne osoby, kto musi zatwierdzać dokumenty oraz co znajduje się w kalendarzach pracowników. Użytkownicy mogą wchodzić z nim w interakcję poprzez oznaczanie go, wysyłanie wiadomości e-mail, udostępnianie materiałów lub włączanie do grupowej konwersacji. W trakcie podejmowania działań system tworzy ścieżkę audytu przypisaną bezpośrednio do agenta, a nie do konkretnego człowieka. Dostęp do nowego narzędzia zapewniono poprzez urządzenia mobilne z systemami iOS i Android, komputery z systemami Windows i Mac, interfejs wiersza poleceń oraz aplikacje Google Workspace, Microsoft 365, ServiceNow i Slack. W gronie wczesnych testerów znalazły się takie marki i podmioty jak On, Shopify oraz PayPal, natomiast na liście klientów korzystających z pakietu Gemini Enterprise figurują duże przedsiębiorstwa pokroju BNP Paribas, Bradesco, Merck, Orange Spain, Santee Cooper, SOMPO, Ulta Beauty czy Wesfarmers. Google poinformowało również, że wprowadzenie elastycznych opcji wydatków, obejmujących orkiestrację wielu modeli, inteligentne routowanie oraz limity budżetowe w czasie rzeczywistym, pomoże firmom w lepszej kontroli kosztów ponoszonych na korporacyjną sztuczną inteligencję.",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
       "published_at": "2026-10-08T18:18:00+00:00",
       "full_text_used": true
     },
     {
-      "title": "Nie żyje Margaret Hamilton. Jej oprogramowanie pomogło wylądować Apollo 11 na Księżycu",
-      "summary": "Margaret Hamilton, pionierka informatyki i liderka zespołu tworzącego oprogramowanie dla misji Apollo, zmarła w wieku 90 lat. Jej wkład w inżynierię oprogramowania został w 2016 roku uhonorowany Prezydenckim Medalem Wolności.",
-      "why_it_matters": "Odeszła postać kluczowa dla historii eksploracji kosmosu i narodzin nowoczesnej inżynierii oprogramowania.",
-      "category": "Nauka",
-      "topics": [
-        "Margaret Hamilton",
-        "NASA",
-        "Apollo 11",
-        "programowanie"
-      ],
-      "editorial_score": 9.5,
-      "digest_text": "Zmarła Margaret Hamilton, wybitna informatyczka, której pionierskie badania pomogły amerykańskim astronautom bezpiecznie wylądować na Księżycu. O śmierci 90-letniej badaczki poinformował Massachusetts Institute of Technology, podając, że odeszła 30 września. Hamilton kierowała zespołem w MIT, który napisał i przetestował oprogramowanie pokładowe dla misji Apollo 11. To właśnie w tej dywizji ukuwano pojęcie inżynierii oprogramowania, a sama Hamilton była pierwszą programistką i kobietą zatrudnioną w tym zespole. Podczas historycznego lądowania w 1969 roku komputery pokładowe zostały przeciążone, jednak dzięki zaprojektowanemu przez jej zespół systemowi priorytetów zadania w tle zostały wygaszone, ustępując miejsca kluczowemu lądowaniu. W 2016 roku prezydent Barack Obama odznaczył ją Prezydenckim Medalem Wolności, podkreślając jej symboliczny wkład w wysłanie ludzkości w kosmos. W późniejszych latach Hamilton założyła własne firmy technologiczne, a jej dziedzictwo pozostaje inspiracją dla kolejnych pokoleń inżynierów.",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx5yn46j41zpo?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-10-08T05:10:40+00:00",
-      "full_text_used": true
-    },
-    {
-      "title": "Wspierana przez Nvidię firma Firmus rezygnuje z debiutu giełdowego",
-      "summary": "Firma Firmus zajmująca się centrami danych dla sztucznej inteligencji odwołała plany wejścia na giełdę. Decyzję motywowano zmiennością rynkową oraz rosnącymi obawami inwestorów co do wycen spółek AI.",
-      "why_it_matters": "Rezygnacja z IPO odzwierciedla rosnący sceptyzm inwestorów wobec setek miliardów dolarów pompowanych w infrastrukturę AI.",
-      "category": "Finanse i inwestowanie",
-      "topics": [
-        "AI",
-        "giełda",
-        "centra danych",
-        "inwestycje"
-      ],
-      "editorial_score": 9.45,
-      "digest_text": "Spółka Firmus, budująca chłodzone cieczą centra danych na potrzeby sztucznej inteligencji, porzuciła plany przeprowadzenia jednej z największych ofert publicznych na giełdzie w Australii. Wyceniana wstępnie na ponad 30 miliardów dolarów firma wskazała na niedawną zmienność rynkową oraz panujące warunki jako powód rezygnacji z debiutu, uznając go za sprzeczny z interesem akcjonariuszy. W gronie wspierających firmę podmiotów znajdują się giganci tacy jak Nvidia, Blackstone oraz Jane Street. Decyzja ta pojawia się w momencie, gdy rosną obawy inwestorów i analityków odnośnie gigantycznych nakładów finansowych na sztuczną inteligencję przy wciąż niepewnych zwrotach z inwestycji. Część instytucji finansowych i funduszy emerytalnych otwarcie krytykowała wycenę spółki oraz ryzyko nadmiernego zadłużenia potrzebnego do dalszego wzrostu. Firma zapowiedziała, że zamiast tego będzie szukać kapitału na rynkach prywatnych.",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck9dzpw4ll8po?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-10-09T07:14:30+00:00",
-      "full_text_used": true
-    },
-    {
-      "title": "Anthropic uruchamia darmowe skany bezpieczeństwa AI dla projektów open-source",
-      "summary": "Firma Anthropic wprowadziła nową usługę OSS Scanner, oferującą okresowe i automatyczne audyty bezpieczeństwa dla projektów o otwartym kodzie źródłowym. Raporty są generowane przez najsilniejsze modele sztucznej inteligencji bez udziału człowieka.",
-      "why_it_matters": "To nowe narzędzie może przyspieszyć wykrywanie luk w oprogramowaniu, choć generowane przez AI raporty mogą czasem zawierać błędy.",
-      "category": "AI i technologia",
-      "topics": [
-        "Anthropic",
-        "open-source",
-        "cyberbezpieczeństwo"
-      ],
-      "editorial_score": 9.45,
-      "digest_text": "Anthropic zaoferował twórcom oprogramowania open-source wsparcie w wykrywaniu luk w zabezpieczeniach za pomocą nowej usługi nazwanej OSS Scanner. Projekty, które zdecydują się na udział w programie, zyskają dostęp do dokładnych i cyklicznych skanów bezpieczeństwa wykonywanych przez najbardziej zaawansowane modele firmy, takie jak Claude Mythos, zupełnie bezpłatnie. Nowe narzędzie ma zapewnić otwartemu oprogramowaniu większą przewagę obronną poprzez szybsze i częstsze raportowanie potencjalnych zagrożeń. Twórcy zastrzegają jednak, że raporty będą w pełni generowane przez modele, bez wcześniejszej weryfikacji czy triażu przez ludzi. Taki model działania pozwala na natychmiastowe dostarczanie informacji, ale niesie ze sobą ryzyko pojawienia się błędnych lub nieprawidłowych zgłoszeń. Narzędzie to wpisuje się w szerszy trend wykorzystania sztucznej inteligencji do wyszukiwania błędów w kodzie, z którym mierzy się obecnie wiele projektów programistycznych.",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
-      "published_at": "2026-10-08T17:53:51-04:00",
-      "full_text_used": true
-    },
-    {
-      "title": "Szczepienie przeciwko HPV przed ciążą a ryzyko przedwczesnego porodu",
-      "summary": "Zaszczepienie się przeciwko wirusowi HPV przed zajściem w ciążę wiąże się z mniejszym ryzykiem przedwczesnego porodu oraz innych powikłań. Doniesienia te przybliża serwis Alert Medyczny.",
-      "why_it_matters": "Profilaktyka zdrowotna w postaci szczepień przeciwko HPV może przynosić wymierne korzyści także w kontekście przebiegu przyszłej ciąży.",
-      "category": "Zdrowie",
-      "topics": [
-        "HPV",
-        "szczepienia",
-        "ciąża",
-        "profilaktyka medyczna"
-      ],
-      "editorial_score": 9.45,
-      "digest_text": "Zgodnie z informacjami przekazanymi przez Alert Medyczny, szczepienie przeciwko ludzkiemu wirusowi brodawczaka przed zajściem w ciążę przekłada się na mniejsze ryzyko wystąpienia przedwczesnego porodu oraz związanych z tym powikłań medycznych. Profilaktyka ta odgrywa istotną rolę w ochronie zdrowia kobiet, a nowe wnioski wskazują na jej dodatkowe znaczenie w kontekście planowania rodziny i bezpiecznego przebiegu ciąży.",
-      "source": "Alert Medyczny",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNalVOcHREOXhlR2swYndvSXFtelZzejlSSW9sNm5DZUZaZDZvTG5UU3kyQzJMM1lTdnJaN215cFVTbnJyZXRRaUFaRVdpc2tYNU9JSzNFM3djNHdseG43eTJqNG1UVU5YeG9JcHZYMGJoY0x5YTVsWGdldUJLbGNpRF95aFhHQ0daeld3blprU1hDd1RxTS1FUlR2RVlqalVEUUtUWTdYeVlSTjhlOWVFdDJR?oc=5",
-      "published_at": "2026-10-08T22:52:50+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "Byli pracownicy OpenAI twierdzą, że zostali zwolnieni za przedkładanie bezpieczeństwa nad zysk",
-      "summary": "Trzej zwolnieni badacze OpenAI twierdzą, że stracili pracę przez zgłaszanie obaw dotyczących bezpieczeństwa sztucznej inteligencji. Firma odpiera zarzuty, utrzymując, że doszło do poważnego naruszenia procedur i poufnych informacji.",
-      "why_it_matters": "Sprawa pogłębia debatę nad kulturą bezpieczeństwa i priorytetami wiodących laboratoriów sztucznej inteligencji.",
+      "title": "Byli pracownicy OpenAI twierdzą, że zostali zwolnieni za stawianie na bezpieczeństwo",
+      "summary": "Trzej byli badacze OpenAI utrzymują, że zostali zwolnieni z powodu podnoszenia kwestii bezpieczeństwa sztucznej inteligencji. Firma twierdzi jednak, że przyczyną było niewłaściwe obchodzenie się z poufnymi informacjami.",
+      "why_it_matters": "Konflikt rzuca światło na napięcia między szybkimi zyskami korporacyjnymi a etyką i bezpieczeństwem rozwoju zaawansowanej sztucznej inteligencji.",
       "category": "AI i technologia",
       "topics": [
         "OpenAI",
         "bezpieczeństwo AI",
         "zwolnienia",
-        "etyka technologiczna"
+        "etyka sztucznej inteligencji"
       ],
-      "editorial_score": 9.25,
-      "digest_text": "Trzej byli pracownicy OpenAI, zajmujący się kwestiami bezpieczeństwa i tzw. alignmentu systemów sztucznej inteligencji, opublikowali list otwarty, w którym twierdzą, że zostali zwolnieni z powodu podnoszenia kwestii bezpieczeństwa. Mikita Balesni, jeden z autorów listu, napisał w mediach społecznościowych, że jego zdaniem zwolnienie nastąpiło w wyniku przedkładania bezpieczeństwa nad krótkoterminowe interesy korporacji. Obok niego dokument podpisali także Tomek Korbak i Jasmine Wang.\n\nPrzedstawiciele OpenAI zdecydowanie odrzucają te oskarżenia. W notatce rozesłanej przez kadrę kierowniczą badań podkreślono, że decyzja o zwolnieniu pracowników nie miała związku z podnoszeniem kwestii bezpieczeństwa ani zabieraniem głosu w debacie publicznej. Firma twierdzi, że wewnętrzne dochodzenie wykazało istotne naruszenie zaufania oraz niewłaściwe obchodzenie się z poufnymi informacjami poza ustalonymi procedurami.\n\nSprawa wywołała szerszą dyskusję w środowisku branżowym na temat napięć między szybkim rozwojem technologicznym a kontrolą ryzyka. Korbak wskazywał wcześniej na trudności w monitorowaniu sposobu myślenia zaawansowanych agentów AI. Tymczasem kierownictwo OpenAI zapowiada sfinalizowanie kontraktów z niezależnymi zewnętrznymi asesorami ds. bezpieczeństwa, których szczegóły mają zostać wkrótce ogłoszone.",
+      "editorial_score": 9.7,
+      "digest_text": "Trójka byłych pracowników OpenAI, którzy zajmowali się kwestiami bezpieczeństwa i dostosowywania sztucznej inteligencji, twierdzi, że zostali zwolnieni z pracy w odwecie za podnoszenie trudnych kwestii dotyczących bezpieczeństwa rozwijanych technologii. Mikita Balesni, Tomek Korbak oraz Jasmine Wang opublikowali otwarty list skierowany do kierownictwa firmy, w którym argumentują, że ich odejście miało związek z przedkładaniem kwestii bezpieczeństwa nad krótkoterminowe korporacyjne interesy przedsiębiorstwa. Kwestia dostosowania, czyli alignment, polega na wdrażaniu ludzkich zasad moralnych do systemów sztucznej inteligencji, aby działały one w sposób zgodny z ludzkimi wartościami. Według autorów listu zwolnienia te wywołały w firmie atmosferę strachu, przez co obecni pracownicy mogą obawiać się otwartego wyrażania opinii i podejmowania działań, które do niedawna stanowiły standardową część codziennej pracy w tej organizacji. Przedstawiciele OpenAI przedstawiają jednak zupełnie inną wersję wydarzeń i odpierają te oskarżenia. Rzecznik firmy oraz liderzy zespołu badawczego poinformowali w oficjalnych oświadczeniach, że decyzje o rozwiązaniu umów z tymi osobami zapadły w wyniku wewnętrznego dochodzenia. Badanie to miało rzekomo wykazać poważne naruszenie zasad poufności oraz niewłaściwe obchodzenie się z wrażliwymi informacjami poza ustalonymi procedurami firmowymi. OpenAI podkreśla z całą stanowczością, że zwolnienia nie miały nic wspólnego z publicznym zabieraniem głosu na tematy bezpieczeństwa, lecz wynikały ze znacznego naruszenia zaufania, które wykraczało poza kwestie poruszone w opublikowanym przez byłych pracowników liście. Cała sytuacja wpisuje się w szerszą, narastającą debatę publiczną dotyczącą bezpieczeństwa sztucznej inteligencji oraz potencjalnych zagrożeń, jakie zaawansowane systemy mogą nieść dla całego społeczeństwa. Balesni w swoich wpisach w mediach społecznościowych wprost wskazywał, że jego zdaniem prawdziwym powodem rozstania z firmą było stawianie kwestii bezpieczeństwa na pierwszym miejscu. Podobne obawy wyraził Korbak, który twierdził, że przez wiele miesięcy alarmował o problemach ze śledzeniem i monitorowaniem sposobu myślenia autonomicznych agentów sztucznej inteligencji, co uważał za kluczowe narzędzie do kontrolowania ich potencjalnego niewłaściwego zachowania. Wang z kolei zwróciła uwagę, że nie były to pierwsze osoby, które w podejrzanych okolicznościach opuściły szeregi tej organizacji, wyrażając jednocześnie obawę, że bez zdecydowanego sprzeciwu ze strony pozostałego personelu nie będą one ostatnimi, które spotka taki los. W obliczu tych kontrowersji OpenAI zapowiedziało, że obecnie finalizuje umowy z niezależnymi, zewnętrznymi podmiotami mającymi oceniać kwestie bezpieczeństwa i zamierza w najbliższych tygodniach podać szczegóły na ten temat do publicznej wiadomości.",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cvlydn8d3lkjo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-09T09:30:49+00:00",
       "full_text_used": true
     },
     {
-      "title": "NASA i Departament Energii USA łączą siły w rozwoju technologii jądrowych dla kosmosu",
-      "summary": "NASA oraz Departament Energii podpisały porozumienie o współpracy przy rozwoju technologii jądrowych dla przyszłych misji głębokiego kosmosu. Inicjatywa ma wesprzeć stałą obecność ludzi na Księżycu oraz przygotowania do lotów na Marsa.",
-      "why_it_matters": "Nowa era technologii jądrowych w kosmosie ma kluczowe znaczenie dla długoterminowych misji eksploracyjnych i niezależności energetycznej przyszłych baz.",
+      "title": "Misja SSPICY agencji NASA przetestuje technologie inspekcji przestrzeni kosmicznej",
+      "summary": "Nowa misja technologiczna NASA ma na celu zbliżenie się do nieaktywnych satelitów na orbicie okołoziemskiej. Statek Otter sprawdzi rozwiązania ułatwiające przyszłe naprawy na orbicie i redukcję śmieci kosmicznych.",
+      "why_it_matters": "Technologia ta może w przyszłości pomóc w usuwaniu niebezpiecznych śmieci kosmicznych i serwisowaniu uszkodzonych satelitów.",
       "category": "Kosmos",
       "topics": [
-        "NASA",
-        "energetyka jądrowa",
-        "Księżyc",
-        "Mars"
+        "SSPICY",
+        "śmieci kosmiczne",
+        "serwisowanie satelitów",
+        "NASA"
       ],
-      "editorial_score": 9.2,
-      "digest_text": "NASA oraz U.S. Department of Energy podpisały memorandum o porozumieniu, które ma zapoczątkować nową erę w eksploracji kosmosu opartą na technologiach jądrowych. Umowa zakłada ścisłą współpracę obu instytucji w zakresie badań, produkcji paliwa, rygorystycznych testów oraz integracji startowej systemów napędowych i energetycznych. Szef NASA Jared Isaacman podkreślił, że energia jądrowa pozwoli na dalsze i dłuższe loty oraz efektywniejsze działanie statków kosmicznych.\n\nPorozumienie jest realizacją celów związanych z przygotowaniem lądowego reaktora księżycowego gotowego do startu do 2030 roku. Plany przewidują m.in. misję Space Reactor-1 Freedom w 2028 roku oraz system Lunar Reactor-1, który ma dostarczać energię dla przyszłej bazy na Księżycu w warunkach braku światła słonecznego. Technologia ta ma zabezpieczyć zapotrzebowanie na prąd dla habitatów, systemów komunikacyjnych, łazików oraz infrastruktury marsjańskiej.\n\nObok reaktorów fissionowych agencje rozwijają również systemy radioizotopowe. Zasilanie tego typu zostanie wykorzystane m.in. w misji Dragonfly na Tytana, satelitę Saturna, zaplanowanej na 2028 rok. Podobne komponenty grzewcze mają również wesprzeć misję Europejskiej Agencji Kosmicznej Rosalind Franklin, której łazik będzie badał środowisko Marsa.",
+      "editorial_score": 9.5,
+      "digest_text": "Wspierana przez amerykańską agencję kosmiczną NASA nowa misja technologiczna ma na celu zbliżenie się do nieczynnych satelitów oraz demonstrowanie innowacyjnych rozwiązań, które w przyszłości mogłyby wspierać naprawy na orbicie oraz przyczynić się do redukcji kosmicznych śmieci. Misja o nazwie SSPICY, co jest skrótem od Small Spacecraft Propulsion and Inspection Capability, wystartowała 1 października z bazy Sił Kosmicznych Vandenberg w Kalifornii. W ramach tego przedsięwzięcia technologicznego specjalny statek kosmiczny o nazwie Otter ma zbliżyć się do maksymalnie czterech nieoperacyjnych obiektów pochodzenia amerykańskiego znajdujących się na niskiej orbicie wokół Ziemi, takich jak wyeksploatowane satelity oraz zużyte człony rakiet nożnych. Początek weryfikacji możliwości nawigacyjnych zaplanowano na początek 2027 roku, kiedy to zbudowany przez firmę Starfish Space statek Otter zacznie poruszać się w odległości setek jardów od każdego z wytypowanych obiektów w celu przeprowadzenia szczegółowych inspekcji, wykorzystując przy tym autonomiczne oprogramowanie sterujące i nawigacyjne wymagające jedynie minimalnego udziału ze strony operatorów z centrum kontroli na Ziemi.\n\nWbudowane systemy wizyjne oraz zaawansowane czujniki pozwalają oprogramowaniu na podejmowanie decyzji nawigacyjnych w czasie rzeczywistym w miarę zbliżania się statku do poszczególnych celów. Podczas trwania inspekcji statek kosmiczny Otter zgromadzi kluczowe informacje na temat każdego obserwowanego obiektu, takie jak jego aktualna prędkość wirowania, orientacja w przestrzeni oraz ogólny stan powierzchni. Do przemieszczania się pomiędzy poszczególnymi obiektami misja wykorzysta nowoczesny napęd elektryczny, natomiast specjalny, ruchomy wysięgnik robotyczny posłuży do testowania precyzyjnego pozycjonowania silników manewrowych statku, co umożliwi dokładne przemieszczanie się między różnymi orbitami. Jest to pierwszy przypadek, w którym wszystkie te zaawansowane technologie zostaną przetestowane wspólnie jako jedna zintegrowana całość, co ma utorować drogę przyszłym misjom ukierunkowanym na autonomiczny serwis orbitalny oraz inspekcję licznych pozostałości po dawnych misjach kosmicznych.\n\nW trakcie trwania całej misji SSPICY statek Otter nie będzie fizycznie dotykał ani dokował do żadnego z napotkanych satelitów, lecz skupi się na przetestowaniu technologii niezbędnych do tego, aby w przyszłości umożliwić realizację zadań polegających na serwisowaniu lub naprawianiu obiektów znajdujących się bezpośrednio na orbicie, bądź też na ich bezpiecznym usuwaniu poprzez sprowadzenie w gęste warstwy ziemskiej atmosfery celem całkowitego zniszczenia. Obiekty kosmiczne, takie jak porzucone człony rakiet czy niesprawne satelity, mogą ulegać samoczynnemu rozadowi lub wzajemnym kolizjom, co prowadzi do powstawania rozmaitych form śmieci kosmicznych o rozmiarach od dużych fragmentów po mikroskopijne cząstki. Z uwagi na fakt, że każdego roku w przestrzeń kosmiczną wysyłane są tysiące nowych satelitów zapewniających usługi komunikacyjne, prognozowanie pogody, nawigację oraz inne świadczenia, z których ludzie korzystają na co dzień, utrzymanie bezpieczeństwa przestrzeni wokół Ziemi staje się sprawą o rosnącym znaczeniu.\n\nZa budowę oraz operacyjne zarządzanie statkiem kosmicznym Otter 24C odpowiedzialna jest firma Starfish Space. Z kolei finansowaniem oraz nadzorem nad całą demonstracją technologiczną zajmuje się program Small Spacecraft and Distributed Systems, który funkcjonuje w strukturach Dyrekoriatu Misji Badawczych i Technologicznych należącego do NASA. Warto również dodać, że wcześniejsze prace nad kluczowymi technologiami oraz możliwościami statku były wspierane grantami przyznanymi firmie Starfish Space w ramach programu Small Business Innovation Research oraz Small Business Technology Transfer prowadzonego przez amerykańską agencję.",
       "source": "NASA",
-      "url": "https://www.nasa.gov/news-release/nasa-energy-department-advance-new-era-of-nuclear-powered-exploration/",
-      "published_at": "2026-10-08T15:46:25+00:00",
-      "full_text_used": true
-    }
-  ],
-  "more_stories": [
-    {
-      "title": "Załoga misji Crew-12 powróciła na Ziemię po prawie ośmiu miesiącach na ISS",
-      "summary": "Kapsuła SpaceX Crew Dragon Freedom z czworgiem astronautów na pokładzie pomyślnie wodowała u wybrzeży Kalifornii. Misja trwała blisko osiem miesięcy na Międzynarodowej Stacji Kosmicznej.",
-      "why_it_matters": "Regularna wymiana załóg na ISS potwierdza ciągłość międzynarodowej współpracy kosmicznej i operacyjną gotowość pojazdów komercyjnych.",
-      "category": "Kosmos",
-      "topics": [
-        "NASA",
-        "SpaceX",
-        "Crew-12",
-        "ISS"
-      ],
-      "editorial_score": 9.15,
-      "digest_text": "Kapsuła SpaceX Crew Dragon Freedom powróciła na Ziemię, wodując w Oceanie Spokojnym u wybrzeży Kalifornii. Na pokładzie znajdowali się członkowie misji Crew-12: astronauci NASA Jessica Meir i Jack Hathaway, astronautka Europejskiej Agencji Kosmicznej Sophie Adenot oraz kosmonauta Roskosmosu Andrey Fedyaev.\n\nCzwórka badaczy spędziła na pokładzie Międzynarodowej Stacji Kosmicznej prawie osiem miesięcy. W tym czasie realizowali oni różnorodne zadania badawcze i techniczne w warunkach mikrograwitacji, kontynuując długoterminową obecność człowieka na orbicie okoziemskiej.",
-      "source": "NASA",
-      "url": "https://www.nasa.gov/image-article/crew-12-returns-to-earth/",
-      "published_at": "2026-10-08T18:52:27+00:00",
+      "url": "https://www.nasa.gov/centers-and-facilities/ames/nasas-sspicy-mission-to-demonstrate-in-space-inspection-technologies/",
+      "published_at": "2026-10-08T18:56:25+00:00",
       "full_text_used": true
     },
     {
-      "title": "Zmiany w orzeczeniach lekarskich od 18 października",
-      "summary": "Od 18 października wchodzą w życie nowe przepisy dotyczące orzeczeń lekarskich. Szczegóły zmian i ich zakres omówił serwis Rynek Zdrowia.",
-      "why_it_matters": "Wprowadzane regulacje mogą wpłynąć na codzienne funkcjonowanie pacjentów oraz procedury medyczne.",
-      "category": "Zdrowie",
-      "topics": [
-        "medycyna",
-        "orzeczenia lekarskie",
-        "zmiany prawne",
-        "ochrona zdrowia"
-      ],
-      "editorial_score": 9.1,
-      "digest_text": "Już 18 października zaczną obowiązywać nowe zasady związane z wydawaniem orzeczeń lekarskich. Szczegółowe informacje na temat nadchodzących modyfikacji i ich konsekwencji dla systemu opieki zdrowotnej przekazał serwis Rynek Zdrowia.",
-      "source": "Rynek Zdrowia",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSThJTzExdEVfc0NYWktldHJsSEgxNnRUaXc5WlMteFk0aC1FVG1NVFZKY1M1X0lHM3pIdFo5TVcwQmNZZC1sWGQxR3lpWHhXWUo4V3JKdGpKRjFRX0xXY1ZrVk1jWm4tM1pnLVFFNlI2M0JJWFU5UmlxWFp5c0xpb2x0QVNTajl2c01jX2tpVTV0RlkxeXlvVnE1Ql9lUTNYT0psUVN4UkRhbmEwaWRV?oc=5",
-      "published_at": "2026-10-08T17:54:00+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "Rekordowe zyski Samsunga dzięki popytowi na chipy do sztucznej inteligencji",
-      "summary": "Samsung szacuje dziewięciokrotny wzrost kwartalnego zysku operacyjnego do poziomu 80 miliardów dolarów. Napędza to globalny boom na zaawansowane czipy pamięci niezbędne do rozwoju sztucznej inteligencji.",
-      "why_it_matters": "Pokazuje ogromną skalę inwestycji i globalnego zapotrzebowania na infrastrukturę AI.",
+      "title": "Anthropic uruchamia darmowe skany bezpieczeństwa AI dla projektów open-source",
+      "summary": "Firma Anthropic wprowadziła nową usługę OSS Scanner, oferującą darmowe i okresowe skanowanie kodu pod kątem podatności przez jej najsilniejsze modele. Raporty generowane są w pełni przez sztuczną inteligencję bez udziału człowieka, co pozwala na szybsze wykrywanie błędów, choć niesie ryzyko wystąpienia pomyłek.",
+      "why_it_matters": "Usługa daje twórcom oprogramowania open-source potężne narzędzie obronne, pomagając szybciej wykrywać luki w zabezpieczeniach.",
       "category": "AI i technologia",
       "topics": [
-        "Samsung",
-        "półprzewodniki",
-        "AI",
-        "wyniki finansowe"
-      ],
-      "editorial_score": 8.9,
-      "digest_text": "Samsung Electronics poinformował, że spodziewa się dziewięciokrotnego wzrostu kwartalnych zysków w porównaniu z analogicznym okresem roku ubiegłego. Głównym motorem tego skoku jest gwałtownie rosnący popyt na pamięci masowe wykorzystywane w centrach danych obsługujących sztuczną inteligencję. Szacuje się, że operacyjny zysk za trzy miesiące do końca września osiągnie 107,4 biliona wonów, co w przeliczeniu daje około 80 miliardów dolarów i stanowi czwarty z rzędu kwartał rekordowych zarobków południowokoreańskiego giganta.\n\nFirma należy do ścisłej czołówki światowych producentów chipów pamięci obok krajowego rywala SK Hynix oraz amerykańskiego Micronu. Podzespoły te są kluczowe dla firm technologicznych tworzących rozwiązania AI, takich jak Nvidia. Dodatkowym wsparciem dla finansów przedsiębiorstwa mają być najnowsze urządzenia składane wprowadzone na rynek w sierpniu. Pełne wyniki za trzeci kwartał zostaną opublikowane pod koniec października.\n\nPrognozy publikowane przez czołowe południowokoreańskie przedsiębiorstwa cieszą się dużym zaufaniem inwestorów, ponieważ bazują na wewnętrznych danych. Globalny głód technologiczny na podzespoły zasilające rozwój sztucznej inteligencji wywołał niedobór półprzewodników iwindował ceny produktów takich jak smartfony czy komputery. Amerykańscy giganci technologiczni, w tym Google, Amazon i Meta, zapowiedzieli przeznaczenie ponad 650 miliardów dolarów na projekty AI w bieżącym roku, a w Korei Południowej zaprezentowano plany warte co najmniej 880 miliardów dolarów na rozwój krajowego potencjału produkcyjnego chipów.",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c687z8127302o?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-10-08T01:59:54+00:00",
-      "full_text_used": true
-    },
-    {
-      "title": "AI załatwia podwyżki pensji. Polacy już to zauważyli",
-      "summary": "Sztuczna inteligencja zaczyna realnie wpływać na wysokość wynagrodzeń w Polsce. Zjawisko to zauważają sami pracownicy na krajowym rynku.",
-      "why_it_matters": "Przedstawia bezpośredni wpływ nowych technologii na codzienne zarobki pracowników w Polsce.",
-      "category": "Praca i kariera",
-      "topics": [
-        "AI",
-        "rynek pracy",
-        "podwyżki",
-        "automatyzacja"
-      ],
-      "editorial_score": 8.85,
-      "digest_text": "Sztuczna inteligencja zaczyna odgrywać coraz większą rolę w kwestiach finansowych pracowników. Jak wynika z doniesień rynkowych, temat ten zyskuje na znaczeniu w kontekście wynagrodzeń. Polscy pracownicy już zauważają te zmiany na rodzimym rynku pracy. Automatyzacja procesów oraz wdrażanie nowoczesnych narzędzi technologicznych przekształcają dotychczasowe obowiązki zawodowe. Kwestia powiązań między wdrażaniem sztucznej inteligencji a wzrostem pensji staje się istotnym elementem debat o przyszłości zatrudnienia.",
-      "source": "Bizblog.pl",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMFY4N0xpSXo1eEg2clEwTm1CZzRkUGgxOGU0SEE2aXZZallMVDFQdy1PTFpFTmZLUHpvaG5PeEo2VXBJbXpuX3BDbHdVZEtyYUozYjFqVEhlcVF6V3YySlJjdW5qczhXa0lNWmNvOVNMZW95WXNfemstZjRBaldKSzlGVHluOHlrNWRrdC1R?oc=5",
-      "published_at": "2026-10-08T14:51:00+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "Wyciek danych z Asos: hakerzy ukradli znacznie więcej szczegółów niż początkowo zakładano",
-      "summary": "Przestępcy cybernetyczni weszli w posiadanie szczegółowych profili milionów klientów sklepu Asos. W ich rękach znalazły się m.in. daty urodzenia, numery telefonów oraz historia wyszukiwania.",
-      "why_it_matters": "Ostrzega konsumentów przed zwiększonym ryzykiem wyrafinowanych oszustw phishingowych.",
-      "category": "AI i technologia",
-      "topics": [
-        "Asos",
+        "Anthropic",
+        "open-source",
         "cyberbezpieczeństwo",
-        "wyciek danych"
+        "skanery kodu"
       ],
-      "editorial_score": 8.8,
-      "digest_text": "Internetowy sklep modowy Asos poinformował swoich klientów, że hakerzy uzyskali dostęp do szczegółowych profili potencjalnie milionów użytkowników. Aktualizację wydano po tym, jak stacja BBC skontaktowała się z firmą, wskazując, że naruszenie bezpieczeństwa objęło znacznie więcej niż tylko podstawowe dane kontaktowe. W rękach przestępców znalazły się m.in. imiona, nazwiska, adresy, numery telefonów, adresy e-mail, numery klientów, daty urodzenia oraz historia wyszukiwań w serwisie. Informacje te mogą posłużyć oszustom do przygotowania niezwykle wiarygodnych ataków phishingowych.\n\nPrzedstawiciele Asos potwierdzili w wiadomościach do klientów, że profile danych zostały przejęte, jednak zaznaczyli, że hakerzy nie uzyskali dostępu do haseł ani szczegółów kont bankowych. Sprawa wyszła na jaw, gdy przestępcy wykorzystali system aplikacji sklepu do wysłania powiadomienia typu pop-up do użytkowników. Później grupa cyberprzestępcza skontaktowała się z mediami, udostępniając próbki skradzionych danych. Jak ustalono, napastnicy uzyskali dostęp do konta pracownika Asos, podszywając się pod zaufany kontakt w celu zdobycia poświadczeń logowania.\n\nChoć firma twierdzi, że jej strona i aplikacja są bezpieczne i wdrożyła dodatkowe środki ostrożności, eksperci ds. cyberbezpieczeństwa zalecają użytkownikom szczególną czujność. Istnieje duże ryzyko, że oszuści będą wykorzystywać skradzione dane osobowe, aby uwiarygodnić fałszywe wiadomości lub telefony. Klienci są proszeni o zachowanie ostrożności w przypadku otrzymania jakichkolwiek niespodziewanych wiadomości powiązanych z incydentem.",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3zxjdw5ywgpo?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-10-08T16:29:33+00:00",
-      "full_text_used": true
-    },
-    {
-      "title": "Nowe przepisy motoryzacyjne: zbliża się obowiązkowy wymóg EVP dla każdego nowego auta",
-      "summary": "Już za kilkadziesiąt dni w życie wejdzie nowy wymóg dotyczący wyposażenia pojazdów. Każde nowo rejestrowane auto będzie musiało posiadać system EVP.",
-      "why_it_matters": "Wprowadza istotne zmiany regulacyjne dla całego rynku nowych samochodów i bezpieczeństwa ruchu.",
-      "category": "Motoryzacja",
-      "topics": [
-        "przepisy drogowe",
-        "nowe auta",
-        "EVP",
-        "bezpieczeństwo"
-      ],
-      "editorial_score": 8.7,
-      "digest_text": "Już za 51 dni motoryzacyjny rynek czekają istotne zmiany regulacyjne związane z wejściem w życie przepisów dotyczących systemu EVP. Nowe regulacje sprawią, że rozwiązanie to stanie się obowiązkowym elementem wyposażenia każdego nowo rejestrowanego samochodu. Zmiana ta wpłynie na producentów, dilerów oraz osoby planujące zakup nowego pojazdu w najbliższym czasie. Wdrożenie wymogu ma na celu dostosowanie floty pojazdów do aktualnych norm prawnych oraz podniesienie poziomu bezpieczeństwa na drodze.",
-      "source": "Spider's Web",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE10dGNWZlpzTVZvOUZicTFQcWJfZmpLMWpOelJ2YUZyR1BpOVYzd25vaXpZbVpzX190Vl83ZUtKZXd0U093QnkwZmFkZ3lnQmxxZUJwRGlLQnprbTN5RHdOVDU3OFZaampNTnljSFVGZTRXNWxt?oc=5",
-      "published_at": "2026-10-09T05:45:00+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "Glapiński o stopach procentowych. Czy w listopadzie zabraknie podwyżki?",
-      "summary": "Pojawiły się spekulacje dotyczące przyszłych decyzji NBP w sprawie stóp procentowych. Opublikowane materiały poruszają temat potencjalnego braku podwyżki w listopadzie.",
-      "why_it_matters": "Decyzje NBP dotyczą bezpośrednio portfeli Polaków oraz kosztów kredytów.",
-      "category": "Finanse i inwestowanie",
-      "topics": [
-        "stopy procentowe",
-        "NBP",
-        "Adam Glapiński",
-        "inflacja"
-      ],
-      "editorial_score": 8.65,
-      "digest_text": "Kwestia kolejnych posiedzeń Rady Polityki Pieniężnej oraz potencjalnych ruchów prezesa NBP Adama Glapińskiego stale budzi zainteresowanie rynku. Ostatnie doniesienia skupiają się na tym, czy w listopadzie dojdzie do zmiany stóp procentowych, czy też pozostaną one na niezmienionym poziomie. Brak dodatkowych informacji w źródłowym tekście nie pozwala jednak na rozwinięcie tej spekulacji o konkretne analizy czy zapowiedzi.",
-      "source": "CEO Magazyn",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE94THN6TndKaFFiVVV0dlJFSHJ0LV9kWFY4OVFuUmIzbk1zbjJZMmdPX0cxajZ3QVdPd3dPSjBSZkJYNjBSOU5ETENEYVRHWkwwMEE2eG5NVHRTVEhNXzZKQUhMYWdGSzdHLWdXRGhoS3VIeUdm?oc=5",
-      "published_at": "2026-10-09T09:37:28+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "Platforma rankingowa AI Arena podwaja wycenę do 3,1 miliarda dolarów",
-      "summary": "Twórcy popularnego rankingu LMArena pozyskali 200 milionów dolarów w rundzie finansowania serii B. Firma rozwija nowe kategorie oceny modeli, skupiając się m.in. na problemie tzw. alignmentu i halucynacji.",
-      "why_it_matters": "To kluczowe narzędzie rynkowe do niezależnej weryfikacji faktycznych możliwości sztucznej inteligencji.",
-      "category": "Biznes i startupy",
-      "topics": [
-        "AI Arena",
-        "LMArena",
-        "finansowanie startupów",
-        "sztuczna inteligencja"
-      ],
-      "editorial_score": 8.55,
-      "digest_text": "Firma Arena, znana przede wszystkim jako inicjatorka popularnego rankingu modeli sztucznej inteligencji LMArena, poinformowała o pozyskaniu 200 milionów dolarów w ramach rundy finansowania serii B. Nowe środki wyceniają startup na 3,1 miliarda dolarów, co oznacza, że jego wartość niemal podwoiła się w ciągu zaledwie dziesięciu miesięcy. Runda ta została poprowadzona przez Lightspeed Venture Partners oraz Khosla Ventures przy udziale innych znanych funduszy i firm technologicznych. Arena zyskała popularność dzięki darmowej platformie crowdsourcingowej, na której użytkownicy testują i porównują odpowiedzi generowane przez różne systemy AI.\n\nW obliczu problemów ze standardowymi benchmarkami, które laboratoria technologiczne potrafiły omijać lub optymalizować pod kątem wyników, Arena stała się dla przedsiębiorstw niezależnym arbitrem oceniającym rzeczywistą przydatność modeli. Firma wprowadziła również nową kategorię rankingową poświęconą tzw. alignmentowi, czyli zgodności i bezpieczeństwu zachowań sztucznej inteligencji. Pozwala ona monitorować m.in. kwestie nieautoryzowanych działań, fałszywych atrybucji oraz zjawiska określanego jako mylące kończenie zadań.",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
-      "published_at": "2026-10-08T18:19:45+00:00",
-      "full_text_used": true
-    },
-    {
-      "title": "Apple planuje premierę pierwszego MacBooka z ekranem dotykowym",
-      "summary": "Według doniesień Apple szykuje na przełom października i listopada specjalne wydarzenie. Wśród nowości mają pojawić się lżejsze MacBooki Pro z ekranami OLED i interfejsem Dynamic Island oraz odświeżony iPad Mini.",
-      "why_it_matters": "To przełomowy moment dla linii komputerów przenośnych Apple, które po raz pierwszy zyskają dotykowe ekrany.",
-      "category": "AI i technologia",
-      "topics": [
-        "Apple",
-        "MacBook",
-        "ekran dotykowy",
-        "iPad Mini"
-      ],
-      "editorial_score": 8.5,
-      "digest_text": "Apple przygotowuje się do kolejnej prezentacji sprzętowej, która według doniesień ma odbyć się pod koniec października. W ramach transmisji online oraz spotkania prasowego firma ma zaprezentować długo wyczekiwane odświeżenie swojej oferty komputerów przenośnych oraz tabletów. Najważniejszą nowością ma być debiut pierwszego w historii MacBooka Pro wyposażonego w dotykowy ekran OLED oraz interfejs przypominający znane z iPhone'ów Dynamic Island. Nowe komputery mają być lżejsze od dotychczasowych modeli, a część z nich zachowa dotychczasowy design przy jednoczesnym zastosowaniu nowych procesorów z rodziny M6.\n\nOprócz komputerów przenośnych Apple planuje także odświeżenie tabletu iPad Mini, który po raz ostatni doczekał się aktualizacji w 2024 roku. Nowa wersja ma charakteryzować się między innymi umieszczeniem przedniej kamery na dłuższej krawędzi urządzenia oraz zmodernizowanym systemem głośników.",
+      "editorial_score": 9.45,
+      "digest_text": "Firma Anthropic ogłosiła wprowadzenie nowej usługi pod nazwą OSS Scanner, której celem jest pomoc projektom o otwartym kodzie źródłowym w wykrywaniu luk w bezpieczeństwie. W ramach tej inicjatywy twórcy oprogramowania open-source, którzy zdecydują się na dobrowolny udział w programie, otrzymają dostęp do gruntownych i cyklicznych skanów bezpieczeństwa. Usługa ta jest świadczona całkowicie bezpłatnie i wykorzystuje najbardziej zaawansowane modele sztucznej inteligencji stworzone przez Anthropic, w tym model Mythos. Głównym założeniem projektu jest zapewnienie społeczności open-source potężnego narzędzia obronnego, które pozwoli na szybsze i bardziej efektywne identyfikowanie potencjalnych zagrożeń oraz słabych punktów w kodzie. Nowa usługa ma szansę znacząco skrócić czas reakcji na ewentualne problemy i podnieść ogólny poziom bezpieczeństwa oprogramowania rozwijanego w formule otwartoźródłowej.\n\nJednakże nowe rozwiązanie niesie ze sobą pewien istotny kompromis związany ze sposobem jego działania. Raporty generowane przez OSS Scanner są tworzone w pełni automatycznie przez sztuczną inteligencję i nie przechodzą wcześniejszej weryfikacji ani selekcji przez ludzkich ekspertów. Taki model pracy pozwala na znacznie szybsze oraz częstsze przeprowadzanie skanów całych projektów, ale wiąże się również z ryzykiem. Firma Anthropic otwarcie przyznaje, że w generowanych komunikatach mogą pojawiać się błędy, a część nadesłanych raportów może okazać się niepoprawna lub całkowicie nieważna. Projekty decydujące się na skorzystanie z darmowej usługi muszą zatem liczyć się z koniecznością samodzielnego filtrowania i weryfikowania napływających informacji o wykrytych rzekomych nieprawidłowościach.\n\nPojawienie się skanera od Anthropic wpisuje się w szerszy trend rosnącego wykorzystania sztucznej inteligencji w procesie poszukiwania błędów w oprogramowaniu. Narzędzia oparte na sztucznej inteligencji w ostatnich miesiącach odegrały kluczową rolę w odkrywaniu poważnych luk i defektów bezpieczeństwa w oprogramowaniu open-source. Przykładem takiego zagrożenia był wykryty w maju poważny błąd określany jako Copy Fail, który wywarł negatywny wpływ na niemal każdą dystrybucję systemu operacyjnego Linux. Automatyzacja tego procesu sprawia, że znajdowanie skomplikowanych podatności staje się znacznie bardziej dostępne, co z perspektywy obrony systemów jest ogromnym krokiem naprzód, choć jednocześnie stwarza nowe wyzwania organizacyjne dla samych programistów.\n\nSzybki rozwój i popularyzacja narzędzi opartych na sztucznej inteligencji generujących masowo raporty o błędach wywołują również pewne trudności w ekosystemie technologicznym. Wiele znanych projektów oraz organizacji open-source zaczyna zmagać się z gwałtownym napływem zgłoszeń i analiz tworzonych przez automatyczne systemy. Z tym problemem mierzą się obecnie tak znaczące postacie i podmioty w świecie technologii jak Linus Torvalds oraz gigant technologiczny Google. Olbrzymia liczba generowanych automatycznie informacji sprawia, że utrzymanie kontroli nad jakością kodu oraz efektywne przetwarzanie wszystkich zgłoszeń staje się dla twórców oprogramowania coraz większym wyzwaniem.",
       "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1008422/apple-macbook-pro-touchscreen-ipad-mini-rumor",
-      "published_at": "2026-10-08T16:32:21-04:00",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+      "published_at": "2026-10-08T17:53:51-04:00",
       "full_text_used": true
     },
     {
-      "title": "Microsoft testuje gruntownie przebudowaną wyszukiwarkę w systemie Windows 11",
-      "summary": "Nowa funkcja wyszukiwania w Windows 11 stawia na wydajność, nowoczesny interfejs WinUI 3 oraz lepsze dopasowanie wyników. Użytkownicy zyskają też możliwość używania wyszukiwarki jako launchera do szybkich zadań.",
-      "why_it_matters": "Wyszukiwarka systemowa to jeden z najbardziej krytycznych i dotychczas niedomagających elementów Windowsa.",
+      "title": "Microsoft przebudowuje wyszukiwarkę w systemie Windows 11",
+      "summary": "Microsoft zapowiedział gruntowną przebudowę Windows Search, stawiając na szybkość, nowocześniejszy interfejs oparty na WinUI 3 oraz lepsze dopasowanie wyników. Nowa wyszukiwarka działa jak launcher, pozwalając na wykonywanie zadań systemowych, zmianę ustawień czy wysyłanie wiadomości z telefonu.",
+      "why_it_matters": "Aktualizacja rozwiązuje jeden z najbardziej krytykowanych elementów Windows 11, znacznie poprawiając wydajność i możliwości wyszukiwania.",
       "category": "AI i technologia",
       "topics": [
-        "Microsoft",
         "Windows 11",
-        "wyszukiwarka",
-        "WinUI 3"
+        "Microsoft",
+        "Windows Search",
+        "aktualizacja systemu"
       ],
-      "editorial_score": 8.45,
-      "digest_text": "Microsoft zapowiedział znaczące odświeżenie funkcji wyszukiwania w systemie Windows 11, która dotychczas często spotykała się z krytyką ze strony użytkowników za powolne działanie. Nowe doświadczenie zostało zbudowane od podstaw z wykorzystaniem frameworka WinUI 3, co ma zapewnić wysoką prędkość działania oraz mniejsze obciążenie pamięci operacyjnej komputera. Interfejs zyskał płynniejsze animacje oraz duży panel podglądu, który wyświetla pliki, zdjęcia czy prezentacje bezpośrednio w oknie wyników.\n\nPoza warstwą wizualną poprawiono algorytmy dopasowywania zapytań, dzięki czemu wyszukiwarka lepiej radzi sobie z literówkami i synonimami. Co więcej, narzędzie może teraz pełnić funkcję launchera pozwalającego na wykonywanie szybkich czynności systemowych, takich jak sterowanie łącznością Bluetooth, włączanie trybu ciemnego czy otwieranie aplikacji w układzie obok siebie. Integracja z funkcją Phone Link umożliwi nawet wysyłanie wiadomości tekstowych bezpośrednio z poziomu komputera. Rozwiązanie to jest obecnie testowane przez programistów w ramach programu Windows Insiders.",
+      "editorial_score": 9.4,
+      "digest_text": "Wyszukiwarka w systemie Windows 11 od dawna była źródłem frustracji dla użytkowników, dlatego Microsoft zdecydował się na jej gruntowną przebudowę, która obecnie wchodzi w fazę testów. Nowa wersja została zaprojektowana z myślą o znacznie większej szybkości działania, wyższych możliwościach oraz nowoczesnym wyglądzie. Jak podkreśla Anshul Rawat, wiceprezes zespołu produktowego Windows w Microsoft, to nowe doświadczenie wyszukiwania zostało stworzone pod kątem wydajności, opierając się na technologii WinUI 3 w ramach szerszych inwestycji mających na celu unowocześnienie kluczowych elementów systemu. Wczesne testy wykazały znaczne usprawnienia w zakresie wydajności oraz zużycia pamięci, co oznacza, że poprawa działania nie wiąże się z wprowadzaniem dodatkowego obciążenia dla systemu. Zmiany objęły również interfejs użytkownika, który zyskał płynne animacje oraz duży panel podglądu, nadając całości bardziej uporządkowany charakter.\n\nPoza warstwą wizualną, Microsoft ulepszył także podstawowe mechanizmy działania wyszukiwarki. Poprawiono sposób, w jaki system rozumie intencje użytkownika, wprowadzając skuteczniejsze dopasowywanie w przypadku literówek oraz obsługę synonimów. W dotychczasowej wersji zapytania o proste fakty potrafiły zajmować kilka sekund i wyświetlać miniaturowe wyniki rodem z wyszukiwarki Bing, podczas gdy nowa wyszukiwarka prezentuje wyniki bezpośrednio w linii, co przypomina nowoczesne rozwiązania znane z systemów mobilnych takich jak iOS czy Android. Takie liniowe wyniki obejmują również podglądy prezentacji programu PowerPoint, zdjęć oraz innych plików zgromadzonych na komputerze.\n\nNajbardziej imponującym aspektem nowej wyszukiwarki jest możliwość korzystania z niej jak z launchera znanego z narzędzi firm trzecich. Pozwala ona na bezpośrednie wykonywanie zadań, takich jak włączanie lub wyłączanie modułu Bluetooth czy trybu ciemnego. Użytkownicy mogą nawet wydawać polecenia zminimalizowania okien lub otwierania aplikacji w układzie obok siebie. Dzięki integracji z funkcją Phone Link, działania te rozszerzają się również na powiązany smartfon, co umożliwia wysłanie wiadomości tekstowej za pomocą prostego wpisania odpowiedniej komendy z poziomu komputera.\n\nObecnie Microsoft testuje nowy interfejs wyszukiwania w ramach programu Windows Insider, co sugeruje, że trafi on do stabilnej wersji systemu Windows 11 w nadchodzących miesiącach. Plany na przyszły rok obejmują także zintegrowanie tego nowego rozwiązania z menu Start, tak aby naturalnie dopasowywało się ono do różnych pozycji paska zadań oraz rozmaitych konfiguracji systemu. Ostatecznym celem firmy jest uczynienie wyszukiwarki bardziej wszechstronną, oferującą naturalniejsze sposoby wyrażania potrzeb użytkownika, bogatsze informacje kontekstowe oraz szersze możliwości bezpośredniego wykonywania zadań z poziomu samego okna wyszukiwania.",
       "source": "The Verge",
       "url": "https://www.theverge.com/news/1008320/microsoft-windows-search-overhaul-windows-11",
       "published_at": "2026-10-08T15:30:21-04:00",
       "full_text_used": true
     }
   ],
+  "more_stories": [
+    {
+      "title": "Margaret Hamilton, autorka oprogramowania dla misji Apollo 11, nie żyje w wieku 90 lat",
+      "summary": "Pionierka informatyki i kierowniczka zespołu tworzącego oprogramowanie dla misji Apollo zmarła w wieku 90 lat. Jej praca pomogła bezpiecznie wylądować na Księżycu i przyczyniła się do narodzin pojęcia inżynierii oprogramowania.",
+      "why_it_matters": "Odejście Margaret Hamilton to strata dla historii technologii i pionierki, której kod umożliwił lądowanie człowieka na Księżycu.",
+      "category": "Nauka",
+      "topics": [
+        "Margaret Hamilton",
+        "Apollo 11",
+        "historia informatyki",
+        "inżynieria oprogramowania"
+      ],
+      "editorial_score": 9.25,
+      "digest_text": "Zmarła Margaret Hamilton, wybitna informatyczka, której pionierskie badania i kierowany przez nią zespół odegrały kluczową rolę w lądowaniu amerykańskich astronautów na Księżycu. O jej śmierci w wieku 90 lat poinformował Massachusetts Institute of Technology, w którym Hamilton pracowała od 1959 roku do połowy lat siedemdziesiątych. Uczelnia podkreśliła, że była ona pionierką w pełnym tego słowa znaczeniu oraz inżynierką oprogramowania jeszcze zanim ta dziedzina stała się powszechna. To właśnie pod jej kierownictwem w dywizji inżynierii oprogramowania MIT powstał kod dla misji Apollo, a sama Hamilton przyczyniła się do spopularyzowania pojęcia inżynierii oprogramowania. Zespół pod jej wodzą napisał i przetestował całe oprogramowanie pokładowe dla projektu Apollo 11, które bezpiecznie sprowadziło na Srebrny Glob Neila Armstronga oraz Buzza Aldrina.\n\nSama zainteresowana wspominała w wywiadzie z 2019 roku, że przyciągnęła ją zarówno sama idea, jak i fakt, że nikt wcześniej tego nie robił. Była pierwszą programistką, która dołączyła do projektu, a zarazem pierwszą kobietą zatrudnioną w tej strukturze. Ogromne znaczenie oprogramowania stworzonego przez jej zespół uwidoczniło się tuż przed samym lądowaniem w 1969 roku. Wówczas komputer pokładowy wygenerował alarm sygnalizujący przeciążenie systemu, co na moment postawiło pod znakiem zapytania powodzenie lądowania. Dzięki temu, że Hamilton wraz ze swoim zespołem zapobiegawczo zaprojektowała oprogramowanie sterowane priorytetami, komputer automatycznie odrzucił zadania drugorzędne i skupił się wyłącznie na najważniejszym zadaniu, jakim było lądowanie na Księżycu. W tym samym roku powstało również słynne, ikoniczne zdjęcie przedstawiające Hamilton stojącą obok stosu wydruków kodu, który dorównywał jej wzrostem.\n\nUznanie dla jej dokonań znalazło odzwierciedlenie w 2016 roku, kiedy to ówczesny prezydent USA Barack Obama odznaczył ją Prezydenckim Medalem Wolności za wkład w naukę i podróże kosmiczne. Obama zauważył wówczas, że Hamilton symbolizuje całe pokolenie niedocenianych kobiet, które pomogły ludzkości dotrzeć w kosmos. Margaret Hamilton urodziła się w 1936 roku w Indianie. Studiowała matematykę najpierw na Uniwersytecie w Michigan, a następnie w Earlham College, gdzie w 1958 roku uzyskała tytuł licencjacki. Rok później przeniosła się do Bostonu wraz z mężem, a praca w MIT miała początkowo stanowić wsparcie dla jego studiów prawniczych.\n\nPo odejściu z uczelni w latach siedemdziesiątych Hamilton wykorzystała zdobytą wiedzę do zakładania własnych przedsiębiorstw informatycznych, w tym funkcjonującej do dziś w Massachusetts firmy Hamilton Technologies. Kondolencje i wyrazy uznania popłynęły z różnych stron, w tym z jej alma mater, Earlham College, które podkreśliło, że jej pionierski duch i niezwykłe dziedzictwo będą inspirować kolejne pokolenia. Zgodnie z informacjami przekazanymi przez MIT, Margaret Hamilton pozostawiła córkę, zięcia, dwóch wnuków oraz czworo prawnuków.",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cx5yn46j41zpo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-08T05:10:40+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Komercyjna alternatywa dla GPS od startupu Xona wchodzi w fazę testów",
+      "summary": "Startup Xona Space Systems przygotowuje się do wystrzelenia sześciu satelitów, które zapoczątkują testy komercyjnego systemu nawigacji i precyzyjnego czasu. Nowa konstelacja ma zaoferować dokładność centymetrową i odporność na zagłuszanie.",
+      "why_it_matters": "Technologia ta może zrewolucjonizować nawigację dla pojazdów autonomicznych i rolnictwa, rozwiązując ograniczenia tradycyjnego systemu GPS.",
+      "category": "Biznes i startupy",
+      "topics": [
+        "Xona",
+        "GPS",
+        "nawigacja",
+        "satelity SpaceX"
+      ],
+      "editorial_score": 9.2,
+      "digest_text": "Amerykański startup Xona Space Systems przygotowuje się do uruchomienia pierwszej komercyjnej alternatywy dla systemu GPS, która ma zaoferować wyższą precyzję i lepsze zabezpieczenia. Przedsiębiorstwo ma wystrzelić na orbitę sześć nowych satelitów za pomocą rakiety firmy SpaceX. Choć tradycyjne systemy nawigacji satelitarnej zarządzane przez rządy są darmowe i powszechne, ich sygnały bywają podatne na zakłócenia i spoofing, a oferowana przez nie dokładność rzędu metrów bywa niewystarczająca dla nowoczesnych zastosowań, takich jak roboty rolnicze czy pojazdy autonomiczne. Xona zamierza dostarczać sygnał zapewniający dokładność lokalizacji do centymetrów, który ma być na tyle silny, aby można go było odebrać w środowiskach miejskich oraz wewnątrz budynków, a także skuteczniej opierać się próbom zagłuszania.\n\nFirma została założona w 2019 roku przez pięciu inżynierów, którzy poznali się podczas studiów doktoranckich z inżynierii lotniczej na Uniwersytecie Stanforda. Początkowe obawy dotyczące konkurowania z darmowym systemem GPS ustąpiły miejsca przekonaniu, że rynek urządzeń potrzebujących znacznie lepszych parametrów technicznych jest ogromny. Zespół musiał zmierzyć się z poważnymi wyzwaniami inżynierskimi. Opracowano unikalną architekturę pozwalającą satelitom na utrzymanie precyzyjnego czasu bez konieczności stosowania drogich zegarów atomowych na pokładzie, co było możliwe dzięki bliskości orbity ziemskiej i ciągłej komunikacji z naziemnymi źródłami odniesienia. Ponadto inżynierowie rozwiązali problem kompatybilności, dzięki czemu istniejące odbiorniki GPS mogą odbierać sygnał Xony po wprowadzeniu stosunkowo prostych modyfikacji oprogramowania, co ułatwia regulacyjne i rynkowe wdrożenie technologii.\n\nWśród nadchodzących sześciu satelitów cztery konstrukcyjnie opierają się na platformie dostarczonej przez Aerospace Labs, nawiązując do przetestowanego wcześniej prototypu, natomiast dwa pozostałe zostały zbudowane w całości w siedzibie firmy w Kalifornii i stanowić będą fundament docelowej konstelacji operacyjnej o nazwie Pulsar, liczącej 258 urządzeń. Po umieszczeniu satelitów na orbicie i uzyskaniu ośmiokrotnych przelotów nad średnimi szerokościami geograficznymi w ciągu doby, Xona rozpocznie testy beta z udziałem rzeczywistych klientów, w tym firm specjalizujących się w elektronicznych systemach pomiaru czasu, takich jak TimeBeat. Do 2028 roku startup planuje zapewnić pełne pokrycie swoim sygnałem na obszarze Stanów Zjednoczonych, Europy, Japonii oraz Korei Południowej.\n\nOd momentu powstania Xona pozyskała od inwestorów venture capital ponad 300 milionów dolarów, w tym 20 milionów od Sił Kosmicznych Stanów Zjednoczonych, co świadczy o dużym zainteresowaniu rządu technologią odporną na konflikty i zakłócenia. Współzałożyciel i dyrektor techniczny firmy, Tyler Reid, zauważył potrzebę stworzenia takiego systemu podczas pracy nad autonomicznymi samochodami. Twórcy projektu wierzą, że rozwój precyzyjnej nawigacji i dokładnego czasu pozwoli w przyszłości osiągnąć poziom bezpieczeństwa w transporcie lądowym porównywalny ze standardami panującymi w lotnictwie cywilnym.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/09/xonas-commercial-gps-alternative-is-about-to-go-live/",
+      "published_at": "2026-10-09T12:00:00+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Let's Encrypt skraca ważność certyfikatów SSL/TLS do 64 dni od lutego 2027 roku",
+      "summary": "Popularny urząd certyfikacji Let's Encrypt obniża czas ważności darmowych certyfikatów z 90 do 64 dni. Zmiana ma wejść w życie 10 lutego 2027 roku i ma na celu dalsze wymuszenie automatyzacji procesów odnawiania.",
+      "why_it_matters": "Krok ten zmusza administratorów stron do porzucenia sztywnych harmonogramów na rzecz pełnej automatyzacji protokołu ACME.",
+      "category": "AI i technologia",
+      "topics": [
+        "Let's Encrypt",
+        "certyfikaty SSL",
+        "bezpieczeństwo sieci",
+        "web"
+      ],
+      "editorial_score": 9.0,
+      "digest_text": "Organizacja Let’s Encrypt ogłosiła kolejne istotne skrócenie okresu ważności darmowych certyfikatów SSL i TLS z dotychczasowych dziewiędziesięciu do sześćdziesąciu czterech dni. Ta zmiana wejdzie w życie dziesiątego lutego 2027 roku i stanowi kontynuację dźwigni bezpieczeństwa stosowanej przez urząd certyfikacji. Dla administratorów, którzy już wdrożyli nowoczesne klienty ACME obsługujące mechanizm ACME Renewal Information, czyli w skrócie ARI, cały proces przejścia powinien odbyć się całkowicie bezszwowo i niezauważenie. Natomiast dla tych podmiotów i administratorów, którzy w dalszym ciągu polegają na sztywno zakodowanych harmonogramach odnawiania lub na rĉcznych procesach administracyjnych, wskazany termin w lutym 2027 roku stanie się ostatecznym czasem na aktualizację systemu, zanim certyfikaty zaczną niespodziewanie wygasać. Jeszcze przed ostatecznym wdrożeniem produkcyjnym, poczynając od czternastego października, Let’s Encrypt rozpocznie wewnętrzne i zewnętrzne testy sześćdziesćczterodniowych certyfikatów, w ramach których zainteresowani użytkownicy bŹdą mogli dobrowolnie dołączyć, aby sprawdzić gotowość swoich dotychczasowych konfiguracji.\n\nHistoryczny kontekst funkcjonowania internetu pokazuje, jak bardzo zmieniły się standardy bezpieczeństwa. Zanim na początku 2016 roku ruszył projekt Let’s Encrypt, standardowe certyfikaty cyfrowe były powszechnie wydawane nawet na okres od roku do aż trzech lat. Wprowadzenie przez nowo powstały urząd dziewiędziesięciodniowego okresu ważności miało na celu wymuszenie automatyzacji odnawiania, która w tamtym czasie po prostu nie istniała na szerszą skalę. Krótsze okresy ważności drastycznie ograniczały potencjalne podatności oraz ryzyko wynikające z ewentualnej kradzieży kluczy prywatnych, a zarazem skutecznie stymulowały przyspieszoną adaptację protokołu HTTPS w całej sieci WWW. Ówczesny ruch mocno wstrząsnął dotychczasowymi normami branżowymi, ponieważ ograniczanie czasu życia pojedynczego certyfikatu sprawiało, że stawał siƙ on znacznie mniej szkodliwy w przypadku jego ewentualnego skompromitowania lub błędnego przypisania.\n\nKrok zmierzający do obniżenia ważności do sześćdziesięciu czterech dni stanowi naturalną kontynuację tej przyjętej strategii. Co więcej, plany organizacji wskazują, że cykle życia bŹdą ulegać dalszemu skróceniu wraz z upływem czasu, a w 2028 roku planowane jest wprowadzenie standardowego, domyślnego okresu wynoszącego zaledwie czterdzieści pięć dni. Podobnie jak początkowe uruchomienie całej inicjatywy miało na celu skłonienie użytkowników do powszechnego korzystania z HTTPS, tak obecne skrzytanie okien czasowych certyfikatów ma zmierzać do ostatecznego przeniesienia wszystkich użytkowników na pełną i niezawodną automatyzację za pomocą protokołu ACME. Protokół ten, a w szczególności mechanizm informacji o odnawianiu ARI, pozwala urządowi certyfikacji na precyzyjne wskazanie klientowi idealnego momentu na przeprowadzenie procesu odnowienia. Mimo posiadania takich narzędzi, bardzo wiele obecnych wdrożeń technologicznych wciąż opiera się na przestarzałych, skryptowych interwałach aktualizacji, które wyzwalają siƙ na podstawie stałych, sztywnych przesunięć czasowych, takich jak na przykład odnawianie dokładnie na sześćdziesiąt dni przed planowanym wygaśnięciem.",
+      "source": "Ars Technica - All content",
+      "url": "https://arstechnica.com/gadgets/2026/10/lets-encrypt-cuts-certificate-lifetimes-to-64-days-starting-february-2027/",
+      "published_at": "2026-10-08T19:57:17+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Apple planuje premierę pierwszego MacBooka z dotykowym ekranem oraz nowego iPada Mini",
+      "summary": "Według doniesień Bloomberga Apple zaprezentuje pod koniec października laptopy MacBook Pro z dotykowymi ekranami OLED i dynamiczną wyspą oraz odświeżonego iPada Mini. Wydarzenie ma odbyć się około 2 października.",
+      "why_it_matters": "To przełomowy moment dla linii komputerów Mac, która po latach oporu ze strony firmy w końcu zyskuje ekrany dotykowe.",
+      "category": "AI i technologia",
+      "topics": [
+        "Apple",
+        "MacBook Pro",
+        "ekran dotykowy",
+        "premiera sprzętu"
+      ],
+      "editorial_score": 8.95,
+      "digest_text": "Firma Apple przygotowuje się do zaprezentowania swojego pierwszego komputera MacBook Pro wyposażonego w dotykowy ekran, a także odświeżonego tabletu iPad Mini. Według doniesień agencji Bloomberg, wydarzenie to ma odbyć się około 27 października. Jeśli te informacje się potwierdzą, będzie to miało miejsce zaledwie dwa tygodnie po innym wydarzeniu zaplanowanym na 13 października, które według plotek ma skupiać się na produktach z kategorii inteligentnego domu. Październikowa prezentacja komputerów Mac oraz tabletów ma mieć formę pokazu wideo online, któremu będzie towarzyszyć stacjonarne spotkanie dla przedstawicieli prasy. Podobny format Apple planuje również dla wcześniejszego wydarzenia w połowie miesiąca. Podczas nadchodzącej prezentacji Apple ma ogłosić debiut nowych modeli MacBook Pro, które będą lżejsze od obecnie dostępnych urządzeń na rynku. Zgodnie z doniesieniami, komputery te zostaną wyposażone w dotykowe ekrany OLED oraz interfejs Dynamic Island, znany dotychczas głównie z telefonów iPhone. Oprócz modeli z ekranami dotykowymi, technologiczny gigant z Cupertino planuje również zaprezentować wersje MacBooka Pro zachowujące dotychczasowy design, lecz wyposażone w nowy procesor M6, który został wprowadzony wraz z nowym modelem Mac Mini. Zmiany obejmą również małe urządzenia mobilne. Tablet iPad Mini, którego poprzednia wersja została odświeżona w 2024 roku, ma doczekać się aktualizacji polegającej na przeniesieniu przedniej kamery na dłuższą krawędź urządzenia, co ułatwi korzystanie z niego w orientacji poziomej. Dodatkowo w nowym iPadzie Mini ma zostać zastosowany całkowicie przeprojektowany system głośników, co poprawi jakość odtwarzanego dźwięku. Wszystkie te zapowiedzi wskazują na bardzo intensywny okres jesiennych premier ze strony Apple, obejmujących zarówno rynek komputerów przenośnych, jak i mniejszych urządzeń mobilnych oraz akcesoriów domowych.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1008422/apple-macbook-pro-touchscreen-ipad-mini-rumor",
+      "published_at": "2026-10-08T16:32:21-04:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Zmiany w przepisach dotyczących orzeczeń lekarskich od 18 października",
+      "summary": "18 października wchodzą w życie nowe zasady dotyczące orzeczeń lekarskich. Zmiany te wprowadzają istotne modyfikacje w dotychczasowych procedurach medycznych.",
+      "why_it_matters": "Nowe przepisy bezpośrednio wpłyną na procedury uzyskiwania orzeczeń lekarskich w Polsce.",
+      "category": "Zdrowie",
+      "topics": [
+        "orzeczenia lekarskie",
+        "przepisy",
+        "zdrowie",
+        "Polska"
+      ],
+      "editorial_score": 8.95,
+      "digest_text": "Już 18 października w życie wchodzą nowe zasady związane z orzeczeniami lekarskimi. Choć szczegółowe informacje są ograniczone ze względu na skromny materiał źródłowy, zmiany te stanowią istotną modyfikację dotychczasowych procedur w polskim systemie ochrony zdrowia. Nowe regulacje wpłyną na sposób wydawania i funkcjonowania dokumentacji medycznej tego typu.",
+      "source": "Rynek Zdrowia",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSThJTzExdEVfc0NYWktldHJsSEgxNnRUaXc5WlMteFk0aC1FVG1NVFZKY1M1X0lHM3pIdFo5TVcwQmNZZC1sWGQxR3lpWHhXWUo4V3JKdGpKRjFRX0xXY1ZrVk1jWm4tM1pnLVFFNlI2M0JJWFU5UmlxWFp5c0xpb2x0QVNTajl2c01jX2tpVTV0RlkxeXlvVnE1Ql9lUTNYT0psUVN4UkRhbmEwaWRV?oc=5",
+      "published_at": "2026-10-08T17:54:00+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Huragan Isaias nabiera siły i zbliża się do wybrzeża Zatoki Perskiej w USA",
+      "summary": "Huragan Isaias ma wzmocnić się do trzeciej kategorii przed uderzeniem w wybrzeże USA. Zjawisko to kończy wyjątkowo spokojny sezon huraganów spowodowany zjawiskiem El Niño.",
+      "why_it_matters": "Żywioł niesie ze sobą zagrożenie niszczycielskimi wiatrami, gwałtownymi opadami deszczu oraz powodziami dla południowych stanów USA.",
+      "category": "Środowisko i klimat",
+      "topics": [
+        "huragan Isaias",
+        "pogoda",
+        "USA",
+        "zatoka Meksykańska",
+        "Klimat"
+      ],
+      "editorial_score": 8.9,
+      "digest_text": "Huragan Isaias, będący pierwszą burzą huraganową w tegorocznym sezonie atlantyckim, kontynuuje wzmacnianie i ma szansę przekształcić się w potężną burzę trzeciej kategorii. Wczesnym piątkowym rankiem system osiągnął drugą kategorię z wiatrem wiejącym z prędkością dochodzącą do stu czterech mil na godzinę, jednak w najbliższych godzinach prognozowany jest dalszy, choć krótkotrwały wzrost jego siły. Zgodnie z najnowszymi szacunkami Amerykańskiego Narodowego Centrum ds. Huraganów, po osiągnięciu prędkości wiatru do stu piętnastu mil na godzinę Isaias nieznacznie osłabnie przed uderzeniem w wybrzeże Zatoki Meksykańskiej. Oczekuje się, że żywioł dotrze do lądu późnym piątkowym wieczorem lub wczesnymi godzinami sobotnimi czasu lokalnego w rejonie Alabamy oraz panhandle stanu Floryda.\n\nNastępnie system skieruje się na północ, przechodząc przez terytorium Alabamy i zahaczając w sobotę o wschodnie kraje Missouri. Mimo że po wejściu na ląd i utracie kontaktu z ciepłymi wodami oceanu huragan szybko osłabnie do poziomu burzy tropikalnej, nadal będzie nios ze sobą niebezpieczne wiatry oraz obfite opady deszczu. Władze wydały ostrzeżenia przed sztormem i samymi huraganami dla zagrożonych terenów. Wzdłuż wybrzeża Zatoki Meksykańskiej prognozowany jest niebezpieczny sztorm z cofką sięgającą nawet sześciu stóp, czemu towarzyszyć będą silne wiatry i wysokie fale, szczególnie w rejonie występowania przypływów. W południowej Alabamie, zachodniej części panhandle Florydy oraz południowo-zachodniej Gruorii spadnie od czterech do ośmiu cali deszczu, przy czym lokalnie sumy opadów mogą sięgnąć nawet piętnastu cali, co grozi gwałtownymi powodziami miejskimi oraz podtopieniami rzek.\n\nW obliczu zbliżającego się zagrożenia gubernator Florydy Ron DeSantis ogłosił stan wyjątkowy obejmujący dwadzieścia pięć hrabstw. W całym regionie odwołano lub przełożono szereg ważnych wydarzeń sportowych, choć wyczekiwany mecz futbolowy pomiędzy uniwersytetami w Georgii i Alabamie, w którym miał wziąć udział prezydent Donald Trump, wciąż figurował w planach na sobotę. W miarę dalszego przemieszczania się w głąb lądu i tracenia źródła zasilania w postaci ciepłych wód, zasięg oddziaływania uciążliwej pogody obejmie rozległe obszary południowo-wschodnich Stanów Zjednoczonych, sięgając na północy aż do doliny Tennessee oraz Karolín.\n\nPojawienie się Isaiasa przerywa okres niezwykłej ciszy w tegorocznym sezonie huraganowym na Atlantyku, który wcześniej przebiegał nad wyraz spokojnie z powodu rozwijającego się zjawiska El Nino. Prognostycy wskazywali, że silne El Nino sprzyja powstawaniu silnych uskoków wiatru nad Karaibami i Atlantykiem, które zazwyczaj rozrywają formujące się burze, zanim te zdążą się w pełni rozwijać. Niemniej jednak Isaias zdołał uformować się w obszarze o ograniczonym uskoku wiatru oraz bardzo wysokich temperaturach wód morskich wynoszących trzydzieści do trzydziestu jeden stopni Celsjusza, co zapewniło mu niezbędną energię. Specjaliści przewidują, że w miarę przemieszczania się na północ burza natrafi na silniejsze uskoki wiatru, co ograniczy jej dalszy rozwój, choć dokładne prognozy ścieżki przemieszczania się mogą jeszcze ulegać zmianom.",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/weather/articles/cw146l6pnvx0o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-09T07:34:51+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Szczepienie przeciwko HPV przed ciążą a ryzyko przedwczesnego porodu",
+      "summary": "Szczepienie przeciwko HPV przed zajściem w ciążę wiąże się z mniejszym ryzykiem przedwczesnego porodu i powikłań. To istotna informacja z zakresu profilaktyki zdrowotnej kobiet.",
+      "why_it_matters": "Pokazuje wymierne korzyści zdrowotne szczepień przeciwko HPV w kontekście planowania rodziny.",
+      "category": "Zdrowie",
+      "topics": [
+        "szczepienia HPV",
+        "ciąża",
+        "profilaktyka",
+        "zdrowie kobiet"
+      ],
+      "editorial_score": 8.9,
+      "digest_text": "Szczepienie przeciwko HPV przed ciążą przynosi wymierne korzyści zdrowotne, zmniejszając ryzyko wystąpienia przedwczesnego porodu oraz różnego rodzaju powikłań. Jak wynika z danych przedstawionych w Alercie Medycznym, profilaktyka ta ma kluczowe znaczenie dla zdrowia kobiet planujących macierzyństwo. Informacje te podkreślają wagę szczepień nie tylko w zapobieganiu chorobom nowotworowym, ale również w kontekście bezpiecznego przebiegu ciąży.",
+      "source": "Alert Medyczny",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNalVOcHREOXhlR2swYndvSXFtelZzejlSSW9sNm5DZUZaZDZvTG5UU3kyQzJMM1lTdnJaN215cFVTbnJyZXRRaUFaRVdpc2tYNU9JSzNFM3djNHdseG43eTJqNG1UVU5YeG9JcHZYMGJoY0x5YTVsWGdldUJLbGNpRF95aFhHQ0daeld3blprU1hDd1RxTS1FUlR2RVlqalVEUUtUWTdYeVlSTjhlOWVFdDJR?oc=5",
+      "published_at": "2026-10-08T22:52:50+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Microsoft pozwala dzielić się funkcjami sztucznej inteligencji w planach rodzinnych",
+      "summary": "Subskrybenci planów Microsoft 365 Family i Premium wkrótce będą mogli dzielić się korzyściami z AI i Copilot z innymi członkami planu. Zmianom ulegną jednak także zasady dotyczące przestrzeni dyskowej w chmurze OneDrive.",
+      "why_it_matters": "Umożliwia udostępnianie zaawansowanych funkcji AI w ramach jednej subskrypcji rodzinnej, zmieniając jednocześnie zasady korzystania z dysku w chmurze.",
+      "category": "AI i technologia",
+      "topics": [
+        "Microsoft 365",
+        "Copilot",
+        "subskrypcje rodzinne",
+        "sztuczna inteligencja"
+      ],
+      "editorial_score": 8.8,
+      "digest_text": "Microsoft w ubiegłym roku dołączył funkcje biuskie wspierane przez sztuczną inteligencję do subskrypcji Microsoft 365 Personal oraz Family, jednak początkowo dostęp do korzyści płynących z AI miał wyłącznie główny właściciel konta. Sytuacja ta wkrótce ulegnie zmianie, ponieważ firma zdecydowała się umożliwić subskrybentom planów Microsoft 365 Family oraz Premium dzielenie się narzędziami Copilot i funkcjami opartymi na sztucznej inteligencji z maksymalnie pięcioma innymi osobami w ramach tej samej subskrypcji, obok dotychczasowego dostępu do aplikacji biurowych oraz przestrzeni dyskowej OneDrive. Zmiany te zostały ujawnione w wiadomościach e-mail wysłanych do użytkowników przez firmę Microsoft, w których szczegółowo opisano modyfikacje wprowadzane w planach subskrypcyjnych w najbliższych miesiącach. Wśród ogłoszonych nowości znajduje się udostępnienie korzyści Copilota oraz limitów wykorzystania sztucznej inteligencji wszystkim uczestnikom planu rodzinnego, wraz z możliwością zarządzania dostępem do AI przez młodszych członków rodziny przez administratora konta.\n\nKolejną istotną zmianą jest przejście na bardziej elastyczne wykorzystanie sztucznej inteligencji. Dotychczasowe indywidualne limity korzystania z poszczególnych funkcji AI zostaną zastąpione wspólnym, elastycznym pula zużycia, którą użytkownicy będą mogli spożytkować na te zaawansowane funkcje sztucznej inteligencji, z których korzystają najczęściej w codziennej pracy. Dodatkowo pojawi się możliwość dokupienia dodatkowego pakietu wykorzystania AI w sytuacjach, gdy podstawowe zasoby okażą się niewystarczające. Takie podejście może jednak w praktyce oznaczać, że niektórzy subskrybenci będą zmuszeni do ponoszenia dodatkowych kosztów za nadmierne korzystanie z Copilota, w zależności od ich indywidualnych nawyków i intensywności pracy z narzędziami generatywnej sztucznej inteligencji.\n\nNajwiększą i budzącą najwięcej kontrowersji zmianą w ogłoszonym pakiecie modyfikacji jest kwestia chmury obliczeniowej oraz przestrzeni dyskowej OneDrive. Dotychczas każdy użytkownik w planie rodzinnym dysponował osobnym limit wynoszącym jeden terabajt przestrzeni na swoje pliki. Zgodnie z nowymi planami Microsoftu, dotychczasowy przydział ulegnie drastycznemu przekształceniu na wspólną pulę wynoszącą łącznie dwa terabajty przestrzeni dyskowej dla wszystkich osób korzystających z danego planu rodzinnego. Oznacza to, że cała rodzina będzie musiała dzielić się tym limitem, chociaż prywatność poszczególnych kont oraz przechowywanych plików pozostanie zachowana. Firma argumentuje, że takie rozwiązanie zapewnia większą elastyczność w sytuacjach, gdy jeden z członków rodziny przekroczy dotychczasowy próg jednego terabajta, choć w rzeczywistości wielu obserwatorów postrzega ten krok jako sposób na skłonienie użytkowników do dokupowania dodatkowej przestrzeni dyskowej.\n\nWspomniane zmiany dotyczące chmury wejdą w życie po pierwszym odnowieniu subskrypcji przypadającym po drugim maja 2027 roku. Jednocześnie opublikowane notatki wsparcia technicznego wskazują, że dotychczasowi subskrybenci przebywający na kwalifikujących się rynkach mogą również zakwalifikować się do otrzymania przejściowej bonusowej przestrzeni dyskowej, co ma pomóc rodzinom zużywającym dotychczas bardzo duże ilości miejsca w łagodnym przejścu na nowe zasady. Ogłoszenie tych nowości następuje dokładnie rok po debiucie planu Microsoft 365 Premium, który w cenie 19,99 dolarów miesięcznie łączył pełne korzyści pakietu Copilot Pro oraz klasycznej subskrypcji Microsoft 365 Family, stanowiąc fundament pod obecne poszerzanie dostępności sztucznej inteligencji na wszystkich uczestników gospodarstwa domowego.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/news/1008581/microsoft-365-family-premium-shared-ai-features-storage-changes",
+      "published_at": "2026-10-09T03:14:32-04:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Wyciek danych w Asos objął szczegółowe profile milionów użytkowników",
+      "summary": "Hakerzy uzyskali dostęp do szczegółowych profili klientów Asos, w tym historii wyszukiwania i dat urodzenia. Choć numery kont i hasła nie zostały naruszone, rośnie ryzyko ukierunkowanych ataków phishingowych.",
+      "why_it_matters": "Sprawa dotyczy danych milionów użytkowników, którzy mogą stać się celem zaawansowanych oszustw internetowych.",
+      "category": "AI i technologia",
+      "topics": [
+        "Asos",
+        "wyciek danych",
+        "cyberbezpieczeństwo",
+        "hakerzy"
+      ],
+      "editorial_score": 8.8,
+      "digest_text": "Sklep internetowy Asos poinformował swoich klientów, że hakerzy weszli w posiadanie szczegółowych profili potencjalnie milionów użytkowników. Aktualizacja komunikatu nastąpiła po tym, jak stacja BBC News przekazała władzom firmy informację od cyberprzestępców, z której wynikało, że naruszenie bezpieczeństwa wykracza daleko poza pierwotnie deklarowane podstawowe dane kontaktowe. W rękach przestępców znalazły się imiona, adresy zamieszkania, numery telefonów, adresy e-mail, numery klientów oraz daty urodzenia. Ponadto hakerzy uzyskali dostęp do historii wyszukiwania użytkowników w sklepie, takich jak konkretne zapytania o odzież czy dokładne daty rozpoczęcia korzystania z platformy przez poszczególne osoby. Jeden z poszkodowanych klientów wyraził zaniepokojenie faktem, że skradzione informacje mogą zostać wykorzystane do przeprowadzenia kolejnych ataków, zwiększając ryzyko skutecznych kampanii phishingowych oraz prób podszywania się pod markę.\n\nW oficjalnych wiadomościach wysłanych do klientów oraz w komunikacie skierowanym do akcjonariuszy za pośrednictwem giełdy w Londynie, Asos potwierdził kradzież profili danych, zapewniając jednocześnie, że hakerzy nie uzyskali dostępu do haseł ani szczegółów dotyczących kont bankowych czy płatniczych. Firma zaapelowała o zachowanie ostrożności wobec niespodziewanych wiadomości lub połączeń telefonicznych rzekomo pochodzących od sklepu, przypominając, że nigdy nie żąda podawania haseł, kodów bezpieczeństwa ani danych płatniczych za pośrednictwem nieoczekiwanych kanałów kontaktu. Przedsiębiorstwo odmówiło jednak odpowiedzi na pytania dotyczące całkowitej skali naruszenia.\n\nGłośny atak zyskał rozgłos na całym świecie, gdy cyberprzestępcy wykorzystali system aplikacji Asos do wysłania powiadomienia typu pop-up do potencjalnie milionów użytkowników. Przestępcy skontaktowali się z BBC, udostępniając próbkę skradzionych danych, co ujawniło rzeczywisty rozmiar wycieku. Redakcja wstrzymała publikację informacji, aby umożliwić spółce wcześniejsze powiadomienie klientów. W toku trwającego śledztwa Asos wyjaśnił, że hakerzy uzyskali dostęp do konta pracowniczego poprzez podszycie się pod zaufany kontakt w celu zdobycia danych logowania, co umożliwiło pobranie bazy danych klientów z wykorzystaniem zewnętrznych narzędzi.\n\nW przesłanym do klientów powiadomieniu hakerzy twierdzili, że skompromitowali instancję firmy Snowflake zajmującej się przechowywaniem i analizą danych. Grupa przestępcza pod nazwą Xuanyewen przekazała, że do uzyskania dostępu posłużyła się platformą opartą na rozwiązaniu Snowflake o nazwie Simon AI. Przedstawiciele Snowflake wcześniej deklarowali, że ich platforma nie została naruszona. Asos oświadczył, że od klientów nie jest wymagane podejmowanie żadnych konkretnych działań, jednak niezależni eksperci do spraw cyberbezpieczeństwa zalecają ostrożność, zmianę haseł jako środek ostrożności oraz wzmożoną czujność wobec podejrzanej aktywności, wskazując, że oszuści mogą próbować wykorzystać posiadane dane osobowe do uwiarygodnienia przyszłych ataków socjotechnicznych. Asos podtrzymał, że strona internetowa oraz aplikacja są bezpieczne w użyciu, a firma wdrożyła dodatkowe środki w celu wzmocnienia zabezpieczeń.",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c3zxjdw5ywgpo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-08T16:29:33+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Misja Crew-12 powróciła na Ziemię po blisko ośmiu miesiącach na ISS",
+      "summary": "Statek kosmiczny SpaceX Crew Dragon Freedom pomyślnie wodował u wybrzeży Kalifornii. Na pokładzie znajdowała się czteroosobowa załoga misji Crew-12.",
+      "why_it_matters": "To udane zakończenie długoterminowej misji badawczej z udziałem międzynarodowego zespołu astronautów na Międzynarodowej Stacji Kosmicznej.",
+      "category": "Kosmos",
+      "topics": [
+        "Crew-12",
+        "ISS",
+        "SpaceX",
+        "powrót na Ziemię"
+      ],
+      "editorial_score": 8.75,
+      "digest_text": "Statek kosmiczny SpaceX Crew Dragon o nazwie Freedom powrócił na Ziemię, wodując na Oceanie Spokojnym u wybrzeży Kalifornii. Wydarzenie to miało miejsce 8 października 2026 roku i zostało uwiecznione na oficjalnych fotografiach NASA. Kapsuła bezpiecznie zakończyła swoją misję, lądując w wyznaczonym akwenie wodnym, co stanowiło finałowy etapu trwającego miesiącami lotu orbitalnego. Na pokładzie pojazdu znajdowało się czworo astronautów reprezentujących różne agencje kosmiczne, którzy przez długi czas pracowali wspólnie w przestrzeni kosmicznej.\n\nW skład załogi weszli astronauci NASA Jessica Meir oraz Jack Hathaway, reprezentująca Europejską Agencję Kosmiczną ESA Sophie Adenot, a także kosmonauta rosyjskiej agencji Roscosmos Andrey Fedyaev. Czwórka ta spędziła na pokładzie Międzynarodowej Stacji Kosmicznej blisko osiem miesięcy. W tym czasie członkowie misji Crew-12 realizowali różnorodne zadania badawcze, techniczne oraz operacyjne, które są standardową częścią długoterminowych pobytów na orbita okołoziemskiej.\n\nMiędzynarodowa Stacja Kosmiczna, na której przebywali astronauci, służy jako kluczowe laboratorium badawcze, gdzie załogi z całego świata prowadzą eksperymenty w warunkach mikrograwitacji. Misje takie jak Crew-12 wymagają ścisłej współpracy międzynarodowej między głównymi partnerami zarządzającymi stacją, w tym Stanami Zjednoczonymi, Europą oraz Rosją. Pomyślne wodowanie kapsuły Freedom oraz zakończenie niemal ośmiomiesięcznej ekspedycji stanowią kolejne udane zamknięcie rotacyjnego pobytu załogowego na stacji orbitalnej.",
+      "source": "NASA",
+      "url": "https://www.nasa.gov/image-article/crew-12-returns-to-earth/",
+      "published_at": "2026-10-08T18:52:27+00:00",
+      "full_text_used": true
+    }
+  ],
   "stats": {
     "candidates": 118,
-    "ranked": 27,
+    "ranked": 36,
     "published": 20
   }
 }
