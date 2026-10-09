@@ -4,6 +4,14 @@ const nav = document.querySelector('#category-nav');
 const dayNav = document.querySelector('#day-nav');
 const archiveToggle = document.querySelector('#archive-toggle');
 const archiveList = document.querySelector('#archive-list');
+const archiveSearchInput = document.querySelector('#archive-search-input');
+const archiveSearchStatus = document.querySelector('#archive-search-status');
+const archiveSearchResults = document.querySelector('#archive-search-results');
+
+const savedToggle = document.querySelector('#saved-toggle');
+const savedCount = document.querySelector('#saved-count');
+const savedPanel = document.querySelector('#saved-panel');
+const savedList = document.querySelector('#saved-list');
 
 const preferencesToggle = document.querySelector('#preferences-toggle');
 const preferencesPanel = document.querySelector('#preferences-panel');
@@ -27,6 +35,7 @@ const onboardingCustomList = document.querySelector('#onboarding-custom-list');
 
 const PREFS_KEY = 'daily-news-user-preferences-v2';
 const FEEDBACK_KEY = 'daily-news-feedback-v1';
+const SAVED_KEY = 'daily-news-saved-v1';
 
 const CATEGORIES = [
   'AI i technologia',
@@ -81,9 +90,16 @@ userPreferences.enabledCategories={...defaultPreferences().enabledCategories,...
 userPreferences.topics=userPreferences.topics||{};
 userPreferences.customInterests=Array.isArray(userPreferences.customInterests)?userPreferences.customInterests:[];
 let feedbackState=loadJson(FEEDBACK_KEY,{});
+let savedItems=loadJson(SAVED_KEY,[]);
+if(!Array.isArray(savedItems)) savedItems=[];
+let archiveCache=new Map();
 
 function savePreferences(){ localStorage.setItem(PREFS_KEY,JSON.stringify(userPreferences)); }
 function saveFeedback(){ localStorage.setItem(FEEDBACK_KEY,JSON.stringify(feedbackState)); }
+function saveSaved(){
+  localStorage.setItem(SAVED_KEY,JSON.stringify(savedItems));
+  renderSavedCount();
+}
 
 function formatDate(value){
   if(!value) return '';
@@ -185,6 +201,76 @@ function applyFeedback(item,direction){
   savePreferences();
   renderPreferences();
   if(activeData) render(activeData);
+}
+
+function isSaved(item){
+  return savedItems.some(saved=>itemId(saved)===itemId(item));
+}
+
+function renderSavedCount(){
+  if(savedCount) savedCount.textContent=String(savedItems.length);
+}
+
+function toggleSaved(item){
+  const id=itemId(item);
+  const index=savedItems.findIndex(saved=>itemId(saved)===id);
+  if(index>=0){
+    savedItems.splice(index,1);
+  }else{
+    savedItems.unshift({...item,saved_at:new Date().toISOString()});
+  }
+  saveSaved();
+  renderSavedPanel();
+  if(activeData) render(activeData);
+}
+
+function renderSavedPanel(){
+  if(!savedList) return;
+  savedList.innerHTML='';
+  if(!savedItems.length){
+    const empty=document.createElement('p');
+    empty.className='empty';
+    empty.textContent='Nie masz jeszcze zapisanych materiałów.';
+    savedList.appendChild(empty);
+    return;
+  }
+
+  savedItems.forEach(item=>{
+    const row=document.createElement('article');
+    row.className='saved-item';
+
+    const meta=document.createElement('div');
+    meta.className='saved-item-meta';
+    meta.textContent=[item.category,item.source].filter(Boolean).join(' · ');
+
+    const title=document.createElement('h3');
+    title.textContent=item.title||'Bez tytułu';
+
+    const actions=document.createElement('div');
+    actions.className='saved-item-actions';
+
+    const source=document.createElement('a');
+    source.href=item.url||'#';
+    source.target='_blank';
+    source.rel='noopener noreferrer';
+    source.textContent='Źródło ↗';
+    source.addEventListener('click',()=>recordSourceClick(item));
+
+    const remove=document.createElement('button');
+    remove.type='button';
+    remove.textContent='Usuń';
+    remove.addEventListener('click',()=>toggleSaved(item));
+
+    actions.append(source,remove);
+    row.append(meta,title,actions);
+    savedList.appendChild(row);
+  });
+}
+
+function setSavedOpen(open){
+  if(!savedPanel) return;
+  savedPanel.hidden=!open;
+  document.body.classList.toggle('preferences-open',open);
 }
 
 function recordSourceClick(item){
@@ -316,6 +402,15 @@ function storyCard(item,featured=false){
 
   const feedback=document.createElement('div');
   feedback.className='feedback-actions';
+
+  const saveButton=document.createElement('button');
+  saveButton.type='button';
+  saveButton.className='feedback-button save-button'+(isSaved(item)?' active':'');
+  saveButton.textContent=isSaved(item)?'Zapisano':'Zapisz';
+  saveButton.addEventListener('click',event=>{
+    event.stopPropagation();
+    toggleSaved(item);
+  });
   const more=document.createElement('button');
   more.type='button';
   more.textContent='Więcej takich';
@@ -329,7 +424,7 @@ function storyCard(item,featured=false){
   if(current==='less') less.classList.add('active');
   more.addEventListener('click',event=>{event.stopPropagation();applyFeedback(item,'more');});
   less.addEventListener('click',event=>{event.stopPropagation();applyFeedback(item,'less');});
-  feedback.append(more,less);
+  feedback.append(saveButton,more,less);
 
   const footer=document.createElement('div');
   footer.className='news-footer';
@@ -688,6 +783,115 @@ wireCustomInput(preferencesCustomInput,preferencesCustomAdd,value=>{
   return added;
 });
 
+async function loadArchiveForSearch(){
+  if(!archiveDates.length) return [];
+  const missing=archiveDates.filter(date=>!archiveCache.has(date));
+
+  await Promise.all(missing.map(async date=>{
+    try{
+      const response=await fetch('./data/archive/'+date+'.json',{cache:'no-store'});
+      if(!response.ok) return;
+      const data=await response.json();
+      archiveCache.set(date,data);
+    }catch(_){}
+  }));
+
+  return archiveDates.flatMap(date=>{
+    const data=archiveCache.get(date);
+    if(!data) return [];
+    return [...(data.top_stories||[]),...(data.more_stories||[])]
+      .map(item=>({...item,archive_date:date}));
+  });
+}
+
+function searchText(item){
+  const digest=item.digest||{};
+  return normalizeTopic([
+    item.title,
+    item.summary,
+    item.why_it_matters,
+    item.category,
+    item.source,
+    ...(item.topics||[]),
+    digest.what_happened,
+    digest.context,
+    digest.what_next,
+    ...(digest.key_points||[])
+  ].filter(Boolean).join(' '));
+}
+
+async function runArchiveSearch(query){
+  if(!archiveSearchResults||!archiveSearchStatus) return;
+  const clean=normalizeTopic(query);
+
+  if(clean.length<2){
+    archiveSearchResults.hidden=true;
+    archiveSearchResults.innerHTML='';
+    archiveSearchStatus.textContent='';
+    return;
+  }
+
+  archiveSearchStatus.textContent='Szukam…';
+  const items=await loadArchiveForSearch();
+  const words=clean.split(/\s+/).filter(Boolean);
+
+  const results=items
+    .filter(item=>{
+      const haystack=searchText(item);
+      return words.every(word=>haystack.includes(word));
+    })
+    .sort((a,b)=>String(b.archive_date).localeCompare(String(a.archive_date)))
+    .slice(0,30);
+
+  archiveSearchStatus.textContent=results.length
+    ? results.length+' wyników'
+    : 'Brak wyników';
+
+  archiveSearchResults.innerHTML='';
+  archiveSearchResults.hidden=false;
+
+  if(!results.length){
+    const empty=document.createElement('p');
+    empty.className='empty';
+    empty.textContent='Spróbuj innego hasła.';
+    archiveSearchResults.appendChild(empty);
+    return;
+  }
+
+  const heading=document.createElement('div');
+  heading.className='section-head search-results-head';
+  const h=document.createElement('h2');
+  h.textContent='Wyniki wyszukiwania';
+  heading.appendChild(h);
+
+  const grid=document.createElement('div');
+  grid.className='news-grid';
+  results.forEach(item=>{
+    const card=storyCard(item,false);
+    const badge=document.createElement('span');
+    badge.className='archive-result-date';
+    badge.textContent=formatArchiveDay(item.archive_date);
+    card.prepend(badge);
+    grid.appendChild(card);
+  });
+
+  archiveSearchResults.append(heading,grid);
+}
+
+let archiveSearchTimer=null;
+archiveSearchInput?.addEventListener('input',()=>{
+  clearTimeout(archiveSearchTimer);
+  archiveSearchTimer=setTimeout(()=>runArchiveSearch(archiveSearchInput.value),220);
+});
+
+savedToggle?.addEventListener('click',()=>{
+  renderSavedPanel();
+  setSavedOpen(true);
+});
+savedPanel?.addEventListener('click',event=>{
+  if(event.target.closest('[data-close-saved]')) setSavedOpen(false);
+});
+
 preferencesToggle?.addEventListener('click',()=>setPreferencesOpen(true));
 preferencesPanel?.addEventListener('click',event=>{
   if(event.target.closest('[data-close-preferences]')) setPreferencesOpen(false);
@@ -717,6 +921,8 @@ archiveToggle?.addEventListener('click',()=>{
   archiveToggle.setAttribute('aria-expanded',String(open));
 });
 
+renderSavedCount();
+renderSavedPanel();
 renderPreferences();
 setupOnboarding();
 
