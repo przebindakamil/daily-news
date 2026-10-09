@@ -13,7 +13,6 @@ Ten plik jest krótkim widokiem kierunku projektu. Źródłem prawdy dla niewyko
 ## Later
 - [ ] Konto i synchronizacja preferencji między urządzeniami
 - [ ] „Dlaczego to jest ważne dla mnie?” z głębszym kontekstem AI
-- [ ] Lepsze źródła niż sam Google News RSS
 - [ ] Własna domena i SEO
 - [ ] Analytics prywatnościowy
 
@@ -35,3 +34,4 @@ Ten plik jest krótkim widokiem kierunku projektu. Źródłem prawdy dla niewyko
 - [x] Zapisane newsy / lista „do przeczytania”
 - [x] Wyszukiwarka archiwum
 - [x] Presety zainteresowań z profilem „Omnibus” i rankingiem różnorodności
+- [x] Wieloźródłowe discovery: RSS, źródła pierwotne, agencje i zaufane domeny
