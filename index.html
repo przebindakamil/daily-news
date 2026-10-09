@@ -10,7 +10,13 @@
 <body>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="./">DAILY NEWS</a>
+      <a class="brand" href="#today">DAILY NEWS</a>
+      <nav class="main-nav" aria-label="Główna nawigacja">
+        <a href="#today" data-view-link="today">Dzisiaj</a>
+        <a href="#categories" data-view-link="categories">Kategorie</a>
+        <button id="nav-archive" type="button">Archiwum</button>
+        <button id="nav-saved" type="button">Zapisane</button>
+      </nav>
       <div class="header-actions">
         <span id="updated-at" class="updated-at">Ładowanie…</span>
         <button id="saved-toggle" class="header-tool" type="button">Zapisane <span id="saved-count" class="saved-count">0</span></button>
@@ -26,6 +32,7 @@
       <p class="lead">Wyselekcjonowane informacje, które naprawdę warto znać — bez obowiązku wypełniania każdej kategorii.</p>
     </section>
 
+    <section id="today-view">
     <div class="day-browser">
       <nav id="day-nav" class="day-nav" aria-label="Dni"></nav>
       <button id="archive-toggle" class="archive-toggle" type="button" aria-expanded="false">Archiwum</button>
@@ -49,6 +56,19 @@
 
     <section id="news-root" class="news-root" aria-live="polite">
       <p class="loading">Ładowanie wiadomości…</p>
+    </section>
+    </section>
+
+    <section id="categories-view" class="categories-view" hidden aria-live="polite">
+      <div class="categories-view-head">
+        <div>
+          <p class="eyebrow">Przegląd tematyczny</p>
+          <h2>Kategorie</h2>
+          <p>Bez personalizacji. Czysty przegląd redakcyjny według tematów.</p>
+        </div>
+        <button id="categories-back" class="categories-back" type="button" hidden>Wszystkie kategorie</button>
+      </div>
+      <div id="categories-root"></div>
     </section>
   </main>
 
