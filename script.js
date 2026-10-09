@@ -1,12 +1,30 @@
 const root = document.querySelector('#news-root');
 const updated = document.querySelector('#updated-at');
 const nav = document.querySelector('#category-nav');
+const dayNav = document.querySelector('#day-nav');
+const archiveToggle = document.querySelector('#archive-toggle');
+const archiveList = document.querySelector('#archive-list');
+
+let archiveDates = [];
+let activeDate = null;
 
 function formatDate(value){
   if(!value) return '';
   const date = new Date(value);
   if(Number.isNaN(date.getTime())) return value;
   return new Intl.DateTimeFormat('pl-PL',{dateStyle:'medium',timeStyle:'short'}).format(date);
+}
+
+function formatDayLabel(dateString, index){
+  if(index===0) return 'Dzisiaj';
+  if(index===1) return 'Wczoraj';
+  const date=new Date(dateString+'T12:00:00');
+  return new Intl.DateTimeFormat('pl-PL',{day:'numeric',month:'short'}).format(date);
+}
+
+function formatArchiveDay(dateString){
+  const date=new Date(dateString+'T12:00:00');
+  return new Intl.DateTimeFormat('pl-PL',{weekday:'short',day:'numeric',month:'long',year:'numeric'}).format(date);
 }
 
 function storyCard(item, featured=false){
@@ -90,20 +108,83 @@ function render(data){
     nav.appendChild(chip);
   });
 
-  const topSection=renderSection('Dzisiaj warto wiedzieć',top,true);
+  const isToday=activeDate===archiveDates[0];
+  const topSection=renderSection(isToday?'Dzisiaj warto wiedzieć':'Warto było wiedzieć',top,true);
   const moreSection=renderSection('Jeszcze warto zobaczyć',more,false);
   if(topSection) root.appendChild(topSection);
   if(moreSection) root.appendChild(moreSection);
 
   if(!top.length && !more.length){
-    root.innerHTML='<p class="empty">Brak wiadomości. Uruchom workflow generujący dane.</p>';
+    root.innerHTML='<p class="empty">Brak wiadomości dla tego dnia.</p>';
   }
 }
 
-fetch('./data/news.json',{cache:'no-store'})
-  .then(r=>{if(!r.ok) throw new Error('Brak pliku news.json'); return r.json();})
-  .then(render)
-  .catch(err=>{
+async function loadBriefing(date){
+  activeDate=date;
+  renderDayNavigation();
+  root.innerHTML='<p class="loading">Ładowanie briefingu…</p>';
+  try{
+    const response=await fetch('./data/archive/'+date+'.json',{cache:'no-store'});
+    if(!response.ok) throw new Error('Nie udało się wczytać tego dnia.');
+    render(await response.json());
+  }catch(err){
     root.innerHTML='<p class="empty">'+err.message+'</p>';
-    updated.textContent='Brak danych';
+  }
+}
+
+function renderDayNavigation(){
+  dayNav.innerHTML='';
+  archiveDates.slice(0,5).forEach((date,index)=>{
+    const button=document.createElement('button');
+    button.type='button';
+    button.className='day-button' + (date===activeDate?' active':'');
+    button.textContent=formatDayLabel(date,index);
+    button.addEventListener('click',()=>loadBriefing(date));
+    dayNav.appendChild(button);
+  });
+
+  archiveList.innerHTML='';
+  archiveDates.forEach(date=>{
+    const button=document.createElement('button');
+    button.type='button';
+    button.className='archive-day' + (date===activeDate?' active':'');
+    button.textContent=formatArchiveDay(date);
+    button.addEventListener('click',()=>{
+      archiveList.hidden=true;
+      archiveToggle.setAttribute('aria-expanded','false');
+      loadBriefing(date);
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+    archiveList.appendChild(button);
+  });
+}
+
+archiveToggle?.addEventListener('click',()=>{
+  const open=archiveList.hidden;
+  archiveList.hidden=!open;
+  archiveToggle.setAttribute('aria-expanded',String(open));
+});
+
+fetch('./data/archive/index.json',{cache:'no-store'})
+  .then(r=>{if(!r.ok) throw new Error('Brak indeksu archiwum'); return r.json();})
+  .then(index=>{
+    archiveDates=index.dates||[];
+    if(!archiveDates.length) throw new Error('Archiwum jest puste');
+    activeDate=index.latest||archiveDates[0];
+    renderDayNavigation();
+    return loadBriefing(activeDate);
+  })
+  .catch(async()=>{
+    try{
+      const response=await fetch('./data/current.json',{cache:'no-store'});
+      if(!response.ok) throw new Error();
+      const data=await response.json();
+      activeDate=data.date||null;
+      archiveDates=activeDate?[activeDate]:[];
+      renderDayNavigation();
+      render(data);
+    }catch{
+      root.innerHTML='<p class="empty">Brak danych do wyświetlenia.</p>';
+      updated.textContent='Brak danych';
+    }
   });
