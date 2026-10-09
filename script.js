@@ -4,25 +4,52 @@ const nav = document.querySelector('#category-nav');
 const dayNav = document.querySelector('#day-nav');
 const archiveToggle = document.querySelector('#archive-toggle');
 const archiveList = document.querySelector('#archive-list');
+
 const preferencesToggle = document.querySelector('#preferences-toggle');
 const preferencesPanel = document.querySelector('#preferences-panel');
 const preferencesList = document.querySelector('#preferences-list');
 const preferencesReset = document.querySelector('#preferences-reset');
+const preferencesVolume = document.querySelector('#preferences-volume');
+const preferencesBubble = document.querySelector('#preferences-bubble');
 
-const PREFS_KEY = 'daily-news-user-preferences-v1';
+const onboardingPanel = document.querySelector('#onboarding-panel');
+const onboardingTopics = document.querySelector('#onboarding-topics');
+const onboardingVolume = document.querySelector('#onboarding-volume');
+const onboardingBubble = document.querySelector('#onboarding-bubble');
+const onboardingSave = document.querySelector('#onboarding-save');
+const onboardingStatus = document.querySelector('#onboarding-status');
+
+const PREFS_KEY = 'daily-news-user-preferences-v2';
 const FEEDBACK_KEY = 'daily-news-feedback-v1';
 
-const DEFAULT_CATEGORY_WEIGHTS = {
-  'AI i technologia': 9,
-  'Piłka nożna': 8,
-  'Sport i trening': 8,
-  'Finanse i biznes': 7,
-  'Polska i świat': 6,
-  'Nauka': 7,
-  'Motoryzacja': 6,
-  'Podróże': 5,
-  'Kultura': 5
+const CATEGORIES = [
+  'AI i technologia',
+  'Piłka nożna',
+  'Sport i trening',
+  'Finanse i biznes',
+  'Polska i świat',
+  'Nauka',
+  'Motoryzacja',
+  'Podróże',
+  'Kultura'
+];
+
+const VOLUME_LIMITS = {
+  short: 5,
+  standard: 9,
+  more: 15
 };
+
+function defaultPreferences(){
+  return {
+    onboarded: false,
+    categories: Object.fromEntries(CATEGORIES.map(category => [category, 5])),
+    enabledCategories: Object.fromEntries(CATEGORIES.map(category => [category, true])),
+    topics: {},
+    volume: 'standard',
+    outsideBubble: true
+  };
+}
 
 let archiveDates = [];
 let activeDate = null;
@@ -37,7 +64,10 @@ function loadJson(key, fallback){
   }
 }
 
-let userPreferences = loadJson(PREFS_KEY, { categories: {...DEFAULT_CATEGORY_WEIGHTS}, topics: {} });
+let userPreferences = {...defaultPreferences(), ...loadJson(PREFS_KEY, {})};
+userPreferences.categories = {...defaultPreferences().categories, ...(userPreferences.categories || {})};
+userPreferences.enabledCategories = {...defaultPreferences().enabledCategories, ...(userPreferences.enabledCategories || {})};
+userPreferences.topics = userPreferences.topics || {};
 let feedbackState = loadJson(FEEDBACK_KEY, {});
 
 function savePreferences(){
@@ -80,6 +110,10 @@ function editorialScore(item){
   return Number.isFinite(raw) && raw > 0 ? Math.min(10, raw) : 7;
 }
 
+function isCategoryEnabled(category){
+  return userPreferences.enabledCategories?.[category] !== false;
+}
+
 function categoryWeight(item){
   return Number(userPreferences.categories?.[item.category] ?? 5);
 }
@@ -105,6 +139,10 @@ function personalizedScore(item){
     topicAffinity(item) * .12 +
     explicitFeedback(item) * .08
   );
+}
+
+function currentDailyLimit(){
+  return VOLUME_LIMITS[userPreferences.volume] || VOLUME_LIMITS.standard;
 }
 
 function applyFeedback(item, direction){
@@ -238,24 +276,37 @@ function renderSection(title, items, featured=false, className=''){
 }
 
 function splitPersonalized(items){
-  const ranked=[...items].sort((a,b)=>personalizedScore(b)-personalizedScore(a));
-  const forYou=ranked.slice(0,5);
-  const used=new Set(forYou.map(itemId));
-
-  const bubbleCandidates=items
-    .filter(item=>!used.has(itemId(item)))
-    .filter(item=>categoryWeight(item)<=5.5)
-    .sort((a,b)=>editorialScore(b)-editorialScore(a));
-
-  let outsideBubble=bubbleCandidates[0] || items
-    .filter(item=>!used.has(itemId(item)))
-    .sort((a,b)=>editorialScore(b)-editorialScore(a))[0] || null;
-
-  if(outsideBubble) used.add(itemId(outsideBubble));
-
-  const rest=items
-    .filter(item=>!used.has(itemId(item)))
+  const limit = Math.min(currentDailyLimit(), items.length);
+  const enabled = items
+    .filter(item=>isCategoryEnabled(item.category))
     .sort((a,b)=>personalizedScore(b)-personalizedScore(a));
+
+  const reserveBubble = userPreferences.outsideBubble && limit > 2 ? 1 : 0;
+  const personalLimit = Math.max(1, limit - reserveBubble);
+  const selected = enabled.slice(0, personalLimit);
+  const used = new Set(selected.map(itemId));
+
+  let outsideBubble = null;
+  if(userPreferences.outsideBubble){
+    const bubbleCandidates = items
+      .filter(item=>!used.has(itemId(item)))
+      .filter(item=>!isCategoryEnabled(item.category) || categoryWeight(item)<=5)
+      .sort((a,b)=>editorialScore(b)-editorialScore(a));
+    outsideBubble = bubbleCandidates[0] || null;
+    if(outsideBubble) used.add(itemId(outsideBubble));
+  }
+
+  if(!outsideBubble && selected.length < limit){
+    const fallback = enabled.find(item=>!used.has(itemId(item)));
+    if(fallback){
+      selected.push(fallback);
+      used.add(itemId(fallback));
+    }
+  }
+
+  const forYouCount = Math.min(selected.length, currentDailyLimit() <= 5 ? 4 : 5);
+  const forYou = selected.slice(0, forYouCount);
+  const rest = selected.slice(forYouCount);
 
   return {forYou,outsideBubble,rest};
 }
@@ -267,7 +318,14 @@ function render(data){
   nav.innerHTML='';
 
   const all=[...(data.top_stories||[]),...(data.more_stories||[])];
-  const categories=[...new Set(all.map(x=>x.category).filter(Boolean))];
+  if(!all.length){
+    root.innerHTML='<p class="empty">Brak wiadomości dla tego dnia.</p>';
+    return;
+  }
+
+  const {forYou,outsideBubble,rest}=splitPersonalized(all);
+  const visible=[...forYou,...rest,...(outsideBubble?[outsideBubble]:[])];
+  const categories=[...new Set(visible.map(x=>x.category).filter(Boolean))];
 
   categories.forEach(category=>{
     const chip=document.createElement('span');
@@ -276,14 +334,7 @@ function render(data){
     nav.appendChild(chip);
   });
 
-  if(!all.length){
-    root.innerHTML='<p class="empty">Brak wiadomości dla tego dnia.</p>';
-    return;
-  }
-
-  const {forYou,outsideBubble,rest}=splitPersonalized(all);
   const isToday=activeDate===archiveDates[0];
-
   const personalSection=renderSection(isToday?'Dla Ciebie':'Najlepiej dopasowane',forYou,true);
   if(personalSection) root.appendChild(personalSection);
 
@@ -294,6 +345,10 @@ function render(data){
 
   const restSection=renderSection('Jeszcze warto zobaczyć',rest,false);
   if(restSection) root.appendChild(restSection);
+
+  if(!forYou.length && !outsideBubble && !rest.length){
+    root.innerHTML='<p class="empty">Brak materiałów w wybranych kategoriach. Zmień zainteresowania w „Dostosuj”.</p>';
+  }
 }
 
 async function loadBriefing(date){
@@ -336,31 +391,77 @@ function renderDayNavigation(){
   });
 }
 
+function renderVolumeOptions(container){
+  if(!container) return;
+  container.innerHTML='';
+  [
+    ['short','Krótko','około 5'],
+    ['standard','Standard','około 9'],
+    ['more','Więcej','do 15']
+  ].forEach(([key,label,detail])=>{
+    const button=document.createElement('button');
+    button.type='button';
+    button.dataset.volume=key;
+    button.className=userPreferences.volume===key?'active':'';
+    button.innerHTML=label+' <span>'+detail+'</span>';
+    button.addEventListener('click',()=>{
+      userPreferences.volume=key;
+      savePreferences();
+      renderPreferences();
+      if(activeData) render(activeData);
+    });
+    container.appendChild(button);
+  });
+}
+
 function renderPreferences(){
   if(!preferencesList) return;
   preferencesList.innerHTML='';
-  Object.keys(DEFAULT_CATEGORY_WEIGHTS).forEach(category=>{
-    const row=document.createElement('label');
+
+  CATEGORIES.forEach(category=>{
+    const row=document.createElement('div');
     row.className='preference-row';
+
+    const toggle=document.createElement('input');
+    toggle.type='checkbox';
+    toggle.className='category-enable';
+    toggle.checked=isCategoryEnabled(category);
+    toggle.setAttribute('aria-label','Włącz '+category);
+
     const name=document.createElement('span');
     name.textContent=category;
-    const value=document.createElement('output');
+
     const input=document.createElement('input');
     input.type='range';
     input.min='0';
     input.max='10';
     input.step='1';
-    input.value=String(Math.round(userPreferences.categories?.[category] ?? DEFAULT_CATEGORY_WEIGHTS[category]));
+    input.value=String(Math.round(userPreferences.categories?.[category] ?? 5));
+    input.disabled=!toggle.checked;
+
+    const value=document.createElement('output');
     value.textContent=input.value;
+
+    toggle.addEventListener('change',()=>{
+      userPreferences.enabledCategories[category]=toggle.checked;
+      input.disabled=!toggle.checked;
+      savePreferences();
+      if(activeData) render(activeData);
+    });
+
     input.addEventListener('input',()=>{
       value.textContent=input.value;
       userPreferences.categories[category]=Number(input.value);
       savePreferences();
       if(activeData) render(activeData);
     });
-    row.append(name,input,value);
+
+    row.append(toggle,name,input,value);
     preferencesList.appendChild(row);
   });
+
+  renderVolumeOptions(preferencesVolume);
+  if(preferencesBubble) preferencesBubble.checked=Boolean(userPreferences.outsideBubble);
 }
 
 function setPreferencesOpen(open){
@@ -369,12 +470,77 @@ function setPreferencesOpen(open){
   document.body.classList.toggle('preferences-open',open);
 }
 
+function setupOnboarding(){
+  if(!onboardingPanel || userPreferences.onboarded) return;
+
+  const selected = new Set();
+  let selectedVolume='standard';
+
+  onboardingTopics.innerHTML='';
+  CATEGORIES.forEach(category=>{
+    const button=document.createElement('button');
+    button.type='button';
+    button.className='onboarding-topic';
+    button.textContent=category;
+    button.addEventListener('click',()=>{
+      if(selected.has(category)){
+        selected.delete(category);
+        button.classList.remove('active');
+      }else{
+        selected.add(category);
+        button.classList.add('active');
+      }
+      onboardingSave.disabled=selected.size<3;
+      onboardingStatus.textContent=selected.size<3
+        ? 'Wybierz jeszcze '+(3-selected.size)
+        : 'Wybrano '+selected.size+' tematów';
+    });
+    onboardingTopics.appendChild(button);
+  });
+
+  onboardingVolume?.querySelectorAll('[data-volume]').forEach(button=>{
+    button.addEventListener('click',()=>{
+      selectedVolume=button.dataset.volume;
+      onboardingVolume.querySelectorAll('[data-volume]').forEach(x=>x.classList.toggle('active',x===button));
+    });
+  });
+
+  onboardingSave?.addEventListener('click',()=>{
+    if(selected.size<3) return;
+
+    userPreferences = {
+      ...defaultPreferences(),
+      onboarded:true,
+      categories:Object.fromEntries(CATEGORIES.map(category=>[category,selected.has(category)?8:0])),
+      enabledCategories:Object.fromEntries(CATEGORIES.map(category=>[category,selected.has(category)])),
+      topics:{},
+      volume:selectedVolume,
+      outsideBubble:Boolean(onboardingBubble?.checked)
+    };
+
+    savePreferences();
+    onboardingPanel.hidden=true;
+    document.body.classList.remove('onboarding-open');
+    renderPreferences();
+    if(activeData) render(activeData);
+  });
+
+  onboardingPanel.hidden=false;
+  document.body.classList.add('onboarding-open');
+}
+
 preferencesToggle?.addEventListener('click',()=>setPreferencesOpen(true));
 preferencesPanel?.addEventListener('click',event=>{
   if(event.target.closest('[data-close-preferences]')) setPreferencesOpen(false);
 });
+preferencesBubble?.addEventListener('change',()=>{
+  userPreferences.outsideBubble=preferencesBubble.checked;
+  savePreferences();
+  if(activeData) render(activeData);
+});
 preferencesReset?.addEventListener('click',()=>{
-  userPreferences={categories:{...DEFAULT_CATEGORY_WEIGHTS},topics:{}};
+  userPreferences=defaultPreferences();
+  userPreferences.onboarded=true;
   feedbackState={};
   savePreferences();
   saveFeedback();
@@ -393,6 +559,7 @@ archiveToggle?.addEventListener('click',()=>{
 });
 
 renderPreferences();
+setupOnboarding();
 
 fetch('./data/archive/index.json',{cache:'no-store'})
   .then(r=>{if(!r.ok) throw new Error('Brak indeksu archiwum'); return r.json();})
