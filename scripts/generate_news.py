@@ -665,6 +665,36 @@ def edit_finalists(ranked, preferences):
     return selected[:target], min(top_count, target)
 
 
+
+def choose_top_of_day(items, limit=3):
+    """Pick editorially strongest stories, preferring category diversity."""
+    ranked = sorted(
+        items,
+        key=lambda item: float(item.get("editorial_score", 0)),
+        reverse=True,
+    )
+    selected = []
+    used_categories = set()
+
+    for item in ranked:
+        category = item.get("category")
+        if category in used_categories:
+            continue
+        selected.append(item)
+        if category:
+            used_categories.add(category)
+        if len(selected) >= limit:
+            return selected
+
+    for item in ranked:
+        if item in selected:
+            continue
+        selected.append(item)
+        if len(selected) >= limit:
+            break
+
+    return selected
+
 def main():
     preferences = load_preferences()
     max_age_hours = int(preferences.get("max_age_hours", 72))
@@ -680,6 +710,7 @@ def main():
     selected, top_count = edit_finalists(ranked, preferences)
     top_stories = selected[:top_count]
     more_stories = selected[top_count:]
+    top_of_day = choose_top_of_day(selected, limit=3)
 
     generated_at = datetime.now(timezone.utc)
     local_day = generated_at.astimezone(LOCAL_TZ).date().isoformat()
@@ -687,6 +718,7 @@ def main():
     result = {
         "date": local_day,
         "generated_at": generated_at.isoformat(),
+        "top_of_day": top_of_day,
         "top_stories": top_stories,
         "more_stories": more_stories,
         "stats": {
