@@ -1,6 +1,7 @@
 const root = document.querySelector('#news-root');
 const updated = document.querySelector('#updated-at');
 const nav = document.querySelector('#category-nav');
+const categoryClear = document.querySelector('#category-clear');
 const dayNav = document.querySelector('#day-nav');
 const archiveToggle = document.querySelector('#archive-toggle');
 const archiveList = document.querySelector('#archive-list');
@@ -74,6 +75,7 @@ function defaultPreferences(){
 let archiveDates = [];
 let activeDate = null;
 let activeData = null;
+let activeCategoryFilter = null;
 
 function loadJson(key, fallback){
   try{
@@ -512,27 +514,57 @@ function splitPersonalized(items){
   return {forYou:selected.slice(0,forYouCount),outsideBubble,rest:selected.slice(forYouCount)};
 }
 
+function renderCategoryNav(all){
+  if(!nav) return;
+  nav.innerHTML='';
+
+  const available=new Set(all.map(item=>item.category).filter(Boolean));
+  const enabled=CATEGORIES.filter(category=>isCategoryEnabled(category) && available.has(category));
+
+  if(activeCategoryFilter && !enabled.includes(activeCategoryFilter)){
+    activeCategoryFilter=null;
+  }
+
+  enabled.forEach(category=>{
+    const button=document.createElement('button');
+    button.type='button';
+    button.className='category-chip'+(activeCategoryFilter===category?' active':'');
+    button.textContent=category;
+    button.addEventListener('click',()=>{
+      activeCategoryFilter=activeCategoryFilter===category?null:category;
+      render(activeData);
+    });
+    nav.appendChild(button);
+  });
+
+  if(categoryClear){
+    categoryClear.hidden=!activeCategoryFilter;
+    categoryClear.textContent=activeCategoryFilter?'Pokaż wszystko':'';
+  }
+
+  const toolbar=nav.closest('.topic-toolbar');
+  if(toolbar) toolbar.hidden=!enabled.length;
+}
+
 function render(data){
   activeData=data;
   updated.textContent=data.generated_at?'Aktualizacja: '+formatDate(data.generated_at):'Brak daty aktualizacji';
   root.innerHTML='';
-  nav.innerHTML='';
 
-  const all=[...(data.top_stories||[]),...(data.more_stories||[])];
-  if(!all.length){
+  const allRaw=[...(data.top_stories||[]),...(data.more_stories||[])];
+  if(!allRaw.length){
+    if(nav) nav.innerHTML='';
     root.innerHTML='<p class="empty">Brak wiadomości dla tego dnia.</p>';
     return;
   }
 
-  const {forYou,outsideBubble,rest}=splitPersonalized(all);
-  const visible=[...forYou,...rest,...(outsideBubble?[outsideBubble]:[])];
-  [...new Set(visible.map(x=>x.category).filter(Boolean))].forEach(category=>{
-    const chip=document.createElement('span');
-    chip.className='category-chip';
-    chip.textContent=category;
-    nav.appendChild(chip);
-  });
+  renderCategoryNav(allRaw);
 
+  const all=activeCategoryFilter
+    ? allRaw.filter(item=>item.category===activeCategoryFilter)
+    : allRaw;
+
+  const {forYou,outsideBubble,rest}=splitPersonalized(all);
   const isToday=activeDate===archiveDates[0];
   const personalSection=renderSection(isToday?'Dla Ciebie':'Najlepiej dopasowane',forYou,true);
   if(personalSection) root.appendChild(personalSection);
@@ -664,6 +696,7 @@ function renderPreferences(){
     toggle.addEventListener('change',()=>{
       userPreferences.enabledCategories[category]=toggle.checked;
       input.disabled=!toggle.checked;
+      if(!toggle.checked && activeCategoryFilter===category) activeCategoryFilter=null;
       savePreferences();
       if(activeData) render(activeData);
     });
@@ -890,6 +923,11 @@ savedToggle?.addEventListener('click',()=>{
 });
 savedPanel?.addEventListener('click',event=>{
   if(event.target.closest('[data-close-saved]')) setSavedOpen(false);
+});
+
+categoryClear?.addEventListener('click',()=>{
+  activeCategoryFilter=null;
+  if(activeData) render(activeData);
 });
 
 preferencesToggle?.addEventListener('click',()=>setPreferencesOpen(true));
