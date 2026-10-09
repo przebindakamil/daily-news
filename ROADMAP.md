@@ -11,7 +11,6 @@ Ten plik jest krótkim widokiem kierunku projektu. Źródłem prawdy dla niewyko
 - [ ] Powiadomienia „3 rzeczy warte uwagi”
 
 ## Later
-- [ ] Podstrony / główna nawigacja: Dzisiaj, Archiwum, Zapisane, Ustawienia
 - [ ] Konto i synchronizacja preferencji między urządzeniami
 - [ ] „Dlaczego to jest ważne dla mnie?” z głębszym kontekstem AI
 - [ ] Własna domena i SEO
@@ -37,3 +36,4 @@ Ten plik jest krótkim widokiem kierunku projektu. Źródłem prawdy dla niewyko
 - [x] Presety zainteresowań z profilem „Omnibus” i rankingiem różnorodności
 - [x] Wieloźródłowe discovery: RSS, źródła pierwotne, agencje i zaufane domeny
 - [x] TOP dnia — 3 redakcyjnie najważniejsze historie niezależne od personalizacji
+- [x] Przegląd kategorii — osobny, niepersonalizowany widok z głównej nawigacji
