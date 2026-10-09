@@ -18,6 +18,7 @@ ARCHIVE_DIR = ROOT / "data" / "archive"
 ARCHIVE_INDEX = ARCHIVE_DIR / "index.json"
 LOCAL_TZ = ZoneInfo("Europe/Warsaw")
 PREFERENCES = ROOT / "config" / "preferences.json"
+SOURCES = ROOT / "config" / "sources.json"
 
 API_KEY = os.environ.get("GEMINI_API_KEY")
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite")
@@ -47,6 +48,10 @@ ALLOWED_CATEGORIES = list(SEARCHES.keys())
 
 def load_preferences():
     return json.loads(PREFERENCES.read_text(encoding="utf-8"))
+
+
+def load_sources():
+    return json.loads(SOURCES.read_text(encoding="utf-8"))
 
 
 def google_news_feed(query: str) -> str:
@@ -83,43 +88,128 @@ def normalize_title(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
+def candidate_key(title: str):
+    normalized = normalize_title(title)
+    # Keep enough words for dedupe while tolerating source suffix differences.
+    return " ".join(normalized.split()[:14])
+
+
+def add_feed_entries(items, seen, feed_url, category, tier, max_items, cutoff):
+    feed = feedparser.parse(feed_url)
+    for entry in feed.entries[:max_items]:
+        source = ""
+        if getattr(entry, "source", None):
+            source = getattr(entry.source, "title", "") or ""
+        source = source.strip() or (getattr(feed.feed, "title", "") or "").strip()
+
+        title = (entry.get("title") or "").strip()
+        if " - " in title and not source:
+            title, source = title.rsplit(" - ", 1)
+
+        published = iso_date(entry.get("published", "") or entry.get("updated", ""))
+        published_dt = parse_dt(published)
+        if published_dt and published_dt < cutoff:
+            continue
+
+        key = candidate_key(title)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+
+        items.append(
+            {
+                "category_hint": category,
+                "title": title,
+                "source": source,
+                "url": entry.get("link", ""),
+                "published_at": published,
+                "snippet": clean_html(entry.get("summary", "") or entry.get("description", ""))[:1000],
+                "source_tier": tier,
+                "discovery_origin": "direct_rss",
+            }
+        )
+
+
+def add_google_query(items, seen, query, category, tier, max_items, cutoff, origin):
+    feed = feedparser.parse(google_news_feed(query))
+    for entry in feed.entries[:max_items]:
+        source = ""
+        if getattr(entry, "source", None):
+            source = getattr(entry.source, "title", "") or ""
+
+        title = (entry.get("title") or "").strip()
+        if " - " in title and not source:
+            title, source = title.rsplit(" - ", 1)
+
+        published = iso_date(entry.get("published", ""))
+        published_dt = parse_dt(published)
+        if published_dt and published_dt < cutoff:
+            continue
+
+        key = candidate_key(title)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+
+        items.append(
+            {
+                "category_hint": category,
+                "title": title,
+                "source": source.strip(),
+                "url": entry.get("link", ""),
+                "published_at": published,
+                "snippet": clean_html(entry.get("summary", ""))[:1000],
+                "source_tier": tier,
+                "discovery_origin": origin,
+            }
+        )
+
+
 def collect_candidates(max_age_hours: int):
     cutoff = datetime.now(timezone.utc) - timedelta(hours=max_age_hours)
     seen = set()
     items = []
+    sources = load_sources()
 
+    # 1) Direct feeds from established outlets and primary sources.
+    for source in sources.get("rss_sources", []):
+        add_feed_entries(
+            items,
+            seen,
+            source["url"],
+            source["category"],
+            source.get("tier", "quality"),
+            max_items=10,
+            cutoff=cutoff,
+        )
+
+    # 2) Trusted-domain discovery. Still uses Google News as an index,
+    #    but only to discover material from selected high-quality/primary domains.
+    for source in sources.get("trusted_google_queries", []):
+        add_google_query(
+            items,
+            seen,
+            source["query"],
+            source["category"],
+            source.get("tier", "quality"),
+            max_items=7,
+            cutoff=cutoff,
+            origin="trusted_google",
+        )
+
+    # 3) Broad discovery is fallback/diversity, not the main source pool.
     for category, queries in SEARCHES.items():
         for query in queries:
-            feed = feedparser.parse(google_news_feed(query))
-            for entry in feed.entries[:7]:
-                source = ""
-                if getattr(entry, "source", None):
-                    source = getattr(entry.source, "title", "") or ""
-
-                title = (entry.get("title") or "").strip()
-                if " - " in title and not source:
-                    title, source = title.rsplit(" - ", 1)
-
-                published = iso_date(entry.get("published", ""))
-                published_dt = parse_dt(published)
-                if published_dt and published_dt < cutoff:
-                    continue
-
-                key = normalize_title(title)
-                if not key or key in seen:
-                    continue
-                seen.add(key)
-
-                items.append(
-                    {
-                        "category_hint": category,
-                        "title": title,
-                        "source": source.strip(),
-                        "url": entry.get("link", ""),
-                        "published_at": published,
-                        "snippet": clean_html(entry.get("summary", ""))[:900],
-                    }
-                )
+            add_google_query(
+                items,
+                seen,
+                query,
+                category,
+                "discovery",
+                max_items=4,
+                cutoff=cutoff,
+                origin="broad_google",
+            )
 
     return items
 
@@ -231,6 +321,8 @@ def rank_candidates(candidates, preferences):
             "source": item["source"],
             "published_at": item["published_at"],
             "snippet": item["snippet"],
+            "source_tier": item.get("source_tier", "discovery"),
+            "discovery_origin": item.get("discovery_origin", "unknown"),
         }
         for idx, item in enumerate(candidates)
     ]
@@ -255,8 +347,16 @@ Oceń każdy wartościowy materiał od 0 do 10:
 - importance: obiektywne znaczenie,
 - novelty: nowość / zaskoczenie,
 - usefulness: praktyczna lub poznawcza wartość,
-- quality: jakość i konkretność informacji.
+- quality: jakość i konkretność informacji,
+- worth_time: czy ten materiał jest wart 2 minut uwagi przeciętnego, ciekawego świata czytelnika.
 
+Źródła mają oznaczenie source_tier:
+- primary: źródło pierwotne / instytucja / organizacja,
+- wire: agencja informacyjna,
+- quality: uznane medium,
+- discovery: szerokie discovery o niższym priorytecie.
+
+Przy podobnej wartości preferuj primary, wire i quality nad discovery.
 Nie faworyzuj jednej grupy zainteresowań. Pula ma być szeroka i różnorodna.
 Usuń duplikaty dotyczące tego samego wydarzenia i zostaw najlepsze źródło.
 Zwróć maksymalnie 36 najlepszych historii.
@@ -270,6 +370,7 @@ JSON:
       "novelty": 0,
       "usefulness": 0,
       "quality": 0,
+      "worth_time": 0,
       "category": "jedna z dozwolonych kategorii",
       "topics": ["2-6 konkretnych tematów, nazw lub zjawisk"],
       "reason": "krótkie uzasadnienie"
@@ -293,8 +394,17 @@ MATERIAŁY:
             float(item.get("importance", 0)) * 0.35
             + float(item.get("novelty", 0)) * 0.20
             + float(item.get("usefulness", 0)) * 0.25
-            + float(item.get("quality", 0)) * 0.20
+            + float(item.get("quality", 0)) * 0.15
+            + float(item.get("worth_time", 0)) * 0.20
         )
+
+        tier_bonus = {
+            "primary": 0.65,
+            "wire": 0.55,
+            "quality": 0.35,
+            "discovery": 0.0,
+        }.get(candidates[idx].get("source_tier", "discovery"), 0.0)
+        score += tier_bonus
 
         enriched = dict(candidates[idx])
         category = str(item.get("category") or candidates[idx]["category_hint"]).strip()
@@ -382,6 +492,8 @@ def edit_finalists(ranked, preferences):
                 "category": item["category"],
                 "topics": item.get("topics", []),
                 "editorial_score": item["editorial_score"],
+                "source_tier": item.get("source_tier", "discovery"),
+                "discovery_origin": item.get("discovery_origin", "unknown"),
             }
         )
 
@@ -389,6 +501,10 @@ def edit_finalists(ranked, preferences):
 Jesteś redaktorem końcowym aplikacji z wiadomościami.
 Masz przygotować {target} wartościowych historii z szerokiej puli.
 Nie musisz rozkładać ich równo między kategoriami, ale unikaj monotematyczności.
+Najważniejsze kryterium końcowe brzmi: "czy ten materiał jest naprawdę wart czasu czytelnika?"
+Nie zapełniaj zestawu słabymi newsami tylko dlatego, że reprezentują kategorię.
+Jeśli kilka materiałów dotyczy tego samego wydarzenia, zostaw jeden najlepszy.
+Przy porównywalnej wartości preferuj źródła pierwotne, agencje i uznane media.
 
 Dozwolone kategorie:
 {json.dumps(ALLOWED_CATEGORIES, ensure_ascii=False)}
@@ -489,7 +605,7 @@ def main():
 
     candidates = collect_candidates(max_age_hours)
     if not candidates:
-        raise RuntimeError("Nie znaleziono świeżych kandydatów z Google News RSS.")
+        raise RuntimeError("Nie znaleziono świeżych kandydatów z żadnego skonfigurowanego źródła.")
 
     ranked = rank_candidates(candidates, preferences)
     if not ranked:
