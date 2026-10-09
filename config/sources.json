@@ -1,0 +1,124 @@
+{
+  "rss_sources": [
+    {
+      "name": "BBC World",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "category": "Świat i geopolityka",
+      "tier": "quality"
+    },
+    {
+      "name": "BBC Business",
+      "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "category": "Finanse i inwestowanie",
+      "tier": "quality"
+    },
+    {
+      "name": "BBC Technology",
+      "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+      "category": "AI i technologia",
+      "tier": "quality"
+    },
+    {
+      "name": "BBC Science",
+      "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+      "category": "Nauka",
+      "tier": "quality"
+    },
+    {
+      "name": "The Verge",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "category": "AI i technologia",
+      "tier": "quality"
+    },
+    {
+      "name": "Ars Technica",
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "category": "AI i technologia",
+      "tier": "quality"
+    },
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/feed/",
+      "category": "Biznes i startupy",
+      "tier": "quality"
+    },
+    {
+      "name": "NASA",
+      "url": "https://www.nasa.gov/feed/",
+      "category": "Kosmos",
+      "tier": "primary"
+    }
+  ],
+  "trusted_google_queries": [
+    {
+      "query": "site:reuters.com world politics economy when:1d",
+      "category": "Świat i geopolityka",
+      "tier": "wire"
+    },
+    {
+      "query": "site:reuters.com business markets technology when:1d",
+      "category": "Finanse i inwestowanie",
+      "tier": "wire"
+    },
+    {
+      "query": "site:apnews.com world science technology when:1d",
+      "category": "Świat i geopolityka",
+      "tier": "wire"
+    },
+    {
+      "query": "site:ft.com markets business technology when:1d",
+      "category": "Finanse i inwestowanie",
+      "tier": "quality"
+    },
+    {
+      "query": "site:nature.com science research when:3d",
+      "category": "Nauka",
+      "tier": "primary"
+    },
+    {
+      "query": "site:science.org research science when:3d",
+      "category": "Nauka",
+      "tier": "primary"
+    },
+    {
+      "query": "site:uefa.com football Champions League when:2d",
+      "category": "Piłka nożna",
+      "tier": "primary"
+    },
+    {
+      "query": "site:fifa.com football when:2d",
+      "category": "Piłka nożna",
+      "tier": "primary"
+    },
+    {
+      "query": "site:gov.pl Polska ważne wydarzenia when:2d",
+      "category": "Polska",
+      "tier": "primary"
+    },
+    {
+      "query": "site:nbp.pl stopy procentowe inflacja raport when:7d",
+      "category": "Finanse i inwestowanie",
+      "tier": "primary"
+    },
+    {
+      "query": "site:ecb.europa.eu monetary policy euro area when:7d",
+      "category": "Finanse i inwestowanie",
+      "tier": "primary"
+    },
+    {
+      "query": "site:openai.com AI when:7d",
+      "category": "AI i technologia",
+      "tier": "primary"
+    },
+    {
+      "query": "site:blog.google AI Gemini when:7d",
+      "category": "AI i technologia",
+      "tier": "primary"
+    },
+    {
+      "query": "site:anthropic.com AI Claude when:7d",
+      "category": "AI i technologia",
+      "tier": "primary"
+    }
+  ]
+}
