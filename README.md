@@ -1,12 +1,12 @@
 # Daily News
 
-Minimalistyczny agregator kilku najważniejszych wiadomości z różnych dziedzin.
+Minimalistyczny, personalizowany briefing najważniejszych i najciekawszych informacji z wielu źródeł.
 
 ## Jak działa
 
 1. GitHub Actions uruchamia `scripts/generate_news.py` codziennie.
-2. Skrypt pobiera kandydatów z Google News RSS.
-3. Gemini wybiera najważniejsze materiały i tworzy krótkie streszczenia na podstawie tytułu i snippetu.
+2. Skrypt buduje pulę z wielu źródeł: bezpośrednich RSS renomowanych mediów i źródeł pierwotnych, zaufanych domen wyszukiwanych przez Google News oraz szerokiego Google News jako fallbacku.
+3. Gemini ocenia znaczenie, nowość, użyteczność, jakość źródła i to, czy materiał jest naprawdę wart czasu czytelnika, a następnie tworzy skróty i „wiedzę w pigułce”.
 4. Wynik trafia do `data/news.json`.
 5. Statyczna strona wyświetla aktualny przegląd.
 
