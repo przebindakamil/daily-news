@@ -374,3 +374,13 @@ body.onboarding-open{overflow:hidden}
   .preset-card{min-height:96px}
   .preset-section-head{align-items:flex-start;flex-direction:column;gap:4px}
 }
+
+.digest-prose{max-width:760px}
+.digest-prose p{
+  margin:0 0 1em!important;
+  color:var(--text)!important;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.02rem;
+  line-height:1.7;
+}
+.digest-prose p:last-child{margin-bottom:0!important}
