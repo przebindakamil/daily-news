@@ -218,9 +218,9 @@ def parse_model_json(text: str):
     """Parse JSON defensively in case the model adds fences or minor syntax noise."""
     cleaned = (text or "").strip()
 
-    if cleaned.startswith("\`\`\`"):
-        cleaned = re.sub(r"^\`\`\`(?:json)?\\s*", "", cleaned, flags=re.IGNORECASE)
-        cleaned = re.sub(r"\\s*\`\`\`$", "", cleaned)
+    if cleaned.startswith("```"):
+        cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned, flags=re.IGNORECASE)
+        cleaned = re.sub(r"\s*```$", "", cleaned)
 
     attempts = [cleaned]
 
@@ -231,7 +231,7 @@ def parse_model_json(text: str):
 
     # Gemini occasionally leaves a trailing comma before } or ].
     attempts.extend(
-        re.sub(r",\\s*([}\\]])", r"\\1", candidate)
+        re.sub(r",\s*([}\]])", r"\1", candidate)
         for candidate in list(attempts)
     )
 
@@ -472,18 +472,12 @@ def enrich_for_digest(ranked, limit=20):
     return enriched
 
 
-def edit_finalists(ranked, preferences):
-    top_count = int(preferences.get("top_stories", 10))
-    more_count = int(preferences.get("more_stories", 10))
-    target = min(top_count + more_count, 20, len(ranked))
-
-    prepared = enrich_for_digest(ranked, limit=target)
+def build_digest_batch(batch, batch_offset):
     finalists = []
-
-    for idx, item in enumerate(prepared):
+    for local_idx, item in enumerate(batch):
         finalists.append(
             {
-                "index": idx,
+                "index": local_idx,
                 "title": item["title"],
                 "source": item["source"],
                 "published_at": item["published_at"],
@@ -499,33 +493,30 @@ def edit_finalists(ranked, preferences):
 
     prompt = f"""
 Jesteś redaktorem końcowym aplikacji z wiadomościami.
-Masz przygotować {target} wartościowych historii z szerokiej puli.
-Nie musisz rozkładać ich równo między kategoriami, ale unikaj monotematyczności.
-Najważniejsze kryterium końcowe brzmi: "czy ten materiał jest naprawdę wart czasu czytelnika?"
-Nie zapełniaj zestawu słabymi newsami tylko dlatego, że reprezentują kategorię.
-Jeśli kilka materiałów dotyczy tego samego wydarzenia, zostaw jeden najlepszy.
-Przy porównywalnej wartości preferuj źródła pierwotne, agencje i uznane media.
+Redagujesz małą partię {len(finalists)} historii. Każda pozycja wejściowa ma zostać zwrócona dokładnie raz.
+
+Najważniejsze kryterium: czy materiał jest naprawdę wart czasu czytelnika?
+Nie dopisuj faktów spoza wejścia.
 
 Dozwolone kategorie:
 {json.dumps(ALLOWED_CATEGORIES, ensure_ascii=False)}
 
 Dla każdego materiału przygotuj:
-- title: rzeczowy tytuł po polsku bez clickbaitu,
-- summary: 2-3 zdania na kafelek,
-- why_it_matters: jedno zdanie, dlaczego warto to wiedzieć,
+- index: ten sam indeks z wejścia,
+- title: rzeczowy tytuł po polsku, bez clickbaitu,
+- summary: maksymalnie 2 krótkie zdania,
+- why_it_matters: jedno krótkie zdanie,
 - category: dokładnie jedna dozwolona kategoria,
-- topics: 2-6 krótkich tematów,
+- topics: 2-5 krótkich tematów,
 - digest:
-  - what_happened: 2-4 zdania,
-  - key_points: 3-5 konkretnych punktów,
-  - context: krótki kontekst, jeśli wynika z danych,
-  - what_next: czego warto wypatrywać dalej, ale tylko jeśli wynika z danych.
+  - what_happened: 2-3 krótkie zdania,
+  - key_points: dokładnie 3 konkretne punkty,
+  - context: maksymalnie 2 zdania, tylko jeśli wynika z danych,
+  - what_next: maksymalnie 1 zdanie, tylko jeśli wynika z danych.
 
-Najważniejsza zasada:
-NIE DOPISUJ faktów spoza wejścia.
-Jeśli article_text jest pusty, digest ma bazować wyłącznie na tytule i snippecie.
-Jeśli article_text jest dostępny, możesz wykorzystać zawarte tam informacje.
-Nie udawaj, że znasz pełny artykuł, jeśli go nie masz.
+Jeśli article_text jest pusty, bazuj wyłącznie na tytule i snippecie.
+Jeśli article_text jest dostępny, możesz wykorzystać informacje z tej treści.
+Zwróć WYŁĄCZNIE poprawny JSON bez markdownu.
 
 JSON:
 {{
@@ -536,7 +527,7 @@ JSON:
       "summary": "...",
       "why_it_matters": "...",
       "category": "...",
-      "topics": ["..."],
+      "topics": ["...", "..."],
       "digest": {{
         "what_happened": "...",
         "key_points": ["...", "...", "..."],
@@ -547,7 +538,7 @@ JSON:
   ]
 }}
 
-FINALIŚCI:
+PARTIA:
 {json.dumps(finalists, ensure_ascii=False)}
 """.strip()
 
@@ -557,10 +548,10 @@ FINALIŚCI:
 
     for edited in result.get("items", []):
         idx = int(edited.get("index", -1))
-        if idx < 0 or idx >= len(prepared) or idx in used:
+        if idx < 0 or idx >= len(batch) or idx in used:
             continue
         used.add(idx)
-        original = prepared[idx]
+        original = batch[idx]
 
         category = str(edited.get("category") or original["category"]).strip()
         if category not in ALLOWED_CATEGORIES:
@@ -569,6 +560,7 @@ FINALIŚCI:
         digest = edited.get("digest") or {}
         selected.append(
             {
+                "_order": batch_offset + idx,
                 "title": str(edited.get("title") or original["title"]).strip(),
                 "summary": str(edited.get("summary") or "").strip(),
                 "why_it_matters": str(edited.get("why_it_matters") or "").strip(),
@@ -577,7 +569,7 @@ FINALIŚCI:
                     str(topic).strip()
                     for topic in (edited.get("topics") or original.get("topics") or [])
                     if str(topic).strip()
-                ][:6],
+                ][:5],
                 "editorial_score": original.get("editorial_score", 0),
                 "digest": {
                     "what_happened": str(digest.get("what_happened") or "").strip(),
@@ -585,7 +577,7 @@ FINALIŚCI:
                         str(point).strip()
                         for point in digest.get("key_points", [])
                         if str(point).strip()
-                    ][:5],
+                    ][:3],
                     "context": str(digest.get("context") or "").strip(),
                     "what_next": str(digest.get("what_next") or "").strip(),
                 },
@@ -596,7 +588,57 @@ FINALIŚCI:
             }
         )
 
-    return selected[:target], top_count
+    # Fallback: don't lose an article only because Gemini skipped an item.
+    for idx, original in enumerate(batch):
+        if idx in used:
+            continue
+        selected.append(
+            {
+                "_order": batch_offset + idx,
+                "title": original["title"],
+                "summary": original.get("snippet", "")[:500],
+                "why_it_matters": original.get("ranking_reason", ""),
+                "category": original["category"],
+                "topics": original.get("topics", [])[:5],
+                "editorial_score": original.get("editorial_score", 0),
+                "digest": {
+                    "what_happened": original.get("snippet", "")[:700],
+                    "key_points": [],
+                    "context": "",
+                    "what_next": "",
+                },
+                "source": original["source"],
+                "url": original["url"],
+                "published_at": original["published_at"],
+                "full_text_used": bool(original.get("article_text")),
+            }
+        )
+
+    return selected
+
+
+def edit_finalists(ranked, preferences):
+    top_count = int(preferences.get("top_stories", 10))
+    more_count = int(preferences.get("more_stories", 10))
+    target = min(top_count + more_count, 20, len(ranked))
+
+    prepared = enrich_for_digest(ranked, limit=target)
+
+    # Large single JSON responses were getting truncated/malformed.
+    # Small batches are more reliable and still keep total cost predictable.
+    batch_size = 4
+    selected = []
+    for offset in range(0, len(prepared), batch_size):
+        batch = prepared[offset:offset + batch_size]
+        print(
+            f"Redaguję partię {offset // batch_size + 1}/"
+            f"{(len(prepared) + batch_size - 1) // batch_size} "
+            f"({len(batch)} materiałów)..."
+        )
+        selected.extend(build_digest_batch(batch, offset))
+
+    selected.sort(key=lambda item: item.pop("_order"))
+    return selected[:target], min(top_count, target)
 
 
 def main():
