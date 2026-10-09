@@ -229,6 +229,7 @@ Zwróć maksymalnie 24 najlepsze pozycje jako JSON:
       "novelty": 0,
       "usefulness": 0,
       "category": "AI i technologia",
+      "topics": ["konkretny temat", "marka lub zjawisko"],
       "reason": "krótkie uzasadnienie"
     }}
   ]
@@ -253,6 +254,11 @@ MATERIAŁY:
         )
         enriched = dict(candidates[idx])
         enriched["category"] = str(item.get("category") or candidates[idx]["category_hint"])
+        enriched["topics"] = [
+            str(topic).strip()
+            for topic in item.get("topics", [])
+            if str(topic).strip()
+        ][:6]
         enriched["editorial_score"] = round(score, 2)
         enriched["ranking_reason"] = str(item.get("reason") or "")
         ranked.append(enriched)
@@ -276,6 +282,7 @@ def edit_finalists(ranked, preferences):
                 "published_at": item["published_at"],
                 "snippet": item["snippet"],
                 "category": item["category"],
+                "topics": item.get("topics", []),
                 "editorial_score": item["editorial_score"],
                 "ranking_reason": item["ranking_reason"],
             }
@@ -312,7 +319,8 @@ Zwróć JSON:
       "title": "...",
       "summary": "...",
       "why_it_matters": "...",
-      "category": "..."
+      "category": "...",
+      "topics": ["2-5 krótkich tematów opisujących materiał"]
     }}
   ]
 }}
@@ -338,6 +346,12 @@ FINALIŚCI:
                 "summary": str(edited.get("summary") or "").strip(),
                 "why_it_matters": str(edited.get("why_it_matters") or "").strip(),
                 "category": str(edited.get("category") or original["category"]).strip(),
+                "topics": [
+                    str(topic).strip()
+                    for topic in (edited.get("topics") or original.get("topics") or [])
+                    if str(topic).strip()
+                ][:6],
+                "editorial_score": original.get("editorial_score", 0),
                 "source": original["source"],
                 "url": original["url"],
                 "published_at": original["published_at"],
