@@ -2,13 +2,14 @@ import json
 import os
 import re
 from datetime import datetime, timedelta, timezone
-from zoneinfo import ZoneInfo
 from email.utils import parsedate_to_datetime
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, urlparse
+from zoneinfo import ZoneInfo
 
 import feedparser
 import requests
+import trafilatura
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "news.json"
@@ -22,47 +23,26 @@ API_KEY = os.environ.get("GEMINI_API_KEY")
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite")
 
 SEARCHES = {
-    "AI i technologia": [
-        "AI OR sztuczna inteligencja OR modele językowe when:1d",
-        "OpenAI OR Google Gemini OR Anthropic OR Microsoft AI when:1d",
-        "technologia OR narzędzia AI OR automatyzacja when:1d",
-    ],
-    "Polska i świat": [
-        "Polska najważniejsze wydarzenia when:1d",
-        "Europa świat najważniejsze wydarzenia when:1d",
-        "geopolityka OR bezpieczeństwo OR gospodarka świat when:1d",
-    ],
-    "Piłka nożna": [
-        "piłka nożna Polska OR reprezentacja OR Ekstraklasa when:1d",
-        "Champions League OR Premier League OR Serie A OR La Liga when:1d",
-        "football transfers OR transfery piłkarskie when:1d",
-    ],
-    "Sport i trening": [
-        "bieganie OR kolarstwo OR trening OR regeneracja badania when:3d",
-        "sport science OR endurance OR strength training research when:3d",
-    ],
-    "Finanse i biznes": [
-        "finanse OR gospodarka OR biznes OR rynki Polska when:1d",
-        "giełda OR inwestowanie OR stopy procentowe OR inflacja when:1d",
-        "startup OR biznes technologia when:1d",
-    ],
-    "Nauka": [
-        "nauka OR badania OR kosmos OR medycyna when:2d",
-        "science breakthrough OR research OR space when:2d",
-    ],
-    "Motoryzacja": [
-        "motoryzacja OR samochody OR nowe auta OR automotive when:2d",
-        "BMW OR Mercedes OR Porsche OR Toyota OR Volkswagen when:2d",
-    ],
-    "Podróże": [
-        "podróże OR lotnictwo OR turystyka when:2d",
-        "linie lotnicze OR nowe połączenia OR city break when:2d",
-    ],
-    "Kultura": [
-        "film OR serial OR muzyka OR książki OR kultura when:2d",
-        "Netflix OR HBO OR kino OR album OR premiera when:2d",
-    ],
+    "AI i technologia": ["AI sztuczna inteligencja technologia automatyzacja when:1d"],
+    "Polska": ["Polska najważniejsze wydarzenia społeczeństwo gospodarka when:1d"],
+    "Świat i geopolityka": ["świat geopolityka bezpieczeństwo Europa USA Azja when:1d"],
+    "Piłka nożna": ["piłka nożna Ekstraklasa reprezentacja Champions League transfery when:1d"],
+    "Sport i trening": ["sport trening bieganie kolarstwo regeneracja badania when:2d"],
+    "Zdrowie": ["zdrowie medycyna profilaktyka badania zdrowotne when:2d"],
+    "Finanse i inwestowanie": ["finanse inwestowanie giełda stopy procentowe inflacja when:1d"],
+    "Biznes i startupy": ["biznes startup przedsiębiorczość firmy technologia when:1d"],
+    "Nauka": ["nauka badania odkrycie fizyka biologia archeologia when:2d"],
+    "Kosmos": ["kosmos astronomia NASA ESA SpaceX misja when:2d"],
+    "Motoryzacja": ["motoryzacja samochody automotive nowe auta technologie when:2d"],
+    "Podróże": ["podróże lotnictwo turystyka linie lotnicze city break when:2d"],
+    "Kultura": ["film serial muzyka książki kultura kino premiera when:2d"],
+    "Gaming": ["gry gaming PlayStation Xbox Nintendo PC premiera when:2d"],
+    "Środowisko i klimat": ["klimat środowisko energia pogoda badania when:2d"],
+    "Praca i kariera": ["praca kariera rynek pracy wynagrodzenia kompetencje when:2d"],
+    "Nieruchomości i dom": ["nieruchomości mieszkania dom budownictwo remont when:2d"],
 }
+
+ALLOWED_CATEGORIES = list(SEARCHES.keys())
 
 
 def load_preferences():
@@ -98,11 +78,9 @@ def parse_dt(value: str):
 
 
 def normalize_title(value: str) -> str:
-    value = (value or "").lower()
-    value = value.replace("ł", "l")
+    value = (value or "").lower().replace("ł", "l")
     value = re.sub(r"[^a-ząćęłńóśźż0-9 ]+", " ", value)
-    value = re.sub(r"\s+", " ", value).strip()
-    return value
+    return re.sub(r"\s+", " ", value).strip()
 
 
 def collect_candidates(max_age_hours: int):
@@ -113,7 +91,7 @@ def collect_candidates(max_age_hours: int):
     for category, queries in SEARCHES.items():
         for query in queries:
             feed = feedparser.parse(google_news_feed(query))
-            for entry in feed.entries[:10]:
+            for entry in feed.entries[:7]:
                 source = ""
                 if getattr(entry, "source", None):
                     source = getattr(entry.source, "title", "") or ""
@@ -158,11 +136,11 @@ def gemini_json(prompt: str):
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
             "responseMimeType": "application/json",
-            "temperature": 0.2,
+            "temperature": 0.18,
         },
     }
 
-    response = requests.post(endpoint, json=payload, timeout=90)
+    response = requests.post(endpoint, json=payload, timeout=120)
     if not response.ok:
         raise RuntimeError(
             f"Gemini API error {response.status_code} for model {MODEL}: "
@@ -175,11 +153,6 @@ def gemini_json(prompt: str):
 
 
 def rank_candidates(candidates, preferences):
-    profile = preferences["reader_profile"]
-    priorities = preferences["priority_topics"]
-    prefer = preferences["selection_rules"]["prefer"]
-    avoid = preferences["selection_rules"]["avoid"]
-
     indexed = [
         {
             "index": idx,
@@ -193,43 +166,42 @@ def rank_candidates(candidates, preferences):
     ]
 
     prompt = f"""
-Jesteś redaktorem osobistego briefingu informacyjnego.
+Jesteś redaktorem szerokiego, wysokiej jakości briefingu informacyjnego.
+Tworzysz wspólną pulę materiałów, z której później różni użytkownicy dostaną własny feed.
 
-PROFIL CZYTELNIKA:
-{profile}
+Ogólny profil redakcyjny:
+{preferences["reader_profile"]}
 
-PRIORYTETY:
-{json.dumps(priorities, ensure_ascii=False)}
+Premiuj:
+{json.dumps(preferences["selection_rules"]["prefer"], ensure_ascii=False)}
 
-PREMIOWANIE:
-{json.dumps(prefer, ensure_ascii=False)}
+Odrzucaj:
+{json.dumps(preferences["selection_rules"]["avoid"], ensure_ascii=False)}
 
-ODRZUCANIE:
-{json.dumps(avoid, ensure_ascii=False)}
+Dozwolone kategorie:
+{json.dumps(ALLOWED_CATEGORIES, ensure_ascii=False)}
 
-Oceń materiały od 0 do 10 w czterech wymiarach:
+Oceń każdy wartościowy materiał od 0 do 10:
 - importance: obiektywne znaczenie,
-- personal_relevance: dopasowanie do profilu,
 - novelty: nowość / zaskoczenie,
-- usefulness: praktyczna lub poznawcza wartość.
+- usefulness: praktyczna lub poznawcza wartość,
+- quality: jakość i konkretność informacji.
 
-Dodatkowo:
-- połącz w głowie duplikaty dotyczące tego samego wydarzenia,
-- dla każdego klastra wybierz najwyżej jeden najlepszy materiał,
-- preferuj źródła bardziej wiarygodne i konkretne,
-- nie podbijaj słabego materiału tylko dlatego, że pasuje do zainteresowań.
+Nie faworyzuj jednej grupy zainteresowań. Pula ma być szeroka i różnorodna.
+Usuń duplikaty dotyczące tego samego wydarzenia i zostaw najlepsze źródło.
+Zwróć maksymalnie 36 najlepszych historii.
 
-Zwróć maksymalnie 24 najlepsze pozycje jako JSON:
+JSON:
 {{
   "ranked": [
     {{
       "index": 0,
       "importance": 0,
-      "personal_relevance": 0,
       "novelty": 0,
       "usefulness": 0,
-      "category": "AI i technologia",
-      "topics": ["konkretny temat", "marka lub zjawisko"],
+      "quality": 0,
+      "category": "jedna z dozwolonych kategorii",
+      "topics": ["2-6 konkretnych tematów, nazw lub zjawisk"],
       "reason": "krótkie uzasadnienie"
     }}
   ]
@@ -246,14 +218,20 @@ MATERIAŁY:
         idx = int(item.get("index", -1))
         if idx < 0 or idx >= len(candidates):
             continue
+
         score = (
-            float(item.get("importance", 0)) * 0.30
-            + float(item.get("personal_relevance", 0)) * 0.35
-            + float(item.get("novelty", 0)) * 0.15
-            + float(item.get("usefulness", 0)) * 0.20
+            float(item.get("importance", 0)) * 0.35
+            + float(item.get("novelty", 0)) * 0.20
+            + float(item.get("usefulness", 0)) * 0.25
+            + float(item.get("quality", 0)) * 0.20
         )
+
         enriched = dict(candidates[idx])
-        enriched["category"] = str(item.get("category") or candidates[idx]["category_hint"])
+        category = str(item.get("category") or candidates[idx]["category_hint"]).strip()
+        if category not in ALLOWED_CATEGORIES:
+            category = candidates[idx]["category_hint"]
+
+        enriched["category"] = category
         enriched["topics"] = [
             str(topic).strip()
             for topic in item.get("topics", [])
@@ -264,16 +242,65 @@ MATERIAŁY:
         ranked.append(enriched)
 
     ranked.sort(key=lambda x: x["editorial_score"], reverse=True)
-    return ranked[:24]
+    return ranked[:36]
+
+
+def extract_article_text(url: str):
+    if not url:
+        return "", url
+
+    try:
+        response = requests.get(
+            url,
+            timeout=15,
+            allow_redirects=True,
+            headers={
+                "User-Agent": (
+                    "Mozilla/5.0 (compatible; DailyNewsBriefing/1.0; "
+                    "+https://github.com/przebindakamil/daily-news)"
+                )
+            },
+        )
+        response.raise_for_status()
+        final_url = response.url
+
+        text = trafilatura.extract(
+            response.text,
+            include_comments=False,
+            include_tables=False,
+            favor_precision=True,
+            output_format="txt",
+        ) or ""
+
+        text = re.sub(r"\s+", " ", text).strip()
+        if len(text) < 450:
+            return "", final_url
+        return text[:3200], final_url
+    except Exception:
+        return "", url
+
+
+def enrich_for_digest(ranked, limit=20):
+    enriched = []
+    for item in ranked[:limit]:
+        copy = dict(item)
+        full_text, final_url = extract_article_text(item.get("url", ""))
+        copy["article_text"] = full_text
+        if final_url and "news.google.com" not in urlparse(final_url).netloc:
+            copy["url"] = final_url
+        enriched.append(copy)
+    return enriched
 
 
 def edit_finalists(ranked, preferences):
-    top_count = int(preferences.get("top_stories", 5))
-    more_count = int(preferences.get("more_stories", 4))
-    target = min(top_count + more_count, len(ranked))
+    top_count = int(preferences.get("top_stories", 10))
+    more_count = int(preferences.get("more_stories", 10))
+    target = min(top_count + more_count, 20, len(ranked))
 
+    prepared = enrich_for_digest(ranked, limit=target)
     finalists = []
-    for idx, item in enumerate(ranked[:18]):
+
+    for idx, item in enumerate(prepared):
         finalists.append(
             {
                 "index": idx,
@@ -281,37 +308,40 @@ def edit_finalists(ranked, preferences):
                 "source": item["source"],
                 "published_at": item["published_at"],
                 "snippet": item["snippet"],
+                "article_text": item.get("article_text", ""),
                 "category": item["category"],
                 "topics": item.get("topics", []),
                 "editorial_score": item["editorial_score"],
-                "ranking_reason": item["ranking_reason"],
             }
         )
 
     prompt = f"""
-Jesteś redaktorem końcowym osobistego briefingu wiadomości.
+Jesteś redaktorem końcowym aplikacji z wiadomościami.
+Masz przygotować {target} wartościowych historii z szerokiej puli.
+Nie musisz rozkładać ich równo między kategoriami, ale unikaj monotematyczności.
 
-Wybierz dokładnie {target} najlepszych historii z finalistów.
-Pierwsze {top_count} ma trafić do sekcji "Dzisiaj warto wiedzieć".
-Pozostałe {more_count} mogą trafić do "Jeszcze warto zobaczyć".
+Dozwolone kategorie:
+{json.dumps(ALLOWED_CATEGORIES, ensure_ascii=False)}
 
-Najważniejsze:
-- briefing ma być ciekawy, nie reprezentatywny za wszelką cenę,
-- NIE musisz mieć po jednym newsie z każdej kategorii,
-- jeśli trzy najlepsze materiały są z AI albo piłki, mogą wygrać,
-- nie wybieraj dwóch historii o tym samym wydarzeniu,
-- odrzuć materiały przeciętne, nawet jeśli przez to jakaś kategoria zniknie,
-- unikaj starych, lokalnych lub marginalnych historii bez szerszego znaczenia.
+Dla każdego materiału przygotuj:
+- title: rzeczowy tytuł po polsku bez clickbaitu,
+- summary: 2-3 zdania na kafelek,
+- why_it_matters: jedno zdanie, dlaczego warto to wiedzieć,
+- category: dokładnie jedna dozwolona kategoria,
+- topics: 2-6 krótkich tematów,
+- digest:
+  - what_happened: 2-4 zdania,
+  - key_points: 3-5 konkretnych punktów,
+  - context: krótki kontekst, jeśli wynika z danych,
+  - what_next: czego warto wypatrywać dalej, ale tylko jeśli wynika z danych.
 
-Dla każdej wybranej historii:
-- zachowaj index,
-- napisz rzeczowy tytuł po polsku, bez clickbaitu,
-- napisz 2-3 zdania konkretnego streszczenia wyłącznie z danych wejściowych,
-- dodaj "why_it_matters": jedno zdanie wyjaśniające, dlaczego czytelnik powinien to wiedzieć,
-- przypisz krótką kategorię,
-- nie wymyślaj faktów, których nie ma w danych.
+Najważniejsza zasada:
+NIE DOPISUJ faktów spoza wejścia.
+Jeśli article_text jest pusty, digest ma bazować wyłącznie na tytule i snippecie.
+Jeśli article_text jest dostępny, możesz wykorzystać zawarte tam informacje.
+Nie udawaj, że znasz pełny artykuł, jeśli go nie masz.
 
-Zwróć JSON:
+JSON:
 {{
   "items": [
     {{
@@ -320,7 +350,13 @@ Zwróć JSON:
       "summary": "...",
       "why_it_matters": "...",
       "category": "...",
-      "topics": ["2-5 krótkich tematów opisujących materiał"]
+      "topics": ["..."],
+      "digest": {{
+        "what_happened": "...",
+        "key_points": ["...", "...", "..."],
+        "context": "...",
+        "what_next": "..."
+      }}
     }}
   ]
 }}
@@ -335,26 +371,42 @@ FINALIŚCI:
 
     for edited in result.get("items", []):
         idx = int(edited.get("index", -1))
-        if idx < 0 or idx >= len(ranked[:18]) or idx in used:
+        if idx < 0 or idx >= len(prepared) or idx in used:
             continue
         used.add(idx)
-        original = ranked[idx]
+        original = prepared[idx]
 
+        category = str(edited.get("category") or original["category"]).strip()
+        if category not in ALLOWED_CATEGORIES:
+            category = original["category"]
+
+        digest = edited.get("digest") or {}
         selected.append(
             {
                 "title": str(edited.get("title") or original["title"]).strip(),
                 "summary": str(edited.get("summary") or "").strip(),
                 "why_it_matters": str(edited.get("why_it_matters") or "").strip(),
-                "category": str(edited.get("category") or original["category"]).strip(),
+                "category": category,
                 "topics": [
                     str(topic).strip()
                     for topic in (edited.get("topics") or original.get("topics") or [])
                     if str(topic).strip()
                 ][:6],
                 "editorial_score": original.get("editorial_score", 0),
+                "digest": {
+                    "what_happened": str(digest.get("what_happened") or "").strip(),
+                    "key_points": [
+                        str(point).strip()
+                        for point in digest.get("key_points", [])
+                        if str(point).strip()
+                    ][:5],
+                    "context": str(digest.get("context") or "").strip(),
+                    "what_next": str(digest.get("what_next") or "").strip(),
+                },
                 "source": original["source"],
                 "url": original["url"],
                 "published_at": original["published_at"],
+                "full_text_used": bool(original.get("article_text")),
             }
         )
 
@@ -396,9 +448,6 @@ def main():
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
 
-    # news.json zostaje dla zgodności wstecznej, current.json jest jawnym
-    # wskaźnikiem na najnowszy briefing, a archiwum nigdy nie jest nadpisywane
-    # przez kolejny dzień.
     OUTPUT.write_text(serialized, encoding="utf-8")
     CURRENT_OUTPUT.write_text(serialized, encoding="utf-8")
     (ARCHIVE_DIR / f"{local_day}.json").write_text(serialized, encoding="utf-8")
@@ -406,17 +455,16 @@ def main():
     archive_dates = []
     if ARCHIVE_INDEX.exists():
         try:
-            archive_dates = json.loads(ARCHIVE_INDEX.read_text(encoding="utf-8")).get("dates", [])
+            archive_dates = json.loads(
+                ARCHIVE_INDEX.read_text(encoding="utf-8")
+            ).get("dates", [])
         except (json.JSONDecodeError, AttributeError):
             archive_dates = []
 
     archive_dates = sorted(set(archive_dates + [local_day]), reverse=True)
     ARCHIVE_INDEX.write_text(
         json.dumps(
-            {
-                "latest": local_day,
-                "dates": archive_dates,
-            },
+            {"latest": local_day, "dates": archive_dates},
             ensure_ascii=False,
             indent=2,
         ),
