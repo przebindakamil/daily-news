@@ -22,7 +22,13 @@
       <p class="lead">Wyselekcjonowane informacje, które naprawdę warto znać — bez obowiązku wypełniania każdej kategorii.</p>
     </section>
 
-    <nav id="category-nav" class="category-nav" aria-label="Dzisiejsze tematy"></nav>
+    <div class="day-browser">
+      <nav id="day-nav" class="day-nav" aria-label="Dni"></nav>
+      <button id="archive-toggle" class="archive-toggle" type="button" aria-expanded="false">Archiwum</button>
+    </div>
+    <div id="archive-list" class="archive-list" hidden></div>
+
+    <nav id="category-nav" class="category-nav" aria-label="Tematy wybranego dnia"></nav>
 
     <section id="news-root" class="news-root" aria-live="polite">
       <p class="loading">Ładowanie wiadomości…</p>
