@@ -166,3 +166,32 @@ body.onboarding-open{overflow:hidden}
   .custom-interest-input{flex-direction:column}
   .custom-interest-input button{align-self:flex-start}
 }
+
+.header-tool{border:1px solid var(--line);border-radius:999px;padding:8px 11px;background:transparent;color:var(--muted);font:inherit;font-size:.78rem;cursor:pointer}
+.header-tool:hover{background:var(--surface);color:var(--text);border-color:color-mix(in srgb,var(--accent) 30%,var(--line))}
+.saved-count{display:inline-grid;place-items:center;min-width:18px;height:18px;margin-left:4px;padding:0 5px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.68rem;font-weight:850}
+
+.archive-search{display:grid;grid-template-columns:auto minmax(220px,1fr) auto;align-items:center;gap:10px;margin:0 0 18px}
+.archive-search label{font-size:.78rem;color:var(--muted)}
+.archive-search input{width:100%;border:1px solid var(--line);border-radius:999px;padding:10px 14px;background:var(--surface);color:var(--text);font:inherit}
+.archive-search input:focus{outline:none;border-color:color-mix(in srgb,var(--accent) 38%,var(--line));box-shadow:0 0 0 3px color-mix(in srgb,var(--accent-soft) 50%,transparent)}
+.archive-search span{min-width:72px;text-align:right;color:var(--muted);font-size:.72rem}
+.archive-search-results{margin:0 0 34px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.archive-search-results[hidden]{display:none!important}
+.search-results-head{margin-bottom:14px}
+.archive-result-date{display:block;margin-bottom:10px;color:var(--muted);font-size:.7rem}
+
+.saved-list{display:grid;gap:10px}
+.saved-item{padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--bg)}
+.saved-item-meta{margin-bottom:8px;color:var(--muted);font-size:.7rem}
+.saved-item h3{margin:0 0 12px;font-family:Georgia,"Times New Roman",serif;font-size:1.15rem;font-weight:500;line-height:1.2}
+.saved-item-actions{display:flex;gap:12px;align-items:center}
+.saved-item-actions a,.saved-item-actions button{border:0;background:transparent;padding:0;color:var(--accent);font:inherit;font-size:.76rem;font-weight:750;text-decoration:none;cursor:pointer}
+.saved-item-actions button{color:var(--muted)}
+.save-button.active{background:var(--accent);border-color:var(--accent);color:#fff}
+
+@media(max-width:720px){
+  .archive-search{grid-template-columns:1fr}
+  .archive-search span{text-align:left}
+  .header-tool{padding:8px 9px}
+}
