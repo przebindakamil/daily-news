@@ -34,3 +34,4 @@ Ten plik jest krótkim widokiem kierunku projektu. Źródłem prawdy dla niewyko
 - [x] Własne, niestandardowe zainteresowania użytkownika
 - [x] Zapisane newsy / lista „do przeczytania”
 - [x] Wyszukiwarka archiwum
+- [x] Presety zainteresowań z profilem „Omnibus” i rankingiem różnorodności
