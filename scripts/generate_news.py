@@ -124,7 +124,41 @@ def collect_candidates(max_age_hours: int):
     return items
 
 
-def gemini_json(prompt: str):
+def parse_model_json(text: str):
+    """Parse JSON defensively in case the model adds fences or minor syntax noise."""
+    cleaned = (text or "").strip()
+
+    if cleaned.startswith("\`\`\`"):
+        cleaned = re.sub(r"^\`\`\`(?:json)?\\s*", "", cleaned, flags=re.IGNORECASE)
+        cleaned = re.sub(r"\\s*\`\`\`$", "", cleaned)
+
+    attempts = [cleaned]
+
+    first_brace = cleaned.find("{")
+    last_brace = cleaned.rfind("}")
+    if first_brace >= 0 and last_brace > first_brace:
+        attempts.append(cleaned[first_brace:last_brace + 1])
+
+    # Gemini occasionally leaves a trailing comma before } or ].
+    attempts.extend(
+        re.sub(r",\\s*([}\\]])", r"\\1", candidate)
+        for candidate in list(attempts)
+    )
+
+    last_error = None
+    for candidate in attempts:
+        try:
+            parsed = json.loads(candidate)
+            if not isinstance(parsed, dict):
+                raise ValueError("Oczekiwano obiektu JSON na najwyższym poziomie.")
+            return parsed
+        except (json.JSONDecodeError, ValueError) as exc:
+            last_error = exc
+
+    raise last_error or ValueError("Nie udało się sparsować odpowiedzi JSON.")
+
+
+def gemini_json(prompt: str, retries: int = 3):
     if not API_KEY:
         raise RuntimeError("Brak GEMINI_API_KEY w GitHub Secrets.")
 
@@ -132,24 +166,60 @@ def gemini_json(prompt: str):
         f"https://generativelanguage.googleapis.com/v1beta/models/"
         f"{MODEL}:generateContent?key={API_KEY}"
     )
-    payload = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {
-            "responseMimeType": "application/json",
-            "temperature": 0.18,
-        },
-    }
 
-    response = requests.post(endpoint, json=payload, timeout=120)
-    if not response.ok:
-        raise RuntimeError(
-            f"Gemini API error {response.status_code} for model {MODEL}: "
-            f"{response.text[:1400]}"
-        )
+    last_error = None
+    last_text = ""
 
-    body = response.json()
-    text = body["candidates"][0]["content"]["parts"][0]["text"]
-    return json.loads(text)
+    for attempt in range(1, retries + 1):
+        strict_prompt = prompt
+        if attempt > 1:
+            strict_prompt += (
+                "\\n\\nUWAGA: poprzednia odpowiedź nie była poprawnym JSON-em. "
+                "Zwróć TYLKO jeden poprawny obiekt JSON. "
+                "Używaj wyłącznie podwójnych cudzysłowów, bez komentarzy, "
+                "bez markdownu i bez przecinków po ostatnim elemencie."
+            )
+
+        payload = {
+            "contents": [{"parts": [{"text": strict_prompt}]}],
+            "generationConfig": {
+                "responseMimeType": "application/json",
+                "temperature": 0.1 if attempt > 1 else 0.18,
+                "maxOutputTokens": 8192,
+            },
+        }
+
+        response = requests.post(endpoint, json=payload, timeout=120)
+        if not response.ok:
+            raise RuntimeError(
+                f"Gemini API error {response.status_code} for model {MODEL}: "
+                f"{response.text[:1400]}"
+            )
+
+        body = response.json()
+
+        try:
+            last_text = body["candidates"][0]["content"]["parts"][0]["text"]
+        except (KeyError, IndexError, TypeError) as exc:
+            raise RuntimeError(
+                "Gemini zwrócił odpowiedź bez oczekiwanej treści: "
+                f"{json.dumps(body, ensure_ascii=False)[:1400]}"
+            ) from exc
+
+        try:
+            return parse_model_json(last_text)
+        except (json.JSONDecodeError, ValueError) as exc:
+            last_error = exc
+            print(
+                f"Niepoprawny JSON z Gemini — próba {attempt}/{retries}: {exc}. "
+                f"Fragment odpowiedzi: {last_text[:500]!r}"
+            )
+
+    raise RuntimeError(
+        "Gemini po kilku próbach nadal nie zwrócił poprawnego JSON. "
+        f"Ostatni błąd: {last_error}. "
+        f"Fragment odpowiedzi: {last_text[:1200]!r}"
+    )
 
 
 def rank_candidates(candidates, preferences):
