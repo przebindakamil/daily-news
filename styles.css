@@ -138,3 +138,31 @@ body.onboarding-open{overflow:hidden}
   .onboarding-footer{align-items:flex-start;flex-direction:column}
   .preference-row{grid-template-columns:20px minmax(100px,1fr) 100px 22px}
 }
+
+.news-card{cursor:pointer}
+.news-card:focus-visible{outline:2px solid color-mix(in srgb,var(--accent) 55%,transparent);outline-offset:3px}
+.news-card.expanded{cursor:default;transform:none}
+.expand-hint{color:var(--accent);font-weight:750}
+.news-digest{margin-top:18px;padding-top:20px;border-top:1px solid var(--line);cursor:default}
+.news-digest[hidden]{display:none!important}
+.digest-label{margin:0 0 14px!important;color:var(--accent)!important;font-size:.72rem!important;font-weight:850;letter-spacing:.1em;text-transform:uppercase}
+.news-digest h4{margin:18px 0 7px;font-size:.82rem}
+.news-digest p{margin:0 0 10px!important;color:var(--text)!important}
+.news-digest ul{margin:0 0 12px;padding-left:20px;color:var(--text)}
+.news-digest li+li{margin-top:6px}
+.digest-source-row{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-top:22px;padding-top:16px;border-top:1px solid var(--line)}
+.digest-source-row span{color:var(--muted);font-size:.7rem}
+
+.custom-interest-input{display:flex;gap:8px}
+.custom-interest-input input{min-width:0;flex:1;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--bg);color:var(--text);font:inherit}
+.custom-interest-input input:focus{outline:none;border-color:color-mix(in srgb,var(--accent) 40%,var(--line));box-shadow:0 0 0 3px color-mix(in srgb,var(--accent-soft) 55%,transparent)}
+.custom-interest-input button{border:1px solid var(--line);border-radius:12px;padding:10px 13px;background:var(--surface);color:var(--accent);font:inherit;font-size:.8rem;font-weight:800;cursor:pointer}
+.custom-interest-list{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+.custom-interest-chip{display:inline-flex;align-items:center;gap:7px;padding:7px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.76rem}
+.custom-interest-chip button{border:0;background:transparent;color:inherit;padding:0;line-height:1;cursor:pointer;font-size:1rem}
+.onboarding-intro.small{margin:-4px 0 12px;font-size:.8rem}
+@media(max-width:720px){
+  .digest-source-row{align-items:flex-start;flex-direction:column}
+  .custom-interest-input{flex-direction:column}
+  .custom-interest-input button{align-self:flex-start}
+}
