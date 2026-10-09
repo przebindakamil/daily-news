@@ -11,6 +11,9 @@ const preferencesList = document.querySelector('#preferences-list');
 const preferencesReset = document.querySelector('#preferences-reset');
 const preferencesVolume = document.querySelector('#preferences-volume');
 const preferencesBubble = document.querySelector('#preferences-bubble');
+const preferencesCustomInput = document.querySelector('#preferences-custom-input');
+const preferencesCustomAdd = document.querySelector('#preferences-custom-add');
+const preferencesCustomList = document.querySelector('#preferences-custom-list');
 
 const onboardingPanel = document.querySelector('#onboarding-panel');
 const onboardingTopics = document.querySelector('#onboarding-topics');
@@ -18,27 +21,34 @@ const onboardingVolume = document.querySelector('#onboarding-volume');
 const onboardingBubble = document.querySelector('#onboarding-bubble');
 const onboardingSave = document.querySelector('#onboarding-save');
 const onboardingStatus = document.querySelector('#onboarding-status');
+const onboardingCustomInput = document.querySelector('#onboarding-custom-input');
+const onboardingCustomAdd = document.querySelector('#onboarding-custom-add');
+const onboardingCustomList = document.querySelector('#onboarding-custom-list');
 
 const PREFS_KEY = 'daily-news-user-preferences-v2';
 const FEEDBACK_KEY = 'daily-news-feedback-v1';
 
 const CATEGORIES = [
   'AI i technologia',
+  'Polska',
+  'Świat i geopolityka',
   'Piłka nożna',
   'Sport i trening',
-  'Finanse i biznes',
-  'Polska i świat',
+  'Zdrowie',
+  'Finanse i inwestowanie',
+  'Biznes i startupy',
   'Nauka',
+  'Kosmos',
   'Motoryzacja',
   'Podróże',
-  'Kultura'
+  'Kultura',
+  'Gaming',
+  'Środowisko i klimat',
+  'Praca i kariera',
+  'Nieruchomości i dom'
 ];
 
-const VOLUME_LIMITS = {
-  short: 5,
-  standard: 9,
-  more: 15
-};
+const VOLUME_LIMITS = { short: 5, standard: 9, more: 15 };
 
 function defaultPreferences(){
   return {
@@ -46,6 +56,7 @@ function defaultPreferences(){
     categories: Object.fromEntries(CATEGORIES.map(category => [category, 5])),
     enabledCategories: Object.fromEntries(CATEGORIES.map(category => [category, true])),
     topics: {},
+    customInterests: [],
     volume: 'standard',
     outsideBubble: true
   };
@@ -56,111 +67,119 @@ let activeDate = null;
 let activeData = null;
 
 function loadJson(key, fallback){
-  try {
-    const value = JSON.parse(localStorage.getItem(key) || '');
-    return value && typeof value === 'object' ? value : fallback;
-  } catch (_) {
+  try{
+    const value=JSON.parse(localStorage.getItem(key)||'');
+    return value && typeof value==='object' ? value : fallback;
+  }catch(_){
     return fallback;
   }
 }
 
-let userPreferences = {...defaultPreferences(), ...loadJson(PREFS_KEY, {})};
-userPreferences.categories = {...defaultPreferences().categories, ...(userPreferences.categories || {})};
-userPreferences.enabledCategories = {...defaultPreferences().enabledCategories, ...(userPreferences.enabledCategories || {})};
-userPreferences.topics = userPreferences.topics || {};
-let feedbackState = loadJson(FEEDBACK_KEY, {});
+let userPreferences={...defaultPreferences(),...loadJson(PREFS_KEY,{})};
+userPreferences.categories={...defaultPreferences().categories,...(userPreferences.categories||{})};
+userPreferences.enabledCategories={...defaultPreferences().enabledCategories,...(userPreferences.enabledCategories||{})};
+userPreferences.topics=userPreferences.topics||{};
+userPreferences.customInterests=Array.isArray(userPreferences.customInterests)?userPreferences.customInterests:[];
+let feedbackState=loadJson(FEEDBACK_KEY,{});
 
-function savePreferences(){
-  localStorage.setItem(PREFS_KEY, JSON.stringify(userPreferences));
-}
-
-function saveFeedback(){
-  localStorage.setItem(FEEDBACK_KEY, JSON.stringify(feedbackState));
-}
+function savePreferences(){ localStorage.setItem(PREFS_KEY,JSON.stringify(userPreferences)); }
+function saveFeedback(){ localStorage.setItem(FEEDBACK_KEY,JSON.stringify(feedbackState)); }
 
 function formatDate(value){
   if(!value) return '';
-  const date = new Date(value);
+  const date=new Date(value);
   if(Number.isNaN(date.getTime())) return value;
   return new Intl.DateTimeFormat('pl-PL',{dateStyle:'medium',timeStyle:'short'}).format(date);
 }
 
-function formatDayLabel(dateString, index){
+function formatDayLabel(dateString,index){
   if(index===0) return 'Dzisiaj';
   if(index===1) return 'Wczoraj';
-  const date=new Date(dateString+'T12:00:00');
-  return new Intl.DateTimeFormat('pl-PL',{day:'numeric',month:'short'}).format(date);
+  return new Intl.DateTimeFormat('pl-PL',{day:'numeric',month:'short'}).format(new Date(dateString+'T12:00:00'));
 }
 
 function formatArchiveDay(dateString){
-  const date=new Date(dateString+'T12:00:00');
-  return new Intl.DateTimeFormat('pl-PL',{weekday:'short',day:'numeric',month:'long',year:'numeric'}).format(date);
+  return new Intl.DateTimeFormat('pl-PL',{weekday:'short',day:'numeric',month:'long',year:'numeric'}).format(new Date(dateString+'T12:00:00'));
 }
 
 function normalizeTopic(value=''){
-  return value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();
+  return value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ł/g,'l').trim();
 }
 
-function itemId(item){
-  return item.url || item.title || JSON.stringify(item);
-}
+function itemId(item){ return item.url || item.title || JSON.stringify(item); }
 
 function editorialScore(item){
-  const raw = Number(item.editorial_score);
-  return Number.isFinite(raw) && raw > 0 ? Math.min(10, raw) : 7;
+  const raw=Number(item.editorial_score);
+  return Number.isFinite(raw)&&raw>0?Math.min(10,raw):7;
 }
 
-function isCategoryEnabled(category){
-  return userPreferences.enabledCategories?.[category] !== false;
-}
-
-function categoryWeight(item){
-  return Number(userPreferences.categories?.[item.category] ?? 5);
-}
+function isCategoryEnabled(category){ return userPreferences.enabledCategories?.[category]!==false; }
+function categoryWeight(item){ return Number(userPreferences.categories?.[item.category]??5); }
 
 function topicAffinity(item){
-  const topics = Array.isArray(item.topics) ? item.topics : [];
+  const topics=Array.isArray(item.topics)?item.topics:[];
   if(!topics.length) return 5;
-  const scores = topics.map(topic => Number(userPreferences.topics?.[normalizeTopic(topic)] ?? 5));
-  return scores.reduce((a,b)=>a+b,0) / scores.length;
+  const scores=topics.map(topic=>Number(userPreferences.topics?.[normalizeTopic(topic)]??5));
+  return scores.reduce((a,b)=>a+b,0)/scores.length;
+}
+
+function customInterestScore(item){
+  const interests=userPreferences.customInterests||[];
+  if(!interests.length) return 5;
+
+  const digest=item.digest||{};
+  const haystack=normalizeTopic([
+    item.title,
+    item.summary,
+    item.category,
+    ...(item.topics||[]),
+    digest.what_happened,
+    digest.context,
+    ...(digest.key_points||[])
+  ].filter(Boolean).join(' '));
+
+  let best=0;
+  interests.forEach(interest=>{
+    const needle=normalizeTopic(interest);
+    if(!needle) return;
+    if(haystack.includes(needle)){ best=Math.max(best,10); return; }
+    const words=needle.split(/\s+/).filter(word=>word.length>2);
+    const matches=words.filter(word=>haystack.includes(word)).length;
+    if(matches) best=Math.max(best,Math.min(9,5+(matches/Math.max(words.length,1))*4));
+  });
+  return best||4;
 }
 
 function explicitFeedback(item){
-  const value = feedbackState[itemId(item)];
-  if(value === 'more') return 10;
-  if(value === 'less') return 0;
+  const value=feedbackState[itemId(item)];
+  if(value==='more') return 10;
+  if(value==='less') return 0;
   return 5;
 }
 
 function personalizedScore(item){
-  return (
-    editorialScore(item) * .58 +
-    categoryWeight(item) * .22 +
-    topicAffinity(item) * .12 +
-    explicitFeedback(item) * .08
-  );
+  return editorialScore(item)*.45
+    + categoryWeight(item)*.18
+    + topicAffinity(item)*.10
+    + customInterestScore(item)*.20
+    + explicitFeedback(item)*.07;
 }
 
-function currentDailyLimit(){
-  return VOLUME_LIMITS[userPreferences.volume] || VOLUME_LIMITS.standard;
-}
+function currentDailyLimit(){ return VOLUME_LIMITS[userPreferences.volume]||VOLUME_LIMITS.standard; }
 
-function applyFeedback(item, direction){
-  const id = itemId(item);
-  feedbackState[id] = direction;
+function applyFeedback(item,direction){
+  feedbackState[itemId(item)]=direction;
   saveFeedback();
 
-  const delta = direction === 'more' ? .8 : -.8;
-  const category = item.category;
-  if(category){
-    const current = Number(userPreferences.categories?.[category] ?? 5);
-    userPreferences.categories[category] = Math.max(0, Math.min(10, current + delta * .35));
+  const delta=direction==='more'?.8:-.8;
+  if(item.category){
+    const current=Number(userPreferences.categories?.[item.category]??5);
+    userPreferences.categories[item.category]=Math.max(0,Math.min(10,current+delta*.35));
   }
-
-  (item.topics || []).forEach(topic=>{
-    const key = normalizeTopic(topic);
-    const current = Number(userPreferences.topics?.[key] ?? 5);
-    userPreferences.topics[key] = Math.max(0, Math.min(10, current + delta));
+  (item.topics||[]).forEach(topic=>{
+    const key=normalizeTopic(topic);
+    const current=Number(userPreferences.topics?.[key]??5);
+    userPreferences.topics[key]=Math.max(0,Math.min(10,current+delta));
   });
 
   savePreferences();
@@ -169,22 +188,107 @@ function applyFeedback(item, direction){
 }
 
 function recordSourceClick(item){
-  const category = item.category;
-  if(category){
-    const current = Number(userPreferences.categories?.[category] ?? 5);
-    userPreferences.categories[category] = Math.min(10, current + .08);
+  if(item.category){
+    const current=Number(userPreferences.categories?.[item.category]??5);
+    userPreferences.categories[item.category]=Math.min(10,current+.08);
   }
-  (item.topics || []).forEach(topic=>{
-    const key = normalizeTopic(topic);
-    const current = Number(userPreferences.topics?.[key] ?? 5);
-    userPreferences.topics[key] = Math.min(10, current + .12);
+  (item.topics||[]).forEach(topic=>{
+    const key=normalizeTopic(topic);
+    const current=Number(userPreferences.topics?.[key]??5);
+    userPreferences.topics[key]=Math.min(10,current+.12);
   });
   savePreferences();
 }
 
-function storyCard(item, featured=false){
+function createDigest(item){
+  const digest=item.digest||{};
+  const panel=document.createElement('div');
+  panel.className='news-digest';
+  panel.hidden=true;
+
+  const label=document.createElement('p');
+  label.className='digest-label';
+  label.textContent='Wiedza w pigułce';
+  panel.appendChild(label);
+
+  if(digest.what_happened){
+    const h=document.createElement('h4');
+    h.textContent='Co się wydarzyło?';
+    const p=document.createElement('p');
+    p.textContent=digest.what_happened;
+    panel.append(h,p);
+  }else if(item.summary){
+    const h=document.createElement('h4');
+    h.textContent='W skrócie';
+    const p=document.createElement('p');
+    p.textContent=item.summary;
+    panel.append(h,p);
+  }
+
+  if(Array.isArray(digest.key_points)&&digest.key_points.length){
+    const h=document.createElement('h4');
+    h.textContent='Najważniejsze';
+    const ul=document.createElement('ul');
+    digest.key_points.forEach(point=>{
+      const li=document.createElement('li');
+      li.textContent=point;
+      ul.appendChild(li);
+    });
+    panel.append(h,ul);
+  }
+
+  if(digest.context){
+    const h=document.createElement('h4');
+    h.textContent='Kontekst';
+    const p=document.createElement('p');
+    p.textContent=digest.context;
+    panel.append(h,p);
+  }
+
+  if(digest.what_next){
+    const h=document.createElement('h4');
+    h.textContent='Co dalej?';
+    const p=document.createElement('p');
+    p.textContent=digest.what_next;
+    panel.append(h,p);
+  }
+
+  if(item.why_it_matters){
+    const h=document.createElement('h4');
+    h.textContent='Dlaczego warto wiedzieć?';
+    const p=document.createElement('p');
+    p.textContent=item.why_it_matters;
+    panel.append(h,p);
+  }
+
+  const sourceRow=document.createElement('div');
+  sourceRow.className='digest-source-row';
+
+  const note=document.createElement('span');
+  note.textContent=item.full_text_used?'Skrót przygotowany także z treści artykułu':'Skrót na podstawie dostępnych danych';
+
+  const link=document.createElement('a');
+  link.className='news-link';
+  link.target='_blank';
+  link.rel='noopener noreferrer';
+  link.href=item.url||'#';
+  link.textContent='Czytaj pełny materiał u źródła';
+  link.addEventListener('click',event=>{
+    event.stopPropagation();
+    recordSourceClick(item);
+  });
+
+  sourceRow.append(note,link);
+  panel.appendChild(sourceRow);
+  return panel;
+}
+
+function storyCard(item,featured=false){
   const card=document.createElement('article');
-  card.className='news-card' + (featured?' featured':'');
+  card.className='news-card'+(featured?' featured':'');
+  card.tabIndex=0;
+  card.setAttribute('role','button');
+  card.setAttribute('aria-expanded','false');
 
   const meta=document.createElement('div');
   meta.className='news-meta';
@@ -201,13 +305,6 @@ function storyCard(item, featured=false){
   const summary=document.createElement('p');
   summary.className='news-summary';
   summary.textContent=item.summary||'';
-
-  const why=document.createElement('p');
-  why.className='why-it-matters';
-  if(item.why_it_matters){
-    why.innerHTML='<strong>Dlaczego warto wiedzieć:</strong> ';
-    why.append(document.createTextNode(item.why_it_matters));
-  }
 
   const topics=document.createElement('div');
   topics.className='news-topics';
@@ -230,34 +327,50 @@ function storyCard(item, featured=false){
   const current=feedbackState[itemId(item)];
   if(current==='more') more.classList.add('active');
   if(current==='less') less.classList.add('active');
-  more.addEventListener('click',()=>applyFeedback(item,'more'));
-  less.addEventListener('click',()=>applyFeedback(item,'less'));
+  more.addEventListener('click',event=>{event.stopPropagation();applyFeedback(item,'more');});
+  less.addEventListener('click',event=>{event.stopPropagation();applyFeedback(item,'less');});
   feedback.append(more,less);
 
   const footer=document.createElement('div');
   footer.className='news-footer';
   const date=document.createElement('span');
   date.textContent=item.published_at?formatDate(item.published_at):'';
-  const link=document.createElement('a');
-  link.className='news-link';
-  link.target='_blank';
-  link.rel='noopener noreferrer';
-  link.textContent='Czytaj u źródła';
-  link.href=item.url||'#';
-  link.addEventListener('click',()=>recordSourceClick(item));
-  footer.append(date,link);
+  const expandHint=document.createElement('span');
+  expandHint.className='expand-hint';
+  expandHint.textContent='Kliknij po wiedzę w pigułce';
+  footer.append(date,expandHint);
+
+  const digest=createDigest(item);
+
+  function toggleDigest(){
+    const open=digest.hidden;
+    digest.hidden=!open;
+    card.classList.toggle('expanded',open);
+    card.setAttribute('aria-expanded',String(open));
+    expandHint.textContent=open?'Zwiń':'Kliknij po wiedzę w pigułce';
+  }
+
+  card.addEventListener('click',event=>{
+    if(event.target.closest('button,a,input')) return;
+    toggleDigest();
+  });
+  card.addEventListener('keydown',event=>{
+    if((event.key==='Enter'||event.key===' ')&&!event.target.closest('button,a,input')){
+      event.preventDefault();
+      toggleDigest();
+    }
+  });
 
   card.append(meta,title,summary);
-  if(item.why_it_matters) card.append(why);
   if((item.topics||[]).length) card.append(topics);
-  card.append(feedback,footer);
+  card.append(feedback,footer,digest);
   return card;
 }
 
-function renderSection(title, items, featured=false, className=''){
+function renderSection(title,items,featured=false,className=''){
   if(!items?.length) return null;
   const section=document.createElement('section');
-  section.className='news-section' + (featured?' primary-section':'') + (className?' '+className:'');
+  section.className='news-section'+(featured?' primary-section':'')+(className?' '+className:'');
   const head=document.createElement('div');
   head.className='section-head';
   const heading=document.createElement('h2');
@@ -269,46 +382,39 @@ function renderSection(title, items, featured=false, className=''){
 
   const grid=document.createElement('div');
   grid.className=featured?'news-grid featured-grid':'news-grid';
-  items.forEach((item,index)=>grid.appendChild(storyCard(item,featured && index===0)));
-
+  items.forEach((item,index)=>grid.appendChild(storyCard(item,featured&&index===0)));
   section.append(head,grid);
   return section;
 }
 
 function splitPersonalized(items){
-  const limit = Math.min(currentDailyLimit(), items.length);
-  const enabled = items
+  const limit=Math.min(currentDailyLimit(),items.length);
+  const enabled=items
     .filter(item=>isCategoryEnabled(item.category))
     .sort((a,b)=>personalizedScore(b)-personalizedScore(a));
 
-  const reserveBubble = userPreferences.outsideBubble && limit > 2 ? 1 : 0;
-  const personalLimit = Math.max(1, limit - reserveBubble);
-  const selected = enabled.slice(0, personalLimit);
-  const used = new Set(selected.map(itemId));
+  const reserveBubble=userPreferences.outsideBubble&&limit>2?1:0;
+  const personalLimit=Math.max(1,limit-reserveBubble);
+  const selected=enabled.slice(0,personalLimit);
+  const used=new Set(selected.map(itemId));
 
-  let outsideBubble = null;
+  let outsideBubble=null;
   if(userPreferences.outsideBubble){
-    const bubbleCandidates = items
+    const candidates=items
       .filter(item=>!used.has(itemId(item)))
-      .filter(item=>!isCategoryEnabled(item.category) || categoryWeight(item)<=5)
+      .filter(item=>!isCategoryEnabled(item.category)||categoryWeight(item)<=5)
       .sort((a,b)=>editorialScore(b)-editorialScore(a));
-    outsideBubble = bubbleCandidates[0] || null;
+    outsideBubble=candidates[0]||null;
     if(outsideBubble) used.add(itemId(outsideBubble));
   }
 
-  if(!outsideBubble && selected.length < limit){
-    const fallback = enabled.find(item=>!used.has(itemId(item)));
-    if(fallback){
-      selected.push(fallback);
-      used.add(itemId(fallback));
-    }
+  if(!outsideBubble&&selected.length<limit){
+    const fallback=enabled.find(item=>!used.has(itemId(item)));
+    if(fallback) selected.push(fallback);
   }
 
-  const forYouCount = Math.min(selected.length, currentDailyLimit() <= 5 ? 4 : 5);
-  const forYou = selected.slice(0, forYouCount);
-  const rest = selected.slice(forYouCount);
-
-  return {forYou,outsideBubble,rest};
+  const forYouCount=Math.min(selected.length,currentDailyLimit()<=5?4:5);
+  return {forYou:selected.slice(0,forYouCount),outsideBubble,rest:selected.slice(forYouCount)};
 }
 
 function render(data){
@@ -325,9 +431,7 @@ function render(data){
 
   const {forYou,outsideBubble,rest}=splitPersonalized(all);
   const visible=[...forYou,...rest,...(outsideBubble?[outsideBubble]:[])];
-  const categories=[...new Set(visible.map(x=>x.category).filter(Boolean))];
-
-  categories.forEach(category=>{
+  [...new Set(visible.map(x=>x.category).filter(Boolean))].forEach(category=>{
     const chip=document.createElement('span');
     chip.className='category-chip';
     chip.textContent=category;
@@ -346,7 +450,7 @@ function render(data){
   const restSection=renderSection('Jeszcze warto zobaczyć',rest,false);
   if(restSection) root.appendChild(restSection);
 
-  if(!forYou.length && !outsideBubble && !rest.length){
+  if(!forYou.length&&!outsideBubble&&!rest.length){
     root.innerHTML='<p class="empty">Brak materiałów w wybranych kategoriach. Zmień zainteresowania w „Dostosuj”.</p>';
   }
 }
@@ -369,7 +473,7 @@ function renderDayNavigation(){
   archiveDates.slice(0,5).forEach((date,index)=>{
     const button=document.createElement('button');
     button.type='button';
-    button.className='day-button' + (date===activeDate?' active':'');
+    button.className='day-button'+(date===activeDate?' active':'');
     button.textContent=formatDayLabel(date,index);
     button.addEventListener('click',()=>loadBriefing(date));
     dayNav.appendChild(button);
@@ -379,7 +483,7 @@ function renderDayNavigation(){
   archiveDates.forEach(date=>{
     const button=document.createElement('button');
     button.type='button';
-    button.className='archive-day' + (date===activeDate?' active':'');
+    button.className='archive-day'+(date===activeDate?' active':'');
     button.textContent=formatArchiveDay(date);
     button.addEventListener('click',()=>{
       archiveList.hidden=true;
@@ -394,23 +498,46 @@ function renderDayNavigation(){
 function renderVolumeOptions(container){
   if(!container) return;
   container.innerHTML='';
-  [
-    ['short','Krótko','około 5'],
-    ['standard','Standard','około 9'],
-    ['more','Więcej','do 15']
-  ].forEach(([key,label,detail])=>{
-    const button=document.createElement('button');
-    button.type='button';
-    button.dataset.volume=key;
-    button.className=userPreferences.volume===key?'active':'';
-    button.innerHTML=label+' <span>'+detail+'</span>';
-    button.addEventListener('click',()=>{
-      userPreferences.volume=key;
-      savePreferences();
-      renderPreferences();
-      if(activeData) render(activeData);
+  [['short','Krótko','około 5'],['standard','Standard','około 9'],['more','Więcej','do 15']]
+    .forEach(([key,label,detail])=>{
+      const button=document.createElement('button');
+      button.type='button';
+      button.dataset.volume=key;
+      button.className=userPreferences.volume===key?'active':'';
+      button.innerHTML=label+' <span>'+detail+'</span>';
+      button.addEventListener('click',()=>{
+        userPreferences.volume=key;
+        savePreferences();
+        renderPreferences();
+        if(activeData) render(activeData);
+      });
+      container.appendChild(button);
     });
-    container.appendChild(button);
+}
+
+function addCustomInterest(value,target=userPreferences.customInterests){
+  const clean=value.trim().replace(/\s+/g,' ');
+  if(clean.length<2) return false;
+  if(target.some(item=>normalizeTopic(item)===normalizeTopic(clean))) return false;
+  target.push(clean.slice(0,60));
+  return true;
+}
+
+function renderCustomInterestList(container,items,onRemove){
+  if(!container) return;
+  container.innerHTML='';
+  items.forEach((interest,index)=>{
+    const chip=document.createElement('span');
+    chip.className='custom-interest-chip';
+    const text=document.createElement('span');
+    text.textContent=interest;
+    const remove=document.createElement('button');
+    remove.type='button';
+    remove.textContent='×';
+    remove.setAttribute('aria-label','Usuń '+interest);
+    remove.addEventListener('click',()=>onRemove(index));
+    chip.append(text,remove);
+    container.appendChild(chip);
   });
 }
 
@@ -426,17 +553,14 @@ function renderPreferences(){
     toggle.type='checkbox';
     toggle.className='category-enable';
     toggle.checked=isCategoryEnabled(category);
-    toggle.setAttribute('aria-label','Włącz '+category);
 
     const name=document.createElement('span');
     name.textContent=category;
 
     const input=document.createElement('input');
     input.type='range';
-    input.min='0';
-    input.max='10';
-    input.step='1';
-    input.value=String(Math.round(userPreferences.categories?.[category] ?? 5));
+    input.min='0'; input.max='10'; input.step='1';
+    input.value=String(Math.round(userPreferences.categories?.[category]??5));
     input.disabled=!toggle.checked;
 
     const value=document.createElement('output');
@@ -462,6 +586,28 @@ function renderPreferences(){
 
   renderVolumeOptions(preferencesVolume);
   if(preferencesBubble) preferencesBubble.checked=Boolean(userPreferences.outsideBubble);
+  renderCustomInterestList(preferencesCustomList,userPreferences.customInterests,index=>{
+    userPreferences.customInterests.splice(index,1);
+    savePreferences();
+    renderPreferences();
+    if(activeData) render(activeData);
+  });
+}
+
+function wireCustomInput(input,button,callback){
+  if(!input||!button) return;
+  const add=()=>{
+    if(callback(input.value)){
+      input.value='';
+    }
+  };
+  button.addEventListener('click',add);
+  input.addEventListener('keydown',event=>{
+    if(event.key==='Enter'){
+      event.preventDefault();
+      add();
+    }
+  });
 }
 
 function setPreferencesOpen(open){
@@ -471,9 +617,10 @@ function setPreferencesOpen(open){
 }
 
 function setupOnboarding(){
-  if(!onboardingPanel || userPreferences.onboarded) return;
+  if(!onboardingPanel||userPreferences.onboarded) return;
 
-  const selected = new Set();
+  const selected=new Set();
+  const custom=[];
   let selectedVolume='standard';
 
   onboardingTopics.innerHTML='';
@@ -483,19 +630,22 @@ function setupOnboarding(){
     button.className='onboarding-topic';
     button.textContent=category;
     button.addEventListener('click',()=>{
-      if(selected.has(category)){
-        selected.delete(category);
-        button.classList.remove('active');
-      }else{
-        selected.add(category);
-        button.classList.add('active');
-      }
+      if(selected.has(category)){ selected.delete(category); button.classList.remove('active'); }
+      else{ selected.add(category); button.classList.add('active'); }
       onboardingSave.disabled=selected.size<3;
-      onboardingStatus.textContent=selected.size<3
-        ? 'Wybierz jeszcze '+(3-selected.size)
-        : 'Wybrano '+selected.size+' tematów';
+      onboardingStatus.textContent=selected.size<3?'Wybierz jeszcze '+(3-selected.size):'Wybrano '+selected.size+' tematów';
     });
     onboardingTopics.appendChild(button);
+  });
+
+  const renderOnboardingCustom=()=>renderCustomInterestList(onboardingCustomList,custom,index=>{
+    custom.splice(index,1);
+    renderOnboardingCustom();
+  });
+  wireCustomInput(onboardingCustomInput,onboardingCustomAdd,value=>{
+    const added=addCustomInterest(value,custom);
+    if(added) renderOnboardingCustom();
+    return added;
   });
 
   onboardingVolume?.querySelectorAll('[data-volume]').forEach(button=>{
@@ -507,17 +657,16 @@ function setupOnboarding(){
 
   onboardingSave?.addEventListener('click',()=>{
     if(selected.size<3) return;
-
-    userPreferences = {
+    userPreferences={
       ...defaultPreferences(),
       onboarded:true,
       categories:Object.fromEntries(CATEGORIES.map(category=>[category,selected.has(category)?8:0])),
       enabledCategories:Object.fromEntries(CATEGORIES.map(category=>[category,selected.has(category)])),
       topics:{},
+      customInterests:[...custom],
       volume:selectedVolume,
       outsideBubble:Boolean(onboardingBubble?.checked)
     };
-
     savePreferences();
     onboardingPanel.hidden=true;
     document.body.classList.remove('onboarding-open');
@@ -528,6 +677,16 @@ function setupOnboarding(){
   onboardingPanel.hidden=false;
   document.body.classList.add('onboarding-open');
 }
+
+wireCustomInput(preferencesCustomInput,preferencesCustomAdd,value=>{
+  const added=addCustomInterest(value);
+  if(added){
+    savePreferences();
+    renderPreferences();
+    if(activeData) render(activeData);
+  }
+  return added;
+});
 
 preferencesToggle?.addEventListener('click',()=>setPreferencesOpen(true));
 preferencesPanel?.addEventListener('click',event=>{
@@ -549,7 +708,7 @@ preferencesReset?.addEventListener('click',()=>{
 });
 
 document.addEventListener('keydown',event=>{
-  if(event.key==='Escape' && preferencesPanel && !preferencesPanel.hidden) setPreferencesOpen(false);
+  if(event.key==='Escape'&&preferencesPanel&&!preferencesPanel.hidden) setPreferencesOpen(false);
 });
 
 archiveToggle?.addEventListener('click',()=>{
@@ -562,7 +721,7 @@ renderPreferences();
 setupOnboarding();
 
 fetch('./data/archive/index.json',{cache:'no-store'})
-  .then(r=>{if(!r.ok) throw new Error('Brak indeksu archiwum'); return r.json();})
+  .then(r=>{if(!r.ok) throw new Error('Brak indeksu archiwum');return r.json();})
   .then(index=>{
     archiveDates=index.dates||[];
     if(!archiveDates.length) throw new Error('Archiwum jest puste');
