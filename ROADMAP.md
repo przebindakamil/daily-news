@@ -3,7 +3,7 @@
 Ten plik jest krótkim widokiem kierunku projektu. Źródłem prawdy dla niewykonanych zadań są GitHub Issues.
 
 ## In progress / next
-- [ ] Rozwijane streszczenie / „wiedza w pigułce” po kliknięciu w kafelek
+- [ ] Wykorzystanie custom interests także do rozszerzania źródeł po dodaniu backendu
 - [ ] Zapisane newsy i kolekcja „do przeczytania”
 - [ ] Wyszukiwarka archiwum
 - [ ] Tygodniowe podsumowanie „Ten tydzień w 10 minut”
@@ -31,3 +31,6 @@ Ten plik jest krótkim widokiem kierunku projektu. Źródłem prawdy dla niewyko
 - [x] Onboarding zainteresowań
 - [x] Włączanie / wyłączanie kategorii
 - [x] Sterowanie liczbą materiałów dziennie
+- [x] Rozwijane „wiedza w pigułce” po kliknięciu w kafelek
+- [x] Szerszy katalog kategorii
+- [x] Własne, niestandardowe zainteresowania użytkownika
