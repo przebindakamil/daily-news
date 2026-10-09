@@ -39,7 +39,13 @@
     </div>
     <section id="archive-search-results" class="archive-search-results" hidden></section>
 
-    <nav id="category-nav" class="category-nav" aria-label="Tematy wybranego dnia"></nav>
+    <section class="topic-toolbar" aria-label="Personalizacja widoku">
+      <div class="topic-toolbar-head">
+        <span>Twoje tematy</span>
+        <button id="category-clear" class="topic-clear" type="button" hidden>Pokaż wszystko</button>
+      </div>
+      <nav id="category-nav" class="category-nav" aria-label="Wybrane kategorie"></nav>
+    </section>
 
     <section id="news-root" class="news-root" aria-live="polite">
       <p class="loading">Ładowanie wiadomości…</p>
