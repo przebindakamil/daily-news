@@ -13,6 +13,7 @@
       <a class="brand" href="./">DAILY NEWS</a>
       <div class="header-actions">
         <span id="updated-at" class="updated-at">Ładowanie…</span>
+        <button id="saved-toggle" class="header-tool" type="button">Zapisane <span id="saved-count" class="saved-count">0</span></button>
         <button id="preferences-toggle" class="preferences-toggle" type="button">Dostosuj</button>
       </div>
     </div>
@@ -30,6 +31,13 @@
       <button id="archive-toggle" class="archive-toggle" type="button" aria-expanded="false">Archiwum</button>
     </div>
     <div id="archive-list" class="archive-list" hidden></div>
+
+    <div class="archive-search">
+      <label for="archive-search-input">Szukaj w archiwum</label>
+      <input id="archive-search-input" type="search" placeholder="Temat, osoba, firma, kategoria…" autocomplete="off">
+      <span id="archive-search-status"></span>
+    </div>
+    <section id="archive-search-results" class="archive-search-results" hidden></section>
 
     <nav id="category-nav" class="category-nav" aria-label="Tematy wybranego dnia"></nav>
 
@@ -74,6 +82,17 @@
         <span id="onboarding-status">Wybierz minimum 3 tematy</span>
         <button id="onboarding-save" type="button" disabled>Zapisz i pokaż briefing</button>
       </div>
+    </section>
+  </aside>
+
+  <aside id="saved-panel" class="preferences-panel" hidden aria-label="Zapisane materiały">
+    <div class="preferences-backdrop" data-close-saved></div>
+    <section class="preferences-card saved-card" role="dialog" aria-modal="true" aria-labelledby="saved-title">
+      <button class="preferences-close" type="button" data-close-saved aria-label="Zamknij">×</button>
+      <p class="eyebrow">Twoja lista</p>
+      <h2 id="saved-title">Zapisane materiały</h2>
+      <p class="preferences-intro">Materiały zapisują się lokalnie w tej przeglądarce.</p>
+      <div id="saved-list" class="saved-list"></div>
     </section>
   </aside>
 
