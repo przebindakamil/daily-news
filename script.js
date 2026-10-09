@@ -1,4 +1,10 @@
 const root = document.querySelector('#news-root');
+const todayView = document.querySelector('#today-view');
+const categoriesView = document.querySelector('#categories-view');
+const categoriesRoot = document.querySelector('#categories-root');
+const categoriesBack = document.querySelector('#categories-back');
+const navArchive = document.querySelector('#nav-archive');
+const navSaved = document.querySelector('#nav-saved');
 const updated = document.querySelector('#updated-at');
 const nav = document.querySelector('#category-nav');
 const categoryClear = document.querySelector('#category-clear');
@@ -713,8 +719,146 @@ function renderCategoryNav(all){
   if(toolbar) toolbar.hidden=!enabled.length;
 }
 
+function categorySlug(category){
+  return normalizeTopic(category).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+}
+
+function categoryFromSlug(slug){
+  return CATEGORIES.find(category=>categorySlug(category)===slug)||null;
+}
+
+function allCurrentItems(){
+  if(!activeData) return [];
+  return [...(activeData.top_stories||[]),...(activeData.more_stories||[])];
+}
+
+function renderCategoriesLanding(){
+  if(!categoriesRoot) return;
+  const items=allCurrentItems();
+  categoriesRoot.innerHTML='';
+
+  const grid=document.createElement('div');
+  grid.className='category-overview-grid';
+
+  CATEGORIES.forEach(category=>{
+    const categoryItems=items
+      .filter(item=>item.category===category)
+      .sort((a,b)=>editorialScore(b)-editorialScore(a));
+
+    const card=document.createElement('button');
+    card.type='button';
+    card.className='category-overview-card';
+    card.disabled=!categoryItems.length;
+
+    const top=document.createElement('div');
+    top.className='category-overview-top';
+
+    const name=document.createElement('strong');
+    name.textContent=category;
+
+    const count=document.createElement('span');
+    count.textContent=categoryItems.length
+      ? categoryItems.length+' '+(categoryItems.length===1?'materiał':'materiały')
+      : 'Brak dziś';
+
+    top.append(name,count);
+
+    const teaser=document.createElement('p');
+    teaser.textContent=categoryItems[0]?.title||'Brak materiałów w dzisiejszym zestawie.';
+
+    const open=document.createElement('span');
+    open.className='category-overview-open';
+    open.textContent=categoryItems.length?'Otwórz kategorię →':'';
+
+    card.append(top,teaser,open);
+    card.addEventListener('click',()=>{
+      if(categoryItems.length) location.hash='#category/'+categorySlug(category);
+    });
+
+    grid.appendChild(card);
+  });
+
+  categoriesRoot.appendChild(grid);
+}
+
+function renderCategoryDetail(category){
+  if(!categoriesRoot) return;
+  const items=allCurrentItems()
+    .filter(item=>item.category===category)
+    .sort((a,b)=>editorialScore(b)-editorialScore(a));
+
+  categoriesRoot.innerHTML='';
+
+  const header=document.createElement('div');
+  header.className='category-detail-head';
+
+  const titleWrap=document.createElement('div');
+  const eyebrow=document.createElement('span');
+  eyebrow.className='top-day-eyebrow';
+  eyebrow.textContent='Kategoria';
+  const title=document.createElement('h3');
+  title.textContent=category;
+  const desc=document.createElement('p');
+  desc.textContent='Widok redakcyjny bez wpływu Twoich preferencji i historii kliknięć.';
+  titleWrap.append(eyebrow,title,desc);
+
+  header.appendChild(titleWrap);
+  categoriesRoot.appendChild(header);
+
+  if(!items.length){
+    const empty=document.createElement('p');
+    empty.className='empty';
+    empty.textContent='Brak materiałów z tej kategorii w dzisiejszym zestawie.';
+    categoriesRoot.appendChild(empty);
+    return;
+  }
+
+  const grid=document.createElement('div');
+  grid.className='news-grid category-detail-grid';
+  items.forEach(item=>grid.appendChild(storyCard(item,false)));
+  categoriesRoot.appendChild(grid);
+}
+
+function setActiveView(view,category=null){
+  const showCategories=view==='categories';
+
+  if(todayView) todayView.hidden=showCategories;
+  if(categoriesView) categoriesView.hidden=!showCategories;
+
+  document.querySelectorAll('[data-view-link]').forEach(link=>{
+    const active=(view==='today'&&link.dataset.viewLink==='today') ||
+      (showCategories&&link.dataset.viewLink==='categories');
+    link.classList.toggle('active',active);
+  });
+
+  if(showCategories){
+    if(categoriesBack) categoriesBack.hidden=!category;
+    if(category) renderCategoryDetail(category);
+    else renderCategoriesLanding();
+  }
+}
+
+function applyRoute(){
+  const hash=location.hash||'#today';
+
+  if(hash.startsWith('#category/')){
+    const slug=hash.replace('#category/','');
+    const category=categoryFromSlug(slug);
+    setActiveView('categories',category);
+    return;
+  }
+
+  if(hash==='#categories'){
+    setActiveView('categories');
+    return;
+  }
+
+  setActiveView('today');
+}
+
 function render(data){
   activeData=data;
+  if(categoriesView && !categoriesView.hidden) applyRoute();
   updated.textContent=data.generated_at?'Aktualizacja: '+formatDate(data.generated_at):'Brak daty aktualizacji';
   root.innerHTML='';
 
@@ -1189,6 +1333,26 @@ savedPanel?.addEventListener('click',event=>{
   if(event.target.closest('[data-close-saved]')) setSavedOpen(false);
 });
 
+window.addEventListener('hashchange',applyRoute);
+
+categoriesBack?.addEventListener('click',()=>{
+  location.hash='#categories';
+});
+
+navArchive?.addEventListener('click',()=>{
+  setActiveView('today');
+  location.hash='#today';
+  archiveList.hidden=false;
+  archiveToggle.setAttribute('aria-expanded','true');
+  archiveSearchInput?.focus();
+  document.querySelector('.day-browser')?.scrollIntoView({behavior:'smooth',block:'start'});
+});
+
+navSaved?.addEventListener('click',()=>{
+  renderSavedPanel();
+  setSavedOpen(true);
+});
+
 categoryClear?.addEventListener('click',()=>{
   activeCategoryFilter=null;
   if(activeData) render(activeData);
@@ -1228,6 +1392,7 @@ renderSavedCount();
 renderSavedPanel();
 renderPreferences();
 setupOnboarding();
+applyRoute();
 
 fetch('./data/archive/index.json',{cache:'no-store'})
   .then(r=>{if(!r.ok) throw new Error('Brak indeksu archiwum');return r.json();})
