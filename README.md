@@ -78,7 +78,7 @@ Liczbę można zmienić przez `NEWS_PER_CATEGORY`.
 Domyślnie używany jest:
 
 ```
-gemini-2.5-flash
+gemini-3.5-flash-lite
 ```
 
 Model można zmienić przez zmienną `GEMINI_MODEL`.
