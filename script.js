@@ -788,9 +788,55 @@ function renderCustomInterestList(container,items,onRemove){
   });
 }
 
+function renderPresetCards(container,onSelect){
+  if(!container) return;
+  container.innerHTML='';
+
+  Object.entries(PRESETS).forEach(([key,preset])=>{
+    const button=document.createElement('button');
+    button.type='button';
+    button.className='preset-card'+(userPreferences.preset===key?' active':'');
+    button.dataset.preset=key;
+
+    const top=document.createElement('span');
+    top.className='preset-card-top';
+
+    const name=document.createElement('strong');
+    name.textContent=preset.name;
+
+    const badge=document.createElement('span');
+    badge.className='preset-badge';
+    badge.textContent=key==='omnibus'?'Polecany':preset.categories.length+' tematów';
+
+    top.append(name,badge);
+
+    const description=document.createElement('span');
+    description.className='preset-description';
+    description.textContent=preset.description;
+
+    button.append(top,description);
+    button.addEventListener('click',()=>onSelect(key));
+    container.appendChild(button);
+  });
+}
+
+function syncPresetButtons(){
+  document.querySelectorAll('.preset-card').forEach(button=>{
+    button.classList.toggle('active',button.dataset.preset===userPreferences.preset);
+  });
+}
+
 function renderPreferences(){
   if(!preferencesList) return;
   preferencesList.innerHTML='';
+
+  renderPresetCards(preferencesPresets,key=>{
+    applyPreset(key);
+    savePreferences();
+    activeCategoryFilter=null;
+    renderPreferences();
+    if(activeData) render(activeData);
+  });
 
   CATEGORIES.forEach(category=>{
     const row=document.createElement('div');
@@ -815,6 +861,7 @@ function renderPreferences(){
 
     toggle.addEventListener('change',()=>{
       userPreferences.enabledCategories[category]=toggle.checked;
+      userPreferences.preset=null;
       input.disabled=!toggle.checked;
       if(!toggle.checked && activeCategoryFilter===category) activeCategoryFilter=null;
       savePreferences();
@@ -824,6 +871,7 @@ function renderPreferences(){
     input.addEventListener('input',()=>{
       value.textContent=input.value;
       userPreferences.categories[category]=Number(input.value);
+      userPreferences.preset=null;
       savePreferences();
       if(activeData) render(activeData);
     });
@@ -836,6 +884,7 @@ function renderPreferences(){
   if(preferencesBubble) preferencesBubble.checked=Boolean(userPreferences.outsideBubble);
   renderCustomInterestList(preferencesCustomList,userPreferences.customInterests,index=>{
     userPreferences.customInterests.splice(index,1);
+    userPreferences.preset=null;
     savePreferences();
     renderPreferences();
     if(activeData) render(activeData);
@@ -870,6 +919,23 @@ function setupOnboarding(){
   const selected=new Set();
   const custom=[];
   let selectedVolume='standard';
+  let selectedPreset=null;
+
+  function refreshOnboardingSelection(){
+    onboardingTopics?.querySelectorAll('.onboarding-topic').forEach(button=>{
+      button.classList.toggle('active',selected.has(button.textContent));
+    });
+    onboardingSave.disabled=selected.size<3;
+    onboardingStatus.textContent=selected.size<3
+      ? 'Wybierz jeszcze '+(3-selected.size)
+      : (selectedPreset?PRESETS[selectedPreset].name+' · '+selected.size+' tematów':'Wybrano '+selected.size+' tematów');
+    onboardingVolume?.querySelectorAll('[data-volume]').forEach(button=>{
+      button.classList.toggle('active',button.dataset.volume===selectedVolume);
+    });
+    onboardingPresets?.querySelectorAll('.preset-card').forEach(button=>{
+      button.classList.toggle('active',button.dataset.preset===selectedPreset);
+    });
+  }
 
   onboardingTopics.innerHTML='';
   CATEGORIES.forEach(category=>{
@@ -878,12 +944,22 @@ function setupOnboarding(){
     button.className='onboarding-topic';
     button.textContent=category;
     button.addEventListener('click',()=>{
-      if(selected.has(category)){ selected.delete(category); button.classList.remove('active'); }
-      else{ selected.add(category); button.classList.add('active'); }
-      onboardingSave.disabled=selected.size<3;
-      onboardingStatus.textContent=selected.size<3?'Wybierz jeszcze '+(3-selected.size):'Wybrano '+selected.size+' tematów';
+      selectedPreset=null;
+      if(selected.has(category)) selected.delete(category);
+      else selected.add(category);
+      refreshOnboardingSelection();
     });
     onboardingTopics.appendChild(button);
+  });
+
+  renderPresetCards(onboardingPresets,key=>{
+    const preset=PRESETS[key];
+    selectedPreset=key;
+    selected.clear();
+    preset.categories.forEach(category=>selected.add(category));
+    selectedVolume=preset.volume;
+    if(onboardingBubble) onboardingBubble.checked=preset.outsideBubble;
+    refreshOnboardingSelection();
   });
 
   const renderOnboardingCustom=()=>renderCustomInterestList(onboardingCustomList,custom,index=>{
@@ -899,22 +975,32 @@ function setupOnboarding(){
   onboardingVolume?.querySelectorAll('[data-volume]').forEach(button=>{
     button.addEventListener('click',()=>{
       selectedVolume=button.dataset.volume;
-      onboardingVolume.querySelectorAll('[data-volume]').forEach(x=>x.classList.toggle('active',x===button));
+      selectedPreset=null;
+      refreshOnboardingSelection();
     });
   });
 
   onboardingSave?.addEventListener('click',()=>{
     if(selected.size<3) return;
-    userPreferences={
-      ...defaultPreferences(),
-      onboarded:true,
-      categories:Object.fromEntries(CATEGORIES.map(category=>[category,selected.has(category)?8:0])),
-      enabledCategories:Object.fromEntries(CATEGORIES.map(category=>[category,selected.has(category)])),
-      topics:{},
-      customInterests:[...custom],
-      volume:selectedVolume,
-      outsideBubble:Boolean(onboardingBubble?.checked)
-    };
+    if(selectedPreset){
+      userPreferences={...defaultPreferences(),onboarded:true,customInterests:[...custom]};
+      applyPreset(selectedPreset);
+      userPreferences.onboarded=true;
+      userPreferences.customInterests=[...custom];
+    }else{
+      userPreferences={
+        ...defaultPreferences(),
+        onboarded:true,
+        categories:Object.fromEntries(CATEGORIES.map(category=>[category,selected.has(category)?8:0])),
+        enabledCategories:Object.fromEntries(CATEGORIES.map(category=>[category,selected.has(category)])),
+        topics:{},
+        customInterests:[...custom],
+        volume:selectedVolume,
+        outsideBubble:Boolean(onboardingBubble?.checked),
+        preset:null,
+        diversity:0.45
+      };
+    }
     savePreferences();
     onboardingPanel.hidden=true;
     document.body.classList.remove('onboarding-open');
@@ -1056,6 +1142,7 @@ preferencesPanel?.addEventListener('click',event=>{
 });
 preferencesBubble?.addEventListener('change',()=>{
   userPreferences.outsideBubble=preferencesBubble.checked;
+  userPreferences.preset=null;
   savePreferences();
   if(activeData) render(activeData);
 });
