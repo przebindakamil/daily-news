@@ -586,8 +586,8 @@ function renderSection(title,items,featured=false,className=''){
   return section;
 }
 
-function splitPersonalized(items){
-  const limit=Math.min(currentDailyLimit(),items.length);
+function splitPersonalized(items,requestedLimit=currentDailyLimit()){
+  const limit=Math.min(requestedLimit,items.length);
   const enabled=items
     .filter(item=>isCategoryEnabled(item.category))
     .sort((a,b)=>personalizedScore(b)-personalizedScore(a));
@@ -617,6 +617,68 @@ function splitPersonalized(items){
   }
 
   return {main,outsideBubble};
+}
+
+function fallbackTopOfDay(items){
+  const ranked=[...items].sort((a,b)=>editorialScore(b)-editorialScore(a));
+  const selected=[];
+  const categories=new Set();
+
+  for(const item of ranked){
+    if(categories.has(item.category)) continue;
+    selected.push(item);
+    if(item.category) categories.add(item.category);
+    if(selected.length===3) return selected;
+  }
+
+  for(const item of ranked){
+    if(selected.some(x=>itemId(x)===itemId(item))) continue;
+    selected.push(item);
+    if(selected.length===3) break;
+  }
+  return selected;
+}
+
+function topStoryCard(item,index){
+  const card=storyCard(item,false);
+  card.classList.add('top-day-card');
+  card.dataset.rank=String(index+1);
+
+  const rank=document.createElement('span');
+  rank.className='top-day-rank';
+  rank.textContent=String(index+1).padStart(2,'0');
+  card.prepend(rank);
+  return card;
+}
+
+function renderTopOfDay(items,isToday){
+  if(!items?.length) return null;
+
+  const section=document.createElement('section');
+  section.className='top-day-section';
+
+  const head=document.createElement('div');
+  head.className='top-day-head';
+
+  const titleWrap=document.createElement('div');
+  const eyebrow=document.createElement('span');
+  eyebrow.className='top-day-eyebrow';
+  eyebrow.textContent='Redakcyjny wybór';
+  const title=document.createElement('h2');
+  title.textContent=isToday?'TOP dnia':'TOP tego dnia';
+  titleWrap.append(eyebrow,title);
+
+  const note=document.createElement('p');
+  note.textContent='3 historie wybrane bez względu na Twoje zainteresowania.';
+
+  head.append(titleWrap,note);
+
+  const grid=document.createElement('div');
+  grid.className='top-day-grid';
+  items.slice(0,3).forEach((item,index)=>grid.appendChild(topStoryCard(item,index)));
+
+  section.append(head,grid);
+  return section;
 }
 
 function renderCategoryNav(all){
@@ -663,14 +725,23 @@ function render(data){
     return;
   }
 
+  const isToday=activeDate===archiveDates[0];
+  const topOfDay=(data.top_of_day?.length?data.top_of_day:fallbackTopOfDay(allRaw)).slice(0,3);
+
+  const topSection=renderTopOfDay(topOfDay,isToday);
+  if(topSection) root.appendChild(topSection);
+
   renderCategoryNav(allRaw);
 
-  const all=activeCategoryFilter
-    ? allRaw.filter(item=>item.category===activeCategoryFilter)
-    : allRaw;
+  const topIds=new Set(topOfDay.map(itemId));
+  const feedPool=allRaw.filter(item=>!topIds.has(itemId(item)));
 
-  const {main,outsideBubble}=splitPersonalized(all);
-  const isToday=activeDate===archiveDates[0];
+  const all=activeCategoryFilter
+    ? feedPool.filter(item=>item.category===activeCategoryFilter)
+    : feedPool;
+
+  const personalizedLimit=Math.max(1,currentDailyLimit()-topOfDay.length);
+  const {main,outsideBubble}=splitPersonalized(all,personalizedLimit);
   const isOmnibus=userPreferences.preset==='omnibus';
   const mainTitle=isToday
     ? (isOmnibus?'Dzisiaj warto wiedzieć':'Dla Ciebie')
