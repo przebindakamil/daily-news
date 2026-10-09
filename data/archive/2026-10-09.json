@@ -1,94 +1,541 @@
 {
-  "generated_at": "2026-10-09T09:33:13.926522+00:00",
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:49:35.480008+00:00",
   "top_stories": [
     {
-      "title": "Ogłoszono laureatkę Pokojowej Nagrody Nobla 2026",
-      "summary": "Poznaliśmy tegoroczną laureatkę Pokojowej Nagrody Nobla. To jedno z najważniejszych wyróżnień o charakterze międzynarodowym.",
-      "why_it_matters": "Warto wiedzieć, kto w tym roku otrzymał to prestiżowe wyróżnienie ze względu na jego globalne znaczenie.",
-      "category": "Wydarzenia w Polsce i na świecie",
-      "source": "TOK FM",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5majBaeURoMUNKX0VUYzNRN1VlZ2FJVTZrY0tES055TjFheHBfXzNnTlNGM3FKSWtPT0dsb1pTVnVHT2QwRFhkWHdpRkN1UXUzSjJmS1lqQm9PTXk5TVJvN1ppbHVCQ0lYT3VCaTRYZEFBenpTX1IzYTZCYkU?oc=5",
-      "published_at": "2026-10-09T09:04:59+00:00"
+      "title": "Koniec orzeczeń lekarskich. 18 października wchodzą nowe zasady",
+      "summary": "Już 18 października w życie wchodzą całkowicie nowe zasady dotyczące orzeczeń lekarskich. Zmiany te kończą dotychczasowy system wydawania dokumentów. Pacjenci i lekarze muszą przygotować się na nowe procedury.",
+      "why_it_matters": "To kluczowa zmiana prawna, która dotknie każdego, kto potrzebuje standardowych orzeczeń lekarskich.",
+      "category": "Zdrowie",
+      "topics": [
+        "orzeczenia lekarskie",
+        "prawo",
+        "zmiany w przepisach"
+      ],
+      "editorial_score": 8.25,
+      "digest": {
+        "what_happened": "Zapowiedziano wprowadzenie nowych zasad dotyczących orzeczeń lekarskich, które zaczną obowiązywać 18 października. Szczegóły reformy wpływają na dotychczasową praktykę medyczną. Zmiana ma na celu uporządkowanie procedur.",
+        "key_points": [
+          "Data wejścia w życie: 18 października",
+          "Koniec dotychczasowego systemu orzeczeń",
+          "Wprowadzenie nowych regulacji prawnych"
+        ],
+        "context": "Informacja wynika bezpośrednio z zapowiedzi zmian w przepisach medycznych.",
+        "what_next": "Warto śledzić komunikaty Ministerstwa Zdrowia dotyczące szczegółów nowych procedur."
+      },
+      "source": "Rynek Zdrowia",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSThJTzExdEVfc0NYWktldHJsSEgxNnRUaXc5WlMteFk0aC1FVG1NVFZKY1M1X0lHM3pIdFo5TVcwQmNZZC1sWGQxR3lpWHhXWUo4V3JKdGpKRjFRX0xXY1ZrVk1jWm4tM1pnLVFFNlI2M0JJWFU5UmlxWFp5c0xpb2x0QVNTajl2c01jX2tpVTV0RlkxeXlvVnE1Ql9lUTNYT0psUVN4UkRhbmEwaWRV?oc=5",
+      "published_at": "2026-10-08T17:54:00+00:00",
+      "full_text_used": false
     },
     {
-      "title": "OpenAI prognozuje skokowy wzrost przychodów",
-      "summary": "OpenAI spodziewa się gwałtownego wzrostu przychodów w ujęciu rocznym. Szacunki wskazują na przebicie poziomu 70 miliardów dolarów.",
-      "why_it_matters": "Pokazuje to ogromną skalę i dynamikę rozwoju rynku sztucznej inteligencji na świecie.",
-      "category": "Finanse i biznes",
-      "source": "XYZ",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMkJhUFFUWGFib08yeEZaT1paT0t4ckFtUEJlSDNFTHY2Yk5ySjdIZ05wVHJ6cVF1OXgzM0hWOUdKd1VHcU42dnppYVhXREh3Wi1FOWE2bnEzYW1TYU1FblRPSUhiaXB4dVNmV19RM0tZY1pIdmNtaFhDTjZFLWJQMGJoS0I2ZkdxUTh2eEplVllzMXF4d0dueDU4UjczTXBDSG1LdlR5Z3JZZw?oc=5",
-      "published_at": "2026-10-09T05:49:04+00:00"
+      "title": "Szczepienie przeciwko HPV przed ciążą zmniejsza ryzyko przedwczesnego porodu",
+      "summary": "Nowe doniesienia medyczne wskazują na wymierne korzyści ze szczepień przeciwko HPV przed zajściem w ciążę. Profilaktyka ta wiąże się z mniejszym ryzykiem przedwczesnego porodu oraz groźnych powikłań. To istotny argument przemawiający za poszerzeniem szczepień profilaktycznych.",
+      "why_it_matters": "Pokazuje to, że szczepienia przeciwko HPV niosą ze sobą dodatkowe korzyści zdrowotne dla przyszłych matki i dziecka.",
+      "category": "Zdrowie",
+      "topics": [
+        "HPV",
+        "szczepienia",
+        "ciąża",
+        "profilaktyka"
+      ],
+      "editorial_score": 8.05,
+      "digest": {
+        "what_happened": "Opublikowano dane na temat wpływu szczepień przeciwko HPV na przebieg ciąży. Wykazano, że przyjęcie szczepionki przed ciążą zmniejsza ryzyko przedwczesnego porodu i powikłań. Wyniki te podkreślają rolę profilaktyki zdrowotnej.",
+        "key_points": [
+          "Szczepienie przed ciążą chroni przed powikłaniami",
+          "Mniejsze ryzyko przedwczesnego porodu",
+          "Znaczenie profilaktyki HPV"
+        ],
+        "context": "Badania nad szczepionką HPV przynoszą kolejne pozytywne wnioski dla zdrowia publicznego.",
+        "what_next": "Można spodziewać się dalszych rekomendacji medycznych dotyczących szczepień kobiet planujących rodzinę."
+      },
+      "source": "Alert Medyczny",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNalVOcHREOXhlR2swYndvSXFtelZzejlSSW9sNm5DZUZaZDZvTG5UU3kyQzJMM1lTdnJaN215cFVTbnJyZXRRaUFaRVdpc2tYNU9JSzNFM3djNHdseG43eTJqNG1UVU5YeG9JcHZYMGJoY0x5YTVsWGdldUJLbGNpRF95aFhHQ0daeld3blprU1hDd1RxTS1FUlR2RVlqalVEUUtUWTdYeVlSTjhlOWVFdDJR?oc=5",
+      "published_at": "2026-10-08T22:52:50+00:00",
+      "full_text_used": false
     },
     {
-      "title": "Google ogłasza Gemini agent i nawiązuje współpracę z Anthropic",
-      "summary": "Google oficjalnie zaprezentowało narzędzie Gemini agent. Co istotne, otwiera je również na współpracę z modelem Claude od Anthropic.",
-      "why_it_matters": "Ta kooperacja może istotnie wpłynąć na układ sił na rynku technologii AI.",
+      "title": "Nawet 30 ośrodków kardiologicznych może wypaść z sieci szpitali",
+      "summary": "Ministerstwo Zdrowia zapowiedziało zmiany, w wyniku których aż do 30 ośrodków kardiologicznych w kraju może stracić miejsce w dotychczasowej sieci szpitali. Sytuacja ta budzi niepokój w środowisku medycznym. Oznacza to potencjalne utrudnienia w dostępie do specjalistycznego leczenia.",
+      "why_it_matters": "Zmiany w sieci szpitali bezpośrednio wpłyną na dostępność pacjentów do opieki kardiologicznej.",
+      "category": "Zdrowie",
+      "topics": [
+        "kardiologia",
+        "sieć szpitali",
+        "Ministerstwo Zdrowia"
+      ],
+      "editorial_score": 7.8,
+      "digest": {
+        "what_happened": "Ministerstwo Zdrowia zapowiedziało modyfikacje kryteriów, przez co około 30 ośrodków kardiologicznych może nie zmieścić się w nowej sieci szpitali. Placówki te mogą utracić finansowanie lub status. Kwestia ta jest obecnie przedmiotem dyskusji.",
+        "key_points": [
+          "Zagrożenie dla blisko 30 placówek",
+          "Zapowiedź zmian ze strony Ministerstwa Zdrowia",
+          "Potencjalny wpływ na dostępność leczenia"
+        ],
+        "context": "Resort zdrowia regularnie weryfikuje kryteria przynależności placówek do sieci szpitali.",
+        "what_next": "Kluczowe będą ostateczne decyzje ministerstwa oraz reakcje zagrożonych ośrodków."
+      },
+      "source": "Rynek Zdrowia",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQVjczUHkydmlnbEY4dnJ3RWdnV2tMejk3akpmNVpjUHA5UGI5NFZfaV92cVJyWUhQOTNmMTRvXzVvSFFIbnc1YWJMS2dBQUtrR3YzcmtPMmc2Rk9kbHVONXh0aHZwM3hTOV9wbmp2VVVOd2syT2txMFZCX1BIc0pSNF9TNnNZQ0lTUlBXTWgxWHE4Y1RjUUhkdkM4VDluM19FMlNoY1ZnQ3NoUHlveXAyZ0xQUXF0Ty1FTFNZRzBMUkt5M1BkNWxaM011S21sdnh5VWwxUXp5ZjlqVU1mQ0FvQXlVeUVQU0tTdGd3NA?oc=5",
+      "published_at": "2026-10-08T18:12:00+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Dyrektorka Narodowego Instytutu Kardiologii rezygnuje ze stanowiska",
+      "summary": "Szefowa Narodowego Instytutu Kardiologii zrezygnowała z pełnionej funkcji. Ministerstwo Zdrowia odniosło się do tej decyzji, przedstawiając oficjalne stanowisko. Zmiana na stanowisku kierowniczym następuje w ważnym dla placówki momencie.",
+      "why_it_matters": "To przetasowanie w kierownictwie jednej z najważniejszych placówek medycznych w Polsce.",
+      "category": "Zdrowie",
+      "topics": [
+        "Narodowy Instytut Kardiologii",
+        "ochrona zdrowia",
+        "rezygnacja"
+      ],
+      "editorial_score": 7.75,
+      "digest": {
+        "what_happened": "Dyrektorka Narodowego Instytutu Kardiologii złożyła rezygnację ze stanowiska. Ministerstwo Zdrowia skomentowało to zdarzenie w oficjalnym komunikacie. Trwają poszukiwania nowego zarządcy.",
+        "key_points": [
+          "Rezygnacja dyrektorki Instytutu",
+          "Komentarz Ministerstwa Zdrowia",
+          "Zmiany kadrowe w kluczowej placówce"
+        ],
+        "context": "Instytut odgrywa kluczową rolę w polskiej kardiologii.",
+        "what_next": "Należy oczekiwać ogłoszenia konkursu lub wyznaczenia osoby p.o. dyrektora."
+      },
+      "source": "Rynek Zdrowia",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQYWxNZE1NdDl3LTR1emRFSEgybHpOb1Z1TktZcUVvdGMyZGxRN25CUVZiSThNdnpSZTMxOU9ITV80YUt6NEpnYkZOVVByTVR6N1RZNkd5dTlFLVZtME1Zb24zX181ZFp4RFEzQTI2c1N6Rm9TVjFfaTFsQTRSbjRBSUZYZThiVS1DSExuc0lFYWZoTERValByR0hxUFZiOFI4NnZTczdDNi1FVzJqakptWGZDTG1WSEstSm9BOFM2dW9iYlZCNy1nMUhTMWJ2MFhveXZlUGNPa1RzdE1laFAwcGJmMU4zZVV4eXh4ak1zTkUzMkU?oc=5",
+      "published_at": "2026-10-09T05:54:00+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Zetkom etaty zabiera sztuczna inteligencja. I to jeszcze przed podpisaniem umowy",
+      "summary": "Sztuczna inteligencja coraz śmielej wkracza na rynek pracy, wypierając kandydatów z pokolenia Z jeszcze przed etapem zatrudnienia. Automatyzacja rekrutacji i procesów sprawia, że młodzi pracownicy tracą szanse na etaty. Zjawisko to zmienia dynamikę poszukiwania pierwszej pracy.",
+      "why_it_matters": "Wpływ AI na wczesne etapy rekrutacji stawia nowe bariery przed wchodzącymi na rynek pracownikami.",
       "category": "AI i technologia",
-      "source": "Pasquale Pillitteri",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUl9MYjI5RlhtV2U5NkM4OFdOS0haem5iWlRSVWlZVlR6VGRRSW9VSVpqeS03S0F1UzlVWmozQU5NY0NHYW9mdkNUbFpacW90YVJ2M2FWOVZIX0Z0SGtzeFgyMllYcUowSnBEaENlQUFPWkhpaVpkcWY0QTVseGlBZzJOdjk?oc=5",
-      "published_at": "2026-10-08T23:00:14+00:00"
+      "topics": [
+        "AI",
+        "rynek pracy",
+        "automatyzacja",
+        "rekrutacja"
+      ],
+      "editorial_score": 7.6,
+      "digest": {
+        "what_happened": "Algorytmy AI przechodzą procesy rekrutacyjne i eliminują kandydatów z pokolenia Z, zanim ci zdążą podpisać umowę o pracę. Firmy coraz chętniej powierzają wstępną selekcję i automatyzację technologii. Prowadzi to do kurczenia się tradycyjnych wakatów.",
+        "key_points": [
+          "Wpływ AI na rekrutację młodych",
+          "Zagrożenie dla tradycyjnych etatów",
+          "Zmiany w podejściu pracodawców do kandydatów"
+        ],
+        "context": "Technologia generatywna i automatyzacja drastycznie przekształcają działy HR.",
+        "what_next": "Warto obserwować, jak młodzi kandydaci i firmy dostosują się do zautomatyzowanych procesów rekrutacyjnych."
+      },
+      "source": "INFOR-kadry",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPLUg2UWV3T3lDbEM3RmQ5UU15aHQtUjItNFNFVGVaWFBRTTR0cFBta0FRNjk0T2JFM09wLWNMYy10SWZDblB4RDh5V0VoSFBUcS1SLUFIeGlxeklMU2tkOC1Xd0h5MW1OUTdYbXc3Ul9tUFkzVU9ESS1XelFJOFJ4Mm1Od25jdHpoVWhWa01MV21JUlA5YWpNdHpzWDZIc3gxNHZMQ1NXVQ?oc=5",
+      "published_at": "2026-10-09T09:33:59+00:00",
+      "full_text_used": false
     },
     {
-      "title": "Orlen rozpoczyna negocjacje z partnerami z Arabii Saudyjskiej",
-      "summary": "Przedstawiciele Orlenu udają się na rozmowy z Saudami. Spotkanie dotyczy bezpośrednio kwestii bezpieczeństwa paliwowego Polski.",
-      "why_it_matters": "Decyzje podjęte podczas tych negocjacji mogą wpłynąć na stabilność dostaw surowców do kraju.",
-      "category": "Finanse i biznes",
-      "source": "Interia Biznes",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdGNFMjlJWUJMNzdyRHBBSWtHMGl3djBlS182TE01aDJta25CTVR4Y0lSelpYRVRSbkxldVc4OHpyX3o1Y2FSVElpY0huWjl0c0lnSkRGMzR4S0tscnFFbDVEanZUS1Bld3J0SjcwbUVoVnRoSDVsYVlaYV9rUzJNSldGVzBoeUozREJhMHZMVWE2dUwyLW1LdFNjSVdzUzIxMGFiQ3ZER1ZETnFGR3ROWURWcWg?oc=5",
-      "published_at": "2026-10-09T05:09:24+00:00"
+      "title": "EBC podniósł stopy procentowe do 2,50%. Opublikowano zapis posiedzenia",
+      "summary": "Europejski Bank Centralny zdecydował o podniesieniu stóp procentowych do poziomu 2,50%. Opublikowany zapis z posiedzenia banku ukazuje kulisy tej decyzji oraz nastroje wśród decydentów. Krok ten wpisuje się w szerszą politykę radzenia sobie z wyzwaniami gospodarczymi.",
+      "why_it_matters": "Decyzje EBC mają bezpośredni wpływ na rynki finansowe i sytuację gospodarkę w strefie euro.",
+      "category": "Finanse i inwestowanie",
+      "topics": [
+        "EBC",
+        "stopy procentowe",
+        "banki centralne"
+      ],
+      "editorial_score": 7.55,
+      "digest": {
+        "what_happened": "EBC podniósł stopy do 2,50%, co zostało potwierdzone w opublikowanym protokole z posiedzenia. Dokument ujawnia argumentację stojącą za tą decyzją monetarną. Analitycy analizują dalsze perspektywy polityki stóp.",
+        "key_points": [
+          "Stopy procentowe EBC na poziomie 2,50%",
+          "Publikacja zapisu z posiedzenia",
+          "Reakcja rynków finansowych"
+        ],
+        "context": "Banki centralne uważnie monitorują wskaźniki makroekonomiczne.",
+        "what_next": "Kolejne posiedzenia EBC pokażą, czy cykl podwyżek zostanie utrzymany."
+      },
+      "source": "CEO Magazyn",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSWNVVkh2LUFpQjNlMWZrRFBlTWJEY0d3RFBTZFpMQ2NURFJCS0VlTUJOZ0RaRC1fVGV2V2VBdnVlTnVfdC1iOEhteDlYb29fekV2LXMtWlNsZ2xvQkx0Zkp5cGpiM3J4WGZHcm1PaHRSV1RXZmFEQjlHSWtQQ2JReEhyVQ?oc=5",
+      "published_at": "2026-10-08T16:27:39+00:00",
+      "full_text_used": false
     },
     {
-      "title": "Prezes NBP komentuje możliwość wzrostu stóp procentowych",
-      "summary": "Prezes NBP odniósł się do kwestii ewentualnych podwyżek stóp procentowych. Wypowiedź ta budzi duże zainteresowanie rynków i ekspertów w kontekście nadchodzących miesięcy.",
-      "why_it_matters": "Zmiany stóp procentowych bezpośrednio rzutują na wysokość rat kredytów i sytuację gospodarczą obywateli.",
-      "category": "Finanse i biznes",
-      "source": "Biznes Wprost",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOLWFCb0UzdUprRlRHUTlFVmt3OUh4by0wdGhZd0hzYWRwSHZkcVA1cG5kc1lXUHpfamZkZ0JXTkJCalUwZ1F0dUNIZ2p5SjRHWmFPY1hqRzNnbms4YlN2VUZyNnBBeU5uRzFXcE9LZlB3X0o1WW1Cb25DT3JvQmhpOHB0ejNxeE1VUEM3dzRfQkpMZFdFdzRfMjcycWlYYy1JblkxOXpEcXoyMDBGVl840gGjAUFVX3lxTE1Dc0Y3YVhMYUpEWEZMbkt3MkVDMm1fYU5iREJqMExFWjltb3c1eVJ2R25oT1oxMTZLTXF4MmMxcGJQLWlzUGd1ZkpBc0NyYjJJUnY1RmJYalkwMFBwUl9vY1ZGWlZGMXRpZDduSUQ1dy1MWTJpNXRUYmFZdGdDRzQ2ZTM1TDRLd3NjenBsRXcxVDU2MktlMWxtczNxMC1IX1huakk?oc=5",
-      "published_at": "2026-10-09T05:01:00+00:00"
+      "title": "IMF ostrzega przed sytuacją gospodarczą Węgier. Deficyt może sięgnąć 7,5% PKB",
+      "summary": "Międzynarodowy Fundusz Walutowy wydał ostrzeżenie dotyczące kondycji gospodarczej Węgier. Prognozy wskazują, że deficyt kraju może wzrosnąć aż do poziomu 7,5% PKB. Sytuacja ta wymaga podjęcia zdecydowanych działań stabilizacyjnych.",
+      "why_it_matters": "Wysoki deficyt w kraju regionu może wpłynąć na stabilność rynków finansowych Europy Środkowej.",
+      "category": "Finanse i inwestowanie",
+      "topics": [
+        "IMF",
+        "Węgry",
+        "gospodarka",
+        "deficyt"
+      ],
+      "editorial_score": 7.55,
+      "digest": {
+        "what_happened": "IMF opublikował negatywne prognozy dla gospodarki Węgier, szacując, że deficyt osiągnie 7,5% PKB. Fundusz wskazuje na konieczność korekty polityki fiskalnej. Ostrzeżenie to rzuca cień na perspektywy wzrostu gospodarczego kraju.",
+        "key_points": [
+          "Ostrzeżenie ze strony IMF",
+          "Szacowany deficyt na poziomie 7,5% PKB",
+          "Wyzwania fiskalne Węgier"
+        ],
+        "context": "Międzynarodowe instytucje regularnie oceniają plany budżetowe państw członkowskich.",
+        "what_next": "Warto śledzić reakcję rządu w Budapeszcie na rekomendacje IMF."
+      },
+      "source": "CEO Magazyn",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1PdVlBYlN6bElMNHAzeXM3b1NxVU90RHVZWTZDLTVRcDNRc0czdUJ1QkNmQkRaYUxLOEt4Q1FvVC1pZWlkY0RaallKVDF6QTdLdlUyZjNKWmJleGdadFBSZFBFTlI?oc=5",
+      "published_at": "2026-10-08T18:47:49+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Praca w zbrojeniówce: Kogo szukają firmy i jakie są zarobki?",
+      "summary": "Przemysł zbrojeniowy w Polsce i na świecie przeżywa boom, co przekłada się na dynamiczny wzrost rekrutacji. Firmy z tego sektora poszukują specjalistów z różnych dziedzin, oferując konkurencyjne warunki finansowe. Artykuł przybliża profile poszukiwanych pracowników oraz realia płacowe.",
+      "why_it_matters": "Sektor zbrojeniowy staje się jednym z najbardziej perspektywicznych pracodawców na rynku.",
+      "category": "Praca i kariera",
+      "topics": [
+        "przemysł zbrojeniowy",
+        "praca",
+        "zarobki",
+        "rekrutacja"
+      ],
+      "editorial_score": 7.45,
+      "digest": {
+        "what_happened": "Przeanalizowano rynek pracy w branży zbrojeniowej, wskazując na rosnące zapotrzebowanie na kadry. Pracodawcy oferują wysokie zarobki, by przyciągnąć inżynierów, technologów i specjalistów. Sektor notuje wzmożoną aktywność rekrutacyjną.",
+        "key_points": [
+          "Wzrost popytu na pracowników w zbrojeniówce",
+          "Atrakcyjne warunki finansowe",
+          "Poszukiwani specjaliści i inżynierowie"
+        ],
+        "context": "Zwiększone wydatki na obronność bezpośrednio stymulują rozwój tego rynku pracy.",
+        "what_next": "Można spodziewać się dalszego napływu ofert pracy w tej branży."
+      },
+      "source": "eGospodarka.pl",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOXVEMm54OEtldEpzLXpjM3BCaGxUclNKbUNpTkRhNkNidkRlejBGN3RBeWFRcHpGaTh1YjNsRGhTRXhaVXd0cENvYncxMzd4RTZSTjRvQmZKMjlIdTVscUxoVDBVczhpS20wanpGQk9RUW5Vb2NNTjlhQWw1b0xTOFNFSk8zRDQ0bENMazE0anNKZGlHVkhEWlRaQmZPU1hNWnI5eHNQeFg?oc=5",
+      "published_at": "2026-10-08T12:42:51+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Peryskop Radia Wnet: Ataki w szkołach, spór o budżet i przełom ws. Nord Stream",
+      "summary": "Podsumowanie dnia przynosi informacje o incydentach w szkołach, trwającym sporze wokół budżetu oraz domniemanym przełomie w sprawie gazociągu Nord Stream. Serwis omawia najważniejsze wydarzenia krajowe i międzynarodowe. To pigułka kluczowych tematów politycznych.",
+      "why_it_matters": "Zestawienie to dotyka najważniejszych bieżących sporów i wydarzeń kształtujących debatę publiczną w Polsce.",
+      "category": "Polska",
+      "topics": [
+        "Radio Wnet",
+        "Nord Stream",
+        "budżet",
+        "szkoły"
+      ],
+      "editorial_score": 7.35,
+      "digest": {
+        "what_happened": "W podsumowaniu dnia poruszono kwestie ataków w szkołach, napięć wokół budżetu państwa oraz nowych wieści dotyczących śledztwa w sprawie Nord Stream. Omówiono najważniejsze wątki polityczne i społeczne. Informacje te zdominowały krajowe media.",
+        "key_points": [
+          "Doniesienia o atakach w szkołach",
+          "Trwający spór o budżet państwa",
+          "Przełom w sprawie gazociągu Nord Stream"
+        ],
+        "context": "Wydarzenia te mają szeroki rezonans w mediach i opinii publicznej.",
+        "what_next": "Rozwój sytuacji w wymienionych sprawach będzie rzutował na polską scenę polityczną i śledztwa międzynarodowe."
+      },
+      "source": "Radio Wnet",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNVVdvZTZPMHNpeWUtZmxHMjY2Z1FHRlVXNmd5UFJSUG0zOWY0Zzdia0c4OXM5MFNjQm9pTVNNUndXR3AyUnpTeVBWZ253eDdLWTVuWnBvYkRSUm84NXM2OURkQnBHa0pKY3I4RUVJQ0d1TWoxeDJLb2gzZWVMSENET3o0VGJXS2xqS0h5cUxya1NyY0t6WnNLeUNRdFMzaTg2Rk1sZ3E5aV95Q2hXbUxiS0Y4SnJpNWtSeEdDTy1kY0s2bW9XLUFfd3laX0dBWjV0NzUzNV9MT0ZvX3FDSFI3Mg?oc=5",
+      "published_at": "2026-10-08T18:08:38+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Glapiński o stopach procentowych. Co zrobi RPP w listopadzie?",
+      "summary": "Prezes NBP Adam Glapiński wypowiedział się na temat perspektyw polityki monetarnej. Słowa szefa banku centralnego rozbudziły spekulacje odnośnie do decyzji Rady Polityki Pieniężnej w listopadzie. Obserwatorzy rynku próbują odczytać przyszłe ruchy stóp procentowych.",
+      "why_it_matters": "Deklaracje szefa NBP rzutują na oprocentowanie kredytów i decyzje oszczędzających w Polsce.",
+      "category": "Finanse i inwestowanie",
+      "topics": [
+        "RPP",
+        "stopy procentowe",
+        "Adam Glapiński"
+      ],
+      "editorial_score": 7.35,
+      "digest": {
+        "what_happened": "Prezes NBP odniósł się do kwestii poziomu stóp procentowych, dając sygnały co do dalszych działań RPP. Analitycy analizują jego wypowiedzi w kontekście nadchodzącego posiedzenia rady w listopadzie. Kwestia ta budzi duże zainteresowanie kredytobiorców.",
+        "key_points": [
+          "Wypowiedź prezesa NBP o stopach",
+          "Spekulacje przed listopadowym posiedzeniem RPP",
+          "Wpływ na rynek finansowy"
+        ],
+        "context": "Decyzje RPP zależą od bieżących odczytów inflacji i danych makroekonomicznych.",
+        "what_next": "Warto śledzić listopadowe posiedzenie Rady Polityki Pieniężnej."
+      },
+      "source": "CEO Magazyn",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1qX0d4Q1phMzNsWVU4MjU5YWNQenFHOWlsVmREZGZGUFBZVThFcFpKcS1LUUIzN2N1aTNCSWdlX2pIUE9sWlBMVWplMElhUkJuS3U2QjZoTkMtcXZ5aW5DaVRXdEhIM0M3Q1FKMGFvdHktV1ZoR2QyTFA5REM5MzQ?oc=5",
+      "published_at": "2026-10-08T16:28:00+00:00",
+      "full_text_used": false
     }
   ],
   "more_stories": [
     {
-      "title": "Powstaje funduszu Vinci Space Tech z budżetem 500 mln zł",
-      "summary": "Na rodzime technologie kosmiczne przeznaczono 500 milionów złotych w ramach nowo powołanego funduszu Vinci Space Tech. Inwestycja ma wspomóc rozwój tego sektora w Polsce.",
-      "why_it_matters": "To zastrzyk kapitałowy, który może przyspieszyć innowacje w niszowej, ale perspektywicznej branży kosmicznej.",
-      "category": "Finanse i biznes",
-      "source": "Magiczny Kraków",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRU4yQnk2YlB4V1dFalA2a3NSVU84MlRhNVRkSy1IRFRfVDVDLUprbVpZQ3V0SzUwaGJydHJkejAwdVU0NzA0OUVqVXZyT1d0TE56MDBsSHM5Q3ZNWEhEdmF4UDg2N3d1OWZzM1VtblI4ajNrX2V4ZUxPZ2czZzdDdlowbHVQMWkzS0tEellxUkw0WkFWbU9fT2d5ZVZDeTBrT1ZpS2N1amdPNW5WSVdsOTFUTG5uUjRMd3A4b0VUaWFqaWJCMTQ5cjRFUQ?oc=5",
-      "published_at": "2026-10-09T04:49:40+00:00"
+      "title": "Za 51 dni wchodzi EVP. Każde nowe auto musi je mieć",
+      "summary": "Zbliża się termin wprowadzenia nowego wymogu motoryzacyjnego znanego jako EVP. Za niespełna dwa miesiące każde nowo rejestrowane auto będzie musiało być w to wyposażone. Przepisy te wymuszą zmiany w ofercie producentów samochodów.",
+      "why_it_matters": "Nowe unijne lub krajowe regulacje techniczne dotkną każdego rynku motoryzacyjnego i przyszłych nabywców aut.",
+      "category": "Motoryzacja",
+      "topics": [
+        "EVP",
+        "przepisy motoryzacyjne",
+        "nowe auta"
+      ],
+      "editorial_score": 7.25,
+      "digest": {
+        "what_happened": "Do wejścia w życie przepisów wymagających systemów EVP w nowych autach zostało 51 dni. Producenci muszą dostosować swoje pojazdy do zbliżającego się obowiązku. Regulacje stanowią kolejny krok w zaostrzaniu norm technicznych.",
+        "key_points": [
+          "51 dni do wdrożenia przepisu EVP",
+          "Obowiązkowe wyposażenie nowych aut",
+          "Zmiany w ofercie producentów"
+        ],
+        "context": "Rynek motoryzacyjny regularnie adaptuje się do nowych standardów homologacyjnych.",
+        "what_next": "Warto sprawdzić, które modele samochodów spełniają wymóg EVP przed ostatecznym terminem."
+      },
+      "source": "Spider's Web",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE10dGNWZlpzTVZvOUZicTFQcWJfZmpLMWpOelJ2YUZyR1BpOVYzd25vaXpZbVpzX190Vl83ZUtKZXd0U093QnkwZmFkZ3lnQmxxZUJwRGlLQnprbTN5RHdOVDU3OFZaampNTnljSFVGZTRXNWxt?oc=5",
+      "published_at": "2026-10-09T05:45:00+00:00",
+      "full_text_used": false
     },
     {
-      "title": "InPost wprowadza sztuczną inteligencję do otwierania Paczkomatów",
-      "summary": "InPost wdraża rozwiązanie oparte na sztucznej inteligencji, które ma usprawnić proces odbierania przesyłek. Nowa technologia ma wdrożyć automatyzację w codziennej obsłudze skrytek.",
-      "why_it_matters": "To praktyczny przykład wykorzystania AI w usługach, z których korzystają miliony Polaków.",
+      "title": "Polscy nauczyciele nie są zadowoleni z pensji. Zaskakujący wynik na tle OECD",
+      "summary": "Najnowsze dane zestawione z raportami OECD pokazują specyficzną sytuację polskich nauczycieli. Choć relacje zarobków bywają zaskakujące w statystykach międzynarodowych, sami pedagogowie wykazują duże niezadowolenie z pensji. Kwestia ta od lat pozostaje palącym problemem oświaty.",
+      "why_it_matters": "Wyniki te pokazują rozbieżność między oficjalnymi statystykami a odczuciami pracowników oświaty.",
+      "category": "Praca i kariera",
+      "topics": [
+        "nauczyciele",
+        "zarobki",
+        "OECD",
+        "edukacja"
+      ],
+      "editorial_score": 7.2,
+      "digest": {
+        "what_happened": "Opublikowano analizę dotyczącą wynagrodzeń nauczycieli w Polsce na tle krajów OECD. Wyniki badań wywołały dyskusję ze względu na poziom satysfakcji finansowej kadr edukacyjnych. Nauczyciele wciąż wskazują na niezadowolenie z otrzymywanych pensji.",
+        "key_points": [
+          "Porównanie zarobków w raporcie OECD",
+          "Niski poziom satysfakcji finansowej nauczycieli",
+          "Dyskusja o finansowaniu edukacji"
+        ],
+        "context": "Status materialny nauczycieli to stały punkt debaty publicznej w Polsce.",
+        "what_next": "Można spodziewać się dalszych postulatów płacowych ze strony związków zawodowych."
+      },
+      "source": "Business Insider Polska",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPS3BYaTR5bmdTY21SR1hRbHR4NGU5M1ozLVppQkZUOXlwZDZZazY2VXl0X1d2QmhFUk1PNWE3Qmh2a1VmUWtOUlVObmVXbWpBV3AwWnZzUkZwNWZMUFVBNXRnRjdFaTZfMzN2U3B0bU5ZNy14YUJiZjd4MWhsOWU1eU5vc1FPbkg2WWJLU25uLW9Oc05pVHdpeGIwLXg3ak00czBtUXRDNUxkcmZFai0xdUZTQVRmUWFjUi1iS0NR?oc=5",
+      "published_at": "2026-10-08T12:54:06+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Oprocentowanie lokat ruszyło w górę. Gdzie szukać najlepszych ofert?",
+      "summary": "Na rynku bankowym widać ożywienie – oprocentowanie lokat zaczęło rosnąć. Instytucje finansowe rywalizują o kapitał klientów, proponując coraz lepsze warunki oszczędzania. Artykuł analizuje, które oferty zasługują na uwagę.",
+      "why_it_matters": "Osoby szukające bezpiecznych miejsc do ulokowania oszczędności mogą liczyć na lepsze zyski.",
+      "category": "Finanse i inwestowanie",
+      "topics": [
+        "lokaty bankowe",
+        "oprocentowanie",
+        "oszczędności"
+      ],
+      "editorial_score": 7.05,
+      "digest": {
+        "what_happened": "Banki podniosły oprocentowanie lokat oszczędnościowych w odpowiedzi na warunki rynkowe. Klienci mają do wyboru szerszą gamę zyskownych produktów depozytowych. Eksperci podpowiadają, jak wybrać najkorzystniejszą opcję.",
+        "key_points": [
+          "Wzrost oprocentowania lokat bankowych",
+          "Rywalizacja banków o kapitał",
+          "Przegląd aktualnych ofert oszczędnościowych"
+        ],
+        "context": "Polityka monetarna przekłada się na oferty commercial banków.",
+        "what_next": "Warto śledzić dalsze ruchy banków w poszukiwaniu najlepszych stóp zwrotu."
+      },
+      "source": "Subiektywnie o finansach",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUFpqOGN6ckJ3QWI2dm4xUXd3dnhqeHZIUktmeUNjWG1HYndYSmJ6SlA0Ym9WYk5JMlpTTlA3aXFpTmxjNl9zY25OZ0tzWDNPQ3JkTG9CNVZydDlFUWQwN2RTZWZsMHNGaDZLa2xJdnJ1YmlqWXl3bXJKVWx6OWZVdzBVa1d1M1NJZl93YUloMFUyUQ?oc=5",
+      "published_at": "2026-10-08T18:38:00+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Ofert dla młodych nie brakuje. Dlaczego pierwsza praca to wciąż wyzwanie?",
+      "summary": "Mimo że pracodawcy publikują liczne ogłoszenia skierowane do osób wchodzących na rynek, zdobycie pierwszej pracy bywa niezwykle trudne. Rozbieżność między oczekiwaniami a realiami rekrutacyjnymi stanowi barierę dla absolwentów. Sytuacja ta skłania do refleksji nad systemem edukacji i rekrutacji.",
+      "why_it_matters": "Zjawisko to pokazuje paradoks współczesnego rynku pracy dla młodego pokolenia.",
+      "category": "Praca i kariera",
+      "topics": [
+        "pierwsza praca",
+        "absolwenci",
+        "rynek pracy"
+      ],
+      "editorial_score": 7.05,
+      "digest": {
+        "what_happened": "Przeanalizowano sytuację absolwentów i młodych ludzi szukających zatrudnienia. Mimo dużej liczby ofert, proces zdobycia pierwszego etatu napotyka na liczne przeszkody. Pracodawcy często wymagają doświadczenia, którego młodzi jeszcze nie posiadają.",
+        "key_points": [
+          "Duża liczba ofert a trudności z zatrudnieniem",
+          "Wymóg doświadczenia od absolwentów",
+          "Wyzwania na początku kariery zawodowej"
+        ],
+        "context": "Rynek pracy dla osób bez stażu pracy od lat charakteryzuje się wysokimi wymaganiami.",
+        "what_next": "Warto obserwować inicjatywy wspierające staże i programy aktywizacji zawodowej."
+      },
+      "source": "PulsHR",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNaTFDQ05NQ3F0ZmMtT1FlYnM4VXJEbnhORkxIamRuVGRfZF8zU0VNcFdxTzkwel9SUVBVSDJrSmowRmtJQVRESm9OM01Ndzg1aHpWclN2SkFzRHIwQnRKUmFySW1KUDRCcFI2WUhQMklITVJSbkpGWXNTSnpHTzJORmwybVdwVFlhQmZ3OUlZT3JfUjhHRVZhX3M2alp2T2s0UVR3VkZvTHk3UWNiRmEwR0RoMEFoWXpGNTk5dk53?oc=5",
+      "published_at": "2026-10-08T18:04:00+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Warsaw Tech Week 2026 za nami. Ponad 10,5 tysiąca odwiedzających",
+      "summary": "Zakończyła się pierwsza edycja wydarzenia Warsaw Tech Week 2026, która przyciągnęła tłumy entuzjastów nowych technologii. Impreza zgromadziła ponad 10,5 tysiąca uczestników. Sukces frekwencyjny świadczy o rosnącym znaczeniu Warszawy na technologicznej mapie Europy.",
+      "why_it_matters": "To dowód na dynamiczny rozwój polskiej sceny technologicznej i startupowej.",
       "category": "AI i technologia",
-      "source": "Super Biznes",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQLVVRVi1Fbm5DSDFLVDl4ZEMwR1ZDQmRjNEM5OVkyNHo3SkZFbTVtdWlMLUVSWTRPOHlYMmNJWkd0S2lYZnZhanBmMXFibUlWdzhDWU1Jb3ZWS2VzZTJLZFJnNXBMUHo0ZWlPRm5rUHRxREhLUVRfZG9JY2o1OWxjc25TTHFzX1VDdFYxTkVqbTV5VXBfTm8yZzdnV0NsaUtydEl2azktM2QtZWhZM3R1MFFhNllBM2dHR1prYjNURmJJZGE1cmF1TDVtcEhtTlNEbnc?oc=5",
-      "published_at": "2026-10-09T05:00:00+00:00"
+      "topics": [
+        "Warsaw Tech Week",
+        "technologia",
+        "konferencja"
+      ],
+      "editorial_score": 7.0,
+      "digest": {
+        "what_happened": "Podsumowano pierwszą edycję Warsaw Tech Week 2026, w której wzięło udział ponad 10,5 tysiąca osób. Konferencja stała się miejscem wymiany wiedzy i prezentacji innowacji. Wydarzenie spotkało się z dużym odzewem branży.",
+        "key_points": [
+          "Ponad 10 500 odwiedzających na debiucie",
+          "Sukces organizacyjny Warsaw Tech Week",
+          "Prezentacja nowinek technologicznych"
+        ],
+        "context": "Warszawa przyciąga coraz więcej międzynarodowych wydarzeń technologicznych.",
+        "what_next": "Organizatorzy zapowiadają kontynuację projektu w kolejnych latach."
+      },
+      "source": "Chip.pl",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNR21SZ05jTmdBaTRrZHl4UGFyc0gzX3M3MVVVRTFnc0FfY3pOLWdNclNRX3V3YlBXc0tBQ0pQbUcwR1lEclFTWVhRNGxqdnNlbU16WHhaRXlyUkxPdVN1SExjYmNBMmxQV2p5UnZyT1NMMDdXUFpoVHRSSUxwRTE4N3c1UEZlZw?oc=5",
+      "published_at": "2026-10-08T13:30:00+00:00",
+      "full_text_used": false
     },
     {
-      "title": "Powstanie aktorski film Cyberpunk 2077",
-      "summary": "Zapowiedziano pełnometrażowy, aktorski film na podstawie gry Cyberpunk 2077 stworzonej przez CD Projekt RED. Wybrano już nawet producenta widowiska.",
-      "why_it_matters": "To ważna wiadomość dla fanów popkultury i polskiego rynku gier, przenosząca znane IP na duży ekran.",
-      "category": "Kultura",
-      "source": "PurePC",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSEtHMG94Z01uRVN1M0VycWt1bXF0N0JMZXp4eElLaWhlcWVrQUx4Qm5uZVRqQlA2WkViR0p2OWZtdFJJLXNiQWJsZG1iWHc5c0VLU3FWVjYtV3VaVl9zNEtJUFo2VVQ3Sl9lYzhzRERBNTFPR1dLMW9qTEFsYUVCZjE2a3BzcE9fdkJ6OXNB?oc=5",
-      "published_at": "2026-10-09T09:30:00+00:00"
+      "title": "AI załatwia podwyżki pensji. Polscy pracownicy już to zauważyli",
+      "summary": "Sztuczna inteligencja zaczyna realnie wpływać na portfele Polaków, pomagając w wywalczeniu wyższych pensji. Osoby potrafiące korzystać z narzędzi AI stają się cenniejszymi pracownikami. Automatyzacja i wzrost efektywności przekładają się na korzyści finansowe.",
+      "why_it_matters": "Kompetencje z zakresu AI stają się bezpośrednią przepustką do wyższych zarobków.",
+      "category": "Praca i kariera",
+      "topics": [
+        "AI",
+        "podwyżki",
+        "wynagrodzenia",
+        "automatyzacja"
+      ],
+      "editorial_score": 7.0,
+      "digest": {
+        "what_happened": "Zauważono trend, w którym wdrożenie narzędzi AI do codziennej pracy przekłada się na podwyżki dla pracowników. Zastosowanie technologii podnosi wydajność, co pracodawcy nagradzają finansowo. Zjawisko to zyskuje na popularności w polskich firmach.",
+        "key_points": [
+          "Wpływ AI na wzrost wynagrodzeń",
+          "Zwiększona efektywność dzięki technologii",
+          "Nowe trendy płacowe na rynku"
+        ],
+        "context": "Rynek nagradza osoby szybko adoptujące nowoczesne rozwiązania technologiczne.",
+        "what_next": "Można oczekiwać rosnącego nacisku na szkolenia z zakresu sztucznej inteligencji w firmach."
+      },
+      "source": "Bizblog.pl",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMFY4N0xpSXo1eEg2clEwTm1CZzRkUGgxOGU0SEE2aXZZallMVDFQdy1PTFpFTmZLUHpvaG5PeEo2VXBJbXpuX3BDbHdVZEtyYUozYjFqVEhlcVF6V3YySlJjdW5qczhXa0lNWmNvOVNMZW95WXNfemstZjRBaldKSzlGVHluOHlrNWRrdC1R?oc=5",
+      "published_at": "2026-10-08T14:51:00+00:00",
+      "full_text_used": false
     },
     {
-      "title": "Bezpieczny powrót załogi misji Crew-12 na Ziemię",
-      "summary": "Członkowie misji kosmicznej Crew-12 zakończyli swój pobyt w przestrzeni kosmicznej i pomyślnie powrócili na Ziemię.",
-      "why_it_matters": "To kluczowy moment dla bieżących operacji załogowych i bezpieczeństwa lotów kosmicznych.",
-      "category": "Nauka i kosmos",
-      "source": "Space24.pl",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaXV4WTQtSkRZUExCemF1cmhzdWotSnlidUlYb09qdEswSWFVaVhETmlIS0JaQ2dVSzBublZzNVFaU3pPRFpPaEhaRDhJNjlmc19xeVp2RjBiWTdQOXVYdHFFY3FJa1FmWVZQeEY1dFltLVJaMDVtcWJza0owa3NvX3h2TVk5ZlJxN0JQX3h1UHJsTXhtbjRHYnhYYXVJTWx3YmRUTlh3QQ?oc=5",
-      "published_at": "2026-10-09T07:46:55+00:00"
+      "title": "Netflix zaprezentuje 27-minutowy pokaz rozgrywki z GTA 6 na PS5",
+      "summary": "Fani wyczekiwani hitu Rockstar Games mogą liczyć na sporą dawkę materiałów wideo. Netflix zapowiedział specjalny, 27-minutowy pokaz rozgrywki z gry GTA 6 uruchomionej bezpośrednio na konsoli PS5. To jedno z najbardziej wyczekiwanych wydarzeń w branży gamingowej.",
+      "why_it_matters": "Prezentacja tak obszernego materiału z rozgrywki da graczom przedsmak tego, jak tytuł będzie działał na konsoli.",
+      "category": "Gaming",
+      "topics": [
+        "GTA 6",
+        "PS5",
+        "Netflix",
+        "rozgrywka"
+      ],
+      "editorial_score": 6.95,
+      "digest": {
+        "what_happened": "Zapowiedziono 27-minutową prezentację rozgrywki GTA 6 na PS5, która zostanie pokazana za pośrednictwem serwisu Netflix. Materiał ma pochodzić bezpośrednio z konsoli. Fani spekulują na temat jakości grafiki i płynności gry.",
+        "key_points": [
+          "27-minutowy pokaz rozgrywki",
+          "Prezentacja z konsoli PS5",
+          "Udział platformy Netflix w promocji"
+        ],
+        "context": "Wokół premiery GTA 6 narosło ogromne oczekiwanie społeczności graczy.",
+        "what_next": "Warto śledzić oficjalną transmisję i reakcje graczy po emisji materiału."
+      },
+      "source": "PPE",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNS3p3RDFUZjB5eGE4U0JHSUhjcVIwRGhkcGlyZlNjZF93cnJDUVJsaElhcExlVFhYZDRyaTIxeGtta0V1SUxHRk1BTFR2REpHc1pLY01FUm5TcFg4aW91a3lnRDNlM3o0YjlYcGtweFlMNi1WYTFhR3VIZk0yTUc5WUpCZElQV3gtYmIwbFhwbm1mdGJKcllvbk5GcTZQV2hLWWhZZVlfOTcyVG94T0NRQzhpSHdaTzBJMXJEZlAxM1Yxalp2UUtFdGxKOXBic3M?oc=5",
+      "published_at": "2026-10-09T08:29:53+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "AI napędza giełdową hossę mimo wysokich stóp. Wraca porównanie do bańki internetowej",
+      "summary": "Sektor sztucznej inteligencji napędza wzrosty na giełdach, ignorując wysokie stopy procentowe. Analitycy coraz częściej dostrzegają analogie do legendarnej bańki internetowej z przełomu wieków. Sytuacja ta budzi zarówno entuzjazm inwestorów, jak i obawy o stabilność rynku.",
+      "why_it_matters": "To kluczowe zjawisko dla globalnych rynków finansowych i inwestorów giełdowych.",
+      "category": "Finanse i inwestowanie",
+      "topics": [
+        "AI",
+        "główna hossa",
+        "rynki finansowe"
+      ],
+      "editorial_score": 6.8,
+      "digest": {
+        "what_happened": "Hossa na giełdach napędzana jest przez boom technologiczny wokół sztucznej inteligencji, pomimo niesprzyjających stóp procentowych. Eksperci zaczynają przypominać realia bańki dot-com. Inwestorzy dzielą się na zwolenników dalszych wzrostów i ostrożnych krytyków.",
+        "key_points": [
+          "Wzrosty na giełdach dzięki spółkom AI",
+          "Porównania do bańki internetowej",
+          "Wpływ wysokich stóp na rynki"
+        ],
+        "context": "Rynek technologiczny notuje rekordowe wyceny od dłuższego czasu.",
+        "what_next": "Warto monitorować wskaźniki wycen spółek technologicznych pod kątem ryzyka korekty."
+      },
+      "source": "CEO Magazyn",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRTBwTjJ0ZU9oenBqYURQXzVJVlN4QVRqalB4ZFo5Y2RFOXhMMUc0cEdtb24xdDVSUThwbE1RREZQcDVSVlE0dHBJc3BMUVMxdGI1ckx0Ti1ZMnY4SHlralBXLUlEU0dzREIwQnRubGczdjg0LUVXb2YtMVBYMldXRkJ1WFdfZmlGRDdfMV9Sc0E4cXJMY1hRNmhib3pLcEtfY2x0YnkyM0FpX1VrWWJxdUh6VQ?oc=5",
+      "published_at": "2026-10-08T12:31:38+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Nowe auto z Japonii za 53 000 zł: oszczędne i wygodne",
+      "summary": "Na rynku motoryzacyjnym pojawiła się propozycja nowego samochodu z Japonii w cenie zaledwie 53 000 zł. Model ten wyróżnia się oszczędnością oraz komfortem użytkowania w tej klasie cenowej. Może stać się hitem wśród kierowców szukających budżetowych rozwiązań.",
+      "why_it_matters": "Dostępność tanich, nowych samochodów jest obecnie rzadkością na rynku motoryzacyjnym.",
+      "category": "Motoryzacja",
+      "topics": [
+        "tanie auto",
+        "rynek motoryzacyjny",
+        "Japonia"
+      ],
+      "editorial_score": 6.65,
+      "digest": {
+        "what_happened": "Zaprezentowano nowy model samochodu z Japonii wyceniony na 53 000 zł. Pojazd łączy cechy ekonomicznej jazdy oraz wygody. Oferta skierowana jest do osób poszukujących nowego auta w przystępnej cenie.",
+        "key_points": [
+          "Cena auta na poziomie 53 000 zł",
+          "Pochodzenie: Japonia",
+          "Obietnica oszczędności i wygody"
+        ],
+        "context": "Większość nowych aut na rynku drastycznie drożeje, co czyni tę ofertę wyjątkową.",
+        "what_next": "Warto sprawdzić dostępność modelu w polskich salonach."
+      },
+      "source": "Dziennik.pl",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPc1IzRU9sOUt3TXBkV2xGdFByenBDNHBMUk5fb05mUEkwVWItWlBqREJVblQwUU1fY1Y4NVdNM0dMNzQ3QVBLZXZfc0RMaWhxclktVzRKcHZWdkhkTXlMdnJ4Wk5hZFcwQWRLTi1UaXBNZ2FEYUxqbEVZcVVmdjhoRDl6Ml9FV2dLYW1rQ2MxSGpYeHUwN2NUQm5ZLWJmQ0VEZnVjaVJ5SWZMVVVVY0prWEFxRG9TR1RmXzJ0RWxsemg?oc=5",
+      "published_at": "2026-10-08T03:50:52+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Xbox Game Pass na 8 października: aż 3 premierowe gry",
+      "summary": "Microsoft zaktualizował ofertę usługi Xbox Game Pass, dodając do niej trzy zupełnie nowe gry w dniu ich premiery. Abonenci mogą od razu pobierać i testować nowe tytuły bez dodatkowych opłat. To kolejna mocna aktualizacja biblioteki dla graczy.",
+      "why_it_matters": "Usługa Game Pass stale wzbogaca swoją ofertę, przyciągając nowych subskrybentów.",
+      "category": "Gaming",
+      "topics": [
+        "Xbox Game Pass",
+        "premiery gier",
+        "Microsoft"
+      ],
+      "editorial_score": 6.45,
+      "digest": {
+        "what_happened": "Microsoft udostępnił w ramach Xbox Game Pass trzy premierowe produkcje. Subskrybenci zyskali natychmiastowy dostęp do nowych gier w dniu ich debiutu na rynku. Posunięcie to wzmacnia pozycję abonamentu.",
+        "key_points": [
+          "Trzy gry w ofercie Day One",
+          "Aktualizacja katalogu Xbox Game Pass",
+          "Dostępność dla abonentów Microsoftu"
+        ],
+        "context": "Model abonamentowy stał się fundamentem strategii wydawniczej Microsoftu.",
+        "what_next": "Warto sprawdzać kolejne zapowiedzi Microsoftu dotyczące przyszłych dodawanych gier."
+      },
+      "source": "GRYOnline.pl",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQVkzX20yeF9TZmZrdGs1SVozbFQzMXpXX2R0VDktQjhDbGJfc1pGZlA4TWFCTXNpOU9vbzA5SExDekFwR19ZSWhocTM1V1VBMTZpN254ZlpZMUFjTnE5cXFNR0FiZ2FfQ3ltNHhuMjhYOVhUU2tNLWtNVUhFUHQ3M3daY0JFeVRqZFBrSmJzQlNUQXBmNlFGZmtzeEwtejg?oc=5",
+      "published_at": "2026-10-08T08:19:31+00:00",
+      "full_text_used": false
     }
   ],
   "stats": {
-    "candidates": 171,
-    "ranked": 24,
-    "published": 9
-  },
-  "date": "2026-10-09"
+    "candidates": 46,
+    "ranked": 22,
+    "published": 20
+  }
 }
