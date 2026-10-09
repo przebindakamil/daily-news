@@ -409,7 +409,6 @@ function recordSourceClick(item){
 }
 
 function createDigest(item){
-  const digest=item.digest||{};
   const panel=document.createElement('div');
   panel.className='news-digest';
   panel.hidden=true;
@@ -419,61 +418,40 @@ function createDigest(item){
   label.textContent='Wiedza w pigułce';
   panel.appendChild(label);
 
-  if(digest.what_happened){
-    const h=document.createElement('h4');
-    h.textContent='Co się wydarzyło?';
-    const p=document.createElement('p');
-    p.textContent=digest.what_happened;
-    panel.append(h,p);
+  const text=(item.digest_text||'').trim();
+
+  if(text){
+    const body=document.createElement('div');
+    body.className='digest-prose';
+
+    const paragraphs=text
+      .split(/\n\s*\n/)
+      .map(part=>part.trim())
+      .filter(Boolean);
+
+    (paragraphs.length?paragraphs:[text]).forEach(part=>{
+      const p=document.createElement('p');
+      p.textContent=part;
+      body.appendChild(p);
+    });
+
+    panel.appendChild(body);
   }else if(item.summary){
-    const h=document.createElement('h4');
-    h.textContent='W skrócie';
+    const body=document.createElement('div');
+    body.className='digest-prose';
     const p=document.createElement('p');
     p.textContent=item.summary;
-    panel.append(h,p);
-  }
-
-  if(Array.isArray(digest.key_points)&&digest.key_points.length){
-    const h=document.createElement('h4');
-    h.textContent='Najważniejsze';
-    const ul=document.createElement('ul');
-    digest.key_points.forEach(point=>{
-      const li=document.createElement('li');
-      li.textContent=point;
-      ul.appendChild(li);
-    });
-    panel.append(h,ul);
-  }
-
-  if(digest.context){
-    const h=document.createElement('h4');
-    h.textContent='Kontekst';
-    const p=document.createElement('p');
-    p.textContent=digest.context;
-    panel.append(h,p);
-  }
-
-  if(digest.what_next){
-    const h=document.createElement('h4');
-    h.textContent='Co dalej?';
-    const p=document.createElement('p');
-    p.textContent=digest.what_next;
-    panel.append(h,p);
-  }
-
-  if(item.why_it_matters){
-    const h=document.createElement('h4');
-    h.textContent='Dlaczego warto wiedzieć?';
-    const p=document.createElement('p');
-    p.textContent=item.why_it_matters;
-    panel.append(h,p);
+    body.appendChild(p);
+    panel.appendChild(body);
   }
 
   const sourceRow=document.createElement('div');
   sourceRow.className='digest-source-row';
 
   const note=document.createElement('span');
-  note.textContent=item.full_text_used?'Skrót przygotowany także z treści artykułu':'Skrót na podstawie dostępnych danych';
+  note.textContent=item.full_text_used
+    ? 'Skrót przygotowany na podstawie treści artykułu'
+    : 'Skrót na podstawie dostępnych danych';
 
   const link=document.createElement('a');
   link.className='news-link';
