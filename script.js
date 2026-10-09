@@ -23,6 +23,7 @@ const preferencesBubble = document.querySelector('#preferences-bubble');
 const preferencesCustomInput = document.querySelector('#preferences-custom-input');
 const preferencesCustomAdd = document.querySelector('#preferences-custom-add');
 const preferencesCustomList = document.querySelector('#preferences-custom-list');
+const preferencesPresets = document.querySelector('#preferences-presets');
 
 const onboardingPanel = document.querySelector('#onboarding-panel');
 const onboardingTopics = document.querySelector('#onboarding-topics');
@@ -33,6 +34,7 @@ const onboardingStatus = document.querySelector('#onboarding-status');
 const onboardingCustomInput = document.querySelector('#onboarding-custom-input');
 const onboardingCustomAdd = document.querySelector('#onboarding-custom-add');
 const onboardingCustomList = document.querySelector('#onboarding-custom-list');
+const onboardingPresets = document.querySelector('#onboarding-presets');
 
 const PREFS_KEY = 'daily-news-user-preferences-v2';
 const FEEDBACK_KEY = 'daily-news-feedback-v1';
@@ -60,6 +62,63 @@ const CATEGORIES = [
 
 const VOLUME_LIMITS = { short: 5, standard: 9, more: 15 };
 
+const PRESETS = {
+  omnibus: {
+    name: 'Omnibus',
+    description: 'Najciekawsze i najważniejsze rzeczy z wielu dziedzin. Duża różnorodność, mało powtórek.',
+    categories: CATEGORIES,
+    weights: Object.fromEntries(CATEGORIES.map(category => [category, 7])),
+    volume: 'standard',
+    outsideBubble: true,
+    diversity: 0.95
+  },
+  tech: {
+    name: 'Tech & Future',
+    description: 'AI, technologia, nauka, kosmos, startupy i cyfrowa przyszłość.',
+    categories: ['AI i technologia','Biznes i startupy','Nauka','Kosmos','Praca i kariera'],
+    weights: {'AI i technologia':10,'Biznes i startupy':8,'Nauka':8,'Kosmos':7,'Praca i kariera':6},
+    volume: 'standard',
+    outsideBubble: true,
+    diversity: 0.55
+  },
+  money: {
+    name: 'Biznes & Pieniądze',
+    description: 'Finanse, inwestowanie, gospodarka, biznes, nieruchomości i rynek pracy.',
+    categories: ['Finanse i inwestowanie','Biznes i startupy','Praca i kariera','Nieruchomości i dom','Polska','Świat i geopolityka'],
+    weights: {'Finanse i inwestowanie':10,'Biznes i startupy':9,'Praca i kariera':7,'Nieruchomości i dom':7,'Polska':6,'Świat i geopolityka':6},
+    volume: 'standard',
+    outsideBubble: true,
+    diversity: 0.55
+  },
+  sport: {
+    name: 'Sport',
+    description: 'Piłka, sport, trening, zdrowie i rzeczy, które pomagają lepiej rozumieć ciało.',
+    categories: ['Piłka nożna','Sport i trening','Zdrowie'],
+    weights: {'Piłka nożna':10,'Sport i trening':9,'Zdrowie':7},
+    volume: 'standard',
+    outsideBubble: true,
+    diversity: 0.35
+  },
+  world: {
+    name: 'Świat',
+    description: 'Polska, geopolityka, gospodarka, klimat i nauka — żeby być dobrze zorientowanym.',
+    categories: ['Polska','Świat i geopolityka','Finanse i inwestowanie','Środowisko i klimat','Nauka','Zdrowie'],
+    weights: {'Polska':9,'Świat i geopolityka':10,'Finanse i inwestowanie':7,'Środowisko i klimat':7,'Nauka':7,'Zdrowie':6},
+    volume: 'standard',
+    outsideBubble: true,
+    diversity: 0.7
+  },
+  lifestyle: {
+    name: 'Lifestyle & Culture',
+    description: 'Podróże, kultura, motoryzacja, gaming, zdrowie i codzienny styl życia.',
+    categories: ['Podróże','Kultura','Motoryzacja','Gaming','Zdrowie','Nieruchomości i dom'],
+    weights: {'Podróże':9,'Kultura':9,'Motoryzacja':8,'Gaming':7,'Zdrowie':7,'Nieruchomości i dom':6},
+    volume: 'standard',
+    outsideBubble: true,
+    diversity: 0.6
+  }
+};
+
 function defaultPreferences(){
   return {
     onboarded: false,
@@ -68,7 +127,9 @@ function defaultPreferences(){
     topics: {},
     customInterests: [],
     volume: 'standard',
-    outsideBubble: true
+    outsideBubble: true,
+    preset: null,
+    diversity: 0.45
   };
 }
 
@@ -176,11 +237,70 @@ function explicitFeedback(item){
 }
 
 function personalizedScore(item){
+  const omnibus = userPreferences.preset === 'omnibus';
+  if(omnibus){
+    return editorialScore(item)*.67
+      + categoryWeight(item)*.08
+      + topicAffinity(item)*.06
+      + customInterestScore(item)*.12
+      + explicitFeedback(item)*.07;
+  }
+
   return editorialScore(item)*.45
     + categoryWeight(item)*.18
     + topicAffinity(item)*.10
     + customInterestScore(item)*.20
     + explicitFeedback(item)*.07;
+}
+
+function applyPreset(key){
+  const preset=PRESETS[key];
+  if(!preset) return;
+
+  userPreferences.enabledCategories=Object.fromEntries(
+    CATEGORIES.map(category=>[category,preset.categories.includes(category)])
+  );
+  userPreferences.categories=Object.fromEntries(
+    CATEGORIES.map(category=>[category,Number(preset.weights[category]??(preset.categories.includes(category)?7:0))])
+  );
+  userPreferences.volume=preset.volume;
+  userPreferences.outsideBubble=preset.outsideBubble;
+  userPreferences.preset=key;
+  userPreferences.diversity=preset.diversity;
+}
+
+function diversifyItems(items,limit){
+  if(!items.length||limit<=0) return [];
+  const diversity=Number(userPreferences.diversity??0.45);
+  if(diversity<0.65) return items.slice(0,limit);
+
+  const result=[];
+  const used=new Set();
+  const counts={};
+
+  // First pass: broad coverage — one item per category.
+  for(const item of items){
+    if(result.length>=limit) break;
+    const category=item.category||'Inne';
+    if(counts[category]) continue;
+    result.push(item);
+    used.add(itemId(item));
+    counts[category]=1;
+  }
+
+  // Second pass: strongest remaining stories, but cap category repetition.
+  const maxPerCategory=diversity>=0.9?2:3;
+  for(const item of items){
+    if(result.length>=limit) break;
+    if(used.has(itemId(item))) continue;
+    const category=item.category||'Inne';
+    if((counts[category]||0)>=maxPerCategory) continue;
+    result.push(item);
+    used.add(itemId(item));
+    counts[category]=(counts[category]||0)+1;
+  }
+
+  return result;
 }
 
 function currentDailyLimit(){ return VOLUME_LIMITS[userPreferences.volume]||VOLUME_LIMITS.standard; }
@@ -492,7 +612,7 @@ function splitPersonalized(items){
 
   const reserveBubble=userPreferences.outsideBubble&&limit>2?1:0;
   const personalLimit=Math.max(1,limit-reserveBubble);
-  const selected=enabled.slice(0,personalLimit);
+  const selected=diversifyItems(enabled,personalLimit);
   const used=new Set(selected.map(itemId));
 
   let outsideBubble=null;
