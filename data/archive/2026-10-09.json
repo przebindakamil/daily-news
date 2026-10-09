@@ -1,27 +1,381 @@
 {
   "date": "2026-10-09",
-  "generated_at": "2026-10-09T10:49:35.480008+00:00",
+  "generated_at": "2026-10-09T11:40:45.898625+00:00",
   "top_stories": [
     {
-      "title": "Koniec orzeczeń lekarskich. 18 października wchodzą nowe zasady",
-      "summary": "Już 18 października w życie wchodzą całkowicie nowe zasady dotyczące orzeczeń lekarskich. Zmiany te kończą dotychczasowy system wydawania dokumentów. Pacjenci i lekarze muszą przygotować się na nowe procedury.",
-      "why_it_matters": "To kluczowa zmiana prawna, która dotknie każdego, kto potrzebuje standardowych orzeczeń lekarskich.",
+      "title": "Teleskop Webba bada odległe szybkie rozbłyski radiowe",
+      "summary": "Astronomowie użyli Kosmicznego Teleskopu Jamesa Webba do zlokalizowania galaktyki macierzystej najodleglejszego znanego szybkiego rozbłysku radiowego (FRB). Odkrycie to rzuca nowe światło na pochodzenie tych tajemniczych zjawisk astrofizycznych.",
+      "why_it_matters": "Pozwala zweryfikować teorie na temat źródeł energetycznych rozbłysków radiowych we wczesnym wszechświecie.",
+      "category": "Kosmos",
+      "topics": [
+        "Kosmos",
+        "Astronomia",
+        "Teleskop Jamesa Webba",
+        "Szybkie błędy radiowe (FRB)"
+      ],
+      "editorial_score": 10.75,
+      "digest": {
+        "what_happened": "Zespół naukowców zidentyfikował małą galaktykę karłowatą z okresu tzw. południa kosmicznego jako źródło rozbłysku FRB 20240304B. Wykorzystano do tego połączone możliwości teleskopu MeerKAT oraz instrumentów Webba.",
+        "key_points": [
+          "Rozbłysk radiowy pochodzi z galaktyki odległej o czas zaledwie 3 miliardów lat po Wielkim Wybuchu.",
+          "Galaktyka macierzysta okazała się 1000 razy mniej masywna, niż zakładano.",
+          "Wyniki podważają niektóre dotychczasowe teorie o powstawaniu FRB wyłącznie w dużych galaktykach."
+        ],
+        "context": "Szybkie rozbłyski radiowe (FRB) to trwające milisekundy błyski o nieznanym do końca pochodzeniu, odkryte po raz pierwszy w 2007 roku.",
+        "what_next": "Dalsze badania pomogą ustalić, czy za powstawanie FRB odpowiadają zderzenia gwiazd neutronowych, czy pojedyncze młode gwiazdy."
+      },
+      "source": "NASA",
+      "url": "https://science.nasa.gov/missions/webb/webb-measures-distance-to-farthest-fast-radio-burst-suggesting-origin/",
+      "published_at": "2026-10-08T18:00:00+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "NASA i Departament Energii rozwijają technologii jądrowe w kosmosie",
+      "summary": "NASA oraz Departament Energii USA podpisały porozumienie o współpracy nad reaktorami jądrowymi i napędem nuklearnym dla misji kosmicznych. Inicjatywa ta ma wspierać stałą obecność człowieka na Księżycu i przyszłe loty na Marsa.",
+      "why_it_matters": "Energetyka jądrowa jest kluczowa dla zapewnienia stabilnego zasilania baz księżycowych oraz dalekich wypraw kosmicznych.",
+      "category": "Kosmos",
+      "topics": [
+        "NASA",
+        "Energetyka jądrowa",
+        "Eksploracja kosmosu",
+        "Departament Energii USA"
+      ],
+      "editorial_score": 9.75,
+      "digest": {
+        "what_happened": "Podpisano memorandum 'Accelerating American Leadership in Space Nuclear Power and Propulsion', które łączy wysiłki obu agencji w zakresie rozwoju technologii jądrowych. Celem jest m.in. uruchomienie reaktora na powierzchni Księżyca do 2030 roku.",
+        "key_points": [
+          "Porozumienie obejmuje badania, produkcję paliwa oraz testy systemów napędowych i energetycznych.",
+          "Planowany start reaktora Space Reactor-1 Freedom ma nastąpić w 2028 roku.",
+          "Technologia ma zasilać przyszłe bazy na Księżycu i ułatwić eksplorację Marsa."
+        ],
+        "context": "Działania te wpisują się w dyrektywę prezydencką dotyczącą zapewnienia amerykańskiej dominacji w przestrzeni kosmicznej.",
+        "what_next": "Agencje będą kontynuować prace nad wdrożeniem systemów rozszczepialnych na potrzeby planowanych misji załogowych."
+      },
+      "source": "NASA",
+      "url": "https://www.nasa.gov/news-release/nasa-energy-department-advance-new-era-of-nuclear-powered-exploration/",
+      "published_at": "2026-10-08T15:46:25+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Google wprowadza agentową sztuczną inteligencję do platformy Gemini",
+      "summary": "Google integruje autonomiczne możliwości agentowe z systemem Gemini, umożliwiając sztucznej inteligencji planowanie i wykonywanie złożonych zadań w środowisku biznesowym. Narzędzie zyskuje m.in. własną tożsamość w miejscu pracy.",
+      "why_it_matters": "Przenosi interakcję z AI z prostego odpowiadania na pytania do pełnej automatyzacji procesów i zadań roboczych.",
+      "category": "Biznes i startupy",
+      "topics": [
+        "Google",
+        "Gemini",
+        "Agentic AI",
+        "Sztuczna inteligencja"
+      ],
+      "editorial_score": 9.7,
+      "digest": {
+        "what_happened": "Podczas wydarzenia Google Cloud ogłoszono uruchomienie agenta AI dla firm, który potrafi delegować zadania, korzystać z zewnętrznych modeli i łączyć się z systemami enterprise. Początkowo funkcja będzie wdrażana w sektorze biznesowym ze względu na wymogi bezpieczeństwa.",
+        "key_points": [
+          "Agent potrafi realizować cele wymagające planowania i korzystania z narzędzi zewnętrznych.",
+          "System posiada własne konto robocze z adresem e-mail i dostępem do kalendarzy czy systemów typu Slack i Jira.",
+          "Użytkownicy mogą wybierać modele sztucznej inteligencji, w tym opcje od firm trzecich takich jak Anthropic."
+        ],
+        "context": "Rozwiązanie odpowiada na rosnący trend autonomicznych agentów AI na rynku konsumenckim i korporacyjnym.",
+        "what_next": "Google planuje rozszerzyć dostępność narzędzia na kolejne platformy oraz wdrożyć wersję konsumencką w przyszłości."
+      },
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+      "published_at": "2026-10-08T18:18:00+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "SpaceX planuje zostać dużym operatorem komórkowym",
+      "summary": "SpaceX przejęło pakiety licencji na widmo radiowe niskiej częstotliwości, co ma umożliwić usłudze Starlink Mobile konkurowanie z tradycyjnymi amerykańskimi operatorami telekomunikacyjnymi.",
+      "why_it_matters": "Połączenie sieci satelitarnej z naziemną może znacząco zmienić rynek telekomunikacyjny i zasięg mobilny w USA.",
+      "category": "AI i technologia",
+      "topics": [
+        "SpaceX",
+        "Starlink",
+        "Mobilny internet",
+        "Telekomunikacja"
+      ],
+      "editorial_score": 9.7,
+      "digest": {
+        "what_happened": "Firma zakupiła pasmo w częstotliwości 800 MHz oraz 2 GHz, co po zatwierdzeniu przez FCC pozwoli na stworzenie architektury łączącej satelity z naziemną siecią komórkową. Nowy system ma zapewnić zasięg m.in. wewnątrz budynków.",
+        "key_points": [
+          "Przejęte pasmo niskiej częstotliwości pozwala na lepsze przenikanie sygnału przez ściany.",
+          "Plan uwzględnia wdrożenie 15 000 satelitów Starlink Mobile drugiej generacji.",
+          "Usługa ma bezpośrednio konkurować z gigantami takimi jak T-Mobile, AT&T i Verizon."
+        ],
+        "context": "Inwestycja w widmo radiowe stanowi kluczowy krok w rozwoju bezpośredniej łączności satelitarno-komórkowej (direct-to-device).",
+        "what_next": "Projekt czeka na ostateczną zgodę Federalnej Komisji Łączności (FCC) przed wdrożeniem nowej infrastruktury."
+      },
+      "source": "The Verge",
+      "url": "https://www.theverge.com/science/1008467/spacex-announces-plan-to-become-a-major-mobile-carrier",
+      "published_at": "2026-10-08T17:23:31-04:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Misja Crew-12 powróciła na Ziemię",
+      "summary": "Kapsuła SpaceX Crew Dragon Freedom z czterem astronautami na pokładzie pomyślnie wodowała u wybrzeży Kalifornii. Załoga spędziła niemal osiem miesięcy na Międzynarodowej Stacji Kosmicznej.",
+      "why_it_matters": "To kolejny udany powrót międzynarodowej załogi z ISS, podsumowujący długoterminową misję badawczą.",
+      "category": "Kosmos",
+      "topics": [
+        "NASA",
+        "SpaceX",
+        "Crew-12",
+        "Międzynarodowa Stacja Kosmiczna"
+      ],
+      "editorial_score": 9.55,
+      "digest": {
+        "what_happened": "Kapsuła SpaceX Crew Dragon Freedom wylądowała w Oceanie Spokojnym u wybrzeży Kalifornii. Na Ziemię powrócili astronauci NASA Jessica Meir i Jack Hathaway, Sophie Adenot z ESA oraz Andriej Fiediajew z Roskosmosu.",
+        "key_points": [
+          "Wodowanie odbyło się u wybrzeży Kalifornii.",
+          "W misji wzięli udział przedstawiciele NASA, ESA i Roskosmosu.",
+          "Astronauci spędzili na ISS blisko osiem miesięcy."
+        ],
+        "context": "Czwórka astronautów realizowała badania i zadania operacyjne w ramach długiego pobytu na Międzynarodowej Stacji Kosmicznej.",
+        "what_next": ""
+      },
+      "source": "NASA",
+      "url": "https://www.nasa.gov/image-article/crew-12-returns-to-earth/",
+      "published_at": "2026-10-08T18:52:27+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Nowa misja NASA SSPICY przetestuje technologie inspekcji satelitów",
+      "summary": "Wystrzelona z Kalifornii misja ma na celu zbliżenie się do nieczynnych satelitów. Ma to pomóc w przyszłych naprawach na orbicie i ograniczeniu kosmicznych śmieci.",
+      "why_it_matters": "Rozwój technologii inspekcji orbitalnej jest kluczowy dla walki z narastającym problemem śmieci kosmicznych.",
+      "category": "Kosmos",
+      "topics": [
+        "SSPICY",
+        "Kosmiczne śmieci",
+        "NASA",
+        "Technologie satelitarne"
+      ],
+      "editorial_score": 9.4,
+      "digest": {
+        "what_happened": "Statek kosmiczny w ramach misji SSPICY wystartował 1 października z bazy sił kosmicznych Vandenberg. Celem projektu jest przetestowanie technologii umożliwiających zbliżanie się do niesprawnych satelitów.",
+        "key_points": [
+          "Misja wystartowała z Kalifornii na początku października.",
+          "Jej celem jest demonstracja technologii inspekcji niedziałających satelitów.",
+          "Projekt ma wspierać przyszłe naprawy na orbicie i redukcję odpadów."
+        ],
+        "context": "Rosnąca liczba obiektów na orbicie okołoziemskiej stwarza zagrożenie dla aktywnej infrastruktury kosmicznej.",
+        "what_next": ""
+      },
+      "source": "NASA",
+      "url": "https://www.nasa.gov/centers-and-facilities/ames/nasas-sspicy-mission-to-demonstrate-in-space-inspection-technologies/",
+      "published_at": "2026-10-08T18:56:25+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Byłoby to za priorytetowe traktowanie bezpieczeństwa? Zwolnieni badacze OpenAI zabierają głos",
+      "summary": "Trzej zwolnieni pracownicy OpenAI twierdzą, że stracili pracę przez zgłaszanie obaw dotyczących bezpieczeństwa sztucznej inteligencji. Firma utrzymuje jednak, że powodem było niewłaściwe obchodzenie się z poufnymi informacjami.",
+      "why_it_matters": "Sprawa pogłębia napięcia wokół priorytetów etycznych i procedur bezpieczeństwa w czołowych laboratoriach AI.",
+      "category": "AI i technologia",
+      "topics": [
+        "OpenAI",
+        "Bezpieczeństwo AI",
+        "Zwolnienia",
+        "Badacze AI"
+      ],
+      "editorial_score": 9.3,
+      "digest": {
+        "what_happened": "Trzej byli badacze OpenAI opublikowali list otwarty, w którym twierdzą, że zostali zwolnieni za stawianie bezpieczeństwa ponad interesy korporacji. OpenAI zaprzecza tym oskarżeniom, wskazując na naruszenie procedur i poufności.",
+        "key_points": [
+          "Autorzy listu to Mikita Balesni, Tomek Korbak i Jasmine Wang.",
+          "OpenAI twierdzi, że doszło do poważnego naruszenia zaufania i procedur.",
+          "Zwolnieni pracownicy obawiają się, że sprawa uciszy dyskusję o ryzykach AI."
+        ],
+        "context": "Sprawa wpisuje się w szerszą debatę na temat bezpieczeństwa algorytmów i alignmentu w branży sztucznej inteligencji.",
+        "what_next": ""
+      },
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cvlydn8d3lkjo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-09T09:30:49+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Pentagon zapowiada transmitowanie egzekucji przez pluton egzekucyjny",
+      "summary": "Według zapowiedzi sekretarza obrony USA Pete'a Hegsetha, egzekucja Nidala Hasana ma być publicznie transmitowana na żywo. Decyzja ta budzi kontrowersje prawne i etyczne.",
+      "why_it_matters": "To potencjalnie pierwsza publiczna egzekucja w USA od niemal wieku, wywołująca ostrą krytykę organizacji międzynarodowych.",
+      "category": "Świat i geopolityka",
+      "topics": [
+        "Pentagon",
+        "Egzekucja",
+        "Prawo",
+        "Transmitowanie na żywo"
+      ],
+      "editorial_score": 9.25,
+      "digest": {
+        "what_happened": "Pentagon ogłosił plany wykonania wyroku śmierci na Nidalu Hasanie, skazanym za zabójstwo 13 żołnierzy w Fort Hood w 2009 roku. Egzekucja ma odbyć się przez rozstrzelanie i być transmitowana publicznie.",
+        "key_points": [
+          "Wyrok ma zostać wykonany 3 grudnia w bazie Fort Hood w Teksasie.",
+          "ONZ i eksperci prawni krytykują pomysł transmisji na żywo jako sprzeczny z prawem i standardami.",
+          "Jest to pierwsza egzekucja wojskowa przez rozstrzelanie od czasów II wojny światowej."
+        ],
+        "context": "Nidal Hasan został skazany za strzelaninę w bazie wojskowej w 2009 roku, a wykonanie kary śmierci wymaga zatwierdzenia przez prezydenta USA.",
+        "what_next": "Egzekucja jest zaplanowana na 3 grudnia w Teksasie."
+      },
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmy0r96xygx6o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-09T09:29:52+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Zmarła Margaret Hamilton, pionierka informatyki i autorka oprogramowania dla misji Apollo 11",
+      "summary": "Margaret Hamilton, która kierowała pracami nad oprogramowaniem dla historycznych misji NASA Apollo, zmarła w wieku 90 lat. Jej zespół stworzył systemy, które pomogły bezpiecznie wylądować na Księżycu.",
+      "why_it_matters": "Jej pionierskie prace położyły fundamenty pod współczesną inżyn表现 oprogramowania i umożliwiły lądowanie człowieka na Księżycu.",
+      "category": "Nauka",
+      "topics": [
+        "Margaret Hamilton",
+        "Apollo 11",
+        "Informatyka",
+        "Nekrolog"
+      ],
+      "editorial_score": 9.25,
+      "digest": {
+        "what_happened": "Zmarła Margaret Hamilton, wybitna informatyk, która zarządzała działem inżynierii oprogramowania w MIT i kierowała zespołem tworzącym systemy dla misji Apollo. W 1969 roku jej oprogramowanie obsłużyło krytyczny alarm komputera tuż przed lądowaniem na Księżycu. Za swoje zasługi została odznaczona w 2016 roku Prezydenckim Medalem Wolności.",
+        "key_points": [
+          "Margaret Hamilton zmarła w wieku 90 lat.",
+          "Kierowała zespołem tworzącym oprogramowanie pokładowe dla misji Apollo 11.",
+          "W 2016 roku otrzymała Prezydencki Medal Wolności z rąk Baracka Obamy."
+        ],
+        "context": "Hamilton pracowała w MIT od 1959 roku i współtworzyła pojęcie inżynierii oprogramowania, zanim stało się ono mainstreamem.",
+        "what_next": "Jej dziedzictwo będzie nadal inspirować kolejne pokolenia inżynierów i naukowców."
+      },
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cx5yn46j41zpo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-08T05:10:40+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Anthropic uruchamia darmowe skany bezpieczeństwa AI dla projektów open-source",
+      "summary": "Firma Anthropic wprowadziła nową usługę OSS Scanner, oferującą bezpłatne i cykliczne analizy bezpieczeństwa dla oprogramowania open-source. Raporty są generowane automatycznie przez najsilniejsze modele sztucznej inteligencji bez nadzoru człowieka.",
+      "why_it_matters": "Usługa może pomóc projektom open-source szybciej wykrywać luki w zabezpieczeniach, choć brak weryfikacji ludzkiej niesie ze sobą ryzyko błędów.",
+      "category": "AI i technologia",
+      "topics": [
+        "Anthropic",
+        "Open Source",
+        "Cyberbezpieczeństwo",
+        "Skaner bezpieczeństwa"
+      ],
+      "editorial_score": 9.2,
+      "digest": {
+        "what_happened": "Anthropic uruchomił OSS Scanner – narzędzie wykorzystujące m.in. modele Claude do przeszukiwania projektów open-source pod kątem podatności na zagrożenia. Skanowanie odbywa się automatycznie i bezpłatnie, jednak raporty nie przechodzą weryfikacji przez człowieka.",
+        "key_points": [
+          "Usługa OSS Scanner jest oferowana bezpłatnie dla projektów open-source.",
+          "Raporty są generowane wyłącznie przez modele AI bez udziału ludzi.",
+          "Rozwiązanie ma zapewnić szybszą identyfikację błędów, ale wiąże się z ryzykiem niepoprawnych wyników."
+        ],
+        "context": "Narzędzia AI coraz częściej pomagają w wykrywaniu błędów, jednak społeczności open-source zmagają się czasem z napływem wygenerowanych przez sztuczną inteligencję zgłoszeń.",
+        "what_next": "Projektanci oprogramowania open-source muszą zdecydować, czy chcą wziąć udział w tym opt-in programie."
+      },
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+      "published_at": "2026-10-08T17:53:51-04:00",
+      "full_text_used": true
+    }
+  ],
+  "more_stories": [
+    {
+      "title": "Teleskop kosmiczny SPHEREx bada chemicznie bogate atmosfery brązowych karłów",
+      "summary": "Teleskop NASA SPHEREx przeanalizował kilkadziesiąt brązowych karłów, odkrywając w ich atmosferach m.in. wodę, metan i dwutlenek węgla. Obiekty te łączą cechy gwiazd oraz gigantycznych planet.",
+      "why_it_matters": "Badanie pozwala lepiej zrozumieć naturę samotnych ciał niebieskich, które wymykają się tradycyjnym klasyfikacjom.",
+      "category": "Kosmos",
+      "topics": [
+        "Teleskop SPHEREx",
+        "Brązowe karły",
+        "Astronomią",
+        "NASA"
+      ],
+      "editorial_score": 9.2,
+      "digest": {
+        "what_happened": "Naukowcy przeanalizowali dane z teleskopu SPHEREx dotyczące 37 brązowych karłów o zróżnicowanych temperaturach. Urządzenie uchwyciło widma światła ujawniające obecność cząsteczek chemicznych w głębokich warstwach chmur tych obiektów.",
+        "key_points": [
+          "SPHEREx analizuje jasność obiektów w ponad 100 barwach, tworząc szczegółowe widma.",
+          "W atmosferach brązowych karłów wykryto wodę, tlenek węgla, dwutlenek węgla i metan.",
+          "Brązowe karły powstają jak gwiazdy, lecz nie mają masy wystarczającej do utrzymania fuzji wodorowej."
+        ],
+        "context": "Brązowe karły to obiekty swobodnie przemieszczające się w przestrzeni kosmicznej, które ogrzewają się wyłącznie od wewnątrz.",
+        "what_next": "Astronomowie planują przeanalizować tysiące kolejnych obiektów zarejestrowanych przez teleskop."
+      },
+      "source": "NASA",
+      "url": "https://www.nasa.gov/missions/spherex/nasas-spherex-telescope-sees-menagerie-of-brown-dwarfs/",
+      "published_at": "2026-10-08T18:22:48+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Naukowcy osiągnęli splątanie kwantowe między szklaną kuleczką a światłem",
+      "summary": "Badaczom udało się powiązać wiązkę światła ze szklaną kuleczką, zmuszając makroskopowy obiekt do zachowania kwantowego. Eksperyment ten stanowi znaczące osiągnięcie w dziedzinie fizyki kwantowej.",
+      "why_it_matters": "Przełom ten poszerza naszą wiedzę na temat kwantowego splątania i jego zastosowania poza światem mikroskopowych cząstek.",
+      "category": "AI i technologia",
+      "topics": [
+        "Fizyka kwantowa",
+        "Eksperyment",
+        "Kwantowe splątanie",
+        "Nauka"
+      ],
+      "editorial_score": 9.15,
+      "digest": {
+        "what_happened": "Grupa naukowców przeprowadziła eksperyment polegający na splątaniu kwantowym fotonów ze szklaną kuleczką. Dzięki temu zachowanie obiektu makroskopowego zostało skorelowane z zachowaniem cząstek światła.",
+        "key_points": [
+          "Splątanie kwantowe oznacza skorelowane zachowanie powiązanych obiektów.",
+          "Eksperyment połączył wiązkę światła ze szklaną kuleczką.",
+          "Osiągnięcie to stanowi wyzwanie dla tradycyjnego postrzegania mechaniki kwantowej."
+        ],
+        "context": "Opis i zrozumienie kwantowego splątania wymaga unikania powszechnych klisz o jego rzekomo tajemniczej naturze.",
+        "what_next": "Wyniki te mogą przyczynić się do dalszego rozwoju badań nad stanami kwantowymi większych obiektów."
+      },
+      "source": "Ars Technica - All content",
+      "url": "https://arstechnica.com/science/2026/10/suspended-glass-bead-entangled-with-light-maybe-a-quantum-memory/",
+      "published_at": "2026-10-08T18:45:23+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Let's Encrypt skraca okres ważności certyfikatów SSL do 64 dni",
+      "summary": "Od lutego 2027 roku darmowe certyfikaty SSL/TLS od Let's Encrypt będą ważne maksymalnie przez 64 dni. Zmiana ma wymusić pełną automatyzację odnawiania zabezpieczeń za pomocą protokołu ACME.",
+      "why_it_matters": "Administratorzy stron muszą zaktualizować systemy odnawiania certyfikatów, aby uniknąć nagłych wygaśnięć zabezpieczeń.",
+      "category": "AI i technologia",
+      "topics": [
+        "Let's Encrypt",
+        "Certyfikaty SSL",
+        "Cyberbezpieczeństwo",
+        "Internet"
+      ],
+      "editorial_score": 9.0,
+      "digest": {
+        "what_happened": "Let's Encrypt ogłosiło skrócenie czasu ważności darmowych certyfikatów SSL/TLS z 90 do 64 dni, z planami dalszego skrócenia do 45 dni w 2028 roku. Testy nowych, 64-dniowych certyfikatów ruszą w październiku 2026 roku, a oficjalne wdrożenie zaplanowano na 10 lutego 2027 roku. Decyzja ma na celu zwiększenie bezpieczeństwa i promowanie pełnej automatyzacji procesów przy użyciu protokołu ACME.",
+        "key_points": [
+          "Okres ważności certyfikatów zostanie skrócony z 90 do 64 dni od lutego 2027 roku.",
+          "W 2028 roku planowane jest wprowadzenie standardu 45-dniowego.",
+          "Zmiana ma na celu stymulowanie użytkowników do korzystania z automatyzacji ACME i protokołu ARI."
+        ],
+        "context": "Let's Encrypt zapoczątkowało erę 90-dniowych certyfikatów w 2016 roku, aby wymusić automatyzację procesów i ograniczyć ryzyko związane z kradzieżą kluczy prywatnych.",
+        "what_next": "Testy 64-dniowych certyfikatów rozpoczną się 14 października, a ostateczny termin dostosowania systemów dla administratorów mija 10 lutego 2027 roku."
+      },
+      "source": "Ars Technica - All content",
+      "url": "https://arstechnica.com/gadgets/2026/10/lets-encrypt-cuts-certificate-lifetimes-to-64-days-starting-february-2027/",
+      "published_at": "2026-10-08T19:57:17+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Wchodzą w życie nowe zasady dotyczące orzeczeń lekarskich",
+      "summary": "18 października zaczynają obowiązywać nowe przepisy zmieniające zasady wydawania orzeczeń lekarskich. Zmiany te wprowadzają istotne modyfikacje w dotychczasowych procedurach.",
+      "why_it_matters": "Nowe regulacje bezpośrednio wpłyną na procedury medyczne oraz pacjentów ubiegających się o odpowiednie dokumenty.",
       "category": "Zdrowie",
       "topics": [
-        "orzeczenia lekarskie",
-        "prawo",
-        "zmiany w przepisach"
+        "Medycyna",
+        "Orzeczenia lekarskie",
+        "Prawo",
+        "Zmiany w prawie"
       ],
-      "editorial_score": 8.25,
+      "editorial_score": 8.95,
       "digest": {
-        "what_happened": "Zapowiedziano wprowadzenie nowych zasad dotyczących orzeczeń lekarskich, które zaczną obowiązywać 18 października. Szczegóły reformy wpływają na dotychczasową praktykę medyczną. Zmiana ma na celu uporządkowanie procedur.",
+        "what_happened": "Od 18 października wchodzą w życie nowe zasady regulujące kwestię orzeczeń lekarskich. Modyfikacje mają na celu usprawnienie dotychczasowego systemu i dostosowanie go do aktualnych wymogów prawnych.",
         "key_points": [
-          "Data wejścia w życie: 18 października",
-          "Koniec dotychczasowego systemu orzeczeń",
-          "Wprowadzenie nowych regulacji prawnych"
+          "Nowe zasady wchodzą w życie 18 października.",
+          "Zmiany dotyczą procesu wydawania orzeczeń lekarskich.",
+          "Nowe przepisy mają usprawnić procedury w polskim systemie ochrony zdrowia."
         ],
-        "context": "Informacja wynika bezpośrednio z zapowiedzi zmian w przepisach medycznych.",
-        "what_next": "Warto śledzić komunikaty Ministerstwa Zdrowia dotyczące szczegółów nowych procedur."
+        "context": "Informacja stanowi odpowiedź na bieżące zmiany legislacyjne w obszarze medycyny i prawa pracy.",
+        "what_next": "Przepisy zaczną obowiązywać od 18 października, co wymaga dostosowania procedur przez podmioty medyczne."
       },
       "source": "Rynek Zdrowia",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSThJTzExdEVfc0NYWktldHJsSEgxNnRUaXc5WlMteFk0aC1FVG1NVFZKY1M1X0lHM3pIdFo5TVcwQmNZZC1sWGQxR3lpWHhXWUo4V3JKdGpKRjFRX0xXY1ZrVk1jWm4tM1pnLVFFNlI2M0JJWFU5UmlxWFp5c0xpb2x0QVNTajl2c01jX2tpVTV0RlkxeXlvVnE1Ql9lUTNYT0psUVN4UkRhbmEwaWRV?oc=5",
@@ -29,513 +383,171 @@
       "full_text_used": false
     },
     {
-      "title": "Szczepienie przeciwko HPV przed ciążą zmniejsza ryzyko przedwczesnego porodu",
-      "summary": "Nowe doniesienia medyczne wskazują na wymierne korzyści ze szczepień przeciwko HPV przed zajściem w ciążę. Profilaktyka ta wiąże się z mniejszym ryzykiem przedwczesnego porodu oraz groźnych powikłań. To istotny argument przemawiający za poszerzeniem szczepień profilaktycznych.",
-      "why_it_matters": "Pokazuje to, że szczepienia przeciwko HPV niosą ze sobą dodatkowe korzyści zdrowotne dla przyszłych matki i dziecka.",
-      "category": "Zdrowie",
-      "topics": [
-        "HPV",
-        "szczepienia",
-        "ciąża",
-        "profilaktyka"
-      ],
-      "editorial_score": 8.05,
-      "digest": {
-        "what_happened": "Opublikowano dane na temat wpływu szczepień przeciwko HPV na przebieg ciąży. Wykazano, że przyjęcie szczepionki przed ciążą zmniejsza ryzyko przedwczesnego porodu i powikłań. Wyniki te podkreślają rolę profilaktyki zdrowotnej.",
-        "key_points": [
-          "Szczepienie przed ciążą chroni przed powikłaniami",
-          "Mniejsze ryzyko przedwczesnego porodu",
-          "Znaczenie profilaktyki HPV"
-        ],
-        "context": "Badania nad szczepionką HPV przynoszą kolejne pozytywne wnioski dla zdrowia publicznego.",
-        "what_next": "Można spodziewać się dalszych rekomendacji medycznych dotyczących szczepień kobiet planujących rodzinę."
-      },
-      "source": "Alert Medyczny",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNalVOcHREOXhlR2swYndvSXFtelZzejlSSW9sNm5DZUZaZDZvTG5UU3kyQzJMM1lTdnJaN215cFVTbnJyZXRRaUFaRVdpc2tYNU9JSzNFM3djNHdseG43eTJqNG1UVU5YeG9JcHZYMGJoY0x5YTVsWGdldUJLbGNpRF95aFhHQ0daeld3blprU1hDd1RxTS1FUlR2RVlqalVEUUtUWTdYeVlSTjhlOWVFdDJR?oc=5",
-      "published_at": "2026-10-08T22:52:50+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "Nawet 30 ośrodków kardiologicznych może wypaść z sieci szpitali",
-      "summary": "Ministerstwo Zdrowia zapowiedziało zmiany, w wyniku których aż do 30 ośrodków kardiologicznych w kraju może stracić miejsce w dotychczasowej sieci szpitali. Sytuacja ta budzi niepokój w środowisku medycznym. Oznacza to potencjalne utrudnienia w dostępie do specjalistycznego leczenia.",
-      "why_it_matters": "Zmiany w sieci szpitali bezpośrednio wpłyną na dostępność pacjentów do opieki kardiologicznej.",
-      "category": "Zdrowie",
-      "topics": [
-        "kardiologia",
-        "sieć szpitali",
-        "Ministerstwo Zdrowia"
-      ],
-      "editorial_score": 7.8,
-      "digest": {
-        "what_happened": "Ministerstwo Zdrowia zapowiedziało modyfikacje kryteriów, przez co około 30 ośrodków kardiologicznych może nie zmieścić się w nowej sieci szpitali. Placówki te mogą utracić finansowanie lub status. Kwestia ta jest obecnie przedmiotem dyskusji.",
-        "key_points": [
-          "Zagrożenie dla blisko 30 placówek",
-          "Zapowiedź zmian ze strony Ministerstwa Zdrowia",
-          "Potencjalny wpływ na dostępność leczenia"
-        ],
-        "context": "Resort zdrowia regularnie weryfikuje kryteria przynależności placówek do sieci szpitali.",
-        "what_next": "Kluczowe będą ostateczne decyzje ministerstwa oraz reakcje zagrożonych ośrodków."
-      },
-      "source": "Rynek Zdrowia",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQVjczUHkydmlnbEY4dnJ3RWdnV2tMejk3akpmNVpjUHA5UGI5NFZfaV92cVJyWUhQOTNmMTRvXzVvSFFIbnc1YWJMS2dBQUtrR3YzcmtPMmc2Rk9kbHVONXh0aHZwM3hTOV9wbmp2VVVOd2syT2txMFZCX1BIc0pSNF9TNnNZQ0lTUlBXTWgxWHE4Y1RjUUhkdkM4VDluM19FMlNoY1ZnQ3NoUHlveXAyZ0xQUXF0Ty1FTFNZRzBMUkt5M1BkNWxaM011S21sdnh5VWwxUXp5ZjlqVU1mQ0FvQXlVeUVQU0tTdGd3NA?oc=5",
-      "published_at": "2026-10-08T18:12:00+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "Dyrektorka Narodowego Instytutu Kardiologii rezygnuje ze stanowiska",
-      "summary": "Szefowa Narodowego Instytutu Kardiologii zrezygnowała z pełnionej funkcji. Ministerstwo Zdrowia odniosło się do tej decyzji, przedstawiając oficjalne stanowisko. Zmiana na stanowisku kierowniczym następuje w ważnym dla placówki momencie.",
-      "why_it_matters": "To przetasowanie w kierownictwie jednej z najważniejszych placówek medycznych w Polsce.",
-      "category": "Zdrowie",
-      "topics": [
-        "Narodowy Instytut Kardiologii",
-        "ochrona zdrowia",
-        "rezygnacja"
-      ],
-      "editorial_score": 7.75,
-      "digest": {
-        "what_happened": "Dyrektorka Narodowego Instytutu Kardiologii złożyła rezygnację ze stanowiska. Ministerstwo Zdrowia skomentowało to zdarzenie w oficjalnym komunikacie. Trwają poszukiwania nowego zarządcy.",
-        "key_points": [
-          "Rezygnacja dyrektorki Instytutu",
-          "Komentarz Ministerstwa Zdrowia",
-          "Zmiany kadrowe w kluczowej placówce"
-        ],
-        "context": "Instytut odgrywa kluczową rolę w polskiej kardiologii.",
-        "what_next": "Należy oczekiwać ogłoszenia konkursu lub wyznaczenia osoby p.o. dyrektora."
-      },
-      "source": "Rynek Zdrowia",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQYWxNZE1NdDl3LTR1emRFSEgybHpOb1Z1TktZcUVvdGMyZGxRN25CUVZiSThNdnpSZTMxOU9ITV80YUt6NEpnYkZOVVByTVR6N1RZNkd5dTlFLVZtME1Zb24zX181ZFp4RFEzQTI2c1N6Rm9TVjFfaTFsQTRSbjRBSUZYZThiVS1DSExuc0lFYWZoTERValByR0hxUFZiOFI4NnZTczdDNi1FVzJqakptWGZDTG1WSEstSm9BOFM2dW9iYlZCNy1nMUhTMWJ2MFhveXZlUGNPa1RzdE1laFAwcGJmMU4zZVV4eXh4ak1zTkUzMkU?oc=5",
-      "published_at": "2026-10-09T05:54:00+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "Zetkom etaty zabiera sztuczna inteligencja. I to jeszcze przed podpisaniem umowy",
-      "summary": "Sztuczna inteligencja coraz śmielej wkracza na rynek pracy, wypierając kandydatów z pokolenia Z jeszcze przed etapem zatrudnienia. Automatyzacja rekrutacji i procesów sprawia, że młodzi pracownicy tracą szanse na etaty. Zjawisko to zmienia dynamikę poszukiwania pierwszej pracy.",
-      "why_it_matters": "Wpływ AI na wczesne etapy rekrutacji stawia nowe bariery przed wchodzącymi na rynek pracownikami.",
+      "title": "Rekordowe zyski Samsunga napędzane boomem na czipy AI",
+      "summary": "Samsung Electronics spodziewa się dziewięciokrotnego wzrostu kwartalnego zysku operacyjnego do poziomu 80 miliardów dolarów. Wynik ten to efekt globalnego popytu na pamięci wykorzystywane w centrach danych sztucznej inteligencji.",
+      "why_it_matters": "Ogromny popyt na infrastrukturę AI przekłada się na historyczne rekordy finansowe gigantów technologicznych.",
       "category": "AI i technologia",
       "topics": [
-        "AI",
-        "rynek pracy",
-        "automatyzacja",
-        "rekrutacja"
+        "Samsung",
+        "Zyski",
+        "Czipy AI",
+        "Rynek technologiczny"
       ],
-      "editorial_score": 7.6,
+      "editorial_score": 8.9,
       "digest": {
-        "what_happened": "Algorytmy AI przechodzą procesy rekrutacyjne i eliminują kandydatów z pokolenia Z, zanim ci zdążą podpisać umowę o pracę. Firmy coraz chętniej powierzają wstępną selekcję i automatyzację technologii. Prowadzi to do kurczenia się tradycyjnych wakatów.",
+        "what_happened": "Samsung Electronics oszacował swój kwartalny zysk operacyjny na 107,4 bln wonów (ok. 80 mld USD), co oznacza czwarty kwartał z rzędu z rekordowymi wynikami. Wzrost napędzany jest zapotrzebowaniem na zaawansowane chipy pamięci niezbędne do rozwój technologii AI, a dodatkowe wsparcie przyniosła sprzedaż nowych smartfonów składanych.",
         "key_points": [
-          "Wpływ AI na rekrutację młodych",
-          "Zagrożenie dla tradycyjnych etatów",
-          "Zmiany w podejściu pracodawców do kandydatów"
+          "Szacowany zysk operacyjny Samsunga wzrósł dziewięciokrotnie rok do roku, osiągając 80 miliardów dolarów.",
+          "Głównym motorem wzrostu jest globalny popyt na pamięci do centrów danych sztucznej inteligencji.",
+          "Pozytywny wpływ na wyniki miały również nowo wprowadzone na rynek urządzenia składane."
         ],
-        "context": "Technologia generatywna i automatyzacja drastycznie przekształcają działy HR.",
-        "what_next": "Warto obserwować, jak młodzi kandydaci i firmy dostosują się do zautomatyzowanych procesów rekrutacyjnych."
+        "context": "Globalny wyścig zbrojeń w dziedzinie AI sprawił, że amerykańscy giganci technologiczni oraz rządy krajów azjatyckich przeznaczają setki miliardów dolarów na rozwój infrastruktury półprzewodnikowej.",
+        "what_next": "Pełny raport finansowy za trzeci kwartał zostanie opublikowany pod koniec października."
       },
-      "source": "INFOR-kadry",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPLUg2UWV3T3lDbEM3RmQ5UU15aHQtUjItNFNFVGVaWFBRTTR0cFBta0FRNjk0T2JFM09wLWNMYy10SWZDblB4RDh5V0VoSFBUcS1SLUFIeGlxeklMU2tkOC1Xd0h5MW1OUTdYbXc3Ul9tUFkzVU9ESS1XelFJOFJ4Mm1Od25jdHpoVWhWa01MV21JUlA5YWpNdHpzWDZIc3gxNHZMQ1NXVQ?oc=5",
-      "published_at": "2026-10-09T09:33:59+00:00",
-      "full_text_used": false
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c687z8127302o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-08T01:59:54+00:00",
+      "full_text_used": true
     },
     {
-      "title": "EBC podniósł stopy procentowe do 2,50%. Opublikowano zapis posiedzenia",
-      "summary": "Europejski Bank Centralny zdecydował o podniesieniu stóp procentowych do poziomu 2,50%. Opublikowany zapis z posiedzenia banku ukazuje kulisy tej decyzji oraz nastroje wśród decydentów. Krok ten wpisuje się w szerszą politykę radzenia sobie z wyzwaniami gospodarczymi.",
-      "why_it_matters": "Decyzje EBC mają bezpośredni wpływ na rynki finansowe i sytuację gospodarkę w strefie euro.",
-      "category": "Finanse i inwestowanie",
+      "title": "NASA przedstawi swój udział w japońskiej misji MMX na księżyce Marsa",
+      "summary": "NASA zorganizuje telekonferencję poświęconą swoim kontrybucjom do japońskiej misji Martian Moons eXploration (MMX). Bezzałogowa sonda ma wystartować w kierunku marsjańskich księżyców w październiku.",
+      "why_it_matters": "Misja ma kluczowe znaczenie dla badania pochodzenia księżyców Marsa oraz poszerzenia wiedzy o Układzie Słonecznym.",
+      "category": "Kosmos",
       "topics": [
-        "EBC",
-        "stopy procentowe",
-        "banki centralne"
+        "NASA",
+        "JAXA",
+        "Misja MMX",
+        "Księżyce Marsa"
       ],
-      "editorial_score": 7.55,
+      "editorial_score": 8.85,
       "digest": {
-        "what_happened": "EBC podniósł stopy do 2,50%, co zostało potwierdzone w opublikowanym protokole z posiedzenia. Dokument ujawnia argumentację stojącą za tą decyzją monetarną. Analitycy analizują dalsze perspektywy polityki stóp.",
+        "what_happened": "NASA zapowiedziała na 15 października telekonferencję medialną omawiającą wkład agencji w misję MMX organizowaną przez JAXA. Sonda ma wystartować z Japonii w połowie października, dotrzeć do Marsa w sierpniu 2027 roku, a w 2031 roku dostarczyć na Ziemię próbki z powierzchni księżyca Phobos.",
         "key_points": [
-          "Stopy procentowe EBC na poziomie 2,50%",
-          "Publikacja zapisu z posiedzenia",
-          "Reakcja rynków finansowych"
+          "NASA przygotowuje telekonferencję zapowiadającą swój wkład w japońską misję MMX.",
+          "Wkład amerykańskiej agencji obejmuje m.in. spektrometr MEGANE oraz mechanizm pobierania próbek.",
+          "Sonda ma dostarczyć próbki z marsjańskiego księżyca Phobos na Ziemię w 2031 roku."
         ],
-        "context": "Banki centralne uważnie monitorują wskaźniki makroekonomiczne.",
-        "what_next": "Kolejne posiedzenia EBC pokażą, czy cykl podwyżek zostanie utrzymany."
+        "context": "Misja MMX realizowana jest przez JAXA przy udziale międzynarodowych partnerów, w tym NASA, w ramach programu badawczego planetarnego.",
+        "what_next": "Start misji z japońskiego centrum Tanegashima zaplanowano na połowę października."
       },
-      "source": "CEO Magazyn",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSWNVVkh2LUFpQjNlMWZrRFBlTWJEY0d3RFBTZFpMQ2NURFJCS0VlTUJOZ0RaRC1fVGV2V2VBdnVlTnVfdC1iOEhteDlYb29fekV2LXMtWlNsZ2xvQkx0Zkp5cGpiM3J4WGZHcm1PaHRSV1RXZmFEQjlHSWtQQ2JReEhyVQ?oc=5",
-      "published_at": "2026-10-08T16:27:39+00:00",
-      "full_text_used": false
+      "source": "NASA",
+      "url": "https://www.nasa.gov/news-release/nasa-briefing-to-highlight-contributions-to-martian-moons-mission/",
+      "published_at": "2026-10-08T20:22:12+00:00",
+      "full_text_used": true
     },
     {
-      "title": "IMF ostrzega przed sytuacją gospodarczą Węgier. Deficyt może sięgnąć 7,5% PKB",
-      "summary": "Międzynarodowy Fundusz Walutowy wydał ostrzeżenie dotyczące kondycji gospodarczej Węgier. Prognozy wskazują, że deficyt kraju może wzrosnąć aż do poziomu 7,5% PKB. Sytuacja ta wymaga podjęcia zdecydowanych działań stabilizacyjnych.",
-      "why_it_matters": "Wysoki deficyt w kraju regionu może wpłynąć na stabilność rynków finansowych Europy Środkowej.",
-      "category": "Finanse i inwestowanie",
-      "topics": [
-        "IMF",
-        "Węgry",
-        "gospodarka",
-        "deficyt"
-      ],
-      "editorial_score": 7.55,
-      "digest": {
-        "what_happened": "IMF opublikował negatywne prognozy dla gospodarki Węgier, szacując, że deficyt osiągnie 7,5% PKB. Fundusz wskazuje na konieczność korekty polityki fiskalnej. Ostrzeżenie to rzuca cień na perspektywy wzrostu gospodarczego kraju.",
-        "key_points": [
-          "Ostrzeżenie ze strony IMF",
-          "Szacowany deficyt na poziomie 7,5% PKB",
-          "Wyzwania fiskalne Węgier"
-        ],
-        "context": "Międzynarodowe instytucje regularnie oceniają plany budżetowe państw członkowskich.",
-        "what_next": "Warto śledzić reakcję rządu w Budapeszcie na rekomendacje IMF."
-      },
-      "source": "CEO Magazyn",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1PdVlBYlN6bElMNHAzeXM3b1NxVU90RHVZWTZDLTVRcDNRc0czdUJ1QkNmQkRaYUxLOEt4Q1FvVC1pZWlkY0RaallKVDF6QTdLdlUyZjNKWmJleGdadFBSZFBFTlI?oc=5",
-      "published_at": "2026-10-08T18:47:49+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "Praca w zbrojeniówce: Kogo szukają firmy i jakie są zarobki?",
-      "summary": "Przemysł zbrojeniowy w Polsce i na świecie przeżywa boom, co przekłada się na dynamiczny wzrost rekrutacji. Firmy z tego sektora poszukują specjalistów z różnych dziedzin, oferując konkurencyjne warunki finansowe. Artykuł przybliża profile poszukiwanych pracowników oraz realia płacowe.",
-      "why_it_matters": "Sektor zbrojeniowy staje się jednym z najbardziej perspektywicznych pracodawców na rynku.",
-      "category": "Praca i kariera",
-      "topics": [
-        "przemysł zbrojeniowy",
-        "praca",
-        "zarobki",
-        "rekrutacja"
-      ],
-      "editorial_score": 7.45,
-      "digest": {
-        "what_happened": "Przeanalizowano rynek pracy w branży zbrojeniowej, wskazując na rosnące zapotrzebowanie na kadry. Pracodawcy oferują wysokie zarobki, by przyciągnąć inżynierów, technologów i specjalistów. Sektor notuje wzmożoną aktywność rekrutacyjną.",
-        "key_points": [
-          "Wzrost popytu na pracowników w zbrojeniówce",
-          "Atrakcyjne warunki finansowe",
-          "Poszukiwani specjaliści i inżynierowie"
-        ],
-        "context": "Zwiększone wydatki na obronność bezpośrednio stymulują rozwój tego rynku pracy.",
-        "what_next": "Można spodziewać się dalszego napływu ofert pracy w tej branży."
-      },
-      "source": "eGospodarka.pl",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOXVEMm54OEtldEpzLXpjM3BCaGxUclNKbUNpTkRhNkNidkRlejBGN3RBeWFRcHpGaTh1YjNsRGhTRXhaVXd0cENvYncxMzd4RTZSTjRvQmZKMjlIdTVscUxoVDBVczhpS20wanpGQk9RUW5Vb2NNTjlhQWw1b0xTOFNFSk8zRDQ0bENMazE0anNKZGlHVkhEWlRaQmZPU1hNWnI5eHNQeFg?oc=5",
-      "published_at": "2026-10-08T12:42:51+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "Peryskop Radia Wnet: Ataki w szkołach, spór o budżet i przełom ws. Nord Stream",
-      "summary": "Podsumowanie dnia przynosi informacje o incydentach w szkołach, trwającym sporze wokół budżetu oraz domniemanym przełomie w sprawie gazociągu Nord Stream. Serwis omawia najważniejsze wydarzenia krajowe i międzynarodowe. To pigułka kluczowych tematów politycznych.",
-      "why_it_matters": "Zestawienie to dotyka najważniejszych bieżących sporów i wydarzeń kształtujących debatę publiczną w Polsce.",
-      "category": "Polska",
-      "topics": [
-        "Radio Wnet",
-        "Nord Stream",
-        "budżet",
-        "szkoły"
-      ],
-      "editorial_score": 7.35,
-      "digest": {
-        "what_happened": "W podsumowaniu dnia poruszono kwestie ataków w szkołach, napięć wokół budżetu państwa oraz nowych wieści dotyczących śledztwa w sprawie Nord Stream. Omówiono najważniejsze wątki polityczne i społeczne. Informacje te zdominowały krajowe media.",
-        "key_points": [
-          "Doniesienia o atakach w szkołach",
-          "Trwający spór o budżet państwa",
-          "Przełom w sprawie gazociągu Nord Stream"
-        ],
-        "context": "Wydarzenia te mają szeroki rezonans w mediach i opinii publicznej.",
-        "what_next": "Rozwój sytuacji w wymienionych sprawach będzie rzutował na polską scenę polityczną i śledztwa międzynarodowe."
-      },
-      "source": "Radio Wnet",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNVVdvZTZPMHNpeWUtZmxHMjY2Z1FHRlVXNmd5UFJSUG0zOWY0Zzdia0c4OXM5MFNjQm9pTVNNUndXR3AyUnpTeVBWZ253eDdLWTVuWnBvYkRSUm84NXM2OURkQnBHa0pKY3I4RUVJQ0d1TWoxeDJLb2gzZWVMSENET3o0VGJXS2xqS0h5cUxya1NyY0t6WnNLeUNRdFMzaTg2Rk1sZ3E5aV95Q2hXbUxiS0Y4SnJpNWtSeEdDTy1kY0s2bW9XLUFfd3laX0dBWjV0NzUzNV9MT0ZvX3FDSFI3Mg?oc=5",
-      "published_at": "2026-10-08T18:08:38+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "Glapiński o stopach procentowych. Co zrobi RPP w listopadzie?",
-      "summary": "Prezes NBP Adam Glapiński wypowiedział się na temat perspektyw polityki monetarnej. Słowa szefa banku centralnego rozbudziły spekulacje odnośnie do decyzji Rady Polityki Pieniężnej w listopadzie. Obserwatorzy rynku próbują odczytać przyszłe ruchy stóp procentowych.",
-      "why_it_matters": "Deklaracje szefa NBP rzutują na oprocentowanie kredytów i decyzje oszczędzających w Polsce.",
-      "category": "Finanse i inwestowanie",
-      "topics": [
-        "RPP",
-        "stopy procentowe",
-        "Adam Glapiński"
-      ],
-      "editorial_score": 7.35,
-      "digest": {
-        "what_happened": "Prezes NBP odniósł się do kwestii poziomu stóp procentowych, dając sygnały co do dalszych działań RPP. Analitycy analizują jego wypowiedzi w kontekście nadchodzącego posiedzenia rady w listopadzie. Kwestia ta budzi duże zainteresowanie kredytobiorców.",
-        "key_points": [
-          "Wypowiedź prezesa NBP o stopach",
-          "Spekulacje przed listopadowym posiedzeniem RPP",
-          "Wpływ na rynek finansowy"
-        ],
-        "context": "Decyzje RPP zależą od bieżących odczytów inflacji i danych makroekonomicznych.",
-        "what_next": "Warto śledzić listopadowe posiedzenie Rady Polityki Pieniężnej."
-      },
-      "source": "CEO Magazyn",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1qX0d4Q1phMzNsWVU4MjU5YWNQenFHOWlsVmREZGZGUFBZVThFcFpKcS1LUUIzN2N1aTNCSWdlX2pIUE9sWlBMVWplMElhUkJuS3U2QjZoTkMtcXZ5aW5DaVRXdEhIM0M3Q1FKMGFvdHktV1ZoR2QyTFA5REM5MzQ?oc=5",
-      "published_at": "2026-10-08T16:28:00+00:00",
-      "full_text_used": false
-    }
-  ],
-  "more_stories": [
-    {
-      "title": "Za 51 dni wchodzi EVP. Każde nowe auto musi je mieć",
-      "summary": "Zbliża się termin wprowadzenia nowego wymogu motoryzacyjnego znanego jako EVP. Za niespełna dwa miesiące każde nowo rejestrowane auto będzie musiało być w to wyposażone. Przepisy te wymuszą zmiany w ofercie producentów samochodów.",
-      "why_it_matters": "Nowe unijne lub krajowe regulacje techniczne dotkną każdego rynku motoryzacyjnego i przyszłych nabywców aut.",
-      "category": "Motoryzacja",
-      "topics": [
-        "EVP",
-        "przepisy motoryzacyjne",
-        "nowe auta"
-      ],
-      "editorial_score": 7.25,
-      "digest": {
-        "what_happened": "Do wejścia w życie przepisów wymagających systemów EVP w nowych autach zostało 51 dni. Producenci muszą dostosować swoje pojazdy do zbliżającego się obowiązku. Regulacje stanowią kolejny krok w zaostrzaniu norm technicznych.",
-        "key_points": [
-          "51 dni do wdrożenia przepisu EVP",
-          "Obowiązkowe wyposażenie nowych aut",
-          "Zmiany w ofercie producentów"
-        ],
-        "context": "Rynek motoryzacyjny regularnie adaptuje się do nowych standardów homologacyjnych.",
-        "what_next": "Warto sprawdzić, które modele samochodów spełniają wymóg EVP przed ostatecznym terminem."
-      },
-      "source": "Spider's Web",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE10dGNWZlpzTVZvOUZicTFQcWJfZmpLMWpOelJ2YUZyR1BpOVYzd25vaXpZbVpzX190Vl83ZUtKZXd0U093QnkwZmFkZ3lnQmxxZUJwRGlLQnprbTN5RHdOVDU3OFZaampNTnljSFVGZTRXNWxt?oc=5",
-      "published_at": "2026-10-09T05:45:00+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "Polscy nauczyciele nie są zadowoleni z pensji. Zaskakujący wynik na tle OECD",
-      "summary": "Najnowsze dane zestawione z raportami OECD pokazują specyficzną sytuację polskich nauczycieli. Choć relacje zarobków bywają zaskakujące w statystykach międzynarodowych, sami pedagogowie wykazują duże niezadowolenie z pensji. Kwestia ta od lat pozostaje palącym problemem oświaty.",
-      "why_it_matters": "Wyniki te pokazują rozbieżność między oficjalnymi statystykami a odczuciami pracowników oświaty.",
-      "category": "Praca i kariera",
-      "topics": [
-        "nauczyciele",
-        "zarobki",
-        "OECD",
-        "edukacja"
-      ],
-      "editorial_score": 7.2,
-      "digest": {
-        "what_happened": "Opublikowano analizę dotyczącą wynagrodzeń nauczycieli w Polsce na tle krajów OECD. Wyniki badań wywołały dyskusję ze względu na poziom satysfakcji finansowej kadr edukacyjnych. Nauczyciele wciąż wskazują na niezadowolenie z otrzymywanych pensji.",
-        "key_points": [
-          "Porównanie zarobków w raporcie OECD",
-          "Niski poziom satysfakcji finansowej nauczycieli",
-          "Dyskusja o finansowaniu edukacji"
-        ],
-        "context": "Status materialny nauczycieli to stały punkt debaty publicznej w Polsce.",
-        "what_next": "Można spodziewać się dalszych postulatów płacowych ze strony związków zawodowych."
-      },
-      "source": "Business Insider Polska",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPS3BYaTR5bmdTY21SR1hRbHR4NGU5M1ozLVppQkZUOXlwZDZZazY2VXl0X1d2QmhFUk1PNWE3Qmh2a1VmUWtOUlVObmVXbWpBV3AwWnZzUkZwNWZMUFVBNXRnRjdFaTZfMzN2U3B0bU5ZNy14YUJiZjd4MWhsOWU1eU5vc1FPbkg2WWJLU25uLW9Oc05pVHdpeGIwLXg3ak00czBtUXRDNUxkcmZFai0xdUZTQVRmUWFjUi1iS0NR?oc=5",
-      "published_at": "2026-10-08T12:54:06+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "Oprocentowanie lokat ruszyło w górę. Gdzie szukać najlepszych ofert?",
-      "summary": "Na rynku bankowym widać ożywienie – oprocentowanie lokat zaczęło rosnąć. Instytucje finansowe rywalizują o kapitał klientów, proponując coraz lepsze warunki oszczędzania. Artykuł analizuje, które oferty zasługują na uwagę.",
-      "why_it_matters": "Osoby szukające bezpiecznych miejsc do ulokowania oszczędności mogą liczyć na lepsze zyski.",
-      "category": "Finanse i inwestowanie",
-      "topics": [
-        "lokaty bankowe",
-        "oprocentowanie",
-        "oszczędności"
-      ],
-      "editorial_score": 7.05,
-      "digest": {
-        "what_happened": "Banki podniosły oprocentowanie lokat oszczędnościowych w odpowiedzi na warunki rynkowe. Klienci mają do wyboru szerszą gamę zyskownych produktów depozytowych. Eksperci podpowiadają, jak wybrać najkorzystniejszą opcję.",
-        "key_points": [
-          "Wzrost oprocentowania lokat bankowych",
-          "Rywalizacja banków o kapitał",
-          "Przegląd aktualnych ofert oszczędnościowych"
-        ],
-        "context": "Polityka monetarna przekłada się na oferty commercial banków.",
-        "what_next": "Warto śledzić dalsze ruchy banków w poszukiwaniu najlepszych stóp zwrotu."
-      },
-      "source": "Subiektywnie o finansach",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUFpqOGN6ckJ3QWI2dm4xUXd3dnhqeHZIUktmeUNjWG1HYndYSmJ6SlA0Ym9WYk5JMlpTTlA3aXFpTmxjNl9zY25OZ0tzWDNPQ3JkTG9CNVZydDlFUWQwN2RTZWZsMHNGaDZLa2xJdnJ1YmlqWXl3bXJKVWx6OWZVdzBVa1d1M1NJZl93YUloMFUyUQ?oc=5",
-      "published_at": "2026-10-08T18:38:00+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "Ofert dla młodych nie brakuje. Dlaczego pierwsza praca to wciąż wyzwanie?",
-      "summary": "Mimo że pracodawcy publikują liczne ogłoszenia skierowane do osób wchodzących na rynek, zdobycie pierwszej pracy bywa niezwykle trudne. Rozbieżność między oczekiwaniami a realiami rekrutacyjnymi stanowi barierę dla absolwentów. Sytuacja ta skłania do refleksji nad systemem edukacji i rekrutacji.",
-      "why_it_matters": "Zjawisko to pokazuje paradoks współczesnego rynku pracy dla młodego pokolenia.",
-      "category": "Praca i kariera",
-      "topics": [
-        "pierwsza praca",
-        "absolwenci",
-        "rynek pracy"
-      ],
-      "editorial_score": 7.05,
-      "digest": {
-        "what_happened": "Przeanalizowano sytuację absolwentów i młodych ludzi szukających zatrudnienia. Mimo dużej liczby ofert, proces zdobycia pierwszego etatu napotyka na liczne przeszkody. Pracodawcy często wymagają doświadczenia, którego młodzi jeszcze nie posiadają.",
-        "key_points": [
-          "Duża liczba ofert a trudności z zatrudnieniem",
-          "Wymóg doświadczenia od absolwentów",
-          "Wyzwania na początku kariery zawodowej"
-        ],
-        "context": "Rynek pracy dla osób bez stażu pracy od lat charakteryzuje się wysokimi wymaganiami.",
-        "what_next": "Warto obserwować inicjatywy wspierające staże i programy aktywizacji zawodowej."
-      },
-      "source": "PulsHR",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNaTFDQ05NQ3F0ZmMtT1FlYnM4VXJEbnhORkxIamRuVGRfZF8zU0VNcFdxTzkwel9SUVBVSDJrSmowRmtJQVRESm9OM01Ndzg1aHpWclN2SkFzRHIwQnRKUmFySW1KUDRCcFI2WUhQMklITVJSbkpGWXNTSnpHTzJORmwybVdwVFlhQmZ3OUlZT3JfUjhHRVZhX3M2alp2T2s0UVR3VkZvTHk3UWNiRmEwR0RoMEFoWXpGNTk5dk53?oc=5",
-      "published_at": "2026-10-08T18:04:00+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "Warsaw Tech Week 2026 za nami. Ponad 10,5 tysiąca odwiedzających",
-      "summary": "Zakończyła się pierwsza edycja wydarzenia Warsaw Tech Week 2026, która przyciągnęła tłumy entuzjastów nowych technologii. Impreza zgromadziła ponad 10,5 tysiąca uczestników. Sukces frekwencyjny świadczy o rosnącym znaczeniu Warszawy na technologicznej mapie Europy.",
-      "why_it_matters": "To dowód na dynamiczny rozwój polskiej sceny technologicznej i startupowej.",
+      "title": "Microsoft testuje całkowicie odświeżoną wyszukiwarkę w systemie Windows 11",
+      "summary": "Microsoft przygotowuje duże odświeżenie Windows Search, stawiając na szybkość, lepsze dopasowanie wyników i nowoczesny interfejs. Nowa funkcja pozwoli także na wykonywanie prostych zadań systemowych bezpośrednio z poziomu wyszukiwarki.",
+      "why_it_matters": "Wyszukiwarka to jeden z najczęściej używanych elementów systemu, a jej poprawa bezpośrednio wpłynie na wygodę codziennej pracy milionów użytkowników.",
       "category": "AI i technologia",
       "topics": [
-        "Warsaw Tech Week",
-        "technologia",
-        "konferencja"
+        "Microsoft",
+        "Windows 11",
+        "Windows Search",
+        "Aktualizacja systemu"
       ],
-      "editorial_score": 7.0,
+      "editorial_score": 8.8,
       "digest": {
-        "what_happened": "Podsumowano pierwszą edycję Warsaw Tech Week 2026, w której wzięło udział ponad 10,5 tysiąca osób. Konferencja stała się miejscem wymiany wiedzy i prezentacji innowacji. Wydarzenie spotkało się z dużym odzewem branży.",
+        "what_happened": "Microsoft uruchomił testy nowej wersji Windows Search opartej na WinUI 3, która charakteryzuje się wyższą wydajnością i mniejszym zużyciem pamięci. Wyszukiwarka zyskała nowy interfejs, dokładniejsze dopasowanie wyników oraz funkcje launchera pozwalające m.in. na sterowanie ustawieniami systemu.",
         "key_points": [
-          "Ponad 10 500 odwiedzających na debiucie",
-          "Sukces organizacyjny Warsaw Tech Week",
-          "Prezentacja nowinek technologicznych"
+          "Nowa wyszukiwarka działa szybciej i zużywa mniej pamięci dzięki technologii WinUI 3.",
+          "Wprowadzono podgląd plików w czasie rzeczywistym oraz obsługę zadań systemowych.",
+          "Funkcja jest obecnie testowana przez programistów i użytkowników z kręgu Windows Insiders."
         ],
-        "context": "Warszawa przyciąga coraz więcej międzynarodowych wydarzeń technologicznych.",
-        "what_next": "Organizatorzy zapowiadają kontynuację projektu w kolejnych latach."
+        "context": "Windows Search od dłuższego czasu spotykał się z krytyką użytkowników Windows 11 ze względu na wolne działanie i ograniczone możliwości.",
+        "what_next": "W przyszłym roku nowa wyszukiwarka ma zostać zintegrowana z menu Start oraz dopasowana do różnych konfiguracji paska zadań."
       },
-      "source": "Chip.pl",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNR21SZ05jTmdBaTRrZHl4UGFyc0gzX3M3MVVVRTFnc0FfY3pOLWdNclNRX3V3YlBXc0tBQ0pQbUcwR1lEclFTWVhRNGxqdnNlbU16WHhaRXlyUkxPdVN1SExjYmNBMmxQV2p5UnZyT1NMMDdXUFpoVHRSSUxwRTE4N3c1UEZlZw?oc=5",
-      "published_at": "2026-10-08T13:30:00+00:00",
-      "full_text_used": false
+      "source": "The Verge",
+      "url": "https://www.theverge.com/news/1008320/microsoft-windows-search-overhaul-windows-11",
+      "published_at": "2026-10-08T15:30:21-04:00",
+      "full_text_used": true
     },
     {
-      "title": "AI załatwia podwyżki pensji. Polscy pracownicy już to zauważyli",
-      "summary": "Sztuczna inteligencja zaczyna realnie wpływać na portfele Polaków, pomagając w wywalczeniu wyższych pensji. Osoby potrafiące korzystać z narzędzi AI stają się cenniejszymi pracownikami. Automatyzacja i wzrost efektywności przekładają się na korzyści finansowe.",
-      "why_it_matters": "Kompetencje z zakresu AI stają się bezpośrednią przepustką do wyższych zarobków.",
-      "category": "Praca i kariera",
+      "title": "Microsoft 365 pozwala dzielić się korzyściami AI w planach rodzinnych",
+      "summary": "Subskrybenci pakietów Microsoft 365 Family i Premium zyskają możliwość udostępniania funkcji sztucznej inteligencji oraz Copilot pozostałym członkom planu. Jednocześnie zmieniono zasady dotyczące przestrzeni dyskowej OneDrive.",
+      "why_it_matters": "To ważna zmiana dla domowych użytkowników subskrypcji, którzy dotychczas nie mogli legalnie korzystać z funkcji AI w ramach jednego wspólnego abonamentu.",
+      "category": "AI i technologia",
       "topics": [
-        "AI",
-        "podwyżki",
-        "wynagrodzenia",
-        "automatyzacja"
+        "Microsoft 365",
+        "Copilot",
+        "Subskrypcje",
+        "Sztuczna inteligencja"
       ],
-      "editorial_score": 7.0,
+      "editorial_score": 8.8,
       "digest": {
-        "what_happened": "Zauważono trend, w którym wdrożenie narzędzi AI do codziennej pracy przekłada się na podwyżki dla pracowników. Zastosowanie technologii podnosi wydajność, co pracodawcy nagradzają finansowo. Zjawisko to zyskuje na popularności w polskich firmach.",
+        "what_happened": "Microsoft zapowiedział, że użytkownicy planów rodzinnych będą mogli dzielić się funkcjami Copilot i narzędziami sztucznej inteligencji z maksymalnie pięcioma innymi osobami. Nowa polityka obejmuje także uelastycznienie limitów użycia AI oraz zmianę dotychczasowej przestrzeni dyskowej.",
         "key_points": [
-          "Wpływ AI na wzrost wynagrodzeń",
-          "Zwiększona efektywność dzięki technologii",
-          "Nowe trendy płacowe na rynku"
+          "Funkcje Copilot i sztucznej inteligencji będą dostępne dla wszystkich członków planu rodzinnego.",
+          "Indywidualne limity 1 TB OneDrive na osobę zostaną zastąpione wspólną pulą 2 TB dla całego gospodarstwa domowego.",
+          "Nowe zasady zaczną obowiązywać po pierwszym odnowieniu subskrypcji po 2 maja 2027 roku."
         ],
-        "context": "Rynek nagradza osoby szybko adoptujące nowoczesne rozwiązania technologiczne.",
-        "what_next": "Można oczekiwać rosnącego nacisku na szkolenia z zakresu sztucznej inteligencji w firmach."
+        "context": "Do tej pory z funkcji AI w ramach pakietów Microsoft 365 mógł korzystać wyłącznie główny właściciel konta.",
+        "what_next": "Zmiany w subskrypcjach będą wprowadzane stopniowo w nadchodzących miesiącach."
       },
-      "source": "Bizblog.pl",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMFY4N0xpSXo1eEg2clEwTm1CZzRkUGgxOGU0SEE2aXZZallMVDFQdy1PTFpFTmZLUHpvaG5PeEo2VXBJbXpuX3BDbHdVZEtyYUozYjFqVEhlcVF6V3YySlJjdW5qczhXa0lNWmNvOVNMZW95WXNfemstZjRBaldKSzlGVHluOHlrNWRrdC1R?oc=5",
-      "published_at": "2026-10-08T14:51:00+00:00",
-      "full_text_used": false
+      "source": "The Verge",
+      "url": "https://www.theverge.com/news/1008581/microsoft-365-family-premium-shared-ai-features-storage-changes",
+      "published_at": "2026-10-09T03:14:32-04:00",
+      "full_text_used": true
     },
     {
-      "title": "Netflix zaprezentuje 27-minutowy pokaz rozgrywki z GTA 6 na PS5",
-      "summary": "Fani wyczekiwani hitu Rockstar Games mogą liczyć na sporą dawkę materiałów wideo. Netflix zapowiedział specjalny, 27-minutowy pokaz rozgrywki z gry GTA 6 uruchomionej bezpośrednio na konsoli PS5. To jedno z najbardziej wyczekiwanych wydarzeń w branży gamingowej.",
-      "why_it_matters": "Prezentacja tak obszernego materiału z rozgrywki da graczom przedsmak tego, jak tytuł będzie działał na konsoli.",
-      "category": "Gaming",
-      "topics": [
-        "GTA 6",
-        "PS5",
-        "Netflix",
-        "rozgrywka"
-      ],
-      "editorial_score": 6.95,
-      "digest": {
-        "what_happened": "Zapowiedziono 27-minutową prezentację rozgrywki GTA 6 na PS5, która zostanie pokazana za pośrednictwem serwisu Netflix. Materiał ma pochodzić bezpośrednio z konsoli. Fani spekulują na temat jakości grafiki i płynności gry.",
-        "key_points": [
-          "27-minutowy pokaz rozgrywki",
-          "Prezentacja z konsoli PS5",
-          "Udział platformy Netflix w promocji"
-        ],
-        "context": "Wokół premiery GTA 6 narosło ogromne oczekiwanie społeczności graczy.",
-        "what_next": "Warto śledzić oficjalną transmisję i reakcje graczy po emisji materiału."
-      },
-      "source": "PPE",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNS3p3RDFUZjB5eGE4U0JHSUhjcVIwRGhkcGlyZlNjZF93cnJDUVJsaElhcExlVFhYZDRyaTIxeGtta0V1SUxHRk1BTFR2REpHc1pLY01FUm5TcFg4aW91a3lnRDNlM3o0YjlYcGtweFlMNi1WYTFhR3VIZk0yTUc5WUpCZElQV3gtYmIwbFhwbm1mdGJKcllvbk5GcTZQV2hLWWhZZVlfOTcyVG94T0NRQzhpSHdaTzBJMXJEZlAxM1Yxalp2UUtFdGxKOXBic3M?oc=5",
-      "published_at": "2026-10-09T08:29:53+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "AI napędza giełdową hossę mimo wysokich stóp. Wraca porównanie do bańki internetowej",
-      "summary": "Sektor sztucznej inteligencji napędza wzrosty na giełdach, ignorując wysokie stopy procentowe. Analitycy coraz częściej dostrzegają analogie do legendarnej bańki internetowej z przełomu wieków. Sytuacja ta budzi zarówno entuzjazm inwestorów, jak i obawy o stabilność rynku.",
-      "why_it_matters": "To kluczowe zjawisko dla globalnych rynków finansowych i inwestorów giełdowych.",
+      "title": "Brytyjski regulator bada falę oszukańczych połączeń dotyczących WhatsAppa",
+      "summary": "Wielka Brytania odnotowuje gwałtowny wzrost liczby zautomatyzowanych połączeń telefonicznych zachęcających do kontaktu przez WhatsApp. Urząd ds. ochrony danych wszczął dochodżenie w sprawie potencjalnych oszustw rekrutacyjnych.",
+      "why_it_matters": "Sprawa dotyczy milionów potencjalnychofiar narażonych na wyłudzenia danych lub udział w przestępstwach finansowych.",
       "category": "Finanse i inwestowanie",
       "topics": [
-        "AI",
-        "główna hossa",
-        "rynki finansowe"
+        "Wielka Brytania",
+        "Oszustwa telefoniczne",
+        "WhatsApp",
+        "Cyberbezpieczeństwo"
       ],
-      "editorial_score": 6.8,
+      "editorial_score": 8.8,
       "digest": {
-        "what_happened": "Hossa na giełdach napędzana jest przez boom technologiczny wokół sztucznej inteligencji, pomimo niesprzyjających stóp procentowych. Eksperci zaczynają przypominać realia bańki dot-com. Inwestorzy dzielą się na zwolenników dalszych wzrostów i ostrożnych krytyków.",
+        "what_happened": "Brytyjski urząd ICO odnotował we wrześniu ponad 3600 skarg na zautomatyzowane połączenia z nagraniami oferującymi fałszywą pracę i proszącymi o kontakt na WhatsAppie. Eksperci szacują, że skala zjawiska jest znacznie większa i dotyka milionów odbiorców.",
         "key_points": [
-          "Wzrosty na giełdach dzięki spółkom AI",
-          "Porównania do bańki internetowej",
-          "Wpływ wysokich stóp na rynki"
+          "Liczba skarg na automatyczne połączenia osiągnęła pięcioletnie maksimum.",
+          "Oszuści wykorzystują podszywanie się pod numery krajowe, choć połączenia pochodzą z zagranicy.",
+          "Eksperci ostrzegają, że celem może być kradzież danych lub wciąganie ofiar w pranie brudnych pieniędzy."
         ],
-        "context": "Rynek technologiczny notuje rekordowe wyceny od dłuższego czasu.",
-        "what_next": "Warto monitorować wskaźniki wycen spółek technologicznych pod kątem ryzyka korekty."
+        "context": "Zjawisko masowych połączeń zautomatyzowanych stało się poważnym wyzwaniem dla organów ścigania i operatorów telekomunikacyjnych.",
+        "what_next": "Służby apelują o ignorowanie podejrzanych połączeń, ich blokowanie oraz zgłaszanie odpowiednim instytucjom."
       },
-      "source": "CEO Magazyn",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRTBwTjJ0ZU9oenBqYURQXzVJVlN4QVRqalB4ZFo5Y2RFOXhMMUc0cEdtb24xdDVSUThwbE1RREZQcDVSVlE0dHBJc3BMUVMxdGI1ckx0Ti1ZMnY4SHlralBXLUlEU0dzREIwQnRubGczdjg0LUVXb2YtMVBYMldXRkJ1WFdfZmlGRDdfMV9Sc0E4cXJMY1hRNmhib3pLcEtfY2x0YnkyM0FpX1VrWWJxdUh6VQ?oc=5",
-      "published_at": "2026-10-08T12:31:38+00:00",
-      "full_text_used": false
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cqd09g4l2k9yo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-08T23:05:09+00:00",
+      "full_text_used": true
     },
     {
-      "title": "Nowe auto z Japonii za 53 000 zł: oszczędne i wygodne",
-      "summary": "Na rynku motoryzacyjnym pojawiła się propozycja nowego samochodu z Japonii w cenie zaledwie 53 000 zł. Model ten wyróżnia się oszczędnością oraz komfortem użytkowania w tej klasie cenowej. Może stać się hitem wśród kierowców szukających budżetowych rozwiązań.",
-      "why_it_matters": "Dostępność tanich, nowych samochodów jest obecnie rzadkością na rynku motoryzacyjnym.",
-      "category": "Motoryzacja",
+      "title": "Apple zapowiada jesienne wydarzenia z nowymi komputerami Mac i iPadami",
+      "summary": "Według doniesień medialnych Apple planuje pod koniec października zaprezentować nowego MacBooka Pro z ekranem dotykowym oraz odświeżony tablet iPad Mini.",
+      "why_it_matters": "Wprowadzenie ekranu dotykowego do laptopów Apple byłoby przełomową zmianą w wieloletniej strategii firmy dotyczącej komputerów przenośnych.",
+      "category": "AI i technologia",
       "topics": [
-        "tanie auto",
-        "rynek motoryzacyjny",
-        "Japonia"
+        "Apple",
+        "MacBook",
+        "Ekran dotykowy",
+        "Nowe technologie"
       ],
-      "editorial_score": 6.65,
+      "editorial_score": 8.75,
       "digest": {
-        "what_happened": "Zaprezentowano nowy model samochodu z Japonii wyceniony na 53 000 zł. Pojazd łączy cechy ekonomicznej jazdy oraz wygody. Oferta skierowana jest do osób poszukujących nowego auta w przystępnej cenie.",
+        "what_happened": "Bloomberg poinformował, że Apple zorganizuje pod koniec października wydarzenie dedykowane nowym urządzeniom. Wśród planowanych nowości znajdują się lżejsze MacBooki Pro z dotykowymi ekranami OLED i interfejsem Dynamic Island, a także nowy iPad Mini.",
         "key_points": [
-          "Cena auta na poziomie 53 000 zł",
-          "Pochodzenie: Japonia",
-          "Obietnica oszczędności i wygody"
+          "Apple planuje zaprezentować MacBooka Pro z dotykowym ekranem OLED pod koniec października.",
+          "Nowe komputery mają również zachować tradycyjne wersje oparte na układach M6.",
+          "Aktualizacja iPada Mini obejmie m.in. zmianę położenia przedniej kamery oraz lepszy system głośników."
         ],
-        "context": "Większość nowych aut na rynku drastycznie drożeje, co czyni tę ofertę wyjątkową.",
-        "what_next": "Warto sprawdzić dostępność modelu w polskich salonach."
+        "context": "Doniesienia pojawiają się tuż obok zapowiedzi innego, wcześniejszego wydarzenia Apple skupionego na akcesoriach smart home.",
+        "what_next": "Oficjalna prezentacja ma odbyć się w formule łączącej relację online ze spotkaniem dla prasy około 27 października."
       },
-      "source": "Dziennik.pl",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPc1IzRU9sOUt3TXBkV2xGdFByenBDNHBMUk5fb05mUEkwVWItWlBqREJVblQwUU1fY1Y4NVdNM0dMNzQ3QVBLZXZfc0RMaWhxclktVzRKcHZWdkhkTXlMdnJ4Wk5hZFcwQWRLTi1UaXBNZ2FEYUxqbEVZcVVmdjhoRDl6Ml9FV2dLYW1rQ2MxSGpYeHUwN2NUQm5ZLWJmQ0VEZnVjaVJ5SWZMVVVVY0prWEFxRG9TR1RmXzJ0RWxsemg?oc=5",
-      "published_at": "2026-10-08T03:50:52+00:00",
-      "full_text_used": false
-    },
-    {
-      "title": "Xbox Game Pass na 8 października: aż 3 premierowe gry",
-      "summary": "Microsoft zaktualizował ofertę usługi Xbox Game Pass, dodając do niej trzy zupełnie nowe gry w dniu ich premiery. Abonenci mogą od razu pobierać i testować nowe tytuły bez dodatkowych opłat. To kolejna mocna aktualizacja biblioteki dla graczy.",
-      "why_it_matters": "Usługa Game Pass stale wzbogaca swoją ofertę, przyciągając nowych subskrybentów.",
-      "category": "Gaming",
-      "topics": [
-        "Xbox Game Pass",
-        "premiery gier",
-        "Microsoft"
-      ],
-      "editorial_score": 6.45,
-      "digest": {
-        "what_happened": "Microsoft udostępnił w ramach Xbox Game Pass trzy premierowe produkcje. Subskrybenci zyskali natychmiastowy dostęp do nowych gier w dniu ich debiutu na rynku. Posunięcie to wzmacnia pozycję abonamentu.",
-        "key_points": [
-          "Trzy gry w ofercie Day One",
-          "Aktualizacja katalogu Xbox Game Pass",
-          "Dostępność dla abonentów Microsoftu"
-        ],
-        "context": "Model abonamentowy stał się fundamentem strategii wydawniczej Microsoftu.",
-        "what_next": "Warto sprawdzać kolejne zapowiedzi Microsoftu dotyczące przyszłych dodawanych gier."
-      },
-      "source": "GRYOnline.pl",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQVkzX20yeF9TZmZrdGs1SVozbFQzMXpXX2R0VDktQjhDbGJfc1pGZlA4TWFCTXNpOU9vbzA5SExDekFwR19ZSWhocTM1V1VBMTZpN254ZlpZMUFjTnE5cXFNR0FiZ2FfQ3ltNHhuMjhYOVhUU2tNLWtNVUhFUHQ3M3daY0JFeVRqZFBrSmJzQlNUQXBmNlFGZmtzeEwtejg?oc=5",
-      "published_at": "2026-10-08T08:19:31+00:00",
-      "full_text_used": false
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1008422/apple-macbook-pro-touchscreen-ipad-mini-rumor",
+      "published_at": "2026-10-08T16:32:21-04:00",
+      "full_text_used": true
     }
   ],
   "stats": {
-    "candidates": 46,
-    "ranked": 22,
+    "candidates": 118,
+    "ranked": 36,
     "published": 20
   }
 }
