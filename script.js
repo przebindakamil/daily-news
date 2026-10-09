@@ -610,28 +610,31 @@ function splitPersonalized(items){
     .filter(item=>isCategoryEnabled(item.category))
     .sort((a,b)=>personalizedScore(b)-personalizedScore(a));
 
-  const reserveBubble=userPreferences.outsideBubble&&limit>2?1:0;
-  const personalLimit=Math.max(1,limit-reserveBubble);
-  const selected=diversifyItems(enabled,personalLimit);
-  const used=new Set(selected.map(itemId));
+  const isOmnibus=userPreferences.preset==='omnibus';
+  const reserveBubble=!isOmnibus&&userPreferences.outsideBubble&&limit>2?1:0;
+  const mainLimit=Math.max(1,limit-reserveBubble);
+  const main=diversifyItems(enabled,mainLimit);
+  const used=new Set(main.map(itemId));
 
   let outsideBubble=null;
-  if(userPreferences.outsideBubble){
+  if(!isOmnibus&&userPreferences.outsideBubble){
     const candidates=items
       .filter(item=>!used.has(itemId(item)))
       .filter(item=>!isCategoryEnabled(item.category)||categoryWeight(item)<=5)
       .sort((a,b)=>editorialScore(b)-editorialScore(a));
     outsideBubble=candidates[0]||null;
-    if(outsideBubble) used.add(itemId(outsideBubble));
   }
 
-  if(!outsideBubble&&selected.length<limit){
-    const fallback=enabled.find(item=>!used.has(itemId(item)));
-    if(fallback) selected.push(fallback);
+  if(!outsideBubble&&main.length<limit){
+    for(const item of enabled){
+      if(main.length>=limit) break;
+      if(used.has(itemId(item))) continue;
+      main.push(item);
+      used.add(itemId(item));
+    }
   }
 
-  const forYouCount=Math.min(selected.length,currentDailyLimit()<=5?4:5);
-  return {forYou:selected.slice(0,forYouCount),outsideBubble,rest:selected.slice(forYouCount)};
+  return {main,outsideBubble};
 }
 
 function renderCategoryNav(all){
@@ -684,20 +687,22 @@ function render(data){
     ? allRaw.filter(item=>item.category===activeCategoryFilter)
     : allRaw;
 
-  const {forYou,outsideBubble,rest}=splitPersonalized(all);
+  const {main,outsideBubble}=splitPersonalized(all);
   const isToday=activeDate===archiveDates[0];
-  const personalSection=renderSection(isToday?'Dla Ciebie':'Najlepiej dopasowane',forYou,true);
-  if(personalSection) root.appendChild(personalSection);
+  const isOmnibus=userPreferences.preset==='omnibus';
+  const mainTitle=isToday
+    ? (isOmnibus?'Dzisiaj warto wiedzieć':'Dla Ciebie')
+    : (isOmnibus?'Warto było wiedzieć':'Najlepiej dopasowane');
+
+  const mainSection=renderSection(mainTitle,main,true);
+  if(mainSection) root.appendChild(mainSection);
 
   if(outsideBubble){
     const bubble=renderSection('Poza twoją bańką',[outsideBubble],false,'outside-bubble-section');
     if(bubble) root.appendChild(bubble);
   }
 
-  const restSection=renderSection('Jeszcze warto zobaczyć',rest,false);
-  if(restSection) root.appendChild(restSection);
-
-  if(!forYou.length&&!outsideBubble&&!rest.length){
+  if(!main.length&&!outsideBubble){
     root.innerHTML='<p class="empty">Brak materiałów w wybranych kategoriach. Zmień zainteresowania w „Dostosuj”.</p>';
   }
 }
