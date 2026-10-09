@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "news.json"
 
 API_KEY = os.environ.get("GEMINI_API_KEY")
-MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite")
 PER_CATEGORY = int(os.environ.get("NEWS_PER_CATEGORY", "2"))
 
 CATEGORIES = {
@@ -119,7 +119,8 @@ Materiały:
     }
 
     response = requests.post(endpoint, json=payload, timeout=75)
-    response.raise_for_status()
+    if not response.ok:
+        raise RuntimeError(f"Gemini API error {response.status_code} for model {MODEL}: {response.text[:1200]}")
     body = response.json()
 
     text = body["candidates"][0]["content"]["parts"][0]["text"]
