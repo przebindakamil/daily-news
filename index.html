@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Codzienny, krótki przegląd najważniejszych wiadomości z Polski i świata.">
+  <title>Daily News</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./">DAILY NEWS</a>
+      <span id="updated-at" class="updated-at">Ładowanie…</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Codzienny przegląd</p>
+      <h1>Najważniejsze rzeczy.<br><span>Bez przewijania godzinami.</span></h1>
+      <p class="lead">Kilka najważniejszych wiadomości z technologii, świata, piłki, finansów, nauki i kultury.</p>
+    </section>
+
+    <nav id="category-nav" class="category-nav" aria-label="Kategorie"></nav>
+
+    <section id="news-root" class="news-root" aria-live="polite">
+      <p class="loading">Ładowanie wiadomości…</p>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span>Daily News</span>
+    <span>Każda wiadomość prowadzi do źródła.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
