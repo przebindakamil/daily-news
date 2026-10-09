@@ -11,7 +11,10 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="./">DAILY NEWS</a>
-      <span id="updated-at" class="updated-at">Ładowanie…</span>
+      <div class="header-actions">
+        <span id="updated-at" class="updated-at">Ładowanie…</span>
+        <button id="preferences-toggle" class="preferences-toggle" type="button">Dostosuj</button>
+      </div>
     </div>
   </header>
 
@@ -34,6 +37,18 @@
       <p class="loading">Ładowanie wiadomości…</p>
     </section>
   </main>
+
+  <aside id="preferences-panel" class="preferences-panel" hidden aria-label="Preferencje wiadomości">
+    <div class="preferences-backdrop" data-close-preferences></div>
+    <section class="preferences-card" role="dialog" aria-modal="true" aria-labelledby="preferences-title">
+      <button class="preferences-close" type="button" data-close-preferences aria-label="Zamknij">×</button>
+      <p class="eyebrow">Personalizacja</p>
+      <h2 id="preferences-title">Co chcesz widzieć częściej?</h2>
+      <p class="preferences-intro">Ustawienia są zapisywane tylko w tej przeglądarce. Nie wymagają konta ani dodatkowych wywołań AI.</p>
+      <div id="preferences-list" class="preferences-list"></div>
+      <button id="preferences-reset" class="preferences-reset" type="button">Przywróć domyślne</button>
+    </section>
+  </aside>
 
   <footer class="wrap footer">
     <span>Daily News</span>
