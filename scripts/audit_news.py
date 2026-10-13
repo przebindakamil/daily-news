@@ -361,8 +361,8 @@ def save_report(report):
                       f"wydarzeń w próbie: {report['metrics']['audited_events']}; "
                       f"pominiętych: {report['metrics']['missing']}.\n\n")
             if report["status"] != "complete":
-                out.write(f"**Ograniczenie:** {report['incomplete_reason']}\n\n")
-            out.write(f"Raport: \`reports/audits/{week}.json\`\n")
+                out.write(f"**Ograniczenie:** {report.get('incomplete_reason') or 'Brak pełnych danych źródłowych'}\n\n")
+            out.write(f"Raport: `reports/audits/{week}.json`\n")
 
 
 def run(week=None, now=None):
