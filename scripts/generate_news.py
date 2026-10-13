@@ -172,7 +172,7 @@ def add_feed_entries(items, seen, feed_url, category, tier, max_items, window_st
         "entries_read": len(feed.entries),
         "candidates_added": len(items) - initial_count,
         "feed_url": feed_url,
-        "feed_parse_warning": bool(feed.bozo),
+        "feed_parse_warning": bool(getattr(feed, "bozo", False)),
     })
 
 
@@ -217,7 +217,7 @@ def add_google_query(items, seen, query, category, tier, max_items, window_start
         "origin": origin,
         "entries_read": len(feed.entries),
         "candidates_added": len(items) - initial_count,
-        "feed_parse_warning": bool(feed.bozo),
+        "feed_parse_warning": bool(getattr(feed, "bozo", False)),
     })
 
 
