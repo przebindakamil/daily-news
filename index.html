@@ -6,6 +6,7 @@
   <meta name="description" content="Codzienny, krótki przegląd najważniejszych wiadomości z Polski i świata.">
   <title>Daily News</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="audit.css">
 </head>
 <body>
   <header class="site-header">
@@ -14,6 +15,7 @@
       <nav class="main-nav" aria-label="Główna nawigacja">
         <a href="#today" data-view-link="today">Przegląd</a>
         <a href="#categories" data-view-link="categories">Kategorie</a>
+        <a href="#audit" data-view-link="audit">Audyt</a>
         <button id="nav-archive" type="button">Archiwum</button>
         <button id="nav-saved" type="button">Zapisane</button>
       </nav>
@@ -69,6 +71,65 @@
         <button id="categories-back" class="categories-back" type="button" hidden>Wszystkie kategorie</button>
       </div>
       <div id="categories-root"></div>
+    </section>
+
+    <section id="audit-view" class="audit-view" hidden aria-labelledby="audit-title">
+      <div class="audit-heading">
+        <div>
+          <p class="eyebrow">Jakość informacji</p>
+          <h2 id="audit-title">Audyt redakcyjny</h2>
+          <p>Sprawdzamy, czy najważniejsze wydarzenia tygodnia trafiły do Daily News. Wyniki są zapisywane i można je porównywać w czasie.</p>
+        </div>
+        <label class="audit-week-picker" for="audit-week-select">Wybierz tydzień
+          <select id="audit-week-select" aria-label="Wybierz tydzień audytu"></select>
+        </label>
+      </div>
+
+      <div id="audit-message" class="audit-message" role="status">Wczytywanie historii audytów…</div>
+      <div id="audit-dashboard" hidden>
+        <p id="audit-period" class="audit-period"></p>
+        <div id="audit-metrics" class="audit-metrics"></div>
+        <div class="audit-panels">
+          <section class="audit-panel" aria-labelledby="audit-trend-heading">
+            <h3 id="audit-trend-heading">Trend jakości</h3>
+            <p class="audit-section-note">Próbkowy wynik pokrycia z kolejnych tygodni</p>
+            <div id="audit-trend" class="audit-trend"></div>
+          </section>
+          <section class="audit-panel" aria-labelledby="audit-categories-heading">
+            <h3 id="audit-categories-heading">Pokrycie kategorii</h3>
+            <p class="audit-section-note">Tylko wydarzenia uwzględnione w niezależnej próbie</p>
+            <div id="audit-category-results" class="audit-categories"></div>
+          </section>
+        </div>
+        <section class="audit-panel audit-events-section" aria-labelledby="audit-events-heading">
+          <div class="audit-events-head">
+            <div>
+              <h3 id="audit-events-heading">Analiza wydarzeń</h3>
+              <p class="audit-section-note">Wydarzenia sprawdzone względem opublikowanych wiadomości, wraz ze źródłami</p>
+            </div>
+            <label for="audit-status-filter">Pokaż
+              <select id="audit-status-filter">
+                <option value="all">Wszystkie</option>
+                <option value="missing">Pominięte</option>
+                <option value="partial">Częściowo opisane</option>
+                <option value="covered">Uwzględnione</option>
+              </select>
+            </label>
+          </div>
+          <div id="audit-events" class="audit-events"></div>
+        </section>
+        <div class="audit-panels">
+          <section class="audit-panel">
+            <h3>Aktywność redakcji</h3>
+            <div id="audit-daily" class="audit-daily"></div>
+          </section>
+          <section class="audit-panel">
+            <h3>Diagnostyka i ograniczenia</h3>
+            <div id="audit-diagnostics" class="audit-diagnostics"></div>
+          </section>
+        </div>
+        <p id="audit-methodology" class="audit-methodology"></p>
+      </div>
     </section>
   </main>
 
@@ -179,6 +240,7 @@
     <span>Każda wiadomość prowadzi do źródła.</span>
   </footer>
 
+  <script src="audit.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
