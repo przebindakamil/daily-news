@@ -938,7 +938,8 @@ def save_coverage_report(report):
     COVERAGE_DIR.mkdir(parents=True, exist_ok=True)
     path = COVERAGE_DIR / f"{report['date']}.json"
     path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+    # These diagnostics are private editorial data, not a public Actions summary.
+    summary_path = None
     if summary_path:
         with open(summary_path, "a", encoding="utf-8") as out:
             out.write(f"## Daily News — kontrola pokrycia {report['date']}\n\n")
