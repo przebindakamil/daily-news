@@ -87,6 +87,29 @@ niekoniecznie dokładnie o 06:00.
 Test ręczny: `Actions → Daily news → Run workflow`. Powtórne uruchomienie
 tego samego dnia może ponownie wygenerować wydanie za wczoraj.
 
+## Kontrola pominiętych ważnych wiadomości
+
+Po każdym wygenerowaniu wydania skrypt zapisuje raport:
+`reports/coverage/YYYY-MM-DD.json`.
+
+Raport pokazuje:
+- ile wiadomości zebrały poszczególne źródła RSS i zapytania Google News;
+- czy któreś źródło zwróciło pusty kanał / ostrzeżenie parsera;
+- ile kandydatów znaleziono, ile oceniono i ile ostatecznie opublikowano;
+- jakie tematy wykryto, lecz odpadły w selekcji (m.in. Nagrody Nobla,
+  wyniki wyborów, decyzje banków centralnych, katastrofy i rozejmy);
+- 15 najwyżej ocenianych wiadomości, które nie weszły do finalnego wydania.
+
+Krótkie podsumowanie trafia także na stronę uruchomienia GitHub Actions,
+w sekcji **Job summary**. Lista wykrytych możliwych luk jest sygnałem do
+sprawdzenia, a nie automatycznym dowodem błędu. Brak ostrzeżeń **nie
+gwarantuje** pokrycia wszystkich wydarzeń na świecie.
+
+Zbieranie źródeł rozszerzono o niezależne kanały tematyczne Guardian,
+monitorowane zapytania dotyczące Nagrody Nobla i PAP oraz dwa kanały
+nagłówków dnia Google News (Polska / świat). Wydanie nadal ogranicza się
+do pełnego poprzedniego dnia według strefy Europe/Warsaw.
+
 ## Kategorie
 
 Domyślnie publikowane są 2 materiały z każdej kategorii:
