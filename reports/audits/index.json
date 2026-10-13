@@ -1,0 +1,15 @@
+{
+  "latest": "2026-W41",
+  "weeks": [
+    {
+      "week": "2026-W41",
+      "start_date": "2026-10-05",
+      "end_date": "2026-10-11",
+      "status": "incomplete",
+      "coverage_percent": null,
+      "audited_events": 0,
+      "missing": 0,
+      "published": 60
+    }
+  ]
+}
