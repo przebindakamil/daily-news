@@ -63,6 +63,48 @@ class CoverageReportTests(unittest.TestCase):
         self.assertEqual(report["category_coverage"]["AI i technologia"]["published"], 0)
         # The sample lacks a category field, so it is intentionally not classified.
 
+    def test_independent_headline_is_flagged_when_not_published(self):
+        reference_source = {
+            "name": "Global headlines",
+            "origin": "headline_feed",
+            "entries_read": 1,
+            "candidates_added": 1,
+            "feed_parse_warning": False,
+            "reference_headlines": [{
+                "title": "Nobel Prize awarded to two economists",
+                "url": "https://example.com/headline",
+                "published_at": "2026-10-12T11:00:00+00:00",
+            }],
+        }
+        report = news.build_coverage_report(
+            "2026-10-12", [], [], [],
+            source_stats=[reference_source]
+        )
+        audit = report["independent_headline_review"]
+        self.assertEqual(audit["total"], 1)
+        self.assertEqual(audit["potentially_missing"], 1)
+        self.assertEqual(audit["headlines"][0]["stage"], "review")
+
+    def test_independent_headline_matching_published_url_is_not_flagged(self):
+        reference_source = {
+            "name": "Global headlines",
+            "origin": "headline_feed",
+            "entries_read": 1,
+            "candidates_added": 1,
+            "feed_parse_warning": False,
+            "reference_headlines": [{
+                "title": "Nobel Prize awarded to two economists",
+                "url": "https://example.com/headline",
+                "published_at": "2026-10-12T11:00:00+00:00",
+            }],
+        }
+        report = news.build_coverage_report(
+            "2026-10-12", [], [],
+            [{"url": "https://example.com/headline", "title": "Nagroda Nobla z ekonomii"}],
+            source_stats=[reference_source]
+        )
+        self.assertEqual(report["independent_headline_review"]["potentially_missing"], 0)
+
     def test_empty_feed_is_visible(self):
         source = {
             "name": "Missing feed", "origin": "direct_rss", "entries_read": 0,
