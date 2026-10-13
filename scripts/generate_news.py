@@ -245,7 +245,7 @@ def collect_candidates(window_start, window_end):
                 "discovery",
                 max_items=4,
                 window_start=window_start,
-            window_end=window_end,
+                window_end=window_end,
                 origin="broad_google",
             )
 
