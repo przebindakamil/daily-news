@@ -4,9 +4,44 @@ const auditDashboard = document.querySelector('#audit-dashboard');
 const auditMessage = document.querySelector('#audit-message');
 const auditWeekSelect = document.querySelector('#audit-week-select');
 const auditStatusFilter = document.querySelector('#audit-status-filter');
+const auditLogin = document.querySelector('#audit-login');
+const auditPasswordInput = document.querySelector('#audit-password');
+const auditLoginError = document.querySelector('#audit-login-error');
+let adminAuditPassword = null;
 let auditIndexPromise = null;
 let auditCurrentReport = null;
 const auditReportCache = new Map();
+
+async function auditDecrypt(json) {
+  if (!adminAuditPassword) throw new Error('Brak hasła administratora.');
+  if (json.version !== 1 || json.cipher !== 'AES-256-GCM' ||
+      json.kdf !== 'PBKDF2-SHA256' || json.iterations < 100000 ||
+      json.iterations > 1000000) {
+    throw new Error('Nieobsługiwany format raportu.');
+  }
+  const bytes = value => Uint8Array.from(atob(value), char => char.charCodeAt(0));
+  const passwordKey = await crypto.subtle.importKey(
+    'raw', new TextEncoder().encode(adminAuditPassword), 'PBKDF2',
+    false, ['deriveKey']
+  );
+  const key = await crypto.subtle.deriveKey(
+    {name:'PBKDF2',salt:bytes(json.salt),iterations:json.iterations,hash:'SHA-256'},
+    passwordKey,{name:'AES-GCM',length:256},false,['decrypt']
+  );
+  const raw = await crypto.subtle.decrypt(
+    {name:'AES-GCM',iv:bytes(json.nonce)},key,bytes(json.ciphertext)
+  );
+  return JSON.parse(new TextDecoder().decode(raw));
+}
+
+async function auditFetchEncrypted(url) {
+  const response=await fetch(url,{cache:'no-store'});
+  if (!response.ok) {
+    if (response.status===404) throw new Error('Raporty administratora nie są jeszcze skonfigurowane lub nie zostały wygenerowane.');
+    throw new Error('Nie udało się pobrać chronionego raportu.');
+  }
+  return auditDecrypt(await response.json());
+}
 
 function auditElement(tag, className, value) {
   const element = document.createElement(tag);
@@ -222,6 +257,8 @@ function auditRenderDiagnostics(report) {
 
 function auditRenderReport(report, index) {
   auditCurrentReport = report;
+  auditLogin.hidden = true;
+  auditLoginError.hidden = true;
   const complete = report.status==='complete';
   auditMessage.hidden = false;
   auditMessage.className = 'audit-message '+(complete?'audit-success':'audit-incomplete');
@@ -241,12 +278,17 @@ function auditRenderReport(report, index) {
 }
 
 async function auditFetchIndex() {
-  const result = await fetch('./reports/audits/index.json',{cache:'no-store'});
-  if (!result.ok) throw new Error('Brak indeksu audytów.');
-  return result.json();
+  return auditFetchEncrypted('./secure/audits/index.enc.json');
 }
 
 async function loadAuditDashboard(requestedWeek) {
+  if (!adminAuditPassword) {
+    auditDashboard.hidden = true;
+    auditMessage.hidden = true;
+    auditLogin.hidden = false;
+    return;
+  }
+  auditLogin.hidden = true;
   auditMessage.hidden = false;
   auditMessage.className = 'audit-message';
   auditMessage.textContent = 'Wczytywanie audytów…';
@@ -269,21 +311,41 @@ async function loadAuditDashboard(requestedWeek) {
     const chosen = weeks.find(w=>w.week===requestedWeek) ? requestedWeek : index.latest||weeks[0].week;
     auditWeekSelect.value = chosen;
     if (!auditReportCache.has(chosen)) {
-      const response = await fetch('./reports/audits/'+chosen+'.json',{cache:'no-store'});
-      if (!response.ok) throw new Error('Nie udało się pobrać raportu '+chosen+'.');
-      auditReportCache.set(chosen,await response.json());
+      auditReportCache.set(chosen,await auditFetchEncrypted('./secure/audits/'+chosen+'.enc.json'));
     }
     if (!location.hash.startsWith('#audit')) return;
     const visibleWeek = location.hash.startsWith('#audit/') ? location.hash.slice(7) : chosen;
     if (visibleWeek !== chosen) return;
     auditRenderReport(auditReportCache.get(chosen),index);
   } catch (error) {
+    adminAuditPassword = null;
+    auditIndexPromise = null;
+    auditReportCache.clear();
+    auditCurrentReport = null;
+    auditPasswordInput.value = '';
     auditDashboard.hidden = true;
-    auditMessage.hidden = false;
-    auditMessage.className = 'audit-message audit-incomplete';
-    auditMessage.textContent = 'Nie udało się wczytać audytu: '+error.message;
+    auditMessage.hidden = true;
+    auditLogin.hidden = false;
+    auditLoginError.hidden = false;
+    auditLoginError.textContent = 'Nie można odblokować audytu: '+error.message;
   }
 }
+
+auditLogin?.addEventListener('submit',event=>{
+  event.preventDefault();
+  const submitted = auditPasswordInput.value;
+  if (submitted.length < 16) {
+    auditLoginError.hidden = false;
+    auditLoginError.textContent = 'Hasło audytu musi mieć przynajmniej 16 znaków.';
+    return;
+  }
+  adminAuditPassword = submitted;
+  auditPasswordInput.value = '';
+  auditLoginError.hidden = true;
+  auditIndexPromise = null;
+  auditReportCache.clear();
+  loadAuditDashboard(location.hash.startsWith('#audit/') ? location.hash.slice(7) : null);
+});
 
 auditWeekSelect?.addEventListener('change',()=>auditSelectWeek(auditWeekSelect.value));
 auditStatusFilter?.addEventListener('change',()=>{
