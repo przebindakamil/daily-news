@@ -383,9 +383,7 @@ def run(week=None, now=None):
         matches = compare_publication(events, week_data["published"])
     report = build_report(label, monday, sunday, week_data, events, matches)
     save_report(report)
-    print(f"Audyt {label}: {report['status']}; "
-          f"pokrycie {report['metrics']['coverage_percent']}; "
-          f"opublikowanych {report['metrics']['published']}.")
+    print(f"Zakończono tworzenie prywatnego raportu audytu {label}.")
     return report
 
 
