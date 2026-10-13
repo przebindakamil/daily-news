@@ -877,6 +877,28 @@ def build_coverage_report(day, candidates, ranked, selected, source_stats=None):
         "candidate_count": len(candidates),
         "ranked_count": len(ranked),
         "published_count": len(selected),
+        "candidate_pool": [
+            {
+                "title": item.get("title", ""),
+                "url": item.get("url", ""),
+                "source": item.get("source", ""),
+                "category": item.get("category_hint", ""),
+                "published_at": item.get("published_at", ""),
+                "source_tier": item.get("source_tier", ""),
+                "origin": item.get("discovery_origin", ""),
+            }
+            for item in candidates
+        ],
+        "ranked_pool": [
+            {
+                "title": item.get("title", ""),
+                "url": item.get("url", ""),
+                "source": item.get("source", ""),
+                "category": item.get("category", ""),
+                "editorial_score": item.get("editorial_score", 0),
+            }
+            for item in ranked
+        ],
         "source_stats": source_stats,
         "independent_headline_review": {
             "total": len(reference_headlines),
