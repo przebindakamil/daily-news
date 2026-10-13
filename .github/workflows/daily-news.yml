@@ -47,7 +47,7 @@ jobs:
         run: |
           git config user.name "daily-news-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/news.json data/current.json data/archive
+          git add data/news.json data/current.json data/archive reports/coverage
           if git diff --cached --quiet; then
             echo "No content changes to commit."
           else
