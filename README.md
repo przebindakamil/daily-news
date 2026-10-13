@@ -89,8 +89,9 @@ tego samego dnia może ponownie wygenerować wydanie za wczoraj.
 
 ## Kontrola pominiętych ważnych wiadomości
 
-Po każdym wygenerowaniu wydania skrypt zapisuje raport:
-`reports/coverage/YYYY-MM-DD.json`.
+Po każdym wygenerowaniu wydania skrypt przygotowuje wewnętrzny raport
+`reports/coverage/YYYY-MM-DD.json`, a przed commitem szyfruje go do
+`secure/coverage/YYYY-MM-DD.enc.json` (wymaga sekretu `AUDIT_PASSWORD`).
 
 Raport pokazuje:
 - ile wiadomości zebrały poszczególne źródła RSS i zapytania Google News;
@@ -104,10 +105,10 @@ Raport pokazuje:
   Niedopasowane nagłówki wymagają oceny człowieka, bo mogą być tą samą
   historią opublikowaną pod innym tytułem.
 
-Krótkie podsumowanie trafia także na stronę uruchomienia GitHub Actions,
-w sekcji **Job summary**. Lista wykrytych możliwych luk jest sygnałem do
-sprawdzenia, a nie automatycznym dowodem błędu. Brak ostrzeżeń **nie
-gwarantuje** pokrycia wszystkich wydarzeń na świecie.
+Szczegóły raportu pozostają prywatne; nie zapisujemy ich w publicznych
+podsumowaniach GitHub Actions. Lista możliwych luk jest sygnałem do
+sprawdzenia, a nie dowodem błędu. Brak ostrzeżeń **nie gwarantuje**
+pokrycia wszystkich wydarzeń na świecie.
 
 Zbieranie źródeł rozszerzono o niezależne kanały tematyczne Guardian,
 monitorowane zapytania dotyczące Nagrody Nobla i PAP oraz dwa kanały
@@ -137,51 +138,65 @@ gemini-3.5-flash-lite
 
 Model można zmienić przez zmienną `GEMINI_MODEL`.
 
-## Tygodniowy audyt i dashboard
+## Prywatny audyt administratora
 
-Strona ma osobną zakładkę **Audyt** (adres `#audit`) z historią raportów
-oraz bezpośrednimi adresami tygodni, np. `#audit/2026-W41`.
+**Audyt nie jest elementem publicznej nawigacji.** Publiczny serwis nadal
+działa bez logowania. Wewnętrzny dashboard ma nieudostępniany w nawigacji
+adres `#audit`, na którym przed odczytem jakichkolwiek raportów wymagane
+jest hasło administratora.
 
-Widok obejmuje:
-- porównanie pokrycia istotnych wydarzeń w kolejnych tygodniach;
-- statusy: **uwzględnione**, **częściowo opisane**, **pominięte**;
-- wyniki według kategorii, dzienne statystyki publikacji i duplikaty;
-- źródła wydarzeń oraz informację, na którym etapie selekcji je znaleziono;
-- oznaczenie tygodni z niepełnymi danymi (bez fikcyjnego procentu pokrycia).
+GitHub Pages i repozytorium Daily News są publiczne. Nie wystarczy ukryć
+zakładki lub ochronić jej wyłącznie JavaScriptem — pliki JSON muszą być
+zaszyfrowane. Dlatego prywatne raporty są szyfrowane na runnerze GitHub
+Actions przez AES-256-GCM, z kluczem wyprowadzonym z hasła za pomocą
+PBKDF2-SHA256 (250 000 iteracji, losowa sól i nonce dla każdego pliku).
+Publiczne repozytorium przechowuje tylko zaszyfrowane raporty.
+Hasło nie trafia do kodu, commitów ani hostingu.
 
-### Harmonogram audytu
+**Wymagane jednorazowe ustawienie:**
+1. Otwórz `Settings → Secrets and variables → Actions → New repository secret`.
+2. Nazwa: `AUDIT_PASSWORD`.
+3. Wartość: silne, unikatowe hasło **minimum 16 znaków**,
+   zalecane co najmniej 24 losowe znaki lub długie hasło z menedżera haseł.
+   Nie dodawaj hasła do kodu i nie wklejaj go do czatu.
+4. Zapisz sekret i uruchom ręcznie `Actions → Daily news → Run workflow`,
+   by utworzyć pierwszy zaszyfrowany raport dzienny.
+5. Jeśli chcesz już teraz uruchomić historyczny audyt, wybierz
+   `Actions → Weekly editorial audit → Run workflow`
+   i w polu `week` wpisz np. `2026-W41`.
+   Powstanie raport niepełny (część danych historycznych nie istnieje).
+6. Otwórz `https://przebindakamil.github.io/daily-news/#audit`
+   i użyj hasła `AUDIT_PASSWORD` w formularzu administratora.
 
-Workflow `.github/workflows/weekly-audit.yml` działa w poniedziałek
-o **08:00 czasu Europe/Warsaw**. Audytuje zakończony tydzień
-(poniedziałek–niedziela), po zakończeniu publikacji niedzielnego wydania
-przez poranny workflow Daily News.
+Nie przechowujemy hasła w `localStorage`; po odświeżeniu strony
+należy podać je ponownie. Znajomość hasła oznacza dostęp do audytu,
+więc **to ochrona współdzielonym hasłem, nie pełny system indywidualnych
+kont administratorów**. Jeśli w przyszłości będzie więcej osób
+z różnymi uprawnieniami, użyj prywatnego backendu i autoryzacji kont.
 
-Skrypt `scripts/audit_news.py` pobiera:
-1. 7 wydań z `data/archive/`;
-2. 7 dziennych raportów `reports/coverage/`, w tym niezależne nagłówki
-   z Polski i świata oraz listy pobranych kandydatów;
-3. wybiera przez Gemini do 25 kluczowych, różnych wydarzeń źródłowych;
-4. semantycznie dopasowuje je do publikacji i oznacza potencjalne pominięcia.
+### Harmonogram i historia
 
-Zapisuje `reports/audits/YYYY-Www.json` oraz `reports/audits/index.json`.
-Po commicie uruchamia bezpośrednie wdrożenie GitHub Pages, dzięki czemu
-nowy tydzień pojawia się na dashboardzie bez ręcznych działań.
+Codzienne wydanie (06:00) szyfruje raport diagnostyczny w
+`secure/coverage/YYYY-MM-DD.enc.json`. Przy braku skonfigurowanego
+hasła prywatny raport jest odrzucany, ale publiczne newsy wciąż się
+publikują. Tygodniowy audyt (poniedziałek 08:00) odszyfrowuje siedem
+raportów dziennych w pamięci roboczej runnera, porównuje je z wydaniami
+i szyfruje wyniki do `secure/audits/YYYY-Www.enc.json` oraz
+`secure/audits/index.enc.json`. Pliki jawne są usuwane przed commitem.
+Dashboard po wpisaniu hasła odczytuje raporty w przeglądarce.
 
-Ręczne wygenerowanie audytu: **Actions → Weekly editorial audit → Run workflow**.
-Opcjonalne pole `week` przyjmuje `YYYY-Www` dla zakończonego tygodnia.
+Raporty obejmują historię, trend jakości, pominięte wydarzenia,
+pokrycie według kategorii, diagnostykę źródeł i duplikaty.
+Wskaźnik pokrycia mierzy **próbkę niezależnych nagłówków**, nie wszystkie
+ważne wydarzenia na świecie. Tydzień niekompletny ma status `incomplete`
+i nie otrzymuje fikcyjnej wartości procentowej.
 
-### Jak interpretować wyniki?
+### Ważne ograniczenie historyczne
 
-Wskaźnik pokrycia jest **szacunkiem na próbce nagłówków**, a nie
-stwierdzeniem, że system wychwycił określony procent wszystkich ważnych
-wiadomości na świecie. Częściowe uwzględnienie daje 0,5 punktu.
-Nie mierzymy tutaj automatycznie poprawności faktograficznej artykułów.
-
-Pełny wynik obliczamy wyłącznie wtedy, gdy mamy 7 wydań, 7 raportów
-źródeł oraz niezależne nagłówki ze wszystkich siedmiu dni.
-Inne tygodnie pokazują dostępne dane operacyjne i status **niepełny**.
-Historyczne wydanie za tydzień `2026-W41` zawiera tylko informacje,
-które rzeczywiście zostały zachowane (9–11 października).
-
-Poprawki do rankingów lub automatyczna publikacja wykrytych pominięć
-**nie odbywają się bez dodatkowej weryfikacji**.
+Wcześniej jawne raporty istniały w publicznym repozytorium
+`reports/audits/`. Zostały usunięte z aktualnej gałęzi i z nowych
+wdrożeń, ale ich kopie mogą nadal być dostępne **w historii commitów**,
+archiwach i cache. Aby usunąć je także z historii repozytorium,
+konieczna jest osobna migracja / przepisanie historii oraz
+uwzględnienie możliwych kopii. Nie można zagwarantować cofnięcia
+wcześniejszego publicznego udostępnienia.
