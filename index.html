@@ -15,7 +15,6 @@
       <nav class="main-nav" aria-label="Główna nawigacja">
         <a href="#today" data-view-link="today">Przegląd</a>
         <a href="#categories" data-view-link="categories">Kategorie</a>
-        <a href="#audit" data-view-link="audit">Audyt</a>
         <button id="nav-archive" type="button">Archiwum</button>
         <button id="nav-saved" type="button">Zapisane</button>
       </nav>
@@ -85,7 +84,19 @@
         </label>
       </div>
 
-      <div id="audit-message" class="audit-message" role="status">Wczytywanie historii audytów…</div>
+      <form id="audit-login" class="audit-login" autocomplete="off">
+        <div>
+          <p class="eyebrow">Dostęp administratora</p>
+          <h3>Archiwum audytów jest chronione</h3>
+          <p>Raporty są zaszyfrowane. Wprowadź hasło administratora, żeby wyświetlić dashboard.</p>
+        </div>
+        <label for="audit-password">Hasło administratora
+          <input id="audit-password" type="password" required minlength="16" autocomplete="off" placeholder="Wpisz hasło audytu">
+        </label>
+        <button type="submit">Odblokuj audyt</button>
+        <p id="audit-login-error" class="audit-login-error" role="alert" hidden></p>
+      </form>
+      <div id="audit-message" class="audit-message" role="status" hidden></div>
       <div id="audit-dashboard" hidden>
         <p id="audit-period" class="audit-period"></p>
         <div id="audit-metrics" class="audit-metrics"></div>
