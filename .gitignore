@@ -1,0 +1,9 @@
+# Internal editorial and audit reports are generated plaintext on Actions runners only.
+# Never commit or deploy these directories to the public repository.
+/reports/
+/_site/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
