@@ -1,0 +1,91 @@
+name: Weekly editorial audit
+
+on:
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "Completed ISO week (YYYY-Www); empty means previous week"
+        required: false
+        type: string
+  schedule:
+    # The Monday 06:00 edition publishes Sunday. Audit after it completes.
+    - cron: "0 8 * * 1"
+      timezone: "Europe/Warsaw"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-news
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Test auditing and daily news
+        run: python -m unittest discover -s tests -v
+
+      - name: Audit completed week
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-3.5-flash-lite
+          AUDIT_WEEK: ${{ inputs.week || '' }}
+        shell: bash
+        run: |
+          if [[ -n "$AUDIT_WEEK" ]]; then
+            python scripts/audit_news.py --week "$AUDIT_WEEK"
+          else
+            python scripts/audit_news.py
+          fi
+
+      - name: Save historical report
+        run: |
+          git config user.name "daily-news-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add reports/audits
+          if git diff --cached --quiet; then
+            echo "No changes to audit."
+          else
+            git commit -m "Publish weekly Daily News editorial audit"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Prepare website with audit dashboard
+        run: |
+          mkdir -p _site/reports/audits
+          cp index.html script.js styles.css audit.js audit.css _site/
+          cp -r data _site/data
+          cp -r reports/audits/. _site/reports/audits/
+          touch _site/.nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: audit
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish updated dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4
