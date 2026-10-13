@@ -243,9 +243,11 @@ def build_report(week, monday, sunday, data, events=None, matches=None):
     missing_coverages = data["missing_coverages"]
     references = data["references"]
     publications = data["published"]
+    reference_days = {item["day"] for item in references}
     complete = (
         not missing_issues and not missing_coverages
-        and len(references) >= 10 and events is not None and matches is not None
+        and len(references) >= 10 and len(reference_days) == 7
+        and events is not None and matches is not None
     )
     audited_events = []
     category_results = defaultdict(lambda: {"audited": 0, "covered": 0, "partial": 0, "missing": 0})
@@ -307,7 +309,7 @@ def build_report(week, monday, sunday, data, events=None, matches=None):
         "missing_coverage_days": missing_coverages,
         "incomplete_reason": (
             "Brak kompletu siedmiu wydań, dziennych raportów źródeł lub wystarczającej "
-            "próby niezależnych nagłówków; nie obliczamy sztucznego wyniku."
+            "próby niezależnych nagłówków dla każdego z 7 dni; nie obliczamy sztucznego wyniku."
             if not complete else None
         ),
         "category_results": dict(category_results),
@@ -372,6 +374,7 @@ def run(week=None, now=None):
         not week_data["missing_issues"]
         and not week_data["missing_coverages"]
         and len(week_data["references"]) >= 10
+        and len({item["day"] for item in week_data["references"]}) == 7
     )
     events = matches = None
     if sufficiently_grounded:
