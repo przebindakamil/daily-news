@@ -185,6 +185,19 @@ def add_feed_entries(items, seen, feed_url, category, tier, max_items, window_st
         "candidates_added": len(items) - initial_count,
         "feed_url": feed_url,
         "feed_parse_warning": bool(getattr(feed, "bozo", False)),
+        "reference_headlines": [
+            {
+                "title": (entry.get("title") or "").strip(),
+                "url": entry.get("link", ""),
+                "published_at": iso_date(entry.get("published", "") or entry.get("updated", "")),
+            }
+            for entry in feed.entries[:100]
+            if origin == "headline_feed"
+            and published_in_window(
+                iso_date(entry.get("published", "") or entry.get("updated", "")),
+                window_start, window_end
+            )
+        ][:15],
     })
 
 
@@ -842,12 +855,34 @@ def build_coverage_report(day, candidates, ranked, selected, source_stats=None):
             "sightings": sightings,
         })
 
+    reference_headlines = []
+    matched_titles = {candidate_key(item.get("title", "")) for item in selected}
+    for source in source_stats:
+        if source.get("origin") != "headline_feed":
+            continue
+        for item in source.get("reference_headlines", []):
+            stage = (
+                "published" if item.get("url") in published_urls or
+                candidate_key(item.get("title", "")) in matched_titles
+                else "review"
+            )
+            reference_headlines.append({
+                **item,
+                "reference": source.get("name", ""),
+                "stage": stage,
+            })
+
     report = {
         "date": str(day),
         "candidate_count": len(candidates),
         "ranked_count": len(ranked),
         "published_count": len(selected),
         "source_stats": source_stats,
+        "independent_headline_review": {
+            "total": len(reference_headlines),
+            "potentially_missing": sum(item["stage"] == "review" for item in reference_headlines),
+            "headlines": reference_headlines,
+        },
         "empty_feeds": [
             source["name"] for source in source_stats
             if source["entries_read"] == 0
@@ -889,6 +924,12 @@ def save_coverage_report(report):
                 f"Kandydaci: {report['candidate_count']}, "
                 f"ranking: {report['ranked_count']}, "
                 f"opublikowane: {report['published_count']}.\n\n"
+            )
+            independent = report["independent_headline_review"]
+            out.write(
+                f"Nagłówki referencyjne: {independent['total']}, "
+                f"do ręcznego sprawdzenia: {independent['potentially_missing']}. "
+                "Brak identycznego URL lub tytułu nie oznacza automatycznie pominięcia.\n\n"
             )
             if report["empty_feeds"]:
                 out.write(
