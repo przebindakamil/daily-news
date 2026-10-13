@@ -47,10 +47,10 @@ jobs:
         env:
           AUDIT_PASSWORD: ${{ secrets.AUDIT_PASSWORD }}
         run: |
-          if [ -n "$AUDIT_PASSWORD" ]; then
+          if [ ${#AUDIT_PASSWORD} -ge 16 ]; then
             python scripts/secure_audit.py seal-coverage
           else
-            echo "AUDIT_PASSWORD is not configured. Discarding internal report; public briefing continues."
+            echo "AUDIT_PASSWORD is missing or too short. Private report discarded; public news continues."
             rm -rf reports/coverage
           fi
           test ! -f reports/coverage/index.json
