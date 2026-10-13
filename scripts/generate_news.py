@@ -129,7 +129,19 @@ def candidate_key(title: str):
 
 def add_feed_entries(items, seen, feed_url, category, tier, max_items, window_start, window_end,
                      origin="direct_rss", label=None):
-    feed = feedparser.parse(feed_url)
+    try:
+        feed = feedparser.parse(feed_url)
+    except Exception as exc:
+        COLLECTION_STATS.append({
+            "name": label or urlparse(feed_url).netloc,
+            "origin": origin,
+            "entries_read": 0,
+            "candidates_added": 0,
+            "feed_url": feed_url,
+            "feed_parse_warning": True,
+            "error": str(exc)[:300],
+        })
+        return
     initial_count = len(items)
     # Recent entries may be from today; scan more than the number to retain.
     for entry in feed.entries[:100]:
@@ -177,7 +189,18 @@ def add_feed_entries(items, seen, feed_url, category, tier, max_items, window_st
 
 
 def add_google_query(items, seen, query, category, tier, max_items, window_start, window_end, origin):
-    feed = feedparser.parse(google_news_feed(query))
+    try:
+        feed = feedparser.parse(google_news_feed(query))
+    except Exception as exc:
+        COLLECTION_STATS.append({
+            "name": query,
+            "origin": origin,
+            "entries_read": 0,
+            "candidates_added": 0,
+            "feed_parse_warning": True,
+            "error": str(exc)[:300],
+        })
+        return
     initial_count = len(items)
     for entry in feed.entries[:100]:
         source = ""
@@ -867,6 +890,11 @@ def save_coverage_report(report):
                 f"ranking: {report['ranked_count']}, "
                 f"opublikowane: {report['published_count']}.\n\n"
             )
+            if report["empty_feeds"]:
+                out.write(
+                    f"⚠️ Puste źródła ({len(report['empty_feeds'])}): "
+                    + ", ".join(report["empty_feeds"][:8]) + "\n\n"
+                )
             for gap in report["potential_gaps"]:
                 out.write(f"- ⚠️ Możliwe pominięcie: {gap['label']} "
                           f"(w źródłach: {gap['found']}, opublikowanych: 0)\n")
