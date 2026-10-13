@@ -47,6 +47,36 @@
       "url": "https://www.nasa.gov/feed/",
       "category": "Kosmos",
       "tier": "primary"
+    },
+    {
+      "name": "The Guardian World",
+      "url": "https://www.theguardian.com/world/rss",
+      "category": "Świat i geopolityka",
+      "tier": "quality"
+    },
+    {
+      "name": "The Guardian Science",
+      "url": "https://www.theguardian.com/science/rss",
+      "category": "Nauka",
+      "tier": "quality"
+    },
+    {
+      "name": "The Guardian Business",
+      "url": "https://www.theguardian.com/business/rss",
+      "category": "Finanse i inwestowanie",
+      "tier": "quality"
+    },
+    {
+      "name": "The Guardian Football",
+      "url": "https://www.theguardian.com/football/rss",
+      "category": "Piłka nożna",
+      "tier": "quality"
+    },
+    {
+      "name": "The Guardian Culture",
+      "url": "https://www.theguardian.com/culture/rss",
+      "category": "Kultura",
+      "tier": "quality"
     }
   ],
   "trusted_google_queries": [
@@ -119,6 +149,48 @@
       "query": "site:anthropic.com AI Claude when:7d",
       "category": "AI i technologia",
       "tier": "primary"
+    },
+    {
+      "query": "site:nobelprize.org Nobel Prize laureates winners awarded when:3d",
+      "category": "Nauka",
+      "tier": "primary"
+    },
+    {
+      "query": "site:kva.se Nobel Prize economics physics chemistry laureates when:3d",
+      "category": "Nauka",
+      "tier": "primary"
+    },
+    {
+      "query": "site:ki.se Nobel Prize medicine physiology laureates when:3d",
+      "category": "Zdrowie",
+      "tier": "primary"
+    },
+    {
+      "query": "site:apnews.com Nobel Prize winners economy science when:3d",
+      "category": "Nauka",
+      "tier": "wire"
+    },
+    {
+      "query": "site:reuters.com Nobel prize winners science economic laureates when:3d",
+      "category": "Nauka",
+      "tier": "wire"
+    },
+    {
+      "query": "site:pap.pl najważniejsze wydarzenia Polska świat when:2d",
+      "category": "Polska",
+      "tier": "wire"
+    }
+  ],
+  "headline_feeds": [
+    {
+      "name": "Google News — Polska top",
+      "url": "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl",
+      "category": "Polska"
+    },
+    {
+      "name": "Google News — World top",
+      "url": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en",
+      "category": "Świat i geopolityka"
     }
   ]
 }
