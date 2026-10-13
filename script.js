@@ -178,8 +178,7 @@ function formatDate(value){
 }
 
 function formatDayLabel(dateString,index){
-  if(index===0) return 'Dzisiaj';
-  if(index===1) return 'Wczoraj';
+  if(index===0) return 'Najnowsze';
   return new Intl.DateTimeFormat('pl-PL',{day:'numeric',month:'short'}).format(new Date(dateString+'T12:00:00'));
 }
 
@@ -671,7 +670,7 @@ function renderTopOfDay(items,isToday){
   eyebrow.className='top-day-eyebrow';
   eyebrow.textContent='Redakcyjny wybór';
   const title=document.createElement('h2');
-  title.textContent=isToday?'TOP dnia':'TOP tego dnia';
+  title.textContent='TOP wydania';
   titleWrap.append(eyebrow,title);
 
   const note=document.createElement('p');
@@ -759,12 +758,12 @@ function renderCategoriesLanding(){
     const count=document.createElement('span');
     count.textContent=categoryItems.length
       ? categoryItems.length+' '+(categoryItems.length===1?'materiał':'materiały')
-      : 'Brak dziś';
+      : 'Brak w wydaniu';
 
     top.append(name,count);
 
     const teaser=document.createElement('p');
-    teaser.textContent=categoryItems[0]?.title||'Brak materiałów w dzisiejszym zestawie.';
+    teaser.textContent=categoryItems[0]?.title||'Brak materiałów w tym wydaniu.';
 
     const open=document.createElement('span');
     open.className='category-overview-open';
@@ -808,7 +807,7 @@ function renderCategoryDetail(category){
   if(!items.length){
     const empty=document.createElement('p');
     empty.className='empty';
-    empty.textContent='Brak materiałów z tej kategorii w dzisiejszym zestawie.';
+    empty.textContent='Brak materiałów z tej kategorii w wybranym wydaniu.';
     categoriesRoot.appendChild(empty);
     return;
   }
@@ -859,7 +858,12 @@ function applyRoute(){
 function render(data){
   activeData=data;
   if(categoriesView && !categoriesView.hidden) applyRoute();
-  updated.textContent=data.generated_at?'Aktualizacja: '+formatDate(data.generated_at):'Brak daty aktualizacji';
+  const issueDate=data.date
+    ? new Intl.DateTimeFormat('pl-PL',{day:'numeric',month:'long',year:'numeric'}).format(new Date(data.date+'T12:00:00'))
+    : null;
+  updated.textContent=issueDate
+    ? 'Wydanie: '+issueDate+(data.generated_at?' · Publikacja: '+formatDate(data.generated_at):'')
+    : (data.generated_at?'Aktualizacja: '+formatDate(data.generated_at):'Brak daty aktualizacji');
   root.innerHTML='';
 
   const allRaw=[...(data.top_stories||[]),...(data.more_stories||[])];
@@ -888,8 +892,8 @@ function render(data){
   const {main,outsideBubble}=splitPersonalized(all,personalizedLimit);
   const isOmnibus=userPreferences.preset==='omnibus';
   const mainTitle=isToday
-    ? (isOmnibus?'Dzisiaj warto wiedzieć':'Dla Ciebie')
-    : (isOmnibus?'Warto było wiedzieć':'Najlepiej dopasowane');
+    ? (isOmnibus?'Warto wiedzieć':'Dla Ciebie')
+    : (isOmnibus?'Z archiwum':'Najlepiej dopasowane');
 
   const mainSection=renderSection(mainTitle,main,true);
   if(mainSection) root.appendChild(mainSection);
