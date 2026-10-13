@@ -1,0 +1,42 @@
+name: Code quality checks
+
+on:
+  push:
+    paths:
+      - "scripts/**"
+      - "tests/**"
+      - "index.html"
+      - "script.js"
+      - "audit.js"
+      - "audit.css"
+      - ".github/workflows/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install test dependencies
+        run: pip install -r requirements.txt
+      - name: Compile Python
+        run: python -m compileall -q scripts tests
+      - name: Run regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Check frontend JavaScript syntax
+        run: |
+          node --check script.js
+          node --check audit.js
+      - name: Verify audit assets
+        run: |
+          test -s reports/audits/index.json
+          grep -q 'id="audit-view"' index.html
+          grep -q 'src="audit.js"' index.html
+          grep -q 'data-view-link="audit"' index.html
