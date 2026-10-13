@@ -966,10 +966,7 @@ def save_coverage_report(report):
                 out.write("Brak wykrytych pominięć w monitorowanych tematach. "
                           "To nie gwarantuje kompletności wszystkich newsów.\n")
             out.write(f"\nRaport szczegółowy: `reports/coverage/{report['date']}.json`\n")
-    print(
-        f"Kontrola pokrycia: {len(report['potential_gaps'])} możliwych luk; "
-        f"raport: {path.relative_to(ROOT)}"
-    )
+    print("Zapisano wewnętrzne dane do szyfrowania.")
 
 
 def main():
