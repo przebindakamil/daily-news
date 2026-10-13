@@ -820,13 +820,16 @@ function renderCategoryDetail(category){
 
 function setActiveView(view,category=null){
   const showCategories=view==='categories';
+  const showAudit=view==='audit';
 
-  if(todayView) todayView.hidden=showCategories;
+  if(todayView) todayView.hidden=showCategories||showAudit;
   if(categoriesView) categoriesView.hidden=!showCategories;
+  if(auditView) auditView.hidden=!showAudit;
 
   document.querySelectorAll('[data-view-link]').forEach(link=>{
     const active=(view==='today'&&link.dataset.viewLink==='today') ||
-      (showCategories&&link.dataset.viewLink==='categories');
+      (showCategories&&link.dataset.viewLink==='categories') ||
+      (showAudit&&link.dataset.viewLink==='audit');
     link.classList.toggle('active',active);
   });
 
@@ -835,10 +838,20 @@ function setActiveView(view,category=null){
     if(category) renderCategoryDetail(category);
     else renderCategoriesLanding();
   }
+  if(showAudit){
+    const requestedWeek=location.hash.startsWith('#audit/')
+      ? location.hash.slice('#audit/'.length) : null;
+    loadAuditDashboard(requestedWeek);
+  }
 }
 
 function applyRoute(){
   const hash=location.hash||'#today';
+
+  if(hash==='#audit'||hash.startsWith('#audit/')){
+    setActiveView('audit');
+    return;
+  }
 
   if(hash.startsWith('#category/')){
     const slug=hash.replace('#category/','');
