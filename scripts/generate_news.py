@@ -55,6 +55,13 @@ def load_sources():
 
 
 def google_news_feed(query: str) -> str:
+    # Search far enough back to include early hours of the preceding calendar day.
+    # Precise timezone-aware date filtering happens after RSS retrieval.
+    query = re.sub(
+        r"when:(\d+)d",
+        lambda match: f"when:{max(3, int(match.group(1)))}d",
+        query,
+    )
     return (
         "https://news.google.com/rss/search?"
         f"q={quote(query)}&hl=pl&gl=PL&ceid=PL:pl"
@@ -77,9 +84,33 @@ def iso_date(value: str) -> str:
 
 def parse_dt(value: str):
     try:
-        return datetime.fromisoformat(value)
+        parsed = datetime.fromisoformat(value)
+        if parsed.tzinfo is None:
+            return None
+        return parsed.astimezone(timezone.utc)
     except (TypeError, ValueError):
         return None
+
+
+def previous_day_window(now=None):
+    """Return yesterday's complete Polish calendar day as a half-open UTC interval.
+
+    The window spans 23/25 hours correctly on daylight-saving switchovers.
+    """
+    local_today = (now or datetime.now(LOCAL_TZ)).astimezone(LOCAL_TZ).date()
+    target_day = local_today - timedelta(days=1)
+    local_start = datetime.combine(target_day, datetime.min.time(), tzinfo=LOCAL_TZ)
+    local_end = datetime.combine(local_today, datetime.min.time(), tzinfo=LOCAL_TZ)
+    return (
+        target_day,
+        local_start.astimezone(timezone.utc),
+        local_end.astimezone(timezone.utc),
+    )
+
+
+def published_in_window(value, window_start, window_end):
+    published_at = parse_dt(value)
+    return published_at is not None and window_start <= published_at < window_end
 
 
 def normalize_title(value: str) -> str:
@@ -94,9 +125,11 @@ def candidate_key(title: str):
     return " ".join(normalized.split()[:14])
 
 
-def add_feed_entries(items, seen, feed_url, category, tier, max_items, cutoff):
+def add_feed_entries(items, seen, feed_url, category, tier, max_items, window_start, window_end):
     feed = feedparser.parse(feed_url)
-    for entry in feed.entries[:max_items]:
+    initial_count = len(items)
+    # Recent entries may be from today; scan more than the number to retain.
+    for entry in feed.entries[:100]:
         source = ""
         if getattr(entry, "source", None):
             source = getattr(entry.source, "title", "") or ""
@@ -107,8 +140,7 @@ def add_feed_entries(items, seen, feed_url, category, tier, max_items, cutoff):
             title, source = title.rsplit(" - ", 1)
 
         published = iso_date(entry.get("published", "") or entry.get("updated", ""))
-        published_dt = parse_dt(published)
-        if published_dt and published_dt < cutoff:
+        if not published_in_window(published, window_start, window_end):
             continue
 
         key = candidate_key(title)
@@ -128,11 +160,14 @@ def add_feed_entries(items, seen, feed_url, category, tier, max_items, cutoff):
                 "discovery_origin": "direct_rss",
             }
         )
+        if len(items) - initial_count >= max_items:
+            break
 
 
-def add_google_query(items, seen, query, category, tier, max_items, cutoff, origin):
+def add_google_query(items, seen, query, category, tier, max_items, window_start, window_end, origin):
     feed = feedparser.parse(google_news_feed(query))
-    for entry in feed.entries[:max_items]:
+    initial_count = len(items)
+    for entry in feed.entries[:100]:
         source = ""
         if getattr(entry, "source", None):
             source = getattr(entry.source, "title", "") or ""
@@ -142,8 +177,7 @@ def add_google_query(items, seen, query, category, tier, max_items, cutoff, orig
             title, source = title.rsplit(" - ", 1)
 
         published = iso_date(entry.get("published", ""))
-        published_dt = parse_dt(published)
-        if published_dt and published_dt < cutoff:
+        if not published_in_window(published, window_start, window_end):
             continue
 
         key = candidate_key(title)
@@ -163,10 +197,11 @@ def add_google_query(items, seen, query, category, tier, max_items, cutoff, orig
                 "discovery_origin": origin,
             }
         )
+        if len(items) - initial_count >= max_items:
+            break
 
 
-def collect_candidates(max_age_hours: int):
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=max_age_hours)
+def collect_candidates(window_start, window_end):
     seen = set()
     items = []
     sources = load_sources()
@@ -180,7 +215,8 @@ def collect_candidates(max_age_hours: int):
             source["category"],
             source.get("tier", "quality"),
             max_items=10,
-            cutoff=cutoff,
+            window_start=window_start,
+            window_end=window_end,
         )
 
     # 2) Trusted-domain discovery. Still uses Google News as an index,
@@ -193,7 +229,8 @@ def collect_candidates(max_age_hours: int):
             source["category"],
             source.get("tier", "quality"),
             max_items=7,
-            cutoff=cutoff,
+            window_start=window_start,
+            window_end=window_end,
             origin="trusted_google",
         )
 
@@ -207,7 +244,8 @@ def collect_candidates(max_age_hours: int):
                 category,
                 "discovery",
                 max_items=4,
-                cutoff=cutoff,
+                window_start=window_start,
+            window_end=window_end,
                 origin="broad_google",
             )
 
@@ -697,9 +735,13 @@ def choose_top_of_day(items, limit=3):
 
 def main():
     preferences = load_preferences()
-    max_age_hours = int(preferences.get("max_age_hours", 72))
+    target_day, window_start, window_end = previous_day_window()
+    print(
+        f"Tworzę wydanie za {target_day.isoformat()} "
+        f"(Polska 00:00–24:00; UTC {window_start.isoformat()} – {window_end.isoformat()})."
+    )
 
-    candidates = collect_candidates(max_age_hours)
+    candidates = collect_candidates(window_start, window_end)
     if not candidates:
         raise RuntimeError("Nie znaleziono świeżych kandydatów z żadnego skonfigurowanego źródła.")
 
@@ -713,11 +755,13 @@ def main():
     top_of_day = choose_top_of_day(selected, limit=3)
 
     generated_at = datetime.now(timezone.utc)
-    local_day = generated_at.astimezone(LOCAL_TZ).date().isoformat()
+    local_day = target_day.isoformat()
 
     result = {
         "date": local_day,
         "generated_at": generated_at.isoformat(),
+        "coverage_start": window_start.isoformat(),
+        "coverage_end": window_end.isoformat(),
         "top_of_day": top_of_day,
         "top_stories": top_stories,
         "more_stories": more_stories,
