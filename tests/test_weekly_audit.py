@@ -2,7 +2,7 @@
 import sys
 import tempfile
 import unittest
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from unittest.mock import patch
 from zoneinfo import ZoneInfo
@@ -52,7 +52,7 @@ class WeeklyAuditTests(unittest.TestCase):
                 "empty_feeds": [],
             }] * 7,
             "published": [{"day": "2026-10-12", "title": "Some other news", "url": "https://example.com/a"}],
-            "references": [{"title": str(i), "url": "https://example.com/" + str(i), "day": "2026-10-12"} for i in range(10)],
+            "references": [{"title": str(i), "url": "https://example.com/" + str(i), "day": (date(2026, 10, 12) + timedelta(days=i % 7)).isoformat()} for i in range(10)],
             "missing_issues": [],
             "missing_coverages": [],
         }
