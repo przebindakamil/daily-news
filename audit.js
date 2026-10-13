@@ -7,6 +7,7 @@ const auditStatusFilter = document.querySelector('#audit-status-filter');
 const auditLogin = document.querySelector('#audit-login');
 const auditPasswordInput = document.querySelector('#audit-password');
 const auditLoginError = document.querySelector('#audit-login-error');
+const auditLockButton = document.querySelector('#audit-lock');
 let adminAuditPassword = null;
 let auditIndexPromise = null;
 let auditCurrentReport = null;
@@ -255,8 +256,23 @@ function auditRenderDiagnostics(report) {
   }
 }
 
+function auditUnlockNavigation() {
+  const nav = document.querySelector('.main-nav');
+  if (nav && !nav.querySelector('[data-view-link="audit"]')) {
+    const link = document.createElement('a');
+    link.href = '#audit';
+    link.dataset.viewLink = 'audit';
+    link.textContent = 'Audyt · admin';
+    nav.append(link);
+  }
+  const link = nav?.querySelector('[data-view-link="audit"]');
+  if (link) link.classList.toggle('active',location.hash.startsWith('#audit'));
+  if (auditLockButton) auditLockButton.hidden = false;
+}
+
 function auditRenderReport(report, index) {
   auditCurrentReport = report;
+  auditUnlockNavigation();
   auditLogin.hidden = true;
   auditLoginError.hidden = true;
   const complete = report.status==='complete';
@@ -345,6 +361,19 @@ auditLogin?.addEventListener('submit',event=>{
   auditIndexPromise = null;
   auditReportCache.clear();
   loadAuditDashboard(location.hash.startsWith('#audit/') ? location.hash.slice(7) : null);
+});
+
+auditLockButton?.addEventListener('click',()=>{
+  adminAuditPassword = null;
+  auditIndexPromise = null;
+  auditReportCache.clear();
+  auditCurrentReport = null;
+  if (auditPasswordInput) auditPasswordInput.value='';
+  if (auditDashboard) auditDashboard.hidden = true;
+  if (auditLockButton) auditLockButton.hidden = true;
+  if (auditLogin) auditLogin.hidden = false;
+  document.querySelector('.main-nav [data-view-link="audit"]')?.remove();
+  location.hash = '#today';
 });
 
 auditWeekSelect?.addEventListener('change',()=>auditSelectWeek(auditWeekSelect.value));
