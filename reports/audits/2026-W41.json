@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "week": "2026-W41",
+  "start_date": "2026-10-05",
+  "end_date": "2026-10-11",
+  "generated_at": "2026-10-13T10:40:29.604Z",
+  "status": "incomplete",
+  "methodology": "Retrospektywny raport operacyjny z istniejących wydań. Nie ma kompletnych siedmiu wydań ani niezależnych dziennych próbek nagłówków, dlatego nie obliczono procentu pokrycia wydarzeń.",
+  "metrics": {
+    "coverage_percent": null,
+    "audited_events": 0,
+    "covered": 0,
+    "partial": 0,
+    "missing": 0,
+    "published": 60,
+    "issues_available": 3,
+    "coverage_reports_available": 0,
+    "reference_headlines": 0,
+    "feed_failures": 0,
+    "repeated_stories": 8
+  },
+  "missing_issue_days": [
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07",
+    "2026-10-08"
+  ],
+  "missing_coverage_days": [
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07",
+    "2026-10-08",
+    "2026-10-09",
+    "2026-10-10",
+    "2026-10-11"
+  ],
+  "incomplete_reason": "Dostępne są tylko 3 wydania (9–11 października) i brak niezależnych dziennych raportów źródeł. Dane pozwalają przeanalizować publikacje i powtórki, ale nie rzeczywiste pokrycie wydarzeń.",
+  "category_results": {},
+  "events": [],
+  "repeats": [
+    {
+      "title": "Zmiany w przepisach dotyczących orzeczeń lekarskich od 18 października",
+      "days": [
+        "2026-10-09",
+        "2026-10-10"
+      ]
+    },
+    {
+      "title": "NASA poszukuje amerykańskich planów komercyjnych stacji kosmicznych",
+      "days": [
+        "2026-10-10",
+        "2026-10-11"
+      ]
+    },
+    {
+      "title": "Ukraińskie drony uszkodziły centra danych rosyjskiego giganta Yandex",
+      "days": [
+        "2026-10-10",
+        "2026-10-11"
+      ]
+    },
+    {
+      "title": "Agenci kodujący AI generują więcej kodu, ale nie więcej oprogramowania",
+      "days": [
+        "2026-10-10",
+        "2026-10-11"
+      ]
+    },
+    {
+      "title": "NASA testuje nowe osłony termiczne podczas usuwania śmieci z kosmosu",
+      "days": [
+        "2026-10-10",
+        "2026-10-11"
+      ]
+    },
+    {
+      "title": "Sophos skraca czas analizy zagrożeń o 96% dzięki technologii OpenAI Daybreak",
+      "days": [
+        "2026-10-10",
+        "2026-10-11"
+      ]
+    },
+    {
+      "title": "Premier Wielkiej Brytanii zapowiada ograniczenie zakazów konkurencji w umowach o pracę",
+      "days": [
+        "2026-10-10",
+        "2026-10-11"
+      ]
+    },
+    {
+      "title": "Niezwykłe znalezisko w Hiszpanii: drewniane narzędzia neandertalczyków zachowane w kamieniu",
+      "days": [
+        "2026-10-10",
+        "2026-10-11"
+      ]
+    }
+  ],
+  "daily": [
+    {
+      "day": "2026-10-05",
+      "published": 0,
+      "reference_headlines": 0
+    },
+    {
+      "day": "2026-10-06",
+      "published": 0,
+      "reference_headlines": 0
+    },
+    {
+      "day": "2026-10-07",
+      "published": 0,
+      "reference_headlines": 0
+    },
+    {
+      "day": "2026-10-08",
+      "published": 0,
+      "reference_headlines": 0
+    },
+    {
+      "day": "2026-10-09",
+      "published": 20,
+      "reference_headlines": 0
+    },
+    {
+      "day": "2026-10-10",
+      "published": 20,
+      "reference_headlines": 0
+    },
+    {
+      "day": "2026-10-11",
+      "published": 20,
+      "reference_headlines": 0
+    }
+  ]
+}
