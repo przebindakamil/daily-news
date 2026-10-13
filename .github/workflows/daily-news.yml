@@ -43,11 +43,24 @@ jobs:
           NEWS_PER_CATEGORY: "2"
         run: python scripts/generate_news.py
 
+      - name: Encrypt internal editorial diagnostics
+        env:
+          AUDIT_PASSWORD: ${{ secrets.AUDIT_PASSWORD }}
+        run: |
+          if [ -n "$AUDIT_PASSWORD" ]; then
+            python scripts/secure_audit.py seal-coverage
+          else
+            echo "AUDIT_PASSWORD is not configured. Discarding internal report; public briefing continues."
+            rm -rf reports/coverage
+          fi
+          test ! -f reports/coverage/index.json
+
       - name: Commit updated news and archive
         run: |
           git config user.name "daily-news-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/news.json data/current.json data/archive reports/coverage
+          git add data/news.json data/current.json data/archive
+          if [ -d secure/coverage ]; then git add secure/coverage; fi
           if git diff --cached --quiet; then
             echo "No content changes to commit."
           else
@@ -61,9 +74,9 @@ jobs:
           mkdir -p _site
           cp index.html script.js styles.css audit.js audit.css _site/
           cp -r data _site/data
-          mkdir -p _site/reports/audits
-          if [ -d reports/audits ]; then
-            cp -r reports/audits/. _site/reports/audits/
+          mkdir -p _site/secure/audits
+          if [ -d secure/audits ]; then
+            cp -r secure/audits/. _site/secure/audits/
           fi
           touch _site/.nojekyll
 
