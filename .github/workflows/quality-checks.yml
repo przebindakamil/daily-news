@@ -36,7 +36,15 @@ jobs:
           node --check audit.js
       - name: Verify audit assets
         run: |
-          test -s reports/audits/index.json
           grep -q 'id="audit-view"' index.html
+          grep -q 'id="audit-login"' index.html
           grep -q 'src="audit.js"' index.html
-          grep -q 'data-view-link="audit"' index.html
+          if grep -q 'data-view-link="audit"' index.html; then
+            echo "Public audit navigation must not be visible."
+            exit 1
+          fi
+          if test -d reports/audits || test -d reports/coverage; then
+            echo "Plaintext internal data must not be tracked."
+            exit 1
+          fi
+          grep -q 'secure/audits' .github/workflows/deploy-site.yml
