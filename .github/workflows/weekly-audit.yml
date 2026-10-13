@@ -40,24 +40,35 @@ jobs:
       - name: Test auditing and daily news
         run: python -m unittest discover -s tests -v
 
-      - name: Audit completed week
+      - name: Decrypt private source history and generate audit
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: gemini-3.5-flash-lite
+          AUDIT_PASSWORD: ${{ secrets.AUDIT_PASSWORD }}
           AUDIT_WEEK: ${{ inputs.week || '' }}
         shell: bash
         run: |
+          if [[ -z "$AUDIT_PASSWORD" ]]; then
+            echo "::error::Missing secret AUDIT_PASSWORD. Never publish plaintext audits."
+            exit 1
+          fi
+          python scripts/secure_audit.py unseal-coverage --week "$AUDIT_WEEK"
+          python scripts/secure_audit.py unseal-index
           if [[ -n "$AUDIT_WEEK" ]]; then
             python scripts/audit_news.py --week "$AUDIT_WEEK"
           else
             python scripts/audit_news.py
           fi
+          python scripts/secure_audit.py seal-audits
+          rm -rf reports
+          test -f secure/audits/index.enc.json
+
 
       - name: Save historical report
         run: |
           git config user.name "daily-news-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add reports/audits
+          git add secure/audits
           if git diff --cached --quiet; then
             echo "No changes to audit."
           else
@@ -68,10 +79,10 @@ jobs:
 
       - name: Prepare website with audit dashboard
         run: |
-          mkdir -p _site/reports/audits
+          mkdir -p _site/secure/audits
           cp index.html script.js styles.css audit.js audit.css _site/
           cp -r data _site/data
-          cp -r reports/audits/. _site/reports/audits/
+          cp -r secure/audits/. _site/secure/audits/
           touch _site/.nojekyll
 
       - name: Upload Pages artifact
