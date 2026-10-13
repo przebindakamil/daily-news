@@ -99,6 +99,10 @@ Raport pokazuje:
 - jakie tematy wykryto, lecz odpadły w selekcji (m.in. Nagrody Nobla,
   wyniki wyborów, decyzje banków centralnych, katastrofy i rozejmy);
 - 15 najwyżej ocenianych wiadomości, które nie weszły do finalnego wydania.
+- niezależne zestawienie głównych nagłówków Google News z Polski i świata,
+  z oznaczeniem tych, których nie można dopasować do wydania po URL lub tytule.
+  Niedopasowane nagłówki wymagają oceny człowieka, bo mogą być tą samą
+  historią opublikowaną pod innym tytułem.
 
 Krótkie podsumowanie trafia także na stronę uruchomienia GitHub Actions,
 w sekcji **Job summary**. Lista wykrytych możliwych luk jest sygnałem do
