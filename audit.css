@@ -1,0 +1,77 @@
+/* Editorial audit dashboard — shared Daily News visual language */
+.audit-view{padding:8px 0 100px}
+.audit-heading{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:30px}
+.audit-heading h2{margin:0 0 12px;font:500 clamp(2.2rem,5vw,4.3rem)/1.05 Georgia,"Times New Roman",serif;letter-spacing:-.04em}
+.audit-heading p:not(.eyebrow){max-width:690px;color:var(--muted);margin:0}
+.audit-week-picker{display:flex;flex-direction:column;gap:6px;min-width:220px;flex-shrink:0;color:var(--muted);font-size:.78rem}
+.audit-week-picker select,.audit-events-head select{width:100%;appearance:auto;border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:12px;padding:10px 12px;font:inherit}
+.audit-message{margin:0 0 25px;padding:12px 16px;border:1px solid var(--line);background:var(--surface);border-radius:12px;color:var(--muted);font-size:.85rem}
+.audit-message.audit-incomplete{border-color:#dcbf8d;background:#f9f3e8;color:#735630}
+.audit-message.audit-success{border-color:var(--line);background:var(--accent-soft);color:var(--accent)}
+.audit-period{color:var(--muted);font-size:.83rem;margin:0 0 14px}
+.audit-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:20px}
+.audit-metric{min-height:132px;display:flex;flex-direction:column;gap:2px;padding:20px;border:1px solid var(--line);background:var(--surface);border-radius:16px}
+.audit-metric-value{font:500 clamp(2rem,4vw,3.2rem)/1.12 Georgia,"Times New Roman",serif;letter-spacing:-.045em;color:var(--accent)}
+.audit-metric-label{font-size:.83rem;font-weight:700;margin-top:7px}
+.audit-metric-note{color:var(--muted);font-size:.7rem}
+.audit-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:16px 0}
+.audit-panel{min-width:0;border:1px solid var(--line);background:var(--surface);border-radius:18px;padding:24px}
+.audit-panel h3{font:500 1.65rem/1.2 Georgia,"Times New Roman",serif;letter-spacing:-.02em;margin:0 0 8px}
+.audit-section-note{font-size:.8rem;color:var(--muted);margin:0 0 20px}
+.audit-trend-chart{height:195px;display:flex;align-items:end;gap:12px;padding:12px 0 0}
+.audit-trend-point{background:none;cursor:pointer;border:0;display:flex;align-items:center;flex-direction:column;justify-content:end;gap:10px;flex:1;height:100%;min-width:18px;padding:0 2px;color:var(--muted);font:inherit}
+.audit-trend-track{height:148px;width:100%;display:flex;align-items:end;background:var(--bg);border-radius:7px 7px 2px 2px;overflow:hidden}
+.audit-trend-fill{display:block;width:100%;background:var(--accent);border-radius:7px 7px 2px 2px;opacity:.64;min-height:5px}
+.audit-trend-point:hover .audit-trend-fill,.audit-trend-point.active .audit-trend-fill{opacity:1}
+.audit-trend-fill.unknown{background:var(--muted);opacity:.35}
+.audit-trend-point.active .audit-trend-week{font-weight:800;color:var(--accent)}
+.audit-trend-week{font-size:.7rem}
+.audit-category-row{display:grid;gap:6px;margin-bottom:16px}
+.audit-category-head{display:flex;justify-content:space-between;gap:10px;font-size:.8rem}
+.audit-category-percent{color:var(--muted);white-space:nowrap}
+.audit-category-track{background:var(--bg);height:8px;overflow:hidden;border-radius:99px}
+.audit-category-fill{display:block;height:100%;border-radius:99px;background:var(--accent)}
+.audit-events-section{margin:16px 0}
+.audit-events-head{display:flex;justify-content:space-between;gap:22px;align-items:start}
+.audit-events-head label{flex:0 0 180px;display:grid;gap:5px;font-size:.77rem;color:var(--muted)}
+.audit-events{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.audit-event{min-width:0;display:flex;flex-direction:column;gap:8px;padding:20px;background:var(--bg);border-radius:14px;border:1px solid var(--line)}
+.audit-event-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.audit-event-badge{display:inline-flex;padding:4px 9px;border:1px solid var(--line);border-radius:99px;font-size:.72rem;font-weight:800}
+.audit-event-badge.status-covered{background:var(--accent-soft);color:var(--accent)}
+.audit-event-badge.status-missing{background:#f8e6df;color:#8a4535;border-color:#e8c6b9}
+.audit-event-badge.status-partial{background:#f9efde;color:#7e612e;border-color:#ead3ad}
+.audit-event-meta{color:var(--muted);font-size:.7rem}
+.audit-event h4{font:500 1.3rem/1.22 Georgia,"Times New Roman",serif;letter-spacing:-.012em;margin:3px 0}
+.audit-event-why,.audit-event-reason{font-size:.8rem;line-height:1.5;color:var(--muted);margin:0}
+.audit-event-reason{color:var(--text)}
+.audit-event-footer{display:flex;gap:10px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-top:auto;padding-top:10px}
+.audit-source-link{font-size:.75rem;font-weight:750;color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.audit-source-label{font-size:.75rem;color:var(--muted)}
+.audit-pipeline{font-size:.7rem;color:var(--muted)}
+.audit-matches{border-top:1px solid var(--line);padding-top:10px;margin-top:5px;font-size:.75rem}
+.audit-matches>strong{display:block;margin-bottom:6px}
+.audit-matches>div{margin-top:5px}
+.audit-daily-row,.audit-diagnostic-row{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding:10px 0;font-size:.8rem}
+.audit-daily-row small{color:var(--muted)}
+.audit-diagnostic-row strong{font-size:.83rem;color:var(--accent)}
+.audit-warning{color:#805527;font-size:.8rem;line-height:1.5}
+.audit-repeats{font-size:.75rem;color:var(--muted);margin-top:16px}
+.audit-repeats strong{color:var(--text)}
+.audit-repeats p{margin:8px 0}
+.audit-methodology{font-size:.75rem;color:var(--muted);padding:16px 2px;margin:0;max-width:900px}
+.audit-empty{font-size:.83rem;color:var(--muted);padding:14px 0}
+@media(max-width:900px){
+  .audit-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .audit-heading{align-items:start;flex-direction:column}
+  .audit-week-picker{min-width:min(100%,320px)}
+}
+@media(max-width:700px){
+  .audit-panels,.audit-events{grid-template-columns:1fr}
+  .audit-panel{padding:18px}
+  .audit-events-head{flex-direction:column;gap:8px;margin-bottom:12px}
+  .audit-events-head label{flex:auto;width:100%}
+  .audit-metric{padding:14px;min-height:116px}
+  .audit-event{padding:16px}
+  .audit-event-top{align-items:start;flex-direction:column;gap:6px}
+}
