@@ -75,3 +75,14 @@
   .audit-event{padding:16px}
   .audit-event-top{align-items:start;flex-direction:column;gap:6px}
 }
+
+/* Administrator-only access. The encryption key is never embedded in public files. */
+.audit-login{display:grid;gap:18px;max-width:640px;margin:12px auto 42px;padding:32px;border:1px solid var(--line);border-radius:20px;background:var(--surface)}
+.audit-login[hidden],.audit-message[hidden],.audit-view[hidden],.audit-dashboard[hidden]{display:none!important}
+.audit-login h3{font:500 2rem/1.15 Georgia,"Times New Roman",serif;margin:0 0 10px}
+.audit-login p:not(.eyebrow){font-size:.86rem;color:var(--muted);margin:0}
+.audit-login label{display:grid;gap:8px;font-size:.82rem;font-weight:650}
+.audit-login input{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:13px;color:var(--text);font:inherit}
+.audit-login button{width:max-content;background:var(--accent);color:#fff;padding:11px 18px;border:0;border-radius:99px;cursor:pointer;font:inherit;font-weight:700}
+.audit-login-error{color:#a94435!important}
+@media(max-width:700px){.audit-login{padding:22px}}
