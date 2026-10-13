@@ -79,9 +79,12 @@
           <h2 id="audit-title">Audyt redakcyjny</h2>
           <p>Sprawdzamy, czy najważniejsze wydarzenia tygodnia trafiły do Daily News. Wyniki są zapisywane i można je porównywać w czasie.</p>
         </div>
-        <label class="audit-week-picker" for="audit-week-select">Wybierz tydzień
-          <select id="audit-week-select" aria-label="Wybierz tydzień audytu"></select>
-        </label>
+        <div class="audit-admin-controls">
+          <label class="audit-week-picker" for="audit-week-select">Wybierz tydzień
+            <select id="audit-week-select" aria-label="Wybierz tydzień audytu"></select>
+          </label>
+          <button id="audit-lock" class="audit-lock" type="button" hidden>Zablokuj audyt</button>
+        </div>
       </div>
 
       <form id="audit-login" class="audit-login" autocomplete="off">
