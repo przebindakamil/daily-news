@@ -16,6 +16,8 @@ OUTPUT = ROOT / "data" / "news.json"
 CURRENT_OUTPUT = ROOT / "data" / "current.json"
 ARCHIVE_DIR = ROOT / "data" / "archive"
 ARCHIVE_INDEX = ARCHIVE_DIR / "index.json"
+COVERAGE_DIR = ROOT / "reports" / "coverage"
+COLLECTION_STATS = []
 LOCAL_TZ = ZoneInfo("Europe/Warsaw")
 PREFERENCES = ROOT / "config" / "preferences.json"
 SOURCES = ROOT / "config" / "sources.json"
@@ -125,7 +127,8 @@ def candidate_key(title: str):
     return " ".join(normalized.split()[:14])
 
 
-def add_feed_entries(items, seen, feed_url, category, tier, max_items, window_start, window_end):
+def add_feed_entries(items, seen, feed_url, category, tier, max_items, window_start, window_end,
+                     origin="direct_rss", label=None):
     feed = feedparser.parse(feed_url)
     initial_count = len(items)
     # Recent entries may be from today; scan more than the number to retain.
@@ -157,11 +160,20 @@ def add_feed_entries(items, seen, feed_url, category, tier, max_items, window_st
                 "published_at": published,
                 "snippet": clean_html(entry.get("summary", "") or entry.get("description", ""))[:1000],
                 "source_tier": tier,
-                "discovery_origin": "direct_rss",
+                "discovery_origin": origin,
             }
         )
         if len(items) - initial_count >= max_items:
             break
+
+    COLLECTION_STATS.append({
+        "name": label or getattr(feed.feed, "title", "") or urlparse(feed_url).netloc,
+        "origin": origin,
+        "entries_read": len(feed.entries),
+        "candidates_added": len(items) - initial_count,
+        "feed_url": feed_url,
+        "feed_parse_warning": bool(feed.bozo),
+    })
 
 
 def add_google_query(items, seen, query, category, tier, max_items, window_start, window_end, origin):
@@ -200,8 +212,17 @@ def add_google_query(items, seen, query, category, tier, max_items, window_start
         if len(items) - initial_count >= max_items:
             break
 
+    COLLECTION_STATS.append({
+        "name": query,
+        "origin": origin,
+        "entries_read": len(feed.entries),
+        "candidates_added": len(items) - initial_count,
+        "feed_parse_warning": bool(feed.bozo),
+    })
+
 
 def collect_candidates(window_start, window_end):
+    COLLECTION_STATS.clear()
     seen = set()
     items = []
     sources = load_sources()
@@ -217,6 +238,7 @@ def collect_candidates(window_start, window_end):
             max_items=10,
             window_start=window_start,
             window_end=window_end,
+            label=source.get("name"),
         )
 
     # 2) Trusted-domain discovery. Still uses Google News as an index,
@@ -248,6 +270,22 @@ def collect_candidates(window_start, window_end):
                 window_end=window_end,
                 origin="broad_google",
             )
+
+    # 4) Independent editorial baseline from broad national and international headlines.
+    # Feed metadata is also recorded so absent major stories can be investigated.
+    for source in sources.get("headline_feeds", []):
+        add_feed_entries(
+            items,
+            seen,
+            source["url"],
+            source["category"],
+            tier="discovery",
+            max_items=15,
+            window_start=window_start,
+            window_end=window_end,
+            origin="headline_feed",
+            label=source.get("name"),
+        )
 
     return items
 
@@ -733,6 +771,115 @@ def choose_top_of_day(items, limit=3):
 
     return selected
 
+
+# Monitoring is deliberately independent of the AI ranking: a story can be
+# discovered in the raw pool yet lost in ranking or the final publication.
+WATCH_SIGNALS = {
+    "nobel": ("Nagrody Nobla", ("nobel", "nobla")),
+    "elections": ("Ważne wybory", ("wyniki wybor", "election result", "election winner")),
+    "central_banks": ("Decyzje banków centralnych", ("stopy procentowe", "interest rate decision")),
+    "disasters": ("Poważne katastrofy", ("trzęsienie ziemi", "earthquake")),
+    "ceasefire": ("Rozejm", ("rozejm", "ceasefire")),
+}
+
+
+def build_coverage_report(day, candidates, ranked, selected, source_stats=None):
+    """Document source coverage and potential omissions, without publishing them blindly."""
+    source_stats = list(source_stats if source_stats is not None else COLLECTION_STATS)
+    ranked_urls = {item.get("url") for item in ranked}
+    published_urls = {item.get("url") for item in selected}
+    signals = []
+    for identifier, (label, keywords) in WATCH_SIGNALS.items():
+        matching = [
+            item for item in candidates
+            if any(token in (item.get("title") or "").casefold() for token in keywords)
+        ]
+        if not matching:
+            continue
+        sightings = [
+            {
+                "title": item.get("title", ""),
+                "url": item.get("url", ""),
+                "source": item.get("source", ""),
+                "stage": (
+                    "published" if item.get("url") in published_urls else
+                    "ranked_not_published" if item.get("url") in ranked_urls else
+                    "not_ranked"
+                ),
+            }
+            for item in matching[:12]
+        ]
+        selected_count = sum(item.get("url") in published_urls for item in matching)
+        signals.append({
+            "id": identifier,
+            "label": label,
+            "found": len(matching),
+            "published": selected_count,
+            "needs_review": selected_count == 0,
+            "sightings": sightings,
+        })
+
+    report = {
+        "date": str(day),
+        "candidate_count": len(candidates),
+        "ranked_count": len(ranked),
+        "published_count": len(selected),
+        "source_stats": source_stats,
+        "empty_feeds": [
+            source["name"] for source in source_stats
+            if source["entries_read"] == 0
+        ],
+        "category_coverage": {
+            category: {
+                "candidates": sum(item.get("category_hint") == category for item in candidates),
+                "published": sum(item.get("category") == category for item in selected),
+            }
+            for category in ALLOWED_CATEGORIES
+        },
+        "watched_events": signals,
+        "potential_gaps": [
+            {"id": signal["id"], "label": signal["label"], "found": signal["found"]}
+            for signal in signals if signal["needs_review"]
+        ],
+        "top_ranked_omissions": [
+            {
+                "title": item.get("title", ""),
+                "source": item.get("source", ""),
+                "url": item.get("url", ""),
+                "score": item.get("editorial_score", 0),
+            }
+            for item in ranked if item.get("url") not in published_urls
+        ][:15],
+    }
+    return report
+
+
+def save_coverage_report(report):
+    COVERAGE_DIR.mkdir(parents=True, exist_ok=True)
+    path = COVERAGE_DIR / f"{report['date']}.json"
+    path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary_path:
+        with open(summary_path, "a", encoding="utf-8") as out:
+            out.write(f"## Daily News — kontrola pokrycia {report['date']}\n\n")
+            out.write(
+                f"Kandydaci: {report['candidate_count']}, "
+                f"ranking: {report['ranked_count']}, "
+                f"opublikowane: {report['published_count']}.\n\n"
+            )
+            for gap in report["potential_gaps"]:
+                out.write(f"- ⚠️ Możliwe pominięcie: {gap['label']} "
+                          f"(w źródłach: {gap['found']}, opublikowanych: 0)\n")
+            if not report["potential_gaps"]:
+                out.write("Brak wykrytych pominięć w monitorowanych tematach. "
+                          "To nie gwarantuje kompletności wszystkich newsów.\n")
+            out.write(f"\nRaport szczegółowy: `reports/coverage/{report['date']}.json`\n")
+    print(
+        f"Kontrola pokrycia: {len(report['potential_gaps'])} możliwych luk; "
+        f"raport: {path.relative_to(ROOT)}"
+    )
+
+
 def main():
     preferences = load_preferences()
     target_day, window_start, window_end = previous_day_window()
@@ -753,6 +900,11 @@ def main():
     top_stories = selected[:top_count]
     more_stories = selected[top_count:]
     top_of_day = choose_top_of_day(selected, limit=3)
+
+    report = build_coverage_report(
+        target_day.isoformat(), candidates, ranked, selected
+    )
+    save_coverage_report(report)
 
     generated_at = datetime.now(timezone.utc)
     local_day = target_day.isoformat()
