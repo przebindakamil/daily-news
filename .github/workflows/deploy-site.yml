@@ -1,0 +1,50 @@
+name: Deploy Daily News website
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "index.html"
+      - "script.js"
+      - "styles.css"
+      - "audit.js"
+      - "audit.css"
+      - "reports/audits/**"
+      - ".github/workflows/deploy-site.yml"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-news
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare website
+        run: |
+          mkdir -p _site/reports/audits
+          cp index.html script.js styles.css audit.js audit.css _site/
+          cp -r data _site/data
+          cp -r reports/audits/. _site/reports/audits/
+          touch _site/.nojekyll
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish website
+        id: deployment
+        uses: actions/deploy-pages@v4
