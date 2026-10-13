@@ -86,3 +86,9 @@
 .audit-login button{width:max-content;background:var(--accent);color:#fff;padding:11px 18px;border:0;border-radius:99px;cursor:pointer;font:inherit;font-weight:700}
 .audit-login-error{color:#a94435!important}
 @media(max-width:700px){.audit-login{padding:22px}}
+
+.audit-admin-controls{display:grid;gap:12px;justify-items:end}
+.audit-lock{background:transparent;border:1px solid var(--line);border-radius:99px;padding:7px 12px;font:inherit;font-size:.78rem;color:var(--muted);cursor:pointer}
+.audit-lock[hidden]{display:none!important}
+.audit-lock:hover{border-color:var(--accent);color:var(--accent)}
+@media(max-width:900px){.audit-admin-controls{justify-items:start}}
