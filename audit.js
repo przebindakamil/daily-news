@@ -56,10 +56,11 @@ function auditSelectWeek(week) {
 
 function auditRenderMetrics(report) {
   const metrics = report.metrics || {};
+  const graded = report.status === 'complete';
   const values = [
     {value: auditPercent(metrics.coverage_percent), label:'Pokrycie ważnych wydarzeń', note:'Próba niezależnych nagłówków'},
-    {value: metrics.audited_events || 0, label:'Wydarzenia w próbie', note:'Zweryfikowane przez model'},
-    {value: metrics.missing || 0, label:'Pominięte', note:'Wśród ocenionych wydarzeń'},
+    {value: graded ? metrics.audited_events : '—', label:'Wydarzenia w próbie', note:graded?'Zweryfikowane przez model':'Brak pełnego audytu'},
+    {value: graded ? metrics.missing : '—', label:'Pominięte', note:graded?'Wśród ocenionych wydarzeń':'Nieocenione'},
     {value: (metrics.issues_available || 0) + '/7', label:'Dni z wydaniem', note:'Kompletność tygodnia'}
   ];
   const root = document.querySelector('#audit-metrics');
@@ -181,8 +182,10 @@ function auditRenderDaily(report) {
   for (const day of report.daily || []) {
     const item = auditElement('div','audit-daily-row');
     item.append(auditElement('span','',auditDate(day.day)));
-    item.append(auditElement('strong','',day.published+' publikacji'));
-    item.append(auditElement('small','',day.reference_headlines+' nagłówków referencyjnych'));
+    const missingEdition=(report.missing_issue_days||[]).includes(day.day);
+    const missingSources=(report.missing_coverage_days||[]).includes(day.day);
+    item.append(auditElement('strong','',missingEdition?'Brak wydania':day.published+' publikacji'));
+    item.append(auditElement('small','',missingSources?'Brak raportu źródeł':day.reference_headlines+' nagłówków referencyjnych'));
     root.append(item);
   }
 }
@@ -194,7 +197,7 @@ function auditRenderDiagnostics(report) {
   const entries = [
     ['Raporty źródeł', (metrics.coverage_reports_available??0)+'/7'],
     ['Niezależne nagłówki', String(metrics.reference_headlines??0)],
-    ['Puste źródła', String(metrics.feed_failures??0)],
+    ['Puste źródła', (metrics.coverage_reports_available??0)>0 ? String(metrics.feed_failures??0) : '—'],
     ['Historie powtarzane', String(metrics.repeated_stories??0)]
   ];
   for (const [label,value] of entries) {
@@ -271,6 +274,8 @@ async function loadAuditDashboard(requestedWeek) {
       auditReportCache.set(chosen,await response.json());
     }
     if (!location.hash.startsWith('#audit')) return;
+    const visibleWeek = location.hash.startsWith('#audit/') ? location.hash.slice(7) : chosen;
+    if (visibleWeek !== chosen) return;
     auditRenderReport(auditReportCache.get(chosen),index);
   } catch (error) {
     auditDashboard.hidden = true;
