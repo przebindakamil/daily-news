@@ -136,3 +136,52 @@ gemini-3.5-flash-lite
 ```
 
 Model można zmienić przez zmienną `GEMINI_MODEL`.
+
+## Tygodniowy audyt i dashboard
+
+Strona ma osobną zakładkę **Audyt** (adres `#audit`) z historią raportów
+oraz bezpośrednimi adresami tygodni, np. `#audit/2026-W41`.
+
+Widok obejmuje:
+- porównanie pokrycia istotnych wydarzeń w kolejnych tygodniach;
+- statusy: **uwzględnione**, **częściowo opisane**, **pominięte**;
+- wyniki według kategorii, dzienne statystyki publikacji i duplikaty;
+- źródła wydarzeń oraz informację, na którym etapie selekcji je znaleziono;
+- oznaczenie tygodni z niepełnymi danymi (bez fikcyjnego procentu pokrycia).
+
+### Harmonogram audytu
+
+Workflow `.github/workflows/weekly-audit.yml` działa w poniedziałek
+o **08:00 czasu Europe/Warsaw**. Audytuje zakończony tydzień
+(poniedziałek–niedziela), po zakończeniu publikacji niedzielnego wydania
+przez poranny workflow Daily News.
+
+Skrypt `scripts/audit_news.py` pobiera:
+1. 7 wydań z `data/archive/`;
+2. 7 dziennych raportów `reports/coverage/`, w tym niezależne nagłówki
+   z Polski i świata oraz listy pobranych kandydatów;
+3. wybiera przez Gemini do 25 kluczowych, różnych wydarzeń źródłowych;
+4. semantycznie dopasowuje je do publikacji i oznacza potencjalne pominięcia.
+
+Zapisuje `reports/audits/YYYY-Www.json` oraz `reports/audits/index.json`.
+Po commicie uruchamia bezpośrednie wdrożenie GitHub Pages, dzięki czemu
+nowy tydzień pojawia się na dashboardzie bez ręcznych działań.
+
+Ręczne wygenerowanie audytu: **Actions → Weekly editorial audit → Run workflow**.
+Opcjonalne pole `week` przyjmuje `YYYY-Www` dla zakończonego tygodnia.
+
+### Jak interpretować wyniki?
+
+Wskaźnik pokrycia jest **szacunkiem na próbce nagłówków**, a nie
+stwierdzeniem, że system wychwycił określony procent wszystkich ważnych
+wiadomości na świecie. Częściowe uwzględnienie daje 0,5 punktu.
+Nie mierzymy tutaj automatycznie poprawności faktograficznej artykułów.
+
+Pełny wynik obliczamy wyłącznie wtedy, gdy mamy 7 wydań, 7 raportów
+źródeł oraz niezależne nagłówki ze wszystkich siedmiu dni.
+Inne tygodnie pokazują dostępne dane operacyjne i status **niepełny**.
+Historyczne wydanie za tydzień `2026-W41` zawiera tylko informacje,
+które rzeczywiście zostały zachowane (9–11 października).
+
+Poprawki do rankingów lub automatyczna publikacja wykrytych pominięć
+**nie odbywają się bez dodatkowej weryfikacji**.
