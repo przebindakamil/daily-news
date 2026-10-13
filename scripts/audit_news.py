@@ -353,7 +353,8 @@ def save_report(report):
         json.dumps({"latest": ordered[0]["week"], "weeks": ordered}, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+    # Audit metrics stay encrypted rather than being printed in public summaries.
+    summary_path = None
     if summary_path:
         with open(summary_path, "a", encoding="utf-8") as out:
             out.write(f"## Audyt tygodniowy {week}\n\n")
