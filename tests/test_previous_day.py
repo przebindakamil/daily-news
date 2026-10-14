@@ -6,6 +6,8 @@ from email.utils import format_datetime
 from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import patch
+import json
+import tempfile
 from urllib.parse import parse_qs, urlsplit
 from zoneinfo import ZoneInfo
 
@@ -74,6 +76,23 @@ class PreviousDayTests(unittest.TestCase):
             )
         self.assertEqual([item["title"] for item in selected],
                          ["yesterday-late", "yesterday-early"])
+
+    def test_existing_previous_day_is_not_regenerated(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            archive = root / "archive"
+            archive.mkdir()
+            day = news.previous_day_window(
+                datetime(2026, 10, 14, 6, tzinfo=ZoneInfo("Europe/Warsaw"))
+            )[0]
+            (archive / (day.isoformat() + ".json")).write_text("{}", encoding="utf-8")
+            current = root / "current.json"
+            current.write_text(json.dumps({"date": day.isoformat()}), encoding="utf-8")
+            with patch.object(news, "ARCHIVE_DIR", archive), patch.object(news, "CURRENT_OUTPUT", current):
+                self.assertTrue(news.edition_already_generated(day))
+                self.assertFalse(news.edition_already_generated(day, force=True))
+                current.write_text(json.dumps({"date": "2026-10-12"}), encoding="utf-8")
+                self.assertFalse(news.edition_already_generated(day))
 
     def test_search_finds_early_previous_day(self):
         query = parse_qs(urlsplit(news.google_news_feed("science when:1d")).query)["q"][0]
