@@ -969,9 +969,30 @@ def save_coverage_report(report):
     print("Zapisano wewnętrzne dane do szyfrowania.")
 
 
+def edition_already_generated(target_day, force=False):
+    """Avoid regenerating yesterday's edition during backup cron runs."""
+    if force:
+        return False
+    archive_file = ARCHIVE_DIR / f"{target_day.isoformat()}.json"
+    if not archive_file.is_file() or not CURRENT_OUTPUT.is_file():
+        return False
+    try:
+        current = json.loads(CURRENT_OUTPUT.read_text(encoding="utf-8"))
+        return current.get("date") == target_day.isoformat()
+    except (json.JSONDecodeError, OSError):
+        return False
+
+
 def main():
-    preferences = load_preferences()
     target_day, window_start, window_end = previous_day_window()
+    force = os.environ.get("FORCE_REGENERATE", "").strip().lower() in {
+        "1", "true", "yes", "on"
+    }
+    if edition_already_generated(target_day, force=force):
+        print(f"Wydanie za {target_day.isoformat()} już istnieje; "
+              "bez ponownego uruchamiania Gemini.")
+        return
+    preferences = load_preferences()
     print(
         f"Tworzę wydanie za {target_day.isoformat()} "
         f"(Polska 00:00–24:00; UTC {window_start.isoformat()} – {window_end.isoformat()})."
