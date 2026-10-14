@@ -35,6 +35,15 @@ jobs:
             cp -r secure/audits/. _site/secure/audits/
           fi
           touch _site/.nojekyll
+      - name: Verify Pages entrypoint and public assets
+        run: |
+          test -s _site/index.html
+          test -s _site/script.js
+          test -s _site/audit.js
+          test -s _site/data/archive/index.json
+          grep -q 'id="audit-login"' _site/index.html
+          test ! -d _site/reports
+          echo "Verified GitHub Pages root index.html and admin login assets."
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
