@@ -1,0 +1,431 @@
+{
+  "date": "2026-10-13",
+  "generated_at": "2026-10-14T08:28:07.173297+00:00",
+  "coverage_start": "2026-10-12T22:00:00+00:00",
+  "coverage_end": "2026-10-13T22:00:00+00:00",
+  "top_of_day": [
+    {
+      "title": "Inżynier OpenAI aresztowany za podłożenie urządzenia rejestrującego w sali konferencyjnej",
+      "summary": "Pracownik OpenAI został aresztowany pod zarzutem ukrycia zaawansowanego urządzenia podsłuchowego w sali spotkań zarządu. Firma poinformowała, że wykorzystała własne modele sztucznej inteligencji do zidentyfikowania sprawcy i przekazała sprawę FBI.",
+      "why_it_matters": "Sprawa pokazuje, jak zaawansowane narzędzia AI mogą być wykorzystywane do wewnętrznego wykrywania zagrożeń i szpiegostwa korporacyjnego.",
+      "category": "AI i technologia",
+      "topics": [
+        "OpenAI",
+        "szpiegostwo korporacyjne",
+        "bezpieczeństwo AI",
+        "FBI"
+      ],
+      "editorial_score": 9.85,
+      "digest_text": "Amerykański Departament Sprawiedliwości poinformował o aresztowaniu trzydziestoletniego pracownika OpenAI, obywatela Arabii Saudyjskiej Abdulrahmana Alfozana. Mężczyzna usłyszał zarzuty związane z użyciem lub próbą użycia urządzenia do nielegalnego podsłuchiwania komunikacji ustnej. Sprawa wyszła na jaw, gdy w jednej z firmowych sali konferencyjnych przeznaczonych dla kadry zarządzającej wykryto zaawansowane technicznie urządzenie rejestrujące. Sprzęt został odnaleziony w porcie USB telewizora znajdującego się w pomieszczeniu, w którym regularnie prowadzone są poufne rozmowy dotyczące kluczowych kwestii technologicznych, handlowych oraz strategicznych przedsiębiorstwa. Zgodnie z oficjalnym komunikatem wydanym przez OpenAI, firma wykorzystała własne modele sztucznej inteligencji do analizy znalezionego sprzętu oraz ustalenia jego pochodzenia, co pozwoliło na szybkie zidentyfikowanie konkretnego pracownika odpowiedzialnego za jego ukrycie kilka dni wcześniej. Choć zatrudniony inżynier nie posiadał oficjalnego dostępu do wspomnianego gabinetu zarządu, materiał z monitoringu wizyjnego zabezpieczony w budynku zarejestrował jego obecność w pobliżu tego miejsca w dniach poprzedzających odkrycie podsłuchu. Kamery miały również zarejestrować moment, w którym podejrzany zaglądał w okolice tylnej obudowy telewizora, gdzie ostatecznie zamontowano rejestrator. Samo urządzenie zostało zabezpieczone i częściowo osłonięte papierem toaletowym, a jego instalacja nastąpiła pod koniec września, przy czym dane zgromadzone na nośniku były zaszyfrowane. Dodatkowo, podczas przeszukania innych pomieszczeń biurowych, służby bezpieczeństwa firmy natrafiły na porzuconą torbę należącą do Alfozana, w której znajdował się jego portfel, dokumenty tożsamości oraz kolejne urządzenie służące do nagrywania. Po wewnętrznym wykryciu incydentu kierownictwo OpenAI podjęło decyzję o natychmiastowym zwolnieniu pracownika dyscyplinarnie oraz niezwłocznym przekazaniu sprawy Federalnemu Biuru Śledczemu, co zapoczątkowało oficjalne śledztwo federalne. Alfozan został zatrzymany w piątek i od tego momentu przebywał w areszcie, a we wtorek po raz pierwszy stanął przed amerykańskim sądem federalnym w celu odczytania zarzutów. Przedstawiciele firmy podkreślili w oficjalnych oświadczeniach, że traktują kwestie bezpieczeństwa swoich technologii, danych oraz pracowników jako priorytet o znaczeniu narodowym, wskazując jednocześnie, że opisywany przypadek stanowi dowód na skuteczność wykorzystania sztucznej inteligencji w walce z zaawansowanymi zagrożeniami wewnętrznymi. W dotychczasowych komunikatach zapewniono również, że trwające śledztwo FBI ma pełne wsparcie ze strony korporacji, a wstępne audyty nie wykazały żadnych dowodów na to, aby podejrzany zdołał uzyskać nieuprawniony dostęp do wag modeli sztucznej inteligencji, kodu źródłowego przedsiębiorstwa czy też poufnych danych należących do klientów firmy.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+      "published_at": "2026-10-13T16:45:25-04:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Ameryki Południowej zorganizowana przestępczość może działać w 16 krajach Europy",
+      "summary": "Czteromiesięczne śledztwo ujawniło gwałtowny wzrost przemytu kokainy do Europy oraz ekspansję południowoamerykańskich karteli. Organizacje te współpracują z lokalnymi mafiami i według raportów działają już w co najmniej kilkunastu krajach kontynentu.",
+      "why_it_matters": "Raport obnaża rosnącą skalę międzynarodowej przestępczości zorganizowanej i jej nowe, głębokie zakorzenienie w europejskiej infrastrukturze bezpieczeństwa.",
+      "category": "Świat i geopolityka",
+      "topics": [
+        "narkotyki",
+        "przestępczość zorganizowana",
+        "kartele",
+        "Europa"
+      ],
+      "editorial_score": 9.7,
+      "digest_text": "Przeprowadzone niedawno dziennikarskie śledztwo ujawniło, że gwałtowny wzrost handlu kokainą w Europie ma bezpośredni związek z coraz większą obecnością latynoamerykańskich struktur przestępczych na Starym Kontynencie. Grupy te nawiązują tam ścisłą współpracę z lokalnymi organizacjami mafijnymi. Analiza danych z baz policyjnych, wywiadowczych oraz rozmów z prokuratorami i sędziami z ośmiu krajów wskazuje, że kartele i frakcje pochodzące z takich państw jak Kolumbia, Brazylia, Ekwador, Wenezuela, Meksyk czy Stany Zjednoczone są aktywne w co najmniej dwunastu krajach europejskich. W latach 2014-2024 odnotowano potężny, wynoszący 471 procent wzrost ilości przejmowanej kokainy, a także likwidację większej liczby lokalnych laboratoriów zajmujących się przetwarzaniem pochodnych tej substancji. Statystyki te mogą być jednak zaniżone, ponieważ obejmują wyłącznie ugrupowania oficjalnie zidentyfikowane podczas operacji policyjnych, postępowań sądowych oraz międzynarodowych dochodzeń. Pomięte w nich zostały te gangi, które nie posiadają fizycznej bazy w Europie, lecz współpracują z miejscowymi mafiami na zasadzie wspólnych przedsięwzięć.\n\nWśród zidentyfikowanych w Europie organizacji znajdują się meksykańskie kartele Sinaloa oraz Jalisco Nowe Pokolenie, kolumbijski Clan del Golfo, a także tamtejsze organizacje partyzanckie ELN i dysydenckie odłamy Farc. Obecność na kontynencie zaznaczyły również brazylijskie ugrupowania Pierwsze Stołeczne Zgromadzenie oraz Czerwone Komando, wenezuelski Tren de Aragua oraz wywodzące się z USA gangi Barrio 18 i MS-13, które są silnie zakorzenione w Ameryce Centralnej. Najbardziej widoczną obecność struktury te wykształciły w Hiszpanii, Portugalii, Holandii, Belgii oraz we Francji. Ich działalność odnotowano jednak także w Niemczech, Rumunii, Chorwacji, na Słowacji czy w Bułgarii. Eksperci zwracają uwagę na nowe zjawisko polegające na tym, że grupy z Ameryki Łacińskiej pojawiają się na obszarach niemających wcześniej odpowiedniej infrastruktury przestępczej. Przykładowo, ostatnie operacje policyjne doprowadziły do odkrycia prowadzonych przez Meksykanów laboratoriów metamfetaminy w południowej Francji, w północno-wschodniej Polsce oraz w Brandenburgii.\n\nPrzedstawiciele narodowych organów ścigania oraz eksperci sugerują, że rzeczywista skala zjawiska może być jeszcze większa, niż wskazują oficjalne rejestry. Niewpublikowany raport biura prokuratora generalnego w São Paulo, oparty między innymi na danych brazylijskiego wywiadu, wskazuje, że samo Pierwsze Stołeczne Zgromadzenie z Brazylii może działać w szesnastu krajach europejskich, obejmujących między innymi Wielką Brytanię, Irlandię, Islandię, Serbię, Szwecję, Szwajcarię oraz Turcję. Choć pierwsze próby zapuszczania korzeni przez południowoamerykańskie kartele w Europie, na przykład w hiszpańskiej Galicji, podejmowane były już w latach osiemdziesiątych ubiegłego wieku, obecna skala tego zjawiska osiągnęła zupełnie inny poziom. Raporty Europolu wskazują, że najbardziej zagrażające sieci przestępcze z Ameryki Łacińskiej na stałe osiedliły się w Unii Europejskiej, skąd bezpośrednio kierują swoimi operacjami, w tym również przestępczością przeciwko mieniu.\n\nZjawisko to jest ściśle powiązane z rekordowym wzrostem produkcji narkotyków w Ameryce Łacińskiej, która w ciągu ostatniej dekady wzrosła roughly czterokrotnie, osiągając w 2024 roku poziom około czterech tysięcy stu ton. Obecnie w samej Kolumbii produkuje się więcej kokainy niż w czasach działalności Pablo Escobara. Głównym motywem ekspansji na rynek europejski są wyższe marże zysku w porównaniu do rynku Stanów Zjednoczonych. Dane wskazują, że Europa odpowiada obecnie za około jedną czwartą globalnej konsumpcji tego narkotyku, a europejskie służby policyjne od początku dekady skonfiskowały więcej środków odurzających niż amerykańskie agencje. Z niedawnych raportów Europolu wynika, że spośród setek najgroźnięjszych sieci przestępczych działających w Europie, znaczna część wykazuje bezpośrednie powiązania z organizacjami z Ameryki Łacińskiej, co potwierdza trwały i zinstytucjonalizowany charakter tej transnarodowej współpracy.",
+      "source": "World news | The Guardian",
+      "url": "https://www.theguardian.com/global-development/2026/oct/13/latin-america-organised-crime-cartels-drugs-cocaine-europe",
+      "published_at": "2026-10-13T07:00:18+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Podejrzany o planowanie zamachu na premiera usłyszał zarzuty",
+      "summary": "Mężczyzna podejrzany o planowanie zamachu na Donalda Tuska usłyszał zarzuty prokuratorskie. W jego mieszkaniu znaleziono materiały wybuchowe.",
+      "why_it_matters": "Sprawa dotyczy udaremnionego zamachu na szefa rządu i bezpieczeństwa państwa.",
+      "category": "Polska",
+      "topics": [
+        "Donald Tusk",
+        "zamach",
+        "prokuratura",
+        "bezpieczeństwo państwa"
+      ],
+      "editorial_score": 9.5,
+      "digest_text": "Służby i prokuratura ujawniają nowe kulisy sprawy związanej z planowaniem zamachu na premiera Donalda Tuska. Podejrzany o te czyny usłyszał formalne zarzuty po tym, jak w jego mieszkaniu zabezpieczono materiały wybuchowe. Sprawa budzi duże zainteresowanie opinii publicznej w związku z doniesieniami o dążeniach do siłowej zmiany władzy w kraju. Śledczy analizują działania zatrzymanego oraz napływające w tej sprawie nowe informacje.",
+      "source": "Wyborcza.pl",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeVc4MWQzM1NMRXY0OGhackZUaUpRMklqVGF5dTdMcS1tVlNHRXJkY3Fnc09WaHZsc09PWjlDZVV4UHVtbUU4Zjl3M0JxZlJ1QjVLNVRGM2djRzdXbUtRRGhLUFFnNGYwWDVDanlyaldPUmh4MmRHOE9yMkdkSUZaOHhUdWtRQ1dSSW1jSG55RmU0YnRoaTVpcE13eEhhNXk5T24tOEZhOU1CbFk?oc=5",
+      "published_at": "2026-10-13T16:24:53+00:00",
+      "full_text_used": false
+    }
+  ],
+  "top_stories": [
+    {
+      "title": "Inżynier OpenAI aresztowany za podłożenie urządzenia rejestrującego w sali konferencyjnej",
+      "summary": "Pracownik OpenAI został aresztowany pod zarzutem ukrycia zaawansowanego urządzenia podsłuchowego w sali spotkań zarządu. Firma poinformowała, że wykorzystała własne modele sztucznej inteligencji do zidentyfikowania sprawcy i przekazała sprawę FBI.",
+      "why_it_matters": "Sprawa pokazuje, jak zaawansowane narzędzia AI mogą być wykorzystywane do wewnętrznego wykrywania zagrożeń i szpiegostwa korporacyjnego.",
+      "category": "AI i technologia",
+      "topics": [
+        "OpenAI",
+        "szpiegostwo korporacyjne",
+        "bezpieczeństwo AI",
+        "FBI"
+      ],
+      "editorial_score": 9.85,
+      "digest_text": "Amerykański Departament Sprawiedliwości poinformował o aresztowaniu trzydziestoletniego pracownika OpenAI, obywatela Arabii Saudyjskiej Abdulrahmana Alfozana. Mężczyzna usłyszał zarzuty związane z użyciem lub próbą użycia urządzenia do nielegalnego podsłuchiwania komunikacji ustnej. Sprawa wyszła na jaw, gdy w jednej z firmowych sali konferencyjnych przeznaczonych dla kadry zarządzającej wykryto zaawansowane technicznie urządzenie rejestrujące. Sprzęt został odnaleziony w porcie USB telewizora znajdującego się w pomieszczeniu, w którym regularnie prowadzone są poufne rozmowy dotyczące kluczowych kwestii technologicznych, handlowych oraz strategicznych przedsiębiorstwa. Zgodnie z oficjalnym komunikatem wydanym przez OpenAI, firma wykorzystała własne modele sztucznej inteligencji do analizy znalezionego sprzętu oraz ustalenia jego pochodzenia, co pozwoliło na szybkie zidentyfikowanie konkretnego pracownika odpowiedzialnego za jego ukrycie kilka dni wcześniej. Choć zatrudniony inżynier nie posiadał oficjalnego dostępu do wspomnianego gabinetu zarządu, materiał z monitoringu wizyjnego zabezpieczony w budynku zarejestrował jego obecność w pobliżu tego miejsca w dniach poprzedzających odkrycie podsłuchu. Kamery miały również zarejestrować moment, w którym podejrzany zaglądał w okolice tylnej obudowy telewizora, gdzie ostatecznie zamontowano rejestrator. Samo urządzenie zostało zabezpieczone i częściowo osłonięte papierem toaletowym, a jego instalacja nastąpiła pod koniec września, przy czym dane zgromadzone na nośniku były zaszyfrowane. Dodatkowo, podczas przeszukania innych pomieszczeń biurowych, służby bezpieczeństwa firmy natrafiły na porzuconą torbę należącą do Alfozana, w której znajdował się jego portfel, dokumenty tożsamości oraz kolejne urządzenie służące do nagrywania. Po wewnętrznym wykryciu incydentu kierownictwo OpenAI podjęło decyzję o natychmiastowym zwolnieniu pracownika dyscyplinarnie oraz niezwłocznym przekazaniu sprawy Federalnemu Biuru Śledczemu, co zapoczątkowało oficjalne śledztwo federalne. Alfozan został zatrzymany w piątek i od tego momentu przebywał w areszcie, a we wtorek po raz pierwszy stanął przed amerykańskim sądem federalnym w celu odczytania zarzutów. Przedstawiciele firmy podkreślili w oficjalnych oświadczeniach, że traktują kwestie bezpieczeństwa swoich technologii, danych oraz pracowników jako priorytet o znaczeniu narodowym, wskazując jednocześnie, że opisywany przypadek stanowi dowód na skuteczność wykorzystania sztucznej inteligencji w walce z zaawansowanymi zagrożeniami wewnętrznymi. W dotychczasowych komunikatach zapewniono również, że trwające śledztwo FBI ma pełne wsparcie ze strony korporacji, a wstępne audyty nie wykazały żadnych dowodów na to, aby podejrzany zdołał uzyskać nieuprawniony dostęp do wag modeli sztucznej inteligencji, kodu źródłowego przedsiębiorstwa czy też poufnych danych należących do klientów firmy.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+      "published_at": "2026-10-13T16:45:25-04:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Ameryki Południowej zorganizowana przestępczość może działać w 16 krajach Europy",
+      "summary": "Czteromiesięczne śledztwo ujawniło gwałtowny wzrost przemytu kokainy do Europy oraz ekspansję południowoamerykańskich karteli. Organizacje te współpracują z lokalnymi mafiami i według raportów działają już w co najmniej kilkunastu krajach kontynentu.",
+      "why_it_matters": "Raport obnaża rosnącą skalę międzynarodowej przestępczości zorganizowanej i jej nowe, głębokie zakorzenienie w europejskiej infrastrukturze bezpieczeństwa.",
+      "category": "Świat i geopolityka",
+      "topics": [
+        "narkotyki",
+        "przestępczość zorganizowana",
+        "kartele",
+        "Europa"
+      ],
+      "editorial_score": 9.7,
+      "digest_text": "Przeprowadzone niedawno dziennikarskie śledztwo ujawniło, że gwałtowny wzrost handlu kokainą w Europie ma bezpośredni związek z coraz większą obecnością latynoamerykańskich struktur przestępczych na Starym Kontynencie. Grupy te nawiązują tam ścisłą współpracę z lokalnymi organizacjami mafijnymi. Analiza danych z baz policyjnych, wywiadowczych oraz rozmów z prokuratorami i sędziami z ośmiu krajów wskazuje, że kartele i frakcje pochodzące z takich państw jak Kolumbia, Brazylia, Ekwador, Wenezuela, Meksyk czy Stany Zjednoczone są aktywne w co najmniej dwunastu krajach europejskich. W latach 2014-2024 odnotowano potężny, wynoszący 471 procent wzrost ilości przejmowanej kokainy, a także likwidację większej liczby lokalnych laboratoriów zajmujących się przetwarzaniem pochodnych tej substancji. Statystyki te mogą być jednak zaniżone, ponieważ obejmują wyłącznie ugrupowania oficjalnie zidentyfikowane podczas operacji policyjnych, postępowań sądowych oraz międzynarodowych dochodzeń. Pomięte w nich zostały te gangi, które nie posiadają fizycznej bazy w Europie, lecz współpracują z miejscowymi mafiami na zasadzie wspólnych przedsięwzięć.\n\nWśród zidentyfikowanych w Europie organizacji znajdują się meksykańskie kartele Sinaloa oraz Jalisco Nowe Pokolenie, kolumbijski Clan del Golfo, a także tamtejsze organizacje partyzanckie ELN i dysydenckie odłamy Farc. Obecność na kontynencie zaznaczyły również brazylijskie ugrupowania Pierwsze Stołeczne Zgromadzenie oraz Czerwone Komando, wenezuelski Tren de Aragua oraz wywodzące się z USA gangi Barrio 18 i MS-13, które są silnie zakorzenione w Ameryce Centralnej. Najbardziej widoczną obecność struktury te wykształciły w Hiszpanii, Portugalii, Holandii, Belgii oraz we Francji. Ich działalność odnotowano jednak także w Niemczech, Rumunii, Chorwacji, na Słowacji czy w Bułgarii. Eksperci zwracają uwagę na nowe zjawisko polegające na tym, że grupy z Ameryki Łacińskiej pojawiają się na obszarach niemających wcześniej odpowiedniej infrastruktury przestępczej. Przykładowo, ostatnie operacje policyjne doprowadziły do odkrycia prowadzonych przez Meksykanów laboratoriów metamfetaminy w południowej Francji, w północno-wschodniej Polsce oraz w Brandenburgii.\n\nPrzedstawiciele narodowych organów ścigania oraz eksperci sugerują, że rzeczywista skala zjawiska może być jeszcze większa, niż wskazują oficjalne rejestry. Niewpublikowany raport biura prokuratora generalnego w São Paulo, oparty między innymi na danych brazylijskiego wywiadu, wskazuje, że samo Pierwsze Stołeczne Zgromadzenie z Brazylii może działać w szesnastu krajach europejskich, obejmujących między innymi Wielką Brytanię, Irlandię, Islandię, Serbię, Szwecję, Szwajcarię oraz Turcję. Choć pierwsze próby zapuszczania korzeni przez południowoamerykańskie kartele w Europie, na przykład w hiszpańskiej Galicji, podejmowane były już w latach osiemdziesiątych ubiegłego wieku, obecna skala tego zjawiska osiągnęła zupełnie inny poziom. Raporty Europolu wskazują, że najbardziej zagrażające sieci przestępcze z Ameryki Łacińskiej na stałe osiedliły się w Unii Europejskiej, skąd bezpośrednio kierują swoimi operacjami, w tym również przestępczością przeciwko mieniu.\n\nZjawisko to jest ściśle powiązane z rekordowym wzrostem produkcji narkotyków w Ameryce Łacińskiej, która w ciągu ostatniej dekady wzrosła roughly czterokrotnie, osiągając w 2024 roku poziom około czterech tysięcy stu ton. Obecnie w samej Kolumbii produkuje się więcej kokainy niż w czasach działalności Pablo Escobara. Głównym motywem ekspansji na rynek europejski są wyższe marże zysku w porównaniu do rynku Stanów Zjednoczonych. Dane wskazują, że Europa odpowiada obecnie za około jedną czwartą globalnej konsumpcji tego narkotyku, a europejskie służby policyjne od początku dekady skonfiskowały więcej środków odurzających niż amerykańskie agencje. Z niedawnych raportów Europolu wynika, że spośród setek najgroźnięjszych sieci przestępczych działających w Europie, znaczna część wykazuje bezpośrednie powiązania z organizacjami z Ameryki Łacińskiej, co potwierdza trwały i zinstytucjonalizowany charakter tej transnarodowej współpracy.",
+      "source": "World news | The Guardian",
+      "url": "https://www.theguardian.com/global-development/2026/oct/13/latin-america-organised-crime-cartels-drugs-cocaine-europe",
+      "published_at": "2026-10-13T07:00:18+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Podejrzany o planowanie zamachu na premiera usłyszał zarzuty",
+      "summary": "Mężczyzna podejrzany o planowanie zamachu na Donalda Tuska usłyszał zarzuty prokuratorskie. W jego mieszkaniu znaleziono materiały wybuchowe.",
+      "why_it_matters": "Sprawa dotyczy udaremnionego zamachu na szefa rządu i bezpieczeństwa państwa.",
+      "category": "Polska",
+      "topics": [
+        "Donald Tusk",
+        "zamach",
+        "prokuratura",
+        "bezpieczeństwo państwa"
+      ],
+      "editorial_score": 9.5,
+      "digest_text": "Służby i prokuratura ujawniają nowe kulisy sprawy związanej z planowaniem zamachu na premiera Donalda Tuska. Podejrzany o te czyny usłyszał formalne zarzuty po tym, jak w jego mieszkaniu zabezpieczono materiały wybuchowe. Sprawa budzi duże zainteresowanie opinii publicznej w związku z doniesieniami o dążeniach do siłowej zmiany władzy w kraju. Śledczy analizują działania zatrzymanego oraz napływające w tej sprawie nowe informacje.",
+      "source": "Wyborcza.pl",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeVc4MWQzM1NMRXY0OGhackZUaUpRMklqVGF5dTdMcS1tVlNHRXJkY3Fnc09WaHZsc09PWjlDZVV4UHVtbUU4Zjl3M0JxZlJ1QjVLNVRGM2djRzdXbUtRRGhLUFFnNGYwWDVDanlyaldPUmh4MmRHOE9yMkdkSUZaOHhUdWtRQ1dSSW1jSG55RmU0YnRoaTVpcE13eEhhNXk5T24tOEZhOU1CbFk?oc=5",
+      "published_at": "2026-10-13T16:24:53+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Międzynarodowy Fundusz Walutowy ostrzega przed ryzykiem załamania na rynku sztucznej inteligencji",
+      "summary": "MFW ostrzega, że krach na akcjach spółek technologicznych związanych ze sztuczną inteligencją grozi światowej stabilności finansowej. Wysokie wyceny, rosnące zadłużenie oraz powiązane inwestycje zwiększają podatność rynków na wstrząsy.",
+      "why_it_matters": "Ostrzeżenie MFW wskazuje na realne ryzyko globalnego kryzysu wywołanego pęknięciem bańki technologicznej.",
+      "category": "Finanse i inwestowanie",
+      "topics": [
+        "MFW",
+        "rynek akcji",
+        "bańka AI",
+        "stabilność finansowa"
+      ],
+      "editorial_score": 9.5,
+      "digest_text": "Międzynarodowy Fundusz Walutowy ostrzegł w swoim najnowszym raporcie dotyczącym globalnej stabilności finansowej, że groźba krachu na rynku akcji powiązanych ze sztuczną inteligencją stanowi poważne zagrożenie dla stabilności rynków na całym świecie. Instytucja zwróciła uwagę na bardzo wysokie wyceny firm technologicznych oraz narastające zadłużenie jako główne czynniki sprawcze, przez które ryzyka systemowe pozostają na podwyższonym poziomie. Konsekwencje ewentualnej korekty na tym rynku mogłyby mieć wymiar globalny. Oprócz Stanów Zjednoczonych najbardziej narażone na wstrząsy byłyby rynki azjatyckie, podczas gdy Wielka Brytania i strefa euro mogłyby okazać się nieco bardziej odporne, choć inwestorzy posiadający aktywa amerykańskie i tak odczuliby straty. Przedstawiciele Funduszu podkreślili, że ekspozycja reszty świata na aktywa z USA, a w szczególności na branżę sztucznej inteligencji, osiągnęła najwyższy poziom w historii. Obecnie wspiera to globalną gospodarkę poprzez efekt bogactwa, jednak w przypadku nagłej korekty rynkowej mogłoby to wywołać szerokie reperkusje.\n\nKrach w sektorze sztucznej inteligencji został uznany przez ekspertów za jedno z trzech głównych zagrożeń dla stabilności finansowej. Pozostałe dwa to rosnące koszty rządowego zadłużenia oraz groźba poważnych ataków cybernetycznych. Te trzy elementy zostały wskazane jako prawdopodobne katalizatory, które w bliskiej przyszłości mogłyby doprowadzić do gwałtownego zaostrzenia warunków finansowych oraz wywołać duże zawirowania na rynkach. Analiza Międzynarodowego Funduszu Walutowego uwypukliła silne powiązania między dużymi przedsiębiorstwami technologicznymi oraz wysoki poziom zadłużenia wykorzystywanego do finansowania inwestycji w tej dziedzinie. Słabsze lub mniej trwałe efekty inwestycyjne oraz niższa rentowność mogłyby doprowadzić do przeceny aktywów związanych ze sztuczną inteligencją. Zjawisko to byłoby dodatkowo potęgowane przez rosnącą dźwignię finansową, skoncentrowaną ekspozycję oraz skomplikowane układy finansowania o charakterze cyrkularnym.\n\nTego rodzaju zmiana nastrojów mogłaby drastycznie ograniczyć inwestycje, wywołać korekty na rynkach akcji i doprowadzić do globalnego rozlewania się negatywnych skutków. Siedem największych spółek technologicznych, do których należą Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia oraz Tesla, odpowiada obecnie za ponad trzydzieści pięć procent indeksu S&P 500 w Stanach Zjednoczonych. Jeszcze dekadę temu wskaźnik ten wynosił zaledwie dwanaście procent, a łączna kapitalizacja rynkowa tych gigantów wzrosła w ciągu ostatnich dwóch lat o ponad połowę. Jednocześnie Fundusz ostrzegł przed narastającymi dowodami na to, że pomyślne wdrożenie sztucznej inteligencji wcale nie musi wymagać inwestycji na gigantyczną skalę, jaką realizują firmy budujące infrastrukturę, a spodziewane korzyści gospodarcze mogą okazać się znacznie mniejsze, niż powszechnie zakładano. Spółki te, odpowiedzialne między innymi za budowę rozległych centrów danych, napędzają obecny boom, ale jednocześnie generują ogromne ryzyko.\n\nW raporcie zwrócono również uwagę na rosnące zadłużenie stanowiące fundament obecnej hossy, które w przypadku załamania rynku mogłoby zwielokrotnić skutki kryzysu. Wskazano na zobowiązania zaciągane przez same przedsiębiorstwa, inwestycje funduszy hedgingowych oraz spekulacyjne zakupy akcji przez inwestorów detalicznych posiłkujących się pożyczkami. W sytuacji odwrotu koniunktury rosnąca dźwignia finansowa drastycznie zwiększa prawdopodobieństwo wystąpienia tzw. wymuszonej sprzedaży aktywów oraz gwałtownych skoków zmienności na giełdach. Dodatkowym czynnikiem ryzyka są powszechne transakcje o charakterze cyrkularnym, które wiążą silniejsze podmioty ze sztucznej inteligencją z jej słabszymi partnerami rynkowymi. W samych tylko ostatnich trzech latach odnotowano transakcje tego typu na ogromne kwoty, wspierane dodatkowym zadłużeniem w zamian za przyszłe zobowiązania finansowe.\n\nTymczasem brytyjski regulator rynku finansowego zwrócił uwagę na konieczność zabezpieczenia się mniejszych podmiotów przed zagrożeniami o charakterze cybernetycznym powiązanymi ze sztuczną inteligencją. Wskazano, że nie wszystkie firmy dysponują odpowiednimi zasobami finansowymi, aby uzyskać dostęp do najbardziej zaawansowanych modeli sztucznej inteligencji, które potrafią błyskawicznie wykrywać luki w systemach bezpieczeństwa rządowych oraz korporacyjnych. W związku z tym mniejszym przedsiębiorstwom zaleca się rozważenie wykupienia odpowiednich polis ubezpieczeniowych, które mogłyby chronić je przed potencjalnymi stratami wynikającymi z rosnącego zagrożenia cyfrowego w tym dynamicznie rozwijającym się sektorze.",
+      "source": "Business | The Guardian",
+      "url": "https://www.theguardian.com/business/2026/oct/13/ai-share-crash-risk-global-imf-debt-corrowing-cyber-attacks",
+      "published_at": "2026-10-13T12:30:01+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Kobiety z chorobami autoimmunologicznymi częściej słyszą, że ich objawy są psychologiczne",
+      "summary": "Badanie Uniwersytetu w Cambridge wskazuje na wyraźny podział płciowy w diagnostyce schorzeń autoimmunologicznych. Kobiety znacznie częściej niż mężczyźni doświadczają błędnych diagnoz psychiatrycznych i dłużej czekają na leczenie.",
+      "why_it_matters": "Obywatelskie i medyczne zaniedbania wynikające z uprzedzeń płciowych prowadzą do wieloletnich opóźnień w leczeniu setek milionów pacjentek na całym świecie.",
+      "category": "Nauka",
+      "topics": [
+        "medycyna",
+        "choroby autoimmunologiczne",
+        "równość płci",
+        "diagnoza"
+      ],
+      "editorial_score": 9.2,
+      "digest_text": "Badania przeprowadzone przez Uniwersytet w Cambridge oraz Uniwersytet w East Anglia wskazują, że kobiety cierpiące na choroby autoimmunologiczne znacznie częściej niż mężczyźni słyszą od lekarzy, że ich objawy mają podłoże psychologiczne lub psychosomatyczne. Schorzenia autoimmunologiczne dotykają setek milionów ludzi na całym świecie, czyli co dziesiątej osoby, wywołując szereg dokuczliwych dolegliwości, takich jak przewlekłe zmęczenie, bóle mięśni czy wysypki. Nowe analizy wykazały jednak wyraźny podział ze względu na płeć w sposobie traktowania pacjentów przez personel medyczny. Kobiety częściej padają oficjalnymi ofiarami błędnych diagnoz psychiatrycznych, częściej ich symptomy są niesłusznie uznawane za psychosomatyczne i znacznie dłużej czekają na ostateczne rozpoznanie oraz wdrożenie właściwego leczenia.\n\nGłówna autorka badań, dr Melanie Sloan z wydziału zdrowia publicznego i opieki pierwotnej na obu uniwersytetach, podkreśla, że szkody wyrządzone kobietom przez tego typu pomyłki diagnostyczne mają długotrwałe konsekwencje, rzutując negatywnie na ich zaufanie do lekarzy oraz własne poczucie własnej wartości. W niektórych przypadkach kobiety zmuszone były czekać całe lata na prawidłową diagnozę, co drastycznie opóźniało rozpoczęcie leczenia ich schorzeń. Opublikowane na łamach czasopisma naukowego Lancet eClinicalMedicine badanie objęło ponad 6600 osób z chorobami autoimmunologicznymi, głównie kobiety pochodzące z Wielkiej Brytanii. Uczestnicy wskazywali swoje główne schorzenia, przy czym niemal jedna czwarta badanych kobiet zmagała się z autoimmunologiczną chorobą tarczycy, taką jak niedoczynność w postaci choroby Hashimoto czy nadczynność znana jako choroba Gravesa-Basedowa. Hashimoto powoduje przyrost masy ciała, wypadanie włosów, zmęczenie i bóle stawów, natomiast Graves-Basedow objawia się między innymi wyłupiastymi oczami, kołataniem serca oraz utratą wagi. Co siódma badana kobieta chorowała na toczeń układowy wywołujący zmęczenie, wysypki i bóle mięśni. Z kolei u mężczyzn najczęściej diagnozowano reumatoidalne zapalenie stawów, zapalenie naczyń oraz zespół antyfosfolipidowy.\n\nSzczegółowe dane statystyczne zebrane przez naukowców ujawniły, że 43 procent kobiet zgłaszało sytuacje, w których ich stan przypisywano przyczynom psychiatrycznym, podczas gdy w przypadku mężczyzn odsetek ten wynosił 33 procent. Ponadto jedna trzecia kobiet, czyli 34 procent, usłyszała, że ich objawy są psychosomatyczne, co oznacza, że zostały wywołane lub nasilone przez stres lub lęk, podczas gdy wśród mężczyzn dotyczyło to 22 procent badanych. Po uwzględnieniu takich czynników jak wiek, grupa chorobowa, kontynent czy sytuacja finansowa gospodarstwa domowego, obliczono, że kobiety są o 46 procent bardziej narażone na otrzymanie błędnej diagnozy psychiatrycznej oraz o 74 procent częściej doświadczają błędnego rozpoznania psychosomatycznego w porównaniu do mężczyzn.\n\nBadacze udokumentowali również, że czas upływający od pojawienia się pierwszych symptomów do uzyskania prawidłowej diagnozy jest u kobiet znacznie dłuższy, a proces ten wymaga odbycia większej liczby konsultacji medycznych. W grupie mężczyzn najczęściej zgłaszany okres oczekiwania na diagnozę wynosił mniej niż trzy miesiące, natomiast u kobiet było to od roku do dwóch lat. Choroby autoimmunologiczne polegają na tym, że układ odpornościowy omyłkowo atakuje własne tkanki organizmu, a ich rozpoznanie bywa skomplikowane ze względu na objawy wspólne dla wielu powszechnych dolegliwości. Zespół badawczy zauważył, że chociaż ogólne wyzwania diagnostyczne dotykają obie płcie, kobiety mogą mierzyć się z dodatkowymi trudnościami wynikającymi z utrzymujących się w medycynie historycznych uprzedzeń, w ramach których kobiety bywają postrzegane jako mniej wiarygodne i bardziej emocjonalne źródło informacji o własnych objawach.\n\nDr Sloan zaznacza, że uzyskane wyniki wyraźnie pokazują, iż wyjaśnienia o charakterze psychologicznym lub psychiatrycznym bywają formułowane zbyt pochopnie. Dotyczy to wprawdzie pacjentów obu płci, jednak badania sugerują, że to kobiety są szczególnie podatne na ten rodzaj błędnych diagnoz. Współautorka badania i pacjentka dotknięta chorobą autoimmunologiczną, Shaista Tayabali, zwraca uwagę, że drastyczne różnice w liczbie błędnych diagnoz pomiędzy płciami dowodzą trwałego zakorzenienia uprzedzeń ze względu na płeć w procesie diagnostycznym. Mimo że przestarzałe określenia takie jak thesteriał są obecnie rzadko stosowane, kobiety wciąż napotykają większe trudności w sprawieniu, by ich objawy zostały w pełni uwierzytelnione i właściwie zaadresowane przez system opieki zdrowotnej.",
+      "source": "Science | The Guardian",
+      "url": "https://www.theguardian.com/society/2026/oct/13/women-autoimmune-conditions-psychological-misdiagnosis-cambridge-study",
+      "published_at": "2026-10-13T04:00:14+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Zelienski: Ukraina nie otrzymała ostrzeżeń od sojuszników przed rosyjskimi uderzeniami rakietowymi",
+      "summary": "Prezydent Ukrainy poinformował, że Kijów nie dostał żadnych wcześniejszych ostrzeżeń od zachodnich partnerów przed nocnymi atakami rakietowymi. W ich wyniku zniszczona została kluczowa infrastruktura energetyczna i zginęli cywile.",
+      "why_it_matters": "Brak danych wywiadowczych o zbliżających się atakach rakietowych utrudnia obronę ukraińskich miast i pogłębia napięcia dyplomatyczne między Kijowem a Waszyngtonem.",
+      "category": "Świat i geopolityka",
+      "topics": [
+        "Ukraina",
+        "Kijów",
+        "atak rakietowy",
+        "wywiad"
+      ],
+      "editorial_score": 9.1,
+      "digest_text": "Prezydent Ukrainy Wołodymyr Zełenski poinformował, że Kijów nie otrzymał od zachodnich partnerów wcześniejszych ostrzeżeń przed serią nocnych rosyjskich atakatów raketowych wymierzonych w cywilną infrastrukturę stolicy. W poniedziałek i wtorek pociski balistyczne uderzyły między innymi w kluczową elektrownię cieplną na lewym brzegu Dniepratu oraz w budynek mieszkalny, co doprowadziło do śmierci co najmniej jednej osoby, licznych obrażeń oraz pożarów i ewakuacji mieszkańców. Władze w Kijowie podkreślają, że wczesne ostrzeganie ze strony sojuszników ma fundamentalne znaczenie dla ratowania ludzkiego życia oraz obrony przed atakami, których intensywność ze strony Rosji drastycznie wzrosła przed nadchodzącą zimą. Rosyjskie uderzenia w ukraińską sieć energetyczną powodują rozległe przerwy w dostawach prądu i wody, a celem Moskwy jest pozbawienie milionów cywilów ogrzewania oraz wywołanie nowej fali uchodźców do państw Unii Europejskiej. \n\nSytuacja ta zbiegła się w czasie z dyplomatycznymi i politycznymi napięciami w relacjach między Waszyngtonem a Kijowem. Wcześniej administracja Donalda Trumpa skierowała pod adresem ukraińskich władz groźby dotyczące wstrzymania wymiany danych wywiadowczych oraz potencjalnego zawieszenia programu zakupowego zaawansowanych systemów obrony powietrznej, takich jak rakiety Patriot, finansowanego przez europejskich sojuszników. Mimo tych groźb Donald Trump zaprzeczył, jakoby wymiana danych wywiadowczych została całkowicie wstrzymana, deklarując chęć współpracy z obiema stronami konfliktu w celu doprowadzenia do jego zakończenia. Jednocześnie amerykański przywódca domagał się od Ukrainy zaprzestania ataków na rosyjskie rafinerie ropy naftowej oraz ogłosił porozumienie z Władimirem Putinem w sprawie importu rosyjskiego diesla z pominięciem dotychczasowych sankcji, co wywołało kontrowersje.\n\nDonald Trump twierdził również, że Moskwa i Kijów zgodziły się na tak zwane zawieszenie broni w sferze energetycznej, co Wołodymyr Zełenski nazwał zaskoczeniem, wskazując, że strona ukraińska wstrzymała uderzenia na rosyjskie obiekty energetyczne w ciągu ostatnich dwóch dni, podczas gdy Rosja całkowicie zignorowała te doniesienia i kontynuowała zmasowane bombardowania. Ukraińscy dowódcy zaznaczają, że amerykański wywiad nie jest niezbędny do wskazywania celów strategicznych w głębi Rosji, jednak odgrywa kluczową rolę w wykrywaniu startów bombowców dalekiego zasięgu oraz wystrzeliwania pocisków balistycznych. Z kolei ukraiński minister spraw zagranicznych Andrii Sybiha zasugerował w Warszawie, że brak ostrzeżeń przed atakiem na Kijów mógł wynikać z użycia przez Rosję nowego, specjalnego typu uzbrojenia.\n\nTymczasem rosyjskie bombardowania objęły także inne regiony kraju, w tym Charków, gdzie w wyniku zniszczenia budynku mieszkalnego zginęły cztery osoby, a dziesiątki zostały ranne. Napięta sytuacja panuje także poza granicami Ukrainy, bowiem w wyniku nocnego ataku dronów na Morzu Czarnym u wybrzeży Bułgarii zatonął jeden statek handlowy, a załoga innego została uznana za zaginioną, co skłoniło władze w Sofii do wezwania rosyjskiego ambasadora. Obecny kryzys polityczny w relacjach między Waszyngtonem a Kijowem uznawany jest za najpoważniejszy od dłuższego czasu, a ukraiński prezydent deklaruje gotowość do wstrzymania uderzeń na rosyjską infrastrukturę paliwową wyłącznie pod warunkiem uzyskania realnych gwarancji wzajemności oraz zaprzestania rosyjskich ataków na obiekty energetyczne Ukrainy.",
+      "source": "World news | The Guardian",
+      "url": "https://www.theguardian.com/world/2026/oct/13/allies-did-not-warn-kyiv-of-russian-ballistic-missile-strikes-says-zelenskyy",
+      "published_at": "2026-10-13T21:54:12+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Ataki powietrzne Arabii Saudyjskiej w Jemenie i eskalacja konfliktu z ruchem Huti",
+      "summary": "Arabia Saudyjska przeprowadziła serię nalotów na strategiczny skład ropy w Jemenie w odpowiedzi na krwawy atak na lotnisko w Riadzie. Między oboma stronami dochodzi do dalszej eskalacji konfliktu, w tym do prób przechwycenia rakiet wymierzonych w siedzibę koncernu Saudi Aramco.",
+      "why_it_matters": "Eskalacja konfliktu między Arabią Saudyjską a wspieranymi przez Iran bojownikami Huti bezpośrednio zagraża stabilności regionu oraz globalnym dostawom energii.",
+      "category": "Świat i geopolityka",
+      "topics": [
+        "Arabia Saudyjska",
+        "Jemen",
+        "Huti",
+        "infrastruktura naftowa"
+      ],
+      "editorial_score": 9.1,
+      "digest_text": "Saudyjska Arabia przeprowadziła serię nalotów na strategiczny skład ropy naftowej zlokalizowany na obrzeżach jemeńskiej stolicy, Sany, a w późniejszym czasie poinformowała o przechwyceniu pocisków wystrzelonych w kierunku Dahran, gdzie znajduje się główna siedziba koncernu energetycznego Saudi Aramco. Ataki te stanowią znaczącą eskalację trwającego konfliktu pomiędzy Rijadem a wspieranymi przez Iran bojownikami Houthi. Przed wtorkową ofensywą saudyjski rzecznik wydał ostrzeżenie, wzywając cywilów do opuszczenia wyznaczonego obszaru, co miało na celu wywołanie strachu przed największym dotychczas uderzeniem w infrastrukturę energetyczną rebeliantów. Centralna stacja paliw Sabaha posiada duże zbiorniki na produkty ropopochodne, choć jemeńska spółka naftowa twierdziła, że w momencie ataku magazyny były puste. Ostrzelane zostały również instalacje w porcie Ras Isa w Hodeidzie, które wcześniej były celem izraelskich ataków w 2024 roku. Łącznie przeprowadzono dziesięć fal uderzeń, których celem było unieruchomienie sił Houthi prowadzących ofensywę na południe, w kierunku miasta Taiz. Saudyjczycy uderzyli także w domniemaną kryjówkę przywódców rebeliantów w dystrykcie Razih na północy Jemenu. Atak na skład paliw był najprawdopodobniej odpowiedzią Rijadu na wcześniejszy zamach Houthi na międzynarodowe lotnisko im. Króla Chalida, w którym zginęło trzynaście osób, a trzysta zostało rannych. Port lotniczy pozostał zamknięty, co stanowi cios dla gospodarki dążącej do udowodnienia swojej stabilności i bezpieczeństwa dla inwestorów. W odpowiedzi rzecznik Houthi ostrzegł pracowników oraz obywateli przebywających w pobliżu obiektów należących do Aramco w Rijadzie przed koniecznością natychmiastowej ewakuacji, uznając je za prawomocne cele. Jeszcze tego samego dnia koalicja pod wodzą Saudyjczyków poinformowała o zestrzeleniu rakiety nad Dahran, której szczątki spadły na obszar mieszkalny, powodując głośne eksplozje i wymuszając ewakuację budynku centrali, choć sama spółka nie wydała w tej sprawie oficjalnego komunikatu. Wydarzenia te obnażyły dysproporcję sił, w której Arabia Saudyjska posiada całkowitą dominację w powietrzu, podczas gdy rebelianci odpowiadają przy użyciu dronów i pocisków rakietowych. Według ekspertów wojskowych Houthi wykazują jednak coraz większe zaawansowanie technologiczne, wykorzystując mniejsze i trudniejsze do wykrycia bezzałogowce, które skutecznie omijają systemy obronne. Wzajemne groźby zniszczenia infrastruktury energetycznej potwierdzają, że konflikt zamiast wygasać, wchodzi w nową, ostrzejszą fazę. Głos w sprawie zabrał również Donald Trump, krytykując zachowanie rebeliantów i wiążąc je z próbą wpłynięcia na zbliżające się amerykańskie wybory połówkowe, choć powstrzymał się od zapowiedzi natychmiastowych działań militarnych. Obecna faza konfliktu eskalowała w zeszłym miesiącu, gdy rebelianci przejęli kluczowe tereny wzdłuż cieśniny Bab al-Mandab, stanowiącej strategiczny szlak dla transportu ropy naftowej. W tym samym tygodniu siły Houthi zbliżyły się do obrzeży południowego miasta Taiz, ostrzeliwując strefy zamieszkane, co wywołało apele o pomoc militarną oraz ostrzeżenia pracowników służby zdrowia przed brakami leków. Rządowe siły wysłały posiłki w rejon Lahij i dystryktu Al-Waz'iyya, jednak ugrupowania antyrebeliantów w samym Jemenie pozostają podzielone. Istotną rolę w walce z Houthi zaczęła odgrywać Południowa Rada Przejściowa, dążąca do secesji południowej części kraju. Jej wygnany lider, Aidarous al-Zubaidi, ogłosił powszechną mobilizację w obronie południa, nie rezygnując z planów przeprowadzenia referendum niepodległościowego. Mimo że organizacja ta jest w Jemenie zakazana, a jej przywódzorze postawiono zarzuty o zdradę stanu, w tle toczą się poufne rozmowy dotyczące ewentualnego zalegalizowania Rady przez saudyjskiego następcę tronu, co mogłoby jednak oznaczać polityczną zdradę wobec obecnego prezydenta kraju, Rashada al-Alimiego.",
+      "source": "World news | The Guardian",
+      "url": "https://www.theguardian.com/world/2026/oct/13/saudi-arabia-strikes-strategic-oil-depots-near-yemen-capital",
+      "published_at": "2026-10-13T17:26:08+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Badacze ruszyli na odległą wyspę w poszukiwaniu śladów samolotu Amelii Earhart",
+      "summary": "Zespół naukowców dotarł na bezludną wyspę Nikumaroro na Pacyfiku, aby zbadać domniemane wrakowe znalezisko związane z zaginięciem legendarnej pilotki Amelii Earhart w 1937 roku. Prace badawcze utrudniają ekstremalne zjawiska pogodowe oraz obecność gigantycznych krabów kokosowych.",
+      "why_it_matters": "Wizyta na wyspie może pomóc rozwiązać jedną z najgłośniejszych zagadek w historii lotnictwa, trwającą już od ponad 89 lat.",
+      "category": "Nauka",
+      "topics": [
+        "Amelia Earhart",
+        "kraby kokosowe",
+        "badania historyczne",
+        "archeologia"
+      ],
+      "editorial_score": 9.0,
+      "digest_text": "Zespół badaczy z Archaeological Legacy Institute oraz Uniwersytetu Purdue dotarł na odległą wyspę Nikumaroro na Oceanie Spokojnym, aby zbadać domniemane szczątki samolotu Amelii Earhart, słynnej pionierki lotnictwa, która zniknęła bez śladu w 1937 roku podczas próby okrętowania kuli ziemskiej wraz z nawigatorem Fredem Noonaniem. Statek Marin Mainiku przybył na zachodnią stronę wyspy należącej do Kiribati po pięciodniowej podróży obejmującej osiemset trzydzieści mil morskich przez południowy Pacyfik. Planowane na pięć dni prace mają na celu rozwikłanie zagadki zniknięcia lotników, które od dziesięcioleci budzi liczne spekulacje. Oficjalna wersja wydarzeń wskazuje, że maszyna zmagała się z problemami z komunikacją, a po nieudanej próbie odnalezienia wyspy Howland w celu uzupełnienia paliwa, samolot runął do oceanu. Jednak nowa ekspedycja skupia się na tzw. obiekcie Taraia, po raz pierwszy dostrzeżonym na skraju laguny w 2020 roku dzięki zdjęciom satelitarnym. Część badaczy uważa go za wrak samolotu Earhart, podczas gdy sceptycy sugerują, że może to być jedynie powalone drzewo. Jest to pierwsza autoryzowana wizyta na wyspie Nikumaroro od siedmiu lat oraz pierwsza od ponad piętnastu lat na samym Półwyspie Taraia. Poniedziałkowe przybycie ekspedycji rozpoczęło fazę przygotowawczą, podczas której we wtorek załoga planuje przeprawić się przez wąską szczelinę w rafie atolu, wysadzoną przez Brytyjjczyków w 1963 roku, aby przetransportować sprzęt, oczyścić roślinność oraz założyć obozowisko robocze. Pierwsza grupa badaczy ma za zadanie wycięcie szlaki w dżungli, natomiast w środę prace przeniosą się na Półwysep Taraia, gdzie poszukiwane będą ślady metali magnetycznych. W kolejnych etapach naukowcy zamierzają wykorzystać sprzęt do pogłębiania dna, aby przemieścić osady i dokonać bezpośrednich oględzin tajemniczego obiektu, spoczywającego zaledwie dziesięć stóp od brzegu na niewielkiej głębokości zależnej od pływów. Prace te mogą zostać jednak poważnie utrudnione przez czynniki środowiskowe, w tym zjawisko El Nino, które osiągnęło rekordową siłę i może ograniczać codzienne dotarcie do brzegu, a także budzić obawy o bezpieczny tranzyt przez kanały wejściowe i wyjściowe z atolu. Dodatkowym zagrożeniem dla uczestników ekspedycji są gigantyczne krby kokosowe, znane również jako krby rabusie, które są największymi lądowymi bezkręgowcami na świecie i potrafią osiągać wagę ponad czterech kilogramów oraz rozpiętość odnóży do jednego metra. Stworzenia te nocą opuszczają kryjówki w poszukiwaniu małych ssaków oraz ptaków morskich, co zmusi naukowców do spędzania każdej nocy na pokładzie statku dla własnego bezpieczeństwa. Krby te posiadają niezwykłą siłę, potrafią wspinać się na drzewa oraz łupić orzechy kokosowe, a wcześniejsze badania z użyciem padliny wykazały, że są w stanie wlec ciała do nor i oczyścić kości z tkanki w ciągu niespełna dwóch tygodni, co nawiązuje do teorii, jakoby Earhart mogła przeżyć awaryjne lądowanie na wyspie, lecz ostatecznie stać się ich ofiarą. Mimo licznych hipotez, obecna wyprawa ma na celu ostateczne zweryfikowanie natury obiektu Taraia i potencjalne zamknięcie trwającego od ponad osiemdziesięciu dziewięciu lat śledztwa w sprawie losów Amelii Earhart i Freda Noonana.",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6pvgryp8yv0o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-12T22:01:43+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Shopify otwiera swój katalog produktów dla kolejnych agentów sztucznej inteligencji",
+      "summary": "Shopify umożliwia klientom konfigurowanie dowolnych agentów AI do dokonywania zakupów w ich imieniu. Daje to sztucznej inteligencji dostęp do ponad miliarda ofert z katalogu firmy.",
+      "why_it_matters": "To ważny krok w rozwoju handlu autonomicznego, w którym agenty AI stają się osobistymi asystentami zakupowymi.",
+      "category": "AI i technologia",
+      "topics": [
+        "Shopify",
+        "agenty AI",
+        "e-commerce",
+        "automatyzacja zakupów"
+      ],
+      "editorial_score": 9.0,
+      "digest_text": "Firma Shopify ogłosiła znaczące rozszerzenie swoich planów dotyczących handlu wspieranego przez sztuczną inteligencję, otwierając swój gigantyczny katalog produktów dla znacznie większej liczby autonomicznych agentów AI. W ramach nowego rozwiązania kupujący będą mogli skonfigurować wybranego przez siebie agenta tak, aby ten mógł wyszukiwać i kupować produkty w ich imieniu, co zapewni systemom sztucznej inteligencji bezpośredni dostęp do ponad miliarda ofert znajdujących się w bazie Shopify. Dotyczy to zarówno towarów bezpośrednio w sklepach internetowych platformy, jak i poza nimi, co stanowi kolejny krok po wcześniejszym ogłoszeniu partnerstwa z firmą Meta przy projekcie agenta zakupowego Muse. O ile wcześniejsze wdrożenia wymagały konkretnych umów partnerskich między platformami, o tyle teraz klienci zyskali swobodę korzystania z dowolnego agenta bez takich ograniczeń.\n\nNowa funkcja opiera się na połączeniu zewnętrznego agenta z kontem użytkownika w aplikacji Shop, należącej do Shopify platformie służącej do konsolidacji zamówień, śledzenia przesyłek oraz rekomendowania towarów. Podczas rozmowy z agentem sztucznej inteligencji klienci mogą dokonać finalizacji transakcji za pomocą znanego już rozwiązania Shop Pay, zapewniającego szybkie płatności jednym kliknięciem. Wszystkie zamówienia zrealizowane w ten sposób za pośrednictwem inteligentnych systemów trafiają bezpośrednio do aplikacji Shop, gdzie użytkownik ma nad nimi pełną kontrolę. Shopify pozycjonuje tę opcję na rynku jako cyfrowego osobistego zakupowicza, któremu ludzie mogą wyznaczać konkretne zasady i ograniczenia.\n\nUżytkownicy zyskują możliwość definiowania ram budżetowych dla swoich agentów oraz ustawiania preferencji, takich jak filtrowanie produktów wyłącznie z opcją szybkiej wysyłki. Co bardzo istotne z punktu widzenia bezpieczeństwa i kontroli, kupujący muszą każdorazowo zatwierdzić dokonywany przez system zakup, co chroni przed nieautoryzowanym wydawaniem pieniędzy. Tego typu rozwiązania wpisują się w szerszy trend rynkowy, w którym handel elektroniczny staje się jednym z najważniejszych pól bitwy w erze dynamicznego rozwoju sztucznej inteligencji. Obecnie bardzo wiele demonstracji nowoczesnych narzędzi opartych na agentach kończy się właśnie transakcją finansową, niezależnie od tego, czy dotyczy to zakupu ubrań, rezerwacji biletów lotniczych czy zamawiania jedzenia na wynos w imieniu człowieka.\n\nSektor technologiczny, w tym tak potężni gracze handlowi jak Google czy Amazon, intensywnie inwestuje w innowacyjne narzędzia zakupowe napędzane przez sztuczną inteligencję, których ostatecznym celem jest samodzielny zakup towaru przez algorytm. Kwestia tego, czy autonomiczne programy powinny mieć prawo do robienia zakupów w imieniu klienta, stała się już nawet zarzewiem ostrych konfliktów rynkowych. Przykładem są trwające spory pomiędzy Amazonem a firmami rozwijającymi technologie sztucznej inteligencji, takimi jak Perplexity czy wspomniana wcześniej Meta z projektem Muse, co pokazuje, jak wysoka jest stawka w walce o przyszłość handlu internetowego.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
+      "published_at": "2026-10-13T15:42:42-04:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Łazik Perseverance pobił rekord dystansu na Marsie",
+      "summary": "Łazik Perseverance wykonał przejazd o długości ponad 91 metrów, dzięki czemu jego łączny dystans przekroczył wynik osiągnięty przez łazik Opportunity. To kolejny historyczny kamień milowy w marsjańskiej misji NASA.",
+      "why_it_matters": "Przekroczenie łącznego dystansu dawnego łazika Opportunity pokazuje ogromny postęp technologiczny w eksploracji Czerwonej Planety.",
+      "category": "Kosmos",
+      "topics": [
+        "NASA",
+        "Perseverance",
+        "Mars",
+        "rekord dystansu"
+      ],
+      "editorial_score": 9.0,
+      "digest_text": "Łazik Perseverance, należący do Amerykańskiej Agencji Kosmicznej NASA, zarejestrował na jednym ze swoich zdjęć wykonanych przez kamery nawigacyjne ślady kół oraz skalisty marsjański krajobraz. Fotografia ta została uwieczniona jedenastego października 2026 roku, co odpowiada dwutysięcznemu szóstemu marsjańskiemu dniowi, czyli solowi, trwającej misji. W trakcie tamtego dnia łazik przebył dystans wynoszący dziewięćdziesiąt jeden metrów i trzydzieści jeden centymetrów, co w przeliczeniu daje dwadzieścia dziewięć stóp i sześć dziesiątych cala. Ten konkretny przejazd miał ogromne znaczenie dla całego przedsięwzięcia, ponieważ pozwolił na osiągnięcie niezwykle ważnego kamienia milowego w historii eksploracji Czerwonej Planety. Dzięki niemu całkowity dystans pokonany dotychczas przez Perseverance oficjalnie przekroczył łączny wynik osiągnięty przez inny legendarny łazik agencji, a mianowicie pojazd Opportunity. Opportunity w trakcie swojej piętnastoletniej misji na Marsie zdołał przejechać łącznie czterdzieści pięć kilometrów i szesnaście setnych, co odpowiada dwudziestu ośmiu milom i sześciu setnym mili. Omawiana misja łazika Perseverance jest częścią szerszego portfela działań w ramach programu eksploracji Marsa prowadzonego przez amerykańską agencję kosmiczną. Za budowę oraz bieżące zarządzanie operacjami łazika Perseverance odpowiada Laboratorium Napędu Odrzutowego NASA, znane powszechnie jako JPL. Instytucja ta jest zarządzana na rzecz agencji przez Kalifornijski Instytut Technologii, czyli Caltech, mający swoją siedzibę w Pasadenie w stanie Kalifornia. Działania te są realizowane w imieniu Dyrekcji Misji Naukowych NASA, której siedziba znajduje się w Waszyngtonie.",
+      "source": "NASA",
+      "url": "https://science.nasa.gov/photojournal/perseverance-navcam-image-marks-record-drive/",
+      "published_at": "2026-10-13T17:42:51+00:00",
+      "full_text_used": true
+    }
+  ],
+  "more_stories": [
+    {
+      "title": "Szczątki polskiego drona testowego na plaży w Karwi",
+      "summary": "Na plaży w Karwi odnaleziono fragmenty bezzałogowego statku powietrznego. Służby, w tym Żandarmeria Wojskowa oraz MON, potwierdziły, że są to szczątki polskiego drona testowego.",
+      "why_it_matters": "Wydarzenie wzbudziło niepokój i zmobilizowało służby do interwencji na nadmorskiej plaży.",
+      "category": "Polska",
+      "topics": [
+        "Karwia",
+        "Żandarmeria Wojskowa",
+        "dron",
+        "MON"
+      ],
+      "editorial_score": 8.95,
+      "digest_text": "Na plaży w Karwi doszło do interwencji służb po tym, jak zauważono tam tajemniczy obiekt przypominający drona. W rejonie znaleziska działała Żandarmeria Wojskowa, co wywołało szerokie zainteresowanie mediów i mieszkańców. Sprawa została wyjaśniona przez Ministerstwo Obrony Narodowej, które przekazało, że odnalezione na brzegu morza elementy to w rzeczywistości szczątki polskiego drona testowego.",
+      "source": "TVN24",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVV82VnhoOHcxR0tXTlZ1VTItUW9ZbGIxY2lIUFFaWEE1OENsQ0Nlel9ETDRhdUhjTXFiOWw5dWNJd1VnN2thSnJoMzBUU0phdnNIaGUwWjZ3a0RUVHJDNVQ4VUc2eHJuMWxhVTVXMDlMVzFUOWttekpSanZDYUFubnNXX0txSlFjUldjSFZUSW9mMUdjRWF0djlpOUh4NWNhNlczQ28ycGZsU3lJdmJzVTl5cw?oc=5",
+      "published_at": "2026-10-13T19:42:37+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Symulacja geopolitycznych skutków geoinżynierii słonecznej",
+      "summary": "Eksperci przeprowadzili symulację zarządzania kryzysowego dotyczącą technologii odbijania światła słonecznego w celu chłodzenia Ziemi. Wyniki wykazały ogromne trudności w osiągnięciu międzynarodowego konsensusu i ryzyko konfliktów.",
+      "why_it_matters": "Badanie pokazuje, jak trudne politycznie i niebezpieczne może być wdrożenie technologii modyfikacji promieniowania słonecznego.",
+      "category": "Środowisko i klimat",
+      "topics": [
+        "geoinżynieria",
+        "klimat",
+        "symulacje",
+        "zarządzanie kryzysowe"
+      ],
+      "editorial_score": 8.95,
+      "digest_text": "Colleen Golja, badaczka klimatu, podchodziła do kwestii ratowania planety z przekonaniem, że w procesie podejmowania kluczowych decyzji zawsze znajdzie się miejsce dla nauki i zdrowego rozsądku. Przekonanie to legło w gruzach we wrześniu ubiegłego roku w Londynie, gdzie wzięła udział w pierwszej z serii symulacji wojennych. Cel tego przedsięwzięcia polegał na powstrzymaniu niekontrolowanego, globalnego wyścigu zmierzającego do rozwoju technologii mających na celu schłodzenie Ziemi, które jednocześnie wiążą się z ogromnymi i nieznanymi ryzykami zdolnymi całkowicie przekształcić życie na naszej planecie. Badaczka zakładała, że osiągnięcie porozumienia w kwestii prowadzenia etycznych badań dla dobra całej ludzkości będzie niezwykle proste, jednak rzeczywistość okazała się zupełnie inna. Symulacja, zatytułowana badanie geopolitycznych punktów krytycznych i strategii chłodzenia klimatu, zgromadziła w salach Queen Mary University of London kilkudziesięciu ekspertów do spraw stosunków międzynarodowych, naukowców, wojskowych oraz byłych urzędników państwowych z całego świata. Uczestnicy spotkania, po porannej kawie i poczęstunku, zajęli miejsca przy stołach ustawionych w kwadracie, z których każdy reprezentował konkretne państwo, organizację pozarządową, grupę rdzennych mieszkańców lub firmę technologologiczną. Zadaniem Golji było służenie wsparciem technicznym, aby pomagać graczom w podejmowaniu decyzji opartych na wiedzy naukowej. Głównym celem rozgrywki było przetestowanie odporności globalnej reakcji na grupę perspektywicznych technologii zbiorczo określanych mianem modyfikacji promieniowania słonecznego. Rozwiązania te obiecują odwrócenie skutków globalnego ocieplenia poprzez odbijanie części światła słonecznego docierającego do Ziemi, na przykład poprzez rozpylanie cząsteczek dwutlenku siarki lub innej substancji w atmosferze. Sam efekt chłodzący tego rodzaju geoinżynierii słonecznej jest powszechnie akceptowany w świecie nauki i naśladowałby znane skutki wielkich erupcji wulkanicznych, które tymczasowo obniżają temperaturę planety o pół stopnia lub nawet więcej. Jednakże potencjalne konsekwencje takiego działania pozostają niepewne i nierównomierne dla różnych regionów świata. Modele klimatyczne przewidują wystąpienie susz w Afryce Subsaharyjskiej oraz nasilenie gwałtownych burz tropikalnych na Atlantyku. Co więcej, efekt chłodzący utrzymałby się jedynie tak długo, jak długo kontynuowane byłyby zabiegi geoinżynieryjne, a po ich przerwaniu globalna temperatura mogłaby gwałtownie wzrosnąć z trudnymi do przewidzenia skutkami dla całego globu.",
+      "source": "Ars Technica - All content",
+      "url": "https://arstechnica.com/science/2026/10/they-war-gamed-dimming-the-sun-it-went-even-worse-than-you-think/",
+      "published_at": "2026-10-13T15:17:59+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Niespodziewana zmiana cen paliw i nowe stawki na stacjach",
+      "summary": "Od środy kierowcy odczują zmiany na stacjach paliw, gdzie dotychczasowy lider drożyzny, czyli diesel, przestanie być najdroższy. Nowe maksymalne ceny benzyny 95 wynoszą 7,11 zł za litr, a oleju napędowego 7,98 zł za litr.",
+      "why_it_matters": "Zmiany w cennikach bezpośrednio wpłyną na codzienne wydatki wszystkich zmotoryzowanych Polaków.",
+      "category": "Motoryzacja",
+      "topics": [
+        "ceny paliw",
+        "Orlen",
+        "rynek paliw",
+        "gospodarka"
+      ],
+      "editorial_score": 8.9,
+      "digest_text": "Ministerstwo Energii ogłosiło nowe ceny paliw, które przynoszą niespodziewane przetasowania na rynku. Od środy, 14 października, kierowcy zauważą, że diesel nie będzie już najdroższym paliwem na stacjach. Według najnowszych zestawień maksymalna cena litra benzyny 95 wynosi 7,11 zł, natomiast oleju napędowego 7,98 zł. Sytuacja na stacjach, w tym na stacjach Orlenu, wywołuje duże zainteresowanie ze względu na nowe stawki, które odczują wszyscy kierowcy w Polsce. W debacie publicznej pojawiają się również szersze konteksty polityczno-gospodarcze związane z cenami surowców i polityką energetyczną.",
+      "source": "Moto.pl",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOc1B4Si11R0hmQzQ2R3RYdi1haG9VNEotYUNPVC1GQUlTZEZVbU1wQ1ZpbkRJYkdXS0xCdmtBUTY3T2hxMTJiblFzTzdNX29qTDA4aWNJVU9taF9KcTBYYlVsYThKdzFzNFE4bXhLUkhFWXhtTVVnZi03b1pXU1QzZFF5X2hDYU1NTUNNMVNxdVZ0SUZGeXQ0TWtBQzJzbVppLVVqWE9EaUcyQQ?oc=5",
+      "published_at": "2026-10-13T14:46:00+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Narodowy Bank Polski publikuje raport o rynku nieruchomości za 2024 rok",
+      "summary": "Narodowy Bank Polski udostępnił szczegółowy raport dotyczący aktualnej sytuacji na rynku nieruchomości mieszkaniowych i komercyjnych w Polsce w 2024 roku. Dokument podsumowuje najważniejsze tendencje i zjawiska zachodzące w tym sektorze gospodarki.",
+      "why_it_matters": "Publikacja NBP dostarcza kluczowych danych o kondycji rynku nieruchomości, co jest istotne dla inwestorów i osób planujących zakup mieszkania.",
+      "category": "Nieruchomości i dom",
+      "topics": [
+        "NBP",
+        "rynek nieruchomości",
+        "raport",
+        "mieszkania"
+      ],
+      "editorial_score": 8.9,
+      "digest_text": "Narodowy Bank Polski opublikował oficjalny raport poświęcony sytuacji na polskim rynku nieruchomości mieszkaniowych i komercyjnych w 2024 roku. Opracowanie stanowi kompleksowe źródło wiedzy na temat kondycji obu tych sektorów. Dokument analizuje kluczowe wskaźniki rynkowe, zmiany cen oraz ogólne tendencje panujące w kraju. Jest to istotna pozycja analityczna dla obserwatorów rynku, branży budowlanej oraz osób zainteresowanych inwestowaniem w nieruchomości.",
+      "source": "Narodowy Bank Polski",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbkVpRXJqYVIwVlhsNUlOa1p1UEFmbWRBUmF6SUJaYzMxUnp1dHRrTjZNb1dpLWp1SDBpWnVOcW9LdHJWMUsycXNDX3FKZjV6RVZvclRkbXdOQlVfdW15X25sVGtiVVZ0eThidnk2bV9WTUJiWGJESko0c1dNcVoweG53Ui11OXp3aEV0M0pVVkFvajBJS2F2VDVB?oc=5",
+      "published_at": "2026-10-13T18:09:56+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Helix Carbon chce obniżyć koszty produkcji żelaza poprzez recykling zanieczyszczeń",
+      "summary": "Startup Helix Carbon opracował technologię przetwarzania dwutlenku węgla z wielkich pieców hutniczych z powrotem w tlenek węgla. Rozwiązanie to ma na celu zmniejszenie emisji gazów cieplarnianych oraz poprawę rentowności producentów żelaza.",
+      "why_it_matters": "Innowacja uderza w jedno z najbardziej emisyjnych źródeł przemysłowych, oferując realne oszczędności finansowe w sektorze o niskich marżach.",
+      "category": "Biznes i startupy",
+      "topics": [
+        "stal",
+        "recykling",
+        "emisje CO2",
+        "czysta technologia"
+      ],
+      "editorial_score": 8.75,
+      "digest_text": "Przemysł wydobywczy żelaza i stali odpowiada za ogromną część globalnych zanieczyszczeń, a liczne nowe firmy próbują ograniczyć te emisje głównie poprzez opracowywanie zupełnie nowych metod produkcji. Współzałożyciel oraz dyrektor generalny startupu Helix Carbon, David Brown, uważa jednak, że dotychczasowe próby zmierzające do dekarbonizacji sektora stali są błędne, ponieważ ignorują tradycyjne wielkie piece hutnicze. Zamiast całkowicie zastępować te instalacje nowymi technologiami, co według twórców firmy jest skazane na niepowodzenie ze względu na kluczową rolę wielkich pieców w całej branży, Helix Carbon proponuje ich dokładne oczyszczenie. Takie podejście ma na celu drastyczne zmniejszenie emisji dwutlenku węgla, a jednocześnie zwiększenie marż zysku dla samych producentów, co stanowi rzadko spotykany przykład korzystnego rozwiązania dla tak bardzo zanieczyszczającego środowisko procesu przemysłowego.\n\nTradycyjne wielkie piece produkują żelazo od stuleci, wykorzystując koks, czyli przetworzoną formę węgla kamiennego, do przekształcania surowej rude żelaza w metaliczne żelazo. Spalanie koksu dostarcza niezbędnego ciepła do zachodzenia reakcji chemicznych, a powstający w tym procesie tlenek węgla skutecznie redukuje rudę, czyli usuwa z niej atomy tlenu. Cała ta procedura uwalnia jednak ogromne ilości dwutlenku węgla, który standardowo jest bez przeszkód odprowadzany bezpośrednio do atmosfery. Opracowana przez Helix Carbon technologia polega na przekształcaniu tego uciążliwego odpadu w tlenek węgla i ponownym wprowadzaniu go do obiegu wewnątrz wielkiego pieca, co pozwala na domknięcie cyklu i drastyczne ograniczenie strat.\n\nInnowacyjny proces proponowany przez startup opiera się na zastosowaniu specjalnego elektrolizera, czyli urządzenia wykorzystującego energię elektryczną oraz katalizator do odłączenia atomu tlenu od cząsteczki dwutlenku węgla. Choć same elektrolizery nie są na rynku nowością, to rozwiązania opracowane przez Helix Carbon wyróżniają się zdolnością do bezpośredniej obsługi całego strumienia spawu przemysłowego pochodzącego bezpośrednio z wielkiego pieca. Tradycyjne urządzenia tego typu są zazwyczaj zbyt delikatne i wymagają wcześniejszego, kosztownego oczyszczania gazów oraz pracy wyłącznie na skoncentrowanym dwutlenku węgla, podczas gdy nowy projekt potrafi radzić sobie z surowymi spalinami bez wstępnej filtracji.\n\nPoprzez ponowne wstrzykiwanie tlenku węgla bezpośrednio do wnętrza wielkiego pieca, producenci żelaza uzyskują możliwość znacznego ograniczenia zużycia koksu, choć dokładna skala tych oszczędności pozostaje jeszcze przedmiotem dyskusji w środowisku naukowym. Podczas gdy niektóre badania sugerują możliwość wyeliminowania nawet dziewięćdziesięciu procent koksu, inne analizy wskazują na bardziej konserwatywny przedział od trzydziestu do czterdziestu procent. W swoich wstępnych założeniach Helix Carbon rekomenduje hutom zastąpienie trzydziestu trzech procent tradycyjnego paliwa, co według wyliczeń firmy przyniosłoby oszczędność rzędu czternastu dolarów na każdej wyprodukowanej tonie żelaza, stanowiąc istotne wsparcie dla branży o niezwykle niskich marżach.\n\nSektor stali i żelaza to wart dwa biliony dolarów globalny rynek, co czyni go niezwykle atrakcyjnym celem biznesowym, choć jednocześnie charakteryzuje się on bardzo powolnym tempem wprowadzania zmian ze względu na wyjątkową trwałość wykorzystywanych urządzeń. Niektóre wielkie piece hutnicze funkcjonują bowiem bez przerwy przez ponad sto lat, co utrudnia szybkie wdrażanie innowacji. Aby generować przychody znacznie wcześniej i ominąć te bariery, Helix Carbon planuje w pierwszej kolejności skierować swoją ofertę do branży chemii specjalistycznej. Firma zamierza wykorzystywać strumienie odpadów gazowych bezpośrednio na miejscu u klienta do produkcji chemikaliów, co pozwala na pominięcie konieczności kosztownego wychwytywania dwutlenku węgla i otwiera zupełnie nowe perspektywy komercyjne.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/13/helix-carbon-makes-iron-cheaper-by-upcycling-blast-furnace-pollution-see-how-at-techcrunch-disrupt/",
+      "published_at": "2026-10-13T21:15:00+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Cambridge Heavy Industries buduje miniaturowe urządzenie do fuzji jądrowej",
+      "summary": "Startup Cambridge Heavy Industries opracował niewielki, mieszczący się na stole reaktor fuzji jądrowej zasilany laserami. Technologia ta ma pozwolić na szybkie przeprowadzanie eksperymentów i docelowo produkcję rzadkiego trytu.",
+      "why_it_matters": "Przeniesienie badań nad fuzją jądrową do skali biurkowej może drastycznie przyspieszyć innowacje w energetyce i rozwiązać problem przyszłego niedoboru paliwa.",
+      "category": "Biznes i startupy",
+      "topics": [
+        "fuzja jądrowa",
+        "energetyka",
+        "startup",
+        "laser"
+      ],
+      "editorial_score": 8.75,
+      "digest_text": "Energia termojądrowa zazwyczaj kojarzy się z ogromnymi obiektami przemysłowymi wyposażonymi w potężne lasery lub magnesy, jednak start-up z Cambridge w stanie Massachusetts o nazwie Cambridge Heavy Industries potajemnie skonstruował urządzenie mieszczące się na stole laboratoryjnym. Współzałożyciel i dyrektor generalny firmy, Yun Kai, zaprezentował optykę tego systemu podczas wideorozmowy, udzielając wywiadu serwisowi TechCrunch. Przedsiębiorstwo działało w ukryciu z małego laboratorium niedaleko MIT, a stworzenie miniaturowego, modułowego reaktora miało na celu maksymalne ułatwienie prac badawczych. Niewielkie rozmiary urządzenia pozwalają na przeprowadzanie od pięćdziesięciu do osiemdziesięciu eksperymentów dziennie, a generowane w ten sposób dane zasilają symulacje wykorzystujące sztuczną inteligencję do optymalizacji konstrukcji. To zwinne podejście przyciągnęło uwagę inwestorów, dzięki czemu spółka pozyskała niedawno 6,2 miliona dolarów w rundzie finansowania zarzewnego, której przewodniczyła fundacja Azolla Ventures przy udziale innych podmiotów. Reaktor opracowany przez Cambridge Heavy wykorzystuje lasery do sprężania celu paliwowego, co przypomina przełomowy eksperyment udowadniający, że kontrolowane reakcje termojądrowe mogą wytworzyć więcej energii, niż jej zużywają. W przeciwieństwie do innych projektów opartych na konfinowaniu bezwładnościowym, system tej firmy minimalizuje liczbę laserów niezbędnych do wywołania fuzji, wykorzystując do zapłonu dwa główne urządzenia. Pierwszy laser jest rozdzielany na wiele linii wiązek dostarczających światło w koncentrycznych pierścieniach, które uderzają w płaski, okrągły cel paliwowy w odpowiedniej kolejności, zaczynając od zewnątrz. Pierwszy pierścień inicjuje falę kompresji przemieszczającą się do wnętrza, podczas gdy kolejne są tak zgrane w czasie, aby wzmocnić tę falę w optymalnym momencie i dodatkowo sprężyć paliwo. Kiedy fala uderzeniowa dociera do środka, kolejny laser generuje ciepło oraz pole magnetyczne, co przy odpowiednim ciśnieniu prowadzi do fuzji. Koncepcja ta wyłoniła się z laboratorium chemicznego Keitha Nelson z MIT, gdzie badacze używali impulsów laserowych do badania materiałów w ekstremalnych warunkach i zauważyli, że zbliżają się do stanów gotowych do fuzji. W ciągu najbliższej dekady firma planuje opracować na bazie tego pomysłu elektrownię, która będzie musiała zostać skalowana, choć nadal pozostanie mniejsza od innych tego typu obiektów i ma zająć powierzchnię odpowiadającą dwóm boiskom do koszykówki. Zanim jednak powstanie elektrownia, Cambridge Heavy zamierza wykorzystać mniejsze urządzenia do produkcji trytu, czyli rzadkiego izotopu wodoru potrzebnego niemal wszystkim projektowanym obecnie elektrowniom termojądrowym. Tryt kosztuje obecnie około trzydziestu tysięcy dolarów za gram, a ze względu na jego ogromną rzadkość na świecie istnieje obecnie zaledwie około czterdziestu kilogramów tej substancji. Jedno z niedawnych badań przewiduje, że bez nowych źródeł dostaw branża ta odczuje do 2054 roku niedobór wynoszący dwadzieścia osiem kilogramów, co przy dzisiejszych cenach stanowi wartość bliską 840 milionom dolarów. Chociaż przyszłe reaktory mają być w dużej mierze samowystarczalne pod względem trytu, opracowanie takich systemów paliwowych może potrwać do dziesięciu lat, co zapewni firmie Cambridge Heavy lata potencjalnych przychodów w okresie poprzedzającym uruchomienie pełnoprawnej elektrowni.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/13/cambridge-heavy-industries-has-been-quietly-building-a-desktop-fusion-device/",
+      "published_at": "2026-10-13T20:13:53+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Disney oferuje 20 milionów dolarów za technologię chatbotów Character.AI",
+      "summary": "Disney złożył ofertę zakupu technologii od borykającego się z problemami i powiązanego ze skandalami twórcy chatbotów Character.AI. Transakcja opiewająca na 20 milionów dolarów ma dotyczyć niewyłącznej, wiecznej licencji na wybraną własność intelektualną.",
+      "why_it_matters": "Krok ten pokazuje determinację Disneya w dążeniu do wejścia na rynek sztucznej inteligencji pomimo wcześniejszych poważnych kontrowersji wokół bezpieczeństwa tej technologii.",
+      "category": "AI i technologia",
+      "topics": [
+        "Disney",
+        "Character.AI",
+        "sztuczna inteligencja",
+        "przejęcia"
+      ],
+      "editorial_score": 8.7,
+      "digest_text": "W ramach postępowania upadłościowego firma Disney złożyła ofertę wykupu części technologii napędzającej kontrowersyjnego bota konwersacyjnego Character.AI. Koncern wyraził gotowość zapłacenia dwudziestu milionów dolarów za niewyłączną, wieczną licencję na określoną własność intelektualną należącą do spółki Character Technologies. Szczegółowe informacje na temat konkretnych aktywów, które miałyby trafić w ręce Disneya, nie zostały jednak szerzej omówione w oficjalnym komunikacie prasowym wydanym przez twórców chatbota. Taki krok ze strony giganta rozrywkowego może budzić pewne zaskoczenie, zwłaszcza w kontekście wydarzeń z września 2025 roku, kiedy to Disney publicznie dołączył do krytyków Character.AI, oskarżając platformę o kradzież treści oraz stwarzanie zagrożenia dla najmłodszych użytkowników. Wówczas przedsiębiorstwo skierowało do twórców bota zdecydowane wezwanie do zaprzestania naruszeń, zarzucając im bezprawne wykorzystywanie postaci należących do Disneya w sposób mogący długofalowo zaszkodzić wizerunkowi marki. W piśmie podkreślano, że tworzone przez użytkowników i system boty bywały wykorzystywane w celach o charakterze seksualnie wyzyskiwaczem oraz stanowiły realne niebezpieczeństwo dla dzieci, co zdaniem kierownictwa bezpośrednio uderzało w reputację oraz dobra osobiste firmy. Ówczesny skomplikowany kryzys zakończył się całkowitym usunięciem wszelkich postaci stanowiących własność Disneya z zasobów platformy Character.AI. Sytuacja uległa jednak pewnemu przełomowi, gdy Disney zatrudnił dotychczasowego szefa technologii Character.AI, Karandeepa Ananda, powierzając mu stanowisko swojego pierwszego dyrektora do spraw technologii. Do tej pory przedstawiciele Disneya nie udzielili jednoznacznego komentarza na temat ewentualnego wykorzystania nabytej technologii w produktach dedykowanych dzieciom, a sama transakcja wciąż może zostać przebita przez innych oferentów, co uniemożliwi przejęcie praw. Niemniej jednak, od momentu gdy potencjalnie zyskowna współpraca Disneya z OpenAI uległa rozwiązaniu w wyniku nagłego zamknięcia projektu Sora, amerykański gigant medialny aktywnie poszukuje nowych dróg wejścia w branżę sztucznej inteligencji oraz czerpania zysków z trwającego na tym rynku boomu. Podczas gdy OpenAI planuje rzekomo samodzielną reaktywację projektu Sora bez udziału dawnego partnera, Disney decyduje się na wcześne ruchy strategiczne w nadziei na pozyskanie sprawdzonej technologii chatbotowej, która potrafi skutecznie angażować rzesze fanów. W opublikowanym komunikacie wspomniano również o hipotetycznym scenariuszu, w którym Disney mogłoby przejąć całą platformę w ramach procesu transformacji wstępnie zarządzanego przez dotychczasowych pracowników twórców bota.",
+      "source": "Ars Technica - All content",
+      "url": "https://arstechnica.com/tech-policy/2026/10/disney-offers-20m-for-character-ais-scandal-plagued-chatbot-tech/",
+      "published_at": "2026-10-13T18:23:33+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Amazon prowadzi rekordową rekrutację w Polsce i szuka 10 tysięcy pracowników",
+      "summary": "Amazon ogłosił masową akcję rekrutacyjną w Polsce, w ramach której planuje zatrudnić ponad 10 tysięcy osób. Pracownicy mogą liczyć na dodatkowe korzyści, takie jak darmowe dojazdy czy posiłki za symboliczną złotówkę.",
+      "why_it_matters": "To jedna z największych akcji rekrutacyjnych na polskim rynku pracy, oferująca specyficzne pakiety socjalne i premie.",
+      "category": "Polska",
+      "topics": [
+        "Amazon",
+        "rekrutacja",
+        "rynek pracy",
+        "praca w Polsce"
+      ],
+      "editorial_score": 8.65,
+      "digest_text": "Amazon rusza z rekordową akcją rekrutacyjną na terenie Polski, planując zatrudnienie ponad 10 tysięcy osób. W ramach nowej oferty pracownicy mogą liczyć na podwyżki, 15-procentową premię oraz atrakcyjne benefity pozapłacowe, w tym darmowe dojazdy do pracy i posiłki kosztujące zaledwie symboliczną złotówkę. Szczególne zainteresowanie ofertami pracy dotyczy regionów takich jak Śląsk i Zagłębie, gdzie gigant handlowy rozwija swoją działalność logistyczną. Informacje o zakrojonej na szeroką skalę rekrutacji potwierdziły liczne źródła rynkowe i finansowe.",
+      "source": "WP Finanse",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOGJ4QncxLTF0b0JfeTlLMXp0NlVPWjNzMGRDOUtGMzNKNTdGTTZXeHJHV05scXFNTTNPRUpBRzkySG5sVXFEbmlRQ3JZc1lGUDRWZjlBVU5DdUxZU05lMW5TRkpTQkY4WDM4X0p2NkJkTUhVanM3cW04T3c5WE05MEVyc05mM3pUeHpXM05aVUNiYU81cWtxeXlIMldpNWJCVWhQeUhnRjA?oc=5",
+      "published_at": "2026-10-13T13:06:05+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Sztuczna inteligencja i sztuczne nagrania pomagają ptakom odzyskać utracone pieśni",
+      "summary": "Naukowcy wykorzystują generowane komputerowo nagrania dawnych ptasich pieśni, aby pomóc dzikim populacjom w odbudowie tradycji wokalnych. Badania pokazują, że znajomość lokalnych dialektów jest kluczowa dla ptaków w znajdowaniu partnerów i przetrwaniu.",
+      "why_it_matters": "Innowacyjna metoda łączenia sztucznej inteligencji z ochroną przyrody daje nadzieję na ratowanie zagrożonych gatunków ptaków.",
+      "category": "Nauka",
+      "topics": [
+        "ornitologia",
+        "sztuczna inteligencja",
+        "ptaki",
+        "ochrona przyrody"
+      ],
+      "editorial_score": 8.6,
+      "digest_text": "Naukowcy i ekolodzy coraz większą wagę przywiązują do śpiewu ptaków, postrzegając go nie tylko jako element biologiczny, ale także jako istotną część kultury i wyuczonego zachowania danej populacji. Ptaki śpiewające, stanowiące znaczną część wszystkich gatunków ptaków, muszą uczyć się swoich skomplikowanych pieśni od innych osobników. Umiejętność ta ma kluczowe znaczenie dla ich przetrwania, ponieważ złożony i wykonywany z odpowiednią częstotliwością śpiew ułatwia samcom znajdowanie matek, obronę terytorium oraz ogólny sukces reprodukcyjny. Kiedy liczebność jakiegoś gatunku drastycznie spada, młode ptaki tracą naturalnych nauczycieli, co prowadzi do błędów w nauce, anormalnych treli, a w konsekwencji do zagrożenia dalszego trwania populacji. Badacze z Uniwersytetu w Buenos Aires postanowili sprawdzić, czy nowoczesna technologia może pomóc w przywróceniu zapomnianych melodii. Wykorzystując dawne, odręczne zapisy nutowe z lat sześćdziesiątych ubiegłego wieku, stworzyli syntetyczną, wygenerowaną komputerowo wersję dawnej pieśni lokalnych szponiastków. Ku zaskoczeniu i radości badaczy, niespełna trzy miesiące po odtworzeniu tego nagrania w parku w Buenos Aires, jeden z miejscowych ptaków zaczął naśladować zapomnianą melodia. Eksperiment ten udowodnił, że syntetyczne nagrania mogą być skutecznym narzędziem w edukowaniu ptaków i potencjalnie pomóc gatunkom, których liczebność niebezpiecznie maleje. Różnorodność ptasich pieśni jest ogromna, a badania nad wspólnymi motywami śpiewu wykazują, że struktura dźwięków silnie zależy od środowiska, w jakim dany gatunek ewoluował. Proste gwizdy częściej występują w gęstych lasach deszczowych, gdzie fale dźwiękowe muszą pokonywać gęstą roślinność, podczas gdy złożone trele dominują w regionach umiarkowanych, gdzie ptaki komunikują się na krótsze odległości. Z biegiem czasu pieśni mogą naturalnie ewoluować, jednak gwałtowne zmiany w środowisku naturalnym, działalność człowieka oraz drastyczny spadek populacji drastycznie zakłócają ten proces. Młode ptaki uczą się od starszych przedstawicieli swojego gatunku, takich jak ojcowie czy sąsiedzi, tworząc unikalne dla danych regionów dialekty. Okres podatny na tę naukę bywa bardzo różny, trwając od zaledwie kilku tygodni aż do końca życia ptaka. Niektóre gatunki rodzą się z wrodzoną znajomością podstawowych elementów dźwiękowych, ale muszą nauczyć się ich właściwego łączenia, podczas gdy inne wymagają bezpośredniego kontaktu z żywymi osobnikami w procesie nauki. Przykłady projektów reintrodukcji, takich jak badania nad drozdzakami z Devon przeniesionymi do Kornwalii, pokazują, że ptaki potrafią z czasem odzyskać naturalną bogatą formę śpiewu, choć proces ten bywa długi i wymaga odpowiednich warunków. Z kolei australijskie badania nad krytycznie zagrożonym miodojadem regentem wykazały, że kontakt z zaledwie dwoma żywymi samcami urodzonymi na wolności pozwalał ptakom wyhodowanym w niewoli na opanowanie tradycyjnych pieśni i skuteczne przekazywanie ich kolejnym pokoleniom. Tradycyjne metody oparte na odtwarzaniu samych nagrań z płyt nie zawsze przynoszą oczekiwane rezultaty, ponieważ ptaki często potrzebują interakcji społecznej. Z drugiej strony, sprowadzanie dzikich ptaków do niewoli w celu uczenia młodych niesie ze sobą ryzyko chorób i ogromnego stresu dla i tak już zagrożonych populacji. W tym kontekście sztuczna inteligencja oraz syntetyczne utwory mogą w przyszłości stanowić cenne rozwiązanie wspomagające ochronę przyrody. Istotną rolę odgrywa również sam dialekt, ponieważ ptaki posługujące się odmiennymi wersjami pieśni wolniej dobierają się w pary i gorzej radzą sobie po ich utworzeniu. Z tego powodu systematyczne rejestrowanie i archiwizowanie ptasich dialektów oraz dźwięków przez naukowców i amatorów obserwujących przyrodę staje się bezcennym zasobem dla przyszłych działań ochronnych. Choć przywrócona w Buenos Aires pieśń z lat sześćdziesiątych jest obecnie śpiewana tylko przez nieliczne osobniki żyjące w pobliżu miejsca eksperymentu, badacze mają nadzieję, że nowoczesne metody pomogą w zachowaniu bogatego dziedzictwa akustycznego zagrożonych gatunków ptaków na całym świecie.",
+      "source": "Science | The Guardian",
+      "url": "https://www.theguardian.com/environment/2026/oct/13/ornithology-trill-why-birds-sing-birdsong-dialects-tutors-ai-aoe",
+      "published_at": "2026-10-13T09:00:19+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Liczba potwierdzonych przypadków eboli w Demokratycznej Republice Konga przekroczyła 9 tysięcy",
+      "summary": "W Demokratycznej Republice Konga liczba potwierdzonych przypadków zakażenia ebolą przekroczyła 9 tysięcy, a wysiłki zmierzające do powstrzymania epidemii napotkają poważne trudności. Sytuacja ta budzi duże obniżenie skuteczności dotychczasowych działań prewencyjnych i leczniczych.",
+      "why_it_matters": "Gwałtowny wzrost liczby zakażeń grozi dalszym pogłębieniem kryzysu humanitarnego w regionie.",
+      "category": "Świat i geopolityka",
+      "topics": [
+        "Ebola",
+        "DRK",
+        "zdrowie publiczne",
+        "epidemia"
+      ],
+      "editorial_score": 8.6,
+      "digest_text": "Liczba potwierdzonych przypadków eboli w Demokratycznej Republice Konga przekroczyła dziewięć tysięcy, co świadczy o poważnych problemach w opanowaniu trwającej epidemii. Oficjalne raporty rządowe oraz doniesienia medyczne potwierdzają, że wysiłki mające na celu powstrzymanie transmisji wirusa napotkają na rosnące przeszkody. Sytuacja w regionie staje się coraz trudniejsza dla służb medycznych, które walczą z ograniczeniami logistycznymi oraz wyzwaniami związanymi z prowadzeniem działań zapobiegawczych na dotkniętych obszarach. Dalszy rozwój sytuacji zależy od skuteczności międzynarodowej pomocy oraz wdrażania procedur bezpieczeństwa zdrowotnego.",
+      "source": "ABC News - Breaking News, Latest News and Videos",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOTV3dnlyQklZSXdDb0YzSElvV2QzckF0d3E3emVvSy0xbzhlcEJHTUJTeWJwNWctQWRZajNYbFNzcVJJQlUyNi1zd0NaU3M3V2Q1M1FQQnQ3dEk1bmYzNnFMRVVCX0xudmFsMUx5dERoOUV6ZldVVS1pdEZLeERpNG96dkM1LXNJV2dPS0hvUlcyc0M3eWxNNGRETEk0a2pLSmpGUWIxNnR6ZEnSAbABQVVfeXFMTUEtT0FYZmdsU1VUNEN3VGNMY0RGMXA2YmQ3NTdYU1FTLWpfa0RhQ0JSc1k0RjVPbVM4VXctM0lLQTUtR1JJVU92ekh1T0R4OUt5THIzS3Rfc25ER1ZfWHhNa28wX3c4c1lYTGRvOWVHTE4zNGRrdkVRSjVIak9GdExlX2E5R2QtZXM3QXhPVWU2Wll1UFFyZUl0akpkamFvUzZJRWlNS19xWm5HWXNuQVI?oc=5",
+      "published_at": "2026-10-13T21:00:06+00:00",
+      "full_text_used": false
+    }
+  ],
+  "stats": {
+    "candidates": 163,
+    "ranked": 36,
+    "published": 20
+  }
+}
