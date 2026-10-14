@@ -59,3 +59,18 @@ jobs:
       - name: Publish website
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify deployed website over HTTPS
+        shell: bash
+        run: |
+          url="https://przebindakamil.github.io/daily-news/"
+          for attempt in 1 2 3 4 5 6 7 8; do
+            status=$(curl -L -sS --max-time 20 -o /tmp/daily-news-live.html -w '%{http_code}' "$url?verification=${GITHUB_SHA}" || true)
+            if [[ "$status" == "200" ]] && grep -q 'DAILY NEWS' /tmp/daily-news-live.html; then
+              echo "GitHub Pages is serving the Daily News HTML (HTTP 200)."
+              exit 0
+            fi
+            echo "Attempt $attempt: received HTTP $status instead of the Daily News page."
+            sleep 10
+          done
+          echo "::error::Deployment reported success, but public GitHub Pages did not return Daily News."
+          exit 1
