@@ -434,7 +434,6 @@ function renderSavedPanel(){
     source.target='_blank';
     source.rel='noopener noreferrer';
     source.textContent='Źródło ↗';
-    source.addEventListener('click',()=>recordSourceClick(item));
 
     const remove=document.createElement('button');
     remove.type='button';
@@ -451,19 +450,6 @@ function setSavedOpen(open){
   if(!savedPanel) return;
   savedPanel.hidden=!open;
   document.body.classList.toggle('preferences-open',open);
-}
-
-function recordSourceClick(item){
-  if(item.category){
-    const current=Number(userPreferences.categories?.[item.category]??5);
-    userPreferences.categories[item.category]=Math.min(10,current+.08);
-  }
-  (item.topics||[]).forEach(topic=>{
-    const key=normalizeTopic(topic);
-    const current=Number(userPreferences.topics?.[key]??5);
-    userPreferences.topics[key]=Math.min(10,current+.12);
-  });
-  savePreferences();
 }
 
 function createDigest(item){
@@ -519,7 +505,6 @@ function createDigest(item){
   link.textContent='Czytaj pełny materiał u źródła';
   link.addEventListener('click',event=>{
     event.stopPropagation();
-    recordSourceClick(item);
   });
 
   sourceRow.append(note,link);
