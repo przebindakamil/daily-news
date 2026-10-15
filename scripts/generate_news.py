@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import time
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -24,6 +25,12 @@ SOURCES = ROOT / "config" / "sources.json"
 
 API_KEY = os.environ.get("GEMINI_API_KEY")
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite")
+# Below the free-tier limit of 15 calls/minute; paced across ranking and editing.
+GEMINI_MIN_INTERVAL = max(
+    4.5, float(os.environ.get("GEMINI_MIN_REQUEST_INTERVAL_SECONDS", "6"))
+)
+GEMINI_MAX_RATE_RETRIES = 6
+_last_gemini_call = None
 
 SEARCHES = {
     "AI i technologia": ["AI sztuczna inteligencja technologia automatyzacja when:1d"],
@@ -360,6 +367,50 @@ def parse_model_json(text: str):
     raise last_error or ValueError("Nie udało się sparsować odpowiedzi JSON.")
 
 
+def wait_for_gemini_slot():
+    """Pace all requests, including JSON retries, below Gemini's RPM limit."""
+    global _last_gemini_call
+    now = time.monotonic()
+    if _last_gemini_call is not None:
+        wait = GEMINI_MIN_INTERVAL - (now - _last_gemini_call)
+        if wait > 0:
+            time.sleep(wait)
+    _last_gemini_call = time.monotonic()
+
+
+def gemini_retry_delay(response, attempt):
+    """Return Gemini RetryInfo delay, otherwise a bounded exponential backoff.
+
+    A delay over 120s is treated as a real quota exhaustion rather than
+    silently hammering a daily quota. No API key or response payload is logged.
+    """
+    hinted = []
+    value = response.headers.get("Retry-After", "") if hasattr(response, "headers") else ""
+    if value:
+        try:
+            hinted.append(float(value))
+        except (TypeError, ValueError):
+            pass
+    try:
+        body = response.json()
+    except (ValueError, TypeError):
+        body = {}
+    for detail in (body.get("error", {}).get("details", []) if isinstance(body, dict) else []):
+        if str(detail.get("@type", "")).endswith("RetryInfo"):
+            match = re.fullmatch(r"(\d+(?:\.\d+)?)s", str(detail.get("retryDelay", "")))
+            if match:
+                hinted.append(float(match.group(1)))
+    if hinted:
+        delay = max(hinted) + 2
+        if delay > 120:
+            raise RuntimeError(
+                "Gemini zgłasza wyczerpany limit i czas odnowienia powyżej 2 minut. "
+                "Sprawdź limity API i rozliczenia."
+            )
+        return max(delay, GEMINI_MIN_INTERVAL)
+    return min(15 * 2 ** (attempt - 1), 90)
+
+
 def gemini_json(prompt: str, retries: int = 3):
     if not API_KEY:
         raise RuntimeError("Brak GEMINI_API_KEY w GitHub Secrets.")
@@ -376,7 +427,7 @@ def gemini_json(prompt: str, retries: int = 3):
         strict_prompt = prompt
         if attempt > 1:
             strict_prompt += (
-                "\\n\\nUWAGA: poprzednia odpowiedź nie była poprawnym JSON-em. "
+                "\n\nUWAGA: poprzednia odpowiedź nie była poprawnym JSON-em. "
                 "Zwróć TYLKO jeden poprawny obiekt JSON. "
                 "Używaj wyłącznie podwójnych cudzysłowów, bez komentarzy, "
                 "bez markdownu i bez przecinków po ostatnim elemencie."
@@ -391,12 +442,32 @@ def gemini_json(prompt: str, retries: int = 3):
             },
         }
 
-        response = requests.post(endpoint, json=payload, timeout=120)
-        if not response.ok:
-            raise RuntimeError(
-                f"Gemini API error {response.status_code} for model {MODEL}: "
-                f"{response.text[:1400]}"
-            )
+        quota_retries = 0
+        while True:
+            wait_for_gemini_slot()
+            response = requests.post(endpoint, json=payload, timeout=120)
+            if response.status_code in (429, 500, 502, 503, 504):
+                quota_retries += 1
+                if quota_retries > GEMINI_MAX_RATE_RETRIES:
+                    raise RuntimeError(
+                        f"Gemini API {response.status_code}: problem utrzymuje się po "
+                        f"{GEMINI_MAX_RATE_RETRIES} ponowieniach. "
+                        "Sprawdź limit zapytań i stan API."
+                    )
+                delay = gemini_retry_delay(response, quota_retries)
+                print(
+                    f"Gemini HTTP {response.status_code}; ponowienie "
+                    f"{quota_retries}/{GEMINI_MAX_RATE_RETRIES} po {delay:.1f}s.",
+                    flush=True,
+                )
+                time.sleep(delay)
+                continue
+            if not response.ok:
+                raise RuntimeError(
+                    f"Gemini API error {response.status_code} for model {MODEL}: "
+                    f"{response.text[:1000]}"
+                )
+            break
 
         body = response.json()
 
@@ -700,13 +771,15 @@ PARTIA:
 
         digest_text = str(edited.get("digest_text") or "").strip()
         if original.get("article_text") and len(digest_text.split()) < 450:
-            print(
-                f"Digest za krótki ({len(digest_text.split())} słów) dla: "
-                f"{original['title'][:80]} — regeneruję osobno."
-            )
-            regenerated = regenerate_long_digest(original)
-            if regenerated:
-                digest_text = regenerated
+            # On the free tier, one regeneration per story could exhaust
+            # the 15-requests/min quota. Keep a fact-grounded shorter digest.
+            # Explicitly opt in to expensive re-generation if ever necessary.
+            if os.environ.get("REGENERATE_SHORT_DIGESTS", "false").lower() in (
+                "true", "1", "yes"
+            ):
+                regenerated = regenerate_long_digest(original)
+                if regenerated:
+                    digest_text = regenerated
 
         selected.append(
             {
