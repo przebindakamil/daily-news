@@ -34,6 +34,11 @@
     </section>
 
     <section id="today-view">
+    <div class="reading-toolbar" aria-label="Tryb czytania">
+      <button id="quick-mode-toggle" class="reading-toggle" type="button" aria-pressed="false">Tryb 5 minut</button>
+      <button id="unread-only-toggle" class="reading-toggle" type="button" aria-pressed="false">Tylko nieprzeczytane</button>
+      <span class="reading-toolbar-note">Spokojny przegląd na Twoich zasadach</span>
+    </div>
     <div class="day-browser">
       <nav id="day-nav" class="day-nav" aria-label="Dni"></nav>
       <button id="archive-toggle" class="archive-toggle" type="button" aria-expanded="false">Archiwum</button>
@@ -67,9 +72,19 @@
           <h2>Kategorie</h2>
           <p>Bez personalizacji. Czysty przegląd redakcyjny według tematów.</p>
         </div>
-        <button id="categories-back" class="categories-back" type="button" hidden>Wszystkie kategorie</button>
+        <div class="category-tools">
+          <label for="category-date-select">Wydanie
+            <select id="category-date-select" aria-label="Data wydania w kategoriach"></select>
+          </label>
+          <button id="categories-back" class="categories-back" type="button" hidden>Wszystkie kategorie</button>
+        </div>
       </div>
       <div id="categories-root"></div>
+    </section>
+
+    <section id="article-view" class="article-view" hidden aria-label="Udostępniony artykuł">
+      <a class="article-back" href="#today">← Wróć do przeglądu</a>
+      <div id="article-root" aria-live="polite"></div>
     </section>
 
     <section id="audit-view" class="audit-view" hidden aria-labelledby="audit-title">
