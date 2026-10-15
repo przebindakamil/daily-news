@@ -34,7 +34,7 @@ jobs:
         run: |
           node --check script.js
           node --check audit.js
-          node --test tests/test_feedback_ui.mjs
+          node --test tests/test_feedback_ui.mjs tests/test_week1_ui.mjs
       - name: Verify audit assets
         run: |
           grep -q 'id="audit-view"' index.html
