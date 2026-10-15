@@ -8,7 +8,7 @@ const html=fs.readFileSync('index.html','utf8');
 const css=fs.readFileSync('styles.css','utf8');
 
 function method(name) {
-  const expression=new RegExp('(?:^|\\n)((?:async )?function '+name+'\\([^]*?)(?=\\n(?:async )?function |$)','m');
+  const expression=new RegExp('(?:^|\\n)((?:async )?function '+name+'\\([^]*?)(?=\\n(?:async )?function |$)');
   const match=script.match(expression);
   assert.ok(match,'Method missing: '+name);
   return match[1];
