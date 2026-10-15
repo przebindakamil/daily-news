@@ -263,7 +263,8 @@ function learnedFeedbackBoost(item){
     const direction=record.direction==='more'?1:record.direction==='less'?-1:0;
     if(!direction) continue;
     const sameCategory=Boolean(record.category && record.category===item.category);
-    const sharedTopics=(record.topics||[]).filter(topic=>itemTopics.has(normalizeTopic(topic))).length;
+    const sharedTopics=(Array.isArray(record.topics)?record.topics:[])
+      .filter(topic=>itemTopics.has(normalizeTopic(topic))).length;
     if(!sameCategory&&!sharedTopics) continue;
     boost+=direction*Math.min(1.6,(sameCategory?.2:0)+sharedTopics*.55);
   }
@@ -618,11 +619,14 @@ function storyCard(item,featured=false){
   }
 
   card.addEventListener('click',event=>{
-    if(event.target.closest('button,a,input')) return;
+    // Clicking/dragging text in the expanded article should never collapse it.
+    if(event.target.closest('button,a,input,select,textarea,.news-digest')) return;
+    if(window.getSelection?.()?.toString().trim()) return;
     toggleDigest();
   });
   card.addEventListener('keydown',event=>{
-    if((event.key==='Enter'||event.key===' ')&&!event.target.closest('button,a,input')){
+    if((event.key==='Enter'||event.key===' ')&&
+       !event.target.closest('button,a,input,select,textarea,.news-digest')){
       event.preventDefault();
       toggleDigest();
     }
