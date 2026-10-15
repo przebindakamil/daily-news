@@ -30,10 +30,11 @@ jobs:
         run: python -m compileall -q scripts tests
       - name: Run regression tests
         run: python -m unittest discover -s tests -v
-      - name: Check frontend JavaScript syntax
+      - name: Check frontend JavaScript syntax and behavior
         run: |
           node --check script.js
           node --check audit.js
+          node --test tests/test_feedback_ui.mjs
       - name: Verify audit assets
         run: |
           grep -q 'id="audit-view"' index.html
