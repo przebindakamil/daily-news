@@ -995,10 +995,12 @@ function renderCategoryDetail(category){
 function setActiveView(view,category=null){
   const showCategories=view==='categories';
   const showAudit=view==='audit';
+  const showArticle=view==='article';
 
-  if(todayView) todayView.hidden=showCategories||showAudit;
+  if(todayView) todayView.hidden=showCategories||showAudit||showArticle;
   if(categoriesView) categoriesView.hidden=!showCategories;
   if(auditView) auditView.hidden=!showAudit;
+  if(articleView) articleView.hidden=!showArticle;
 
   document.querySelectorAll('[data-view-link]').forEach(link=>{
     const active=(view==='today'&&link.dataset.viewLink==='today') ||
@@ -1019,8 +1021,59 @@ function setActiveView(view,category=null){
   }
 }
 
+async function renderArticleRoute(hash){
+  if(!articleRoot) return;
+  const match=/^#article\/(\d{4}-\d{2}-\d{2})\/([0-9a-f]{16})$/.exec(hash);
+  if(!match){
+    articleRoot.textContent='Nieprawidłowy link do artykułu.';
+    return;
+  }
+  const [,date,key]=match;
+  articleRoot.innerHTML='<p class="loading">Wczytywanie udostępnionego artykułu…</p>';
+  try{
+    // This view deliberately ignores local categories, read filters, and votes.
+    // A shared link always resolves to the same public archived article.
+    const response=await fetch('./data/archive/'+date+'.json',{cache:'no-store'});
+    if(!response.ok) throw new Error('Nie znaleziono tego wydania.');
+    const data=await response.json();
+    const story=[...(data.top_stories||[]),...(data.more_stories||[])]
+      .find(item=>articleKey(item)===key);
+    if(location.hash!==hash) return; // Ignore stale responses after route changes.
+    articleRoot.innerHTML='';
+    if(!story){
+      articleRoot.innerHTML='<p class="empty">Nie znaleziono artykułu. Sprawdź link lub archiwum.</p>';
+      return;
+    }
+    const heading=document.createElement('div');
+    heading.className='article-issue-heading';
+    heading.textContent='Wydanie: '+formatArchiveDay(date);
+    const card=storyCard({...story,archive_date:date},false);
+    card.classList.add('expanded');
+    card.setAttribute('aria-expanded','true');
+    const digest=card.querySelector('.news-digest');
+    if(digest) digest.hidden=false;
+    const hint=card.querySelector('.expand-hint');
+    if(hint) hint.textContent='Zwiń';
+    articleRoot.append(heading,card);
+  }catch(err){
+    if(location.hash===hash){
+      articleRoot.innerHTML='';
+      const message=document.createElement('p');
+      message.className='empty';
+      message.textContent=err.message||'Nie udało się wczytać artykułu.';
+      articleRoot.appendChild(message);
+    }
+  }
+}
+
 function applyRoute(){
   const hash=location.hash||'#today';
+
+  if(hash.startsWith('#article/')){
+    setActiveView('article');
+    renderArticleRoute(hash);
+    return;
+  }
 
   if(hash==='#audit'||hash.startsWith('#audit/')){
     setActiveView('audit');
@@ -1061,22 +1114,28 @@ function render(data){
   }
 
   const isToday=activeDate===archiveDates[0];
-  const topOfDay=(data.top_of_day?.length?data.top_of_day:fallbackTopOfDay(allRaw)).slice(0,3);
+  const topCandidates=(data.top_of_day?.length?data.top_of_day:fallbackTopOfDay(allRaw));
+  const topOfDay=filterUnread(topCandidates).slice(0,3);
 
   const topSection=renderTopOfDay(topOfDay,isToday);
   if(topSection) root.appendChild(topSection);
 
   renderCategoryNav(allRaw);
 
-  const topIds=new Set(topOfDay.map(itemId));
-  const feedPool=allRaw.filter(item=>!topIds.has(itemId(item)));
+  // Always exclude editorial TOP from the personalized pool, including when
+  // TOP stories are read and thus hidden by the unread filter.
+  const editorialTopIds=new Set(topCandidates.map(itemId));
+  const feedPool=filterUnread(allRaw.filter(item=>!editorialTopIds.has(itemId(item))));
 
   const all=activeCategoryFilter
     ? feedPool.filter(item=>item.category===activeCategoryFilter)
     : feedPool;
 
-  const personalizedLimit=Math.max(1,currentDailyLimit()-topOfDay.length);
-  const {main,outsideBubble}=splitPersonalized(all,personalizedLimit);
+  const desiredCount=quickMode?5:currentDailyLimit();
+  const personalizedLimit=Math.max(0,desiredCount-topOfDay.length);
+  const {main,outsideBubble}=personalizedLimit>0
+    ? splitPersonalized(all,personalizedLimit)
+    : {main:[],outsideBubble:null};
   const isOmnibus=userPreferences.preset==='omnibus';
   const mainTitle=isToday
     ? (isOmnibus?'Warto wiedzieć':'Dla Ciebie')
@@ -1090,25 +1149,66 @@ function render(data){
     if(bubble) root.appendChild(bubble);
   }
 
-  if(!main.length&&!outsideBubble){
-    root.innerHTML='<p class="empty">Brak materiałów w wybranych kategoriach. Zmień zainteresowania w „Dostosuj”.</p>';
+  if(!topOfDay.length&&!main.length&&!outsideBubble){
+    root.innerHTML=unreadOnly
+      ? '<p class="empty">W tym wydaniu nie ma kolejnych nieprzeczytanych wiadomości. Wyłącz filtr, aby zobaczyć wszystkie.</p>'
+      : '<p class="empty">Brak materiałów w wybranych kategoriach. Zmień zainteresowania w „Dostosuj”.</p>';
   }
+  syncReadingToolbar();
 }
 
 async function loadBriefing(date){
+  const request=++briefingRequestId;
   activeDate=date;
   renderDayNavigation();
   root.innerHTML='<p class="loading">Ładowanie briefingu…</p>';
+  if(categoriesView&&!categoriesView.hidden){
+    categoriesRoot.innerHTML='<p class="loading">Ładowanie kategorii…</p>';
+  }
   try{
-    const response=await fetch('./data/archive/'+date+'.json',{cache:'no-store'});
-    if(!response.ok) throw new Error('Nie udało się wczytać tego dnia.');
-    render(await response.json());
+    let data=archiveCache.get(date);
+    if(!data){
+      const response=await fetch('./data/archive/'+date+'.json',{cache:'no-store'});
+      if(!response.ok) throw new Error('Nie udało się wczytać tego dnia.');
+      data=await response.json();
+      archiveCache.set(date,data);
+    }
+    if(request!==briefingRequestId) return;
+    render(data);
   }catch(err){
-    root.innerHTML='<p class="empty">'+err.message+'</p>';
+    if(request!==briefingRequestId) return;
+    const error=document.createElement('p');
+    error.className='empty';
+    error.textContent=err.message;
+    if(categoriesView&&!categoriesView.hidden){
+      categoriesRoot.replaceChildren(error);
+    }else{
+      root.replaceChildren(error);
+    }
   }
 }
 
+function renderCategoryDates(){
+  if(!categoryDateSelect) return;
+  const options=archiveDates.map(date=>date);
+  const currentOptions=[...categoryDateSelect.options].map(option=>option.value);
+  if(JSON.stringify(options)!==JSON.stringify(currentOptions)){
+    categoryDateSelect.innerHTML='';
+    for(const date of options){
+      const option=document.createElement('option');
+      option.value=date;
+      option.textContent=formatArchiveDay(date);
+      categoryDateSelect.appendChild(option);
+    }
+  }
+  if(activeDate && archiveDates.includes(activeDate)){
+    categoryDateSelect.value=activeDate;
+  }
+  categoryDateSelect.disabled=!archiveDates.length;
+}
+
 function renderDayNavigation(){
+  renderCategoryDates();
   dayNav.innerHTML='';
   archiveDates.slice(0,5).forEach((date,index)=>{
     const button=document.createElement('button');
