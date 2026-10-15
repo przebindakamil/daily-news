@@ -8,6 +8,11 @@ const navSaved = document.querySelector('#nav-saved');
 const updated = document.querySelector('#updated-at');
 const nav = document.querySelector('#category-nav');
 const categoryClear = document.querySelector('#category-clear');
+const quickModeToggle = document.querySelector('#quick-mode-toggle');
+const unreadOnlyToggle = document.querySelector('#unread-only-toggle');
+const categoryDateSelect = document.querySelector('#category-date-select');
+const articleView = document.querySelector('#article-view');
+const articleRoot = document.querySelector('#article-root');
 const dayNav = document.querySelector('#day-nav');
 const archiveToggle = document.querySelector('#archive-toggle');
 const archiveList = document.querySelector('#archive-list');
@@ -46,6 +51,8 @@ const PREFS_KEY = 'daily-news-user-preferences-v2';
 const FEEDBACK_KEY = 'daily-news-feedback-v2';
 const LEGACY_FEEDBACK_KEY = 'daily-news-feedback-v1';
 const SAVED_KEY = 'daily-news-saved-v1';
+const READ_KEY = 'daily-news-read-v1';
+const QUICK_KEY = 'daily-news-quick-mode-v1';
 
 const CATEGORIES = [
   'AI i technologia',
@@ -164,6 +171,12 @@ let feedbackState=loadJson(FEEDBACK_KEY,loadJson(LEGACY_FEEDBACK_KEY,{}));
 let savedItems=loadJson(SAVED_KEY,[]);
 if(!Array.isArray(savedItems)) savedItems=[];
 let archiveCache=new Map();
+let readState=loadJson(READ_KEY,{});
+if(Array.isArray(readState)) readState={};
+let unreadOnly=false;
+let quickMode=false;
+try{quickMode=localStorage.getItem(QUICK_KEY)==='true';}catch(_){}
+let briefingRequestId=0;
 
 function savePreferences(){ localStorage.setItem(PREFS_KEY,JSON.stringify(userPreferences)); }
 function saveFeedback(){ localStorage.setItem(FEEDBACK_KEY,JSON.stringify(feedbackState)); }
@@ -193,6 +206,87 @@ function normalizeTopic(value=''){
 }
 
 function itemId(item){ return item.url || item.title || JSON.stringify(item); }
+
+// Compact, deterministic 64-bit-style identifier for URL fragments. Does not
+// depend on a source's headline, card order or personal ranking.
+function articleKey(item){
+  const text=itemId(item);
+  let a=0x811c9dc5, b=0x9e3779b9;
+  for(let i=0;i<text.length;i++){
+    const n=text.charCodeAt(i);
+    a=Math.imul(a^n,0x01000193);
+    b=Math.imul(b^n,0x85ebca6b);
+  }
+  return (a>>>0).toString(16).padStart(8,'0')+(b>>>0).toString(16).padStart(8,'0');
+}
+
+function articleHash(item,date=item.archive_date||activeDate||activeData?.date){
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(String(date||''))) return '';
+  return '#article/'+date+'/'+articleKey(item);
+}
+
+function articleLink(item){
+  const hash=articleHash(item);
+  return hash?location.href.split('#')[0]+hash:'';
+}
+
+function estimatedReadingMinutes(item){
+  const text=String(item.digest_text||item.summary||'').trim();
+  if(!text) return null;
+  return Math.max(1,Math.ceil(text.split(/\s+/).filter(Boolean).length/220));
+}
+
+function isRead(item){ return readState[itemId(item)]===true; }
+
+function toggleRead(item){
+  const key=itemId(item),read=!isRead(item);
+  if(read) readState[key]=true;
+  else delete readState[key];
+  try{localStorage.setItem(READ_KEY,JSON.stringify(readState));}catch(_){}
+  document.querySelectorAll('[data-read-id]').forEach(button=>{
+    if(button.dataset.readId!==key) return;
+    button.classList.toggle('active',read);
+    button.setAttribute('aria-pressed',String(read));
+    button.textContent=read?'Przeczytane ✓':'Oznacz przeczytane';
+    button.closest('.news-card')?.classList.toggle('is-read',read);
+  });
+  // Do not remove cards from the live DOM while someone is reading.
+  // The unread-only filter applies on the next explicit refresh/toggle.
+}
+
+function filterUnread(items){
+  return unreadOnly?items.filter(item=>!isRead(item)):items;
+}
+
+function syncReadingToolbar(){
+  if(quickModeToggle){
+    quickModeToggle.setAttribute('aria-pressed',String(quickMode));
+    quickModeToggle.classList.toggle('active',quickMode);
+    quickModeToggle.textContent=quickMode?'✓ Tryb 5 minut':'Tryb 5 minut';
+  }
+  if(unreadOnlyToggle){
+    unreadOnlyToggle.setAttribute('aria-pressed',String(unreadOnly));
+    unreadOnlyToggle.classList.toggle('active',unreadOnly);
+    unreadOnlyToggle.textContent=unreadOnly?'✓ Tylko nieprzeczytane':'Tylko nieprzeczytane';
+  }
+}
+
+async function copyArticleLink(item,button){
+  const url=articleLink(item);
+  if(!url) return;
+  try{
+    if(!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
+    await navigator.clipboard.writeText(url);
+    if(button){
+      const previous=button.textContent;
+      button.textContent='Skopiowano ✓';
+      button.setAttribute('aria-label','Link skopiowany');
+      // No timeout: the button resets only on a fresh view render.
+    }
+  }catch(_){
+    window.prompt('Skopiuj link do artykułu:',url);
+  }
+}
 
 function editorialScore(item){
   const raw=Number(item.editorial_score);
