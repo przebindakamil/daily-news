@@ -718,3 +718,89 @@ body.onboarding-open{overflow:hidden}
 .feedback-button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .news-card:focus-within{border-color:color-mix(in srgb,var(--accent) 38%,var(--line))}
 @media(max-width:620px){.feedback-label{width:100%;margin:3px 0 0}}
+
+/* Week 1: deliberate, no-jump reading controls */
+.reading-toolbar{
+  display:flex;flex-wrap:wrap;align-items:center;gap:9px;
+  margin:0 0 22px;padding:12px 0 16px;border-bottom:1px solid var(--line);
+}
+.reading-toggle{
+  min-height:44px;border:1px solid var(--line);border-radius:999px;
+  padding:0 16px;background:var(--surface);color:var(--text);
+  font:inherit;font-size:.8rem;font-weight:650;cursor:pointer;
+}
+.reading-toggle:hover,.reading-toggle.active{
+  border-color:var(--accent);color:var(--accent);background:var(--accent-soft);
+}
+.reading-toggle:focus-visible,.category-tools select:focus-visible,
+.share-button:focus-visible,.read-button:focus-visible{
+  outline:2px solid var(--accent);outline-offset:3px;
+}
+.reading-toolbar-note{font-size:.73rem;color:var(--muted);margin-left:auto}
+.news-card.is-read{border-color:color-mix(in srgb,var(--muted) 22%,var(--line))}
+.news-card.is-read::before{
+  content:"";position:absolute;left:0;top:22px;bottom:22px;
+  width:3px;border-radius:99px;background:var(--accent-soft);
+}
+.read-button.active{background:var(--accent-soft);color:var(--accent);border-color:var(--accent)}
+.news-reading-time{color:var(--accent);font-weight:700;white-space:nowrap}
+.news-footer{flex-wrap:wrap;column-gap:12px;row-gap:6px}
+.news-footer .expand-hint{margin-left:auto}
+.feedback-button{min-height:40px}
+.feedback-button-positive,.feedback-button-negative{min-height:40px;width:40px;height:40px;min-width:40px}
+.news-card{min-width:0;overflow-wrap:anywhere}
+.news-card .digest-prose{overflow-wrap:break-word}
+.top-day-card .feedback-actions{display:flex}
+.top-day-card .feedback-label,
+.top-day-card .feedback-button-positive,
+.top-day-card .feedback-button-negative{display:none}
+.top-day-card .feedback-actions .feedback-button{font-size:.71rem}
+.category-tools{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px}
+.category-tools label{display:grid;gap:5px;color:var(--muted);font-size:.72rem}
+.category-tools select{
+  min-height:44px;max-width:260px;padding:0 12px;
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:12px;color:var(--text);font:inherit;font-size:.81rem;cursor:pointer;
+}
+.article-view{padding:20px 0 90px;max-width:850px;margin-inline:auto}
+.article-back{display:inline-flex;min-height:44px;align-items:center;color:var(--accent);
+  font-size:.85rem;font-weight:700;text-decoration:none;margin-bottom:22px}
+.article-back:hover{text-decoration:underline}
+.article-issue-heading{margin:0 0 14px;color:var(--muted);font-size:.78rem}
+.article-view .news-card{min-height:0}
+#article-view[hidden]{display:none!important}
+
+@media(max-width:900px){
+  .site-header .header-inner{gap:8px}
+  .site-header .main-nav{
+    flex:1 1 100%;min-width:0;max-width:100%;margin:0;
+    overflow-x:auto;overscroll-behavior-x:contain;
+    -webkit-overflow-scrolling:touch;padding-bottom:2px;
+  }
+  .site-header .main-nav a,.site-header .main-nav button{
+    flex:0 0 auto;min-height:44px;white-space:nowrap
+  }
+}
+@media(max-width:620px){
+  .site-header .brand{font-size:.75rem;letter-spacing:.08em;white-space:nowrap}
+  .site-header .header-actions{margin-left:auto;flex:0 0 auto;min-width:0}
+  .site-header #saved-toggle{display:none}
+  .site-header .header-tool,.site-header .preferences-toggle{min-height:44px}
+  .site-header .main-nav a,.site-header .main-nav button{font-size:.78rem;padding:0 12px}
+  .wrap{width:calc(100% - 28px)}
+  .hero{padding:38px 0 32px}
+  .reading-toolbar{align-items:stretch}
+  .reading-toggle{flex:1 1 auto;padding:0 12px}
+  .reading-toolbar-note{width:100%;margin-left:0;text-align:center}
+  .category-tools{width:100%;align-items:stretch}
+  .category-tools label{flex:1 1 100%}
+  .category-tools select{max-width:100%;width:100%}
+  .category-tools .categories-back{min-height:44px;align-self:flex-start}
+  .news-grid{grid-template-columns:minmax(0,1fr)}
+  .news-card{padding:18px}
+  .feedback-actions{gap:6px}
+  .feedback-actions .feedback-label{width:100%;order:9}
+  .feedback-actions .feedback-button-positive,.feedback-actions .feedback-button-negative{order:10}
+  .top-day-card .feedback-actions .feedback-button{font-size:.7rem}
+  .article-view{padding-top:6px}
+}
