@@ -608,7 +608,8 @@ function createDigest(item){
 
 function storyCard(item,featured=false){
   const card=document.createElement('article');
-  card.className='news-card'+(featured?' featured':'');
+  card.className='news-card'+(featured?' featured':'')+(isRead(item)?' is-read':'');
+  card.dataset.articleKey=articleKey(item);
   card.tabIndex=0;
   card.setAttribute('role','button');
   card.setAttribute('aria-expanded','false');
@@ -676,16 +677,44 @@ function storyCard(item,featured=false){
   less.setAttribute('aria-pressed',String(current==='less'));
   more.addEventListener('click',event=>{event.stopPropagation();applyFeedback(item,'more');});
   less.addEventListener('click',event=>{event.stopPropagation();applyFeedback(item,'less');});
-  feedback.append(saveButton,feedbackLabel,more,less);
+  const readButton=document.createElement('button');
+  readButton.type='button';
+  readButton.className='feedback-button read-button'+(isRead(item)?' active':'');
+  readButton.dataset.readId=itemId(item);
+  readButton.textContent=isRead(item)?'Przeczytane ✓':'Oznacz przeczytane';
+  readButton.setAttribute('aria-pressed',String(isRead(item)));
+  readButton.addEventListener('click',event=>{
+    event.stopPropagation();
+    toggleRead(item);
+  });
+
+  const shareButton=document.createElement('button');
+  shareButton.type='button';
+  shareButton.className='feedback-button share-button';
+  shareButton.textContent='Kopiuj link';
+  shareButton.setAttribute('aria-label','Skopiuj link do tej wiadomości');
+  shareButton.addEventListener('click',event=>{
+    event.stopPropagation();
+    copyArticleLink(item,shareButton);
+  });
+  feedback.append(saveButton,readButton,shareButton,feedbackLabel,more,less);
 
   const footer=document.createElement('div');
   footer.className='news-footer';
   const date=document.createElement('span');
   date.textContent=item.published_at?formatDate(item.published_at):'';
+  const readingMinutes=estimatedReadingMinutes(item);
+  if(readingMinutes!==null){
+    const readingTime=document.createElement('span');
+    readingTime.className='news-reading-time';
+    readingTime.textContent='~'+readingMinutes+' min czytania';
+    footer.appendChild(readingTime);
+  }
   const expandHint=document.createElement('span');
   expandHint.className='expand-hint';
   expandHint.textContent='Kliknij po wiedzę w pigułce';
-  footer.append(date,expandHint);
+  footer.prepend(date);
+  footer.appendChild(expandHint);
 
   const digest=createDigest(item);
 
@@ -893,7 +922,6 @@ function renderCategoriesLanding(){
     const card=document.createElement('button');
     card.type='button';
     card.className='category-overview-card';
-    card.disabled=!categoryItems.length;
 
     const top=document.createElement('div');
     top.className='category-overview-top';
@@ -913,11 +941,11 @@ function renderCategoriesLanding(){
 
     const open=document.createElement('span');
     open.className='category-overview-open';
-    open.textContent=categoryItems.length?'Otwórz kategorię →':'';
+    open.textContent=categoryItems.length?'Otwórz kategorię →':'Przeglądaj historię →';
 
     card.append(top,teaser,open);
     card.addEventListener('click',()=>{
-      if(categoryItems.length) location.hash='#category/'+categorySlug(category);
+      location.hash='#category/'+categorySlug(category);
     });
 
     grid.appendChild(card);
