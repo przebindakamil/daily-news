@@ -779,7 +779,7 @@ function splitPersonalized(items,requestedLimit=currentDailyLimit()){
   const used=new Set(main.map(itemId));
 
   let outsideBubble=null;
-  if(!isOmnibus&&userPreferences.outsideBubble){
+  if(reserveBubble){
     const candidates=items
       .filter(item=>!used.has(itemId(item)))
       .filter(item=>!isCategoryEnabled(item.category)||categoryWeight(item)<=5)
@@ -1624,6 +1624,22 @@ savedPanel?.addEventListener('click',event=>{
   if(event.target.closest('[data-close-saved]')) setSavedOpen(false);
 });
 
+quickModeToggle?.addEventListener('click',()=>{
+  quickMode=!quickMode;
+  try{localStorage.setItem(QUICK_KEY,String(quickMode));}catch(_){}
+  syncReadingToolbar();
+  if(activeData) render(activeData);
+});
+unreadOnlyToggle?.addEventListener('click',()=>{
+  unreadOnly=!unreadOnly;
+  syncReadingToolbar();
+  if(activeData) render(activeData);
+});
+categoryDateSelect?.addEventListener('change',()=>{
+  const date=categoryDateSelect.value;
+  if(archiveDates.includes(date)&&date!==activeDate) loadBriefing(date);
+});
+
 window.addEventListener('hashchange',applyRoute);
 
 categoriesBack?.addEventListener('click',()=>{
@@ -1682,6 +1698,7 @@ archiveToggle?.addEventListener('click',()=>{
 renderSavedCount();
 renderSavedPanel();
 renderPreferences();
+syncReadingToolbar();
 setupOnboarding();
 applyRoute();
 
