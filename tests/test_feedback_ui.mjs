@@ -129,6 +129,11 @@ test('article click handler ignores selected text and the expanded digest',()=>{
   assert.doesNotMatch(functionSource('toggleSaved'),/\bif\(activeData\)\s*render\(activeData\)/);
 });
 
+test('opening a source does not secretly change manual preference weights',()=>{
+  assert.doesNotMatch(source,/recordSourceClick/);
+  assert.match(source,/link\.addEventListener\('click'/);
+});
+
 test('cards do not translate on hover and neighboring grid items do not stretch',()=>{
   assert.doesNotMatch(styles,/\.news-card:hover\{transform:translateY\(/);
   assert.match(styles,/\.news-grid\{[^}]*align-items:start/);
