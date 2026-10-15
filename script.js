@@ -43,7 +43,8 @@ const onboardingCustomList = document.querySelector('#onboarding-custom-list');
 const onboardingPresets = document.querySelector('#onboarding-presets');
 
 const PREFS_KEY = 'daily-news-user-preferences-v2';
-const FEEDBACK_KEY = 'daily-news-feedback-v1';
+const FEEDBACK_KEY = 'daily-news-feedback-v2';
+const LEGACY_FEEDBACK_KEY = 'daily-news-feedback-v1';
 const SAVED_KEY = 'daily-news-saved-v1';
 
 const CATEGORIES = [
@@ -158,7 +159,8 @@ userPreferences.categories={...defaultPreferences().categories,...(userPreferenc
 userPreferences.enabledCategories={...defaultPreferences().enabledCategories,...(userPreferences.enabledCategories||{})};
 userPreferences.topics=userPreferences.topics||{};
 userPreferences.customInterests=Array.isArray(userPreferences.customInterests)?userPreferences.customInterests:[];
-let feedbackState=loadJson(FEEDBACK_KEY,{});
+// Keep existing votes during migration, but stop silently changing manual preferences.
+let feedbackState=loadJson(FEEDBACK_KEY,loadJson(LEGACY_FEEDBACK_KEY,{}));
 let savedItems=loadJson(SAVED_KEY,[]);
 if(!Array.isArray(savedItems)) savedItems=[];
 let archiveCache=new Map();
@@ -234,11 +236,38 @@ function customInterestScore(item){
   return best||4;
 }
 
-function explicitFeedback(item){
+function feedbackDirection(item){
   const value=feedbackState[itemId(item)];
-  if(value==='more') return 10;
-  if(value==='less') return 0;
+  return typeof value==='string'?value:(value?.direction||null);
+}
+
+function nextFeedbackDirection(current,direction){
+  if(direction!=='more' && direction!=='less') return current||null;
+  return current===direction?null:direction;
+}
+
+function explicitFeedback(item){
+  const direction=feedbackDirection(item);
+  if(direction==='more') return 10;
+  if(direction==='less') return 0;
   return 5;
+}
+
+// Votes tune similar categories and topics in FUTURE feed renders. They never
+// change manual category sliders or reorder the currently displayed edition.
+function learnedFeedbackBoost(item){
+  const itemTopics=new Set((item.topics||[]).map(normalizeTopic).filter(Boolean));
+  let boost=0;
+  for(const record of Object.values(feedbackState)){
+    if(!record || typeof record!=='object') continue; // Legacy vote without topic metadata.
+    const direction=record.direction==='more'?1:record.direction==='less'?-1:0;
+    if(!direction) continue;
+    const sameCategory=Boolean(record.category && record.category===item.category);
+    const sharedTopics=(record.topics||[]).filter(topic=>itemTopics.has(normalizeTopic(topic))).length;
+    if(!sameCategory&&!sharedTopics) continue;
+    boost+=direction*Math.min(1.6,(sameCategory?.2:0)+sharedTopics*.55);
+  }
+  return Math.max(-2.5,Math.min(2.5,boost));
 }
 
 function personalizedScore(item){
@@ -248,14 +277,16 @@ function personalizedScore(item){
       + categoryWeight(item)*.08
       + topicAffinity(item)*.06
       + customInterestScore(item)*.12
-      + explicitFeedback(item)*.07;
+      + explicitFeedback(item)*.07
+      + learnedFeedbackBoost(item);
   }
 
   return editorialScore(item)*.45
     + categoryWeight(item)*.18
     + topicAffinity(item)*.10
     + customInterestScore(item)*.20
-    + explicitFeedback(item)*.07;
+    + explicitFeedback(item)*.07
+    + learnedFeedbackBoost(item);
 }
 
 function applyPreset(key){
@@ -310,24 +341,33 @@ function diversifyItems(items,limit){
 
 function currentDailyLimit(){ return VOLUME_LIMITS[userPreferences.volume]||VOLUME_LIMITS.standard; }
 
-function applyFeedback(item,direction){
-  feedbackState[itemId(item)]=direction;
-  saveFeedback();
-
-  const delta=direction==='more'?.8:-.8;
-  if(item.category){
-    const current=Number(userPreferences.categories?.[item.category]??5);
-    userPreferences.categories[item.category]=Math.max(0,Math.min(10,current+delta*.35));
-  }
-  (item.topics||[]).forEach(topic=>{
-    const key=normalizeTopic(topic);
-    const current=Number(userPreferences.topics?.[key]??5);
-    userPreferences.topics[key]=Math.max(0,Math.min(10,current+delta));
+function updateFeedbackButtons(item){
+  const id=itemId(item);
+  const direction=feedbackDirection(item);
+  document.querySelectorAll('[data-feedback-id]').forEach(button=>{
+    if(button.dataset.feedbackId!==id) return;
+    const selected=button.dataset.feedbackDirection===direction;
+    button.classList.toggle('active',selected);
+    button.setAttribute('aria-pressed',String(selected));
   });
+}
 
-  savePreferences();
-  renderPreferences();
-  if(activeData) render(activeData);
+function applyFeedback(item,direction){
+  const id=itemId(item);
+  const next=nextFeedbackDirection(feedbackDirection(item),direction);
+  if(next){
+    feedbackState[id]={
+      direction:next,
+      category:item.category||'',
+      topics:[...new Set((item.topics||[]).map(normalizeTopic).filter(Boolean))].slice(0,6),
+    };
+  }else{
+    delete feedbackState[id]; // Clicking an active choice undoes the vote.
+  }
+  saveFeedback();
+  updateFeedbackButtons(item);
+  // Deliberately DO NOT call render(). Rebuilding the feed would reorder,
+  // replace and collapse cards under the reader's cursor/keyboard focus.
 }
 
 function isSaved(item){
@@ -336,6 +376,17 @@ function isSaved(item){
 
 function renderSavedCount(){
   if(savedCount) savedCount.textContent=String(savedItems.length);
+}
+
+function updateSaveButtons(item){
+  const saved=isSaved(item);
+  const id=itemId(item);
+  document.querySelectorAll('.save-button[data-item-id]').forEach(button=>{
+    if(button.dataset.itemId!==id) return;
+    button.classList.toggle('active',saved);
+    button.textContent=saved?'Zapisano':'Zapisz';
+    button.setAttribute('aria-pressed',String(saved));
+  });
 }
 
 function toggleSaved(item){
@@ -348,7 +399,8 @@ function toggleSaved(item){
   }
   saveSaved();
   renderSavedPanel();
-  if(activeData) render(activeData);
+  updateSaveButtons(item);
+  // Saving an article must not close its digest or change article order.
 }
 
 function renderSavedPanel(){
@@ -512,28 +564,39 @@ function storyCard(item,featured=false){
   saveButton.type='button';
   saveButton.className='feedback-button save-button'+(isSaved(item)?' active':'');
   saveButton.textContent=isSaved(item)?'Zapisano':'Zapisz';
+  saveButton.dataset.itemId=itemId(item);
+  saveButton.setAttribute('aria-pressed',String(isSaved(item)));
   saveButton.addEventListener('click',event=>{
     event.stopPropagation();
     toggleSaved(item);
   });
+  const feedbackLabel=document.createElement('span');
+  feedbackLabel.className='feedback-label';
+  feedbackLabel.textContent='Podobne tematy:';
   const more=document.createElement('button');
   more.type='button';
   more.textContent='+';
-  more.title='Więcej takich';
-  more.setAttribute('aria-label','Więcej takich');
+  more.title='Więcej podobnych tematów w kolejnych przeglądach. Kliknij ponownie, by cofnąć.';
+  more.setAttribute('aria-label','Chcę więcej podobnych tematów w kolejnych przeglądach');
   more.className='feedback-button feedback-button-positive';
+  more.dataset.feedbackId=itemId(item);
+  more.dataset.feedbackDirection='more';
   const less=document.createElement('button');
   less.type='button';
   less.textContent='−';
-  less.title='Mniej takich';
-  less.setAttribute('aria-label','Mniej takich');
+  less.title='Mniej podobnych tematów w kolejnych przeglądach. Kliknij ponownie, by cofnąć.';
+  less.setAttribute('aria-label','Chcę mniej podobnych tematów w kolejnych przeglądach');
   less.className='feedback-button feedback-button-negative';
-  const current=feedbackState[itemId(item)];
+  less.dataset.feedbackId=itemId(item);
+  less.dataset.feedbackDirection='less';
+  const current=feedbackDirection(item);
   if(current==='more') more.classList.add('active');
   if(current==='less') less.classList.add('active');
+  more.setAttribute('aria-pressed',String(current==='more'));
+  less.setAttribute('aria-pressed',String(current==='less'));
   more.addEventListener('click',event=>{event.stopPropagation();applyFeedback(item,'more');});
   less.addEventListener('click',event=>{event.stopPropagation();applyFeedback(item,'less');});
-  feedback.append(saveButton,more,less);
+  feedback.append(saveButton,feedbackLabel,more,less);
 
   const footer=document.createElement('div');
   footer.className='news-footer';
