@@ -138,6 +138,23 @@ gemini-3.5-flash-lite
 
 Model można zmienić przez zmienną `GEMINI_MODEL`.
 
+
+## Funkcje czytelnika — tydzień 1 (15.10.2026)
+
+Zrealizowane w pierwszym etapie [roadmapy](ROADMAP.md):
+
+1. **Historia kategorii** — w zakładce Kategorie wybierz datę wydania z listy. Możesz wejść także do kategorii, która w najnowszym wydaniu nie ma jeszcze wiadomości, i wybrać starszą datę.
+2. **Przeczytane** — przy artykule jest przycisk `Oznacz przeczytane` / `Przeczytane ✓`. Stan jest przechowywany lokalnie w przeglądarce (`daily-news-read-v1`); kliknięcie drugi raz cofa oznaczenie.
+3. **Tylko nieprzeczytane** — filtr na stronie przeglądu. Oznaczenie artykułu nie usuwa go w trakcie czytania; filtr przelicza widok po świadomej zmianie trybu/wydania. Nie zmienia publicznych danych archiwum.
+4. **Czas czytania** — szacunek w minutach oparty wyłącznie na streszczeniu opublikowanym w Daily News (ok. 220 słów/min), **nie na pełnym artykule u źródła**.
+5. **Tryb 5 minut** — wyświetla najwyżej 5 odrębnych historii z aktualnie wybranego wydania: do 3 TOP redakcyjnych, a następnie najlepiej dopasowane tematy. Można go wyłączyć, aby wrócić do preferowanej liczby materiałów; stan przełącznika jest zapisywany lokalnie.
+6. **Udostępnianie wiadomości** — `Kopiuj link` tworzy adres `#article/YYYY-MM-DD/identyfikator` do pojedynczej wiadomości w archiwum. Adres działa bez logowania i **ignoruje cudze filtry i zainteresowania**. Przy braku obsługi schowka pojawia się opcja ręcznego skopiowania.
+7. **Mobilny UX** — poziomo przewijane menu w obrębie nagłówka, wygodniejsze przyciski dotykowe, brak przesuwania kart przy interakcjach, osobny pełnoekranowy widok udostępnionego artykułu.
+
+Ograniczenia: status przeczytania i tryb 5 minut nie są synchronizowane między urządzeniami. Bez konta można je utrzymywać wyłącznie w bieżącej przeglądarce. Nie są zapisywane na serwerze. Kontrola prywatnego audytu `#audit` pozostała oddzielna.
+
+Testy frontendu: `node --test tests/test_feedback_ui.mjs tests/test_week1_ui.mjs`.
+
 ## Prywatny audyt administratora
 
 **Audyt nie jest elementem publicznej nawigacji.** Publiczny serwis nadal
