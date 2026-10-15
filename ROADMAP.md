@@ -4,21 +4,29 @@ Cel: **codzienny, pięciominutowy przegląd ważnych informacji**, który pomaga
 
 **GitHub Issues to źródło prawdy dla otwartych zadań.** Poniższy plan to proponowana kolejność małych wdrożeń, a nie automatyczne zobowiązanie do wypuszczenia funkcji każdego dnia kalendarzowego. Każde zadanie ma zakres, kryteria akceptacji i testy. Po wykonaniu oznacz je jako zakończone w GitHubie oraz zaznacz tutaj.
 
-**Stan na 15.10.2026:** 21 zaplanowanych zadań w 3 etapach; #3 i #4 wykorzystują starsze zgłoszenia zamiast duplikatów. Pierwsze zadanie do podjęcia: **D01, #10**.
+**Stan na 15.10.2026:** ukończony cały **etap 1 (D01–D07)**; kolejnym zadaniem jest **D08, #17**. #3 i #4 wykorzystują starsze zgłoszenia zamiast duplikatów.
 
 ## Etap 1 — Wygodne codzienne czytanie (D01–D07)
 
 | Dzień | Zadanie | GitHub Issue | Priorytet | Status |
 | --- | --- | --- | --- | --- |
-| D01 | Historia wydań w widoku kategorii | [#10](https://github.com/przebindakamil/daily-news/issues/10) | P1 | [ ] |
-| D02 | Oznaczanie artykułów jako przeczytane | [#11](https://github.com/przebindakamil/daily-news/issues/11) | P1 | [ ] |
-| D03 | Filtr „tylko nieprzeczytane” | [#12](https://github.com/przebindakamil/daily-news/issues/12) | P1 | [ ] |
-| D04 | Szacowany czas czytania wiadomości | [#13](https://github.com/przebindakamil/daily-news/issues/13) | P1 | [ ] |
-| D05 | Tryb „5 minut” | [#14](https://github.com/przebindakamil/daily-news/issues/14) | P1 | [ ] |
-| D06 | Bezpośredni link do artykułu | [#15](https://github.com/przebindakamil/daily-news/issues/15) | P1 | [ ] |
-| D07 | Wygodna nawigacja na telefonie | [#16](https://github.com/przebindakamil/daily-news/issues/16) | P1 | [ ] |
+| D01 | Historia wydań w widoku kategorii | [#10](https://github.com/przebindakamil/daily-news/issues/10) | P1 | [x] |
+| D02 | Oznaczanie artykułów jako przeczytane | [#11](https://github.com/przebindakamil/daily-news/issues/11) | P1 | [x] |
+| D03 | Filtr „tylko nieprzeczytane” | [#12](https://github.com/przebindakamil/daily-news/issues/12) | P1 | [x] |
+| D04 | Szacowany czas czytania wiadomości | [#13](https://github.com/przebindakamil/daily-news/issues/13) | P1 | [x] |
+| D05 | Tryb „5 minut” | [#14](https://github.com/przebindakamil/daily-news/issues/14) | P1 | [x] |
+| D06 | Bezpośredni link do artykułu | [#15](https://github.com/przebindakamil/daily-news/issues/15) | P1 | [x] |
+| D07 | Wygodna nawigacja na telefonie | [#16](https://github.com/przebindakamil/daily-news/issues/16) | P1 | [x] |
 
 **Cel etapu:** mniej tarcia przy czytaniu, zapisanym postępie i udostępnianiu wiadomości. Możliwie bez nowych kosztów API.
+
+### Wdrożenie etapu 1 — 15.10.2026
+
+**Zrobione:** historia kategorii z wyborem wydania; status przeczytania i cofanie; filtr nieprzeczytanych; czas czytania opublikowanego streszczenia; tryb 5 wiadomości; bezpośrednie publiczne linki `#article/YYYY-MM-DD/ID`; mobilne usprawnienia nawigacji i dotyku.
+
+**Weryfikacja:** istniejące testy regresyjne oraz `tests/test_week1_ui.mjs` w [Code quality checks](https://github.com/przebindakamil/daily-news/actions/workflows/quality-checks.yml); wydanie statyczne przez [Deploy Daily News website](https://github.com/przebindakamil/daily-news/actions/workflows/deploy-site.yml). Nie potrzeba żadnego nowego backendu ani zewnętrznego API.
+
+**Ograniczenia:** przeczytane i tryb 5 minut to preferencje lokalne urządzenia; nie oznaczają synchronizacji kont. Udostępnione linki działają niezależnie od profilu odbiorcy.
 
 ## Etap 2 — Jakość i wiarygodność informacji (D08–D14)
 
@@ -93,4 +101,4 @@ Epic: [#4 Story threads](https://github.com/przebindakamil/daily-news/issues/4) 
 4. Wymagaj poprawnego CI i działającego wdrożenia; prywatny audyt nie może stać się publiczny.
 5. Dopiero po weryfikacji zamknij Issue i oznacz [x] w tej roadmapie.
 
-Pierwszy krok: [D01 — Historia wydań w widoku kategorii, #10](https://github.com/przebindakamil/daily-news/issues/10).
+Etap 1 wykonany: [D01–D07, #10–#16](https://github.com/przebindakamil/daily-news/issues?q=is%3Aissue+is%3Aclosed). Następny krok: [D08 — Normalizacja źródłowych adresów URL, #17](https://github.com/przebindakamil/daily-news/issues/17).
