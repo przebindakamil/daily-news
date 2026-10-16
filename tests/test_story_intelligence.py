@@ -83,6 +83,24 @@ class StoryIntelligenceTests(unittest.TestCase):
         ]
         self.assertEqual(list(si.dedupe_previous(newer, previous)), newer[1:])
 
+    def test_unchanged_repeat_is_skipped_but_updated_content_is_kept(self):
+        old = story("NASA announces Mars rover launch",
+                    "https://first.example/old")
+        old["summary"] = "NASA confirms Mars rover launch will happen tomorrow."
+        same = {**old, "url": "https://newspaper.example/copy"}
+        updated = {**same, "summary": "NASA confirms Mars rover launched safely today."}
+        result = list(si.filter_unchanged_stories([same, updated], [old]))
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0]["summary"], updated["summary"])
+
+    def test_multi_word_name_check_generates_review_hint_not_rejection(self):
+        flagged = si.fact_warnings({
+            "article_text": "Maria Kowalska gave a presentation to the press.",
+            "digest_text": "Anna Nowak dała prezentację dla prasy.",
+        })
+        self.assertTrue(flagged["checked"])
+        self.assertIn("Anna Nowak", flagged["name_warnings"])
+
     def test_numeric_fact_warning_is_only_heuristic(self):
         good = si.fact_warnings({
             "article_text": "Rescued 12 people after the crash.",
