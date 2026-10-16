@@ -13,7 +13,7 @@ import requests
 import trafilatura
 from story_intelligence import (
     plausible_publication, group_candidates, dedupe_previous,
-    recent_entries, enrich_edition, fact_warnings,
+    recent_entries, enrich_edition, fact_warnings, source_health,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -1103,6 +1103,19 @@ def main():
 
     selected, top_count = edit_finalists(ranked, preferences)
     selected = enrich_edition(selected, history, target_day.isoformat())
+    # HEAD+streaming GET only for final stories. Do not reject legitimate
+    # paywalls, 403s, timeouts or sites with unknown availability.
+    verified = []
+    for item in selected:
+        status = source_health(item.get("url"))
+        if status in {"missing", "invalid"}:
+            print(f"Pomijam nieaktualny lub błędny URL: {item.get('source', 'źródło')}")
+            continue
+        verified.append({**item, "link_status": status})
+    selected = verified
+    if not selected:
+        raise RuntimeError("Brak artykułów z poprawnymi linkami.")
+    top_count = min(top_count, len(selected))
     top_stories = selected[:top_count]
     more_stories = selected[top_count:]
     top_of_day = choose_top_of_day(selected, limit=3)
