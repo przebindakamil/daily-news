@@ -12,7 +12,7 @@ import feedparser
 import requests
 import trafilatura
 from story_intelligence import (
-    plausible_publication, group_candidates, dedupe_previous,
+    canonical_url, plausible_publication, group_candidates, dedupe_previous,
     recent_entries, enrich_edition, fact_warnings, source_health,
 )
 
@@ -169,8 +169,9 @@ def add_feed_entries(items, seen, feed_url, category, tier, max_items, window_st
         if not published_in_window(published, window_start, window_end):
             continue
 
-        key = candidate_key(title)
-        if not key or key in seen:
+        title_key = candidate_key(title)
+        key = (title_key, canonical_url(entry.get("link", "")))
+        if not title_key or not key[1] or key in seen:
             continue
         seen.add(key)
 
@@ -239,8 +240,9 @@ def add_google_query(items, seen, query, category, tier, max_items, window_start
         if not published_in_window(published, window_start, window_end):
             continue
 
-        key = candidate_key(title)
-        if not key or key in seen:
+        title_key = candidate_key(title)
+        key = (title_key, canonical_url(entry.get("link", "")))
+        if not title_key or not key[1] or key in seen:
             continue
         seen.add(key)
 
