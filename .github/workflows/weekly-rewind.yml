@@ -1,0 +1,58 @@
+name: Public weekly rewind
+
+on:
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "Finished ISO week YYYY-Www (optional)"
+        required: false
+        type: string
+  push:
+    paths:
+      - ".github/workflows/weekly-rewind.yml"
+  schedule:
+    # 11:00 Monday in Poland, after Sunday's edition is published.
+    - cron: "0 11 * * 1"
+      timezone: "Europe/Warsaw"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-news
+  cancel-in-progress: false
+
+jobs:
+  rewind:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run public recap tests
+        run: python -m unittest discover -s tests -p "test_weekly_rewind.py" -v
+      - name: Generate public weekly summary
+        env:
+          REWIND_WEEK: ${{ inputs.week || '' }}
+        shell: bash
+        run: |
+          if [[ -n "$REWIND_WEEK" ]]; then
+            python scripts/weekly_rewind.py --week "$REWIND_WEEK"
+          else
+            python scripts/weekly_rewind.py
+          fi
+      - name: Commit public summary
+        run: |
+          git config user.name "daily-news-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/rewind
+          if git diff --cached --quiet; then
+            echo "Weekly summary unchanged."
+          else
+            git commit -m "Publish public Daily News weekly rewind"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
