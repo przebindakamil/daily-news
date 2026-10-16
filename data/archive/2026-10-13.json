@@ -20,7 +20,21 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
       "published_at": "2026-10-13T16:45:25-04:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-36f1c7ff0dc6e5fc",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Ameryki Południowej zorganizowana przestępczość może działać w 16 krajach Europy",
@@ -38,7 +52,21 @@
       "source": "World news | The Guardian",
       "url": "https://www.theguardian.com/global-development/2026/oct/13/latin-america-organised-crime-cartels-drugs-cocaine-europe",
       "published_at": "2026-10-13T07:00:18+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theguardian.com/global-development/2026/oct/13/latin-america-organised-crime-cartels-drugs-cocaine-europe",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-a012410e818981ed",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Podejrzany o planowanie zamachu na premiera usłyszał zarzuty",
@@ -56,7 +84,21 @@
       "source": "Wyborcza.pl",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeVc4MWQzM1NMRXY0OGhackZUaUpRMklqVGF5dTdMcS1tVlNHRXJkY3Fnc09WaHZsc09PWjlDZVV4UHVtbUU4Zjl3M0JxZlJ1QjVLNVRGM2djRzdXbUtRRGhLUFFnNGYwWDVDanlyaldPUmh4MmRHOE9yMkdkSUZaOHhUdWtRQ1dSSW1jSG55RmU0YnRoaTVpcE13eEhhNXk5T24tOEZhOU1CbFk?oc=5",
       "published_at": "2026-10-13T16:24:53+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeVc4MWQzM1NMRXY0OGhackZUaUpRMklqVGF5dTdMcS1tVlNHRXJkY3Fnc09WaHZsc09PWjlDZVV4UHVtbUU4Zjl3M0JxZlJ1QjVLNVRGM2djRzdXbUtRRGhLUFFnNGYwWDVDanlyaldPUmh4MmRHOE9yMkdkSUZaOHhUdWtRQ1dSSW1jSG55RmU0YnRoaTVpcE13eEhhNXk5T24tOEZhOU1CbFk?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-182153d4d873c349",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     }
   ],
   "top_stories": [
@@ -76,7 +118,21 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
       "published_at": "2026-10-13T16:45:25-04:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-36f1c7ff0dc6e5fc",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Ameryki Południowej zorganizowana przestępczość może działać w 16 krajach Europy",
@@ -94,7 +150,21 @@
       "source": "World news | The Guardian",
       "url": "https://www.theguardian.com/global-development/2026/oct/13/latin-america-organised-crime-cartels-drugs-cocaine-europe",
       "published_at": "2026-10-13T07:00:18+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theguardian.com/global-development/2026/oct/13/latin-america-organised-crime-cartels-drugs-cocaine-europe",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-a012410e818981ed",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Podejrzany o planowanie zamachu na premiera usłyszał zarzuty",
@@ -112,7 +182,21 @@
       "source": "Wyborcza.pl",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeVc4MWQzM1NMRXY0OGhackZUaUpRMklqVGF5dTdMcS1tVlNHRXJkY3Fnc09WaHZsc09PWjlDZVV4UHVtbUU4Zjl3M0JxZlJ1QjVLNVRGM2djRzdXbUtRRGhLUFFnNGYwWDVDanlyaldPUmh4MmRHOE9yMkdkSUZaOHhUdWtRQ1dSSW1jSG55RmU0YnRoaTVpcE13eEhhNXk5T24tOEZhOU1CbFk?oc=5",
       "published_at": "2026-10-13T16:24:53+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeVc4MWQzM1NMRXY0OGhackZUaUpRMklqVGF5dTdMcS1tVlNHRXJkY3Fnc09WaHZsc09PWjlDZVV4UHVtbUU4Zjl3M0JxZlJ1QjVLNVRGM2djRzdXbUtRRGhLUFFnNGYwWDVDanlyaldPUmh4MmRHOE9yMkdkSUZaOHhUdWtRQ1dSSW1jSG55RmU0YnRoaTVpcE13eEhhNXk5T24tOEZhOU1CbFk?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-182153d4d873c349",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Międzynarodowy Fundusz Walutowy ostrzega przed ryzykiem załamania na rynku sztucznej inteligencji",
@@ -130,7 +214,21 @@
       "source": "Business | The Guardian",
       "url": "https://www.theguardian.com/business/2026/oct/13/ai-share-crash-risk-global-imf-debt-corrowing-cyber-attacks",
       "published_at": "2026-10-13T12:30:01+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theguardian.com/business/2026/oct/13/ai-share-crash-risk-global-imf-debt-corrowing-cyber-attacks",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-56acf17ef0518e39",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Kobiety z chorobami autoimmunologicznymi częściej słyszą, że ich objawy są psychologiczne",
@@ -148,7 +246,21 @@
       "source": "Science | The Guardian",
       "url": "https://www.theguardian.com/society/2026/oct/13/women-autoimmune-conditions-psychological-misdiagnosis-cambridge-study",
       "published_at": "2026-10-13T04:00:14+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theguardian.com/society/2026/oct/13/women-autoimmune-conditions-psychological-misdiagnosis-cambridge-study",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-46f4b8c221a4950e",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Zelienski: Ukraina nie otrzymała ostrzeżeń od sojuszników przed rosyjskimi uderzeniami rakietowymi",
@@ -166,7 +278,21 @@
       "source": "World news | The Guardian",
       "url": "https://www.theguardian.com/world/2026/oct/13/allies-did-not-warn-kyiv-of-russian-ballistic-missile-strikes-says-zelenskyy",
       "published_at": "2026-10-13T21:54:12+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theguardian.com/world/2026/oct/13/allies-did-not-warn-kyiv-of-russian-ballistic-missile-strikes-says-zelenskyy",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-f1e899bdfd63871f",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Ataki powietrzne Arabii Saudyjskiej w Jemenie i eskalacja konfliktu z ruchem Huti",
@@ -184,7 +310,21 @@
       "source": "World news | The Guardian",
       "url": "https://www.theguardian.com/world/2026/oct/13/saudi-arabia-strikes-strategic-oil-depots-near-yemen-capital",
       "published_at": "2026-10-13T17:26:08+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theguardian.com/world/2026/oct/13/saudi-arabia-strikes-strategic-oil-depots-near-yemen-capital",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-e6fbeebc7fc2e9df",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Badacze ruszyli na odległą wyspę w poszukiwaniu śladów samolotu Amelii Earhart",
@@ -202,7 +342,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c6pvgryp8yv0o?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-12T22:01:43+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/c6pvgryp8yv0o?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-dfe2428e983459db",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Shopify otwiera swój katalog produktów dla kolejnych agentów sztucznej inteligencji",
@@ -220,7 +374,21 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
       "published_at": "2026-10-13T15:42:42-04:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-b0383c181976de93",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Łazik Perseverance pobił rekord dystansu na Marsie",
@@ -238,7 +406,21 @@
       "source": "NASA",
       "url": "https://science.nasa.gov/photojournal/perseverance-navcam-image-marks-record-drive/",
       "published_at": "2026-10-13T17:42:51+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://science.nasa.gov/photojournal/perseverance-navcam-image-marks-record-drive",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-ab5f1fab23a31154",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     }
   ],
   "more_stories": [
@@ -258,7 +440,21 @@
       "source": "TVN24",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVV82VnhoOHcxR0tXTlZ1VTItUW9ZbGIxY2lIUFFaWEE1OENsQ0Nlel9ETDRhdUhjTXFiOWw5dWNJd1VnN2thSnJoMzBUU0phdnNIaGUwWjZ3a0RUVHJDNVQ4VUc2eHJuMWxhVTVXMDlMVzFUOWttekpSanZDYUFubnNXX0txSlFjUldjSFZUSW9mMUdjRWF0djlpOUh4NWNhNlczQ28ycGZsU3lJdmJzVTl5cw?oc=5",
       "published_at": "2026-10-13T19:42:37+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVV82VnhoOHcxR0tXTlZ1VTItUW9ZbGIxY2lIUFFaWEE1OENsQ0Nlel9ETDRhdUhjTXFiOWw5dWNJd1VnN2thSnJoMzBUU0phdnNIaGUwWjZ3a0RUVHJDNVQ4VUc2eHJuMWxhVTVXMDlMVzFUOWttekpSanZDYUFubnNXX0txSlFjUldjSFZUSW9mMUdjRWF0djlpOUh4NWNhNlczQ28ycGZsU3lJdmJzVTl5cw?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-c5f00c72e3f9c595",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Symulacja geopolitycznych skutków geoinżynierii słonecznej",
@@ -276,7 +472,21 @@
       "source": "Ars Technica - All content",
       "url": "https://arstechnica.com/science/2026/10/they-war-gamed-dimming-the-sun-it-went-even-worse-than-you-think/",
       "published_at": "2026-10-13T15:17:59+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://arstechnica.com/science/2026/10/they-war-gamed-dimming-the-sun-it-went-even-worse-than-you-think",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-b4c2fb5422179850",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Niespodziewana zmiana cen paliw i nowe stawki na stacjach",
@@ -294,7 +504,21 @@
       "source": "Moto.pl",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOc1B4Si11R0hmQzQ2R3RYdi1haG9VNEotYUNPVC1GQUlTZEZVbU1wQ1ZpbkRJYkdXS0xCdmtBUTY3T2hxMTJiblFzTzdNX29qTDA4aWNJVU9taF9KcTBYYlVsYThKdzFzNFE4bXhLUkhFWXhtTVVnZi03b1pXU1QzZFF5X2hDYU1NTUNNMVNxdVZ0SUZGeXQ0TWtBQzJzbVppLVVqWE9EaUcyQQ?oc=5",
       "published_at": "2026-10-13T14:46:00+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOc1B4Si11R0hmQzQ2R3RYdi1haG9VNEotYUNPVC1GQUlTZEZVbU1wQ1ZpbkRJYkdXS0xCdmtBUTY3T2hxMTJiblFzTzdNX29qTDA4aWNJVU9taF9KcTBYYlVsYThKdzFzNFE4bXhLUkhFWXhtTVVnZi03b1pXU1QzZFF5X2hDYU1NTUNNMVNxdVZ0SUZGeXQ0TWtBQzJzbVppLVVqWE9EaUcyQQ?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-27a6ed1b59ab5b95",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Narodowy Bank Polski publikuje raport o rynku nieruchomości za 2024 rok",
@@ -312,7 +536,21 @@
       "source": "Narodowy Bank Polski",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbkVpRXJqYVIwVlhsNUlOa1p1UEFmbWRBUmF6SUJaYzMxUnp1dHRrTjZNb1dpLWp1SDBpWnVOcW9LdHJWMUsycXNDX3FKZjV6RVZvclRkbXdOQlVfdW15X25sVGtiVVZ0eThidnk2bV9WTUJiWGJESko0c1dNcVoweG53Ui11OXp3aEV0M0pVVkFvajBJS2F2VDVB?oc=5",
       "published_at": "2026-10-13T18:09:56+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbkVpRXJqYVIwVlhsNUlOa1p1UEFmbWRBUmF6SUJaYzMxUnp1dHRrTjZNb1dpLWp1SDBpWnVOcW9LdHJWMUsycXNDX3FKZjV6RVZvclRkbXdOQlVfdW15X25sVGtiVVZ0eThidnk2bV9WTUJiWGJESko0c1dNcVoweG53Ui11OXp3aEV0M0pVVkFvajBJS2F2VDVB?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-4baffeab658b2001",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Helix Carbon chce obniżyć koszty produkcji żelaza poprzez recykling zanieczyszczeń",
@@ -330,7 +568,21 @@
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/10/13/helix-carbon-makes-iron-cheaper-by-upcycling-blast-furnace-pollution-see-how-at-techcrunch-disrupt/",
       "published_at": "2026-10-13T21:15:00+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://techcrunch.com/2026/10/13/helix-carbon-makes-iron-cheaper-by-upcycling-blast-furnace-pollution-see-how-at-techcrunch-disrupt",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-0a8f30980927fef3",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Cambridge Heavy Industries buduje miniaturowe urządzenie do fuzji jądrowej",
@@ -348,7 +600,21 @@
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/10/13/cambridge-heavy-industries-has-been-quietly-building-a-desktop-fusion-device/",
       "published_at": "2026-10-13T20:13:53+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://techcrunch.com/2026/10/13/cambridge-heavy-industries-has-been-quietly-building-a-desktop-fusion-device",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-5981e1727c2f155d",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Disney oferuje 20 milionów dolarów za technologię chatbotów Character.AI",
@@ -366,7 +632,21 @@
       "source": "Ars Technica - All content",
       "url": "https://arstechnica.com/tech-policy/2026/10/disney-offers-20m-for-character-ais-scandal-plagued-chatbot-tech/",
       "published_at": "2026-10-13T18:23:33+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://arstechnica.com/tech-policy/2026/10/disney-offers-20m-for-character-ais-scandal-plagued-chatbot-tech",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-1cf0caa6f9098b31",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Amazon prowadzi rekordową rekrutację w Polsce i szuka 10 tysięcy pracowników",
@@ -384,7 +664,21 @@
       "source": "WP Finanse",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOGJ4QncxLTF0b0JfeTlLMXp0NlVPWjNzMGRDOUtGMzNKNTdGTTZXeHJHV05scXFNTTNPRUpBRzkySG5sVXFEbmlRQ3JZc1lGUDRWZjlBVU5DdUxZU05lMW5TRkpTQkY4WDM4X0p2NkJkTUhVanM3cW04T3c5WE05MEVyc05mM3pUeHpXM05aVUNiYU81cWtxeXlIMldpNWJCVWhQeUhnRjA?oc=5",
       "published_at": "2026-10-13T13:06:05+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOGJ4QncxLTF0b0JfeTlLMXp0NlVPWjNzMGRDOUtGMzNKNTdGTTZXeHJHV05scXFNTTNPRUpBRzkySG5sVXFEbmlRQ3JZc1lGUDRWZjlBVU5DdUxZU05lMW5TRkpTQkY4WDM4X0p2NkJkTUhVanM3cW04T3c5WE05MEVyc05mM3pUeHpXM05aVUNiYU81cWtxeXlIMldpNWJCVWhQeUhnRjA?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-c3601424f827f816",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Sztuczna inteligencja i sztuczne nagrania pomagają ptakom odzyskać utracone pieśni",
@@ -402,7 +696,21 @@
       "source": "Science | The Guardian",
       "url": "https://www.theguardian.com/environment/2026/oct/13/ornithology-trill-why-birds-sing-birdsong-dialects-tutors-ai-aoe",
       "published_at": "2026-10-13T09:00:19+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theguardian.com/environment/2026/oct/13/ornithology-trill-why-birds-sing-birdsong-dialects-tutors-ai-aoe",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-319d360a513e5c5f",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Liczba potwierdzonych przypadków eboli w Demokratycznej Republice Konga przekroczyła 9 tysięcy",
@@ -420,7 +728,21 @@
       "source": "ABC News - Breaking News, Latest News and Videos",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOTV3dnlyQklZSXdDb0YzSElvV2QzckF0d3E3emVvSy0xbzhlcEJHTUJTeWJwNWctQWRZajNYbFNzcVJJQlUyNi1zd0NaU3M3V2Q1M1FQQnQ3dEk1bmYzNnFMRVVCX0xudmFsMUx5dERoOUV6ZldVVS1pdEZLeERpNG96dkM1LXNJV2dPS0hvUlcyc0M3eWxNNGRETEk0a2pLSmpGUWIxNnR6ZEnSAbABQVVfeXFMTUEtT0FYZmdsU1VUNEN3VGNMY0RGMXA2YmQ3NTdYU1FTLWpfa0RhQ0JSc1k0RjVPbVM4VXctM0lLQTUtR1JJVU92ekh1T0R4OUt5THIzS3Rfc25ER1ZfWHhNa28wX3c4c1lYTGRvOWVHTE4zNGRrdkVRSjVIak9GdExlX2E5R2QtZXM3QXhPVWU2Wll1UFFyZUl0akpkamFvUzZJRWlNS19xWm5HWXNuQVI?oc=5",
       "published_at": "2026-10-13T21:00:06+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOTV3dnlyQklZSXdDb0YzSElvV2QzckF0d3E3emVvSy0xbzhlcEJHTUJTeWJwNWctQWRZajNYbFNzcVJJQlUyNi1zd0NaU3M3V2Q1M1FQQnQ3dEk1bmYzNnFMRVVCX0xudmFsMUx5dERoOUV6ZldVVS1pdEZLeERpNG96dkM1LXNJV2dPS0hvUlcyc0M3eWxNNGRETEk0a2pLSmpGUWIxNnR6ZEnSAbABQVVfeXFMTUEtT0FYZmdsU1VUNEN3VGNMY0RGMXA2YmQ3NTdYU1FTLWpfa0RhQ0JSc1k0RjVPbVM4VXctM0lLQTUtR1JJVU92ekh1T0R4OUt5THIzS3Rfc25ER1ZfWHhNa28wX3c4c1lYTGRvOWVHTE4zNGRrdkVRSjVIak9GdExlX2E5R2QtZXM3QXhPVWU2Wll1UFFyZUl0akpkamFvUzZJRWlNS19xWm5HWXNuQVI?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-82295634004a01aa",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     }
   ],
   "stats": {

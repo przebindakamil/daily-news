@@ -21,7 +21,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-15T16:50:18+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-c693127cbb08fd69",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Meta i Apple łączą siły, aby modele Muse AI działały wydajniej na komputerach Mac",
@@ -40,7 +54,21 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
       "published_at": "2026-10-15T14:15:36-04:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-8845c0eef99a97d4",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Ślady na kości neandertalczyka mogą być najstarszym dowodem na zabójstwo włócznią",
@@ -58,7 +86,21 @@
       "source": "Science | The Guardian",
       "url": "https://www.theguardian.com/science/2026/oct/15/neanderthal-remains-human-ancestor-killed-by-spear-iraq-kurdistan-cave-earliest-find",
       "published_at": "2026-10-15T15:00:23+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theguardian.com/science/2026/oct/15/neanderthal-remains-human-ancestor-killed-by-spear-iraq-kurdistan-cave-earliest-find",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-e3196a6dc303ee63",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     }
   ],
   "top_stories": [
@@ -79,7 +121,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-15T16:50:18+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-c693127cbb08fd69",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Meta i Apple łączą siły, aby modele Muse AI działały wydajniej na komputerach Mac",
@@ -98,7 +154,21 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
       "published_at": "2026-10-15T14:15:36-04:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-8845c0eef99a97d4",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Ślady na kości neandertalczyka mogą być najstarszym dowodem na zabójstwo włócznią",
@@ -116,7 +186,21 @@
       "source": "Science | The Guardian",
       "url": "https://www.theguardian.com/science/2026/oct/15/neanderthal-remains-human-ancestor-killed-by-spear-iraq-kurdistan-cave-earliest-find",
       "published_at": "2026-10-15T15:00:23+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theguardian.com/science/2026/oct/15/neanderthal-remains-human-ancestor-killed-by-spear-iraq-kurdistan-cave-earliest-find",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-e3196a6dc303ee63",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Ukierunkowane reklamy dostarczały exploity zero-click instalujące złośliwe oprogramowanie",
@@ -134,7 +218,21 @@
       "source": "Ars Technica - All content",
       "url": "https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware/",
       "published_at": "2026-10-15T20:32:41+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-44ca59220e0462e6",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Zastąpienie sekundy przestępnej godziną przestępną przez Międzynarodowe Biuro Miar i Wag",
@@ -153,7 +251,21 @@
       "source": "Science | The Guardian",
       "url": "https://www.theguardian.com/science/2026/oct/15/times-up-for-the-leap-second-as-scientists-swap-it-for-the-leap-hour",
       "published_at": "2026-10-15T16:16:10+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theguardian.com/science/2026/oct/15/times-up-for-the-leap-second-as-scientists-swap-it-for-the-leap-hour",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-49bd71d74f26388c",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Wyliczenia korzyści finansowych z wprowadzenia OKI zamiast podatku Belki",
@@ -172,7 +284,21 @@
       "source": "pb.pl",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPN0JDS0VjMk1teFV3Q2tkd3hFaFdzbUZWN1VibEhXYWV3U2xTZmJFamtQeC15eXYzalRTVFA4a1M2NHpsNUo5VUhLcnNEYmktamt3Zm9EdmZzdDZka19SMEl4bk40T3JxUGlKUWp6YnVnU0szTzV2N2poV1NzRHp3TGVOVnY2WVdyQ1gwZXROTGNYNDRLSzNQWGREUkZxZw?oc=5",
       "published_at": "2026-10-15T13:00:00+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPN0JDS0VjMk1teFV3Q2tkd3hFaFdzbUZWN1VibEhXYWV3U2xTZmJFamtQeC15eXYzalRTVFA4a1M2NHpsNUo5VUhLcnNEYmktamt3Zm9EdmZzdDZka19SMEl4bk40T3JxUGlKUWp6YnVnU0szTzV2N2poV1NzRHp3TGVOVnY2WVdyQ1gwZXROTGNYNDRLSzNQWGREUkZxZw?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-7c479055d0451daf",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Przypadkowe odkrycie w laboratoriudaje nadzieję na ratowanie obumarłych raf koralowych",
@@ -190,7 +316,21 @@
       "source": "Euronews.com",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaWlqR05hNGpKajF3X1ltZ1JTMTVmUWdfRmN6MWw0Z2tnVWo3eE5YLUtwMVJLTVFKcUZCbGo0RXpPcXpVV05PWVo4Rm5aRW5XaWJuc3M4Z1N4QmpSZ0dDMklBTWFxckhUR3Z6NGw2ZmstN2Y5SFRwOGVST2U2VFBMZVZnbERSZ2pQWDZERS1YdWREbndmbzZRY3RyQzBrdkxQeFFUNjd3aTVhNUhiV2I0TW1tN2xjU2N4eHJQTXY0THVoQQ?oc=5",
       "published_at": "2026-10-15T05:02:27+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaWlqR05hNGpKajF3X1ltZ1JTMTVmUWdfRmN6MWw0Z2tnVWo3eE5YLUtwMVJLTVFKcUZCbGo0RXpPcXpVV05PWVo4Rm5aRW5XaWJuc3M4Z1N4QmpSZ0dDMklBTWFxckhUR3Z6NGw2ZmstN2Y5SFRwOGVST2U2VFBMZVZnbERSZ2pQWDZERS1YdWREbndmbzZRY3RyQzBrdkxQeFFUNjd3aTVhNUhiV2I0TW1tN2xjU2N4eHJQTXY0THVoQQ?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-72a675a385823291",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "NASA wesprze japońską misję MMX badającą marsjańskie księżyce",
@@ -209,7 +349,21 @@
       "source": "NASA",
       "url": "https://science.nasa.gov/directorates/smd/planetary-science-division/nasa-to-help-unlock-mysteries-of-mars-moons-in-upcoming-mission/",
       "published_at": "2026-10-15T19:58:08+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://science.nasa.gov/directorates/smd/planetary-science-division/nasa-to-help-unlock-mysteries-of-mars-moons-in-upcoming-mission",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-93afb0f4dd6f8f94",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Duże badanie nie wykazuje związku między żywnością wysoce przetworzoną a rakiem jelita grubego",
@@ -227,7 +381,21 @@
       "source": "NBC News",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUm5MenREWXJHdGtsRFVUN0RRb1J2dFFCalNYeTRRNEhCTkc3SzBxLTlxbG9OdXI5NjFpV1MwdGlfZkM4RU01ZC1fblJKV2tQTlg1ejJSa3JzWUhzZW8yR2luZ2Y4QlVDejBuNmMwTGRlWk1fbTFiS05ENVNiVEI0akVfWjRlVXl1dDZIYWNZam43VzYzN0ctQnlMX0VmYm5odHlXaGhpUldFQQ?oc=5",
       "published_at": "2026-10-15T18:00:41+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUm5MenREWXJHdGtsRFVUN0RRb1J2dFFCalNYeTRRNEhCTkc3SzBxLTlxbG9OdXI5NjFpV1MwdGlfZkM4RU01ZC1fblJKV2tQTlg1ejJSa3JzWUhzZW8yR2luZ2Y4QlVDejBuNmMwTGRlWk1fbTFiS05ENVNiVEI0akVfWjRlVXl1dDZIYWNZam43VzYzN0ctQnlMX0VmYm5odHlXaGhpUldFQQ?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-89f4e168483cc953",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Teleskop Chandra odkrywa możliwe pochodzenie fal o kształcie klucza wiolinowego",
@@ -245,7 +413,21 @@
       "source": "NASA",
       "url": "https://www.nasa.gov/image-article/chandra-finds-possible-origin-of-treble-clef-waves/",
       "published_at": "2026-10-15T14:19:06+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://nasa.gov/image-article/chandra-finds-possible-origin-of-treble-clef-waves",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-284314c4eac71423",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     }
   ],
   "more_stories": [
@@ -266,7 +448,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cmwy43pp08elo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-15T10:05:17+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/cmwy43pp08elo?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-b1f38d17055d0410",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Anthropic przyznaje zewnętrznym badaczom dostęp poziomu pracownika",
@@ -284,7 +480,21 @@
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
       "published_at": "2026-10-15T19:14:26+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-bca736b8e46393cc",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Kryzys w FIFA i wątpliwości wokół przywództwa Gianniego Infantino",
@@ -302,7 +512,21 @@
       "source": "Football | The Guardian",
       "url": "https://www.theguardian.com/football/2026/oct/15/fifa-gianni-infantino-council",
       "published_at": "2026-10-15T09:00:16+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theguardian.com/football/2026/oct/15/fifa-gianni-infantino-council",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-b3f7126a96457c19",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Narzędzie AI w Bluesky pozwala tworzyć małe aplikacje społecznościowe",
@@ -320,7 +544,21 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
       "published_at": "2026-10-15T15:57:16-04:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-5d36307a78270252",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Atak dronów na Morzu Czarnym u wybrzeży Rumunii: zaginęło siedmiu członków załogi",
@@ -339,7 +577,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c60qkgpp592yo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-15T14:51:30+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/c60qkgpp592yo?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-1ebd7ac16751e868",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Warszawa wśród światowych liderów komunikacji miejskiej",
@@ -357,7 +609,21 @@
       "source": "Polska Agencja Prasowa SA",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPakJhZHpsS2k2Ni0yekhVLWxPRHFVUFdrVWdiMDFsQkVUOENCWDJpX3h5dnhnYU0tSlZjcGsyS21Yb19sR1h3SmFFMXZEaWZDSWt0MEhZUGZEZFh2RUN1aXk2N1pDV29ETTV2S0lkUFcxOHdGcW5KVGc0M3NuSjY2Y0UzeDlES1hWT29makFzS1llVEdya21uTDJMTGYxaU9zalNIQVRFRmR2R00?oc=5",
       "published_at": "2026-10-15T14:37:00+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPakJhZHpsS2k2Ni0yekhVLWxPRHFVUFdrVWdiMDFsQkVUOENCWDJpX3h5dnhnYU0tSlZjcGsyS21Yb19sR1h3SmFFMXZEaWZDSWt0MEhZUGZEZFh2RUN1aXk2N1pDV29ETTV2S0lkUFcxOHdGcW5KVGc0M3NuSjY2Y0UzeDlES1hWT29makFzS1llVEdya21uTDJMTGYxaU9zalNIQVRFRmR2R00?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-a0bfc6a0054c6ce7",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Inflacja bazowa w Polsce i najnowsze dane gospodarcze",
@@ -376,7 +642,21 @@
       "source": "Bankier.pl",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQaWJSSlltZEpoUnpDd3pFT09tUnB2MHZ1OGZxbm5BSWp5U2FwSHJUdUZaRklmSC1hVVlJMWN0Qzd4SFNRT3llbTVqNVQ2azFBRXBzeUhYMlVZaVg0czl6X19MYjdpN1A5SWxualJyb25BSEwyLWdVcGhCcXpXOEYwS09qRm0ycFp4RHVoS1d6cXVwakVTUVIyLVo1RHdIOWMzMU1OR3BhQXpkYVVnc1lCR1RfbGpHbnZ2RG1kZHFOTHpEeGdGNFRsX0xlejA0VGFn?oc=5",
       "published_at": "2026-10-15T12:00:00+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQaWJSSlltZEpoUnpDd3pFT09tUnB2MHZ1OGZxbm5BSWp5U2FwSHJUdUZaRklmSC1hVVlJMWN0Qzd4SFNRT3llbTVqNVQ2azFBRXBzeUhYMlVZaVg0czl6X19MYjdpN1A5SWxualJyb25BSEwyLWdVcGhCcXpXOEYwS09qRm0ycFp4RHVoS1d6cXVwakVTUVIyLVo1RHdIOWMzMU1OR3BhQXpkYVVnc1lCR1RfbGpHbnZ2RG1kZHFOTHpEeGdGNFRsX0xlejA0VGFn?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-53425fe9c35be26b",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Opóźnienie debiutu rakiety Neutron z powodu problemów z kompozytami",
@@ -394,7 +674,21 @@
       "source": "Ars Technica - All content",
       "url": "https://arstechnica.com/space/2026/10/rocket-lab-announces-another-delay-for-its-medium-lift-neutron-rocket/",
       "published_at": "2026-10-15T16:57:24+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://arstechnica.com/space/2026/10/rocket-lab-announces-another-delay-for-its-medium-lift-neutron-rocket",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-d9565dcb996553e7",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Brytyjski rząd rozważa interwencję w sprawie przejęcia pionu rozrywkowego ITV przez Sky",
@@ -413,7 +707,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cm79pe5yej7no?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-15T14:55:21+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/cm79pe5yej7no?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-4fc34edd3ab24d56",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Amerykańscy parlamentarzyści chcą pociągnąć do odpowiedzialności menedżerów powiązanych z Epsteinem",
@@ -432,7 +740,21 @@
       "source": "Business | The Guardian",
       "url": "https://www.theguardian.com/business/2026/oct/15/new-bill-wall-street-bosses-epstein-connections",
       "published_at": "2026-10-15T13:30:11+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theguardian.com/business/2026/oct/15/new-bill-wall-street-bosses-epstein-connections",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-9d552028f75bbf5f",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     }
   ],
   "stats": {

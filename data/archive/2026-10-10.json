@@ -19,7 +19,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-10T04:38:20+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-54c37bc36aa78859",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "NASA poszukuje amerykańskich planów komercyjnych stacji kosmicznych",
@@ -36,7 +50,21 @@
       "source": "NASA",
       "url": "https://www.nasa.gov/news-release/nasa-seeks-us-industry-plans-for-commercial-space-stations/",
       "published_at": "2026-10-09T18:11:44+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://nasa.gov/news-release/nasa-seeks-us-industry-plans-for-commercial-space-stations",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-5a5a7a4fbfc20670",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Akumulatory stały się tańsze od turbin gazowych wykorzystywanych w centrach danych",
@@ -54,7 +82,21 @@
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/10/09/batteries-are-now-cheaper-than-natural-gas-turbines-used-at-many-data-centers/",
       "published_at": "2026-10-09T18:57:58+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://techcrunch.com/2026/10/09/batteries-are-now-cheaper-than-natural-gas-turbines-used-at-many-data-centers",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-ed9bdc946ab2c892",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     }
   ],
   "top_stories": [
@@ -75,7 +117,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-10T04:38:20+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-54c37bc36aa78859",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Administracja USA nakłada sankcje na Międzynarodowy Trybunał Karny",
@@ -93,7 +149,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-09T18:40:10+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-b94fc86c410bf64b",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "NASA poszukuje amerykańskich planów komercyjnych stacji kosmicznych",
@@ -110,7 +180,21 @@
       "source": "NASA",
       "url": "https://www.nasa.gov/news-release/nasa-seeks-us-industry-plans-for-commercial-space-stations/",
       "published_at": "2026-10-09T18:11:44+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://nasa.gov/news-release/nasa-seeks-us-industry-plans-for-commercial-space-stations",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-5a5a7a4fbfc20670",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Akumulatory stały się tańsze od turbin gazowych wykorzystywanych w centrach danych",
@@ -128,7 +212,21 @@
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/10/09/batteries-are-now-cheaper-than-natural-gas-turbines-used-at-many-data-centers/",
       "published_at": "2026-10-09T18:57:58+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://techcrunch.com/2026/10/09/batteries-are-now-cheaper-than-natural-gas-turbines-used-at-many-data-centers",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-ed9bdc946ab2c892",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Model AI od Anthropic przesłał fałszywy tip do filadelfijskiej policji",
@@ -146,7 +244,21 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
       "published_at": "2026-10-09T17:15:38-04:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-de701fe4a7e67e82",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Ukraińskie drony uszkodziły centra danych rosyjskiego giganta Yandex",
@@ -165,7 +277,21 @@
       "source": "Ars Technica - All content",
       "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
       "published_at": "2026-10-09T22:04:07+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-22c3579861187b29",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Agenci kodujący AI generują więcej kodu, ale nie więcej oprogramowania",
@@ -183,7 +309,21 @@
       "source": "Ars Technica - All content",
       "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
       "published_at": "2026-10-09T19:43:50+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-0c1c0b39505178a3",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Koniec orzeczeń lekarskich i nowe zasady od 18 października",
@@ -202,7 +342,28 @@
       "source": "Rynek Zdrowia",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSThJTzExdEVfc0NYWktldHJsSEgxNnRUaXc5WlMteFk0aC1FVG1NVFZKY1M1X0lHM3pIdFo5TVcwQmNZZC1sWGQxR3lpWHhXWUo4V3JKdGpKRjFRX0xXY1ZrVk1jWm4tM1pnLVFFNlI2M0JJWFU5UmlxWFp5c0xpb2x0QVNTajl2c01jX2tpVTV0RlkxeXlvVnE1Ql9lUTNYT0psUVN4UkRhbmEwaWRV?oc=5",
       "published_at": "2026-10-08T17:54:00+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSThJTzExdEVfc0NYWktldHJsSEgxNnRUaXc5WlMteFk0aC1FVG1NVFZKY1M1X0lHM3pIdFo5TVcwQmNZZC1sWGQxR3lpWHhXWUo4V3JKdGpKRjFRX0xXY1ZrVk1jWm4tM1pnLVFFNlI2M0JJWFU5UmlxWFp5c0xpb2x0QVNTajl2c01jX2tpVTV0RlkxeXlvVnE1Ql9lUTNYT0psUVN4UkRhbmEwaWRV?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-557a0d29cc128678",
+      "is_update": false,
+      "story_timeline": [
+        {
+          "date": "2026-10-09",
+          "title": "Zmiany w przepisach dotyczących orzeczeń lekarskich od 18 października",
+          "summary": "18 października wchodzą w życie nowe zasady dotyczące orzeczeń lekarskich. Zmiany te wprowadzają istotne modyfikacje w dotychczasowych procedurach medycznych.",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSThJTzExdEVfc0NYWktldHJsSEgxNnRUaXc5WlMteFk0aC1FVG1NVFZKY1M1X0lHM3pIdFo5TVcwQmNZZC1sWGQxR3lpWHhXWUo4V3JKdGpKRjFRX0xXY1ZrVk1jWm4tM1pnLVFFNlI2M0JJWFU5UmlxWFp5c0xpb2x0QVNTajl2c01jX2tpVTV0RlkxeXlvVnE1Ql9lUTNYT0psUVN4UkRhbmEwaWRV?oc=5"
+        }
+      ],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "NASA testuje nowe osłony termiczne podczas usuwania śmieci z kosmosu",
@@ -220,7 +381,21 @@
       "source": "NASA",
       "url": "https://www.nasa.gov/centers-and-facilities/ames/nasa-demonstrates-next-generation-heat-shield-technologies/",
       "published_at": "2026-10-09T16:59:24+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://nasa.gov/centers-and-facilities/ames/nasa-demonstrates-next-generation-heat-shield-technologies",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-da0ba8832da655c4",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Starsza pamięć RAM wraca na rynek przez wysokie ceny podzespołów",
@@ -239,7 +414,21 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/games/1009140/ram-shortage-intel-amd-ddr4-comeback",
       "published_at": "2026-10-09T17:50:00-04:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theverge.com/games/1009140/ram-shortage-intel-amd-ddr4-comeback",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-6d2e2bb8f838386f",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     }
   ],
   "more_stories": [
@@ -259,7 +448,21 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
       "published_at": "2026-10-09T15:09:44-04:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-0a056978c9b455d6",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Wspierana przez Nvidia firma Firmus rezygnuje z oferty publicznej IPO z powodu obaw o wyceny sztucznej inteligencji",
@@ -277,7 +480,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/ck9dzpw4ll8po?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-09T07:14:30+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/ck9dzpw4ll8po?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-63f3d51c49e15d41",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Sophos skraca czas analizy zagrożeń o 96% dzięki technologii OpenAI Daybreak",
@@ -295,7 +512,21 @@
       "source": "OpenAI",
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBob0JKR3B2bDhySkZMSzJiMUlnYnIteTdUNEppa3ZrYV9Ca2V3bkIwR1FCdEdneUcyN3BhY0ZMRjgxa0ttU0Z5SHc4QzlhWU0?oc=5",
       "published_at": "2026-10-10T02:27:22+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBob0JKR3B2bDhySkZMSzJiMUlnYnIteTdUNEppa3ZrYV9Ca2V3bkIwR1FCdEdneUcyN3BhY0ZMRjgxa0ttU0Z5SHc4QzlhWU0?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-7abaf3378963f5cf",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "NASA ogłasza długo wyczekiwany przetarg dla prywatnych stacji kosmicznych",
@@ -313,7 +544,21 @@
       "source": "Ars Technica - All content",
       "url": "https://arstechnica.com/space/2026/10/nasa-issues-long-awaited-call-to-industry-for-private-space-stations/",
       "published_at": "2026-10-09T21:34:09+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://arstechnica.com/space/2026/10/nasa-issues-long-awaited-call-to-industry-for-private-space-stations",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-6936b3241d283149",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Kosmiczny dom z luster uchwycony przez Teleskop Jamesa Webba",
@@ -331,7 +576,21 @@
       "source": "NASA",
       "url": "https://www.nasa.gov/image-article/cosmic-house-of-mirrors/",
       "published_at": "2026-10-09T13:57:24+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://nasa.gov/image-article/cosmic-house-of-mirrors",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-586877344afb7b9e",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Premier Wielkiej Brytanii zapowiada ograniczenie zakazów konkurencji w umowach o pracę",
@@ -349,7 +608,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c63r5wx8z8wzo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-09T16:15:30+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/c63r5wx8z8wzo?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-cd4d75459f9f109a",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Amazon rezygnuje z umów o zachowaniu poufności przy negocjacjach dotyczących centrów danych",
@@ -367,7 +640,21 @@
       "source": "TechCrunch",
       "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
       "published_at": "2026-10-09T16:56:42+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-0048d8c8b6a62919",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Niezwykłe znalezisko w Hiszpanii: drewniane narzędzia neandertalczyków zachowane w kamieniu",
@@ -385,7 +672,21 @@
       "source": "Ars Technica - All content",
       "url": "https://arstechnica.com/science/2026/10/neanderthal-wooden-tools-from-spain-found-preserved-in-stone/",
       "published_at": "2026-10-09T22:34:03+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://arstechnica.com/science/2026/10/neanderthal-wooden-tools-from-spain-found-preserved-in-stone",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-b02cc7278c40c2d9",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Trudna końcówka roku dla Rady Polityki Pieniężnej",
@@ -404,7 +705,21 @@
       "source": "CEO Magazyn",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE82eEwtcTN2dGdGYlU5T2ZpXzZKRDJQb0xVS1lrbXJxcHR0WmhuUUxzQ1pXejZzazA4UkgtbHp6bzZBZzhUVWF2MWdYVUo3ZGFFVVM3VV91X3BMeWpHRlhMWi1RZzNpUQ?oc=5",
       "published_at": "2026-10-09T10:38:50+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE82eEwtcTN2dGdGYlU5T2ZpXzZKRDJQb0xVS1lrbXJxcHR0WmhuUUxzQ1pXejZzazA4UkgtbHp6bzZBZzhUVWF2MWdYVUo3ZGFFVVM3VV91X3BMeWpHRlhMWi1RZzNpUQ?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-f0e318ef774fa56d",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Google otwiera Accessibility Discovery Centre w Warszawie",
@@ -422,7 +737,21 @@
       "source": "blog.google",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdnM0eWdnVXRwTU1GaU5FQmpSWmFNa01YTkVNU0Z4ZUlDWGdxSzNZak9IWWFIN0s2M0NxUExHRFQxZ1ZCZXl5QVVBVEdBdkI3QkFsanUyWHJMNHVhb0t3U2J5RjRna0pLbjdsMlJYaXhQOHhyOVhuanctWHFSTmJ1cl85eW9rNXJOdjE4TjVjVEJFYW5Xa1hVMUVUcXBGak9y?oc=5",
       "published_at": "2026-10-09T18:05:42+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdnM0eWdnVXRwTU1GaU5FQmpSWmFNa01YTkVNU0Z4ZUlDWGdxSzNZak9IWWFIN0s2M0NxUExHRFQxZ1ZCZXl5QVVBVEdBdkI3QkFsanUyWHJMNHVhb0t3U2J5RjRna0pLbjdsMlJYaXhQOHhyOVhuanctWHFSTmJ1cl85eW9rNXJOdjE4TjVjVEJFYW5Xa1hVMUVUcXBGak9y?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-150847c6e51ae10c",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     }
   ],
   "stats": {

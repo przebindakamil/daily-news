@@ -18,7 +18,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cqkg50j1yd5lo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-10T10:06:23+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/cqkg50j1yd5lo?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-2f2f5ef5f70a2a28",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Donald Trump uważa, że Ukraina potrzebuje nowego prezydenta",
@@ -37,7 +51,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-11T01:41:29+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-b2bd48bbe5927a86",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "NASA testuje nową generację osłon termicznych za pomocą kapsułek badawczych",
@@ -55,7 +83,28 @@
       "source": "NASA",
       "url": "https://www.nasa.gov/centers-and-facilities/ames/nasa-demonstrates-next-generation-heat-shield-technologies/",
       "published_at": "2026-10-09T16:59:24+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://nasa.gov/centers-and-facilities/ames/nasa-demonstrates-next-generation-heat-shield-technologies",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-da0ba8832da655c4",
+      "is_update": false,
+      "story_timeline": [
+        {
+          "date": "2026-10-10",
+          "title": "NASA testuje nowe osłony termiczne podczas usuwania śmieci z kosmosu",
+          "summary": "NASA wykorzystuje statek transportowy odłączający się od Międzynarodowej Stacji Kosmicznej do przetestowania dwunastu eksperymentalnych kapsuł z materiałami chroniącymi przed wysoką temperaturą. Misja ma na celu zebranie cennych danych, które posłużą przy konstruowaniu osłon termicznych dla przyszłych misji na Księżyc i Marsa.",
+          "url": "https://www.nasa.gov/centers-and-facilities/ames/nasa-demonstrates-next-generation-heat-shield-technologies/"
+        }
+      ],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     }
   ],
   "top_stories": [
@@ -75,7 +124,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cqkg50j1yd5lo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-10T10:06:23+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/cqkg50j1yd5lo?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-2f2f5ef5f70a2a28",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Donald Trump uważa, że Ukraina potrzebuje nowego prezydenta",
@@ -94,7 +157,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-11T01:41:29+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-b2bd48bbe5927a86",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Satya Nadella wzywa do traktowania modeli AI jako domyślnie zagrożonych",
@@ -112,7 +189,21 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
       "published_at": "2026-10-10T18:10:17-04:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-4328faa6539cc1aa",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Ukraińskie drony uszkodziły centra danych rosyjskiego giganta Yandex",
@@ -131,7 +222,31 @@
       "source": "Ars Technica - All content",
       "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
       "published_at": "2026-10-09T22:04:07+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-22c3579861187b29",
+      "is_update": true,
+      "story_timeline": [
+        {
+          "date": "2026-10-10",
+          "title": "Ukraińskie drony uszkodziły centra danych rosyjskiego giganta Yandex",
+          "summary": "Ataki ukraińskich dronów wyłączyły z użytku dwa z pięciu centrów danych rosyjskiej firmy Yandex. Zniszczeniu uległy obiekty kluczowe m.in. dla trenowania modeli sztucznej inteligencji oraz działania popularnych usług internetowych.",
+          "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+        }
+      ],
+      "what_changed": [
+        "Ataki dronów wyłączyły z użytku dwa centra danych należące do rosyjskiej firmy Yandex, określanej mianem rosyjskiego Google.",
+        "działanie modeli sztucznej inteligencji oraz szereg popularnych usług cyfrowych w Rosji."
+      ],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Sophos skraca czas analizy zagrożeń z OpenAI Daybreak",
@@ -149,7 +264,31 @@
       "source": "OpenAI",
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBob0JKR3B2bDhySkZMSzJiMUlnYnIteTdUNEppa3ZrYV9Ca2V3bkIwR1FCdEdneUcyN3BhY0ZMRjgxa0ttU0Z5SHc4QzlhWU0?oc=5",
       "published_at": "2026-10-10T02:27:22+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBob0JKR3B2bDhySkZMSzJiMUlnYnIteTdUNEppa3ZrYV9Ca2V3bkIwR1FCdEdneUcyN3BhY0ZMRjgxa0ttU0Z5SHc4QzlhWU0?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-7abaf3378963f5cf",
+      "is_update": true,
+      "story_timeline": [
+        {
+          "date": "2026-10-10",
+          "title": "Sophos skraca czas analizy zagrożeń o 96% dzięki technologii OpenAI Daybreak",
+          "summary": "Firma Sophos wykorzystała narzędzie OpenAI Daybreak do usprawnienia działań z zakresu cyberbezpieczeństwa. Dzięki temu czas potrzebny na analizę potencjalnych zagrożeń został skrócony o 96 procent.",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBob0JKR3B2bDhySkZMSzJiMUlnYnIteTdUNEppa3ZrYV9Ca2V3bkIwR1FCdEdneUcyN3BhY0ZMRjgxa0ttU0Z5SHc4QzlhWU0?oc=5"
+        }
+      ],
+      "what_changed": [
+        "Firma Sophos poinformowała o drastycznym skróceniu czasu analizy zagrożeń dzięki wykorzystaniu rozwiązań OpenAI Daybreak.",
+        "Nowe narzędzia mają na celu wsparcie specjalistów ds."
+      ],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "NASA testuje nową generację osłon termicznych za pomocą kapsułek badawczych",
@@ -167,7 +306,28 @@
       "source": "NASA",
       "url": "https://www.nasa.gov/centers-and-facilities/ames/nasa-demonstrates-next-generation-heat-shield-technologies/",
       "published_at": "2026-10-09T16:59:24+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://nasa.gov/centers-and-facilities/ames/nasa-demonstrates-next-generation-heat-shield-technologies",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-da0ba8832da655c4",
+      "is_update": false,
+      "story_timeline": [
+        {
+          "date": "2026-10-10",
+          "title": "NASA testuje nowe osłony termiczne podczas usuwania śmieci z kosmosu",
+          "summary": "NASA wykorzystuje statek transportowy odłączający się od Międzynarodowej Stacji Kosmicznej do przetestowania dwunastu eksperymentalnych kapsuł z materiałami chroniącymi przed wysoką temperaturą. Misja ma na celu zebranie cennych danych, które posłużą przy konstruowaniu osłon termicznych dla przyszłych misji na Księżyc i Marsa.",
+          "url": "https://www.nasa.gov/centers-and-facilities/ames/nasa-demonstrates-next-generation-heat-shield-technologies/"
+        }
+      ],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Wyjątkowo zachowane drewniane narzędzia neandertalczyków odkryte w Hiszpanii",
@@ -185,7 +345,28 @@
       "source": "Ars Technica - All content",
       "url": "https://arstechnica.com/science/2026/10/neanderthal-wooden-tools-from-spain-found-preserved-in-stone/",
       "published_at": "2026-10-09T22:34:03+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://arstechnica.com/science/2026/10/neanderthal-wooden-tools-from-spain-found-preserved-in-stone",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-b02cc7278c40c2d9",
+      "is_update": false,
+      "story_timeline": [
+        {
+          "date": "2026-10-10",
+          "title": "Niezwykłe znalezisko w Hiszpanii: drewniane narzędzia neandertalczyków zachowane w kamieniu",
+          "summary": "Hiszpani archeolodzy zbadali niemal 600 drewnianych pozostałości po neandertalczykach, które przetrwały dzięki bogatej w minerały wodzie. W skale Abric Romaní odkryto m.in. włócznie, kije do kopania, tace z kory oraz nietypową maczugę.",
+          "url": "https://arstechnica.com/science/2026/10/neanderthal-wooden-tools-from-spain-found-preserved-in-stone/"
+        }
+      ],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "KPO wspiera polskie przetwórstwo rolno-spożywcze dotacją dla Grupy Polmlek",
@@ -203,7 +384,21 @@
       "source": "Gov.pl",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQmlBXzRpYjN0VXU5YzAxenVoTm1UcEc1My1iX2Z5NEJtaVI4UjVZVGhkblBUcGxDR2pkVzNQa0pySDE4M2RCTE9ncXhodHVuV29QUkFKMmpTaG00T2NUb1R4UWdNYnBNdGdFZ3g4dWp5T19SRFR0NmpCb2I0RkdrUl9zZl96eGktNVNuZXZkRUg2NFZfOVk4Q1J2ZHBHMV9mVzNzQWVlWG1OVk9YYlUxNldKMFV4Zk1UckVhQTlncFh2cVpS?oc=5",
       "published_at": "2026-10-10T05:42:33+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQmlBXzRpYjN0VXU5YzAxenVoTm1UcEc1My1iX2Z5NEJtaVI4UjVZVGhkblBUcGxDR2pkVzNQa0pySDE4M2RCTE9ncXhodHVuV29QUkFKMmpTaG00T2NUb1R4UWdNYnBNdGdFZ3g4dWp5T19SRFR0NmpCb2I0RkdrUl9zZl96eGktNVNuZXZkRUg2NFZfOVk4Q1J2ZHBHMV9mVzNzQWVlWG1OVk9YYlUxNldKMFV4Zk1UckVhQTlncFh2cVpS?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-07aa408380e6282e",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Rozmowy w Ministerstwie Sprawiedliwości o szarej strefie w kredytach konsumenckich i dyrektywie CCD2",
@@ -221,7 +416,21 @@
       "source": "Gov.pl",
       "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNeFgtUUFWeEtFTkZyMW9rVFl1YV9lN1pKTlJScUVJU29hSXlFd2wzMGs5d25LbXlpak1FUVhxQ3M3WFFzU2VhaTAwZy1zNWpSUnl5UVZoOVg0ZXhJQVpkTWtJV0FVSzhkb0dOX3ExbXcwVFFlaGM1M1FFdE1kdV95VnJpd05VRXFBUGdDbnV1QkpISUdaZ0FwR2NRd1ZyQ19hOXJTZ3dpOGFMZUZSMVBSbTV0aW0yOWNtdWFURFliMFNwdVpNLTh0UTFqR0FnNXIydjdpck43cXg1MUVpSDBIdGl5TFg3VXVRLVJMUVdNNkduOWZiQ2JKYzVPS1FGWS1uMVRnaUdqRy1Sanc?oc=5",
       "published_at": "2026-10-10T05:42:48+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNeFgtUUFWeEtFTkZyMW9rVFl1YV9lN1pKTlJScUVJU29hSXlFd2wzMGs5d25LbXlpak1FUVhxQ3M3WFFzU2VhaTAwZy1zNWpSUnl5UVZoOVg0ZXhJQVpkTWtJV0FVSzhkb0dOX3ExbXcwVFFlaGM1M1FFdE1kdV95VnJpd05VRXFBUGdDbnV1QkpISUdaZ0FwR2NRd1ZyQ19hOXJTZ3dpOGFMZUZSMVBSbTV0aW0yOWNtdWFURFliMFNwdVpNLTh0UTFqR0FnNXIydjdpck43cXg1MUVpSDBIdGl5TFg3VXVRLVJMUVdNNkduOWZiQ2JKYzVPS1FGWS1uMVRnaUdqRy1Sanc?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-eaf63218b7b9b219",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Premier Wielkiej Brytanii zapowiada ograniczenie klauzul o zakazie konkurencji w umowach o pracę",
@@ -239,7 +448,31 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c63r5wx8z8wzo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-09T16:15:30+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/c63r5wx8z8wzo?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-cd4d75459f9f109a",
+      "is_update": true,
+      "story_timeline": [
+        {
+          "date": "2026-10-10",
+          "title": "Premier Wielkiej Brytanii zapowiada ograniczenie zakazów konkurencji w umowach o pracę",
+          "summary": "Premier Andy Burnham zapowiedział ograniczenie stosowania klauzul o zakazie konkurencji w umowach pracowniczych, uznając je za barierę dla innowacji. Zmiany te mają ułatwić zatrudnianie specjalistów i wspierać rozwój startupów przed nadchodzącym budżetem.",
+          "url": "https://www.bbc.co.uk/news/articles/c63r5wx8z8wzo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "what_changed": [
+        "Brytyjski rząd zapowiedział ograniczenie stosowania klauzul o zakazie konkurencji w umowach o pracę.",
+        "Według władz obecne przepisy zbytnio ograniczają pracowników i hamują innowacyjność."
+      ],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     }
   ],
   "more_stories": [
@@ -259,7 +492,21 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/tech/1009294/ledger-wallet-tampering-suspected-after-reports-of-crypto-thefts",
       "published_at": "2026-10-10T12:36:44-04:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theverge.com/tech/1009294/ledger-wallet-tampering-suspected-after-reports-of-crypto-thefts",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-1add080765c1829b",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Agenci programistyczni AI generują więcej kodu, ale nie więcej oprogramowania",
@@ -277,7 +524,30 @@
       "source": "Ars Technica - All content",
       "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
       "published_at": "2026-10-09T19:43:50+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-0c1c0b39505178a3",
+      "is_update": true,
+      "story_timeline": [
+        {
+          "date": "2026-10-10",
+          "title": "Agenci kodujący AI generują więcej kodu, ale nie więcej oprogramowania",
+          "summary": "Nowe badania pokazują, że choć narzędzia AI zwiększają ilość generowanego kodu, zyski z wydajności są tracone przez wąskie gardło w postaci ludzkiej weryfikacji. Wprowadzenie sztucznej inteligencji nie przekłada się bezpośrednio na większą liczbę gotowych funkcji oprogramowania na poziomie firm.",
+          "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+        }
+      ],
+      "what_changed": [
+        "Firmy nie odnotowują wzrostu realnej produkcji oprogramowania ani redukcji zatrudnienia."
+      ],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "NASA poszukuje planów komercyjnych stacji kosmicznych od amerykańskiego przemysłu",
@@ -295,7 +565,31 @@
       "source": "NASA",
       "url": "https://www.nasa.gov/news-release/nasa-seeks-us-industry-plans-for-commercial-space-stations/",
       "published_at": "2026-10-09T18:11:44+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://nasa.gov/news-release/nasa-seeks-us-industry-plans-for-commercial-space-stations",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-5a5a7a4fbfc20670",
+      "is_update": true,
+      "story_timeline": [
+        {
+          "date": "2026-10-10",
+          "title": "NASA poszukuje amerykańskich planów komercyjnych stacji kosmicznych",
+          "summary": "NASA ogłosiła ostateczne zaproszenie do składania ofert dla amerykańskiego przemysłu na opracowanie planów przyszłych komercyjnych stacji kosmicznych na niskiej orbicie okołoziemskiej. Działanie to ma na celu umocnienie przywództwa USA w przestrzeni kosmicznej.",
+          "url": "https://www.nasa.gov/news-release/nasa-seeks-us-industry-plans-for-commercial-space-stations/"
+        }
+      ],
+      "what_changed": [
+        "NASA opublikowała ostateczne zaproszenie do składania ofert na budowę nowej generacji komercyjnych stacji kosmicznych na niskiej orbicie wokół Ziemi.",
+        "Agencja dąży do zapewnienia stałej obecności ludzi w kosmosie po wycofaniu Międzynarodowej Stacji Kosmicznej."
+      ],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Nowe spojrzenie na funkcjonowanie ludzkiego mózgu pod wpływem substancji psychodelicznych",
@@ -313,7 +607,21 @@
       "source": "Ars Technica - All content",
       "url": "https://arstechnica.com/science/2026/10/the-psychedelic-brain-looks-like-chaos-underneath-theres-order/",
       "published_at": "2026-10-10T11:15:35+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://arstechnica.com/science/2026/10/the-psychedelic-brain-looks-like-chaos-underneath-theres-order",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-917caa68d005e05f",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Anthropic zakazuje użytkownikom okrutnego i napastliwego zachowania wobec sztucznej inteligencji",
@@ -331,7 +639,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c6j9k1l72wkgo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-09T12:34:27+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/c6j9k1l72wkgo?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-3ba0f81ba4063414",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Papież Leon XIV przejdzie operację płuc po wykryciu zmiany nowotworowej",
@@ -349,7 +671,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c6m2dnngvw8xo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-11T11:20:49+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/c6m2dnngvw8xo?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-428f853344e7d2b8",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "DistroKid usuwa utwory artystów w reakcji na pozew UMG",
@@ -368,7 +704,21 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
       "published_at": "2026-10-10T14:52:07-04:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-4462a86643a19e43",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Twórcy modelu Jev ze wsparciem wyceniającym startup na 7,5 miliarda dolarów",
@@ -386,7 +736,21 @@
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
       "published_at": "2026-10-09T21:41:29+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-dd7d78b72787c1ea",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Zarobki w pracy z AI sięgają nawet 37 tysięcy złotych miesięcznie",
@@ -404,7 +768,21 @@
       "source": "My Company Polska",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPaWRhTzBaSEw2ellfMER1TVlVbWNkSktwQ2ZBMWlJSVJ5dzF2eUNPaXNacF9LVWVMa1NNX2lyejZ6VUtQRmtEa2diVzZMWktuM1VVUl9aeDgwNjJpSmhyTTdWWWh6WExWbHdIQzg4OXhHS0N6c1lCY1Ezd0h0VXdLNXZZVXZFOWRtaUl6eXQ1eVpRRTkyWHlwN1VxWGVhNTR5eWV3WkNDNHFBajJwOEFwRXNxcGhxRWRueFhiYXE2aS11bHY5Nld2Wg?oc=5",
       "published_at": "2026-10-09T16:10:00+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPaWRhTzBaSEw2ellfMER1TVlVbWNkSktwQ2ZBMWlJSVJ5dzF2eUNPaXNacF9LVWVMa1NNX2lyejZ6VUtQRmtEa2diVzZMWktuM1VVUl9aeDgwNjJpSmhyTTdWWWh6WExWbHdIQzg4OXhHS0N6c1lCY1Ezd0h0VXdLNXZZVXZFOWRtaUl6eXQ1eVpRRTkyWHlwN1VxWGVhNTR5eWV3WkNDNHFBajJwOEFwRXNxcGhxRWRueFhiYXE2aS11bHY5Nld2Wg?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-0a9aae91f88f5a9f",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Departament Sprawiedliwości USA bada stacje telewizyjne w związku z bojkotem relacji z Białego Domu",
@@ -422,7 +800,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c9vgregzk6gro?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-11T05:05:43+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/c9vgregzk6gro?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-62d2bd7cb9addc37",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     }
   ],
   "stats": {

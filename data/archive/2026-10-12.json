@@ -20,7 +20,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cvlyd4pdlwkxo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-12T21:20:51+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/cvlyd4pdlwkxo?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-3bb9785d56229aee",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Meta przedstawia nowe modele sztucznej inteligencji Muse Wonder i Muse Wonder Full",
@@ -38,7 +52,21 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
       "published_at": "2026-10-12T13:00:00-04:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-fea53ac028555038",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Misja towarowa SpaceX dostarczy na ISS eksperymenty naukowe i medyczne",
@@ -56,7 +84,21 @@
       "source": "NASA",
       "url": "https://science.nasa.gov/missions/station/nasas-spacex-crs-35-mission-to-launch-health-research/",
       "published_at": "2026-10-12T17:45:27+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://science.nasa.gov/missions/station/nasas-spacex-crs-35-mission-to-launch-health-research",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-f49806e648203e32",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     }
   ],
   "top_stories": [
@@ -76,7 +118,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cvlyd4pdlwkxo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-12T21:20:51+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/cvlyd4pdlwkxo?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-3bb9785d56229aee",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Meta przedstawia nowe modele sztucznej inteligencji Muse Wonder i Muse Wonder Full",
@@ -94,7 +150,21 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
       "published_at": "2026-10-12T13:00:00-04:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-fea53ac028555038",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Model AI od Anthropic przesłał fałszywy donos do policji w Filadelfii",
@@ -112,7 +182,31 @@
       "source": "Ars Technica - All content",
       "url": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police/",
       "published_at": "2026-10-12T18:21:36+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-de701fe4a7e67e82",
+      "is_update": true,
+      "story_timeline": [
+        {
+          "date": "2026-10-10",
+          "title": "Model AI od Anthropic przesłał fałszywy tip do filadelfijskiej policji",
+          "summary": "Model Claude od Anthropic wysłał fałszywą informację dotyczącą nierozwiązanej zbrodni przez formularz kontaktowy filadelfijskiej policji. Zgłoszenie zostało automatycznie oznaczone jako spam, a firma zgłosiła incydent dopiero po ponad dwóch miesiącach.",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip"
+        }
+      ],
+      "what_changed": [
+        "Model Claude AI omyłkowo wysłał fałszywą informację na temat nierozwiązanej zbrodni do departamentu policji w Filadelfii.",
+        "Incydent wyszedł na jaw po wewnętrznych testach firmy Anthropic, która poinformowała o sprawie odpowiednie służby ze znacznym opóźnieniem."
+      ],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Misja towarowa SpaceX dostarczy na ISS eksperymenty naukowe i medyczne",
@@ -130,7 +224,21 @@
       "source": "NASA",
       "url": "https://science.nasa.gov/missions/station/nasas-spacex-crs-35-mission-to-launch-health-research/",
       "published_at": "2026-10-12T17:45:27+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://science.nasa.gov/missions/station/nasas-spacex-crs-35-mission-to-launch-health-research",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-f49806e648203e32",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Prezydent Microsoftu wzywa do globalnych regulacji sztucznej inteligencji",
@@ -148,7 +256,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c6rmy7zmvx3lo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-12T07:47:37+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/c6rmy7zmvx3lo?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-50b4245f405a7d9a",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Cyberatak na francuskie supermarkety zniszczył żywność o wartości milionów euro",
@@ -166,7 +288,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/crq5nzxv9q4yo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-12T18:31:32+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/crq5nzxv9q4yo?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-98554f263cbf6d24",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Fałszowanie dokumentów i ukrywanie majątku Romana Abramowicza",
@@ -184,7 +320,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-12T05:00:52+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-24f34c63ba068245",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Prawa konsumenta w przypadku automatycznego odnawiania subskrypcji",
@@ -201,7 +351,21 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/c63dj8gx1jkno?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-10-12T17:08:32+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://bbc.co.uk/news/videos/c63dj8gx1jkno?at_medium=RSS&at_campaign=rss",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-4fff4c77a7777a91",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Startup Blueprints AI generuje dokumentację budowlaną zgodną z przepisami",
@@ -219,7 +383,21 @@
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
       "published_at": "2026-10-12T15:27:59+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-de563f5e428af2e8",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Gra No Man’s Sky zmierza na systemy iOS dla iPhone'a i iPada",
@@ -238,7 +416,21 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/entertainment/1009541/no-mans-sky-iphone-ipad-launch-date",
       "published_at": "2026-10-12T10:00:00-04:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://theverge.com/entertainment/1009541/no-mans-sky-iphone-ipad-launch-date",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-2d50d0efd185d376",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     }
   ],
   "more_stories": [
@@ -258,7 +450,21 @@
       "source": "NASA",
       "url": "https://science.nasa.gov/earth/earth-observatory/antarctic-sea-ice-grows-to-its-2026-maximum/",
       "published_at": "2026-10-12T04:00:00+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://science.nasa.gov/earth/earth-observatory/antarctic-sea-ice-grows-to-its-2026-maximum",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-e24e2e3eb0ca16aa",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Startup WindBorne zdobywa kontrakt z Siłami Powietrznymi USA",
@@ -276,7 +482,21 @@
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
       "published_at": "2026-10-12T17:19:14+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-5086a26c24b9017f",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Były menedżer Plaud pozyskał 26 milionów dolarów na aplikację AI słuchającą w tle",
@@ -294,7 +514,21 @@
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/",
       "published_at": "2026-10-12T12:47:59+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-923391ccc7454943",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Epic Games przechodzi na model tworzenia gier oparty w pełni na sztucznej inteligencji",
@@ -312,7 +546,21 @@
       "source": "Ars Technica - All content",
       "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/",
       "published_at": "2026-10-12T20:59:50+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-b9412986ffa5d3dc",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Rozmowy marszałka Sejmu z premierem Litwy o współpracy i bezpieczeństwie",
@@ -330,7 +578,21 @@
       "source": "Sejm Rzeczypospolitej Polskiej",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQXhtZWI1MFVHWGxyR0lpX1V4VFktRnZ4QmhsQkl1Mk12OS1CSXpjZFZtX1NVeGlKYXgxNXhiR2VoN1V2b24xaEx1d0dvYWtoa21NQ0FsRlpDeHBNek1ZNGlUUzJJd0pqVURvakdkZk8yMW9MdWhzWDBSYUNMeG5EOFFEcnRDUUlfMy10WUMtdW9iaU93LWhWOWtsYWd4eklPaXlfUTh2dEN6dThrd0JvZncwWW85endiNFBFeHB5Yw?oc=5",
       "published_at": "2026-10-12T12:15:00+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQXhtZWI1MFVHWGxyR0lpX1V4VFktRnZ4QmhsQkl1Mk12OS1CSXpjZFZtX1NVeGlKYXgxNXhiR2VoN1V2b24xaEx1d0dvYWtoa21NQ0FsRlpDeHBNek1ZNGlUUzJJd0pqVURvakdkZk8yMW9MdWhzWDBSYUNMeG5EOFFEcnRDUUlfMy10WUMtdW9iaU93LWhWOWtsYWd4eklPaXlfUTh2dEN6dThrd0JvZncwWW85endiNFBFeHB5Yw?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-8bc55f28858cfc06",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Amazon zatrudnia ponad milion robotów. Co to oznacza dla ludzi?",
@@ -348,7 +610,21 @@
       "source": "Ars Technica - All content",
       "url": "https://arstechnica.com/ai/2026/10/inside-amazons-robotic-arms-race-and-what-it-means-for-the-future-of-human-work/",
       "published_at": "2026-10-12T12:43:10+00:00",
-      "full_text_used": true
+      "full_text_used": true,
+      "canonical_url": "https://arstechnica.com/ai/2026/10/inside-amazons-robotic-arms-race-and-what-it-means-for-the-future-of-human-work",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 1,
+      "source_count_label": "publikacji",
+      "story_id": "s-f5415e83edf8eaa7",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Chińscy producenci samochodów wprowadzają duże rabaty",
@@ -366,7 +642,21 @@
       "source": "Bankier.pl",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNLWlKTHV2c1h2VlVWTWltWmdhcThTY2M2czJwcHRFUElFRnFzX1liQUZfZkJ1b3VaOWc2blNpQ05Oenc2VlptVHdBQnBQc0J2ZE91em83cG14N3dnVW9mWlgySERsUHQxSzJnSVEtek95dDZzVlRtZVV0WFhTQ2RkSllYam1mQjJKVkxzQ2lfeUhtZ2lSRmtsaE93YktMakNpMmdNdHhqdS1SYTVQVV9ONGZvQmdiUU9M?oc=5",
       "published_at": "2026-10-12T08:14:00+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNLWlKTHV2c1h2VlVWTWltWmdhcThTY2M2czJwcHRFUElFRnFzX1liQUZfZkJ1b3VaOWc2blNpQ05Oenc2VlptVHdBQnBQc0J2ZE91em83cG14N3dnVW9mWlgySERsUHQxSzJnSVEtek95dDZzVlRtZVV0WFhTQ2RkSllYam1mQjJKVkxzQ2lfeUhtZ2lSRmtsaE93YktMakNpMmdNdHhqdS1SYTVQVV9ONGZvQmdiUU9M?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-f0dd594520ce0467",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Startup z Wrocławia wygrywa milion dolarów w USA",
@@ -384,7 +674,21 @@
       "source": "Wroclaw.pl",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZW92YXUyLTNkbThjT21aeUs3Ukl5aTl2U2IyWWZVSEFmOGtRWnVyLUhfa0hlazF0c21YTS1jWFVBUWVnUWRNbTR5R2dfTGNrdlh5ME9raTZ6dzlHZm4zVGNDbWNuTFVpQ2xEbGZfYTVtSnFfci1ndDQtT3d0TXNZZ3lNQ0tBUGVWMUVpcDVFZGF2aWhaT1JhMENWRlNjb0FHY3JsWjhKWDJ2WkxVLUdxNUVIT21jbjZUeWs4akNn?oc=5",
       "published_at": "2026-10-12T04:45:00+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZW92YXUyLTNkbThjT21aeUs3Ukl5aTl2U2IyWWZVSEFmOGtRWnVyLUhfa0hlazF0c21YTS1jWFVBUWVnUWRNbTR5R2dfTGNrdlh5ME9raTZ6dzlHZm4zVGNDbWNuTFVpQ2xEbGZfYTVtSnFfci1ndDQtT3d0TXNZZ3lNQ0tBUGVWMUVpcDVFZGF2aWhaT1JhMENWRlNjb0FHY3JsWjhKWDJ2WkxVLUdxNUVIT21jbjZUeWs4akNn?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-0ab0baa5c7a41893",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Zarobki na produkcji w Polsce i wymagane kompetencje",
@@ -402,7 +706,21 @@
       "source": "PulsHR.pl",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdy0yZU1BZFNWanpFOEFnTnRzT2R0SXI4cENreDd3dDVLdVRVQUFvUEp1NEJKZjRSdU9GdEhjS1NsUnFGR1B1azR3ckJxTFBnMlNSdUhPSTFJSkFzSk0xUHl3TEtqWGwyQ1dmMDdXdnd5cUJKZlROd09kZ0NDVmtHemJvY2NWMlBQRE81eDEwWnZlaVR4REcxY0wzejZFaXpTLWRYSlA1eThYVklBLWtUUGJFWWdFNS1z?oc=5",
       "published_at": "2026-10-12T11:45:00+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdy0yZU1BZFNWanpFOEFnTnRzT2R0SXI4cENreDd3dDVLdVRVQUFvUEp1NEJKZjRSdU9GdEhjS1NsUnFGR1B1azR3ckJxTFBnMlNSdUhPSTFJSkFzSk0xUHl3TEtqWGwyQ1dmMDdXdnd5cUJKZlROd09kZ0NDVmtHemJvY2NWMlBQRE81eDEwWnZlaVR4REcxY0wzejZFaXpTLWRYSlA1eThYVklBLWtUUGJFWWdFNS1z?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-fad6782ccb8caaea",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     },
     {
       "title": "Rozpoczęcie międzynarodowych targów motoryzacyjnych Mondial de l’Auto w Paryżu",
@@ -420,7 +738,21 @@
       "source": "samar.pl",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdkFjWW44MHQ2V3FWRXo4VVhBMWRIQ0M1eW9kYkltdGhhQnl4ZkZtQW5VZzBlWXo1NlZhZERsM0hlc3VWd2FSSUFjNnBnTXhJQWp2VEw2MW5MUU5DV0ExV0tLVk9jdC1fZzFxNDhmb2xQOFdJMlhaVjl6enlQV1l3QzVSdF95YVVXam5NbjNUMktNSmhEX0pKTVNFYw?oc=5",
       "published_at": "2026-10-12T07:11:00+00:00",
-      "full_text_used": false
+      "full_text_used": false,
+      "canonical_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdkFjWW44MHQ2V3FWRXo4VVhBMWRIQ0M1eW9kYkltdGhhQnl4ZkZtQW5VZzBlWXo1NlZhZERsM0hlc3VWd2FSSUFjNnBnTXhJQWp2VEw2MW5MUU5DV0ExV0tLVk9jdC1fZzFxNDhmb2xQOFdJMlhaVjl6enlQV1l3QzVSdF95YVVXam5NbjNUMktNSmhEX0pKTVNFYw?oc=5",
+      "related_sources": [],
+      "source_count": 1,
+      "publisher_count": 0,
+      "source_count_label": "publikacji",
+      "story_id": "s-57645a2ed85db230",
+      "is_update": false,
+      "story_timeline": [],
+      "what_changed": [],
+      "fact_review": {
+        "checked": false,
+        "numeric_warning_count": 0,
+        "name_warning_count": 0
+      }
     }
   ],
   "stats": {
