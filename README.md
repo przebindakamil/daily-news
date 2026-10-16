@@ -217,3 +217,24 @@ archiwach i cache. Aby usunąć je także z historii repozytorium,
 konieczna jest osobna migracja / przepisanie historii oraz
 uwzględnienie możliwych kopii. Nie można zagwarantować cofnięcia
 wcześniejszego publicznego udostępnienia.
+
+## Wiarygodność i historie wydarzeń — iteracja 2–3 (16.10.2026)
+
+Rozbudowano generowanie o `scripts/story_intelligence.py` — bez osobnych wywołań Gemini:
+
+- Normalizacja publicznych adresów źródeł i bezpieczne usuwanie parametrów śledzących (z zachowaniem identyfikatorów artykułów).
+- Wykrywanie **bardzo pewnych** duplikatów tej samej publikacji/wiadomości; zachowywanie cytowań alternatywnych wydawców.
+- Liczba publikacji i odrębnych domen wydawców oraz sekcja „Inne publikacje o tej historii”. **Różne domeny nie stanowią dowodu niezależnej weryfikacji faktów.**
+- Sprawdzanie daty publikacji w polskim przedziale dobowym i ostrożne sprawdzanie źródłowego URL. Nie traktujemy 403, blokad paywalla i timeoutu jako dowodu, że tekst nie istnieje.
+- Odrzucanie identycznych linków i niemal identycznych streszczeń z minionych siedmiu dni; zachowywanie wydarzeń z istotnie zmienioną treścią.
+- Heurystyczne oznaczanie podejrzanych liczb i nazw własnych względem pobranego artykułu — **do weryfikacji redakcyjnej**, nie pełny fact-check i nie automatyczny dowód błędu. W przypadku niewczytanej treści nie twierdzimy, że sprawdziliśmy materiał.
+- `story_id`, pole `is_update`, poprzednie publikacje w `story_timeline`, oraz krótkie fragmenty nowszego materiału `what_changed`. Powiązania są świadomie zachowawcze: brak powiązania jest lepszy niż fałszywa chronologia.
+- Obserwowanie wydarzenia lokalnie w przeglądarce (`daily-news-watched-story-v1`) i sekcja „Aktualizacje obserwowanych” w kolejnych wydaniach. Nie przesuwa to artykułów w chwili kliknięcia.
+
+**Tygodniowy publiczny przegląd:** oddzielny generator `scripts/weekly_rewind.py`, workflow `weekly-rewind.yml`, zakładka `#week` i publiczne `data/rewind/latest.json`. Nie wymaga Gemini ani hasła audytu. Ma maksymalnie 10 historii, trendy liczone z archiwum i sprawy do obserwowania. Jeśli archiwum ma mniej niż siedem dni, komunikat wyraźnie wskazuje niekompletność. **Nie należy mylić publicznego przeglądu z szyfrowanym prywatnym audytem.**
+
+**Migracja archiwum:** `scripts/backfill_story_data.py` uzupełnia metadane istniejących publicznych wydań bez generowania treści na nowo, przez osobny workflow. Stare wydania mogą nie mieć wielu źródeł, ponieważ dawny proces nie przechowywał alternatywnych linków.
+
+**Ograniczenia do dalszej pracy:** dowodzenie rzeczywistej niezależności źródeł, ręczny/redakcyjny proces rozwiązywania ostrzeżeń fact-checku oraz semantyczne potwierdzanie nowych faktów pomiędzy wydaniami (obecne wskazówki są jedynie porównaniem streszczeń).
+
+Testy: `python -m unittest discover -s tests -v` oraz `node --test tests/test_feedback_ui.mjs tests/test_week1_ui.mjs tests/test_story_ui.mjs`.
