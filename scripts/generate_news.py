@@ -14,6 +14,7 @@ import trafilatura
 from story_intelligence import (
     canonical_url, plausible_publication, group_candidates, dedupe_previous,
     recent_entries, enrich_edition, fact_warnings, source_health,
+    filter_unchanged_stories,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -1106,6 +1107,7 @@ def main():
         raise RuntimeError("Gemini nie zwrócił żadnych poprawnych finalistów.")
 
     selected, top_count = edit_finalists(ranked, preferences)
+    selected = list(filter_unchanged_stories(selected, history))
     selected = enrich_edition(selected, history, target_day.isoformat())
     # HEAD+streaming GET only for final stories. Do not reject legitimate
     # paywalls, 403s, timeouts or sites with unknown availability.
