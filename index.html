@@ -15,6 +15,7 @@
       <nav class="main-nav" aria-label="Główna nawigacja">
         <a href="#today" data-view-link="today">Przegląd</a>
         <a href="#categories" data-view-link="categories">Kategorie</a>
+        <a href="#week" data-view-link="week">Tydzień</a>
         <button id="nav-archive" type="button">Archiwum</button>
         <button id="nav-saved" type="button">Zapisane</button>
       </nav>
@@ -80,6 +81,13 @@
         </div>
       </div>
       <div id="categories-root"></div>
+    </section>
+
+    <section id="week-view" class="week-view" hidden aria-labelledby="week-heading">
+      <p class="eyebrow">Podsumowanie tygodnia</p>
+      <h2 id="week-heading">Ten tydzień w 10 minut</h2>
+      <p class="week-intro">Najważniejsze wydarzenia z opublikowanego archiwum. Publiczny przegląd, oddzielony od audytu redakcyjnego administratora.</p>
+      <div id="week-root" aria-live="polite"></div>
     </section>
 
     <section id="article-view" class="article-view" hidden aria-label="Udostępniony artykuł">
