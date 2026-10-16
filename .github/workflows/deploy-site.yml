@@ -10,6 +10,7 @@ on:
       - "audit.js"
       - "audit.css"
       - "secure/audits/**"
+      - "data/rewind/**"
       - ".github/workflows/deploy-site.yml"
 
 permissions:
