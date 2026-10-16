@@ -319,6 +319,23 @@ def enrich_edition(items, history, day):
     return completed
 
 
+def filter_unchanged_stories(items, history):
+    """Remove obvious same-story repeats, preserving genuine new developments.
+
+    Strict title+summary overlap is required. Ambiguous stories stay in; a
+    false removal is worse than showing a news update.
+    """
+    for item in items:
+        repeated = any(
+            item.get("category") == old.get("category")
+            and title_similarity(item.get("title"), old.get("title")) >= .94
+            and title_similarity(item.get("summary"), old.get("summary")) >= .92
+            for old in history
+        )
+        if not repeated:
+            yield item
+
+
 def dedupe_previous(items, history):
     """Skip verbatim repeats only; similar titles with new details are retained."""
     seen = {canonical_url(x.get("url")) for x in history}
