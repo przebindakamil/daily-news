@@ -11,6 +11,10 @@ from zoneinfo import ZoneInfo
 import feedparser
 import requests
 import trafilatura
+from story_intelligence import (
+    plausible_publication, group_candidates, dedupe_previous,
+    recent_entries, enrich_edition, fact_warnings,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "news.json"
@@ -781,6 +785,7 @@ PARTIA:
                 if regenerated:
                     digest_text = regenerated
 
+        validation = fact_warnings({**original, "digest_text": digest_text})
         selected.append(
             {
                 "_order": batch_offset + idx,
@@ -799,6 +804,11 @@ PARTIA:
                 "url": original["url"],
                 "published_at": original["published_at"],
                 "full_text_used": bool(original.get("article_text")),
+                "related_sources": original.get("related_sources", []),
+                "fact_review": {
+                    "checked": validation["checked"],
+                    "numeric_warning_count": len(validation["warnings"]),
+                },
             }
         )
 
@@ -820,6 +830,8 @@ PARTIA:
                 "url": original["url"],
                 "published_at": original["published_at"],
                 "full_text_used": bool(original.get("article_text")),
+                "related_sources": original.get("related_sources", []),
+                "fact_review": {"checked": False, "numeric_warning_count": 0},
             }
         )
 
@@ -1075,11 +1087,22 @@ def main():
     if not candidates:
         raise RuntimeError("Nie znaleziono świeżych kandydatów z żadnego skonfigurowanego źródła.")
 
-    ranked = rank_candidates(candidates, preferences)
+    # Retain the untouched candidate pool for private audit coverage.
+    # Group only clear same-event duplicates; never infer independence.
+    history = recent_entries(ARCHIVE_DIR, target_day.isoformat())
+    eligible = [
+        item for item in candidates
+        if plausible_publication(item, window_start, window_end)
+    ]
+    unique_candidates = group_candidates(list(dedupe_previous(eligible, history)))
+    if not unique_candidates:
+        raise RuntimeError("Brak nowych, poprawnie datowanych materiałów.")
+    ranked = rank_candidates(unique_candidates, preferences)
     if not ranked:
         raise RuntimeError("Gemini nie zwrócił żadnych poprawnych finalistów.")
 
     selected, top_count = edit_finalists(ranked, preferences)
+    selected = enrich_edition(selected, history, target_day.isoformat())
     top_stories = selected[:top_count]
     more_stories = selected[top_count:]
     top_of_day = choose_top_of_day(selected, limit=3)
