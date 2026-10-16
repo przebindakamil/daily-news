@@ -71,7 +71,7 @@ def title_similarity(a, b):
     return 2 * common / (len(one) + len(two))
 
 
-def same_event(a, b, threshold=0.83):
+def same_event(a, b, threshold=0.92):
     if a.get("category", a.get("category_hint")) != b.get("category", b.get("category_hint")):
         return False
     if canonical_url(a.get("url")) and canonical_url(a.get("url")) == canonical_url(b.get("url")):
