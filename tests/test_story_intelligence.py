@@ -25,6 +25,9 @@ class StoryIntelligenceTests(unittest.TestCase):
         self.assertEqual(si.canonical_url("javascript:alert(1)"), "")
         self.assertEqual(si.canonical_url("https://alice:password@example.com/p"), "")
         self.assertEqual(si.publisher_domain("https://news.google.com/rss/a"), "")
+        self.assertEqual(si.canonical_url("http://127.0.0.1/private"), "")
+        self.assertEqual(si.canonical_url("http://192.168.1.8/private"), "")
+        self.assertEqual(si.canonical_url("http://localhost/private"), "")
 
     def test_same_event_high_precision_and_multiple_sources(self):
         a = story("NASA announces new Mars rover landing mission",
@@ -51,6 +54,25 @@ class StoryIntelligenceTests(unittest.TestCase):
         self.assertFalse(si.plausible_publication(
             {**candidate, "url": "bad:"}, start, end
         ))
+
+    def test_link_health_detects_confirmed_missing_without_blocking_paywalls(self):
+        from unittest.mock import Mock
+        def answer(code):
+            response = Mock()
+            response.status_code = code
+            return response
+        client = Mock()
+        client.head.return_value = answer(404)
+        client.get.return_value = answer(404)
+        self.assertEqual(si.source_health("https://publisher.example/story", client), "missing")
+        client.head.return_value = answer(403)
+        client.get.reset_mock()
+        self.assertEqual(si.source_health("https://publisher.example/story", client), "unverified")
+        client.get.assert_not_called()
+        client.head.return_value = answer(405)
+        client.get.return_value = answer(200)
+        self.assertEqual(si.source_health("https://publisher.example/story", client), "reachable")
+        self.assertEqual(si.source_health("http://127.0.0.1/private", client), "invalid")
 
     def test_previous_url_duplicates_but_not_developing_updates(self):
         previous = [story("Mars rover new exploration",
