@@ -810,6 +810,7 @@ PARTIA:
                 "fact_review": {
                     "checked": validation["checked"],
                     "numeric_warning_count": len(validation["warnings"]),
+                    "name_warning_count": len(validation["name_warnings"]),
                 },
             }
         )
@@ -833,7 +834,8 @@ PARTIA:
                 "published_at": original["published_at"],
                 "full_text_used": bool(original.get("article_text")),
                 "related_sources": original.get("related_sources", []),
-                "fact_review": {"checked": False, "numeric_warning_count": 0},
+                "fact_review": {"checked": False, "numeric_warning_count": 0,
+                                "name_warning_count": 0},
             }
         )
 
