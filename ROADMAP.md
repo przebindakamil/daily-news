@@ -4,7 +4,7 @@ Cel: **codzienny, pięciominutowy przegląd ważnych informacji**, który pomaga
 
 **GitHub Issues to źródło prawdy dla otwartych zadań.** Poniższy plan to proponowana kolejność małych wdrożeń, a nie automatyczne zobowiązanie do wypuszczenia funkcji każdego dnia kalendarzowego. Każde zadanie ma zakres, kryteria akceptacji i testy. Po wykonaniu oznacz je jako zakończone w GitHubie oraz zaznacz tutaj.
 
-**Stan na 15.10.2026:** ukończony cały **etap 1 (D01–D07)**; kolejnym zadaniem jest **D08, #17**. #3 i #4 wykorzystują starsze zgłoszenia zamiast duplikatów.
+**Stan na 16.10.2026:** etap 1 ukończony. W etapach 2–3 wdrożono i zweryfikowano 11 z 14 zadań; trzy wymagają dalszej kontroli jakości: **D11 #20**, **D14 #23**, **D18 #27**. W kodzie istnieją ich pierwsze wersje, ale nie należy mylić heurystyki z niezależnym potwierdzaniem faktów.
 
 ## Etap 1 — Wygodne codzienne czytanie (D01–D07)
 
@@ -32,12 +32,12 @@ Cel: **codzienny, pięciominutowy przegląd ważnych informacji**, który pomaga
 
 | Dzień | Zadanie | GitHub Issue | Priorytet | Status |
 | --- | --- | --- | --- | --- |
-| D08 | Normalizacja adresów źródłowych | [#17](https://github.com/przebindakamil/daily-news/issues/17) | P1 | [ ] |
-| D09 | Łączenie wielu publikacji o jednym wydarzeniu | [#18](https://github.com/przebindakamil/daily-news/issues/18) | P1 | [ ] |
-| D10 | Sekcja „Inne źródła” | [#19](https://github.com/przebindakamil/daily-news/issues/19) | P1 | [ ] |
+| D08 | Normalizacja adresów źródłowych | [#17](https://github.com/przebindakamil/daily-news/issues/17) | P1 | [x] |
+| D09 | Łączenie wielu publikacji o jednym wydarzeniu | [#18](https://github.com/przebindakamil/daily-news/issues/18) | P1 | [x] |
+| D10 | Sekcja „Inne źródła” | [#19](https://github.com/przebindakamil/daily-news/issues/19) | P1 | [x] |
 | D11 | Liczba rzeczywiście odrębnych źródeł | [#20](https://github.com/przebindakamil/daily-news/issues/20) | P1 | [ ] |
-| D12 | Walidacja dat i linków przed publikacją | [#21](https://github.com/przebindakamil/daily-news/issues/21) | P1 | [ ] |
-| D13 | Powtórki między dniami vs. faktyczne aktualizacje | [#22](https://github.com/przebindakamil/daily-news/issues/22) | P1 | [ ] |
+| D12 | Walidacja dat i linków przed publikacją | [#21](https://github.com/przebindakamil/daily-news/issues/21) | P1 | [x] |
+| D13 | Powtórki między dniami vs. faktyczne aktualizacje | [#22](https://github.com/przebindakamil/daily-news/issues/22) | P1 | [x] |
 | D14 | Kontrola kluczowych liczb i nazwisk | [#23](https://github.com/przebindakamil/daily-news/issues/23) | P1 | [ ] |
 
 **Cel etapu:** mniej duplikatów, wyraźne źródła, mniej błędów. Nie deklarujemy pełnego fact-checku ani „niezależnego potwierdzenia”, jeśli dowody na to nie wystarczają.
@@ -48,15 +48,26 @@ Epic: [#4 Story threads](https://github.com/przebindakamil/daily-news/issues/4) 
 
 | Dzień | Zadanie | GitHub Issue | Priorytet | Status |
 | --- | --- | --- | --- | --- |
-| D15 | Stały identyfikator rozwijającej się historii | [#24](https://github.com/przebindakamil/daily-news/issues/24) | P2 | [ ] |
-| D16 | „Wcześniej w tej sprawie” | [#25](https://github.com/przebindakamil/daily-news/issues/25) | P2 | [ ] |
-| D17 | Oś czasu wydarzenia | [#26](https://github.com/przebindakamil/daily-news/issues/26) | P2 | [ ] |
+| D15 | Stały identyfikator rozwijającej się historii | [#24](https://github.com/przebindakamil/daily-news/issues/24) | P2 | [x] |
+| D16 | „Wcześniej w tej sprawie” | [#25](https://github.com/przebindakamil/daily-news/issues/25) | P2 | [x] |
+| D17 | Oś czasu wydarzenia | [#26](https://github.com/przebindakamil/daily-news/issues/26) | P2 | [x] |
 | D18 | „Co zmieniło się od ostatniego wydania?” | [#27](https://github.com/przebindakamil/daily-news/issues/27) | P2 | [ ] |
-| D19 | Obserwowanie pojedynczego wydarzenia | [#28](https://github.com/przebindakamil/daily-news/issues/28) | P2 | [ ] |
-| D20 | Aktualizacje obserwowanych wydarzeń | [#29](https://github.com/przebindakamil/daily-news/issues/29) | P2 | [ ] |
-| D21 | Publiczne tygodniowe podsumowanie | [#3](https://github.com/przebindakamil/daily-news/issues/3) | P2 | [ ] |
+| D19 | Obserwowanie pojedynczego wydarzenia | [#28](https://github.com/przebindakamil/daily-news/issues/28) | P2 | [x] |
+| D20 | Aktualizacje obserwowanych wydarzeń | [#29](https://github.com/przebindakamil/daily-news/issues/29) | P2 | [x] |
+| D21 | Publiczne tygodniowe podsumowanie | [#3](https://github.com/przebindakamil/daily-news/issues/3) | P2 | [x] |
 
 **Cel etapu:** czytelnik wie, co się zmieniło i co wydarzyło się wcześniej, bez ponownego odtwarzania kontekstu. Tygodniowy skrót publiczny to inny produkt niż **prywatny audyt administratora**.
+
+### Wdrożenie iteracji 2–3 — 16.10.2026
+
+Wdrożono `scripts/story_intelligence.py`, publiczny widok `#week`, `scripts/weekly_rewind.py` i workflow, lokalne obserwowanie historii, archiwalną oś czasu, linki do innych publikacji oraz ostrożne filtrowanie powtórek i sprawdzanie linków. Metadane starszych wydań uzupełnia workflow `backfill-story-context.yml` — bez kosztów Gemini. Publiczny przegląd nie czyta ani nie publikuje zaszyfrowanych raportów prywatnego audytu.
+
+**Jakościowe zadania otwarte:**
+- **D11 #20:** zliczamy źródłowe publikacje i różne domeny wydawców, ale nie potrafimy jeszcze dowieść ich rzeczywistej niezależności i braku syndykacji.
+- **D14 #23:** liczby i wielowyrazowe nazwy własne są flagowane do przeglądu w metadanych, ale nie ma jeszcze pełnego procesu obsługi alarmów i zatwierdzenia faktów przed publikacją.
+- **D18 #27:** pokazujemy krótkie fragmenty nowszych streszczeń; nie przedstawiamy ich jako zweryfikowanych zmian w faktach bez niezależnych dowodów.
+
+CI: `tests/test_story_intelligence.py`, `tests/test_weekly_rewind.py` i `tests/test_story_ui.mjs` obok dotychczasowych regresji. Archiwum niekompletnego tygodnia jest wyraźnie oznaczone.
 
 ## Następne priorytety i mierzenie postępu
 
@@ -101,4 +112,4 @@ Epic: [#4 Story threads](https://github.com/przebindakamil/daily-news/issues/4) 
 4. Wymagaj poprawnego CI i działającego wdrożenia; prywatny audyt nie może stać się publiczny.
 5. Dopiero po weryfikacji zamknij Issue i oznacz [x] w tej roadmapie.
 
-Etap 1 wykonany: [D01–D07, #10–#16](https://github.com/przebindakamil/daily-news/issues?q=is%3Aissue+is%3Aclosed). Następny krok: [D08 — Normalizacja źródłowych adresów URL, #17](https://github.com/przebindakamil/daily-news/issues/17).
+Etap 1 wykonany: [D01–D07, #10–#16](https://github.com/przebindakamil/daily-news/issues?q=is%3Aissue+is%3Aclosed). Następny krok: domknąć [D11 #20](https://github.com/przebindakamil/daily-news/issues/20), [D14 #23](https://github.com/przebindakamil/daily-news/issues/23) i [D18 #27](https://github.com/przebindakamil/daily-news/issues/27) — automatyczne potwierdzanie niezależności i weryfikacja faktów wymagają osobnej walidacji.
