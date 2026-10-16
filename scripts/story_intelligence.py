@@ -4,11 +4,14 @@ All matching is intentionally high-precision: unrelated events must not merge.
 Never claim source independence or fact-check certainty from domain count alone.
 """
 import hashlib
+import ipaddress
 import json
 import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
+
+import requests
 
 TRACKING_KEYS = {"fbclid", "gclid", "dclid", "mc_cid", "mc_eid", "igshid",
                  "ref_src", "ref_url", "utm_source", "utm_medium", "utm_campaign",
@@ -32,6 +35,14 @@ def canonical_url(url):
         if u.username or u.password:
             return ""
         host = u.hostname.lower().removeprefix("www.")
+        if host in {"localhost", "localhost.localdomain"} or host.endswith((".local", ".internal")):
+            return ""
+        try:
+            address = ipaddress.ip_address(host)
+            if not address.is_global:
+                return ""
+        except ValueError:
+            pass
         port = f":{u.port}" if u.port and u.port not in (80, 443) else ""
         path = u.path or "/"
         if path != "/":
@@ -43,6 +54,36 @@ def canonical_url(url):
         return urlunsplit(("https", host + port, path, query, ""))
     except (ValueError, TypeError):
         return ""
+
+
+def source_health(url, client=requests):
+    """A best-effort, bounded public URL check, never an assertion of accuracy.
+
+    HEAD may be blocked by legitimate paywalled publishers. Only treat
+    confirmed 404/410 from BOTH HEAD and GET as missing.
+    """
+    target = canonical_url(url)
+    if not target:
+        return "invalid"
+    try:
+        result = client.head(target, allow_redirects=True, timeout=4)
+        if result.status_code in (404, 410, 405):
+            # A publisher can reject HEAD; verify using a streaming GET.
+            fallback = client.get(
+                target, allow_redirects=True, timeout=4, stream=True,
+                headers={"Range": "bytes=0-127"},
+            )
+            try:
+                return "missing" if fallback.status_code in (404, 410) else (
+                    "reachable" if fallback.status_code < 400 else "unverified"
+                )
+            finally:
+                fallback.close()
+        if result.status_code < 400:
+            return "reachable"
+    except requests.RequestException:
+        pass
+    return "unverified"
 
 
 def publisher_domain(url):
