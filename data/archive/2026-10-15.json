@@ -1,0 +1,443 @@
+{
+  "date": "2026-10-15",
+  "generated_at": "2026-10-16T08:57:46.745139+00:00",
+  "coverage_start": "2026-10-14T22:00:00+00:00",
+  "coverage_end": "2026-10-15T22:00:00+00:00",
+  "top_of_day": [
+    {
+      "title": "Rosja oskarża Ukrainę o atak na rafinerię po zapowiedzi wznowienia uderzeń",
+      "summary": "Prezydent Ukrainy Wołodymyr Zełenski ogłosił koniec przerwy w uderzeniach na cele energetyczne w odpowiedzi na rosyjskie ataki. Rosja twierdzi, że odparła duży atak na rafinerię w obwodzie riazańskim.",
+      "why_it_matters": "Wznowienie ukraińskich uderzeń na rosyjską infrastrukturę naftową eskaluje konflikt w obliczu napięć dyplomatycznych i zmian we wsparciu USA.",
+      "category": "Świat i geopolityka",
+      "topics": [
+        "Rosja",
+        "Ukraina",
+        "wojna",
+        "energetyka",
+        "rafinerie"
+      ],
+      "editorial_score": 10.05,
+      "digest_text": "Prezydent Ukrainy Wołodymyr Zełenski poinformował, że zapowiedziana wcześniej przerwa w atakach na rosyjską infrastrukturę energetyczną dobiegła końca. Decyzja ta zapadła w reakcji na kontynuowanie rosyjskich uderzeń na ukraińskie obiekty energetyczne. Według relacji medialnych Zełenski wskazał, że ograniczenie operacji trwało zaledwie trzy dni, podczas których ukraińskie miasta i społeczności znajdowały się pod silnym ostrzałem. Rosyjskie ministerstwo obrony oświadczyło z kolei, że siły ukraińskie przeprowadziły dużą próbę ataku na rafinerię w obwodzie riazańskim na południe od Moskwy, gdzie spadające odłamki zestrzelonych pocisków i dronów wywołały pożar. Moskwa poinformowała również o uderzeniu w dwa statki towarowe przewożące ładunki wojskowe w kierunku Odesy, natomiast w osobnym incydencie na Morzu Czarnym dron uszkodził chemiczny tanker płynący u wybrzeży Rumunii, pozostawiając kilka osób zaginionych.\n\nW tle działań militarnych dochodzi do sporych napięć dyplomatycznych między Kijowem a Stanami Zjednoczonymi. Wołodymyr Zełenski oskarżył administrację amerykańską o wycofanie kluczowych elementów wsparcia, w tym ograniczenie dzielenia się danymi wywiadowczymi oraz czasowe restrykcje dotyczące usług satelitarnych Starlink, które są wykorzystywane przez ukraińskie wojsko do koordynacji działań obronnych i naprowadzania dronów. Choć strona ukraińska odnotowała częściowe przywrócenie mobilnych funkcji systemów Starlink, władze w Kijowie nie ukrywają swojego rozczarowania postawą Waszyngtonu. Amerykańscy i europejscy polityści różnie oceniają te posunięcia, a ministrowie obrony państw europejskich ostrzegają, że ograniczanie wsparcia dla Ukrainy może przynieść odwrotny skutek i przekonać Moskwę o możliwości wygrania wojny. Jednocześnie podczas wizyty w Londynie premier Wielkiej Brytanii zapowiedział przyspieszenie dostaw lekkich pocisków wielorazowych na Ukrainę.\n\nSytuację na froncie pogarsza masowe użycie dronów przez siły rosyjskie, które w ostatnich dniach przeprowadziły zmasowane ataki na dziesiątki ukraińskich miast. Lokalne władze raportują o licznych ofiarach śmiertelnych m.in. w obwodach kirowohradzkim, donieckim, chersońskim i wołyńskim. Centralna część Ukrainy ucierpiała w stopniu niespotykanym od początku pełnoskalowej inwazji, notując setki wystrzelonych w kierunku cywilnej i energetycznej infrastruktury bezzałogowców. Ukraiński prezydent zarzuca Moskwie celową eskalację przemocy przy jednoczesnym wykorzystywaniu nacisków politycznych i zmian w globalnym handlu surowcami, wskazując na niedawne porozumienia gospodarcze między USA a Rosją dotyczące dostaw paliw.",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-15T16:50:18+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Meta i Apple łączą siły, aby modele Muse AI działały wydajniej na komputerach Mac",
+      "summary": "Firmy Meta i Apple podjęły rzadką współpracę przy nowym otwartym modelu sztucznej inteligencji Muse Spark Open. Oprogramowanie to zostało zoptymalizowane pod kątem pracy na komputerach Mac Studio z wykorzystaniem nowoczesnego frameworka MLX.",
+      "why_it_matters": "Współpraca dawnych rywali technologicznych pozwala na uruchamianie potężnych modeli sztucznej inteligencji bezpośrednio na komputerach osobistych z niespotykaną dotąd wydajnością.",
+      "category": "AI i technologia",
+      "topics": [
+        "Meta",
+        "Apple",
+        "sztuczna inteligencja",
+        "modele otwarte",
+        "Mac"
+      ],
+      "editorial_score": 9.9,
+      "digest_text": "Firmy Meta i Apple, zazwyczaj silnie ze sobą rywalizujące na rynku technologicznych gigantów, ogłosiły zaskakującą współpracę przy okazji premiery nowego otwartego modelu sztucznej inteligencji o nazwie Muse Spark Open. Przedstawiciele Meta określają to rozwiązanie mianem najbardziej zaawansowanego amerykańskiego modelu open-weight dostępnego obecnie na rynku. Co kluczowe dla użytkowników sprzętu komputerowego, jest to zarazem pierwszy model w tej klasie, który potrafi sprawnie funkcjonować bezpośrednio na komputerach biurkowych wyposażonych w odpowiednie zaplecze sprzętowe Apple.\n\nSzefowie obu korporacji publicznie wyrazili zadowolenie z przeprowadzonych prac integracyjnych. Dyrektor generalny Meta, Mark Zuckerberg, podkreślił w mediach społecznościowych, że wagi nowego modelu świetnie współpracują z nowymi komputerami Mac Studio dzięki wspólnemu wysiłkowi inżynierów oraz wykorzystaniu nowego sprzętu. Nowy CEO Apple, John Ternus, odpowiedział na te wpisy, chwaląc skalę i efektywność działania tak potężnego modelu sztucznej inteligencji uruchamianego lokalnie z poziomu biurka. Przedstawiciele obu stron przyznali, że projekty te były koordynowane przez ostatnich kilka miesięcy, co pokazuje rzadki przykład synergii w branży.\n\nPod względem technicznym Muse Spark Open to natywnie multimodalny model posiadający ponad 800 miliardów parametrów, który został zaprojektowany z myślą o skomplikowanych zadaniach wieloetapowych, zaawansowanej inżynierii oprogramowania oraz długofalowym rozumowaniu. Apple opublikowało również specjalny wpis techniczny poświęcony frameworkowi MLX, czyli dedykowanej tablicowej platformie przeznaczonej do zadań z zakresu uczenia maszynowego na układach z serii Apple Silicon. Połączenie sił Meta oraz Apple otwiera nowy rozdział w dziedzinie sztucznej inteligencji działającej lokalnie na urządzeniach użytkowników, udowadniając, że potężne modele mogą wydajnie funkcjonować poza chmurą obliczeniową.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+      "published_at": "2026-10-15T14:15:36-04:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Ślady na kości neandertalczyka mogą być najstarszym dowodem na zabójstwo włócznią",
+      "summary": "Odkryty w jaskini Shanidar w irackim Kurdystanie neandertalczyk nosi ślady urazu, który mógł zostać zadany drewnianą włócznią ponad 70 tysięcy lat temu. Okoliczności wskazują na potężny cios, choć naukowcy nie wykluczają zarówno nieszczęśliwego wypadku, jak i celowego ataku.",
+      "why_it_matters": "Odkrycie rzuca nowe światło na zachowania i potencjalne konflikty między neandertalczykami.",
+      "category": "Nauka",
+      "topics": [
+        "Neandertalczycy",
+        "archeologia",
+        "ewolucja",
+        "antropologia"
+      ],
+      "editorial_score": 9.9,
+      "digest_text": "Gładki, okrągły otwór w łopatce neandertalczyka, który zmarł ponad 70 000 lat temu, może stanowić najstarszy jak dotąd dowód na zabójstwo przodka człowieka za pomocą drewnianej włóczni. Archeolodzy zauważyli to charakterystyczne obrażenie po odsłonięciu szczątków szkieletowych dorosłego osobnika oraz innych neandertalczyków pod grubą warstwą skał i osadów w jaskini Shanidar w irackim Kurdystanie. W tym samym miejscu na przestrzeni lat lub dziesięcioleci pochowano co najmniej pięć osobników, co zdaniem badaczy świadczy o celowym i niosącym znaczenie depponowaniu ciał w wybranym punkcie. Badacze przeanalizowali częściowe szczątki około 45-letniego dorosłego, u którego lewa łopatka nosiła ślady penetracji przez ostry przedmiot o szerokości półtora centymetra. Pęknięcia oraz odłamki kości wskazują, że uderzenie nastąpiło od przodu i miało ogromną siłę, przebijając klatkę piersiową oraz uszkadzając narządy wewnętrzne. Dr Emma Pomeroy z Uniwersytetu w Cambridge wskazuje, że ze względu na wymaganą siłę ciosu mogło dojść do celowego ataku wymierzonego w serce, choć nie da się całkowicie wykluczyć tragicznego wypadku przy polowaniu. Analiza uzwojenia wykazała również wcześniejszy, poważny uraz twarzy, który pozostawił zniszczone i przesunięte zęby z grubą warstwą narosłej płytki bakteryjnej. Świadczy to o tym, że poszkodowany przez dłuższy czas zmagał się z silnym bólem i prawdopodobnie wymagał opieki ze strony grupy. Ponieważ drewno ulega rozkładowi, znalezienie zachowanych obiektów z tego materiału w kontekście prehistorycznym należy do rzadkości, jednak odkrycia w Niemczech i Anglii potwierdzają, że neandertalczycy i wcześniejsi hominini znali technologię obróbki drewna i korzystali z włóczni.",
+      "source": "Science | The Guardian",
+      "url": "https://www.theguardian.com/science/2026/oct/15/neanderthal-remains-human-ancestor-killed-by-spear-iraq-kurdistan-cave-earliest-find",
+      "published_at": "2026-10-15T15:00:23+00:00",
+      "full_text_used": true
+    }
+  ],
+  "top_stories": [
+    {
+      "title": "Rosja oskarża Ukrainę o atak na rafinerię po zapowiedzi wznowienia uderzeń",
+      "summary": "Prezydent Ukrainy Wołodymyr Zełenski ogłosił koniec przerwy w uderzeniach na cele energetyczne w odpowiedzi na rosyjskie ataki. Rosja twierdzi, że odparła duży atak na rafinerię w obwodzie riazańskim.",
+      "why_it_matters": "Wznowienie ukraińskich uderzeń na rosyjską infrastrukturę naftową eskaluje konflikt w obliczu napięć dyplomatycznych i zmian we wsparciu USA.",
+      "category": "Świat i geopolityka",
+      "topics": [
+        "Rosja",
+        "Ukraina",
+        "wojna",
+        "energetyka",
+        "rafinerie"
+      ],
+      "editorial_score": 10.05,
+      "digest_text": "Prezydent Ukrainy Wołodymyr Zełenski poinformował, że zapowiedziana wcześniej przerwa w atakach na rosyjską infrastrukturę energetyczną dobiegła końca. Decyzja ta zapadła w reakcji na kontynuowanie rosyjskich uderzeń na ukraińskie obiekty energetyczne. Według relacji medialnych Zełenski wskazał, że ograniczenie operacji trwało zaledwie trzy dni, podczas których ukraińskie miasta i społeczności znajdowały się pod silnym ostrzałem. Rosyjskie ministerstwo obrony oświadczyło z kolei, że siły ukraińskie przeprowadziły dużą próbę ataku na rafinerię w obwodzie riazańskim na południe od Moskwy, gdzie spadające odłamki zestrzelonych pocisków i dronów wywołały pożar. Moskwa poinformowała również o uderzeniu w dwa statki towarowe przewożące ładunki wojskowe w kierunku Odesy, natomiast w osobnym incydencie na Morzu Czarnym dron uszkodził chemiczny tanker płynący u wybrzeży Rumunii, pozostawiając kilka osób zaginionych.\n\nW tle działań militarnych dochodzi do sporych napięć dyplomatycznych między Kijowem a Stanami Zjednoczonymi. Wołodymyr Zełenski oskarżył administrację amerykańską o wycofanie kluczowych elementów wsparcia, w tym ograniczenie dzielenia się danymi wywiadowczymi oraz czasowe restrykcje dotyczące usług satelitarnych Starlink, które są wykorzystywane przez ukraińskie wojsko do koordynacji działań obronnych i naprowadzania dronów. Choć strona ukraińska odnotowała częściowe przywrócenie mobilnych funkcji systemów Starlink, władze w Kijowie nie ukrywają swojego rozczarowania postawą Waszyngtonu. Amerykańscy i europejscy polityści różnie oceniają te posunięcia, a ministrowie obrony państw europejskich ostrzegają, że ograniczanie wsparcia dla Ukrainy może przynieść odwrotny skutek i przekonać Moskwę o możliwości wygrania wojny. Jednocześnie podczas wizyty w Londynie premier Wielkiej Brytanii zapowiedział przyspieszenie dostaw lekkich pocisków wielorazowych na Ukrainę.\n\nSytuację na froncie pogarsza masowe użycie dronów przez siły rosyjskie, które w ostatnich dniach przeprowadziły zmasowane ataki na dziesiątki ukraińskich miast. Lokalne władze raportują o licznych ofiarach śmiertelnych m.in. w obwodach kirowohradzkim, donieckim, chersońskim i wołyńskim. Centralna część Ukrainy ucierpiała w stopniu niespotykanym od początku pełnoskalowej inwazji, notując setki wystrzelonych w kierunku cywilnej i energetycznej infrastruktury bezzałogowców. Ukraiński prezydent zarzuca Moskwie celową eskalację przemocy przy jednoczesnym wykorzystywaniu nacisków politycznych i zmian w globalnym handlu surowcami, wskazując na niedawne porozumienia gospodarcze między USA a Rosją dotyczące dostaw paliw.",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-15T16:50:18+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Meta i Apple łączą siły, aby modele Muse AI działały wydajniej na komputerach Mac",
+      "summary": "Firmy Meta i Apple podjęły rzadką współpracę przy nowym otwartym modelu sztucznej inteligencji Muse Spark Open. Oprogramowanie to zostało zoptymalizowane pod kątem pracy na komputerach Mac Studio z wykorzystaniem nowoczesnego frameworka MLX.",
+      "why_it_matters": "Współpraca dawnych rywali technologicznych pozwala na uruchamianie potężnych modeli sztucznej inteligencji bezpośrednio na komputerach osobistych z niespotykaną dotąd wydajnością.",
+      "category": "AI i technologia",
+      "topics": [
+        "Meta",
+        "Apple",
+        "sztuczna inteligencja",
+        "modele otwarte",
+        "Mac"
+      ],
+      "editorial_score": 9.9,
+      "digest_text": "Firmy Meta i Apple, zazwyczaj silnie ze sobą rywalizujące na rynku technologicznych gigantów, ogłosiły zaskakującą współpracę przy okazji premiery nowego otwartego modelu sztucznej inteligencji o nazwie Muse Spark Open. Przedstawiciele Meta określają to rozwiązanie mianem najbardziej zaawansowanego amerykańskiego modelu open-weight dostępnego obecnie na rynku. Co kluczowe dla użytkowników sprzętu komputerowego, jest to zarazem pierwszy model w tej klasie, który potrafi sprawnie funkcjonować bezpośrednio na komputerach biurkowych wyposażonych w odpowiednie zaplecze sprzętowe Apple.\n\nSzefowie obu korporacji publicznie wyrazili zadowolenie z przeprowadzonych prac integracyjnych. Dyrektor generalny Meta, Mark Zuckerberg, podkreślił w mediach społecznościowych, że wagi nowego modelu świetnie współpracują z nowymi komputerami Mac Studio dzięki wspólnemu wysiłkowi inżynierów oraz wykorzystaniu nowego sprzętu. Nowy CEO Apple, John Ternus, odpowiedział na te wpisy, chwaląc skalę i efektywność działania tak potężnego modelu sztucznej inteligencji uruchamianego lokalnie z poziomu biurka. Przedstawiciele obu stron przyznali, że projekty te były koordynowane przez ostatnich kilka miesięcy, co pokazuje rzadki przykład synergii w branży.\n\nPod względem technicznym Muse Spark Open to natywnie multimodalny model posiadający ponad 800 miliardów parametrów, który został zaprojektowany z myślą o skomplikowanych zadaniach wieloetapowych, zaawansowanej inżynierii oprogramowania oraz długofalowym rozumowaniu. Apple opublikowało również specjalny wpis techniczny poświęcony frameworkowi MLX, czyli dedykowanej tablicowej platformie przeznaczonej do zadań z zakresu uczenia maszynowego na układach z serii Apple Silicon. Połączenie sił Meta oraz Apple otwiera nowy rozdział w dziedzinie sztucznej inteligencji działającej lokalnie na urządzeniach użytkowników, udowadniając, że potężne modele mogą wydajnie funkcjonować poza chmurą obliczeniową.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+      "published_at": "2026-10-15T14:15:36-04:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Ślady na kości neandertalczyka mogą być najstarszym dowodem na zabójstwo włócznią",
+      "summary": "Odkryty w jaskini Shanidar w irackim Kurdystanie neandertalczyk nosi ślady urazu, który mógł zostać zadany drewnianą włócznią ponad 70 tysięcy lat temu. Okoliczności wskazują na potężny cios, choć naukowcy nie wykluczają zarówno nieszczęśliwego wypadku, jak i celowego ataku.",
+      "why_it_matters": "Odkrycie rzuca nowe światło na zachowania i potencjalne konflikty między neandertalczykami.",
+      "category": "Nauka",
+      "topics": [
+        "Neandertalczycy",
+        "archeologia",
+        "ewolucja",
+        "antropologia"
+      ],
+      "editorial_score": 9.9,
+      "digest_text": "Gładki, okrągły otwór w łopatce neandertalczyka, który zmarł ponad 70 000 lat temu, może stanowić najstarszy jak dotąd dowód na zabójstwo przodka człowieka za pomocą drewnianej włóczni. Archeolodzy zauważyli to charakterystyczne obrażenie po odsłonięciu szczątków szkieletowych dorosłego osobnika oraz innych neandertalczyków pod grubą warstwą skał i osadów w jaskini Shanidar w irackim Kurdystanie. W tym samym miejscu na przestrzeni lat lub dziesięcioleci pochowano co najmniej pięć osobników, co zdaniem badaczy świadczy o celowym i niosącym znaczenie depponowaniu ciał w wybranym punkcie. Badacze przeanalizowali częściowe szczątki około 45-letniego dorosłego, u którego lewa łopatka nosiła ślady penetracji przez ostry przedmiot o szerokości półtora centymetra. Pęknięcia oraz odłamki kości wskazują, że uderzenie nastąpiło od przodu i miało ogromną siłę, przebijając klatkę piersiową oraz uszkadzając narządy wewnętrzne. Dr Emma Pomeroy z Uniwersytetu w Cambridge wskazuje, że ze względu na wymaganą siłę ciosu mogło dojść do celowego ataku wymierzonego w serce, choć nie da się całkowicie wykluczyć tragicznego wypadku przy polowaniu. Analiza uzwojenia wykazała również wcześniejszy, poważny uraz twarzy, który pozostawił zniszczone i przesunięte zęby z grubą warstwą narosłej płytki bakteryjnej. Świadczy to o tym, że poszkodowany przez dłuższy czas zmagał się z silnym bólem i prawdopodobnie wymagał opieki ze strony grupy. Ponieważ drewno ulega rozkładowi, znalezienie zachowanych obiektów z tego materiału w kontekście prehistorycznym należy do rzadkości, jednak odkrycia w Niemczech i Anglii potwierdzają, że neandertalczycy i wcześniejsi hominini znali technologię obróbki drewna i korzystali z włóczni.",
+      "source": "Science | The Guardian",
+      "url": "https://www.theguardian.com/science/2026/oct/15/neanderthal-remains-human-ancestor-killed-by-spear-iraq-kurdistan-cave-earliest-find",
+      "published_at": "2026-10-15T15:00:23+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Ukierunkowane reklamy dostarczały exploity zero-click instalujące złośliwe oprogramowanie",
+      "summary": "Badacze z Citizen Lab odkryli kampanię, w której hakarzy wykorzystali reklamy internetowe do dostarczenia exploitów zero-click instalujących szpiegowskie oprogramowanie. Ataki dotknęły między innymi dziesiątki urządzeń pracowników organizacji medialnej Al Jazeera.",
+      "why_it_matters": "To prawdopodobnie pierwsze potwierdzenie użycia ukierunkowanych reklam do dystrybucji zaawansowanego oprogramowania szpiegowskiego.",
+      "category": "AI i technologia",
+      "topics": [
+        "cyberbezpieczeństwo",
+        "złośliwe oprogramowanie",
+        "reklamy",
+        "szpiegostwo"
+      ],
+      "editorial_score": 9.9,
+      "digest_text": "Badacze zajmujący się cyberbezpieczeństwem ujawnili, że najemni hakerzy wbudowali exploity typu zero-click w reklamy internetowe, co pozwalało na instalowanie zaawansowanego złośliwego oprogramowania na urządzeniach wytypowanych osób bez żadnej interakcji z ich strony. Wystarczyło jedynie załadować stronę internetową lub otworzyć aplikację, aby zainfekować sprzęt działający pod kontrolą systemów iOS oraz Android. Zjawisko to, nazwane przez badacze z University of Toronto Citizen Lab kampanią AdFection, potwierdzono w przypadku 45 urządzeń należących do pracowników międzynarodowej organizacji medialnej Al Jazeera w latach 2024 i 2025. Eksperci podkreślają, że incydent ten stanowi wyraźny sygnał ostrzegawczy dla redakcji oraz dziennikarzy na całym świecie, którzy mogą znajdować się na celowniku zaawansowanych cyberataków. Dystrybucja oprogramowania szpiegowskiego poprzez sieć reklamową stanowi poważne zagrożenie nie tylko dla bezpośrednich ofiar, ale również dla całego społeczeństwa obywatelskiego. Reklamy te były dostarczane za pośrednictwem izraelskiej firmy Discover-Tech, która oficjalnie przedstawia się jako legalny podmiot reklamowy, lecz w praktyce funkcjonuje jako powiązany z ekosystemem cybernajemników broker. Firma ta łączy reklamodawców z twórcami aplikacji i wydawcami stron internetowych, analizując unikalne identyfikatorów urządzeń, lokalizacje oraz adresy IP użytkowników. Analiza miliardów rekordów przetworzonych przez brokera wykazała, że podejrzane reklamy wyświetlały się w setkach tysięcy aplikacji i witryn internetowych.",
+      "source": "Ars Technica - All content",
+      "url": "https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware/",
+      "published_at": "2026-10-15T20:32:41+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Zastąpienie sekundy przestępnej godziną przestępną przez Międzynarodowe Biuro Miar i Wag",
+      "summary": "Delegaci z 69 krajów zagłosowali za zastąpieniem sekundy przestępnej godziną przestępną od przyszłego roku. Zmiana ma na celu uniknięcie potencjalnych awarii systemów informatycznych wywoływanych przez nietypową długość minut.",
+      "why_it_matters": "Nowe rozwiązanie chroni krytyczną infrastrukturę cyfrową przed błędami technologicznymi, choć faktyczne zastosowanie godziny przestępnej nastąpi prawdopodobnie dopiero za tysiące lat.",
+      "category": "Nauka",
+      "topics": [
+        "czas",
+        "sekunda przestępna",
+        "Ziemia",
+        "fizyka",
+        "technologia"
+      ],
+      "editorial_score": 9.85,
+      "digest_text": "Po dziesięcioleciach dyskusji oficjalni strażnicy czasu zdecydowali o rezygnacji z sekundy przestępnej na rzecz godziny przestępnej. Decyzja zapadła podczas konferencji we Francji z udziałem delegatów z 69 krajów zrzeszonych w Międzynarodowym Biurze Miar i Wag. Nowy przepis ma wejść w życie w przyszłym roku i ma na celu zmniejszenie ryzyka problemów w systemach komputerowych oraz infrastrukturę narodową, które mogłyby ucierpieć z powodu minut liczących 61 lub 59 sekund zamiast tradycyjnych 60. Precyzyjne zegary atomowe, oparte na drganiach cezu, są niezwykle stabilne i kluczowe dla współczesnych systemów telekomunikacyjnych, sieci energetycznych czy nawigacji satelitarnej. Z kolei rotacja Ziemi jest znacznie mniej przewidywalna, a jej prędkość może się wahać z powodu naturalnych sił i procesów zachodzących we wnętrzu planety oraz w oceanach. Ponieważ w ostatnich dziesięcioleciach Ziemia zaczęła przyspieszać swój obrót, pojawiło się realne ryzyko wprowadzenia ujemnej sekundy przestępnej, co mogłoby wywołać niespotykane wcześniej awarie oprogramowania na całym świecie. Dotychczasowe próby korygowania czasu za pomocą pojedynczych sekund wielokrotnie powodowały zakłócenia w działaniu globalnych serwerów i usług sieciowych. Choć zmiana zapobiega obecnym zagrożeniom technicznym, eksperci zauważają, że faktyczne użycie godziny przestępnej ze względu na skalę dryfu czasu nastąpi dopiero za tysiące lat.",
+      "source": "Science | The Guardian",
+      "url": "https://www.theguardian.com/science/2026/oct/15/times-up-for-the-leap-second-as-scientists-swap-it-for-the-leap-hour",
+      "published_at": "2026-10-15T16:16:10+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Wyliczenia korzyści finansowych z wprowadzenia OKI zamiast podatku Belki",
+      "summary": "Opublikowano wyliczenia dotyczące korzyści płynących z wprowadzenia OKI jako alternatywy dla podatku Belki. Nowe rozwiązanie ma zmienić zasady gry dla inwestorów i ułatwić Polakom pomnażanie oszczędności.",
+      "why_it_matters": "Zmiana ta może znacząco wpłynąć na decyzje finansowe Polaków i skłonić ich do większego zaangażowania kapitału w fundusze oraz rynki akcji.",
+      "category": "Finanse i inwestowanie",
+      "topics": [
+        "podatki",
+        "inwestycje",
+        "oszczędności",
+        "Polska",
+        "gospodarka"
+      ],
+      "editorial_score": 9.65,
+      "digest_text": "Pojawiły się szczegółowe wyliczenia pokazujące konkretne korzyści z wprowadzenia OKI w miejsce podatku Belki, co wywołało duże zainteresowanie na rynku finansowym. Eksperci podkreślają, że korzyść podatkowa jest bezdyskusyjna, a nowe rozwiązanie ma całkowicie zmienić dotychczasowe zasady gry dla indywidualnych inwestorów. Odpowiednie zmiany w przepisach mają ułatwić Polakom zarządzanie kapitałem, oferując między innymi jedną umowę z bankiem oraz bezpośredni dostęp do funduszy i rynków akcji. Już od stycznia 2027 roku planowane jest upowszechnienie tego typu kont, co ma skłonić obywateli do przeniesienia oszczędności z tradycyjnych miejsc do nowoczesnych instrumentów finansowych. Wokół nowego rozwiązania toczy się ożywiona dyskusja rynkowa, a instytucje finansowe, banki, brokerzy oraz TFI przygotowują się do wdrożenia odpowiedniej oferty dla swoich klientów.",
+      "source": "pb.pl",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPN0JDS0VjMk1teFV3Q2tkd3hFaFdzbUZWN1VibEhXYWV3U2xTZmJFamtQeC15eXYzalRTVFA4a1M2NHpsNUo5VUhLcnNEYmktamt3Zm9EdmZzdDZka19SMEl4bk40T3JxUGlKUWp6YnVnU0szTzV2N2poV1NzRHp3TGVOVnY2WVdyQ1gwZXROTGNYNDRLSzNQWGREUkZxZw?oc=5",
+      "published_at": "2026-10-15T13:00:00+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Przypadkowe odkrycie w laboratoriudaje nadzieję na ratowanie obumarłych raf koralowych",
+      "summary": "Badania wykazały, że dotknięte blaknięciem koralowce mogą szybko powrócić do zdrowia po kontakcie ze zdrowymi okazami. To obiecujący krok w kierunku ochrony zagrożonych raf koralowych.",
+      "why_it_matters": "Odkrycie to może przyczynić się do opracowania nowych metod szybkiego ratowania obumierających ekosystemów morskich.",
+      "category": "Nauka",
+      "topics": [
+        "klimat",
+        "rafy koralowe",
+        "ekologia",
+        "biologia morza"
+      ],
+      "editorial_score": 9.55,
+      "digest_text": "Naukowcy poinformowali o nowym sposobie na radzenie sobie z problemem blaknięcia raf koralowych, który został odkryty w wyniku przypadkowego zdarzenia w laboratorium. Choć rafy koralowe na całym świecie zmagają się z poważnymi zagrożeniami, najnowsze badania sugerują, że dotknięte tym procesem koralowce wcale nie muszą być stracone. Obserwacje wykazały, że obumarłe lub tracące kolor fragmenty mogą zaskakująco szybko odzyskać dobrą kondycję w bezpośrednim kontakcie ze zdrowymi organizmami koralowymi. Tak zwane zjawisko łączenia się korali otwiera nowe perspektywy dla działań ratunkowych prowadzonych na rzecz zagrożonych ekosystemów morskich. Choć potrzebne są dalsze badania, wstępne wnioski dają realną nadzieję na powstrzymanie degradacji raf na świecie.",
+      "source": "Euronews.com",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaWlqR05hNGpKajF3X1ltZ1JTMTVmUWdfRmN6MWw0Z2tnVWo3eE5YLUtwMVJLTVFKcUZCbGo0RXpPcXpVV05PWVo4Rm5aRW5XaWJuc3M4Z1N4QmpSZ0dDMklBTWFxckhUR3Z6NGw2ZmstN2Y5SFRwOGVST2U2VFBMZVZnbERSZ2pQWDZERS1YdWREbndmbzZRY3RyQzBrdkxQeFFUNjd3aTVhNUhiV2I0TW1tN2xjU2N4eHJQTXY0THVoQQ?oc=5",
+      "published_at": "2026-10-15T05:02:27+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "NASA wesprze japońską misję MMX badającą marsjańskie księżyce",
+      "summary": "NASA bierze udział w misji JAXA mającej na celu zbadanie księżyców Marsa – Fobosa i Deimosa – oraz dostarczenie próbek z Fobosa na Ziemię. Badania te mają pomóc w wyjaśnieniu pochodzenia tych ciał niebieskich.",
+      "why_it_matters": "Misja dostarczy kluczowych informacji o historii Układu Słonecznego oraz pomoże w przygotowaniach do załogowych lotów na Marsa.",
+      "category": "Kosmos",
+      "topics": [
+        "NASA",
+        "JAXA",
+        "Mars",
+        "księżyce",
+        "Fobos"
+      ],
+      "editorial_score": 9.55,
+      "digest_text": "NASA odgrywa istotną rolę w misji Martian Moons eXploration (MMX) organizowanej przez Japońską Agencję Badawczą Kosmosu (JAXA). Celem przedsięwzięcia jest szczegółowe zbadanie pochodzenia i charakterystyki dwóch księżyców Marsa: Fobosa i Deimosa, a także dostarczenie na Ziemię próbek pobranych z powierzchni Fobosa. Wystartowanie statku kosmicznego zaplanowano z japońskiego centrum kosmicznego Tanegashima. Przedstawiciele NASA podkreślają, że pozyskane próbki przyniosą przełomową wiedzę na temat układu Marsa dla przyszłych pokoleń, co jest szczególnie ważne w kontekście planów wysłania ludzi na Czerwoną Planetę. Obie agencje blisko ze sobą współpracują, a amerykańska strona odpowiada między innymi za dostarczenie spektrometru MEGANE oraz technologii pobierania próbek P-Sampler, a także wsparcie komunikacyjne i nawigacyjne za pośrednictwem sieci Deep Space Network. Pochodzenie księżyców Marsa od lat budzi dyskusje wśród naukowców, którzy spierają się, czy Fobos i Deimos są pozostałościami po gigantycznym uderzeniu w planetę, czy też dawnymi asteroidami uwięzionymi przez grawitację Marsa. Spektrometr MEGANE pomoże ustalić skład chemiczny Fobosa, mierząc neutrony i promieniowanie gamma emitowane z jego powierzchni. Z kolei system P-Sampler wykorzysta sprężony azot do zebrania materiału gruntowego, co uzupełni odwierty realizowane przez JAXA. Po dotarciu do Marsa w sierpniu 2027 roku i dokładnym zbadaniu księżyców statek pobierze próbki najwcześniej w grudniu 2028 roku, aby dostarczyć je na Ziemię w 2031 roku.",
+      "source": "NASA",
+      "url": "https://science.nasa.gov/directorates/smd/planetary-science-division/nasa-to-help-unlock-mysteries-of-mars-moons-in-upcoming-mission/",
+      "published_at": "2026-10-15T19:58:08+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Duże badanie nie wykazuje związku między żywnością wysoce przetworzoną a rakiem jelita grubego",
+      "summary": "Nowe zakrojone na szeroką skalę badanie w USA przyniosło zaskakujące wyniki dotyczące całkowitego spożycia żywności wysoce przetworzonej. Jednocześnie wskazano na potencjalne korzyści z zastąpienia jej produktami nieprzetworzonymi.",
+      "why_it_matters": "Wyniki te rzucają nowe światło na powszechne przekonania o szkodliwości żywności wysoce przetworzonej w kontekście onkologicznym.",
+      "category": "Zdrowie",
+      "topics": [
+        "zdrowie",
+        "badania naukowe",
+        "żywność wysokoprzetworzona",
+        "onkologia"
+      ],
+      "editorial_score": 9.4,
+      "digest_text": "Duże amerykańskie badanie kohortowe przyniosło zaskakujące rezultaty dotyczące wpływu żywności wysoce przetworzonej na zdrowie człowieka. Z analiz wynika, że całkowite spożycie produktów ultra-przetworzonych nie wykazuje bezpośredniego związku z występowaniem raka jelita grubego. \n\nMimo braku bezpośredniej korelacji dla całkowitego spożycia tej kategorii produktów, inne analizy i doniesienia naukowe zwracają uwagę na niuanse związane z dietą. Wskazuje się między innymi, że zastąpienie zaledwie dziesięciu procent żywności wysoce przetworzonej produktami pełnowartościowymi i nieprzetworzonymi może wiązać się ze spadkiem wskaźnika zachorowań na nowotwory jelita grubego. Badania te pokazują, że choć ogólny bilans spożycia wymaga dalszych analiz, jakość i struktura codziennej diety wciąż odgrywają istotną rolę w profilaktyce zdrowotnej.",
+      "source": "NBC News",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUm5MenREWXJHdGtsRFVUN0RRb1J2dFFCalNYeTRRNEhCTkc3SzBxLTlxbG9OdXI5NjFpV1MwdGlfZkM4RU01ZC1fblJKV2tQTlg1ejJSa3JzWUhzZW8yR2luZ2Y4QlVDejBuNmMwTGRlWk1fbTFiS05ENVNiVEI0akVfWjRlVXl1dDZIYWNZam43VzYzN0ctQnlMX0VmYm5odHlXaGhpUldFQQ?oc=5",
+      "published_at": "2026-10-15T18:00:41+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Teleskop Chandra odkrywa możliwe pochodzenie fal o kształcie klucza wiolinowego",
+      "summary": "Obserwatorium rentgenowskie Chandra zarejestrowało formację fal radiowych przypominającą klucz wiolinowy. Zdaniem badaczy struktura ta powstała w wyniku wybuchu supermasywnej czarnej dziury oraz późniejszej kolizji gromad galaktyk.",
+      "why_it_matters": "Odkrycie to pomaga astronomom lepiej zrozumieć skomplikowane procesy fizyczne zachodzące w pobliżu supermasywnych czarnych dziur i zderzających się gromad galaktyk.",
+      "category": "Kosmos",
+      "topics": [
+        "astronomia",
+        "czarne dziury",
+        "Chandra",
+        "galaktyki"
+      ],
+      "editorial_score": 9.4,
+      "digest_text": "Kosmiczne Obserwatorium Rentgenowskie Chandra należące do NASA dokonało ciekawej obserwacji struktury fal radiowych, która swoim kształtem przypomina klucz wiolinowy. Formacja ta została uwieczniona na zdjęciu opublikowanym w połowie października 2026 roku.\n\nPrzeprowadzone przez naukowców badania wskazują, że niezwykły kształt fal jest najprawdopodobniej efektem potężnego wybuchu pochodzącego z supermasywnej czarnej dziury. Zjawisko to zostało dodatkowo spotęgowane przez następującą po nim kolizję dwóch gromad galaktyk, co doprowadziło do powstania tej unikalnej kosmicznej struktury radiowej.",
+      "source": "NASA",
+      "url": "https://www.nasa.gov/image-article/chandra-finds-possible-origin-of-treble-clef-waves/",
+      "published_at": "2026-10-15T14:19:06+00:00",
+      "full_text_used": false
+    }
+  ],
+  "more_stories": [
+    {
+      "title": "Brazylijski kongres zatwierdził skrócenie tygodnia pracy",
+      "summary": "Parlament Brazylii przyjął poprawkę konstytucyjną skracającą tydzień pracy z 44 do 40 godzin bez obniżania wynagrodzeń. Zmiana ma wejść w życie stopniowo i dotyczyć ponad 30 milionów pracowników.",
+      "why_it_matters": "To największa reforma praw pracowniczych w Brazylii od powrotu do demokracji w 1988 roku, wykorzystywana również w trwającej rywalizacji politycznej.",
+      "category": "Świat i geopolityka",
+      "topics": [
+        "Brazylia",
+        "Lula",
+        "czas pracy",
+        "gospodarka",
+        "polityka"
+      ],
+      "editorial_score": 9.25,
+      "digest_text": "Kongres Brazylii zatwierdził ważną poprawkę konstytucyjną, która ma na celu skrócenie standardowego tygodnia pracy z 44 do 40 godzin. Nowe przepisy zagwarantują również pracownikom dwa dni wolne w tygodniu bez żadnego cięcia ich dotychczasowych wynagrodzeń. Decyzja ta stanowi największą przebudowę praw pracowniczych w kraju od momentu powrotu Brazylii do demokracji w 1988 roku. Senat przyjął projekt poparty wcześniej przez lewicowego prezydenta Luiza Inácio Zulę da Silvę na niespełna dwa tygodnie przed drugą turą wyborów prezydenckich. Zwolennicy prezydenta liczą, że ta popularna społecznie reforma pomoże mu w walce z prawicowym rywalem, Flávio Bolsonaro. Sondaże wskazują, że pomysł cieszy się ogromnym poparciem obywateli, a blisko 70 procent Brazylijczyków wyraziło dla niego poparcie. Co ciekawe, sam Flávio Bolsonaro, który wcześniej sprzeciwiał się projektowi i nazywał go oportunistycznym ruchem politycznym, ostatecznie zmienił zdanie i oddał głos na \"tak\", motywując to wolą większości pracowników. Krytycy zmiany ostrzegają, że wyższe koszty produkcji mogą ostatecznie przełożyć się na wzrost cen dla konsumentów. Zwolennicy przekonują jednak, że pracownicy z dwiema dniówkami wolnego będą bardziej wypoczęci i efektywni. Zmiana ma być wprowadzana stopniowo na przestrzeni ponad roku, dając nadzieję na lepszą równowagę między życiem zawodowym a prywatnym milionom zmęczonych pracowników.",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmwy43pp08elo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-15T10:05:17+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Anthropic przyznaje zewnętrznym badaczom dostęp poziomu pracownika",
+      "summary": "Firma Anthropic udostępniła sześciorgu badaczom z organizacji METR narzędzia i dostęp niemal tożsamy z uprawnieniami własnych pracowników. Mają oni niezależnie oceniać modele sztucznej inteligencji, bezpieczeństwo i zarządzanie ryzykiem.",
+      "why_it_matters": "To istotny krok w stronę publicznej rozliczalności firm rozwijających zaawansowane systemy sztucznej inteligencji oraz nadzoru nad ich bezpieczeństwem.",
+      "category": "Biznes i startupy",
+      "topics": [
+        "Anthropic",
+        "bezpieczeństwo AI",
+        "badania",
+        "etyka sztucznej inteligencji"
+      ],
+      "editorial_score": 9.25,
+      "digest_text": "Firma Anthropic zdecydowała się na przełomowy krok w kwestii transparentności i bezpieczeństwa sztucznej inteligencji. Sześcioro badaczy z niezależnej organizacji non-profit METR otrzymało dostęp do firmowych laptopów, przestrzeni biurowych oraz narzędzi wewnętrznych na poziomie zbliżonym do tego, jakim dysponują pracownicy samej spółki. Mają oni za zadanie przeprowadzenie niezależnej oceny modeli Anthropic, procedur bezpieczeństwa oraz systemów zarządzania ryzykiem. Inicjatywa pojawia się w okresie, gdy regularnie ujawniane są incydenty związane z działaniem agentów AI poza wyznaczonymi instrukcjami, co potęguje apele o zewnętrzną kontrolę nad branżą. W ramach porozumienia METR będzie mogło publikować własne niezależne oceny, a Anthropic zrzekło się prawa do ich wetowania, zastrzegając jedynie możliwość żądania redakcji wąskich kategorii informacji, takich jak dane klientów czy architektura modeli. Tego rodzaju rozwiązanie przypomina nadzór bankowy, w ramach którego regulatorzy umieszczają swoich rezydentów w największych instytucjach finansowych. Ogłoszenie to stanowi realizację wcześniejszych zapowiedzi dyrektora generalnego Anthropic, Dario Amodei, dotyczących włączania zewnętrznych ewaluatorów w struktury laboratoriów AI jako wstępnego kroku do lepszej samoregulacji i kontroli rozwoju technologii.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
+      "published_at": "2026-10-15T19:14:26+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Kryzys w FIFA i wątpliwości wokół przywództwa Gianniego Infantino",
+      "summary": "Szefowie angielskiej i niemieckiej federacji piłkarskiej zakwestionowali zdolność Gianniego Infantino do dalszego kierowania FIFA. Europejscy działacze planują wystawić kontrkandydata w przyszłorocznych wyborach prezydenckich.",
+      "why_it_matters": "Niezadowolenie europejskich federacji może doprowadzić do poważnych zmian politycznych i wyborczych we władzach światowego futbolu.",
+      "category": "Piłka nożna",
+      "topics": [
+        "FIFA",
+        "Gianni Infantino",
+        "europejskie federacje",
+        "piłka nożna"
+      ],
+      "editorial_score": 9.25,
+      "digest_text": "Podczas ponad trzygodzinnego posiedzenia rady FIFA doszło do poważnych spięć między prezydentem organizacji Giannim Infantino a przedstawicielami europejskich federacji piłkarskich. Szefowie angielskiej oraz niemieckiej federacji publicznie zakwestionowali kompetencje Infantino do pełnienia jego funkcji i wyrazili duże przekonanie, że w nadchodzących wyborach prezydenckich pojawi się kontrkandydat. Spotkanie rozpoczęło się od przeprosin ze strony szefa FIFA za brak konsultacji w sprawie porzuconego planu sprzedaży praw do mistrzostw świata. Infantino nie udzielił jednak satysfakcjonujących odpowiedzi na dziesiątki pytań zadawanych przez europejskich działaczy, dotyczących między innymi propozycji finansowych, nagród oraz kontrowersyjnych decyzji dyscyplinarnych. W trakcie narady przedstawiono prezentację amerykańskich prawników dotyczącą wyceny projektu FFE i planowanej sprzedaży udziałów. Ponadto członkowie rady zdołali odroczyć decyzję o zmianie przepisów dyscyplinarnych do czasu uzyskania dodatkowych wyjaśnień. Choć Infantino otrzymał silne wsparcie ze strony działaczy z Azji i Afryki, liderzy europejskiego futbolu uważają, że administracja FIFA wymaga całkowitego resetu i reform, które ich zdaniem nie są możliwe pod obecnym przywództwem.",
+      "source": "Football | The Guardian",
+      "url": "https://www.theguardian.com/football/2026/oct/15/fifa-gianni-infantino-council",
+      "published_at": "2026-10-15T09:00:16+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Narzędzie AI w Bluesky pozwala tworzyć małe aplikacje społecznościowe",
+      "summary": "Bluesky rozwija swoje narzędzie sztucznej inteligencji o nazwie Attie, które umożliwia użytkownikom generowanie prostych gier, ankiet i pulpitów. Stworzone w ten sposób miniaplikacje można łatwo udostępniać w mediach społecznościowych jako osobne strony internetowe.",
+      "why_it_matters": "Nowa funkcja ułatwia użytkownikom tworzenie interaktywnych treści i personalizację społecznościowych doświadczeń za pomocą prostych poleceń tekstowych.",
+      "category": "AI i technologia",
+      "topics": [
+        "Bluesky",
+        "narzędzia AI",
+        "aplikacje społecznościowe",
+        "programowanie"
+      ],
+      "editorial_score": 9.2,
+      "digest_text": "Platforma Bluesky rozszerza możliwości swojego narzędzia sztucznej inteligencji Attie, które pierwotnie służyło do budowania spersonalizowanych tablic z wiadomościami. Obecnie funkcja ta pozwala użytkownikom na tworzenie niewielkich aplikacji społecznościowych, takich jak gry, ankiety czy panele informacyjne, za pomocą prostych poleceń tekstowych. Dyrektor generalny Bluesky, Toni Schneider, określił to rozwiązanie jako formę kodowania społecznościowego dla lokalnych społeczności. Wygenerowane projekty otrzymują własne odnośniki w domenie serwisu oraz oznaczenia autorstwa. Choć tworzone w ten sposób programy mają przeważnie lekki i rozrywkowy charakter, użytkownicy mogą eksperymentować z różnorodnymi miniprojektami, od prostych gier zręcznościowych po automaty perkusyjne i quizy.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
+      "published_at": "2026-10-15T15:57:16-04:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Atak dronów na Morzu Czarnym u wybrzeży Rumunii: zaginęło siedmiu członków załogi",
+      "summary": "Siedmiu z dwunastu członków załogi chemikaliowca Wine Trader ubyło po ataku dronów u wybrzeży Rumunii. Trwa akcja poszukiwawczo-ratownicza prowadzona przez rumuńskie służby.",
+      "why_it_matters": "Eskalacja ataków na statki handlowe na Morzu Czarnym zagraża bezpieczeństwu żeglugi i skłania państwa regionu do rozmów o uruchomieniu artykułu 4 traktatu NATO.",
+      "category": "Świat i geopolityka",
+      "topics": [
+        "Morze Czarne",
+        "Rumunia",
+        "drony",
+        "bezpieczeństwo",
+        "NATO"
+      ],
+      "editorial_score": 9.2,
+      "digest_text": "Trwa akcja poszukiwawczo-ratownicza na Morzu Czarne po ataku dronów, w wyniku którego chemikaliowiec stanął w płomieniach niedaleko rumuńskiego wybrzeża. Pływający pod flagą San Marino statek Wine Trader znajdował się trzynaście mil morskich na wschód od ujścia Dunaju w pobliżu Suliny, kiedy załoga zgłosiła eksplozje i pożar. Rumuński prezydent Nicușor Dan potwierdził, że zarówno Wine Trader, jak i inny chemikaliowiec w tym rejonie, Yara J, zostały uderzone przez drony. Statek Yara J został trafiony w środę, jednak jego załoga zdołała sama ugasić ogień i wszyscy członkowie są bezpieczni. Wine Trader w momencie ataku nie przewoził ładunku i płynął z Tunezji do Rumunii.\n\nWedług doniesień rosyjskie władze twierdziły, że uderzono w dwa statki transportowe wiozące ładunki wojskowe do ukraińskiego portu w Odesie, nie podając jednak nazw jednostek. Z kolei w nocy w pobliżu Wyspy Węży zauważono rój dronów. W ostatnich dniach zachodnie wybrzeże Morza Czarnego stało się miejscem licznych incydentów. Wcześniej u wybrzeży Bułgarii trafiono dwa inne statki handlowe, z czego jeden zatonął, a jedenastu marynarzy zaginęło. Bułgaria wyraziła podejrzenia, że za tym atakiem stoi Rosja, i wezwała jej przedstawiciela.\n\nRumuńskie władze skierowały do akcji ratunkowej dwa śmigłowiec Black Hawk oraz dwie łodzie ratownicze, mimo trudnych warunków i bardzo wysokich fal. Priorytetem pozostaje dotarcie do czterech członków załogi, których przeżycie zostało potwierdzone, przy jednoczesnym zadbaniu o bezpieczeństwo ratowników. W obliczu rosnących zagrożeń w regionie przywódcy Rumunii i Bułgarii planują omówić z sekretarzem generalnym NATO Markiem Rutte w Brukseli ewentualne uruchomienie artykułu 4 traktatu północnoatlantyckiego. Przepis ten pozwala każdemu państwu członkowskiemu na żądanie konsultacji, jeśli uzna ono swoje bezpieczeństwo lub integralność terytorialną za zagrożone.",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c60qkgpp592yo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-15T14:51:30+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Warszawa wśród światowych liderów komunikacji miejskiej",
+      "summary": "Warszawa została wyróżniona w gronie miast oferujących najlepszy transport publiczny na świecie. Informację tę przekazała Polska Agencja Prasowa SA.",
+      "why_it_matters": "Wyróżnienie w globalnym rankingu potwierdza wysoki poziom rozwoju miejskiej infrastruktury transportowej w Polsce.",
+      "category": "Polska",
+      "topics": [
+        "Warszawa",
+        "transport publiczny",
+        "rankingi",
+        "miasta"
+      ],
+      "editorial_score": 9.2,
+      "digest_text": "Warszawa znalazła się w gronie światowych liderów komunikacji miejskiej, dołączając do miast charakteryzujących się najlepszym transportem publicznym. Informację w tej sprawie opublikowała Polska Agencja Prasowa SA, wskazując na mocną pozycję stolicy Polski w międzynarodowych zestawieniach dotyczących jakości przewozów miejskich.",
+      "source": "Polska Agencja Prasowa SA",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPakJhZHpsS2k2Ni0yekhVLWxPRHFVUFdrVWdiMDFsQkVUOENCWDJpX3h5dnhnYU0tSlZjcGsyS21Yb19sR1h3SmFFMXZEaWZDSWt0MEhZUGZEZFh2RUN1aXk2N1pDV29ETTV2S0lkUFcxOHdGcW5KVGc0M3NuSjY2Y0UzeDlES1hWT29makFzS1llVEdya21uTDJMTGYxaU9zalNIQVRFRmR2R00?oc=5",
+      "published_at": "2026-10-15T14:37:00+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Inflacja bazowa w Polsce i najnowsze dane gospodarcze",
+      "summary": "Opublikowano nowe dane o inflacji bazowej w Polsce, które przyniosły niespodziewane spadki w niektórych obszarach, choć inne wskaźniki mocno wzrosły. Sytuacja ta stanowi ważny sygnał dla Rady Polityki Pieniężnej w kontekście dalszych decyzji gospodarczych.",
+      "why_it_matters": "Zmiany wskaźników inflacji bezpośrednio wpływają na decyzje Rady Polityki Pieniężnej oraz codzienne koszty życia Polaków.",
+      "category": "Finanse i inwestowanie",
+      "topics": [
+        "inflacja",
+        "NBP",
+        "stopy procentowe",
+        "gospodarka",
+        "Polska"
+      ],
+      "editorial_score": 9.0,
+      "digest_text": "Najnowsze doniesienia z polskiej gospodarki wskazują na dynamiczne zmiany wskaźników wzrostu cen. Inflacja bazowa zanotowała nieoczekiwanie mocny spadek, jednak równocześnie niektóre miary inflacji mocno wzrosły, a podwyżki cen w Polsce okazują się wyższe, niż wcześniej zapowiadano. Eksperci zwracają uwagę, że inflacja w kraju przyspiesza, a do wzrostów cen dołączają kolejni winowajcy, w tym m.in. paliwa. Sytuacja ta stanowi istotny sygnał dla Rady Polityki Pieniężnej, która monitoruje napływające dane w procesie kształtowania polityki monetarnej.",
+      "source": "Bankier.pl",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQaWJSSlltZEpoUnpDd3pFT09tUnB2MHZ1OGZxbm5BSWp5U2FwSHJUdUZaRklmSC1hVVlJMWN0Qzd4SFNRT3llbTVqNVQ2azFBRXBzeUhYMlVZaVg0czl6X19MYjdpN1A5SWxualJyb25BSEwyLWdVcGhCcXpXOEYwS09qRm0ycFp4RHVoS1d6cXVwakVTUVIyLVo1RHdIOWMzMU1OR3BhQXpkYVVnc1lCR1RfbGpHbnZ2RG1kZHFOTHpEeGdGNFRsX0xlejA0VGFn?oc=5",
+      "published_at": "2026-10-15T12:00:00+00:00",
+      "full_text_used": false
+    },
+    {
+      "title": "Opóźnienie debiutu rakiety Neutron z powodu problemów z kompozytami",
+      "summary": "Firma Rocket Lab poinformowała, że pierwszy lot nowej rakiety Neutron odbędzie się dopiero w 2027 roku. Opóźnienie wynika z problemów produkcyjnych związanych z elementami wykonanymi z kompozytów węglowych.",
+      "why_it_matters": "Problemy techniczne Rocket Lab pokazują, jak trudne i czasochłonne jest wytwarzanie dużych struktur z kompozytów w przemyśle kosmicznym.",
+      "category": "Kosmos",
+      "topics": [
+        "Rocket Lab",
+        "kosmos",
+        "rakiety",
+        "technologie kosmiczne"
+      ],
+      "editorial_score": 8.9,
+      "digest_text": "Rocket Lab ogłosiła w środę, że jej pojazd nośny Neutron nie poleci wcześniej niż w 2027 roku. Powodem przesunięcia terminu są problemy wykryte podczas produkcji struktur z kompozytów węglowych, co oficjalnie potwierdziło wcześniejsze przypuszczenia branży. Jeszcze w sierpniu firma wyrażała nadzieję na dostarczenie pierwszej rakiety na stanowisko startowe w Wallops Island w Wirginii przed końcem roku, co i tak najprawdopodobniej przesunęłoby debiut na rok 2027. Najnowsze oświadczenie sugeruje jednak, że firma nadal zmaga się z produkcją wielkiego stopnia startowego.\n\nReużywalny pierwszy stopień Neutrona powstaje z kompozytów węglowych, które oferują niską masę, dużą wytrzymałość oraz odporność na korozję. Materiały te są jednak znacznie trudniejsze w produkcji niż struktury metalowe. Peter Beck, założyciel i dyrektor generalny Rocket Lab, wskazał w opublikowanym materiale wideo, że przyczyną opóźnienia jest wada produkcyjna zlokalizowana w sekcjach kopułowych na końcach zbiorników paliwowych pierwszego stopnia.\n\nPodczas prac inżynierowie odkryli pustki powietrzne pomiędzy warstwami włókna węglowego tworzącymi strukturę kompozytową kopuł. Proces produkcji takich materiałów polega na układaniu warstw włókna węglowego w formie, a następnie ich utwardzaniu i nagrzewaniu w celu powiązania włókien. Jest to proces skomplikowany, zwłaszcza w przypadku dużych konstrukcji, które nie mieszczą się w standardowych autoklawach ciśnieniowo-termicznych stosowanych w nowoczesnych fabrykach lotniczych.",
+      "source": "Ars Technica - All content",
+      "url": "https://arstechnica.com/space/2026/10/rocket-lab-announces-another-delay-for-its-medium-lift-neutron-rocket/",
+      "published_at": "2026-10-15T16:57:24+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Brytyjski rząd rozważa interwencję w sprawie przejęcia pionu rozrywkowego ITV przez Sky",
+      "summary": "Brytyjska minister kultury Lisa Nandy zapowiedziała, że może interweniować w sprawie wartego 1,6 miliarda funtów przejęcia biznesu medialnego ITV przez Sky. Wskazała na potencjalne zagrożenia dla wolności słowa oraz pluralizmu mediów na rynku brytyjskim.",
+      "why_it_matters": "Fuzja dwóch gigantów medialnych może ograniczyć różnorodność poglądów w brytyjskich mediach i negatywnie wpłynąć na odbiorców.",
+      "category": "Finanse i inwestowanie",
+      "topics": [
+        "Wielka Brytania",
+        "media",
+        "Sky",
+        "ITV",
+        "fuzje i przejęcia"
+      ],
+      "editorial_score": 8.9,
+      "digest_text": "Brytyjska minister kultury Lisa Nandy oświadczyła, że jest skłonna interweniować w proponowanej transakcji o wartości 1,6 miliarda funtów, w ramach której Sky miałoby przejąć dział mediów i rozrywki stacji ITV. W liście skierowanym do obu firm Nandy wskazała, że istnieją uzasadnione obawy, iż umowa ta mogłaoby wpłynąć na wolność wypowiedzi oraz różnorodność krajobrazu medialnego w Wielkiej Brytanii. Obie firmy ogłosiły w lipcu porozumienie, zgodnie z którym Sky miało przejąć biznes nadawczy ITV, obejmujący kanały ogólnodostępne oraz platformę streamingową ITVX, z pominięciem oddziału produkcyjnego ITV Studios. Przedstawiciele Sky argumentowali, że połączenie sił pomoże obu podmiotom skuteczniej konkurować z globalnymi gigantami streamingu, takimi jak Netflix, zapewniając silniejszy brytyjski rynek medialny. Z kolei ITV podkreślało, że transakcja przyniesie korzyści widzom, reklamodawcom oraz krajowemu sektorowi kreatywnemu. Niemniej jednak minister kultury rozważa wydanie publicznie wiążącego zawiadomienia o interwencji do urzędu ds. konkurencji oraz regulatora Ofcom, co mogłoby zmusić organy do szczegółowego zbadania sprawy pod kątem interesu publicznego. Nandy zauważyła, że Sky News i ITV News odpowiadają obecnie za znaczną część tradycyjnego oglądania wiadomości telewizyjnych, a ich połączenie mogłoby z czasem ograniczyć pluralizm poglądów dostępnych dla odbiorców. Obie firmy otrzymały czas do 20 października na odniesienie się do zgłoszonych zastrzeżeń, a cała procedura może również wymagać wprowadzenia nowych przepisów rozszerzających ochronę interesu publicznego na usługi na żądanie.",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cm79pe5yej7no?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-10-15T14:55:21+00:00",
+      "full_text_used": true
+    },
+    {
+      "title": "Amerykańscy parlamentarzyści chcą pociągnąć do odpowiedzialności menedżerów powiązanych z Epsteinem",
+      "summary": "Amerykańscy politycy przedstawili projekt ustawy mającej na celu rozliczenie szefów z Wall Street za finansowanie przestępstw Jeffreya Epstein. Senator Elizabeth Warren skrytykowała przy tym bank Barclays za unikanie odpowiedzialności w sprawie przeszłości Jesa Staleya.",
+      "why_it_matters": "Nowa inicjatywa legislacyjna może zmusić organy regulacyjne do dokładniejszego prześwietlenia powiązań finansjery ze skazanym przestępcą seksualnym.",
+      "category": "Finanse i inwestowanie",
+      "topics": [
+        "Wall Street",
+        "Banki",
+        "Jeffrey Epstein",
+        "prawo",
+        "finanse"
+      ],
+      "editorial_score": 8.9,
+      "digest_text": "Amerykańscy parlamentarzyści przedstawili nowy projekt ustawy, nazwany Epstein Wall Street Records Act, który ma na celu pociągnięcie do odpowiedzialności menedżerów z Wall Street za pomoc w finansowaniu przestępstw zmarłego przestępcy seksualnego. Inicjatywa ta pojawiła się wkrótce po tym, jak wpływowa senator Elizabeth Warren publicznie skrytykowała brytyjski bank Barclays za brak przejrzystości i unikanie odpowiedzialności w kwestii weryfikacji przeszłości jego byłego szefa, Jesa Staleya, oraz jego relacji z kontrowersyjnym finansistą. Wsparty przez polityków obu partii projekt, jeśli zostanie przyjęty, zmusi federalne instytucje regulacyjne, w tym Rezerwę Federalną oraz amerykańską Komisję Papierów Wartościowych i Giełd, do skrupulatnego zbadania działalności finansowej instytucji i osób powiązanych z Epsteinem pod kątem naruszeń prawa bankowego lub inwestycyjnego. Regulatorzy zyskaliby uprawnienia do nakładania kar finansowych, a nawet zakazu działalności w amerykańskim sektorze finansowym dla osób uznanych za winne. Ustawa nakazywałaby również publiczne ujawnienie wszelkich rejestrów powiązanych z Epsteinem oraz skierowanie potencjalnych wątków kryminalnych do Departamentu Sprawiedliwości USA. Sprawa Jesa Staleya, który zrezygnował z kierowania Barclays pod koniec 2021 roku w wyniku dochodzenia brytyjskiego regulatora Financial Conduct Authority, ponownie powróciła do debaty publicznej po tym, jak bank odpowiedział na pytania senator Warren listem uznanym przez nią za niesatysfakcjonujący. Choć Barclays argumentował, że Staley zataił informacje o naturze swoich relacji z Epsteinem i że rekrutacja opierała się na zewnętrznych firmach doradczych, krytycy uważają, że instytucja nadal próbuje odsunąć od siebie odpowiedzialność za błędy w procesie weryfikacji kadry zarządzającej.",
+      "source": "Business | The Guardian",
+      "url": "https://www.theguardian.com/business/2026/oct/15/new-bill-wall-street-bosses-epstein-connections",
+      "published_at": "2026-10-15T13:30:11+00:00",
+      "full_text_used": true
+    }
+  ],
+  "stats": {
+    "candidates": 166,
+    "ranked": 30,
+    "published": 20
+  }
+}
