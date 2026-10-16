@@ -24,6 +24,12 @@ STOPWORDS = frozenset(
     .split()
 )
 NUMERIC = re.compile(r"(?<![\w])\d+(?:[.,]\d+)?%?(?![\w])")
+# Multi-word proper names are less ambiguous than isolated capitalized words.
+# This only produces review hints; translated or transliterated names may differ.
+PROPER_NAME = re.compile(
+    r"\b[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+"
+    r"(?:\s+[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+){1,2}\b"
+)
 
 
 def canonical_url(url):
@@ -190,11 +196,17 @@ def fact_warnings(item):
     source = str(item.get("article_text") or "")
     digest = str(item.get("digest_text") or "")
     if not source or not digest:
-        return {"checked": False, "warnings": []}
+        return {"checked": False, "warnings": [], "name_warnings": []}
     source_numbers = set(NUMERIC.findall(source))
     digest_numbers = set(NUMERIC.findall(digest))
     missing = sorted(digest_numbers - source_numbers)[:12]
-    return {"checked": True, "warnings": missing}
+    original_names = {x.casefold() for x in PROPER_NAME.findall(source)}
+    names = sorted({
+        x for x in PROPER_NAME.findall(digest)
+        if x.casefold() not in original_names
+    })[:10]
+    # These are possible omissions only; translations and inflection vary.
+    return {"checked": True, "warnings": missing, "name_warnings": names}
 
 
 def recent_entries(archive_dir, day, days=7):
@@ -301,7 +313,8 @@ def enrich_edition(items, history, day):
             "story_timeline": timeline,
             "what_changed": changed_snippets(original, earlier),
             "fact_review": {"checked": fact_status["checked"],
-                            "numeric_warning_count": len(fact_status["warnings"])},
+                            "numeric_warning_count": len(fact_status["warnings"]),
+                            "name_warning_count": len(fact_status["name_warnings"])},
         })
     return completed
 
