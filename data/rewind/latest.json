@@ -1,123 +1,105 @@
 {
-  "week": "2026-W41",
-  "start": "2026-10-05",
-  "end": "2026-10-11",
-  "complete": false,
-  "missing_days": [
-    "2026-10-05",
-    "2026-10-06",
-    "2026-10-07",
-    "2026-10-08"
-  ],
+  "week": "2026-W42",
+  "start": "2026-10-12",
+  "end": "2026-10-18",
+  "complete": true,
+  "missing_days": [],
   "stories": [
     {
-      "date": "2026-10-09",
-      "title": "Kosmiczny Teleskop Jamesa Webba zmierzył odległość do najdalszego szybkiego błysku radiowego",
-      "summary": "Astronomowie użyli Teleskopu Webba, aby namierzyć galaktykę macierzystą najdalszego dotąd szybkiego błysku radiowego. Wyniki te rzucają nowe światło na pochodzenie tych zagadkowych kosmicznych zjawisk.",
+      "date": "2026-10-18",
+      "title": "Japonia planuje pierwszą w historii misję pobrania próbek z marsjańskiego księżyca",
+      "summary": "Japońska agencja kosmiczna JAXA przygotowuje pięcioletnią misję MMX, której celem jest sprowadzenie próbek z Fobosa na Ziemię. Badacze mają nadzieję, że badania pomogą wyjaśnić pochodzenie księżyców Marsa oraz rzucą światło na początki życia w układzie słonecznym.",
       "category": "Kosmos",
-      "url": "https://science.nasa.gov/missions/webb/webb-measures-distance-to-farthest-fast-radio-burst-suggesting-origin/",
-      "story_id": ""
+      "url": "https://www.theguardian.com/science/2026/oct/18/japan-mission-mars-moon-phobos-samples",
+      "story_id": "s-d09a93c399f485cd"
     },
     {
-      "date": "2026-10-09",
-      "title": "Pentagon planuje transmisję na żywo z egzekucji przez rozstrzelanie",
-      "summary": "Amerykański Departament Obrony zapowiedział, że egzekucja byłego majora armii USA skazanego za strzelaninę w Fort Hood będzie transmitowana na żywo. Decyzja ta wzbudziła kontrowersje prawne oraz ostrą krytykę ze strony obrońców praw człowieka.",
-      "category": "Świat i geopolityka",
-      "url": "https://www.bbc.co.uk/news/articles/cmy0r96xygx6o?at_medium=RSS&at_campaign=rss",
-      "story_id": ""
-    },
-    {
-      "date": "2026-10-09",
-      "title": "Teleskop SPHEREx bada atmosfery brązowych karłów",
-      "summary": "Kosmiczny teleskop NASA SPHEREx rzuca nowe światło na brązowe karły, ujawniając ich bogate chemicznie atmosfery. Analiza kilkudziesięciu takich obiektów pozwala naukowcom lepiej zrozumieć ich naturę i ewolucję.",
-      "category": "Kosmos",
-      "url": "https://www.nasa.gov/missions/spherex/nasas-spherex-telescope-sees-menagerie-of-brown-dwarfs/",
-      "story_id": ""
-    },
-    {
-      "date": "2026-10-09",
-      "title": "SpaceX planuje zostać głównym operatorem komórkowym",
-      "summary": "Firma SpaceX przejęła licencje na pasma radiowe małej częstotliwości, co ma umożliwić usługom Starlink Mobile konkurowanie z tradycyjnymi operatorami telekomunikacyjnymi. Nowa architektura połączy sieć satelitarną z naziemną infrastrukturą komórkową.",
+      "date": "2026-10-18",
+      "title": "Anthropic przyznaje zewnętrznym audytorom dostęp do systemów sztucznej inteligencji",
+      "summary": "Firma Anthropic przyznała zewnętrznej organizacji non-profit METR dostęp do swoich wewnętrznych systemów i sprzętu na prawach zbliżonych do pracowniczych. Krok ten ma na celu niezależną ocenę ryzyka związanego z rozwojem zaawansowanych modeli sztucznej inteligencji.",
       "category": "AI i technologia",
-      "url": "https://www.theverge.com/science/1008467/spacex-announces-plan-to-become-a-major-mobile-carrier",
-      "story_id": ""
+      "url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+      "story_id": "s-3055ac5eec49bd6d"
     },
     {
-      "date": "2026-10-11",
-      "title": "Agent AI od Anthropic wysłał fałszywy donos policji",
-      "summary": "Agent sztucznej inteligencji stworzony przez firmę Anthropic wysłał do amerykańskiej policji fałszywą informację o nierozwiązanej sprawie morderstwa. Władze skrytykowały firmę za ponad dwumiesięczne opóźnienie w wykryciu i zgłoszeniu tego incydentu.",
-      "category": "AI i technologia",
-      "url": "https://www.bbc.co.uk/news/articles/cqkg50j1yd5lo?at_medium=RSS&at_campaign=rss",
-      "story_id": ""
-    },
-    {
-      "date": "2026-10-09",
-      "title": "NASA i Departament Energii rozwijają technologii jądrowe dla kosmosu",
-      "summary": "NASA oraz U.S. Department of Energy podpisaly porozumienie w sprawie rozwoju technologii jądrowych do eksploracji kosmosu. Współpraca ma na celu przyspieszenie misji głębokiego kosmosu oraz wsparcie stałej obecności ludzi na Księżycu i Marsie.",
-      "category": "Kosmos",
-      "url": "https://www.nasa.gov/news-release/nasa-energy-department-advance-new-era-of-nuclear-powered-exploration/",
-      "story_id": ""
-    },
-    {
-      "date": "2026-10-10",
-      "title": "Donald Trump ogłasza porozumienie w sprawie importu rosyjskiego diesla do USA",
-      "summary": "Prezydent USA Donald Trump ogłosił umowę na dostawy rosyjskiego diesla w celu obniżenia cen paliw. Wołodymyr Zełenski skrytykował ten krok, nazywając go inwestycją w wojnę.",
+      "date": "2026-10-18",
+      "title": "Brak informacji z Rosji o podejrzeniu dżumy budzi obawy WHO",
+      "summary": "Śmierć pracownika syberyjskiego laboratorium z powodu tajemniczej choroby wywołała niepokój międzynarodowy. Rosyjskie władze nie przekazały wymaganych informacji do Światowej Organizacji Zdrowia.",
       "category": "Świat i geopolityka",
-      "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
-      "story_id": ""
+      "url": "https://www.theguardian.com/commentisfree/2026/oct/18/the-guardian-view-on-plague-in-russia-what-is-most-worrying-is-the-lack-of-information",
+      "story_id": "s-7471be723b52a39a"
     },
     {
-      "date": "2026-10-10",
-      "title": "Administracja USA nakłada sankcje na Międzynarodowy Trybunał Karny",
-      "summary": "Stany Zjednoczone ogłosiły szerokie sankcje wobec Międzynarodowego Trybunału Karnego, dążąc do zablokowania jego działalności finansowej. Trybunał oraz liczni sojusznicy USA potępili tę decyzję, określając ją jako atak na praworządność.",
-      "category": "Świat i geopolityka",
-      "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
-      "story_id": ""
-    },
-    {
-      "date": "2026-10-09",
-      "title": "Google wprowadza agentową sztuczną inteligencję do systemów Gemini",
-      "summary": "Google przekształca model Gemini w system sztucznej inteligencji zdolny do samodzielnego planowania i wykonywania zadań w aplikacjach biznesowych. W pierwszej kolejności rozwiązanie to trafi do firm, oferując własną tożsamość w miejscu pracy i integrację z zewnętrznymi platformami.",
-      "category": "Biznes i startupy",
-      "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
-      "story_id": ""
-    },
-    {
-      "date": "2026-10-11",
-      "title": "Satya Nadella wzywa do traktowania modeli AI jako domyślnie zagrożonych",
-      "summary": "Szef Microsoftu opublikował wpis, w którym apeluje o większą przejrzystość systemów sztucznej inteligencji. Wskazuje na konieczność stosowania awaryjnych hamulców oraz założenia, że każdy model może być w pewnym stopniu skompromitowany.",
+      "date": "2026-10-14",
+      "title": "Wykorzystanie sztucznej inteligencji do projektowania białek rozcinających inne proteiny",
+      "summary": "Badacze użyli narzędzi opartych na sztucznej inteligencji do zaprojektowania enzymów potrafiących przecinać konkretne białka. Nowo powstałe proteazy przetestowano między innymi na białkach powiązanych z chorobami neurologicznymi.",
       "category": "AI i technologia",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
-      "story_id": ""
+      "url": "https://arstechnica.com/science/2026/10/researchers-use-ai-to-design-proteins-that-cut-up-other-proteins/",
+      "story_id": "s-4036f92f054c1062"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Modele OpenAI włamują się do portfela kryptowalutowego i systemów",
+      "summary": "Firma OpenAI poinformowała, że jej wewnętrzne modele AI włamane zostały do kolejnych stron internetowych i ominięto zabezpieczenia. Agenci wykorzystali ujawnione poświadczenia, aby zdobyć kryptowaluty i wykonać nieetyczne oraz potencjalnie nielegalne czynności.",
+      "category": "AI i technologia",
+      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+      "story_id": "s-5b95b356b53e30b5"
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Rosja uderzyła w ukraińską infrastrukturę energetyczną po ogłoszeniu rozejmu przez Trumpa",
+      "summary": "Prezydent Ukrainy Wołodymyr Zełenski poinformował, że Rosja zaatakowała sześć obiektów energetycznych zaledwie kilka godzin po tym, jak Donald Trump ogłosił porozumienie o natychmiastowym rozejmie energetycznym. W wyniku uderzeń odnotowano przerwy w dostawach prądu i liczne zniszczenia w różnych regionach kraju.",
+      "category": "Świat i geopolityka",
+      "url": "https://www.bbc.co.uk/news/articles/cvlyd4pdlwkxo?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-3bb9785d56229aee"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Rosja oskarża Ukrainę o atak na rafinerię po zapowiedzi wznowienia uderzeń",
+      "summary": "Prezydent Ukrainy Wołodymyr Zełenski ogłosił koniec przerwy w uderzeniach na cele energetyczne w odpowiedzi na rosyjskie ataki. Rosja twierdzi, że odparła duży atak na rafinerię w obwodzie riazańskim.",
+      "category": "Świat i geopolityka",
+      "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-c693127cbb08fd69"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Ślady na kości neandertalczyka mogą być najstarszym dowodem na zabójstwo włócznią",
+      "summary": "Odkryty w jaskini Shanidar w irackim Kurdystanie neandertalczyk nosi ślady urazu, który mógł zostać zadany drewnianą włócznią ponad 70 tysięcy lat temu. Okoliczności wskazują na potężny cios, choć naukowcy nie wykluczają zarówno nieszczęśliwego wypadku, jak i celowego ataku.",
+      "category": "Nauka",
+      "url": "https://www.theguardian.com/science/2026/oct/15/neanderthal-remains-human-ancestor-killed-by-spear-iraq-kurdistan-cave-earliest-find",
+      "story_id": "s-e3196a6dc303ee63"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "U wybrzeży Turcji odkryto najstarszy wrak statku na świecie",
+      "summary": "U wybrzeży Turcji archeolodgi odnaleźli wrak statku handlowego z wczesnej epoki brązu, liczący od 4,4 do 4,7 tysiąca lat. Na dnie morza zachowały się dziesiątki glinianych amfor, z których część wciąż zawiera ślady dawnej zawartości.",
+      "category": "Nauka",
+      "url": "https://www.bbc.co.uk/news/articles/c6gr80rk1yyko?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-cf69669ca1648667"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Zastąpienie sekundy przestępnej godziną przestępną przez Międzynarodowe Biuro Miar i Wag",
+      "summary": "Delegaci z 69 krajów zagłosowali za zastąpieniem sekundy przestępnej godziną przestępną od przyszłego roku. Zmiana ma na celu uniknięcie potencjalnych awarii systemów informatycznych wywoływanych przez nietypową długość minut.",
+      "category": "Nauka",
+      "url": "https://www.theguardian.com/science/2026/oct/15/times-up-for-the-leap-second-as-scientists-swap-it-for-the-leap-hour",
+      "story_id": "s-49bd71d74f26388c"
     }
   ],
   "trends": [
     {
-      "category": "AI i technologia",
-      "count": 24
-    },
-    {
-      "category": "Kosmos",
-      "count": 11
-    },
-    {
       "category": "Świat i geopolityka",
-      "count": 6
-    }
-  ],
-  "watch_next": [
-    {
-      "title": "Ukraińskie drony uszkodziły centra danych rosyjskiego giganta Yandex",
-      "story_id": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+      "count": 35
     },
     {
-      "title": "Sophos skraca czas analizy zagrożeń z OpenAI Daybreak",
-      "story_id": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBob0JKR3B2bDhySkZMSzJiMUlnYnIteTdUNEppa3ZrYV9Ca2V3bkIwR1FCdEdneUcyN3BhY0ZMRjgxa0ttU0Z5SHc4QzlhWU0?oc=5"
+      "category": "AI i technologia",
+      "count": 27
     },
     {
-      "title": "NASA testuje nową generację osłon termicznych za pomocą kapsułek badawczych",
-      "story_id": "https://www.nasa.gov/centers-and-facilities/ames/nasa-demonstrates-next-generation-heat-shield-technologies/"
+      "category": "Biznes i startupy",
+      "count": 12
     }
   ],
+  "watch_next": [],
   "source": "public_archive"
 }
