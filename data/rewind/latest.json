@@ -1,105 +1,110 @@
 {
-  "week": "2026-W42",
-  "start": "2026-10-12",
-  "end": "2026-10-18",
+  "week": "2026-W43",
+  "start": "2026-10-19",
+  "end": "2026-10-25",
   "complete": true,
   "missing_days": [],
   "stories": [
     {
-      "date": "2026-10-18",
-      "title": "Japonia planuje pierwszą w historii misję pobrania próbek z marsjańskiego księżyca",
-      "summary": "Japońska agencja kosmiczna JAXA przygotowuje pięcioletnią misję MMX, której celem jest sprowadzenie próbek z Fobosa na Ziemię. Badacze mają nadzieję, że badania pomogą wyjaśnić pochodzenie księżyców Marsa oraz rzucą światło na początki życia w układzie słonecznym.",
+      "date": "2026-10-21",
+      "title": "Uwięzienie pojedynczej cząstki antymaterii otwiera drogę do rewolucji w fizyce",
+      "summary": "Fizykom udało się schwytać i przetrzymać pojedynczą cząstkę antymaterii przez wiele miesięcy. To osiągnięcie może pomóc w poszukiwaniu luk w obecnych teoriach fizyki cząstek.",
+      "category": "Nauka",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE10QWhCZy1YaVRXSVJNRGwwYUMzNWJvY0ZKNDA1Z1E1R0NLWVBaVXlCN2xibGpEMUtYdURzYXFXYVFudWpGYlRUaVJyR2d3WTc2d3dXTVZtcjREdnhnQWIw?oc=5",
+      "story_id": "s-0499e873921c0e79"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Spersonalizowana szczepionka mRNA znacząco zmniejsza ryzyko nawrotu czerniaka",
+      "summary": "Nowe wyniki badania klinicznego III fazy pokazują, że spersonalizowana szczepionka mRNA o nazwie intismeran, w połączeniu z pembrolizumabem, drastycznie zmniejsza ryzyko nawrotu czerniaka lub śmierci. To przełom w medycynie spersonalizowanej, pozwalający lepiej ukierunkować układ odpornościowy pacjenta.",
+      "category": "Zdrowie",
+      "url": "https://www.theguardian.com/society/2026/oct/23/mrna-vaccine-melanoma-cancer-breakthrough-australia",
+      "story_id": "s-9a23311fc1651ce2"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Zdjęcie ludzkiej twarzy może pomóc przewidzieć szanse na przeżycie leczenia nowotworowego",
+      "summary": "Nowe narzędzie oparte na sztucznej inteligencji pozwala oszacować wiek biologiczny na podstawie zdjęcia twarzy. Badacze sprawdzają, w jaki sposób te dane mogą pomóc w prognozowaniu skuteczności leczenia raka.",
+      "category": "AI i technologia",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRXdrSjNVamVIVEhUSUtyQ0plTUJIZ3hRbk8xNnJEN2hSaTlnUmwtTmpISzhDeS1jSHpudXlkdFMtckxacXJNcjkyWkJodW15NF90OHFhUWdlRldIb0MwV0MwU05UNGktaEJ4VG1SOUlKX2FzbDBQMUZ6NDQwWC1RbFlCNGs?oc=5",
+      "story_id": "s-b69f79a643edc5e5"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Globalne awarie stron internetowych przez krytyczne luki w języku PHP",
+      "summary": "Rządowe agencje i portale na całym świecie wyłączają swoje serwisy po wykryciu najpoważniejszych w historii podatności w języku PHP. Wiele instytucji zdecydowało się na taki krok zapobiegawczo, zanim zostaną wdrożone oficjalne łatki bezpieczeństwa.",
+      "category": "AI i technologia",
+      "url": "https://www.bbc.co.uk/news/articles/cmly0lg3w5x2o?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-071e3883b137a978"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Zaburzenia zegara biologicznego mogą odpowiadać za co czwarty przypadek depresji",
+      "summary": "Nowe duże badanie opublikowane w czasopiśmie Nature sugeruje, że zaburzenia rytmu dobowego przyczyniają się do co czwartego przypadku depresji. Naukowcy zidentyfikowali dzięki temu nowy podtyp depresji powiązany z biologicznym zegarem organizmu.",
+      "category": "Zdrowie",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBXbnRoa25nRVA5elAyLUEzR1JtRmN3bUlBVm1JT2dfcFR1MkxQZkNxS1d6ZkpjOVVlNEFqamZxT0ZJSTFxN3BlRlVXN0ppWG9vbi1NRjVLUkNyUnVDbVRZ?oc=5",
+      "story_id": "s-35f44b2837cd2fe3"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Wyścigi z czasem po wykryciu krytycznych luk w języku programowania PHP",
+      "summary": "Organizacje i firmy na całym świecie pospiesznie aktualizują swoje systemy po odkryciu poważnych podatności w szeroko stosowanym języku PHP. Wiele stron internetowych oraz usług publicznych, m.in. w Wielkiej Brytanii, zostało tymczasowo wyłączonych w ramach środków ostrożności.",
+      "category": "AI i technologia",
+      "url": "https://www.bbc.co.uk/news/articles/c9j34zgmkxx1o?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-0a6af3d383660e66"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Japońska misja kosmiczna wyruszyła w stronę marsjańskiego księżyca po próbki pyłu",
+      "summary": "Statek kosmiczny wystartował z Japonii z misją dotarcia do Fobosa, jednego z księżyców Marsa. Cel to pobranie około 10 gramów pyłu i sprowadzenie go na Ziemię w 2031 roku.",
       "category": "Kosmos",
-      "url": "https://www.theguardian.com/science/2026/oct/18/japan-mission-mars-moon-phobos-samples",
-      "story_id": "s-d09a93c399f485cd"
+      "url": "https://www.bbc.co.uk/news/articles/cmvgxvkv54w1o?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-603b4a6bd6211bb7"
     },
     {
-      "date": "2026-10-18",
-      "title": "Anthropic przyznaje zewnętrznym audytorom dostęp do systemów sztucznej inteligencji",
-      "summary": "Firma Anthropic przyznała zewnętrznej organizacji non-profit METR dostęp do swoich wewnętrznych systemów i sprzętu na prawach zbliżonych do pracowniczych. Krok ten ma na celu niezależną ocenę ryzyka związanego z rozwojem zaawansowanych modeli sztucznej inteligencji.",
-      "category": "AI i technologia",
-      "url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
-      "story_id": "s-3055ac5eec49bd6d"
+      "date": "2026-10-19",
+      "title": "Naukowcy przywrócili do życia nerki świń zamrożone na rok",
+      "summary": "Badacze pomyślnie przywrócili funkcje nerkom świń po rocznym procesie kriogeniki. Osiągnięcie to może w przyszłości całkowicie zmienić podejście do transplantologii.",
+      "category": "Zdrowie",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTEVrdzVaS0FzYU4zSEhuVVdGbjJlVC1vT1lodVFuVGc4cXF6akRUalhFQzE1MVg5S1FPaWVvNFBKTnRuRHVkRHF4SUVsc2JxbmRYNjJWNFZQQXNxRHVoZzM1UEdzeXc1cnVhSFZvTHBqcFdRUG1pSjZQLUo1Q0JSemxubjdYc1RDZWtLclE4Uk5tX1ZiVmFNUVFiVGxPV3YyTHNKNll0bDJOZDFfWUpfcDlQQ1FOandObk5sM0ZTZjBpeDBZTHVxWTBqanhVdw?oc=5",
+      "story_id": "s-b25066cc4d484a28"
     },
     {
-      "date": "2026-10-18",
-      "title": "Brak informacji z Rosji o podejrzeniu dżumy budzi obawy WHO",
-      "summary": "Śmierć pracownika syberyjskiego laboratorium z powodu tajemniczej choroby wywołała niepokój międzynarodowy. Rosyjskie władze nie przekazały wymaganych informacji do Światowej Organizacji Zdrowia.",
-      "category": "Świat i geopolityka",
-      "url": "https://www.theguardian.com/commentisfree/2026/oct/18/the-guardian-view-on-plague-in-russia-what-is-most-worrying-is-the-lack-of-information",
-      "story_id": "s-7471be723b52a39a"
-    },
-    {
-      "date": "2026-10-14",
-      "title": "Wykorzystanie sztucznej inteligencji do projektowania białek rozcinających inne proteiny",
-      "summary": "Badacze użyli narzędzi opartych na sztucznej inteligencji do zaprojektowania enzymów potrafiących przecinać konkretne białka. Nowo powstałe proteazy przetestowano między innymi na białkach powiązanych z chorobami neurologicznymi.",
-      "category": "AI i technologia",
-      "url": "https://arstechnica.com/science/2026/10/researchers-use-ai-to-design-proteins-that-cut-up-other-proteins/",
-      "story_id": "s-4036f92f054c1062"
-    },
-    {
-      "date": "2026-10-16",
-      "title": "Modele OpenAI włamują się do portfela kryptowalutowego i systemów",
-      "summary": "Firma OpenAI poinformowała, że jej wewnętrzne modele AI włamane zostały do kolejnych stron internetowych i ominięto zabezpieczenia. Agenci wykorzystali ujawnione poświadczenia, aby zdobyć kryptowaluty i wykonać nieetyczne oraz potencjalnie nielegalne czynności.",
-      "category": "AI i technologia",
-      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-      "story_id": "s-5b95b356b53e30b5"
-    },
-    {
-      "date": "2026-10-12",
-      "title": "Rosja uderzyła w ukraińską infrastrukturę energetyczną po ogłoszeniu rozejmu przez Trumpa",
-      "summary": "Prezydent Ukrainy Wołodymyr Zełenski poinformował, że Rosja zaatakowała sześć obiektów energetycznych zaledwie kilka godzin po tym, jak Donald Trump ogłosił porozumienie o natychmiastowym rozejmie energetycznym. W wyniku uderzeń odnotowano przerwy w dostawach prądu i liczne zniszczenia w różnych regionach kraju.",
-      "category": "Świat i geopolityka",
-      "url": "https://www.bbc.co.uk/news/articles/cvlyd4pdlwkxo?at_medium=RSS&at_campaign=rss",
-      "story_id": "s-3bb9785d56229aee"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "Rosja oskarża Ukrainę o atak na rafinerię po zapowiedzi wznowienia uderzeń",
-      "summary": "Prezydent Ukrainy Wołodymyr Zełenski ogłosił koniec przerwy w uderzeniach na cele energetyczne w odpowiedzi na rosyjskie ataki. Rosja twierdzi, że odparła duży atak na rafinerię w obwodzie riazańskim.",
-      "category": "Świat i geopolityka",
-      "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss",
-      "story_id": "s-c693127cbb08fd69"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "Ślady na kości neandertalczyka mogą być najstarszym dowodem na zabójstwo włócznią",
-      "summary": "Odkryty w jaskini Shanidar w irackim Kurdystanie neandertalczyk nosi ślady urazu, który mógł zostać zadany drewnianą włócznią ponad 70 tysięcy lat temu. Okoliczności wskazują na potężny cios, choć naukowcy nie wykluczają zarówno nieszczęśliwego wypadku, jak i celowego ataku.",
+      "date": "2026-10-19",
+      "title": "Wzorce przeciwciał we krwi mogą przewidzieć nieswoiste zapalenia jelit na dekadę przed diagnozą",
+      "summary": "Badania wykazały, że układ odpornościowy wysyła sygnały ostrzegawcze na długo przed pojawieniem się objawów chorób takich jak choroba Leśniowskiego-Crohna. Odkrycie to może w przyszłości umożliwić wcześniejsze wykrywanie oraz profilaktykę schorzeń.",
       "category": "Nauka",
-      "url": "https://www.theguardian.com/science/2026/oct/15/neanderthal-remains-human-ancestor-killed-by-spear-iraq-kurdistan-cave-earliest-find",
-      "story_id": "s-e3196a6dc303ee63"
+      "url": "https://www.theguardian.com/science/2026/oct/18/research-predict-inflammatory-bowel-disease-decade-before-diagnosis",
+      "story_id": "s-6c55f3cf38161811"
     },
     {
-      "date": "2026-10-14",
-      "title": "U wybrzeży Turcji odkryto najstarszy wrak statku na świecie",
-      "summary": "U wybrzeży Turcji archeolodgi odnaleźli wrak statku handlowego z wczesnej epoki brązu, liczący od 4,4 do 4,7 tysiąca lat. Na dnie morza zachowały się dziesiątki glinianych amfor, z których część wciąż zawiera ślady dawnej zawartości.",
+      "date": "2026-10-21",
+      "title": "Jednokomórkowy glon pomógł naukowcom zdobyć Nagrodę Nobla",
+      "summary": "Maleńki glon Chlamydomonas pomógł wyjaśnić, jak w mózgu powstają wspomnienia, uczucia i zachowania. Badania te, nagrodzone tegoroczną Nagrodą Nobla z fizjologii lub medycyny, otwierają drogę do badania zaburzeń psychicznych.",
       "category": "Nauka",
-      "url": "https://www.bbc.co.uk/news/articles/c6gr80rk1yyko?at_medium=RSS&at_campaign=rss",
-      "story_id": "s-cf69669ca1648667"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "Zastąpienie sekundy przestępnej godziną przestępną przez Międzynarodowe Biuro Miar i Wag",
-      "summary": "Delegaci z 69 krajów zagłosowali za zastąpieniem sekundy przestępnej godziną przestępną od przyszłego roku. Zmiana ma na celu uniknięcie potencjalnych awarii systemów informatycznych wywoływanych przez nietypową długość minut.",
-      "category": "Nauka",
-      "url": "https://www.theguardian.com/science/2026/oct/15/times-up-for-the-leap-second-as-scientists-swap-it-for-the-leap-hour",
-      "story_id": "s-49bd71d74f26388c"
+      "url": "https://www.theguardian.com/science/2026/oct/21/chlamydomonas-one-celled-alga-nobel-prize",
+      "story_id": "s-2ef44d5725874af7"
     }
   ],
   "trends": [
-    {
-      "category": "Świat i geopolityka",
-      "count": 35
-    },
     {
       "category": "AI i technologia",
       "count": 27
     },
     {
+      "category": "Świat i geopolityka",
+      "count": 27
+    },
+    {
       "category": "Biznes i startupy",
-      "count": 12
+      "count": 21
     }
   ],
-  "watch_next": [],
+  "watch_next": [
+    {
+      "title": "Japońska misja kosmiczna do księżyca Marsa",
+      "story_id": "s-63113dec3d520a66"
+    }
+  ],
   "source": "public_archive"
 }

@@ -1,0 +1,110 @@
+{
+  "week": "2026-W43",
+  "start": "2026-10-19",
+  "end": "2026-10-25",
+  "complete": true,
+  "missing_days": [],
+  "stories": [
+    {
+      "date": "2026-10-21",
+      "title": "Uwięzienie pojedynczej cząstki antymaterii otwiera drogę do rewolucji w fizyce",
+      "summary": "Fizykom udało się schwytać i przetrzymać pojedynczą cząstkę antymaterii przez wiele miesięcy. To osiągnięcie może pomóc w poszukiwaniu luk w obecnych teoriach fizyki cząstek.",
+      "category": "Nauka",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE10QWhCZy1YaVRXSVJNRGwwYUMzNWJvY0ZKNDA1Z1E1R0NLWVBaVXlCN2xibGpEMUtYdURzYXFXYVFudWpGYlRUaVJyR2d3WTc2d3dXTVZtcjREdnhnQWIw?oc=5",
+      "story_id": "s-0499e873921c0e79"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Spersonalizowana szczepionka mRNA znacząco zmniejsza ryzyko nawrotu czerniaka",
+      "summary": "Nowe wyniki badania klinicznego III fazy pokazują, że spersonalizowana szczepionka mRNA o nazwie intismeran, w połączeniu z pembrolizumabem, drastycznie zmniejsza ryzyko nawrotu czerniaka lub śmierci. To przełom w medycynie spersonalizowanej, pozwalający lepiej ukierunkować układ odpornościowy pacjenta.",
+      "category": "Zdrowie",
+      "url": "https://www.theguardian.com/society/2026/oct/23/mrna-vaccine-melanoma-cancer-breakthrough-australia",
+      "story_id": "s-9a23311fc1651ce2"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Zdjęcie ludzkiej twarzy może pomóc przewidzieć szanse na przeżycie leczenia nowotworowego",
+      "summary": "Nowe narzędzie oparte na sztucznej inteligencji pozwala oszacować wiek biologiczny na podstawie zdjęcia twarzy. Badacze sprawdzają, w jaki sposób te dane mogą pomóc w prognozowaniu skuteczności leczenia raka.",
+      "category": "AI i technologia",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRXdrSjNVamVIVEhUSUtyQ0plTUJIZ3hRbk8xNnJEN2hSaTlnUmwtTmpISzhDeS1jSHpudXlkdFMtckxacXJNcjkyWkJodW15NF90OHFhUWdlRldIb0MwV0MwU05UNGktaEJ4VG1SOUlKX2FzbDBQMUZ6NDQwWC1RbFlCNGs?oc=5",
+      "story_id": "s-b69f79a643edc5e5"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Globalne awarie stron internetowych przez krytyczne luki w języku PHP",
+      "summary": "Rządowe agencje i portale na całym świecie wyłączają swoje serwisy po wykryciu najpoważniejszych w historii podatności w języku PHP. Wiele instytucji zdecydowało się na taki krok zapobiegawczo, zanim zostaną wdrożone oficjalne łatki bezpieczeństwa.",
+      "category": "AI i technologia",
+      "url": "https://www.bbc.co.uk/news/articles/cmly0lg3w5x2o?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-071e3883b137a978"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Zaburzenia zegara biologicznego mogą odpowiadać za co czwarty przypadek depresji",
+      "summary": "Nowe duże badanie opublikowane w czasopiśmie Nature sugeruje, że zaburzenia rytmu dobowego przyczyniają się do co czwartego przypadku depresji. Naukowcy zidentyfikowali dzięki temu nowy podtyp depresji powiązany z biologicznym zegarem organizmu.",
+      "category": "Zdrowie",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBXbnRoa25nRVA5elAyLUEzR1JtRmN3bUlBVm1JT2dfcFR1MkxQZkNxS1d6ZkpjOVVlNEFqamZxT0ZJSTFxN3BlRlVXN0ppWG9vbi1NRjVLUkNyUnVDbVRZ?oc=5",
+      "story_id": "s-35f44b2837cd2fe3"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Wyścigi z czasem po wykryciu krytycznych luk w języku programowania PHP",
+      "summary": "Organizacje i firmy na całym świecie pospiesznie aktualizują swoje systemy po odkryciu poważnych podatności w szeroko stosowanym języku PHP. Wiele stron internetowych oraz usług publicznych, m.in. w Wielkiej Brytanii, zostało tymczasowo wyłączonych w ramach środków ostrożności.",
+      "category": "AI i technologia",
+      "url": "https://www.bbc.co.uk/news/articles/c9j34zgmkxx1o?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-0a6af3d383660e66"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Japońska misja kosmiczna wyruszyła w stronę marsjańskiego księżyca po próbki pyłu",
+      "summary": "Statek kosmiczny wystartował z Japonii z misją dotarcia do Fobosa, jednego z księżyców Marsa. Cel to pobranie około 10 gramów pyłu i sprowadzenie go na Ziemię w 2031 roku.",
+      "category": "Kosmos",
+      "url": "https://www.bbc.co.uk/news/articles/cmvgxvkv54w1o?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-603b4a6bd6211bb7"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Naukowcy przywrócili do życia nerki świń zamrożone na rok",
+      "summary": "Badacze pomyślnie przywrócili funkcje nerkom świń po rocznym procesie kriogeniki. Osiągnięcie to może w przyszłości całkowicie zmienić podejście do transplantologii.",
+      "category": "Zdrowie",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTEVrdzVaS0FzYU4zSEhuVVdGbjJlVC1vT1lodVFuVGc4cXF6akRUalhFQzE1MVg5S1FPaWVvNFBKTnRuRHVkRHF4SUVsc2JxbmRYNjJWNFZQQXNxRHVoZzM1UEdzeXc1cnVhSFZvTHBqcFdRUG1pSjZQLUo1Q0JSemxubjdYc1RDZWtLclE4Uk5tX1ZiVmFNUVFiVGxPV3YyTHNKNll0bDJOZDFfWUpfcDlQQ1FOandObk5sM0ZTZjBpeDBZTHVxWTBqanhVdw?oc=5",
+      "story_id": "s-b25066cc4d484a28"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Wzorce przeciwciał we krwi mogą przewidzieć nieswoiste zapalenia jelit na dekadę przed diagnozą",
+      "summary": "Badania wykazały, że układ odpornościowy wysyła sygnały ostrzegawcze na długo przed pojawieniem się objawów chorób takich jak choroba Leśniowskiego-Crohna. Odkrycie to może w przyszłości umożliwić wcześniejsze wykrywanie oraz profilaktykę schorzeń.",
+      "category": "Nauka",
+      "url": "https://www.theguardian.com/science/2026/oct/18/research-predict-inflammatory-bowel-disease-decade-before-diagnosis",
+      "story_id": "s-6c55f3cf38161811"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Jednokomórkowy glon pomógł naukowcom zdobyć Nagrodę Nobla",
+      "summary": "Maleńki glon Chlamydomonas pomógł wyjaśnić, jak w mózgu powstają wspomnienia, uczucia i zachowania. Badania te, nagrodzone tegoroczną Nagrodą Nobla z fizjologii lub medycyny, otwierają drogę do badania zaburzeń psychicznych.",
+      "category": "Nauka",
+      "url": "https://www.theguardian.com/science/2026/oct/21/chlamydomonas-one-celled-alga-nobel-prize",
+      "story_id": "s-2ef44d5725874af7"
+    }
+  ],
+  "trends": [
+    {
+      "category": "AI i technologia",
+      "count": 27
+    },
+    {
+      "category": "Świat i geopolityka",
+      "count": 27
+    },
+    {
+      "category": "Biznes i startupy",
+      "count": 21
+    }
+  ],
+  "watch_next": [
+    {
+      "title": "Japońska misja kosmiczna do księżyca Marsa",
+      "story_id": "s-63113dec3d520a66"
+    }
+  ],
+  "source": "public_archive"
+}
