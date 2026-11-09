@@ -1,110 +1,107 @@
 {
-  "week": "2026-W44",
-  "start": "2026-10-26",
-  "end": "2026-11-01",
-  "complete": true,
-  "missing_days": [],
+  "week": "2026-W45",
+  "start": "2026-11-02",
+  "end": "2026-11-08",
+  "complete": false,
+  "missing_days": [
+    "2026-11-04"
+  ],
   "stories": [
     {
-      "date": "2026-10-28",
-      "title": "Bezprecedensowy wybuch epidemii eboli w Afryce może dotrzeć do Wielkiej Brytanii",
-      "summary": "Szef Africa CDC ostrzega, że obecna fala eboli może rozprzestrzenić się na inne kontynenty, jeśli nie zostaną podjęte odpowiednie środki i finansowanie. Bilans epidemii osiągnął już 10 000 przypadków oraz blisko 5 000 zgonów.",
-      "category": "Zdrowie",
-      "url": "https://www.theguardian.com/global-development/2026/oct/28/africa-ebola-outbreak-could-reach-uk-says-top-health-official",
-      "story_id": "s-a073cd4fd273fdfc"
-    },
-    {
-      "date": "2026-10-29",
-      "title": "Binance wstrzymuje wypłaty po ataku hakerskim i podejrzeniu kradzieży miliardów dolarów",
-      "summary": "Największa giełda kryptowalut na świecie potwierdziła incydent bezpieczeństwa po zgłoszeniach o opróżnianiu portfeli. Szacunki wskazują na straty rzędu od 2 do nawet 5,7 miliarda dolarów.",
-      "category": "Biznes i startupy",
-      "url": "https://techcrunch.com/2026/10/29/binance-pauses-withdrawals-as-hackers-suspected-of-stealing-billions-in-crypto/",
-      "story_id": "s-85f843ea62d20afd"
-    },
-    {
-      "date": "2026-10-29",
-      "title": "Wpływ działalności człowieka na naturalny cykl klimatyczny Ziemi i opóźnienie epoki lodowcowej",
-      "summary": "Naukowcy odkryli, że działalność człowieka mogła zatrzymać naturalny cykl klimatyczny i powstrzymać nadejście kolejnej epoki lodowcowej na setki tysięcy lat. Nowa faza zmian miała rozpocząć się już około dwa tysiące lat temu.",
-      "category": "Nauka",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOWgzcWZuZXVabWppTjZtV2NxN194Q1ZEUGEzN0hva01YdjJXWkd1R3paa3NlUGI3RnAwenZ0cmZUTWpPMUpOYmQzaGdRRU15SzNMbHE2dFdGVkJSRTRqc0dKR3lEYlN1RGROTEgyMGoxeHpfVVBaekZHc0VNNmh6LXZJdGxnQW5FTnRFSHJuQzBBWWxoZEEtUUVDaURFRWlaWmhZY1ZKT05PeXB4cWEzSk0xSDdxSXRtX3ZqbkF2TERVdEVfQXc?oc=5",
-      "story_id": "s-8f280577c74ac6b5"
-    },
-    {
-      "date": "2026-10-28",
-      "title": "Obserwatorium Rubina odkryło potencjalną planetę karłowatą poza Plutonem",
-      "summary": "Astronomowie z pomocą Obserwatorium Rubina zidentyfikowali potencjalnie nową planetę karłowatą znajdującą się w Układzie Słonecznym poza orbitą Plutona. To największe tego typu ciał niebieskie odkryte w ciągu ostatnich dwudziestu lat.",
-      "category": "Kosmos",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSm9WTDNyUWlZSU1zVnFObDBXVzAyTXREb3RDeHFINEY1N2ZMZlAzdmo5ZC1lWHdZTFZpSTAyVzdRN3cwcWVWZ3d2Q0R3d3ozZjR6WWw2VWtvaC1McklCVUNxRC1NMGhlU1Y3Vk9UQlhjUUJaVExFQUZ6T1dOR3VvUHpGWnhYZ1ZiczhfVnZhcXdHdUFoX1lubllVTmdXdERjdmM4WjNfUDkwOFJzZDFFSGRZOA?oc=5",
-      "story_id": "s-c52f4246eebe9a42"
-    },
-    {
-      "date": "2026-11-01",
-      "title": "Przerwanie ochrony magnetycznej Ziemi podczas słonecznej superburzy",
-      "summary": "Satelita Arase zarejestrował pęknięcie w pasach Van Allena wywołane przez silną burzę słoneczną. Badacze potwierdzili naruszenie ziemskiej bariery magnetycznej.",
-      "category": "Kosmos",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRzE4eHZWVlVlV3FXMzlmZlhFcmxqdFh6eWROeVdDV2h2LXl5Yk1jN1g0MmZ1V3NQOEpwb0NaUlpBbTVodmsxM19pYU91Tmc0dDZMbEZNcmZQV0R4WHlVUklvQ0c4VGJGT3BQX0R2WlItbXpRTE01RHdDbGYxUnNMcFhmNGsySEhwZHFtS0hWR2s3N0h3N21rUloyRkZFcXRpRHdV?oc=5",
-      "story_id": "s-9c4b67155c6ceb38"
-    },
-    {
-      "date": "2026-10-26",
-      "title": "Anthropic ostrzega przed ryzykiem dla ludzkości w dokumentach przed debiutem giełdowym",
-      "summary": "Firma Anthropic ujawniła szczegóły planowanego wejścia na giełdę Nasdaq, ostrzegając jednocześnie przed katastrofalnymi zagrożeniami związanymi z rozwojem sztucznej inteligencji. Twórca chatbota Claude poinformował o 16,3 miliardach dolarów przychodu w pierwszej połowie roku i stratach przewyższających tę kwotę.",
-      "category": "Biznes i startupy",
-      "url": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&at_campaign=rss",
-      "story_id": "s-aee2246c25620763"
-    },
-    {
-      "date": "2026-10-26",
-      "title": "Microsoft oferuje program dobrowolnych odejść dla około ćwiartki pracowników",
-      "summary": "Microsoft ogłosił program dobrowolnych odejść, który może objąć około 60 tysięcy pracowników, czyli blisko 25 procent globalnej siły roboczej firmy. Oferta skierowana jest do osób zatrudnionych w Stanach Zjednoczonych, Indiach, Kanadzie i Wielkiej Brytanii na określonych poziomach stanowisk.",
-      "category": "Biznes i startupy",
-      "url": "https://arstechnica.com/gadgets/2026/10/microsoft-offers-voluntary-buyouts-to-60000-employees/",
-      "story_id": "s-2b1fe4895a96a576"
-    },
-    {
-      "date": "2026-10-29",
-      "title": "Wpływ sztucznej inteligencji na wyniki finansowe gigantów technologicznych",
-      "summary": "Wycena rynkowa Google spadła o ponad 500 miliardów dolarów po tym, jak podsumowania generowane przez sztuczną inteligencję wpłynęły negatywnie na przychody z reklam. Inwestorzy wyrazili zaniepokojenie rosnącymi wydatkami gigantów technologicznych na rozwój rozwiązań AI, które wpływają na ich tradycyjne modele biznesowe.",
+      "date": "2026-11-03",
+      "title": "Kryptogiełda Binance padła ofiarą ataku hakerskiego o wartości 6,3 miliarda dolarów",
+      "summary": "Hakerzy ukradli rekordową kwotę 6,3 miliarda dolarów z giełdy Binance, wykorzystując fałszywe rozmowy kwalifikacyjne i skompromitowane narzędzie AI. Firma poinformowała, że współpracuje z organami ścigania i odtworzyła większość utraconych środków.",
       "category": "AI i technologia",
-      "url": "https://www.bbc.co.uk/news/articles/cm9qzdqpxy48o?at_medium=RSS&at_campaign=rss",
-      "story_id": "s-f6053547759e7148"
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-1d8724de63caaf14"
     },
     {
-      "date": "2026-10-26",
-      "title": "Wybory w Serbii: koalicja studencka pokonuje wieloletniego lidera",
-      "summary": "Wieloletni prawicowy lider Serbii Aleksandar Vučić przyznał porażkę w przedterminowych wyborach parlamentarnych. Ruch protestu zapoczątkowany przez studentów zdobył większość głosów, co wywołało masowe świętowanie na ulicach belgradu i innych miast.",
+      "date": "2026-11-03",
+      "title": "Zatrzymano domniemanego zleceniodawcę podpalenia stacji Starlink w Polsce",
+      "summary": "Służby zatrzymały domniemanego zleceniodawcę odpowiedzialnego za podpalenie stacji satelitarnej Starlink w Polsce. Szczegóły sprawy są obecnie wyjaśniane przez polskie organy ścigania.",
+      "category": "Polska",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPcmFqNWwxQTFycE1hMTFHc0xWSE9uMnRoZTV4NWlwUGQ2ZFMtZXNTcWhpdkZ0TngxdFctUkM1QkkwaFJteHdiTjM0Tm95N1BudzJJYU81c00wZUpoSGNtZi1LS2E0bjlUQVUwVWtKS3VGX2s5c2NJYU0zOEx4X0htZG1jSDFyT2hUMHJXVmdfNG1qUHR0dWFPNUVqbXJrTW0yeWJqU29yMA?oc=5",
+      "story_id": "s-cb400f6e140a9380"
+    },
+    {
+      "date": "2026-11-07",
+      "title": "Nowy raport METR ujawnia szybką automatyzację rozwoju AI w firmie Anthropic",
+      "summary": "Niezależne śledztwo organizacji METR wykazało, że modele sztucznej inteligencji Anthropic rozwijają się dwa razy szybciej niż rok temu. W dużej mierze odpowiada za to samo AI, co budzi obawy badaczy dotyczące tempa rozwoju technologii.",
+      "category": "AI i technologia",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+      "story_id": "s-73468542508eb8df"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Donald Trump zapowiada zakończenie amerykańskiej pomocy wojskowej dla Izraela",
+      "summary": "Prezydent USA Donald Trump ogłosił w rozmowie z Fox News, że Stany Zjednoczone zakończą udzielanie pomocy wojskowej Izraelowi pod koniec tego roku. Decyzja ta, zaskakująca dla izraelskich władz, ma na celu ukrócenie krytyki amerykańskiej polityki zagranicznej.",
       "category": "Świat i geopolityka",
-      "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss",
-      "story_id": "s-3a9a3caa4eb759b1"
+      "url": "https://www.theguardian.com/us-news/2026/nov/03/donald-trump-usa-end-military-aid-to-israel-end-year-midterms",
+      "story_id": "s-9e6b1d918f217839"
     },
     {
-      "date": "2026-10-26",
-      "title": "Łazik Perseverance bada pył marsjański pod kątem bezpieczeństwa przyszłych załóg",
-      "summary": "Łazik NASA Perseverance zmierzył drobne cząstki pyłu marsjańskiego przylegające do materiałów skafandrów kosmicznych. Wyniki pomogą w opracowaniu skutecznych metod ochrony przyszłych astronautów przed szkodliwym działaniem pyłu.",
-      "category": "Kosmos",
-      "url": "https://www.nasa.gov/missions/mars-2020-perseverance/nasas-perseverance-offers-clues-to-protect-crews-from-mars-dust/",
-      "story_id": "s-9b911160f81d3a9a"
+      "date": "2026-11-07",
+      "title": "Niedziela i poniedziałek dniami żałoby narodowej w Polsce",
+      "summary": "Premier ogłosił, że nadchodząca niedziela oraz poniedziałek będą w Polsce dniami żałoby narodowej. Informację tę przekazał Portal Samorządowy.",
+      "category": "Polska",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZ1F4TDhzZUNCUy1GUVlYdzE4YkpPaXVWVDRTMkp4dWY3RzhtTklYb1g3QXd6MV9CamRaUjV4TGt2RHpmei1MOHpvTGFEdS1sNk9nX3hYVVI1X3gxeG1QQTd1cGFPSElnSWpGYzM1ZXhXZ21kSmJtUThrVk9NaW8yanJBeGNCeU9OUzdheW9HTHpiV2ZHcVV5T2VCTVJfTnoyYjNDaXNjY0tYYW9WNGlBOUhtaE51elh6cWZfV2NTWlVsZjRDajctZWpaOFlFRzVfWWFfd2ZEaw?oc=5",
+      "story_id": "s-be48150598d22005"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Anthropic ostrzega przed zbliżaniem się do progu samorekursywnego rozwoju sztucznej inteligencji",
+      "summary": "W nowym zgłoszeniu regulacyjnym S-1/A firma Anthropic ostrzegła, że może wkrótce osiągnąć punkt recursive self-improvement. Oznacza to moment, w którym sztuczna inteligencja zacznie sama trenować kolejne, potężniejsze wersje samego siebie.",
+      "category": "AI i technologia",
+      "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+      "story_id": "s-62954b6003d956ad"
+    },
+    {
+      "date": "2026-11-07",
+      "title": "Negocjacje pokojowe Ukrainy i Rosji w Abu Zabi",
+      "summary": "W Abu Zabi odbywają się negocjacje pokojowe między Ukrainą a Rosją. Podano oficjalne składy delegacji biorących udział w rozmowach.",
+      "category": "Polska",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPWi1tSENPcS1HaGkxdy1yaVotYlh3T0J1OEMzQlRYdDBtWllSX0lIdU9uZ25PRExYQXJjUVZtSUFNd0JiUG1BMTJZc1ljeWMyM1RfTVdkSDVHeWhIVGlBZUtVZG5DMno2d3p6eUx0Y2V3RmJETHp6OGV2VVpVeDhZUG5sRlRZT3lGbkItN3Ywd09iSTAzOWZtNFJJa0VQeEpYbGhR?oc=5",
+      "story_id": "s-f196736f0a9ede9a"
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Nowy lek na nadciśnienie tętnicze może zapewniać długotrwałą poprawę",
+      "summary": "Lek o nazwie baxdrostat przyniósł zaskakujące rezultaty, utrzymując obniżone ciśnienie krwi u pacjentów nawet przez dwa lata od zakończenia kuracji. Badacze sprawdzają, czy terapia może trwale leczyć pierwotny aldosteronizm odpowiedzialny za część przypadków nadciśnienia.",
+      "category": "Zdrowie",
+      "url": "https://www.theguardian.com/society/2026/nov/08/new-drug-high-blood-pressure-baxdrostat",
+      "story_id": "s-779e1c83c09bb4fb"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "OpenAI pozyskuje dodatkowe 11 miliardów dolarów przy wycenie na poziomie 1,25 biliona dolarów",
+      "summary": "OpenAI zebrało kolejne 11 miliardów dolarów w trwającej rundzie finansowania, która może zamknąć się z kwotą około 20 miliardów. Wycena laboratoria sztucznej inteligencji wynosi obecnie 1,25 biliona dolarów.",
+      "category": "Biznes i startupy",
+      "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+      "story_id": "s-d9d8ed120c50cfe2"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Cyberatak sparaliżował chłodnie w europejskich supermarketach. Ogromne straty żywności",
+      "summary": "W wyniku cyberataku wymierzonego w systemy chłodnicze dziesiątki supermarketów w siedmiu krajach europejskich musiały wyrzucić tony żywności. Problem dotknął m.in. sklepy w Belgii, Luksemburgu, Szwecji czy Holandii.",
+      "category": "Świat i geopolityka",
+      "url": "https://www.bbc.co.uk/news/videos/cmwyvrgk9p0ro?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-2c6a798ba5e25f1e"
     }
   ],
   "trends": [
     {
-      "category": "Świat i geopolityka",
-      "count": 29
-    },
-    {
       "category": "AI i technologia",
-      "count": 28
+      "count": 21
     },
     {
-      "category": "Kosmos",
-      "count": 16
-    }
-  ],
-  "watch_next": [
+      "category": "Świat i geopolityka",
+      "count": 21
+    },
     {
-      "title": "Marsjański meteoryt znaleziony na Saharze ma co najmniej 4,1 miliarda lat",
-      "story_id": "s-dc5eab18edf53e68"
+      "category": "Biznes i startupy",
+      "count": 17
     }
   ],
+  "watch_next": [],
   "source": "public_archive"
 }

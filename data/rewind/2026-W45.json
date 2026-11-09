@@ -1,0 +1,107 @@
+{
+  "week": "2026-W45",
+  "start": "2026-11-02",
+  "end": "2026-11-08",
+  "complete": false,
+  "missing_days": [
+    "2026-11-04"
+  ],
+  "stories": [
+    {
+      "date": "2026-11-03",
+      "title": "Kryptogiełda Binance padła ofiarą ataku hakerskiego o wartości 6,3 miliarda dolarów",
+      "summary": "Hakerzy ukradli rekordową kwotę 6,3 miliarda dolarów z giełdy Binance, wykorzystując fałszywe rozmowy kwalifikacyjne i skompromitowane narzędzie AI. Firma poinformowała, że współpracuje z organami ścigania i odtworzyła większość utraconych środków.",
+      "category": "AI i technologia",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-1d8724de63caaf14"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Zatrzymano domniemanego zleceniodawcę podpalenia stacji Starlink w Polsce",
+      "summary": "Służby zatrzymały domniemanego zleceniodawcę odpowiedzialnego za podpalenie stacji satelitarnej Starlink w Polsce. Szczegóły sprawy są obecnie wyjaśniane przez polskie organy ścigania.",
+      "category": "Polska",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPcmFqNWwxQTFycE1hMTFHc0xWSE9uMnRoZTV4NWlwUGQ2ZFMtZXNTcWhpdkZ0TngxdFctUkM1QkkwaFJteHdiTjM0Tm95N1BudzJJYU81c00wZUpoSGNtZi1LS2E0bjlUQVUwVWtKS3VGX2s5c2NJYU0zOEx4X0htZG1jSDFyT2hUMHJXVmdfNG1qUHR0dWFPNUVqbXJrTW0yeWJqU29yMA?oc=5",
+      "story_id": "s-cb400f6e140a9380"
+    },
+    {
+      "date": "2026-11-07",
+      "title": "Nowy raport METR ujawnia szybką automatyzację rozwoju AI w firmie Anthropic",
+      "summary": "Niezależne śledztwo organizacji METR wykazało, że modele sztucznej inteligencji Anthropic rozwijają się dwa razy szybciej niż rok temu. W dużej mierze odpowiada za to samo AI, co budzi obawy badaczy dotyczące tempa rozwoju technologii.",
+      "category": "AI i technologia",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+      "story_id": "s-73468542508eb8df"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Donald Trump zapowiada zakończenie amerykańskiej pomocy wojskowej dla Izraela",
+      "summary": "Prezydent USA Donald Trump ogłosił w rozmowie z Fox News, że Stany Zjednoczone zakończą udzielanie pomocy wojskowej Izraelowi pod koniec tego roku. Decyzja ta, zaskakująca dla izraelskich władz, ma na celu ukrócenie krytyki amerykańskiej polityki zagranicznej.",
+      "category": "Świat i geopolityka",
+      "url": "https://www.theguardian.com/us-news/2026/nov/03/donald-trump-usa-end-military-aid-to-israel-end-year-midterms",
+      "story_id": "s-9e6b1d918f217839"
+    },
+    {
+      "date": "2026-11-07",
+      "title": "Niedziela i poniedziałek dniami żałoby narodowej w Polsce",
+      "summary": "Premier ogłosił, że nadchodząca niedziela oraz poniedziałek będą w Polsce dniami żałoby narodowej. Informację tę przekazał Portal Samorządowy.",
+      "category": "Polska",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZ1F4TDhzZUNCUy1GUVlYdzE4YkpPaXVWVDRTMkp4dWY3RzhtTklYb1g3QXd6MV9CamRaUjV4TGt2RHpmei1MOHpvTGFEdS1sNk9nX3hYVVI1X3gxeG1QQTd1cGFPSElnSWpGYzM1ZXhXZ21kSmJtUThrVk9NaW8yanJBeGNCeU9OUzdheW9HTHpiV2ZHcVV5T2VCTVJfTnoyYjNDaXNjY0tYYW9WNGlBOUhtaE51elh6cWZfV2NTWlVsZjRDajctZWpaOFlFRzVfWWFfd2ZEaw?oc=5",
+      "story_id": "s-be48150598d22005"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Anthropic ostrzega przed zbliżaniem się do progu samorekursywnego rozwoju sztucznej inteligencji",
+      "summary": "W nowym zgłoszeniu regulacyjnym S-1/A firma Anthropic ostrzegła, że może wkrótce osiągnąć punkt recursive self-improvement. Oznacza to moment, w którym sztuczna inteligencja zacznie sama trenować kolejne, potężniejsze wersje samego siebie.",
+      "category": "AI i technologia",
+      "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+      "story_id": "s-62954b6003d956ad"
+    },
+    {
+      "date": "2026-11-07",
+      "title": "Negocjacje pokojowe Ukrainy i Rosji w Abu Zabi",
+      "summary": "W Abu Zabi odbywają się negocjacje pokojowe między Ukrainą a Rosją. Podano oficjalne składy delegacji biorących udział w rozmowach.",
+      "category": "Polska",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPWi1tSENPcS1HaGkxdy1yaVotYlh3T0J1OEMzQlRYdDBtWllSX0lIdU9uZ25PRExYQXJjUVZtSUFNd0JiUG1BMTJZc1ljeWMyM1RfTVdkSDVHeWhIVGlBZUtVZG5DMno2d3p6eUx0Y2V3RmJETHp6OGV2VVpVeDhZUG5sRlRZT3lGbkItN3Ywd09iSTAzOWZtNFJJa0VQeEpYbGhR?oc=5",
+      "story_id": "s-f196736f0a9ede9a"
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Nowy lek na nadciśnienie tętnicze może zapewniać długotrwałą poprawę",
+      "summary": "Lek o nazwie baxdrostat przyniósł zaskakujące rezultaty, utrzymując obniżone ciśnienie krwi u pacjentów nawet przez dwa lata od zakończenia kuracji. Badacze sprawdzają, czy terapia może trwale leczyć pierwotny aldosteronizm odpowiedzialny za część przypadków nadciśnienia.",
+      "category": "Zdrowie",
+      "url": "https://www.theguardian.com/society/2026/nov/08/new-drug-high-blood-pressure-baxdrostat",
+      "story_id": "s-779e1c83c09bb4fb"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "OpenAI pozyskuje dodatkowe 11 miliardów dolarów przy wycenie na poziomie 1,25 biliona dolarów",
+      "summary": "OpenAI zebrało kolejne 11 miliardów dolarów w trwającej rundzie finansowania, która może zamknąć się z kwotą około 20 miliardów. Wycena laboratoria sztucznej inteligencji wynosi obecnie 1,25 biliona dolarów.",
+      "category": "Biznes i startupy",
+      "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+      "story_id": "s-d9d8ed120c50cfe2"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Cyberatak sparaliżował chłodnie w europejskich supermarketach. Ogromne straty żywności",
+      "summary": "W wyniku cyberataku wymierzonego w systemy chłodnicze dziesiątki supermarketów w siedmiu krajach europejskich musiały wyrzucić tony żywności. Problem dotknął m.in. sklepy w Belgii, Luksemburgu, Szwecji czy Holandii.",
+      "category": "Świat i geopolityka",
+      "url": "https://www.bbc.co.uk/news/videos/cmwyvrgk9p0ro?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-2c6a798ba5e25f1e"
+    }
+  ],
+  "trends": [
+    {
+      "category": "AI i technologia",
+      "count": 21
+    },
+    {
+      "category": "Świat i geopolityka",
+      "count": 21
+    },
+    {
+      "category": "Biznes i startupy",
+      "count": 17
+    }
+  ],
+  "watch_next": [],
+  "source": "public_archive"
+}
