@@ -1,0 +1,110 @@
+{
+  "week": "2026-W47",
+  "start": "2026-11-16",
+  "end": "2026-11-22",
+  "complete": false,
+  "missing_days": [
+    "2026-11-16",
+    "2026-11-17",
+    "2026-11-18",
+    "2026-11-22"
+  ],
+  "stories": [
+    {
+      "date": "2026-11-20",
+      "title": "Przełom w leczeniu raka trzustki. Nowa pigułka daje nadzieję chorym",
+      "summary": "Badania kliniczne nowego leku o nazwie daraxonrasib pokazują niezwykłą skuteczność w walce z zaawansowanym rakiem trzustki. U części pacjentów guzy stały się niewykrywalne, a u niemal wszystkich uczestników badania zahamowano ich wzrost.",
+      "category": "Zdrowie",
+      "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
+      "story_id": "s-0999f728fb497038"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "Historyczne spotkanie przywódców USA, Rosji i Chin w Shenzhen",
+      "summary": "Prezydenci Donald Trump, Władimir Putin i Xi Jinping spotkali się po raz pierwszy w formule trójstronnej, wydając wspólną deklarację pokojową. Lideri omówili kwestie nierozprzestrzeniania broni jądrowej oraz sytuację wokół konfliktu w Ukrainie.",
+      "category": "Świat i geopolityka",
+      "url": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-4228d24912ce65f1"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "Sonda Voyager 1 osiągnęła odległość jednego dnia świetlnego od Ziemi",
+      "summary": "Najdalej wysłany przez ludzkość statek kosmiczny Voyager 1 osiągnął dystans jednego dnia świetlnego od Ziemi po ponad 49 latach podróży. Oznacza to odległość około 25,9 miliarda kilometrów w przestrzeni międzygwiezdnej.",
+      "category": "Kosmos",
+      "url": "https://www.nasa.gov/news-release/nasas-voyager-1-makes-history-reaching-one-light-day-from-earth/",
+      "story_id": "s-bc697bc9f7d6d581"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "Międzynarodowy Trybunał Sprawiedliwości uznał Mjanmę winną ludobójstwa mniejszości Rohingya",
+      "summary": "Międzynarodowy Trybunał Sprawiedliwości orzekł, że Mjanma dopuściła się ludobójstwa mniejszości Rohingya podczas wojskowych czystek w 2017 roku. Jest to pierwszy w historii przypadek, gdy trybunał międzynarodowy uznał państwo winnym takiego przestępstwa.",
+      "category": "Świat i geopolityka",
+      "url": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-70fe4f1aae7e46c9"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "Anthropic pozyskał 81 miliardów dolarów w debiucie giełdowym",
+      "summary": "Twórca chatbota Claude zadebiutował na giełdzie, pozyskując rekordowe 81 miliardów dolarów i osiągając wycenę rzędu 1,5 biliona dolarów. To kluczowy test kondycji i rentowności dla całego sektora sztucznej inteligencji.",
+      "category": "Finanse i inwestowanie",
+      "url": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-b76967dd4aed0478"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "Milion dolarów od Google.org dla Uniwersytetu Warszawskiego",
+      "summary": "Google.org przekazał milion dolarów finansowania dla Uniwersytetu Warszawskiego. Środki te wesprą rozwój sztucznej inteligencji w medycynie i naukach przyrodniczych.",
+      "category": "Polska",
+      "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxPZVRrQkc4b0VaTERGc1BSSVFkNVRQUHhyTXFVc3VadXE3Q1ZxUGJXejd6Rk1vbDREZTF1TF9OZWNIMzUycHFPbU9LVWFTUUxJU1dWWkd2b043ZEJ5MEdJZDUzQkIxUGFJNTNGaWc2TFBQb0ZLTmJjU0FkcjNKeUdFbGd6S3pDaElmYzU2WGl4akxmYkxpOUFpRDBiNjUwQmpmbnZ5bVBQU1pFaHEtblR5eV9zdU5VcnJ5QlRwYW9Wbl9xazg1NURLUUM4dXV4SEFKYmRSZVBScDB6dG5WZmp2eWFCY3VpRmtrT084X2lwbWxJSHA4NjVBVmZBRGViLWhHYWhBcG1JTGNuTmhsRm02WUVmaS1wM3BlVWZqVGVSWjMzclB4YmwxTllrc3d5RWE2ZU94VThWZDdUbUh5b0xsVTZuT3N6Zw?oc=5",
+      "story_id": "s-55cfecae88469d5c"
+    },
+    {
+      "date": "2026-11-20",
+      "title": "Sonda BepiColombo dociera do Merkurego po ośmiu latach podróży",
+      "summary": "Po liczącej miliardy mil podróży statek kosmiczny BepiColombo przygotowuje się do wejścia na orbitę Merkurego. Misja ma pomóc w rozwiązaniu zagadek najmniejszej planety Układu Słonecznego, takich jak obecność lodu w kraterach czy nietypowa budowa wnętrza.",
+      "category": "Kosmos",
+      "url": "https://www.bbc.co.uk/news/articles/c39w9l4v1p9ro?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-08bbaa291dcdec1c"
+    },
+    {
+      "date": "2026-11-21",
+      "title": "Matematyk z Anthropic twierdzi, że sztuczna inteligencja pomogła udowodnić hipotezę Riemanna",
+      "summary": "Levent Alpöge z firmy Anthropic ogłosił, że oprogramowanie Claude pomogło mu w rozwiązaniu słynnej hipotezy Riemanna. Dwie niezależne organizacje matematyczne potwierdziły poprawność przedstawionego dowodu.",
+      "category": "AI i technologia",
+      "url": "https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai",
+      "story_id": "s-7c2e1f3f5a542a9e"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "Google wyposaża Gemini w funkcję obsługi systemów macOS",
+      "summary": "Najnowsza aktualizacja aplikacji Gemini na system macOS wprowadza funkcję agenta AI. Sztuczna inteligencja potrafi organizować pliki, wypełniać formularze oraz wykonywać wieloetapowe zadania w tle.",
+      "category": "AI i technologia",
+      "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+      "story_id": "s-62649bf472ca2edc"
+    },
+    {
+      "date": "2026-11-20",
+      "title": "Debiut giełdowy Anthropic i jego znaczenie dla branży sztucznej inteligencji",
+      "summary": "Firma Anthropic zadebiutowała na giełdzie Nasdaq jako pierwsza czysto technologiczna spółka AI, osiągając wycenę około 1,76 biliona dolarów. Debiut ten stanowi ważny test dla całego sektora sztucznej inteligencji, wokół którego narastają obawy o bańkę finansową.",
+      "category": "Finanse i inwestowanie",
+      "url": "https://www.bbc.co.uk/news/articles/c3x29ggenz12o?at_medium=RSS&at_campaign=rss",
+      "story_id": "s-d175cae64de97a4c"
+    }
+  ],
+  "trends": [
+    {
+      "category": "Świat i geopolityka",
+      "count": 15
+    },
+    {
+      "category": "AI i technologia",
+      "count": 13
+    },
+    {
+      "category": "Biznes i startupy",
+      "count": 7
+    }
+  ],
+  "watch_next": [],
+  "source": "public_archive"
+}
